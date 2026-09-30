@@ -78,6 +78,7 @@ Not fetched, so liveness is unknown (not counted as dead):
 
 - `src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des` → `src_samber-frontend-design-deslop` — Directory listing mirroring samber's skill; the skill repo itself was not fetched
 - `src_claude-com-blog-improving-frontend-design-through-skills` → `src_platform-claude-com-cookbook-coding-prompting-for-frontend-a` — Anthropic blog describing the same guidance; treated as one root with the cookbook
+- `src_dequeuniversity-com-rules-axe-4-8-target-size` → `src_w3-org-wai-wcag22-understanding-target-size-minimum-html` — Deque rule page implements WCAG 2.2 SC 2.5.8 (page lists Guidelines: WCAG 2.2 (AA)); treated as derived from the W3C text
 - `src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow` → `src_github-com-oneredoak-claude-code-workflows` — Listing page links to github.com/oneredoak/claude-code-workflows
 - `src_github-com-anthropics-skills-tree-main-skills-frontend-desig` → `src_platform-claude-com-cookbook-coding-prompting-for-frontend-a` — Same Anthropic prompt (frontend_aesthetics) as the cookbook; direction of derivation unverified, treated as one root
 - `src_github-com-pbakaus-impeccable` → `src_github-com-anthropics-skills-tree-main-skills-frontend-desig` — Impeccable README: Anthropic's frontend-design 'was the first widely-used design skill for Claude. Impeccable started from there.'
@@ -110,6 +111,7 @@ Rebrand clusters (sources sharing a root):
 - root `src_jcarterjohnson-vibecoded-design-tells`: 2 sources
 - root `src_platform-claude-com-cookbook-coding-prompting-for-frontend-a`: 23 sources
 - root `src_samber-frontend-design-deslop`: 2 sources
+- root `src_w3-org-wai-wcag22-understanding-target-size-minimum-html`: 2 sources
 
 Unfetched derivatives (lineage unknown, each treated as its own root; nothing is verified against them):
 

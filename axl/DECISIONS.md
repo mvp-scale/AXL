@@ -6,3 +6,8 @@
 - D4: Recon fetched 52 sources (cap "about 40" exceeded: 18 Impeccable command pages are required, plus 16 new primaries required by the plan). Remaining URLs from SOURCES.md are registered but skipped.
 - D5: Lineage is conservative: Impeccable (README says it "started from" Anthropic frontend-design) shares a root with it; Anthropic blog/cookbook/skill are one root. Composite-parent derivatives count as their parents' roots.
 - D6: Licences are detected from raw LICENSE files (GitHub API not accessible); unknown otherwise.
+- D7: Private-kit claims (g0–g11, 107) stay in claims.json tagged `private-kit`, status `unverified`, no quote; consumers filter on origin. Their text is already public in legacy/.
+- D8: `measurable` requires a `delta` (`before` may be null when the source states only a target value) — numeric rules are expressed as deltas. Tier is decided by regex over claim text only; the legacy effect mapping is ignored.
+- D9: A quote counts as verified when >=60% of the legacy words (min 4-word run) match as one contiguous run in the saved source; the quote is the raw slice (<=40 words). Partial matches are noted. Everything else is `unverified` (paraphrase or source not fetched).
+- D10: Independence: atomic lineage roots of the primary plus supports (a support needs >=60% coverage of the claim by a different fetched source); multi-parent aggregator sources never add a root.
+- D11: No claim is `enforced` yet: no tool has been run (Phase 5).

@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "axl/claim.schema.json",
+  "title": "AXL claim",
+  "type": "object",
+  "required": [
+    "id",
+    "verb",
+    "text",
+    "quote",
+    "source_id",
+    "source_url",
+    "retrieved_at",
+    "quote_verified",
+    "origin",
+    "tier",
+    "surface",
+    "delta",
+    "enforcement",
+    "independent_roots",
+    "status",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^clm_[0-9]{4}$"
+    },
+    "verb": {
+      "type": "string",
+      "minLength": 1
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "quote": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quote_verified": {
+      "type": "boolean"
+    },
+    "origin": {
+      "enum": [
+        "public",
+        "private-kit"
+      ]
+    },
+    "tier": {
+      "enum": [
+        "enforced",
+        "measurable",
+        "subjective",
+        "process"
+      ]
+    },
+    "surface": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "web",
+          "mobile",
+          "platform",
+          "saas"
+        ]
+      },
+      "minItems": 1
+    },
+    "delta": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "selector",
+            "property",
+            "before",
+            "after"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "selector": {
+              "type": "string"
+            },
+            "property": {
+              "type": "string"
+            },
+            "before": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "after": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "enforcement": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "tool",
+            "command",
+            "pass_criteria"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "tool": {
+              "type": "string"
+            },
+            "command": {
+              "type": "string"
+            },
+            "pass_criteria": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "tool_candidate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "quote"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "quote": {
+            "type": "string"
+          },
+          "coverage": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "independent_roots": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "verified",
+        "single-source",
+        "unverified",
+        "rejected"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "legacy_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

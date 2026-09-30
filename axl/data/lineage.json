@@ -9,6 +9,10 @@
    "to": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
   },
   {
+   "from": "src_dequeuniversity-com-rules-axe-4-8-target-size",
+   "to": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
+  },
+  {
    "from": "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow",
    "to": "src_github-com-oneredoak-claude-code-workflows"
   },
@@ -162,7 +166,7 @@
    "id": "src_dequeuniversity-com-rules-axe-4-8-target-size",
    "kind": "primary",
    "publisher": "Deque",
-   "root": "src_dequeuniversity-com-rules-axe-4-8-target-size"
+   "root": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
   },
   {
    "id": "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc",
@@ -700,6 +704,10 @@
   "src_samber-frontend-design-deslop": [
    "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
    "src_samber-frontend-design-deslop"
+  ],
+  "src_w3-org-wai-wcag22-understanding-target-size-minimum-html": [
+   "src_dequeuniversity-com-rules-axe-4-8-target-size",
+   "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
   ]
  },
  "roots": {
@@ -712,7 +720,7 @@
   "src_chaseai-io-blog-impeccable-4-claude-code-design-skill": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
   "src_claude-com-blog-improving-frontend-design-through-skills": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
   "src_claudecodehq-com-playbooks-unslop-ui": "src_jcarterjohnson-vibecoded-design-tells",
-  "src_dequeuniversity-com-rules-axe-4-8-target-size": "src_dequeuniversity-com-rules-axe-4-8-target-size",
+  "src_dequeuniversity-com-rules-axe-4-8-target-size": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html",
   "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc": "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc",
   "src_dev-to-uianimation-duolingo-style-animation-in-mobile-apps-h": "src_dev-to-uianimation-duolingo-style-animation-in-mobile-apps-h",
   "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
