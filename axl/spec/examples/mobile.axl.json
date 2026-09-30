@@ -1,0 +1,64 @@
+{
+  "axl": "0.1",
+  "describe": {
+    "name": "Ledger (mobile, illustrative)",
+    "surface": "mobile",
+    "tokens": {
+      "space": {
+        "unit": "4pt"
+      },
+      "type": {
+        "body": "16pt"
+      }
+    },
+    "components": [
+      "tab-bar",
+      "list-row",
+      "primary-button"
+    ],
+    "states": [
+      "ready",
+      "loading",
+      "empty",
+      "error"
+    ],
+    "viewports": [
+      "390x844",
+      "320x568"
+    ]
+  },
+  "evaluate": {
+    "rules": [
+      {
+        "id": "target-44",
+        "tier": "measurable",
+        "check": "Tap targets are at least 44x44 points",
+        "pass_criteria": "every interactive element is >= 44x44pt",
+        "claim_ids": [
+          "clm_0477"
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "rule_id": "target-44",
+        "result": "fail",
+        "evidence": "tab-bar icon is 32x32pt",
+        "location": "tab-bar/item[2]"
+      }
+    ]
+  },
+  "correct": {
+    "ops": [
+      {
+        "op": "set",
+        "target": "tab-bar/item",
+        "property": "min-size",
+        "value": "44pt",
+        "reason": "raise to the 44x44 minimum",
+        "claim_id": "clm_0477"
+      }
+    ],
+    "notes": []
+  }
+}

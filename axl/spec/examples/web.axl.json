@@ -1,0 +1,103 @@
+{
+  "axl": "0.1",
+  "describe": {
+    "name": "Northstar (web)",
+    "surface": "web",
+    "tokens": {
+      "color": {
+        "ink": "#25384e",
+        "canvas": "#f5f6f8",
+        "muted": "#566579"
+      },
+      "type": {
+        "body": "16px/1.45 system-ui"
+      },
+      "space": {
+        "unit": "4px"
+      },
+      "motion": {
+        "feedback": "140ms"
+      }
+    },
+    "components": [
+      "button",
+      "input",
+      "card",
+      "data-table"
+    ],
+    "states": [
+      "ready",
+      "loading",
+      "empty",
+      "error",
+      "success"
+    ],
+    "viewports": [
+      "1440x900",
+      "375x812"
+    ]
+  },
+  "evaluate": {
+    "rules": [
+      {
+        "id": "contrast-4.5",
+        "tier": "enforced",
+        "check": "Text contrast is at least 4.5:1",
+        "pass_criteria": "axe color-contrast reports 0 violations",
+        "tool": "axe-core",
+        "command": "node axl/tools/runners/axe.js axl/demo/after.html 1440",
+        "claim_ids": [
+          "clm_0471"
+        ]
+      },
+      {
+        "id": "spacing-4px",
+        "tier": "enforced",
+        "check": "Spacing is a multiple of 4px",
+        "pass_criteria": "no padding, margin or gap off the 4px scale",
+        "tool": "axl craft checks",
+        "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+        "claim_ids": [
+          "clm_0476"
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "rule_id": "contrast-4.5",
+        "result": "fail",
+        "evidence": "#8a97a8 on #f5f6f8 = 2.74:1",
+        "location": "footer > span"
+      },
+      {
+        "rule_id": "spacing-4px",
+        "result": "fail",
+        "evidence": "gap 7px is not a multiple of 4px",
+        "location": "nav.app-nav"
+      }
+    ]
+  },
+  "correct": {
+    "ops": [
+      {
+        "op": "set",
+        "target": "footer span",
+        "property": "color",
+        "value": "#566579",
+        "reason": "raise contrast from 2.74:1 to 5.5:1",
+        "claim_id": "clm_0471"
+      },
+      {
+        "op": "set",
+        "target": "nav.app-nav",
+        "property": "gap",
+        "value": "8px",
+        "reason": "snap 7px to the 4px scale",
+        "claim_id": "clm_0476"
+      }
+    ],
+    "notes": [
+      "Whether the footer needs to exist at all is a judgment call, not an op."
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AXL — design words, defined</title>
+<meta name="description" content="Design words like polish and layout, turned into measurable checks that pass or fail, with sources and re-runnable receipts.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%277%27 y=%277%27 width=%2718%27 height=%2718%27 fill=%27none%27 stroke=%27%230a6b5e%27 stroke-width=%274%27 transform=%27rotate(45 16 16)%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#stage">Skip to the demo</a>
+<header class="top">
+  <a class="brand" href="#stage" aria-label="AXL, back to top"><span class="mark" aria-hidden="true"></span>AXL</a>
+  <nav aria-label="Sections">
+    <a href="#stage">Try it</a><a href="#how">How it works</a><a href="#dictionary">Dictionary</a><a href="#explore">Evidence</a><a href="#export">Export</a>
+  </nav>
+  <button class="ghost" id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+</header>
+
+<div class="meter" id="meter" aria-live="polite"></div>
+
+<main>
+<section class="hero" id="stage" aria-labelledby="h1">
+  <div class="hero-text">
+    <p class="kicker">Design words, defined</p>
+    <h1 id="h1">“Make it more polished” is not an instruction. <em>This is.</em></h1>
+    <p class="lede">Every design word an AI agent hears (polish, layout, typeset) gets a definition you can measure, a command that checks it, and a receipt you can run again. Pick a word.</p>
+  </div>
+  <div class="verbs" id="verbs" role="group" aria-label="Design words"></div>
+
+  <div class="workbench">
+    <div class="panes-wrap">
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Screen size" id="viewport">
+          <button type="button" data-v="desktop" aria-pressed="true">Desktop</button>
+          <button type="button" data-v="phone" aria-pressed="false">Phone</button>
+        </div>
+        <label class="sel">Screen state
+          <select id="phase">
+            <option value="ready">Ready</option><option value="loading">Loading</option><option value="empty">Empty</option><option value="error">Error</option><option value="success">Success</option>
+          </select>
+        </label>
+      </div>
+      <div class="panes" id="panes">
+        <figure class="pane">
+          <figcaption><span>Original</span><span class="chip" id="scoreL"></span></figcaption>
+          <div class="frame" id="frameL"><iframe title="Original demo page" src="demo/before.html" loading="eager"></iframe></div>
+        </figure>
+        <figure class="pane">
+          <figcaption><span id="rightLabel">With the checks applied</span><span class="chip" id="scoreR"></span></figcaption>
+          <div class="frame" id="frameR"><iframe title="Demo page with the selected checks applied" src="demo/before.html" loading="eager"></iframe></div>
+        </figure>
+      </div>
+    </div>
+
+    <aside class="defn" id="defn" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section class="how" id="how" aria-labelledby="h-how">
+  <h2 id="h-how">How a vague word becomes a check</h2>
+  <ol class="steps">
+    <li><span class="n">1</span><h3>The word</h3><p>“Polish it.” Every tool defines it differently, or not at all.</p></li>
+    <li><span class="n">2</span><h3>A definition</h3><p>A short list of things a machine can count: gaps on a 4px scale, text dark enough to read, buttons big enough to tap.</p></li>
+    <li><span class="n">3</span><h3>A check</h3><p>A command returns pass or fail. It works on your page, not only on ours.</p></li>
+    <li><span class="n">4</span><h3>A receipt</h3><p>The exact command, tool version and result are saved. Run it again and get the same answer, or the receipt is not valid.</p></li>
+  </ol>
+  <p class="aside">A word with no measurable definition stays in the catalog, labelled that way. It never ships as a skill.</p>
+</section>
+
+<section class="dict" id="dictionary" aria-labelledby="h-dict">
+  <h2 id="h-dict">The dictionary</h2>
+  <p class="sub" id="dictSub"></p>
+  <div class="table-wrap" tabindex="0" role="region" aria-label="Dictionary table"><table id="dictTable"><caption class="sr">Design words and what each one resolves to</caption><thead><tr><th scope="col">Word</th><th scope="col">Resolves to</th><th scope="col">What it means, measurably</th><th scope="col">Definitions found</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section class="explore" id="explore" aria-labelledby="h-exp">
+  <h2 id="h-exp">The evidence</h2>
+  <p class="sub">Every statement we audited, its tier, and where it came from. Filter, pick one, and the Sources button shows the quote.</p>
+  <div class="explore-grid">
+    <aside class="rail" aria-label="Catalog">
+      <div class="filters">
+        <label>Tier <select id="fTier"><option value="">All</option><option>enforced</option><option>measurable</option><option>subjective</option><option>process</option></select></label>
+        <label>Status <select id="fStatus"><option value="">All</option><option>verified</option><option>single-source</option><option>unverified</option></select></label>
+        <label>Surface <select id="fSurface"><option value="">All</option><option>web</option><option>mobile</option><option>saas</option><option>platform</option></select></label>
+        <label>Source <select id="fSource"><option value="">All</option></select></label>
+      </div>
+      <p class="count" id="railCount"></p>
+      <div id="catalog"></div>
+    </aside>
+    <article class="detail" id="detail" aria-live="polite"></article>
+    <aside class="lineage" aria-labelledby="h-lin">
+      <h3 id="h-lin">Who copied whom</h3>
+      <p class="small">Dots are sources. A line means “derives from”. Same colour, same root: those count as one voice.</p>
+      <div id="lineage"></div>
+    </aside>
+  </div>
+</section>
+
+<section class="export" id="export" aria-labelledby="h-exp2">
+  <h2 id="h-exp2">Export an AXL document</h2>
+  <p class="sub">Tick measurable claims in the catalog (or apply checks above), then export the evaluate and correct sections. Subjective claims cannot be exported.</p>
+  <div class="export-bar"><button type="button" class="primary" id="doExport">Build document</button><button type="button" id="copyDoc">Copy JSON</button><button type="button" id="dlDoc">Download</button><span id="exportMsg" class="small" role="status"></span></div>
+  <pre id="exportOut" role="region" tabindex="0" aria-label="AXL document"></pre>
+</section>
+</main>
+
+<footer class="foot">
+  <p id="footNote"></p>
+</footer>
+
+<div class="pin"><button type="button" class="primary" id="srcBtn" aria-haspopup="dialog">Sources</button><span id="pinText" class="small"></span></div>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden>
+  <div class="drawer-inner">
+    <div class="drawer-head"><h2 id="drawerTitle">Sources</h2><button type="button" id="drawerClose" class="ghost">Close</button></div>
+    <div class="tabs" role="tablist"><button role="tab" id="tabClaim" aria-selected="true" aria-controls="paneClaim">This claim</button><button role="tab" id="tabAll" aria-selected="false" aria-controls="paneAll">All sources</button></div>
+    <div id="paneClaim" role="tabpanel" aria-labelledby="tabClaim"></div>
+    <div id="paneAll" role="tabpanel" aria-labelledby="tabAll" hidden></div>
+  </div>
+</div>
+<script src="data/data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

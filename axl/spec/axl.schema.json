@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "axl/axl.schema.json",
+  "title": "AXL v0.1 document",
+  "description": "One JSON document per experience: describe it, evaluate it with rules, correct it with patch operations.",
+  "type": "object",
+  "required": ["axl", "describe"],
+  "additionalProperties": false,
+  "properties": {
+    "axl": {"const": "0.1"},
+    "describe": {"$ref": "#/$defs/describe"},
+    "evaluate": {"$ref": "#/$defs/evaluate"},
+    "correct": {"$ref": "#/$defs/correct"}
+  },
+  "$defs": {
+    "tier": {"enum": ["enforced", "measurable", "subjective", "process"]},
+    "describe": {
+      "type": "object", "required": ["surface", "states", "viewports"], "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "surface": {"enum": ["web", "mobile", "platform", "saas"]},
+        "tokens": {"type": "object", "additionalProperties": false, "properties": {
+          "color": {"type": "object", "additionalProperties": {"type": "string"}},
+          "type": {"type": "object", "additionalProperties": {"type": "string"}},
+          "space": {"type": "object", "additionalProperties": {"type": "string"}},
+          "motion": {"type": "object", "additionalProperties": {"type": "string"}}}},
+        "components": {"type": "array", "items": {"type": "string"}},
+        "states": {"type": "array", "items": {"enum": ["ready", "loading", "empty", "error", "success"]}, "minItems": 1},
+        "viewports": {"type": "array", "items": {"type": "string", "pattern": "^[0-9]+(x[0-9]+)?$"}, "minItems": 1}
+      }
+    },
+    "rule": {
+      "type": "object", "required": ["id", "tier", "check", "pass_criteria", "claim_ids"], "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string"}, "tier": {"$ref": "#/$defs/tier"}, "check": {"type": "string"}, "pass_criteria": {"type": "string"},
+        "tool": {"type": "string"}, "command": {"type": "string"}, "claim_ids": {"type": "array", "items": {"type": "string", "pattern": "^clm_[0-9]{4}$"}, "minItems": 1}
+      },
+      "allOf": [{"if": {"properties": {"tier": {"const": "enforced"}}}, "then": {"required": ["tool", "command"]}}]
+    },
+    "finding": {
+      "type": "object", "required": ["rule_id", "result", "evidence", "location"], "additionalProperties": false,
+      "properties": {"rule_id": {"type": "string"}, "result": {"enum": ["pass", "fail", "na"]}, "evidence": {"type": "string"}, "location": {"type": "string"}}
+    },
+    "evaluate": {"type": "object", "required": ["rules"], "additionalProperties": false, "properties": {
+      "rules": {"type": "array", "items": {"$ref": "#/$defs/rule"}}, "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}}}},
+    "op": {
+      "type": "object", "required": ["op", "target", "property", "value", "reason", "claim_id"], "additionalProperties": false,
+      "properties": {"op": {"enum": ["set", "add", "remove"]}, "target": {"type": "string"}, "property": {"type": "string"}, "value": {"type": "string"},
+                     "reason": {"type": "string"}, "claim_id": {"type": "string", "pattern": "^clm_[0-9]{4}$"}}
+    },
+    "correct": {"type": "object", "required": ["ops"], "additionalProperties": false, "properties": {
+      "ops": {"type": "array", "items": {"$ref": "#/$defs/op"}},
+      "notes": {"type": "array", "items": {"type": "string"}, "description": "Fixes that need judgment. They are notes, never ops."}}}
+  }
+}
