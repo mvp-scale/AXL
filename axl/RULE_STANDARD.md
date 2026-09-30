@@ -1,71 +1,73 @@
-# AXL Rule Standard (draft 0.1)
+# AXL Rule Standard (draft 0.2)
 
-The canonical model every AXL rule follows. Commands like "polish" are not defined here. A command is just a list of rules with chosen settings, so any two commands (anyone's "polish", your "super polish") can be compared rule by rule.
+A rule is **element + property + test**, written in the web's existing standard vocabularies. AXL adds as little vocabulary of its own as it can.
+A command like "polish" is a list of rules. Any two commands can be compared rule by rule because rules with the same element and property are the same rule.
 
-## 1. The model
+## 1. The rule
 
 ```
-Class    (fixed, 11)     Type · Color · Space & layout · Surface · Motion · Interaction & states ·
-                          Components · Access · Content & process · Performance · Agent workflow
-Rule     (open)          one general idea, true for any site           e.g. type.min-size  "Minimum text size"
-Setting  (open)          one checkable part of a rule                  e.g. type.min-size/body   body text ≥ 16px
-Evidence (append-only)   the source statements behind a setting        e.g. impeccable:ab12cd says "16px"
+<element>  <property>  <test>  [<context>]
+text:body  font-size   >= 16px
+aria:textbox font-size >= 16px  @media:narrow
+text:*     wcag:1.4.3  pass
+state:invalid  ask  "Does the message say how to fix it?"
 ```
 
-- **Class** is the readable bucket, and the list is fixed. A new class needs an explicit decision recorded in DECISIONS.md.
-- **Rules and settings are open.** Add them only when source statements call for them. Nothing is pre-generated.
-- **Evidence** links a setting to permanent quote IDs (`<source-id>:<hash of the exact text>`). It is never copied into rules.
+- **Rule ID** = `<element>/<property>` (e.g. `text:body/font-size`). Two sources asking about the same element and property are asking about the same rule; if their values differ, that is a visible disagreement, not two rules.
+- **Test**: `>= <= == between A B contains !contains pass` with a value and unit, or `ask "<yes/no question>"` when no script can decide.
+- **Context** (optional) narrows where the rule applies: a `state:` or `media:` term.
 
-## 2. What a rule must have
+## 2. Element: standard vocabularies, namespaced
 
-| Field | Must | Example |
+| Namespace | Standard | Found on a page by | Examples |
+|---|---|---|---|
+| `aria:` | WAI-ARIA 1.2 roles (W3C Recommendation, 2023); 1.3 roles when published | the accessibility tree (native HTML and explicit `role`) | `aria:button` `aria:link` `aria:textbox` `aria:heading` `aria:dialog` `aria:navigation` `aria:img` `aria:table` `aria:alert` `aria:status` `aria:tab` |
+| `text:` | Type-scale roles (Material 3: display, headline, title, body, label) + `caption`, `code` | size/weight bands of the page's own type scale, plus element hints (`h1`…, `p`, `label`, `figcaption`, `code`) | `text:display` `text:headline` `text:title` `text:body` `text:label` `text:caption` `text:code` `text:*` |
+| `ui:` | Open UI component names (W3C Community Group research) | class, `data-` and structural heuristics; weakest namespace, so each heuristic is documented | `ui:card` `ui:badge` `ui:avatar` `ui:toast` `ui:skeleton` `ui:icon` `ui:carousel` |
+| `state:` | ARIA states + CSS pseudo-classes | `:hover` `:focus-visible` `:disabled`, `aria-invalid` `aria-busy` `aria-expanded`… | `state:hover` `state:focus-visible` `state:disabled` `state:invalid` `state:busy` `state:empty` |
+| `media:` | CSS media features | emulated in the browser | `media:dark` `media:reduced-motion` `media:narrow` (≤ 390px) `media:print` |
+| `page` | the whole document | | `page` |
+| `x-<name>:` | anyone's own extension | defined by its author | `x-acme:pricing-table` |
+
+## 3. Property: standard vocabularies, namespaced
+
+| Namespace | Standard | Examples |
 |---|---|---|
-| `id` | `<class-prefix>.<kebab-name>`. No values, numbers or element names. Never renamed or reused; retired rules are marked `deprecated`, not deleted. | `type.min-size` |
-| `name` | 2–4 plain words | Minimum text size |
-| `rule` | one sentence that is true or false for **any** website | Text is at least a minimum size for its role. |
-| `class` | one of the 11 | Type |
-| `settings` | one or more | see §3 |
-| `see` | optional: another rule this one overlaps with (shown, not merged) | `access.text-scaling` |
+| (none) | CSS properties, as computed by the browser | `font-size` `line-height` `font-weight` `letter-spacing` `text-transform` `text-align` `border-radius` `box-shadow` `transition-duration` `background-image` `max-width` |
+| `wcag:` | WCAG 2.2 success criteria, run by axe where axe covers them | `wcag:1.4.3` contrast · `wcag:1.4.10` reflow · `wcag:2.4.7` focus visible · `wcag:2.5.8` target size · `wcag:3.1.1` page language |
+| `lighthouse:` | Lighthouse audit IDs | `lighthouse:cls` `lighthouse:lcp` `lighthouse:unsized-images` `lighthouse:font-display` |
+| `axl:` | **only** measures no standard defines, each defined once in `axl/measures.md` | `axl:distinct-font-sizes` `axl:distinct-font-families` `axl:distinct-hues` `axl:icon-sets` `axl:emoji-as-icons` `axl:spacing-off-scale` `axl:chars-per-line` |
+| `ask` | a yes/no question when nothing can be measured | `ask "Is there exactly one action that stands out most?"` |
 
-A rule is **one idea**. If its settings don't share the rule sentence, split the rule. If two rules have the same sentence, merge them.
+An `axl:` measure is added only when no CSS property, WCAG criterion or Lighthouse audit expresses it. Each one is implemented once and proven on Northstar: it fails on the original and passes with the demo fix.
 
-## 3. What a setting must have
+## 4. Grouping (display only)
 
-| Field | Must | Example |
-|---|---|---|
-| `id` | `<rule-id>/<aspect>`, where aspect is kebab-case and describes *what* is checked | `type.min-size/body` |
-| `applies_to` | element roles from §4 (one or more) | `[body]` |
-| `check` | `auto` (a script decides) or `ask` (a person or agent decides) | `auto` |
-| `measure` + `test` | **auto only**: a measure from §5 and a comparison with a default value | `font-size >= 16px` |
-| `question` | **ask only**: yes/no, answerable by looking at the page; YES = met | Does every error say how to fix it? |
-| `evidence` | each value sources state → quote IDs; empty only if the default comes from a named standard | `16px ← impeccable:ab12cd, wcag22:…` |
+Rules are grouped for people, never renamed:
+- **By class**, derived from the property: font and text properties → Type; colour, `wcag:1.4.3`, `axl:distinct-hues` → Color; spacing and size → Space & layout; radius, shadow, borders, `background-image` → Surface; `transition-*`, `animation-*`, `media:reduced-motion` → Motion; `state:*` → Interaction & states; `ui:*` and composite `aria:*` → Components; `wcag:*` → Access; `lighthouse:*` → Performance; `ask` with element `page` or `process` → Content & process / Agent workflow.
+- **By element**, e.g. "text:body · 4 rules".
+- **A plain label** may be shown ("Minimum body text size"); it is not an identifier.
 
-- **The default value** is the value most sources state. Other stated values stay listed, and that's how disagreements show.
-- **A command overrides values, never meanings.** "super polish" may set `type.min-size/body >= 18px`, but it can't make that setting measure something else.
+## 5. Evidence
 
-## 4. Element roles (fixed list; extend by decision)
+Every rule lists the source statements behind each stated value, as permanent quote IDs (`<source-id>:<hash of exact text>`, see `data/catalog.json`):
 
-page · body · small · caption · label · heading (h1–h6) · display · link · button · input · form · error · icon · image · media · card · surface · nav · dialog · toast · table · chart · list · code · focus · hover · active · disabled · loading · empty · motion · dark-mode · mobile · print · process (not on the page: team or agent workflow)
-
-## 5. Measures (fixed registry)
-
-An `auto` setting may only use a registered measure. Each measure is defined once, implemented once in `axl.py`, and verified on Northstar: it fails before the demo fix and passes after it.
-
-A measure entry has: `id`, what is computed, on which roles, unit, and how an element is found on any page.
-First set (from the Type pilot and the existing checks): font-size, line-height, letter-spacing, font-weight, font-family-count, font-weight-count, measure-ch, contrast, non-text-contrast, target-size, spacing-scale, radius, radius-count, shadow-count, duration, reduced-motion, distinct-hues, accent-count, gradient, emoji-icons, icon-set-count, alt-text, label, focus-visible, heading-order, lang, overflow-320, text-wrap, tabular-nums, quotes-typographic, all-caps, justify, italic, lcp, cls, font-display.
-A setting that doesn't fit a registered measure is `ask` until a measure is added. Never stretch a measure to fit.
+```
+text:body/font-size   >= 16px   ← impeccable:b3b1d9, ui-craft:f24d64, deslop:b4223e
+                      >= 14px   ← hallmark:f0d4a2, taste-skill:f282ba
+default: 16px (most statements)
+```
 
 ## 6. When a rule is accepted
 
-1. It has at least one evidence quote ID, or it cites a named standard.
-2. Every `auto` setting uses a registered measure, and its test passes the Northstar round-trip (fails on the original, passes with the demo fix).
-3. Every `ask` question is yes/no and about what is visible or observable.
-4. It shows on Northstar (the demo fix), or carries a reason it can't (behaviour, performance, process…).
-5. No other rule in any class has the same sentence (the overlap check).
+1. Element and property come from the vocabularies above; anything `x-` or `axl:` is defined in its list.
+2. It has at least one evidence quote ID, or cites the standard it comes from (e.g. a WCAG criterion).
+3. An automatic rule passes the Northstar round-trip; an `ask` rule is a yes/no question about something observable.
+4. No other rule has the same `element/property` (otherwise it is the same rule with another value).
 
 ## 7. Files
 
-- `data/rules.json`: classes, rules and settings (this standard's instances); the site, kit and CLI all read it.
-- `data/catalog.json`: every harvested statement with its permanent quote ID.
-- `data/sources_index.json`: source IDs.
-- `data/previews.json`: the Northstar demonstration per setting.
+- `data/rules.json`: every rule (element, property, default test, evidence, label)
+- `axl/measures.md`: the `axl:` measures, each with its exact definition
+- `data/catalog.json`: statements with permanent quote IDs; `data/sources_index.json`: source IDs
+- `data/previews.json`: the Northstar demonstration per rule
