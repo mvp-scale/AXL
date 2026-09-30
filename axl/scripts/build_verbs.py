@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Phase 4: build data/verbs.json. Definitions are verbatim raw slices of saved source texts. Resolution is rule-based:
-measurable  = >=1 linked public claim of tier measurable with a delta (delta cites the claim id)
-tool-backed = no measurable claim, but >=1 linked public claim names a tool candidate (not yet run)
+measurable  = >=1 linked public claim of tier measurable/enforced with a delta (and none enforced) (delta cites the claim id)
+tool-backed = >=1 linked public claim is enforced (a receipt exists for its command)
 undefined   = neither. Term list: the 18 required verbs + candidate vague terms mentioned >=3 times across saved sources."""
 import json, os, re, glob, collections
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -31,7 +31,8 @@ def definition_of(v, i):
 out = []
 for v in verbs:
     linked = [c for c in C if c["verb"] == v or (v in REQ and c["verb"] == v) or (c["legacy_id"] is None and pat(v).search(c["text"]))]
-    meas = [c for c in linked if c["tier"] == "measurable" and c["delta"]]
+    meas = [c for c in linked if c["tier"] in ("measurable", "enforced") and c["delta"]]
+    enf = [c for c in linked if c["tier"] == "enforced"]
     tool = [c for c in linked if c["tool_candidate"]]
     defs, roots_seen = [], set()
     own = f"src_impeccable-{v}"
@@ -43,17 +44,17 @@ for v in verbs:
         if r in roots_seen and len(defs) >= 1 and i != own: continue   # one definition per root keeps rebrands from padding the table
         roots_seen.add(r); defs.append({"source_id": i, "kind": S[i]["kind"], "root": r, "url": S[i]["url"], "quote": q})
         if len(defs) >= 4: break
-    res = "measurable" if meas else "tool-backed" if tool else "undefined"
+    res = "tool-backed" if enf else "measurable" if meas else "undefined"
     grams = [set(zip(*[re.findall(r"\w+", d["quote"].lower())[k:] for k in range(4)])) for d in defs]
     disagree = ("single source of definition; agreement cannot be assessed" if len(defs) < 2 else
                 "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review" if not set.intersection(*grams) else "definitions overlap textually")
     out.append({"verb": v, "mentions_across_sources": counts[v], "required": v in REQ, "definitions": defs,
         "shared_deltas": [{"claim_id": c["id"], "selector": c["delta"]["selector"], "property": c["delta"]["property"], "before": c["delta"]["before"], "after": c["delta"]["after"], "status": c["status"]} for c in meas],
-        "tool_candidates": sorted({c["tool_candidate"] for c in tool}), "linked_claim_ids": [c["id"] for c in linked],
+        "tool_candidates": sorted({c["tool_candidate"] for c in tool}), "enforced_claim_ids": [c["id"] for c in enf], "linked_claim_ids": [c["id"] for c in linked],
         "linked_tiers": dict(collections.Counter(c["tier"] for c in linked)),
         "disagreement": disagree, "resolution": res,
         "note": {"measurable": "at least one linked claim has a concrete delta; the rest of the verb stays subjective",
-                 "tool-backed": "a tool could check part of it; no tool has been run yet (Phase 5)",
+                 "tool-backed": "at least one linked claim is enforced: a command was run and has a receipt; the rest of the verb stays subjective",
                  "undefined": "no measurable definition in any fetched source; the skill must say so instead of guessing"}[res]})
 json.dump({"verbs": out}, open(f"{D}/verbs.json", "w"), indent=1, ensure_ascii=False)
 print(len(out), dict(collections.Counter(x["resolution"] for x in out)))

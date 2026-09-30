@@ -1,0 +1,61 @@
+{
+ "id": "reducedmotion-unguarded",
+ "tool": "playwright emulateMedia",
+ "version": "playwright 1.63.0",
+ "command": "node axl/tools/runners/reducedmotion.js axl/demo/fixture-motion-unguarded.html",
+ "input_hash": "141e1e1a6655d05f6be69a3d9fcd021f71de130121bdf24762c0ceeaf334987b",
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"playwright emulateMedia(reducedMotion)\",\"findings\":[{\"rule_id\":\"reduced-motion\",\"result\":\"fail\",\"evidence\":\"transition 140ms / animation 0ms under prefers-reduced-motion: reduce\",\"location\":\"button\"},{\"rule_id\":\"reduced-motion\",\"result\":\"fail\",\"evidence\":\"transition 140ms / animation 0ms under prefers-reduced-motion: reduce\",\"location\":\"button.disabled-example\"},{\"rule_id\":\"reduced-motion\",\"result\":\"fail\",\"evidence\":\"transition 140ms / animation 0ms under prefers-reduced-motion: reduce\",\"location\":\"button.nav-item\"},{\"rule_id\":\"reduced-motion\",\"result\":\"fail\",\"evidence\":\"transition 14",
+ "findings": [
+  {
+   "rule_id": "reduced-motion",
+   "result": "fail",
+   "evidence": "transition 140ms / animation 0ms under prefers-reduced-motion: reduce",
+   "location": "button"
+  },
+  {
+   "rule_id": "reduced-motion",
+   "result": "fail",
+   "evidence": "transition 140ms / animation 0ms under prefers-reduced-motion: reduce",
+   "location": "button.disabled-example"
+  },
+  {
+   "rule_id": "reduced-motion",
+   "result": "fail",
+   "evidence": "transition 140ms / animation 0ms under prefers-reduced-motion: reduce",
+   "location": "button.nav-item"
+  },
+  {
+   "rule_id": "reduced-motion",
+   "result": "fail",
+   "evidence": "transition 140ms / animation 0ms under prefers-reduced-motion: reduce",
+   "location": "button.primary"
+  },
+  {
+   "rule_id": "reduced-motion",
+   "result": "fail",
+   "evidence": "transition 140ms / animation 0ms under prefers-reduced-motion: reduce",
+   "location": "button.row-action"
+  },
+  {
+   "rule_id": "reduced-motion",
+   "result": "fail",
+   "evidence": "transition 140ms / animation 0ms under prefers-reduced-motion: reduce",
+   "location": "button.secondary"
+  },
+  {
+   "rule_id": "reduced-motion",
+   "result": "fail",
+   "evidence": "transition 140ms / animation 0ms under prefers-reduced-motion: reduce",
+   "location": "button.switch"
+  },
+  {
+   "rule_id": "reduced-motion",
+   "result": "fail",
+   "evidence": "transition 140ms / animation 0ms under prefers-reduced-motion: reduce",
+   "location": "button.tip"
+  }
+ ],
+ "role": "before",
+ "ran_at": "2026-09-30T01:18:15+00:00"
+}

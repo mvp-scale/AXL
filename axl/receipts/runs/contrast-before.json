@@ -1,0 +1,25 @@
+{
+ "id": "contrast-before",
+ "tool": "wcag-contrast",
+ "version": "axl contrast.js (WCAG 2.x relative luminance)",
+ "command": "node axl/tools/runners/contrast.js '#8a97a8,#f5f6f8,4.5' '#67758b,#f5f6f8,4.5'",
+ "input_hash": null,
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"wcag-contrast (relative luminance, WCAG 2.x)\",\"findings\":[{\"rule_id\":\"wcag-1.4.3\",\"result\":\"fail\",\"evidence\":\"#8a97a8 on #f5f6f8 = 2.75:1 (min 4.5:1)\",\"location\":\"#8a97a8 on #f5f6f8\"},{\"rule_id\":\"wcag-1.4.3\",\"result\":\"fail\",\"evidence\":\"#67758b on #f5f6f8 = 4.32:1 (min 4.5:1)\",\"location\":\"#67758b on #f5f6f8\"}]}",
+ "findings": [
+  {
+   "rule_id": "wcag-1.4.3",
+   "result": "fail",
+   "evidence": "#8a97a8 on #f5f6f8 = 2.75:1 (min 4.5:1)",
+   "location": "#8a97a8 on #f5f6f8"
+  },
+  {
+   "rule_id": "wcag-1.4.3",
+   "result": "fail",
+   "evidence": "#67758b on #f5f6f8 = 4.32:1 (min 4.5:1)",
+   "location": "#67758b on #f5f6f8"
+  }
+ ],
+ "role": "before",
+ "ran_at": "2026-09-30T01:18:14+00:00"
+}

@@ -193,6 +193,18 @@
         "string",
         "null"
       ]
+    },
+    "receipts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "discriminates": {
+      "type": [
+        "boolean",
+        "null"
+      ]
     }
   }
 }

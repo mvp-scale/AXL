@@ -1,0 +1,1 @@
+{"name":"axl-tools","private":true,"version":"0.1.0","description":"Pinned tool versions used for AXL receipts","dependencies":{"@axe-core/playwright":"4.13.0","@google/design.md":"0.4.0","@playwright/test":"1.63.0","lighthouse":"13.5.0","playwright":"1.63.0","stylelint":"17.15.0"}}

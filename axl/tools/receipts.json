@@ -1,0 +1,139 @@
+{
+ "receipts": [
+  {
+   "id": "axe-before-1440",
+   "tool": "axe-core",
+   "command": "node axl/tools/runners/axe.js axl/demo/before.html 1440",
+   "inputs": [
+    "axl/demo/before.html"
+   ],
+   "role": "before"
+  },
+  {
+   "id": "axe-before-375",
+   "tool": "axe-core",
+   "command": "node axl/tools/runners/axe.js axl/demo/before.html 375",
+   "inputs": [
+    "axl/demo/before.html"
+   ],
+   "role": "before"
+  },
+  {
+   "id": "lighthouse-before",
+   "tool": "lighthouse",
+   "command": "node axl/tools/runners/lighthouse.js axl/demo/before.html",
+   "inputs": [
+    "axl/demo/before.html"
+   ],
+   "role": "before"
+  },
+  {
+   "id": "stylelint-before",
+   "tool": "stylelint",
+   "command": "node axl/tools/runners/stylelint.js axl/demo/css/before.css",
+   "inputs": [
+    "axl/demo/css/before.css",
+    "axl/tools/stylelint.config.json"
+   ],
+   "role": "before"
+  },
+  {
+   "id": "designmd-before",
+   "tool": "design.md lint",
+   "command": "node axl/tools/runners/designmd.js axl/demo/DESIGN.before.md",
+   "inputs": [
+    "axl/demo/DESIGN.before.md"
+   ],
+   "role": "before"
+  },
+  {
+   "id": "axe-after-1440",
+   "tool": "axe-core",
+   "command": "node axl/tools/runners/axe.js axl/demo/after.html 1440",
+   "inputs": [
+    "axl/demo/after.html"
+   ],
+   "role": "after"
+  },
+  {
+   "id": "axe-after-375",
+   "tool": "axe-core",
+   "command": "node axl/tools/runners/axe.js axl/demo/after.html 375",
+   "inputs": [
+    "axl/demo/after.html"
+   ],
+   "role": "after"
+  },
+  {
+   "id": "lighthouse-after",
+   "tool": "lighthouse",
+   "command": "node axl/tools/runners/lighthouse.js axl/demo/after.html",
+   "inputs": [
+    "axl/demo/after.html"
+   ],
+   "role": "after"
+  },
+  {
+   "id": "stylelint-after",
+   "tool": "stylelint",
+   "command": "node axl/tools/runners/stylelint.js axl/demo/css/after.css",
+   "inputs": [
+    "axl/demo/css/after.css",
+    "axl/tools/stylelint.config.json"
+   ],
+   "role": "after"
+  },
+  {
+   "id": "designmd-after",
+   "tool": "design.md lint",
+   "command": "node axl/tools/runners/designmd.js axl/demo/DESIGN.after.md",
+   "inputs": [
+    "axl/demo/DESIGN.after.md"
+   ],
+   "role": "after"
+  },
+  {
+   "id": "contrast-before",
+   "tool": "wcag-contrast",
+   "command": "node axl/tools/runners/contrast.js '#8a97a8,#f5f6f8,4.5' '#67758b,#f5f6f8,4.5'",
+   "inputs": [],
+   "role": "before"
+  },
+  {
+   "id": "contrast-after",
+   "tool": "wcag-contrast",
+   "command": "node axl/tools/runners/contrast.js '#566579,#f5f6f8,4.5' '#4b596c,#f5f6f8,4.5'",
+   "inputs": [],
+   "role": "after"
+  },
+  {
+   "id": "reducedmotion-unguarded",
+   "tool": "playwright emulateMedia",
+   "command": "node axl/tools/runners/reducedmotion.js axl/demo/fixture-motion-unguarded.html",
+   "inputs": [
+    "axl/demo/fixture-motion-unguarded.html"
+   ],
+   "role": "before"
+  },
+  {
+   "id": "reducedmotion-guarded",
+   "tool": "playwright emulateMedia",
+   "command": "node axl/tools/runners/reducedmotion.js axl/demo/fixture-motion-guarded.html",
+   "inputs": [
+    "axl/demo/fixture-motion-guarded.html"
+   ],
+   "role": "after"
+  },
+  {
+   "id": "visual-screenshot",
+   "tool": "playwright toHaveScreenshot",
+   "command": "node axl/tools/runners/visual.js",
+   "inputs": [
+    "axl/demo/before.html",
+    "axl/demo/after.html",
+    "axl/tools/visual/__snap__/before-1440.png"
+   ],
+   "role": "pair"
+  }
+ ]
+}

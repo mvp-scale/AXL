@@ -36,6 +36,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0108",
     "clm_0109",
@@ -90,6 +91,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0123",
     "clm_0124",
@@ -150,6 +152,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0138",
     "clm_0139",
@@ -196,6 +199,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0153",
     "clm_0154",
@@ -242,6 +246,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0161",
     "clm_0162",
@@ -302,6 +307,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0176",
     "clm_0177",
@@ -345,6 +351,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0188",
     "clm_0189",
@@ -391,6 +398,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0203",
     "clm_0204",
@@ -451,6 +459,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0218",
     "clm_0219",
@@ -506,6 +515,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0228",
     "clm_0229",
@@ -566,6 +576,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0243",
     "clm_0244",
@@ -626,6 +637,7 @@
    "tool_candidates": [
     "stylelint"
    ],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0254",
     "clm_0255",
@@ -687,6 +699,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0269",
     "clm_0270",
@@ -735,6 +748,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0279",
     "clm_0280",
@@ -791,6 +805,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0290",
     "clm_0291",
@@ -877,6 +892,11 @@
     "axe-core color-contrast",
     "stylelint"
    ],
+   "enforced_claim_ids": [
+    "clm_0302",
+    "clm_0303",
+    "clm_0305"
+   ],
    "linked_claim_ids": [
     "clm_0302",
     "clm_0303",
@@ -895,12 +915,12 @@
     "clm_0316"
    ],
    "linked_tiers": {
-    "measurable": 3,
+    "enforced": 3,
     "subjective": 12
    },
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
-   "resolution": "measurable",
-   "note": "at least one linked claim has a concrete delta; the rest of the verb stays subjective"
+   "resolution": "tool-backed",
+   "note": "at least one linked claim is enforced: a command was run and has a receipt; the rest of the verb stays subjective"
   },
   {
    "verb": "extract",
@@ -938,6 +958,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0317",
     "clm_0318",
@@ -998,6 +1019,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [
     "clm_0332",
     "clm_0333",
@@ -1036,6 +1058,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "single source of definition; agreement cannot be assessed",
@@ -1064,6 +1087,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "definitions overlap textually",
@@ -1106,6 +1130,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1148,6 +1173,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1190,6 +1216,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1232,6 +1259,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1260,6 +1288,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1295,6 +1324,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1323,6 +1353,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1358,6 +1389,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1400,6 +1432,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1442,6 +1475,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1484,6 +1518,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1526,6 +1561,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -1547,6 +1583,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "single source of definition; agreement cannot be assessed",
@@ -1589,6 +1626,7 @@
    ],
    "shared_deltas": [],
    "tool_candidates": [],
+   "enforced_claim_ids": [],
    "linked_claim_ids": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",

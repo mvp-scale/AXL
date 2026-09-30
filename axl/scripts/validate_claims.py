@@ -35,7 +35,11 @@ def check():
                 if "+" not in LIN[s["source_id"]]: roots.add(LIN[s["source_id"]])
             if sorted(roots) != sorted(c["independent_roots"]): errs.append((c["id"], "independent_roots stale"))
         if c["tier"] == "measurable" and not c["delta"]: errs.append((c["id"], "measurable without delta"))
-        if c["tier"] == "enforced" and not (c["enforcement"] and c["enforcement"].get("command")): errs.append((c["id"], "enforced without command"))
+        if c["tier"] == "enforced":
+            if not (c["enforcement"] and c["enforcement"].get("command")): errs.append((c["id"], "enforced without command"))
+            for rid in c.get("receipts", []):
+                if not os.path.exists(f"{ROOT}/axl/receipts/runs/{rid}.json"): errs.append((c["id"], "enforced without receipt", rid))
+            if not c.get("receipts"): errs.append((c["id"], "enforced without receipts"))
         if c["tier"] == "subjective" and c["delta"]: errs.append((c["id"], "subjective with delta"))
     return claims, errs
 if __name__ == "__main__":

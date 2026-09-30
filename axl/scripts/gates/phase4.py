@@ -8,9 +8,9 @@ for x in V:
     if x["resolution"] not in ("measurable", "tool-backed", "undefined"): errs.append(("bad resolution", x["verb"]))
     for d in x["shared_deltas"]:
         c = C.get(d["claim_id"])
-        if not c or c["tier"] != "measurable" or not c["delta"] or c["delta"]["property"] != d["property"]: errs.append(("delta not backed by claim", x["verb"], d["claim_id"]))
+        if not c or c["tier"] not in ("measurable", "enforced") or not c["delta"] or c["delta"]["property"] != d["property"]: errs.append(("delta not backed by claim", x["verb"], d["claim_id"]))
     if x["resolution"] == "measurable" and not x["shared_deltas"]: errs.append(("measurable w/o deltas", x["verb"]))
-    if x["resolution"] == "tool-backed" and not x["tool_candidates"]: errs.append(("tool-backed w/o tool", x["verb"]))
+    if x["resolution"] == "tool-backed" and not x["enforced_claim_ids"]: errs.append(("tool-backed w/o tool", x["verb"]))
     for d in x["definitions"]:
         p = f"{ROOT}/axl/receipts/sources/{d['source_id']}.txt"
         if not os.path.exists(p) or d["quote"] not in open(p, encoding="utf-8").read(): errs.append(("definition not verbatim", x["verb"], d["source_id"]))
