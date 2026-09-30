@@ -15,14 +15,18 @@ for x in out["runs"]:
     t = f"{x['width']}px/{x['scheme']}"
     for k, msg in (("console_errors", "console"), ("external", "external requests"), ("axe", "axe")):
         if x[k]: errs.append((t, msg, x[k][:3]))
-    if not x["cycles_without_input"]: errs.append((t, "nothing changes in the first 2 s"))
-    if not x["preview_visible"]: errs.append((t, "the page preview is not on the first screen"))
-    if x["words_above_preview"] > 16: errs.append((t, "too many words before the preview", x["words_above_preview"]))
+    if not x["walks_without_input"]: errs.append((t, "nothing changes in the first 2 s"))
+    if not x["preview_visible"]: errs.append((t, "the demo is not on the first screen"))
+    if x["words_above_preview"] > 24: errs.append((t, "too many words above the demo", x["words_above_preview"]))
+    if not (x["peek"] and x["unpeek"]): errs.append((t, "hold Shift does not show the original"))
+    if x["word_tiles"] < 20 or x["source_tiles"] < 20: errs.append((t, "pickers too small", x["word_tiles"], x["source_tiles"]))
+    if x["multi_words"] != "2 words": errs.append((t, "multi-select words", x["multi_words"]))
+    if not x["word_walk"].startswith("\u201c"): errs.append((t, "walking words", x["word_walk"]))
     a1 = x["after_one_tap"]
-    if not (a1["mine"] == 1 and a1["mode"] == "true" and a1["facts"]): errs.append((t, "one tap does not build your word", a1))
+    if not (a1["mine"] == 1 and a1["state"].startswith("Your")): errs.append((t, "one tap does not build your word", a1))
     if not x["saved"] or not x["sheet_closed"]: errs.append((t, "save sheet"))
-    if not (x["peek"] and x["unpeek"]): errs.append((t, "hold Shift does not flash the original"))
-    if x["words"] < 20 or x["chips"] < 45 or not x["switch_ok"]: errs.append((t, "landscape too small", x["words"], x["chips"]))
+    if x["chips"] < 45: errs.append((t, "board too small", x["chips"]))
     if x["overflow"] > 1: errs.append((t, "horizontal overflow", x["overflow"]))
 if errs: print("PHASE 7 Site: FAIL", json.dumps(errs)[:1200]); sys.exit(1)
-print(f"PHASE 7 Site: PASS — one file; the page changes on its own within 2 s ({out['runs'][-1]['words_above_preview']} words above the preview); hold Shift flashes the original; one tap on the map starts your word; word picker works; save gives a checkable definition; {out['runs'][-1]['chips']} tweaks, {out['runs'][-1]['words']} words; no network, no overflow, axe clean at 390/1440 light and dark")
+r = out["runs"][-1]
+print(f"PHASE 7 Site: PASS — one file; walks on its own inside 2 s ({r['lit_during_walk']} tweaks lit); words and sources pickers ({r['word_tiles']} x {r['source_tiles']}) multi-select and walk; hold Shift shows the original; one tap builds your word; save gives a checkable file; no network, no overflow, axe clean at 390/1440 light and dark")

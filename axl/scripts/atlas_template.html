@@ -5,18 +5,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>AXL Verb Studio</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%278%27 y=%278%27 width=%2716%27 height=%2716%27 rx=%274%27 fill=%27%23d1175e%27/%3E%3C/svg%3E">
-<meta name="description" content="Design words have no shared meaning. See each source's version as a subway line, and build your own version a tool can check.">
+<meta name="description" content="Pick design words and sources, press play, and watch what each one actually changes on the same page.">
 <style>
-/* Concept: a transit map for one word. Each source is a line leaving the same station ("polish"); tweaks are stops; where lines share a stop, that is agreement.
-   Left: the page under the knife. Hold Shift to flash the original. Bottom: your line, being built. */
+/* Concept: two identical pickers (words, sources) drive one stage. Play walks through either list; the page changes and the tweak board lights up below. */
 :root{
   --bg:#f7f7f5;--panel:#ffffff;--ink:#131316;--muted:#5b5d66;--line:#dfe0e4;--soft:#eeeff1;
   --mine:#d1175e;--on-mine:#ffffff;--ok:#0b7a4b;
-  --s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#008300;--s6:#4a3aa7;--s7:#e34948;--sx:#9a9ca5;
+  --c1:#2a78d6;--c2:#eb6834;--c3:#1baf7a;--c4:#eda100;--c5:#008300;--c6:#4a3aa7;--c7:#e34948;--cx:#8b8e97;
   --sans:"Inter Tight","Helvetica Neue",Arial,system-ui,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#008300;--s6:#9085e9;--s7:#e66767;--sx:#6b6e78;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#008300;--s6:#9085e9;--s7:#e66767;--sx:#6b6e78;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--c1:#3987e5;--c2:#d95926;--c3:#199e70;--c4:#c98500;--c5:#008300;--c6:#9085e9;--c7:#e66767;--cx:#6b6e78;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--c1:#3987e5;--c2:#d95926;--c3:#199e70;--c4:#c98500;--c5:#008300;--c6:#9085e9;--c7:#e66767;--cx:#6b6e78;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 var(--sans);-webkit-font-smoothing:antialiased}
 button,input{font:inherit;color:inherit}
@@ -24,95 +23,86 @@ button{cursor:pointer;background:none;border:0;padding:0}
 :focus-visible{outline:3px solid var(--mine);outline-offset:2px;border-radius:6px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:1px 5px;background:var(--panel)}
-.app{min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr auto;padding-inline:clamp(12px,2vw,24px)}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:clamp(12px,2.4vw,28px)}
 
-/* top */
-.top{display:flex;align-items:center;gap:clamp(12px,2vw,28px);padding-block:14px 10px;flex-wrap:wrap;position:relative}
-.wordbtn{display:inline-flex;align-items:baseline;gap:10px;font-weight:800;letter-spacing:-.04em;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1;border-radius:10px;padding:2px 6px 4px 2px}
-.wordbtn:hover{background:var(--soft)}
-.wordbtn svg{width:22px;height:22px;color:var(--muted);align-self:center}
-.claim{font-size:clamp(1.05rem,1.9vw,1.45rem);font-weight:700;letter-spacing:-.02em;color:var(--muted)}
-.claim b{color:var(--ink)}
-.wpop{position:absolute;left:0;top:calc(100% - 2px);z-index:30;width:min(640px,calc(100vw - 24px));background:var(--panel);border-radius:14px;box-shadow:0 0 0 1px var(--line),0 24px 60px -20px rgba(0,0,0,.4);padding:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
-.wpop[hidden]{display:none}
-.wpop p{grid-column:1/-1;margin:0 0 4px;font-size:.8rem;color:var(--muted)}
-.wp{min-height:44px;text-align:left;padding:6px 10px;border-radius:9px;display:flex;flex-direction:column;justify-content:center;background:var(--soft)}
-.wp b{font-size:.98rem;letter-spacing:-.01em}.wp span{font:.72rem var(--mono);color:var(--muted)}
-.wp.multi{background:var(--ink);color:var(--bg)}.wp.multi span{color:inherit;opacity:.75}
-.wp[aria-current="true"]{box-shadow:0 0 0 2px var(--mine)}
+/* controls */
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding-block:16px 10px;position:relative}
+.pick{display:inline-flex;align-items:stretch;border-radius:16px;background:var(--panel);box-shadow:0 0 0 1px var(--line);position:relative}
+.pbtn{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:6px 14px 8px;min-height:64px;border-radius:16px 0 0 16px;text-align:left}
+.pbtn:hover{background:var(--soft)}
+.pbtn small{font:700 .66rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pbtn b{font-size:clamp(1.4rem,2.6vw,2rem);font-weight:800;letter-spacing:-.03em;line-height:1.05;display:flex;align-items:center;gap:8px;max-width:48vw;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.pbtn b i{width:12px;height:12px;border-radius:50%;flex:none;background:var(--cur,var(--ink))}
+.play{width:56px;border-left:1px solid var(--line);border-radius:0 16px 16px 0;display:grid;place-items:center}
+.play:hover{background:var(--soft)}
+.play svg{width:22px;height:22px}
+.play[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.times{font:800 1.4rem var(--sans);color:var(--muted)}
+.nums{display:flex;gap:18px;margin-left:auto;flex-wrap:wrap}
+.nums div{display:flex;flex-direction:column;align-items:flex-end}
+.nums b{font-size:1.5rem;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.nums span{font-size:.72rem;color:var(--muted)}
+.nums .zero b{color:var(--mine)}
+.pop{position:absolute;left:0;top:calc(100% + 6px);z-index:30;width:min(680px,calc(100vw - 24px));background:var(--panel);border-radius:16px;box-shadow:0 0 0 1px var(--line),0 24px 60px -20px rgba(0,0,0,.4);padding:12px}
+.pop[hidden]{display:none}
+.pop .ph{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:.82rem;color:var(--muted)}
+.pop .ph button{min-height:32px;padding:0 10px;border-radius:99px;border:1.5px solid var(--line);font-weight:600;font-size:.8rem;color:var(--ink)}
+.pop .ph .done{margin-left:auto;background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;max-height:min(60svh,460px);overflow:auto}
+.tile{min-height:48px;text-align:left;padding:6px 10px;border-radius:10px;background:var(--soft);display:flex;gap:8px;align-items:center;border:2px solid transparent}
+.tile i{width:12px;height:12px;border-radius:50%;background:var(--c);flex:none;opacity:.35}
+.tile b{font-size:.95rem;display:block}.tile span{font:.7rem var(--mono);color:var(--muted)}
+.tile[aria-pressed="true"]{border-color:var(--c);background:var(--panel)}.tile[aria-pressed="true"] i{opacity:1}
 
-/* bench */
-.bench{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(340px,1fr);gap:clamp(12px,1.8vw,24px);min-height:0;align-items:start}
-.left{display:flex;flex-direction:column;gap:8px;min-width:0;position:sticky;top:8px}
-.versions{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:thin;padding-bottom:3px}.ver{flex:none}
-.ver{min-height:36px;padding:0 12px 0 8px;border-radius:99px;border:1.5px solid var(--line);font-weight:600;font-size:.88rem;display:inline-flex;align-items:center;gap:7px;position:relative;overflow:hidden;background:var(--panel)}
-.ver i{width:14px;height:6px;border-radius:3px;background:var(--c,var(--ink))}
-.ver kbd{border:0;background:transparent;padding:0;color:var(--muted);font-size:.7rem}
-.ver[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}.ver[aria-pressed="true"] kbd{color:inherit}
-.ver.mine{--c:var(--mine)}.ver.mine[aria-pressed="true"]{background:var(--mine);border-color:var(--mine);color:var(--on-mine)}
-.ver .bar{position:absolute;left:0;bottom:0;height:3px;background:var(--mine);width:0}
-.ver[aria-pressed="true"] .bar{animation:fill 1.8s linear forwards}
-.stopped .ver .bar{display:none}
-@keyframes fill{to{width:100%}}
-.frame{position:relative;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line),0 24px 60px -36px rgba(0,0,0,.45);aspect-ratio:980/760;width:100%;max-height:calc(100svh - 190px);user-select:none}
+/* stage */
+.stage{position:relative}
+.frame{position:relative;border-radius:14px;overflow:hidden;background:var(--soft);box-shadow:0 0 0 1px var(--line),0 30px 80px -40px rgba(0,0,0,.45);aspect-ratio:980/760;width:100%;height:clamp(340px,calc(100svh - 400px),760px);margin-inline:auto;aspect-ratio:auto;user-select:none;outline:3px solid var(--cur,transparent);outline-offset:-3px}
 .frame iframe{position:absolute;left:0;top:0;width:980px;height:760px;border:0;transform-origin:0 0;pointer-events:none}
-.frame{outline:3px solid var(--fc,transparent);outline-offset:-3px}
 #pv{transition:opacity .16s ease}
-.frame.peeking #pv{opacity:0}
-.frame.peeking{--fc:var(--ink)}
-.state{position:absolute;left:12px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;font:700 .85rem var(--sans);padding:7px 12px 7px 10px;border-radius:99px;background:#131316;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);pointer-events:none}
-.state::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--fc,#fff)}
+.frame.peeking #pv{opacity:0}.frame.peeking{--cur:var(--ink)}
+.state{position:absolute;left:12px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;font:700 .9rem var(--sans);padding:8px 14px 8px 11px;border-radius:99px;background:#131316;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);pointer-events:none;max-width:60%}
+.state::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--cur,#fff);flex:none}
+.state span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .frame.peeking .state{background:#fff;color:#131316;box-shadow:0 0 0 2px #131316}.frame.peeking .state::before{background:#131316}
-.hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);user-select:none;touch-action:none}
+.hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);touch-action:none}
 .hold kbd{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 .frame.peeking .hold{background:#fff;color:#131316}.frame.peeking .hold kbd{color:#131316;border-color:#131316}
-@media (hover:none){.hold kbd{display:none}}
-.hint{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
-.says{min-height:2.6em;font-size:.95rem;color:var(--muted);margin:0}
+.steps{display:flex;gap:3px;margin:0 0 8px;min-height:4px}
+.steps i{flex:1;height:4px;border-radius:2px;background:var(--line)}
+.steps i.on{background:var(--cur,var(--ink))}.steps i.done{background:var(--muted);opacity:.5}
+.says{min-height:1.5em;margin:8px 2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.98rem;color:var(--muted)}
 .says q{color:var(--ink);font-weight:600}.says a{color:inherit;font:.78rem var(--mono)}
 
-/* the map */
-.map{background:var(--panel);border-radius:14px;box-shadow:0 0 0 1px var(--line);padding:14px 16px 10px;min-width:0}
-.maph{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.maph h2{margin:0;font-size:1.15rem;letter-spacing:-.02em}
-.nums{display:flex;gap:14px;margin:8px 0 10px;flex-wrap:wrap}
-.nums div{display:flex;flex-direction:column}
-.nums b{font-size:1.6rem;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
-.nums span{font-size:.75rem;color:var(--muted)}
-.nums .zero b{color:var(--mine)}
-.metro{overflow-y:auto;max-height:calc(100svh - 300px);margin-inline:-6px}
-.metro svg{display:block;width:100%;height:auto}
-.metro text{font-family:var(--sans);fill:var(--ink)}
-.metro .cat{font:700 10px var(--mono);letter-spacing:.1em;fill:var(--muted);text-transform:uppercase}
-.metro .row{cursor:pointer}
-.metro .row .hit{fill:transparent}
-.metro .row:hover .hit,.metro .row:focus-visible .hit{fill:var(--soft)}
-.metro .row:focus-visible{outline:none}
-.metro .row.mine .lbl{fill:var(--mine);font-weight:700}
-.metro .ck{fill:var(--ok);font-size:11px}
-.metro .ln{transition:opacity .25s}
-.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:.75rem;color:var(--muted);margin-top:8px}
-.legend svg{vertical-align:-3px}
-details.all{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
-details.all summary{cursor:pointer;font-weight:600;min-height:40px;display:flex;align-items:center}
-.allcats{display:grid;gap:8px;margin-top:6px}
-.allcats h3{margin:0;font:700 .68rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.allcats div{display:flex;flex-wrap:wrap;gap:4px}
-.tw{min-height:32px;padding:0 9px;border-radius:8px;font-size:.82rem;background:var(--soft);border:1.5px solid transparent}
-.tw[aria-pressed="true"]{background:var(--mine);color:var(--on-mine)}
+/* board */
+.boardh{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:14px 0 8px;flex-wrap:wrap}
+.boardh h2{margin:0;font-size:1.3rem;letter-spacing:-.02em}
+.boardh span{font-size:.82rem;color:var(--muted)}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;align-items:start}
+.col{background:var(--panel);border-radius:14px;box-shadow:0 0 0 1px var(--line);padding:10px 10px 8px}
+.col h3{margin:2px 4px 6px;font:700 .68rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between}
+.tw{width:100%;min-height:30px;display:flex;align-items:center;gap:8px;padding:4px 6px;border-radius:8px;text-align:left;font-size:.86rem;color:var(--muted);transition:background .25s,color .25s}
+.tw:hover{background:var(--soft)}
+.tw .d{width:9px;height:9px;border-radius:50%;background:var(--line);flex:none;transition:background .25s,transform .25s}
+.tw .nm{flex:1}
+.tw .ck{color:var(--ok);font-size:.75rem}
+.tw .ct{font:700 .7rem var(--mono);color:var(--muted);min-width:2.6em;text-align:right}
+.tw.lit{color:var(--ink);font-weight:650}
+.tw.lit .d{background:var(--cur,var(--ink));transform:scale(1.35)}
+.tw.any .d{background:var(--muted)}
+.tw.lit.any .d{background:var(--cur,var(--ink))}
+.tw[aria-pressed="true"] .nm{color:var(--mine);font-weight:750}
+.tw[aria-pressed="true"] .nm::after{content:" ●";font-size:.7em}
 
 /* tray */
-.tray{position:sticky;bottom:0;z-index:5;margin-top:12px;background:var(--panel);border-radius:14px 14px 0 0;box-shadow:0 -1px 0 var(--line),0 -16px 40px -30px rgba(0,0,0,.4);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:14px;align-items:center;flex-wrap:wrap}
-.tray .name{display:flex;align-items:center;gap:6px;font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
-.tray input{width:9.5em;border:0;border-bottom:2px solid var(--mine);background:transparent;font-weight:800;letter-spacing:-.02em;padding:2px 0}
+.tray{position:sticky;bottom:0;z-index:5;margin-top:18px;background:var(--panel);border-radius:14px 14px 0 0;box-shadow:0 -1px 0 var(--line),0 -16px 40px -30px rgba(0,0,0,.4);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.tray .name{display:flex;align-items:center;gap:6px;font-weight:800;font-size:1.2rem;letter-spacing:-.02em}
+.tray input{width:8.5em;border:0;border-bottom:2px solid var(--mine);background:transparent;font-weight:800;letter-spacing:-.02em;padding:2px 0}
 .tray .facts{font-size:.9rem;color:var(--muted);flex:1;min-width:220px}
 .tray .facts b{color:var(--ink)}.tray .facts .m{color:var(--mine);font-weight:700}
 .btn{min-height:44px;padding:0 18px;border-radius:99px;font-weight:700;border:1.5px solid var(--line)}
 .btn.small{min-height:34px;padding:0 12px}
 .btn.primary{background:var(--mine);color:var(--on-mine);border-color:var(--mine)}
 .btn:disabled{opacity:.4;cursor:default}
-
-/* sheet */
 .sheet{position:fixed;inset:auto 0 0 0;margin:auto;z-index:40;width:min(680px,100%);background:var(--panel);border-radius:18px 18px 0 0;box-shadow:0 -20px 60px rgba(0,0,0,.35);padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));transform:translateY(105%);transition:transform .35s cubic-bezier(.2,.9,.25,1);max-height:88svh;overflow:auto}
 .sheet.open{transform:none}.sheet:not(.open){visibility:hidden;transition:transform .35s,visibility 0s .35s}
 .sheet h2{margin:0 0 4px;font-size:1.4rem;letter-spacing:-.02em}
@@ -120,64 +110,66 @@ details.all summary{cursor:pointer;font-weight:600;min-height:40px;display:flex;
 pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overflow:auto;font:.8rem/1.45 var(--mono);max-height:260px}
 .row2{display:flex;gap:8px;flex-wrap:wrap}
 .scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:39;opacity:0;pointer-events:none;transition:opacity .3s}.scrim.open{opacity:1;pointer-events:auto}
-
-/* below */
-.below{max-width:1100px;margin:0 auto;padding:64px clamp(12px,2vw,24px) 80px;display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.below{padding-block:64px 80px;display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
 .below h2{font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-.03em;margin:0}
 .below .sub{color:var(--muted);margin:0}
 .vague{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
 .vague blockquote{margin:0;background:var(--panel);border-radius:12px;box-shadow:0 0 0 1px var(--line);padding:12px 14px;font-size:.92rem}
 .vague cite{display:block;margin-top:6px;font:.72rem var(--mono);color:var(--muted);font-style:normal}
-.foot{color:var(--muted);font:.8rem var(--mono);text-align:center;padding-bottom:40px}
-@media (max-width:900px){
-  .bench{grid-template-columns:minmax(0,1fr)}.left{position:static}.frame{max-height:none}.metro{max-height:none}
-  .tray{gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px))}.tray .name{font-size:1.05rem}.tray .facts{min-width:0;flex-basis:100%;order:3;font-size:.82rem}.tray .btn{min-height:40px;padding:0 14px}.tray input{width:6.5em}.tray .facts .btn{min-height:32px}
-  .versions{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}.ver{flex:none}.hint .keys{display:none}
-}
-@media (hover:none){.hint .keys{display:none}}
-@media (hover:hover){.hint .touch{display:none}}
+.foot{color:var(--muted);font:.8rem var(--mono);text-align:center}
+@media (max-width:760px){.frame{height:auto;aspect-ratio:980/760}.says{white-space:normal}.nums{margin-left:0}.nums div{align-items:flex-start}.times{display:none}.frame{max-height:none}.hold kbd{display:none}.state{max-width:52%}
+  .tray{gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px))}.tray .facts{flex-basis:100%;order:3;font-size:.82rem;min-width:0}.tray input{width:6.5em}.tray .btn{min-height:40px;padding:0 14px}}
+@media (hover:none){.hold kbd{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
-<div class="app">
-  <header class="top">
-    <button class="wordbtn" id="wordBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="wordPop"><span id="wordTxt">polish</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="sr">choose another word</span></button>
-    <div class="claim" id="claim"></div>
-    <div class="wpop" id="wordPop" hidden></div>
+<div class="wrap">
+  <header class="bar">
+    <div class="pick" id="pickW">
+      <button class="pbtn" type="button" data-axis="w" aria-haspopup="true" aria-expanded="false"><small>Words</small><b><i></i><span class="lab"></span></b></button>
+      <button class="play" type="button" data-play="w" aria-pressed="false" aria-label="Walk through the words"></button>
+      <div class="pop" hidden data-pop="w"></div>
+    </div>
+    <span class="times" aria-hidden="true">×</span>
+    <div class="pick" id="pickS">
+      <button class="pbtn" type="button" data-axis="s" aria-haspopup="true" aria-expanded="false"><small>Sources</small><b><i></i><span class="lab"></span></b></button>
+      <button class="play" type="button" data-play="s" aria-pressed="false" aria-label="Walk through the sources"></button>
+      <div class="pop" hidden data-pop="s"></div>
+    </div>
+    <div class="nums" id="nums" aria-live="polite"></div>
   </header>
 
-  <div class="bench">
-    <section class="left" aria-label="The page">
-      <div class="versions" id="versions" role="group" aria-label="Whose version is shown"></div>
-      <div class="frame" id="frame"><iframe id="pv0" title="Demo page, original" tabindex="-1" aria-hidden="true"></iframe><iframe id="pv" title="Demo page with the selected version applied" tabindex="-1"></iframe><span class="state" id="state"></span><button class="hold" id="hold" type="button" aria-label="Hold to see the original"><kbd>Shift</kbd> hold to see the original</button></div>
-      <div class="hint"><span class="keys"><kbd>1</kbd>–<kbd>9</kbd> switch source · <kbd>Y</kbd> yours · changed parts flash when you switch</span></div>
-      <p class="says" id="says" aria-live="polite"></p>
-    </section>
+  <section class="stage" aria-label="The demo page">
+    <div class="steps" id="steps" aria-hidden="true"></div>
+    <div class="frame" id="frame">
+      <iframe id="pv0" title="Demo page, original" tabindex="-1" aria-hidden="true"></iframe>
+      <iframe id="pv" title="Demo page with the current selection applied" tabindex="-1"></iframe>
+      <span class="state" id="state"><span id="stateTxt"></span></span>
+      <button class="hold" id="hold" type="button" aria-label="Hold to see the original"><kbd>Shift</kbd> hold for original</button>
+    </div>
+    <p class="says" id="says" aria-live="polite"></p>
+  </section>
 
-    <section class="map" aria-labelledby="mapTitle">
-      <div class="maph"><h2 id="mapTitle"></h2><span style="font-size:.8rem;color:var(--muted)">tap a stop to add it to yours</span></div>
-      <div class="nums" id="nums"></div>
-      <div class="metro" id="metro"></div>
-      <div class="legend"><span><svg width="34" height="14" aria-hidden="true"><line x1="7" y1="7" x2="27" y2="7" stroke="var(--ink)" stroke-width="2"/><circle cx="7" cy="7" r="5" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/><circle cx="27" cy="7" r="5" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/></svg> shared stop: those sources agree</span><span><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="var(--panel)" stroke="var(--muted)" stroke-width="2.5"/></svg> one source only</span><span><svg width="30" height="10" aria-hidden="true"><line x1="2" y1="5" x2="28" y2="5" stroke="var(--muted)" stroke-width="4" stroke-dasharray="2 6" stroke-linecap="round"/></svg> copies another source</span><span style="color:var(--ok)">✓ a tool checks it</span></div>
-      <details class="all"><summary id="allSum"></summary><div class="allcats" id="allcats"></div></details>
-    </section>
-  </div>
+  <section aria-labelledby="bh">
+    <div class="boardh"><h2 id="bh">Every tweak, lighting up</h2><span id="bsub"></span></div>
+    <div class="board" id="board"></div>
+  </section>
 
   <footer class="tray" aria-label="Your word">
-    <div class="name">my <input id="myName" aria-label="Name of your version" value="polish" maxlength="24"></div>
+    <div class="name">my <input id="myName" aria-label="Name of your word" value="polish" maxlength="24"></div>
     <div class="facts" id="facts" aria-live="polite"></div>
     <button class="btn" id="clear" type="button">Clear</button>
     <button class="btn primary" id="save" type="button">Save my word</button>
   </footer>
-</div>
 
-<main class="below">
-  <h2 id="bigNo"></h2>
-  <p class="sub" id="vagueSub"></p>
-  <div class="vague" id="vague"></div>
-  <p class="foot" id="foot"></p>
-</main>
+  <main class="below">
+    <h2 id="bigNo"></h2>
+    <p class="sub" id="vagueSub"></p>
+    <div class="vague" id="vague"></div>
+    <p class="foot" id="foot"></p>
+  </main>
+</div>
 
 <div class="scrim" id="scrim"></div>
 <aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" inert>
@@ -195,160 +187,151 @@ const D = /*DATA*/null;
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const T = Object.fromEntries(D.tweaks.map(t => [t.id, t])), CAT = D.categories;
-  const LC = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)', 'var(--s5)', 'var(--s6)', 'var(--s7)']; const lc = i => LC[i] || 'var(--sx)';
-  const st = { word: 'polish', v: 0, mine: new Set(), mode: 'theirs', auto: true, peek: false };
+  const T = Object.fromEntries(D.tweaks.map(t => [t.id, t]));
+  const PAL = ['var(--c1)', 'var(--c2)', 'var(--c3)', 'var(--c4)', 'var(--c5)', 'var(--c6)', 'var(--c7)'];
+  const LIST = { w: D.words, s: D.sources };
+  const color = (axis, name) => PAL[LIST[axis].indexOf(name)] || 'var(--cx)';
+  const PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>', PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
+  const st = { sel: { w: new Set(['polish']), s: new Set(D.sources) }, walk: null, idx: 0, mine: new Set(), peek: false, mineView: false };
   let timer = null;
-  const W = () => D.words.find(w => w.word === st.word), VS = () => W().versions, cur = () => VS()[Math.min(st.v, VS().length - 1)];
 
-  /* ---- word picker (custom, never a native select) ---- */
-  const pop = $('#wordPop'), wbtn = $('#wordBtn');
-  const words = D.words.slice().sort((a, b) => b.versions.length - a.versions.length || a.word.localeCompare(b.word));
-  function renderPop() { pop.innerHTML = `<p>${D.words.length} words from ${D.stats.sources} sources. Dark ones are defined by more than one source.</p>` + words.map(w => `<button class="wp${w.versions.length > 1 ? ' multi' : ''}" type="button" data-w="${esc(w.word)}" aria-current="${w.word === st.word}"><b>${esc(w.word)}</b><span>${w.versions.length} source${w.versions.length > 1 ? 's' : ''} · ${new Set(w.versions.flatMap(v => v.tweaks)).size} tweaks</span></button>`).join(''); }
-  const openPop = on => { pop.hidden = !on; wbtn.setAttribute('aria-expanded', on); if (on) { renderPop(); (pop.querySelector('[aria-current="true"]') || pop.querySelector('.wp')).focus(); } };
-  wbtn.addEventListener('click', () => openPop(pop.hidden));
-  pop.addEventListener('click', e => { const b = e.target.closest('.wp'); if (!b) return; setWord(b.dataset.w); openPop(false); wbtn.focus(); });
-  document.addEventListener('click', e => { if (!pop.hidden && !e.target.closest('#wordPop,#wordBtn')) openPop(false); });
-  function setWord(w) { stopAuto(); st.word = w; st.v = 0; st.mode = 'theirs'; if (!st.mine.size) $('#myName').value = w; $('#wordTxt').textContent = w; render(); }
+  /* the entries that match the selection, optionally narrowed to the current walk step */
+  const inSel = e => st.sel.w.has(e.word) && st.sel.s.has(e.src);
+  const walkItems = axis => LIST[axis].filter(n => st.sel[axis].has(n) && D.entries.some(e => inSel(e) && (axis === 'w' ? e.word : e.src) === n));
+  function current() {
+    if (st.mineView) return { label: `Your ${$('#myName').value || 'word'}`, color: 'var(--mine)', tweaks: [...st.mine], entries: [] };
+    let es = D.entries.filter(inSel), label, col = 'var(--ink)';
+    if (st.walk) { const items = walkItems(st.walk), n = items[st.idx % Math.max(1, items.length)]; if (n) { es = es.filter(e => (st.walk === 'w' ? e.word : e.src) === n); col = color(st.walk, n);
+      const other = st.walk === 'w' ? st.sel.s : st.sel.w, one = other.size === 1 ? [...other][0] : null;
+      label = st.walk === 'w' ? `“${n}”${one ? ` · ${one}` : ` · ${new Set(es.map(e => e.src)).size} sources`}` : `${n}${one ? ` · “${one}”` : ` · ${new Set(es.map(e => e.word)).size} words`}`; } }
+    if (!label) label = `${st.sel.w.size === 1 ? `“${[...st.sel.w][0]}”` : `${st.sel.w.size} words`} · ${st.sel.s.size === D.sources.length ? 'all sources' : st.sel.s.size === 1 ? [...st.sel.s][0] : `${st.sel.s.size} sources`}`;
+    return { label, color: col, tweaks: [...new Set(es.flatMap(e => e.tweaks))], entries: es };
+  }
 
-  /* ---- the page: original underneath, the chosen version on top ---- */
+  /* ---- pickers: two of the same thing ---- */
+  function renderPick(axis) {
+    const sel = st.sel[axis], all = LIST[axis], p = $(`#pick${axis === 'w' ? 'W' : 'S'}`);
+    const lab = sel.size === all.length ? `all ${all.length}` : sel.size === 1 ? [...sel][0] : sel.size === 0 ? 'none' : `${sel.size} ${axis === 'w' ? 'words' : 'sources'}`;
+    p.querySelector('.lab').textContent = lab;
+    p.querySelector('.pbtn b i').style.setProperty('--cur', sel.size === 1 ? color(axis, [...sel][0]) : 'var(--ink)');
+    const pl = p.querySelector('.play'); pl.innerHTML = st.walk === axis ? PAUSE : PLAY; pl.setAttribute('aria-pressed', st.walk === axis);
+    const pop = p.querySelector('.pop');
+    if (!pop.hidden) pop.innerHTML = `<div class="ph"><span>${axis === 'w' ? 'Design words' : 'Who defines them'} · pick any</span><button type="button" data-all="1">All</button><button type="button" data-none="1">None</button><button type="button" class="done">Done</button></div><div class="tiles">${all.map(n => {
+      const es = D.entries.filter(e => (axis === 'w' ? e.word : e.src) === n), k = axis === 'w' ? new Set(es.map(e => e.src)).size : new Set(es.map(e => e.word)).size;
+      return `<button class="tile" type="button" data-n="${esc(n)}" style="--c:${color(axis, n)}" aria-pressed="${sel.has(n)}"><i></i><span style="display:block"><b>${esc(n)}</b><span>${k} ${axis === 'w' ? 'source' : 'word'}${k === 1 ? '' : 's'}</span></span></button>`; }).join('')}</div>`;
+  }
+  $$('.pick').forEach(p => {
+    const axis = p.querySelector('.pbtn').dataset.axis, pop = p.querySelector('.pop'), btn = p.querySelector('.pbtn');
+    btn.addEventListener('click', () => { const open = pop.hidden; closePops(); pop.hidden = !open; btn.setAttribute('aria-expanded', open); renderPick(axis); if (open) (pop.querySelector('.tile') || pop).focus(); });
+    pop.addEventListener('click', e => {
+      const t = e.target.closest('.tile'); stopWalk();
+      if (t) { const n = t.dataset.n, s = st.sel[axis]; s.has(n) ? s.delete(n) : s.add(n); }
+      if (e.target.closest('[data-all]')) LIST[axis].forEach(n => st.sel[axis].add(n));
+      if (e.target.closest('[data-none]')) st.sel[axis].clear();
+      if (e.target.closest('.done')) { closePops(); btn.focus(); }
+      st.mineView = false; render(true);
+    });
+    p.querySelector('.play').addEventListener('click', () => { st.walk === axis ? stopWalk() : startWalk(axis); render(true); });
+  });
+  const closePops = () => $$('.pop').forEach(p => { p.hidden = true; p.parentNode.querySelector('.pbtn').setAttribute('aria-expanded', 'false'); });
+  document.addEventListener('click', e => { if (e.target.isConnected && !e.target.closest('.pick')) closePops(); });
+
+  /* ---- walking ---- */
+  function startWalk(axis) { stopWalk(); st.walk = axis; st.idx = 0; st.mineView = false; if (!reduced) timer = setTimeout(step, 1900); }
+  function step() { if (!st.walk) return; st.idx = (st.idx + 1) % Math.max(1, walkItems(st.walk).length); render(false); timer = setTimeout(step, 1900); }
+  function stopWalk() { clearTimeout(timer); timer = null; st.walk = null; }
+
+  /* ---- the page: original underneath, the selection on top ---- */
   const pv = $('#pv'), pv0 = $('#pv0'), frame = $('#frame');
   pv.srcdoc = D.before; pv0.srcdoc = D.before;
-  const fit = () => { const s = `scale(${frame.clientWidth / D.frame.width})`; pv.style.transform = s; pv0.style.transform = s; };
+  const fit = () => { const sc = Math.min(frame.clientWidth / D.frame.width, frame.clientHeight / D.frame.height), dx = (frame.clientWidth - D.frame.width * sc) / 2, s = `translateX(${dx}px) scale(${sc})`; pv.style.transform = s; pv0.style.transform = s; };
   new ResizeObserver(fit).observe(frame);
-  const cssOf = ids => [...ids].map(i => T[i] && T[i].css).filter(Boolean).join('\n');
+  const cssOf = ids => ids.map(i => T[i] && T[i].css).filter(Boolean).join('\n');
   const selsOf = css => [...new Set([...css.replace(/@media[^{]*\{/g, '').matchAll(/([^{}]+)\{[^{}]*\}/g)].flatMap(m => m[1].split(',')).map(s => s.replace(/::?[a-z-]+(\([^)]*\))?/g, '').trim()).filter(s => s && s !== '*' && !/^(html|body)$/.test(s)))];
-  const shownSet = () => st.mode === 'orig' ? new Set() : st.mode === 'mine' ? st.mine : new Set(cur().tweaks);
-  let flashT = null, lastCss = null;
-  const post = (f, css, hl) => { try { f.contentWindow.postMessage({ type: 'lab-recipe', css, highlight: hl }, '*'); } catch (e) {} };
-  function paint(flash) {
-    const css = cssOf(shownSet());
-    const hl = flash && !reduced && css ? selsOf(css).map(s => `${s}`).join(',') + '{outline:2px dashed rgba(209,23,94,.6)!important;outline-offset:1px}' : '';
-    post(pv, css, hl); lastCss = css;
-    clearTimeout(flashT); if (hl) flashT = setTimeout(() => post(pv, css, ''), 1100);
-    const v = cur(), mine = st.mode === 'mine', idx = VS().indexOf(v);
-    frame.style.setProperty('--fc', mine ? 'var(--mine)' : lc(idx));
-    $('#state').textContent = st.peek ? 'Original' : mine ? `Your ${$('#myName').value || 'word'}` : `${v.src}'s ${st.word}`;
+  const post = (css, hl) => { try { pv.contentWindow.postMessage({ type: 'lab-recipe', css, highlight: hl }, '*'); } catch (e) {} };
+  let flashT = null;
+  function paint(cur, flash) {
+    const css = cssOf(cur.tweaks), hl = flash && !reduced && css ? selsOf(css).join(',') + '{outline:2px dashed rgba(209,23,94,.6)!important;outline-offset:1px}' : '';
+    post(css, hl); clearTimeout(flashT); if (hl) flashT = setTimeout(() => post(css, ''), 1100);
   }
-  pv.addEventListener('load', () => { fit(); paint(false); }); pv0.addEventListener('load', fit);
-
-  /* ---- compare: hold Shift or the button; the version fades away to the original underneath ---- */
-  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#state').textContent = on ? 'Original' : ''; paint(!on); };
+  pv.addEventListener('load', () => { fit(); render(false); }); pv0.addEventListener('load', fit);
+  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (!on) paint(current(), true); };
   addEventListener('keydown', e => {
     if (e.target.closest && e.target.closest('input')) return;
-    if (e.key === 'Shift') { stopAuto(); peek(true); return; }
-    if (e.key === 'Escape') { if (!pop.hidden) { openPop(false); wbtn.focus(); } return; }
-    const n = +e.key; if (n >= 1 && n <= Math.min(9, VS().length) && !e.metaKey && !e.ctrlKey) { stopAuto(); st.mode = 'theirs'; st.v = n - 1; render(true); }
-    if (e.key === 'y' || e.key === 'Y') { stopAuto(); st.mode = 'mine'; render(true); }
+    if (e.key === 'Shift') { stopWalk(); renderPicks(); peek(true); }
+    if (e.key === 'Escape') { closePops(); if ($('#sheet').classList.contains('open')) closeSheet(); }
+    if (e.key === 'y' || e.key === 'Y') { stopWalk(); st.mineView = true; render(true); }
   });
   addEventListener('keyup', e => { if (e.key === 'Shift') peek(false); });
   addEventListener('blur', () => peek(false));
   const hold = $('#hold');
-  hold.addEventListener('pointerdown', e => { e.preventDefault(); stopAuto(); peek(true); hold.setPointerCapture(e.pointerId); });
+  hold.addEventListener('pointerdown', e => { e.preventDefault(); stopWalk(); renderPicks(); peek(true); hold.setPointerCapture(e.pointerId); });
   ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(ev => hold.addEventListener(ev, () => peek(false)));
-  hold.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); stopAuto(); peek(true); } });
+  hold.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); peek(true); } });
   hold.addEventListener('keyup', e => { if (e.key === ' ' || e.key === 'Enter') peek(false); });
 
-  /* ---- versions row ---- */
-  function renderVersions() {
-    $('#versions').innerHTML = VS().map((v, i) => `<button class="ver" type="button" data-i="${i}" style="--c:${lc(i)}" aria-pressed="${st.mode === 'theirs' && st.v === i}"><i></i>${esc(v.src)}${i < 9 ? `<kbd>${i + 1}</kbd>` : ''}<span class="bar"></span></button>`).join('')
-      + `<button class="ver mine" type="button" data-i="mine" aria-pressed="${st.mode === 'mine'}"><i></i>yours<kbd>Y</kbd></button>`;
-  }
-  $('#versions').addEventListener('click', e => { const b = e.target.closest('.ver'); if (!b) return; stopAuto(); if (b.dataset.i === 'mine') st.mode = 'mine'; else { st.mode = 'theirs'; st.v = +b.dataset.i; } render(true); });
-
-  /* ---- the subway map ---- */
-  function renderMap() {
-    const vs = VS(), lines = vs.map((v, i) => ({ name: v.src, color: lc(i), dash: v.kind === 'derivative', set: new Set(v.tweaks), active: st.mode === 'theirs' && st.v === i }));
-    if (st.mine.size) lines.push({ name: 'yours', color: 'var(--mine)', set: st.mine, active: st.mode === 'mine', mine: true });
-    const ids = [...new Set(lines.flatMap(l => [...l.set]))].filter(i => T[i]);
-    const byCat = CAT.map(c => ({ c, s: ids.filter(i => T[i].category === c).sort((a, b) => lines.filter(l => l.set.has(b)).length - lines.filter(l => l.set.has(a)).length || T[a].name.localeCompare(T[b].name)) })).filter(x => x.s.length);
-    const LANE = lines.length <= 6 ? 22 : Math.max(10, Math.floor(150 / lines.length)), X0 = 20, nL = lines.length, LX = X0 + (nL - 1) * LANE + 26, ROW = 28, CATH = 24, W = 460;
-    const x = i => X0 + i * LANE; let y = 58; const rows = [];
-    byCat.forEach(g => { rows.push({ cat: g.c, y: y + 16 }); y += CATH; g.s.forEach(id => { rows.push({ id, y: y + ROW / 2 }); y += ROW; }); });
-    const H = y + 16, anyActive = lines.some(l => l.active);
-    const last = lines.map(l => { let m = 58; rows.forEach(r => { if (r.id && l.set.has(r.id)) m = r.y; }); return m; });
-    let s = '';
-    // origin station: the word, all lines leave from here
-    s += `<rect x="${x(0) - 11}" y="12" width="${(nL - 1) * LANE + 22}" height="22" rx="11" fill="var(--ink)"/><text x="${LX}" y="28" style="font-weight:800;font-size:17px;letter-spacing:-.02em">${esc(st.word)}</text>`;
-    lines.forEach((l, i) => { const op = anyActive && !l.active ? .22 : 1;
-      s += `<g class="ln" opacity="${op}"><line x1="${x(i)}" y1="23" x2="${x(i)}" y2="${last[i]}" stroke="${l.color}" stroke-width="${LANE < 16 ? 4 : 6}" stroke-linecap="round"${l.dash ? ' stroke-dasharray="2 6"' : ''}/><circle cx="${x(i)}" cy="${last[i]}" r="7" fill="${l.color}"/></g>`; });
-    rows.forEach(r => {
-      if (r.cat) { s += `<text class="cat" x="${LX}" y="${r.y}">${esc(r.cat)}</text>`; return; }
-      const t = T[r.id], on = lines.map((l, i) => l.set.has(r.id) ? i : -1).filter(i => i >= 0), mine = st.mine.has(r.id), theirs = on.filter(i => !lines[i].mine);
-      let mark;
-      if (on.length > 1) mark = `<line x1="${x(on[0])}" y1="${r.y}" x2="${x(on[on.length - 1])}" y2="${r.y}" stroke="var(--ink)" stroke-width="2.5"/>` + on.map(i => `<circle cx="${x(i)}" cy="${r.y}" r="${Math.min(6.5, LANE * .4)}" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.5"/>`).join('');
-      else mark = `<circle cx="${x(on[0])}" cy="${r.y}" r="${Math.min(5.5, LANE * .38)}" fill="var(--panel)" stroke="${lines[on[0]].color}" stroke-width="3"/>`;
-      const agree = theirs.length > 1 ? ` <tspan style="font:700 10px var(--mono)" fill="var(--muted)">${theirs.length}/${vs.length}</tspan>` : '';
-      s += `<g class="row${mine ? ' mine' : ''}" role="button" tabindex="0" aria-pressed="${mine}" data-id="${esc(r.id)}" aria-label="${esc(t.name)}, asked by ${theirs.length} of ${vs.length} sources${t.check ? ', a tool checks it' : ''}"><rect class="hit" x="0" y="${r.y - ROW / 2 + 1}" width="${W}" height="${ROW - 2}" rx="6"/>${mark}<text class="lbl" x="${LX}" y="${r.y + 4.5}" font-size="13.5">${esc(t.name)}${t.check ? ' <tspan class="ck">✓</tspan>' : ''}${agree}</text></g>`;
-    });
-    $('#metro').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="group" aria-label="Subway map: each source's line through the tweaks it asks for">${s}</svg>`;
-    // headline numbers: the lack of a standard, counted
-    const union = new Set(vs.flatMap(v => v.tweaks)), shared = [...union].filter(i => vs.filter(v => v.tweaks.includes(i)).length > 1).length, all = [...union].filter(i => vs.every(v => v.tweaks.includes(i))).length;
-    $('#mapTitle').textContent = vs.length > 1 ? `${vs.length} definitions of “${st.word}”` : `How ${vs[0].src} defines “${st.word}”`;
-    const indep = new Set(vs.map(v => v.derives_from || v.src)).size;
-    $('#nums').innerHTML = `<div><b>${vs.length}</b><span>definition${vs.length > 1 ? 's' : ''}</span></div>` + (vs.length > 1 ? `<div><b>${indep}</b><span>independent authors</span></div>` : '') + `<div><b>${union.size}</b><span>different tweaks</span></div>` + (vs.length > 1 ? `<div><b>${shared}</b><span>shared by 2+</span></div><div class="${all ? '' : 'zero'}"><b>${all}</b><span>shared by all</span></div>` : '');
-  }
-  const toggle = id => { stopAuto(); st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mode = 'mine'; render(true); };
-  $('#metro').addEventListener('click', e => { const r = e.target.closest('.row'); if (r) toggle(r.dataset.id); });
-  $('#metro').addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { const r = e.target.closest('.row'); if (r) { e.preventDefault(); toggle(r.dataset.id); requestAnimationFrame(() => { const n = $(`#metro .row[data-id="${r.dataset.id}"]`); if (n) n.focus(); }); } } });
-
-  /* every other tweak, one tap away but out of the way */
-  $('#allcats').innerHTML = CAT.map(c => { const ts = D.tweaks.filter(t => t.category === c); return ts.length ? `<h3>${esc(c)}</h3><div>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false">${esc(t.name)}</button>`).join('')}</div>` : ''; }).join('');
-  $('#allcats').addEventListener('click', e => { const b = e.target.closest('.tw'); if (b) toggle(b.dataset.id); });
+  /* ---- the board: every tweak, once ---- */
+  $('#board').innerHTML = D.categories.map(c => { const ts = D.tweaks.filter(t => t.category === c).sort((a, b) => D.entries.filter(e => e.tweaks.includes(b.id)).length - D.entries.filter(e => e.tweaks.includes(a.id)).length); return ts.length ? `<div class="col"><h3><span>${esc(c)}</span><span data-cc="${esc(c)}"></span></h3>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false"><span class="d"></span><span class="nm">${esc(t.name)}</span>${t.check ? '<span class="ck" title="a tool checks it">✓</span>' : ''}<span class="ct"></span></button>`).join('')}</div>` : ''; }).join('');
+  $('#board').addEventListener('click', e => { const b = e.target.closest('.tw'); if (!b) return; stopWalk(); const id = b.dataset.id; st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mineView = st.mine.size > 0; render(true); });
 
   /* ---- your word ---- */
-  const allVersions = D.words.flatMap(w => w.versions.map(v => ({ ...v, word: w.word }))).filter(v => v.tweaks.length);
   const jac = (a, b) => { const B = new Set(b); let i = 0; a.forEach(x => { if (B.has(x)) i++; }); const u = new Set([...a, ...b]).size; return u ? i / u : 0; };
   function facts() {
-    const n = st.mine.size, ck = [...st.mine].filter(i => T[i].check).length, name = $('#myName').value.trim() || 'word';
-    if (!n) { $('#facts').innerHTML = `Tap stops on the map to build <b>your</b> ${esc(name)}, or <button class="btn small" id="startFrom" type="button">start from ${esc(cur().src)}'s</button>`; return; }
-    const near = allVersions.map(v => ({ v, s: jac([...st.mine], v.tweaks) })).sort((a, b) => b.s - a.s).slice(0, 2).filter(x => x.s > 0);
-    $('#facts').innerHTML = `<b>${n}</b> tweak${n > 1 ? 's' : ''} · <b>${ck}</b> a tool can check · nearest named words: ${near.length ? near.map(x => `<span class="m">${esc(x.v.word)}</span> (${esc(x.v.src)}) ${Math.round(x.s * 100)}%`).join(', ') : 'none'}`;
+    const n = st.mine.size, ck = [...st.mine].filter(i => T[i].check).length;
+    if (!n) { $('#facts').innerHTML = `Tap any tweak on the board to build <b>your</b> word, or <button class="btn small" id="startFrom" type="button">start from what's on screen</button>`; return; }
+    const near = D.entries.filter(e => e.tweaks.length).map(e => ({ e, s: jac([...st.mine], e.tweaks) })).sort((a, b) => b.s - a.s).slice(0, 2).filter(x => x.s > 0);
+    $('#facts').innerHTML = `<b>${n}</b> tweak${n > 1 ? 's' : ''} · <b>${ck}</b> a tool can check · nearest: ${near.length ? near.map(x => `<span class="m">${esc(x.e.word)}</span> (${esc(x.e.src)}) ${Math.round(x.s * 100)}%`).join(', ') : 'nothing named'}`;
   }
-  $('#facts').addEventListener('click', e => { if (e.target.id === 'startFrom') { stopAuto(); cur().tweaks.forEach(i => st.mine.add(i)); st.mode = 'mine'; render(); } });
-  $('#myName').addEventListener('input', facts);
-  $('#clear').addEventListener('click', () => { st.mine.clear(); st.mode = 'theirs'; render(); });
+  $('#facts').addEventListener('click', e => { if (e.target.id === 'startFrom') { const c = current(); stopWalk(); c.tweaks.forEach(i => st.mine.add(i)); st.mineView = true; render(true); } });
+  $('#myName').addEventListener('input', () => { facts(); if (st.mineView) $('#stateTxt').textContent = current().label; });
+  $('#clear').addEventListener('click', () => { st.mine.clear(); st.mineView = false; render(true); });
 
+  const renderPicks = () => { renderPick('w'); renderPick('s'); };
   function render(flash) {
-    const v = cur(), nv = VS().length;
-    paint(!!flash); renderVersions(); renderMap();
-    $('#claim').innerHTML = nv > 1 ? `<b>Same word.</b> ${nv} definitions, ${nv} different pages.` : `Only <b>${esc(v.src)}</b> uses this word.`;
-    $('#says').innerHTML = st.mode === 'mine' ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.`
-      : `${esc(v.src)}: ${v.quote ? `<q>${esc(v.quote)}</q>` : `${v.tweaks.length} tweaks from ${v.n || 0} statements`} <a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">source</a>`;
-    $$('#allcats .tw').forEach(b => b.setAttribute('aria-pressed', st.mine.has(b.dataset.id)));
-    $('#allSum').textContent = `All ${D.tweaks.length} tweaks from every word (${st.mine.size} in yours)`;
-    $('#save').disabled = !st.mine.size;
-    facts();
+    const cur = current(); frame.style.setProperty('--cur', cur.color); document.documentElement.style.setProperty('--cur', cur.color);
+    if (!st.peek) { paint(cur, flash); $('#stateTxt').textContent = cur.label; }
+    renderPicks();
+    // walk progress
+    const items = st.walk ? walkItems(st.walk) : []; $('#steps').innerHTML = items.map((_, i) => `<i class="${i === st.idx % items.length ? 'on' : i < st.idx % items.length ? 'done' : ''}"></i>`).join('');
+    // numbers for the whole selection: the lack of a standard, counted
+    const sel = D.entries.filter(inSel), union = new Set(sel.flatMap(e => e.tweaks)), n = sel.length;
+    const cnt = id => sel.filter(e => e.tweaks.includes(id)).length, allShared = n > 1 ? [...union].filter(i => cnt(i) === n).length : null;
+    const indep = new Set(sel.map(e => e.derives_from || e.src)).size;
+    $('#nums').innerHTML = `<div><b>${n}</b><span>definitions</span></div><div><b>${indep}</b><span>independent</span></div><div><b>${union.size}</b><span>tweaks</span></div>` + (allShared != null ? `<div class="${allShared ? '' : 'zero'}"><b>${allShared}</b><span>shared by all</span></div>` : '');
+    // board
+    const lit = new Set(cur.tweaks);
+    $$('#board .tw').forEach(b => { const id = b.dataset.id, c = cnt(id); b.classList.toggle('lit', lit.has(id)); b.classList.toggle('any', c > 0); b.setAttribute('aria-pressed', st.mine.has(id)); b.querySelector('.ct').textContent = c ? `${c}/${n}` : ''; });
+    $('#bsub').textContent = `${lit.size} lit for ${cur.label.replace(/[“”]/g, '')} · counts show how many of the ${n} selected definitions ask for each`;
+    // quote
+    const e = cur.entries.length === 1 ? cur.entries[0] : cur.entries.find(x => x.quote);
+    $('#says').innerHTML = st.mineView ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.` : e && e.quote ? `${esc(e.src)} on “${esc(e.word)}”: <q>${esc(e.quote)}</q> <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">source</a>` : `${cur.tweaks.length} tweaks from ${cur.entries.length} definitions.`;
+    $('#save').disabled = !st.mine.size; facts();
   }
-
-  /* ---- the hook: cycle through everyone's version until the visitor touches anything ---- */
-  function tick() { if (!st.auto) return; st.v = (st.v + 1) % VS().length; st.mode = 'theirs'; render(false); timer = setTimeout(tick, 1800); }
-  function stopAuto() { if (!st.auto) return; st.auto = false; clearTimeout(timer); document.body.classList.add('stopped'); }
-  if (!reduced && VS().length > 1) timer = setTimeout(tick, 1800); else stopAuto();
 
   /* ---- save ---- */
   const sheet = $('#sheet'), scrim = $('#scrim');
   const slug = s => (s || 'word').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'word';
-  function doc() { const name = $('#myName').value.trim() || st.word; return { axl_verb: '0.1', name, based_on: st.word, tweaks: [...st.mine],
+  function doc() { const name = $('#myName').value.trim() || 'word'; return { axl_verb: '0.1', name, tweaks: [...st.mine],
     checks: [...st.mine].filter(i => T[i].check).map(i => ({ tweak: i, check: T[i].check })), judgment: [...st.mine].filter(i => !T[i].check).map(i => T[i].name),
-    closest: allVersions.map(v => ({ word: v.word, source: v.src, overlap: +jac([...st.mine], v.tweaks).toFixed(2) })).sort((a, b) => b.overlap - a.overlap).slice(0, 3) }; }
+    closest: D.entries.map(e => ({ word: e.word, source: e.src, overlap: +jac([...st.mine], e.tweaks).toFixed(2) })).sort((a, b) => b.overlap - a.overlap).slice(0, 3) }; }
   $('#save').addEventListener('click', () => { const d = doc(), f = slug(d.name) + '.axl.json';
     $('#sheetTitle').textContent = `my ${d.name}`; $('#json').textContent = JSON.stringify(d, null, 2); $('#cmd').textContent = `python3 axl/axl.py check ${f} yourpage.html`;
     sheet.inert = false; sheet.classList.add('open'); scrim.classList.add('open'); $('#dl').focus(); });
-  const close = () => { sheet.classList.remove('open'); scrim.classList.remove('open'); sheet.inert = true; $('#save').focus(); };
-  $('#close').addEventListener('click', close); scrim.addEventListener('click', close); addEventListener('keydown', e => { if (e.key === 'Escape' && sheet.classList.contains('open')) close(); });
+  const closeSheet = () => { sheet.classList.remove('open'); scrim.classList.remove('open'); sheet.inert = true; $('#save').focus(); };
+  $('#close').addEventListener('click', closeSheet); scrim.addEventListener('click', closeSheet);
   const copy = (t, b) => { const o = b.textContent, ok = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = o, 1200); }; try { navigator.clipboard.writeText(t).then(ok, ok); } catch (e) { ok(); } };
   $('#cp').addEventListener('click', e => copy($('#json').textContent, e.currentTarget));
   $('#cpc').addEventListener('click', e => copy($('#cmd').textContent, e.currentTarget));
   $('#dl').addEventListener('click', () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([$('#json').textContent], { type: 'application/json' })); a.download = slug(doc().name) + '.axl.json'; document.body.appendChild(a); a.click(); a.remove(); });
 
-  /* ---- below: the part nobody can check ---- */
   $('#bigNo').textContent = `${D.stats.sources} sources. ${D.stats.words} words. ${D.stats.tweaks} tweaks. No standard.`;
-  $('#vagueSub').textContent = `${D.stats.vague} of ${D.stats.statements} statements name no concrete change at all. These are the ones an agent has to guess.`;
+  $('#vagueSub').textContent = `${D.stats.vague} statements name no concrete change at all. These are the ones an agent has to guess.`;
   $('#vague').innerHTML = D.vague.slice(0, 9).map(v => `<blockquote>${esc(v.text)}<cite>${esc(v.src)} · “${esc(v.word)}”${v.verified ? '' : ' · paraphrase, not verified'}</cite></blockquote>`).join('');
-  $('#foot').textContent = `Statements from ${D.stats.sources} public sources. Statement-to-tweak mapping is model-assisted and open to challenge. Checks run with python3 axl/axl.py.`;
+  $('#foot').textContent = 'Quotes are verbatim from fetched pages. Which tweaks a statement asks for is model-assisted and open to challenge. Checks run with python3 axl/axl.py.';
 
-  render();
+  // open: polish, all sources, walking through the sources
+  if (!reduced) startWalk('s');
+  render(false);
   window.axlReady = true;
 })();
 </script>

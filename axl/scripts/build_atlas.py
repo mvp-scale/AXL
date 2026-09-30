@@ -51,12 +51,31 @@ if os.path.exists(VSF):
 for vs in words.values():
     for v in vs: v["tweaks"] = [t for t in v["tweaks"] if t in tweaks]
     vs.sort(key=lambda v: (v.get("kind") == "derivative", -len(v["tweaks"])))
-srcs = sorted({v["src"] for vs in words.values() for v in vs})
+CANON = [("better-web-ui", "better-web-ui"), ("Agent Skills Finder", "Agent Skills Finder"), ("openclaw", "OpenClaw"), ("ui-final-polish", "ui-final-polish"),
+         ("make-interfaces-feel-better", "Feel Better"), ("better-ui skill", "UI Skills"), ("alvarovillalbaa", "Villalba"), ("ce-polish", "Compound Eng."),
+         ("UI Craft", "UI Craft"), ("ui-craft", "UI Craft"), ("Impeccable", "Impeccable"), ("IxDF", "IxDF"), ("awesome-design-skills", "Awesome Design"),
+         ("taste-skill", "Taste-Skill"), ("mcouthon", "mcouthon"), ("design-overhaul", "design-overhaul")]
+def canon(n):
+    for k, v in CANON:
+        if k.lower() in n.lower(): return v
+    return n
+entries = {}
+for w, vs in words.items():
+    for v in vs:
+        key = (w, canon(v["src"]))
+        e = entries.setdefault(key, {"word": w, "src": key[1], "tweaks": [], "quote": v.get("quote"), "url": v["url"], "kind": v.get("kind") or "primary", "derives_from": v.get("derives_from")})
+        for t in v["tweaks"]:
+            if t in tweaks and t not in e["tweaks"]: e["tweaks"].append(t)
+        if not e["quote"] and v.get("quote"): e["quote"] = v["quote"]
+entries = list(entries.values())
+isverb = lambda w: re.fullmatch(r"[a-z]+", w) is not None
+srcs = sorted({e["src"] for e in entries}, key=lambda s: (-sum(e["src"] == s for e in entries), s))
+wl = sorted({e["word"] for e in entries if isverb(e["word"])}, key=lambda w: (-sum(e["word"] == w for e in entries), w))
 data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/before.html", encoding="utf-8").read(),
-  "categories": TW["categories"], "tweaks": list(tweaks.values()), "words": [{"word": w, "versions": vs} for w, vs in words.items()], "sources": srcs,
-  "vague": vague[:40], "stats": {"statements": len(claims), "sources": len(srcs), "words": len(words), "tweaks": len(tweaks), "vague": len(vague),
-  "checkable": sum(1 for t in tweaks.values() if t.get("check")), "shared3": sum(1 for t in tweaks.values() if len(t["srcs"]) >= 3)}}
+  "categories": TW["categories"], "tweaks": [{k: t[k] for k in ("id", "name", "category", "check", "css")} for t in tweaks.values()],
+  "entries": entries, "words": wl, "sources": srcs, "vague": vague[:40],
+  "stats": {"statements": len(claims) + len(entries), "sources": len(srcs), "words": len(wl), "tweaks": len(tweaks), "vague": len(vague)}}
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 html = open(f"{A}/scripts/atlas_template.html", encoding="utf-8").read().replace("/*DATA*/null", js)
 open(f"{A}/site/index.html", "w", encoding="utf-8").write(html)
-print(f"site/index.html {len(html)//1024} KB · {data['stats']} · polish versions {[ (v['src'], len(v['tweaks'])) for v in polish]}")
+print(f"site/index.html {len(html)//1024} KB · words {len(wl)} · sources {len(srcs)} · entries {len(entries)} · polish sources {[e['src'] for e in entries if e['word']=='polish']}")

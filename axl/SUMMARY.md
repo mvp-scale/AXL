@@ -2,13 +2,11 @@
 
 Open `axl/site/index.html` (one file).
 
-## What the page does, in the order a person meets it
-1. **0–2 s, no clicks.** The word "polish" and the demo page. The page changes every 1.8 s as it cycles through four sources' versions of "polish", each with its verbatim quote. The only claim: "Same word. 4 sources, 4 different pages."
-2. **The subway map (right).** Each definition is a coloured line leaving the station "polish" and stopping at the tweaks it asks for, grouped by category. Dotted lines are copies of another source, and stops several lines share are joined across them. For "polish": **13 definitions from 11 independent authors, 28 different tweaks, 0 shared by all.** Twelve other words now have 2–4 definitions each (`data/verb_sources.json`: 35 extra definitions, each quote checked against the saved page by `scripts/validate_verb_sources.py`).
-3. **Compare instantly.** Hold **Shift**, or the button on the page, and the version fades to the original underneath; release and the changed parts flash with a dashed outline. A label on the page always names what you are looking at. Keys **1–4** switch source and **Y** shows yours.
-4. **1 tap on a stop** adds it to *your* line (pink) and the page shows your version. The bar shows how many of your tweaks a tool can check and the nearest named words ("polish (Taste-Skill) 33%, bolder (Impeccable) 20%").
-5. **Save:** your word as a small JSON file, plus `python3 axl/axl.py check my-polish.axl.json yourpage.html`.
-6. **The word menu** lists all 29 words with how many sources define each. **All 71 tweaks** sit in a collapsed list under the map. Below the fold is one line ("12 sources. 29 words. 71 tweaks. No standard.") and the statements no tool can check.
+## What the page does
+- **Two matching pickers:** **Words** (24: polish, bolder, quieter…) × **Sources** (25: Impeccable, UI Craft, Anthropic…). Both are multi-select, and each item has its own colour.
+- **▶ on either picker walks through it:** one word or one source at a time. The demo changes, the progress ticks advance, a label names what's on screen, and the board of all 71 tweaks lights up in that colour.
+- **First screen:** "polish" × all 25 sources, walking the sources. The counters read 13 definitions, 11 independent, 28 tweaks, **0 shared by all**.
+- **Controls:** hold **Shift**, or the button on the page, for the original. Tap any tweak on the board to build your own word, then save it as a file that `axl.py check` runs.
 
 ## Checked by the gates (all pass)
 - Site: `scripts/gates/site_check.py` checks that the page changes on its own within 2 s, one tap builds your word, save gives a valid file with a command, there are no network requests and no overflow, and axe finds nothing serious at 390 and 1440 px in light and dark.
