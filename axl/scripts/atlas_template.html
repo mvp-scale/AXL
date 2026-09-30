@@ -72,21 +72,28 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .nothing{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;max-width:min(440px,80%);background:#131316;color:#fff;border-radius:16px;padding:14px 18px;text-align:center;font-size:.95rem;box-shadow:0 20px 50px rgba(0,0,0,.35)}
 .nothing b{display:block;font-size:1.15rem;margin-bottom:4px}
 .nothing{pointer-events:auto}
-.marks{position:absolute;right:12px;top:12px;z-index:3;min-height:36px;padding:0 12px;border-radius:99px;background:#fff;color:#131316;font-weight:700;font-size:.8rem;box-shadow:0 0 0 2px var(--cur,#131316),0 6px 16px rgba(0,0,0,.18)}
-.marks[aria-pressed="false"]{box-shadow:0 0 0 1px #c9cbd1;color:#5b5d66}
-.frame.peeking .marks{visibility:hidden}
+.tools{position:absolute;right:12px;top:12px;z-index:3;display:inline-flex;align-items:center;gap:4px;padding:4px;border-radius:99px;background:#131316;box-shadow:0 6px 18px rgba(0,0,0,.28)}
+.devs{display:inline-flex;gap:2px}.devs button,.marks{min-height:32px;padding:0 12px;border-radius:99px;color:#fff;font:600 .78rem var(--sans);display:inline-flex;align-items:center;gap:6px}
+.devs button:hover,.marks:hover{background:rgba(255,255,255,.12)}.devs button[aria-pressed="true"]{background:#fff;color:#131316}
+.marks{border-left:1px solid rgba(255,255,255,.2);border-radius:0 99px 99px 0;margin-left:4px;padding-left:12px}
+.marks i{width:12px;height:12px;border-radius:3px;border:2px solid var(--cur,#fff);opacity:.5}.marks[aria-pressed="true"] i{opacity:1;background:var(--cur,#fff)}
+.marks #marks{font:500 .72rem var(--mono);opacity:.75}
+.marks[aria-pressed="false"]{color:rgba(255,255,255,.65)}
+.frame.peeking .tools{visibility:hidden}
 .hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);touch-action:none}
-.why{position:relative;margin:12px 0 0;padding:16px 20px;border-radius:16px;background:var(--ink);color:var(--bg);display:grid;grid-template-columns:1fr auto;gap:4px 24px;align-items:end;max-width:1100px}
-.why[hidden]{display:none}.why h2{grid-column:1/-1;margin:0 0 4px;font-size:clamp(1.1rem,2vw,1.45rem);letter-spacing:-.02em}
-.why p{margin:0;font-size:.95rem;line-height:1.5;opacity:.9;grid-column:1}.why b{color:var(--bg)}.why .btn{grid-column:2;grid-row:2/4;align-self:center;background:var(--mine);color:var(--on-mine);white-space:nowrap}
-.whyL{font:600 .8rem var(--sans);color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:4px 2px;margin-left:12px}
-.whyM{display:none}
-@media (max-width:760px){.why{grid-template-columns:1fr auto;padding:12px 14px;gap:6px 10px;align-items:center}.why h2{grid-column:1;margin:0;font-size:1rem}.why p{display:none;grid-column:1/-1}.why.more p{display:block}.why .btn{grid-column:2;grid-row:1/3;min-height:40px;padding:0 14px}.whyM{display:inline;grid-column:1;justify-self:start;font:600 .8rem var(--sans);color:var(--bg);text-decoration:underline;text-underline-offset:3px;padding:6px 0}.why.more .whyM{display:none}}
-.devs{position:absolute;left:12px;top:12px;z-index:3;display:inline-flex;border-radius:99px;background:#131316;padding:3px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
-.devs button{min-height:34px;padding:0 12px;border-radius:99px;color:#fff;font:600 .8rem var(--sans)}.devs button[aria-pressed="true"]{background:#fff;color:#131316}
 .frame.dev-tablet iframe,.frame.dev-mobile iframe{border-radius:22px;box-shadow:0 0 0 8px #1b1b1f,0 20px 50px rgba(0,0,0,.35)}
 .frame.dev-tablet,.frame.dev-mobile{background:var(--soft)}
-@media (max-width:760px){.devs{top:auto;bottom:62px;left:12px}.devs button{min-height:30px;padding:0 9px;font-size:.72rem}}
+@media (max-width:760px){.tools{top:8px;right:8px;padding:3px}.devs button,.marks{min-height:30px;padding:0 8px;font-size:.7rem}.marks #marks{display:none}}
+.whyScrim{position:fixed;inset:0;z-index:60;background:rgba(10,10,14,.55);backdrop-filter:blur(3px)}.whyScrim[hidden],.why[hidden]{display:none}
+.why{position:fixed;z-index:61;left:50%;top:50%;transform:translate(-50%,-50%);width:min(640px,calc(100vw - 32px));max-height:calc(100svh - 32px);overflow:auto;background:var(--panel);color:var(--ink);border-radius:20px;padding:clamp(22px,4vw,40px);box-shadow:0 30px 90px rgba(0,0,0,.45)}
+.whyX{position:absolute;right:14px;top:12px;width:40px;height:40px;border-radius:50%;font-size:1.6rem;line-height:1;color:var(--muted)}.whyX:hover{background:var(--soft);color:var(--ink)}
+.whyK{margin:0 0 10px;font:700 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mine)}
+.why h2{margin:0 0 14px;font-size:clamp(1.6rem,4.2vw,2.4rem);line-height:1.1;letter-spacing:-.03em}.why h2 .z{color:var(--mine)}
+.whyL{margin:0 0 14px;font-size:1rem;line-height:1.55;color:var(--muted)}.whyL b{color:var(--ink)}
+.whyStats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:4px 0 16px}.whyStats div{background:var(--soft);border-radius:12px;padding:12px 14px}
+.whyStats b{display:block;font-size:1.6rem;letter-spacing:-.03em;font-variant-numeric:tabular-nums}.whyStats span{font-size:.8rem;color:var(--muted)}
+.whyA{display:flex;align-items:center;gap:14px;margin-top:6px}.whyA span{font:.75rem var(--mono);color:var(--muted)}
+.whyL2{font:600 .8rem var(--sans);color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:4px 2px;margin-left:12px}
 .back{position:absolute;left:50%;transform:translateX(-50%);top:12px;z-index:3;min-height:40px;padding:0 14px;border-radius:99px;background:#fff;color:#131316;font-weight:700;font-size:.85rem;box-shadow:0 6px 18px rgba(0,0,0,.25)}.back[hidden]{display:none}
 .hold kbd{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 .frame.peeking .hold{background:#fff;color:#131316}.frame.peeking .hold kbd{color:#131316;border-color:#131316}
@@ -204,13 +211,16 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
 </head>
 <body>
 <div class="wrap">
-  <aside class="why" id="why" hidden aria-labelledby="whyH">
-    <h2 id="whyH">Everyone says “polish.” Nobody means the same thing.</h2>
-    <p>Dozens of skills, prompts and design guides now tell AI agents what <b>polish</b>, <b>clarify</b>, <b>critique</b> and <b>delight</b> mean. We read {S} of them. They don’t agree. Same word, different agent, different result. And everyone assumes there’s a standard. There isn’t.</p>
-    <p>So own your words: see every definition side by side, keep the rules you actually mean, name it, and check any site against it. Let’s settle the vocabulary and get back to building.</p>
-    <button class="btn primary" type="button" id="whyGo">Show me</button>
-    <button class="whyM" type="button" id="whyMore" aria-expanded="false">Why?</button>
-  </aside>
+  <div class="whyScrim" id="whyScrim" hidden></div>
+  <section class="why" id="why" role="dialog" aria-modal="true" aria-labelledby="whyH" hidden>
+    <button class="whyX" id="whyX" type="button" aria-label="Close">×</button>
+    <p class="whyK">Why AXL exists</p>
+    <h2 id="whyH">“Polish” has <span id="whyN">13</span> definitions.<br>They share <span class="z" id="whyZ">0</span> rules.</h2>
+    <p class="whyL">AI agents now take design orders in words: <b>polish</b>, <b>clarify</b>, <b>critique</b>, <b>delight</b>. Every skill, prompt pack and design guide defines those words its own way, so the same word gets a different result depending on whose instructions your agent loaded. Everyone assumes there’s a standard. There isn’t.</p>
+    <div class="whyStats"><div><b id="whyS">36</b><span>sources read</span></div><div><b id="whyC">44</b><span>commands in use</span></div><div><b id="whyR">1,829</b><span>rules they imply</span></div></div>
+    <p class="whyL">AXL puts every definition side by side, lets you keep the rules <i>you</i> mean, and checks any site against them. Settle the words once, then get back to building.</p>
+    <div class="whyA"><button class="btn primary" type="button" id="whyGo">See the mess</button><span>Esc to close</span></div>
+  </section>
   <header class="bar">
     <div class="pick" id="pickW">
       <button class="pbtn" type="button" data-axis="w" aria-haspopup="true" aria-expanded="false"><small>Commands</small><b><i></i><span class="lab"></span></b></button>
@@ -223,7 +233,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
       <button class="play" type="button" data-play="s" aria-pressed="false" aria-label="Play through the sources"></button>
       <div class="pop" hidden data-pop="s"></div>
     </div>
-    <div class="nums" id="nums" aria-live="polite"></div><button class="whyL" id="whyOpen" type="button">Why AXL?</button>
+    <div class="nums" id="nums" aria-live="polite"></div><button class="whyL2" id="whyOpen" type="button">Why AXL?</button>
   </header>
 
   <div class="duo">
@@ -234,8 +244,10 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
       <iframe id="pv" title="Demo page with the current selection applied" tabindex="-1"></iframe>
       <span class="state" id="state"><span id="stateTxt"></span></span>
       <div class="nothing" id="nothing" hidden></div>
-      <div class="devs" role="group" aria-label="Viewport"><button type="button" data-dev="desktop" aria-pressed="true">Desktop</button><button type="button" data-dev="tablet" aria-pressed="false">Tablet</button><button type="button" data-dev="mobile" aria-pressed="false">Mobile</button></div>
-      <button class="marks" id="marksBtn" type="button" aria-pressed="true">Outline changes · <span id="marks"></span></button>
+      <div class="tools" role="toolbar" aria-label="Preview">
+        <div class="devs" role="group" aria-label="Viewport"><button type="button" data-dev="desktop" aria-pressed="true" title="Desktop">Desktop</button><button type="button" data-dev="tablet" aria-pressed="false" title="Tablet 820×1180">Tablet</button><button type="button" data-dev="mobile" aria-pressed="false" title="Mobile 390×844">Mobile</button></div>
+        <button class="marks" id="marksBtn" type="button" aria-pressed="true" title="Outline what changed"><i aria-hidden="true"></i>Highlight changes <span id="marks"></span></button>
+      </div>
       <button class="back" id="back" type="button" hidden>Back to the list ↓</button>
       <button class="hold" id="hold" type="button" aria-label="Hold to see the original"><kbd>Shift</kbd> hold for original</button>
     </div>
@@ -394,7 +406,7 @@ const D = /*DATA*/null;
         if ([...set].some(p => !INH.has(p) || !pd.has(p))) { if (el.getBoundingClientRect().width || c1.display === 'none') { el.setAttribute('data-axl-diff', ''); marked++; } }
       });
     } catch (e) { marked = -1; }
-    const m = $('#marks'); if (m) m.textContent = marked > 0 ? `${marked} changed` : marked === 0 ? 'no change' : '';
+    const m = $('#marks'); if (m) m.textContent = marked > 0 ? `· ${marked}` : marked === 0 ? '· none' : '';
   }
   let appView = 'overview', stated = false;
   const sync = (state, both) => { [both ? pv : null, pv0].forEach(f => { try { f && f.contentWindow.postMessage({ type: 'lab-sync-state', state }, '*'); } catch (e) {} }); };
@@ -568,13 +580,19 @@ const D = /*DATA*/null;
     facts(); if (typeof filterBoard === 'function' && bf !== 'all') filterBoard();
   }
 
-  /* ---- why AXL: first visit ---- */
-  { const why = $('#why'), seen = (() => { try { return localStorage.getItem('axl-why') === '1'; } catch (e) { return false; } })();
-    why.innerHTML = why.innerHTML.replace('{S}', D.sources.length);
-    const hide = () => { why.hidden = true; try { localStorage.setItem('axl-why', '1'); } catch (e) {} };
-    why.hidden = seen; $('#whyGo').addEventListener('click', hide);
-    $('#whyMore').addEventListener('click', () => { why.classList.add('more'); $('#whyMore').setAttribute('aria-expanded', 'true'); });
-    $('#whyOpen').addEventListener('click', () => { why.hidden = !why.hidden; }); }
+  /* ---- why AXL: first-visit modal (numbers computed from the data, not typed in) ---- */
+  { const why = $('#why'), scrim = $('#whyScrim'), fmt = n => n.toLocaleString('en-US');
+    const pol = D.entries.filter(e => e.word === 'polish'), ruleOf = t => D.rules.filter(r => r.tweaks.includes(t)).map(r => r.id);
+    const sets = pol.map(e => new Set(e.tweaks.flatMap(ruleOf))).filter(x => x.size), shared = sets.length ? [...sets[0]].filter(r => sets.every(x => x.has(r))).length : 0;
+    $('#whyN').textContent = pol.length; $('#whyZ').textContent = shared; $('#whyS').textContent = D.sources.length; $('#whyC').textContent = D.words.length; $('#whyR').textContent = fmt(D.rules.length);
+    let back = null;
+    const open = () => { back = document.activeElement; why.hidden = false; scrim.hidden = false; $('#whyGo').focus(); };
+    const close = () => { if (why.hidden) return; why.hidden = true; scrim.hidden = true; try { localStorage.setItem('axl-why', '1'); } catch (e) {} if (back && back.focus) back.focus(); };
+    const seen = (() => { try { return localStorage.getItem('axl-why') === '1'; } catch (e) { return false; } })();
+    $('#whyGo').addEventListener('click', close); $('#whyX').addEventListener('click', close); scrim.addEventListener('click', close);
+    addEventListener('keydown', e => { if (e.key === 'Escape') close(); if (e.key === 'Tab' && !why.hidden) { const f = [...why.querySelectorAll('button')]; if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); } else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); } } });
+    $('#whyOpen').addEventListener('click', open);
+    if (!seen) open(); }
 
   /* ---- save: three outputs ---- */
   const sheet = $('#sheet'), scrim = $('#scrim');

@@ -14,6 +14,9 @@ const { CHROME } = require('./common');
     const s0 = await p.evaluate("document.getElementById('stateTxt').textContent"); await p.waitForTimeout(3100);
     const s1 = await p.evaluate("document.getElementById('stateTxt').textContent");
     r.walks_without_input = s0 !== s1;
+    // first visit: the why-AXL modal is shown (with real numbers) and closes with Esc
+    r.why_shown = await p.evaluate(() => !document.getElementById('why').hidden && /\d/.test(document.getElementById('whyN').textContent));
+    await p.keyboard.press('Escape'); r.why_closes = await p.evaluate(() => document.getElementById('why').hidden);
     r.lit_during_walk = await p.evaluate("document.querySelectorAll('#board .er.lit').length");
     r.preview_visible = await p.evaluate(() => { const f = document.getElementById('frame').getBoundingClientRect(); return f.top < innerHeight * 0.45 && f.height > 200; });
     r.words_above_preview = await p.evaluate(() => document.querySelector('.bar').innerText.trim().split(/\s+/).length);

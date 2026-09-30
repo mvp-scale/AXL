@@ -16,6 +16,7 @@ for x in out["runs"]:
     for k, msg in (("console_errors", "console"), ("external", "external requests"), ("axe", "axe")):
         if x[k]: errs.append((t, msg, x[k][:3]))
     if not x["walks_without_input"]: errs.append((t, "nothing changes in the first 3 s"))
+    if not x.get("why_shown") or not x.get("why_closes"): errs.append((t, "why-AXL modal missing or doesn't close with Esc"))
     if not x["preview_visible"]: errs.append((t, "the demo is not on the first screen"))
     if x["words_above_preview"] > 24: errs.append((t, "too many words above the demo", x["words_above_preview"]))
     if not (x["peek"] and x["unpeek"]): errs.append((t, "hold Shift does not show the original"))

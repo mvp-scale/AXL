@@ -4,7 +4,7 @@ Open `axl/site/index.html` (one file).
 
 ## What the page does (plan v2: `PLAN_V2.md`, standard: `RULE_STANDARD.md`)
 - **Commands × Sources** pickers as before; ▶ walks either one; the Northstar demo is clickable (nine views), renders at real size, switches **Desktop / Tablet / Mobile** (rules for phones preview on Mobile), and Shift shows the original without moving you.
-- **First visit:** a short "why AXL" note (dismissable, reopen with "Why AXL?").
+- **First visit:** a "why AXL" modal with live numbers (definitions of polish, rules they share, sources, commands, rules); closes with ×, Esc or a click outside; "Why AXL?" reopens it.
 - **The list is Class › Element › Rules.** 13 classes anchored to standards (CSS modules, WCAG, Lighthouse, ARIA Practices); element rows use ARIA / Open UI / type-scale names; each rule is `element property test` in standard vocabulary, shown as a plain sentence.
 - **Picking a command lights its rows** with "n of 13" = how many of the selected definitions ask for something there; a rule shows every value sources state (disagreements visible) and source chips that open the exact quote IDs.
 - **Get my word → one kit** (Markdown): rules in words + code + quote IDs, how to use them, and the `axl` definition block; an optional console check.
