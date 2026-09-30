@@ -74,7 +74,7 @@
       const on = st.applied.has(p.id), has = !!A.css[p.id], c = claimById[p.claim_id];
       const discr = p.discriminates === false ? ' <span class="small">(the check passes on the original too)</span>' : '';
       return `<li class="pat${on ? ' on' : ''}" data-p="${p.id}"><header><h3>${esc(p.name)}</h3>${tag('tier', p.tier)}${tag('status', p.status)}</header><p>${esc(p.plain)}${discr}</p>
-        <div class="row">${has ? `<button type="button" data-apply="${p.id}" aria-pressed="${on}">${on ? 'Applied' : 'Apply to the right pane'}</button>` : '<span class="small">Nothing to change on this page: it already passes.</span>'}<button type="button" data-open="${p.claim_id}">Sources</button></div></li>`;
+        <div class="row">${has ? `<button type="button" data-apply="${p.id}" aria-pressed="${on}">${on ? 'Applied' : 'Apply to the right pane'}</button>` : '<span class="small">No visual preview for this check. Run its command to see the result.</span>'}<button type="button" data-open="${p.claim_id}">Sources</button></div></li>`;
     }).join('');
     const sel = [...st.applied].map(id => d.patterns.find(p => p.id === id)).filter(Boolean);
     const shown = sel.length ? sel[sel.length - 1] : null;

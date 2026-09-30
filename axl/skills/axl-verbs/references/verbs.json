@@ -1,0 +1,393 @@
+{
+ "verbs": [
+  {
+   "verb": "polish",
+   "resolution": "tool-backed",
+   "plain": "Finish what is already there. Nothing off the spacing grid, nothing too faint to read, nothing you cannot reach with a keyboard. Polish never redesigns; it only removes defects that a tool can count.",
+   "stays_subjective": "Whether the result feels 'refined' overall.",
+   "patterns": [
+    {
+     "id": "on-grid-spacing",
+     "name": "Spacing sits on a 4px scale",
+     "claim_id": "clm_0476",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+     "pass_criteria": "no padding, margin or gap on a visible element is off the 4px scale"
+    },
+    {
+     "id": "readable-contrast",
+     "name": "Text contrast is at least 4.5:1",
+     "claim_id": "clm_0471",
+     "status": "single-source",
+     "command": "node axl/tools/runners/axe.js axl/demo/after.html 1440",
+     "pass_criteria": "axe reports 0 color-contrast violations and every listed text pair is >= 4.5:1"
+    },
+    {
+     "id": "visible-focus",
+     "name": "Keyboard focus is visible",
+     "claim_id": "clm_0305",
+     "status": "single-source",
+     "command": "node axl/tools/runners/stylelint.js axl/demo/css/after.css",
+     "pass_criteria": "no `outline: none/0` declaration remains in the stylesheet"
+    },
+    {
+     "id": "reachable-targets",
+     "name": "Tap targets are at least 44x44px",
+     "claim_id": "clm_0477",
+     "status": "verified",
+     "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+     "pass_criteria": "every visible interactive element measures at least 44x44 CSS px"
+    },
+    {
+     "id": "reduced-motion",
+     "name": "Motion gives way to prefers-reduced-motion",
+     "claim_id": "clm_0483",
+     "status": "verified",
+     "command": "node axl/tools/runners/reducedmotion.js axl/demo/fixture-motion-guarded.html",
+     "pass_criteria": "under emulated reduced motion no element has a transition or animation longer than 1ms"
+    }
+   ]
+  },
+  {
+   "verb": "distill",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "delight",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "bolder",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "quieter",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "animate",
+   "resolution": "tool-backed",
+   "plain": "Motion that is quick enough to feel like feedback, and that gives way when a person asks for less motion.",
+   "stays_subjective": "Whether the motion 'feels delightful'.",
+   "patterns": [
+    {
+     "id": "motion-duration",
+     "name": "State-change motion is 500ms or shorter",
+     "claim_id": "clm_0482",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/fixture-motion-unguarded.html 1440 duration-500",
+     "pass_criteria": "no element has a transition-duration above 500ms"
+    },
+    {
+     "id": "reduced-motion",
+     "name": "Motion gives way to prefers-reduced-motion",
+     "claim_id": "clm_0483",
+     "status": "verified",
+     "command": "node axl/tools/runners/reducedmotion.js axl/demo/fixture-motion-guarded.html",
+     "pass_criteria": "under emulated reduced motion no element has a transition or animation longer than 1ms"
+    }
+   ]
+  },
+  {
+   "verb": "colorize",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "clarify",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "harden",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "adapt",
+   "resolution": "tool-backed",
+   "plain": "Make the same interface work on a phone and on a desktop: targets you can tap and content that does not spill off the side.",
+   "stays_subjective": "Which content to drop or reorder for small screens.",
+   "patterns": [
+    {
+     "id": "reachable-targets",
+     "name": "Tap targets are at least 44x44px",
+     "claim_id": "clm_0477",
+     "status": "verified",
+     "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+     "pass_criteria": "every visible interactive element measures at least 44x44 CSS px"
+    },
+    {
+     "id": "reflow",
+     "name": "Content fits a 320px-wide screen",
+     "claim_id": "clm_0479",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/polished.html 320 reflow-320",
+     "pass_criteria": "no visible element's right edge is past the 320px viewport"
+    },
+    {
+     "id": "text-size-floor",
+     "name": "Text is at least 14px (body 16px)",
+     "claim_id": "clm_0481",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/fixture-typeset.html 1440 body-16,leading-1.5",
+     "pass_criteria": "no checked text element computes below 14px"
+    }
+   ]
+  },
+  {
+   "verb": "optimize",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "typeset",
+   "resolution": "tool-backed",
+   "plain": "Make text comfortable to read: big enough, spaced enough, and not too wide.",
+   "stays_subjective": "Whether the typeface has the right personality.",
+   "patterns": [
+    {
+     "id": "line-length",
+     "name": "Running text is at most 80 characters wide",
+     "claim_id": "clm_0478",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/before.html 1440 measure-80",
+     "pass_criteria": "no paragraph of more than 80 characters renders wider than about 80 characters"
+    },
+    {
+     "id": "running-text-leading",
+     "name": "Running text has line-height of at least 1.5",
+     "claim_id": "clm_0480",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/fixture-typeset.html 1440 body-16,leading-1.5",
+     "pass_criteria": "every paragraph over 40 characters has computed line-height / font-size >= 1.5"
+    },
+    {
+     "id": "text-size-floor",
+     "name": "Text is at least 14px (body 16px)",
+     "claim_id": "clm_0481",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/fixture-typeset.html 1440 body-16,leading-1.5",
+     "pass_criteria": "no checked text element computes below 14px"
+    }
+   ]
+  },
+  {
+   "verb": "layout",
+   "resolution": "tool-backed",
+   "plain": "Give content a predictable rhythm and a readable line, and make sure it still fits when the screen is narrow.",
+   "stays_subjective": "Whether the composition is 'balanced' or 'has breathing room'.",
+   "patterns": [
+    {
+     "id": "on-grid-spacing",
+     "name": "Spacing sits on a 4px scale",
+     "claim_id": "clm_0476",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+     "pass_criteria": "no padding, margin or gap on a visible element is off the 4px scale"
+    },
+    {
+     "id": "line-length",
+     "name": "Running text is at most 80 characters wide",
+     "claim_id": "clm_0478",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/before.html 1440 measure-80",
+     "pass_criteria": "no paragraph of more than 80 characters renders wider than about 80 characters"
+    },
+    {
+     "id": "reflow",
+     "name": "Content fits a 320px-wide screen",
+     "claim_id": "clm_0479",
+     "status": "single-source",
+     "command": "node axl/tools/runners/craft.js axl/demo/polished.html 320 reflow-320",
+     "pass_criteria": "no visible element's right edge is past the 320px viewport"
+    }
+   ]
+  },
+  {
+   "verb": "onboard",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "critique",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "audit",
+   "resolution": "tool-backed",
+   "plain": "Run the automated accessibility rules and get a pass or fail list. It tells you what a machine can find, never that the page is good.",
+   "stays_subjective": "Everything the rules engines cannot see (meaning, tone, task fit).",
+   "patterns": [
+    {
+     "id": "rules-engine-clean",
+     "name": "Automated accessibility rules report no violations",
+     "claim_id": "clm_0484",
+     "status": "single-source",
+     "command": "node axl/tools/runners/axe.js axl/demo/after.html 1440",
+     "pass_criteria": "axe reports 0 violations for tags wcag2a, wcag2aa, wcag21aa, wcag22aa"
+    }
+   ]
+  },
+  {
+   "verb": "extract",
+   "resolution": "tool-backed",
+   "plain": "Pull repeated values out of the stylesheet into a small set of named tokens, so a colour or a gap is defined once.",
+   "stays_subjective": "Which values deserve a name, and what to call them.",
+   "patterns": [
+    {
+     "id": "colour-tokens",
+     "name": "Colours come from a small token set",
+     "claim_id": "clm_0485",
+     "status": "verified",
+     "command": "python3 axl/skills/axl-tokens/scripts/tokens.py check axl/demo/css/before-tokenised.css axl/demo/tokens.json --strict",
+     "pass_criteria": "every hex colour in the stylesheet equals a token value and every padding/margin/gap is a multiple of the spacing unit"
+    }
+   ]
+  },
+  {
+   "verb": "shape",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "simplify",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "elevate",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "premium",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "clean",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "minimal",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "bold",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "subtle",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "playful",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "professional",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "cohesive",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "consistent",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "hierarchy",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "rhythm",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "dense",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "compact",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  },
+  {
+   "verb": "warm",
+   "resolution": "undefined",
+   "plain": null,
+   "stays_subjective": null,
+   "patterns": []
+  }
+ ]
+}

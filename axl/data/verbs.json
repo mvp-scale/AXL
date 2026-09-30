@@ -1191,9 +1191,22 @@
      "quote": "user agents, including assistive technologies, can extract and present this information to users in different modalities\nExample 1\nDetermined in a markup language from elements and attributes that are accessed directly\n by commonly available assistive technology.\nExample 2\nDetermined from"
     }
    ],
-   "shared_deltas": [],
-   "tool_candidates": [],
-   "enforced_claim_ids": [],
+   "shared_deltas": [
+    {
+     "claim_id": "clm_0485",
+     "selector": "stylesheet",
+     "property": "color values",
+     "before": "68 distinct raw hex colours",
+     "after": "every colour is a token value (12 tokens)",
+     "status": "verified"
+    }
+   ],
+   "tool_candidates": [
+    "axl craft checks"
+   ],
+   "enforced_claim_ids": [
+    "clm_0485"
+   ],
    "linked_claim_ids": [
     "clm_0317",
     "clm_0318",
@@ -1209,15 +1222,19 @@
     "clm_0328",
     "clm_0329",
     "clm_0330",
-    "clm_0331"
+    "clm_0331",
+    "clm_0485"
    ],
-   "axl_patterns": [],
+   "axl_patterns": [
+    "colour-tokens"
+   ],
    "linked_tiers": {
-    "subjective": 15
+    "subjective": 15,
+    "enforced": 1
    },
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
-   "resolution": "undefined",
-   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+   "resolution": "tool-backed",
+   "note": "at least one linked claim is enforced: a command was run and has a receipt; the rest of the verb stays subjective"
   },
   {
    "verb": "shape",

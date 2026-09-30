@@ -1,9 +1,9 @@
 {
- "claims_total": 484,
- "public_claims": 377,
+ "claims_total": 485,
+ "public_claims": 378,
  "private_kit_excluded": 107,
  "by_tier_public": {
-  "enforced": 20,
+  "enforced": 21,
   "measurable": 1,
   "process": 31,
   "subjective": 325
@@ -11,16 +11,16 @@
  "by_status_public": {
   "single-source": 250,
   "unverified": 125,
-  "verified": 2
+  "verified": 3
  },
  "by_origin": {
   "private-kit": 107,
-  "public": 377
+  "public": 378
  },
- "double_sourced_public": 2,
- "double_sourced_share_public": 0.0053,
- "enforced_public": 20,
- "enforced_share_public": 0.0531,
+ "double_sourced_public": 3,
+ "double_sourced_share_public": 0.0079,
+ "enforced_public": 21,
+ "enforced_share_public": 0.0556,
  "guidance_audited": {
   "claims": 332,
   "system_share": 0.0211,
@@ -39,9 +39,9 @@
  "sources_fetched": 52,
  "verbs_total": 34,
  "verbs_by_resolution": {
-  "tool-backed": 6,
-  "undefined": 28
+  "tool-backed": 7,
+  "undefined": 27
  },
- "enforced_discriminating": 15,
- "receipts": 25
+ "enforced_discriminating": 16,
+ "receipts": 27
 }

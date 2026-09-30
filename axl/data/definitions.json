@@ -1,6 +1,73 @@
 {
  "definitions": [
   {
+   "verb": "extract",
+   "plain": "Pull repeated values out of the stylesheet into a small set of named tokens, so a colour or a gap is defined once.",
+   "stays_subjective": "Which values deserve a name, and what to call them.",
+   "patterns": [
+    {
+     "id": "colour-tokens",
+     "name": "Colours come from a small token set",
+     "plain": "Every colour in the stylesheet is one of a short list of named values, not one more slightly different grey.",
+     "claim_id": "clm_0485",
+     "tier": "enforced",
+     "status": "verified",
+     "independent_roots": [
+      "src_github-com-google-labs-code-design-md",
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+     ],
+     "delta": {
+      "selector": "stylesheet",
+      "property": "color values",
+      "before": "68 distinct raw hex colours",
+      "after": "every colour is a token value (12 tokens)"
+     },
+     "basis": [
+      {
+       "source_id": "src_impeccable-extract",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/extract.md",
+       "quote": "Colors, spacing, typography, shadows that should be tokens",
+       "supports": "hard-coded values that should be tokens"
+      },
+      {
+       "source_id": "src_github-com-google-labs-code-design-md",
+       "url": "https://github.com/google-labs-code/design.md",
+       "quote": "The tokens are the normative values.",
+       "supports": "tokens are the source of truth"
+      }
+     ],
+     "check": {
+      "tool": "axl-tokens",
+      "command": "python3 axl/skills/axl-tokens/scripts/tokens.py check axl/demo/css/before-tokenised.css axl/demo/tokens.json --strict",
+      "pass_criteria": "every hex colour in the stylesheet equals a token value and every padding/margin/gap is a multiple of the spacing unit"
+     },
+     "receipts": [
+      {
+       "id": "tokens-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 79,
+       "tool": "axl-tokens",
+       "version": "axl-tokens tokens.py (python 3.11.15)"
+      },
+      {
+       "id": "tokens-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl-tokens",
+       "version": "axl-tokens tokens.py (python 3.11.15)"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "AXL default: 12 tokens derived from the most-used colours, 4px unit; a real project supplies its own token file",
+     "coverage": "hex colours and padding/margin/gap declarations only; snapping to the nearest token can change contrast, so re-run axl-evaluate after axl-tokens fix",
+     "disagreement": null,
+     "example": "color: var(--ink);   /* not #334255 */"
+    }
+   ]
+  },
+  {
    "verb": "polish",
    "plain": "Finish what is already there. Nothing off the spacing grid, nothing too faint to read, nothing you cannot reach with a keyboard. Polish never redesigns; it only removes defects that a tool can count.",
    "stays_subjective": "Whether the result feels 'refined' overall.",

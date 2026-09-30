@@ -10,11 +10,11 @@ Of **332** UI/UX guidance statements audited from public sources (process/workfl
 | measurable | 1 |
 | subjective | 325 |
 
-## All public claims (377, incl. AXL definitions and standards)
-- By tier: {'enforced': 20, 'measurable': 1, 'process': 31, 'subjective': 325}
-- By status: {'single-source': 250, 'unverified': 125, 'verified': 2}
-- Double-sourced (verified, >= 2 independent roots): **2** (0.5%)
-- Enforced: **20** (5.3%); 15 fail on the before page and pass on the after page
+## All public claims (378, incl. AXL definitions and standards)
+- By tier: {'enforced': 21, 'measurable': 1, 'process': 31, 'subjective': 325}
+- By status: {'single-source': 250, 'unverified': 125, 'verified': 3}
+- Double-sourced (verified, >= 2 independent roots): **3** (0.8%)
+- Enforced: **21** (5.6%); 16 fail on the before page and pass on the after page
 
 ## Sources and lineage
 - 90 sources registered, 52 fetched.
@@ -22,5 +22,5 @@ Of **332** UI/UX guidance statements audited from public sources (process/workfl
 - Private-kit claims excluded from the public build: **107**.
 
 ## Verb dictionary
-- 34 verbs: {'tool-backed': 6, 'undefined': 28}
-- Receipts on disk: 25
+- 34 verbs: {'tool-backed': 7, 'undefined': 27}
+- Receipts on disk: 27

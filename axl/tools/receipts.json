@@ -224,6 +224,26 @@
     "axl/demo/before.html"
    ],
    "role": "before"
+  },
+  {
+   "id": "tokens-before",
+   "tool": "axl-tokens",
+   "command": "python3 axl/skills/axl-tokens/scripts/tokens.py check axl/demo/css/before.css axl/demo/tokens.json --strict",
+   "inputs": [
+    "axl/demo/css/before.css",
+    "axl/demo/tokens.json"
+   ],
+   "role": "before"
+  },
+  {
+   "id": "tokens-after",
+   "tool": "axl-tokens",
+   "command": "python3 axl/skills/axl-tokens/scripts/tokens.py check axl/demo/css/before-tokenised.css axl/demo/tokens.json --strict",
+   "inputs": [
+    "axl/demo/css/before-tokenised.css",
+    "axl/demo/tokens.json"
+   ],
+   "role": "after"
   }
  ]
 }

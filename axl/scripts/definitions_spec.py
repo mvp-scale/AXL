@@ -7,7 +7,11 @@ CONTRAST = "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
 AXE = "https://github.com/dequelabs/axe-core"
 MDN = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
 
+EXTRACT = "https://github.com/pbakaus/impeccable/blob/main/skill/reference/extract.md"
+GOOGLE = "https://github.com/google-labs-code/design.md"
 VERBS = {
+ "extract": {"plain": "Pull repeated values out of the stylesheet into a small set of named tokens, so a colour or a gap is defined once.",
+             "stays_subjective": "Which values deserve a name, and what to call them."},
  "polish": {"plain": "Finish what is already there. Nothing off the spacing grid, nothing too faint to read, nothing you cannot reach with a keyboard. Polish never redesigns; it only removes defects that a tool can count.",
             "stays_subjective": "Whether the result feels 'refined' overall."},
  "layout": {"plain": "Give content a predictable rhythm and a readable line, and make sure it still fits when the screen is narrow.",
@@ -113,4 +117,14 @@ PATTERNS = [
   "pass": "axe reports 0 violations for tags wcag2a, wcag2aa, wcag21aa, wcag22aa", "param": "source: axe-core's own rule set",
   "coverage": "axe states it finds about 57% of WCAG issues automatically; a clean run is not a full audit", "disagreement": None,
   "example": "npx @axe-core/cli http://localhost:8000 --tags wcag2aa"},
+ {"id": "colour-tokens", "verbs": ["extract"], "name": "Colours come from a small token set",
+  "plain": "Every colour in the stylesheet is one of a short list of named values, not one more slightly different grey.",
+  "text": "Colours in a stylesheet are values from the design token set; raw colour values outside it are flagged.",
+  "delta": ("stylesheet", "color values", "68 distinct raw hex colours", "every colour is a token value (12 tokens)"),
+  "basis": [(EXTRACT, r"Colors, spacing, typography, shadows that should be tokens", "hard-coded values that should be tokens"),
+            (GOOGLE, r"The tokens are the normative values\.", "tokens are the source of truth")],
+  "receipts": ["tokens-before", "tokens-after"], "cmd": "tokens-after",
+  "pass": "every hex colour in the stylesheet equals a token value and every padding/margin/gap is a multiple of the spacing unit", "param": "AXL default: 12 tokens derived from the most-used colours, 4px unit; a real project supplies its own token file",
+  "coverage": "hex colours and padding/margin/gap declarations only; snapping to the nearest token can change contrast, so re-run axl-evaluate after axl-tokens fix", "disagreement": None,
+  "example": "color: var(--ink);   /* not #334255 */"},
 ]

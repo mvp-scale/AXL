@@ -1,0 +1,12 @@
+{
+ "id": "tokens-after",
+ "tool": "axl-tokens",
+ "version": "axl-tokens tokens.py (python 3.11.15)",
+ "command": "python3 axl/skills/axl-tokens/scripts/tokens.py check axl/demo/css/before-tokenised.css axl/demo/tokens.json --strict",
+ "input_hash": "d1236de85a998ba36ff0df14b3b80af96291b8224718368b5e5924ec3f79ae42",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\": \"axl-tokens\", \"findings\": []}",
+ "findings": [],
+ "role": "after",
+ "ran_at": "2026-09-30T01:36:37+00:00"
+}
