@@ -72,6 +72,12 @@ edges = [[e["from"], e["to"]] for e in LIN["edges"] if LIN["roots"][e["from"]] =
 data = {"meanings": meanings, "frame": pj["frame"], "frameM": pj["frameM"], "totals": totals, "pins": pins, "tiles": tiles, "echo": {"clusters": clusters, "edges": edges},
         "before": open(f"{A}/demo/before.html", encoding="utf-8").read(), "after": open(f"{A}/demo/polished.html", encoding="utf-8").read(),
         "stats": {"double": sum(c["status"] == "verified" for c in claims), "claims": len(claims), "sources": len(S), "receipts": len(runs)}}
+# stable public registry: what other tools consume (the reason to come back and build on it)
+terms = {"axl_terms": "0.1", "note": "Each term resolves to measurable patterns with a check command, or to 'undefined'. Ids are stable; thresholds marked axl-default are proposals.",
+         "terms": [{"id": f"axl:term/{v['verb']}@0.1", "term": v["verb"], "resolution": v["resolution"],
+                    "patterns": [{"id": f"axl:pattern/{p['id']}@0.1", "name": p["name"], "claim": p["claim_id"], "status": p["status"], "tool": (p["check"] or {}).get("tool"), "command": (p["check"] or {}).get("command"),
+                                  "pass": (p["check"] or {}).get("pass_criteria"), "parameter": p.get("parameter_origin")} for p in (DV[v["verb"]]["patterns"] if v["verb"] in DV else [])]} for v in sorted(V, key=lambda x: x["verb"])]}
+json.dump(terms, open(f"{A}/terms.json", "w"), indent=1, ensure_ascii=False)
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 html = open(f"{A}/scripts/story_template.html", encoding="utf-8").read().replace("/*DATA*/null", js)
 os.makedirs(f"{A}/site", exist_ok=True); open(f"{A}/site/index.html", "w", encoding="utf-8").write(html)

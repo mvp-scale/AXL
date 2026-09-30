@@ -11,6 +11,7 @@ Everything else is what produced it, and can be ignored unless you want to rebui
 | `data/`, `receipts/runs/` | Claims, sources, verbs, and the saved tool runs the page reads |
 | `tools/`, `demo/` | The pinned checkers and the demo app they run on |
 | `skills/` | Four agent skills that run the same checks on your own page |
+| `terms.json`, `CONTRIBUTING.md` | The stable term registry other tools can read, and how to add or challenge a word |
 | `SPEC.md`, `spec/` | The AXL language |
 | `SUMMARY.md` | What passed, what is open, what to run next |
 
