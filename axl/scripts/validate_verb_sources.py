@@ -26,8 +26,8 @@ def main():
             errs.append(f"{tag}: bad kind")
         if e["kind"] == "primary" and e["derives_from"] is not None:
             errs.append(f"{tag}: primary with derives_from")
-        if not isinstance(e["tweaks"], list) or len(e["tweaks"]) > 6:
-            errs.append(f"{tag}: tweaks must be list <=6")
+        if not isinstance(e["tweaks"], list) or len(e["tweaks"]) > (40 if e["word"] == "checklist" else 6):
+            errs.append(f"{tag}: tweaks must be list <=6 (<=40 for a checklist)")
         for t in e["tweaks"]:
             if t not in ids:
                 errs.append(f"{tag}: unknown tweak {t}")

@@ -1,0 +1,28 @@
+{
+ "gaps": [
+  [
+   "clm_0395",
+   "Keep motion stable in final UI"
+  ],
+  [
+   "clm_0435",
+   "Design single-purpose inline cards"
+  ],
+  [
+   "clm_0437",
+   "Prevent nested scrolling areas"
+  ],
+  [
+   "clm_0439",
+   "Expand rich interactions fullscreen"
+  ],
+  [
+   "clm_0442",
+   "Position edits near their results"
+  ],
+  [
+   "clm_0445",
+   "Match content height to surface"
+  ]
+ ]
+}

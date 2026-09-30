@@ -27,6 +27,10 @@ EXTRA_CSS = {  # visible stand-ins on the Northstar demo for tweaks that have no
  "mute-color": "button.primary,.progress span,.chart-line,.badge{filter:saturate(.45)}",
  "color-roles": ".badge.active{background:#e7f0fb!important;color:#1f4f8a!important}.badge.review{background:#fff4dc!important;color:#7a4b00!important}.badge.risk{background:#fdeaea!important;color:#9b1c1c!important}.badge.done{background:#e6f4ea!important;color:#1e6b34!important}",
  "design-tokens": "button.primary{background:#1f3a5c!important;border-color:#1f3a5c!important}.chart-line{stroke:#1f3a5c!important}.progress span{background:#1f3a5c!important}h1,h2,.metric-value{color:#1f3a5c!important}",
+ "contrast-7": "body,.subcopy,.metric-label,.metric-note,.topbar,#breadcrumb,.eyebrow,small,th,td,footer{color:#1f2733!important}",
+ "non-text-contrast": ".card,input,select,textarea,.data-panel,button:not(.primary){border-color:#7b8796!important}",
+ "text-spacing": "p,li,td,.subcopy{line-height:1.5!important;letter-spacing:.12em;word-spacing:.16em}",
+ "color-not-only": ".badge::before{content:'● ';}.badge.risk::before{content:'▲ '}.badge.done::before{content:'✓ '}",
  "states-designed": ".card:empty,.empty-state{outline:2px dashed #8a97a8}.data-panel tbody tr:first-child td{background:#f3f6fa}",
  "focal-motion": ".hero h1{text-shadow:0 0 0 transparent}",
 }

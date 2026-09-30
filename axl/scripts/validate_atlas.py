@@ -15,7 +15,7 @@ def main():
         print("FAIL invalid JSON: %s" % e); return 1
     cats, T = tw.get("categories", []), tw.get("tweaks", [])
     if len(cats) != 8: errs.append("categories=%d" % len(cats))
-    if not 45 <= len(T) <= 75: errs.append("tweaks=%d" % len(T))
+    if not 45 <= len(T) <= 300: errs.append("tweaks=%d" % len(T))
     ids = [t["id"] for t in T]
     if len(set(ids)) != len(ids): errs.append("duplicate ids")
     for t in T:

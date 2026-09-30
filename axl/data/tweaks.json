@@ -577,6 +577,206 @@
    "effect": null,
    "check": null,
    "kind": "behavior"
+  },
+  {
+   "id": "color-not-only",
+   "name": "Color is never the only signal",
+   "category": "Access",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "Color is not used as the only visual means of conveying information",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "text-resize-200",
+   "name": "Text resizes to 200% intact",
+   "category": "Access",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "text can be resized without assistive technology up to 200 percent without loss of content or functionality",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "semantic-structure",
+   "name": "Structure is in the markup",
+   "category": "Access",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "Information, structure, and relationships conveyed through presentation can be programmatically determined",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "contrast-7",
+   "name": "Text contrast 7:1 (AAA)",
+   "category": "Color",
+   "effect": null,
+   "check": "contrast",
+   "kind": "behavior",
+   "source_quote": "contrast ratio of at least 7:1",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "reading-order",
+   "name": "Reading order matches meaning",
+   "category": "Access",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "a correct reading sequence can be programmatically determined",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "field-labels",
+   "name": "Every field has a label",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": "axe",
+   "kind": "behavior",
+   "source_quote": "Labels or instructions are provided when content requires user input",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "error-identified",
+   "name": "Errors named in text",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "the item that is in error is identified and the error is described to the user in text",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "error-suggestion",
+   "name": "Errors suggest a fix",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "suggestions for correction are known, then the suggestions are provided to the user",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "headings-describe",
+   "name": "Headings describe their section",
+   "category": "Access",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "Headings and labels describe topic or purpose",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "link-purpose",
+   "name": "Link text says where it goes",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "The purpose of each link can be determined from the link text alone",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "text-alternative",
+   "name": "Images have text alternatives",
+   "category": "Access",
+   "effect": null,
+   "check": "axe",
+   "kind": "behavior",
+   "source_quote": "All non-text content that is presented to the user has a text alternative",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "focus-not-obscured",
+   "name": "Focus never hidden by overlays",
+   "category": "Access",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "the component is not entirely hidden due to author-created content",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "text-spacing",
+   "name": "Survives user text spacing",
+   "category": "Type",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "Line height (line spacing) to at least 1.5 times the font size",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "no-drag-only",
+   "name": "Dragging has a click alternative",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "All functionality that uses a dragging movement for operation can be achieved by a single pointer without dragging",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "accessible-auth",
+   "name": "Login without memory puzzles",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "A cognitive function test (such as remembering a password or solving a puzzle) is not required for any step in an authentication process",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "redundant-entry",
+   "name": "Don't ask twice for the same data",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "Information previously entered by or provided to the user that is required to be entered again",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "non-text-contrast",
+   "name": "UI parts contrast 3:1",
+   "category": "Color",
+   "effect": null,
+   "check": "axe",
+   "kind": "behavior",
+   "source_quote": "have a contrast ratio of at least 3:1 against adjacent color",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "no-auto-play-motion",
+   "name": "Moving content can be paused",
+   "category": "Motion",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "there is a mechanism for the user to pause, stop, or hide it",
+   "source_url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "id": "clear-error-on-fix",
+   "name": "Clear errors once fixed",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "we should remove the error message the moment the input becomes valid",
+   "source_url": "https://www.smashingmagazine.com/2022/09/inline-validation-web-forms-ux/"
+  },
+  {
+   "id": "validate-late",
+   "name": "Validate on submit, not keystroke",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior",
+   "source_quote": "validate these input fields on submit only to avoid premature errors",
+   "source_url": "https://www.smashingmagazine.com/2022/09/inline-validation-web-forms-ux/"
   }
  ]
 }

@@ -65,7 +65,7 @@
    "retrieved_at": "2026-09-30T05:15:52Z",
    "kind": "primary",
    "derives_from": null,
-   "quote": "Pass 1: Spacing & Breathing Room Section spacing — major sections have clear visual separation (32-48px minimum between groups)",
+   "quote": "Pass 1: Spacing & Breathing Room Section spacing \u2014 major sections have clear visual separation (32-48px minimum between groups)",
    "tweaks": [
     "spacing",
     "airy"
@@ -158,7 +158,7 @@
    "retrieved_at": "2026-09-30T05:15:52Z",
    "kind": "primary",
    "derives_from": null,
-   "quote": "Minor (polish that separates good from great — full list in review.md Polish Pass): no tabular-nums on data, missing text-wrap: balance , straight quotes, no &nbsp; in brand names, testimonial star ratings, hero metric without adjacent context.",
+   "quote": "Minor (polish that separates good from great \u2014 full list in review.md Polish Pass): no tabular-nums on data, missing text-wrap: balance , straight quotes, no &nbsp; in brand names, testimonial star ratings, hero metric without adjacent context.",
    "tweaks": [
     "tabular",
     "wrap",
@@ -469,7 +469,7 @@
    "retrieved_at": "2026-09-30T05:15:52Z",
    "kind": "derivative",
    "derives_from": "leonxlnx/taste-skill",
-   "quote": "A prescriptive UI framework that enforces editorial minimalism by banning the usual AI design clichés. It blocks Inter/Roboto fonts, Lucide icons, heavy shadows, and rounded-full buttons",
+   "quote": "A prescriptive UI framework that enforces editorial minimalism by banning the usual AI design clich\u00e9s. It blocks Inter/Roboto fonts, Lucide icons, heavy shadows, and rounded-full buttons",
    "tweaks": [
     "banned-fonts",
     "shadow",
@@ -527,7 +527,7 @@
    "retrieved_at": "2026-09-30T05:15:52Z",
    "kind": "primary",
    "derives_from": null,
-   "quote": "Complete autonomous design overhaul — tears down dated patterns and rebuilds with modern CSS, proper tokens, purposeful motion, and production-grade quality.",
+   "quote": "Complete autonomous design overhaul \u2014 tears down dated patterns and rebuilds with modern CSS, proper tokens, purposeful motion, and production-grade quality.",
    "tweaks": [
     "design-tokens",
     "motion"
@@ -547,6 +547,138 @@
     "serif",
     "accent",
     "states-designed"
+   ]
+  },
+  {
+   "word": "adapt",
+   "source": "GOV.UK Design System",
+   "publisher": "UK Government",
+   "url": "https://design-system.service.gov.uk/styles/layout/",
+   "file": "vs2_govuk_layout.txt",
+   "retrieved_at": "2026-09-30T06:16:12.165025Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Design for different screen sizes rather than specific devices.",
+   "tweaks": [
+    "reflow",
+    "width",
+    "stack"
+   ]
+  },
+  {
+   "word": "optimize",
+   "source": "web.dev",
+   "publisher": "Google",
+   "url": "https://web.dev/performance/",
+   "file": "vs2_webdev_performance.txt",
+   "retrieved_at": "2026-09-30T06:16:12.165025Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "How fast pages load and how quickly they respond to user input can have a significant impact on how users perceive your site",
+   "tweaks": [
+    "perf"
+   ]
+  },
+  {
+   "word": "audit",
+   "source": "W3C Web Accessibility Initiative",
+   "publisher": "W3C",
+   "url": "https://www.w3.org/WAI/test-evaluate/",
+   "file": "vs3_w3c_wcag_audit.txt",
+   "retrieved_at": "2026-09-30T00:00:00Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Conformance evaluation determines how well web pages or applications meet accessibility standards.",
+   "tweaks": [
+    "audit-first",
+    "contrast-text",
+    "focus",
+    "text-alternative",
+    "field-labels"
+   ]
+  },
+  {
+   "word": "critique",
+   "source": "Nielsen Norman Group",
+   "publisher": "Nielsen Norman Group",
+   "url": "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/",
+   "file": "vs3_nngroup_heuristic.txt",
+   "retrieved_at": "2026-09-30T00:00:00Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "A heuristic evaluation is a method for identifying design problems in a user interface. Evaluators judge the design against a set of guidelines (called heuristics) that make systems easy to use.",
+   "tweaks": [
+    "audit-first",
+    "match-patterns"
+   ]
+  },
+  {
+   "word": "extract",
+   "source": "Style Dictionary",
+   "publisher": "Amazon Design",
+   "url": "https://styledictionary.com/",
+   "file": "vs3_styledictionary.txt",
+   "retrieved_at": "2026-09-30T00:00:00Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Export your Design Tokens to any platform - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of.",
+   "tweaks": [
+    "design-tokens",
+    "color-roles"
+   ]
+  },
+  {
+   "word": "checklist",
+   "source": "W3C WCAG 2.2",
+   "publisher": "W3C",
+   "url": "https://www.w3.org/TR/WCAG22/",
+   "file": "src_w3-org-tr-wcag22.txt",
+   "retrieved_at": "2026-09-30T06:18:43+00:00",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Color is not used as the only visual means of conveying information",
+   "tweaks": [
+    "color-not-only",
+    "text-resize-200",
+    "semantic-structure",
+    "contrast-7",
+    "reading-order",
+    "field-labels",
+    "error-identified",
+    "error-suggestion",
+    "headings-describe",
+    "link-purpose",
+    "text-alternative",
+    "focus-not-obscured",
+    "text-spacing",
+    "no-drag-only",
+    "accessible-auth",
+    "redundant-entry",
+    "non-text-contrast",
+    "no-auto-play-motion",
+    "contrast-text",
+    "target",
+    "reflow",
+    "focus",
+    "reduce",
+    "underline"
+   ]
+  },
+  {
+   "word": "checklist",
+   "source": "Smashing Magazine",
+   "publisher": "Smashing Magazine",
+   "url": "https://www.smashingmagazine.com/2022/09/inline-validation-web-forms-ux/",
+   "file": "gap_smashing-forms.txt",
+   "retrieved_at": "2026-09-30T06:18:43+00:00",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "we should remove the error message the moment the input becomes valid",
+   "tweaks": [
+    "clear-error-on-fix",
+    "validate-late",
+    "field-labels",
+    "error-identified"
    ]
   }
  ]
