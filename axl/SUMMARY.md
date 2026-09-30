@@ -14,6 +14,9 @@ Open `axl/site/index.html` (one file).
 - `python3 axl/axl.py check <kit.axl.md> <page or URL>` runs a kit on any page: CSS rules by computed value, `wcag:` by axe-core, `lighthouse:` by Lighthouse, `axl:` by the measures built so far; PASS / FAIL (with the fix and elements) / ASK / not checkable yet / INVALID. Tested on Northstar (before and after the fixes) and on www.gov.uk.
 - **No install:** the site's "Check any page (one file)" downloads one ~600 KB file (engine + axe-core + the rules) to paste into any page's console; works offline. `axl.py bundle` makes the same file. How-to: `HOW_TO_CHECK.md`. Gate: `scripts/gates/kit_check.py`.
 
+## Fairness (tested)
+- Showing a source must not make the demo worse: `scripts/audit_fairness.py` renders every definition on all 9 pages at desktop/tablet/mobile and compares with the untouched page. 162 → **5 of 2,430** renders worse; the 5 are broad checklists stacking 47–136 previews (`reports/fairness.md`). Previews apply only on the page they were made for; dark-mode previews show only on their own.
+
 ## Not done yet
 - **Phase 4 (rest):** 20 of the 127 proposed `axl:` measures are built; rules using the others report "not checkable yet".
 - **Phase 7:** the command matrix view is deferred until its place is decided.

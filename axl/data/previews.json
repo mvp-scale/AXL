@@ -29,11 +29,11 @@
  },
  "accessible-data-table-alongside-color-coded-char": {
   "view": "reports",
-  "css": ".rep-grid table{font-size:11px;width:100%;border-collapse:collapse;margin-top:8px}.rep-grid th,.rep-grid td{border:1px solid #dce1e8;padding:3px 6px;text-align:left}",
+  "css": ".b2-wrap{overflow-x:auto;margin-top:8px}.b2-wrap table{font-size:12px;width:100%;border-collapse:collapse;color:#3d4a5c}.b2-wrap caption{color:#3d4a5c;text-align:left;font-size:12px;padding-bottom:4px}.b2-wrap th,.b2-wrap td{border:1px solid #dce1e8;padding:3px 6px;text-align:left;color:#3d4a5c;background:#fff;font-size:12px;font-weight:500}",
   "patch": [
    {
     "sel": ".rep-grid > .card:nth-child(1)",
-    "append": "<table><caption>Milestones by week</caption><thead><tr><th>Week</th><th>W1</th><th>W2</th><th>W3</th><th>W4</th><th>W5</th><th>W6</th></tr></thead><tbody><tr><th>Done</th><td>6</td><td>9</td><td>8</td><td>14</td><td>12</td><td>21</td></tr></tbody></table>"
+    "append": "<div class=\"b2-wrap\"><table><caption>Milestones by week</caption><thead><tr><th>Week</th><th>W1</th><th>W2</th><th>W3</th><th>W4</th><th>W5</th><th>W6</th></tr></thead><tbody><tr><th>Done</th><td>6</td><td>9</td><td>8</td><td>14</td><td>12</td><td>21</td></tr></tbody></table></div>"
    }
   ]
  },
@@ -99,7 +99,7 @@
  },
  "add-one-memorable-signature-detail": {
   "view": "site",
-  "css": ".site-hero h2{background:none;-webkit-text-fill-color:#111827;color:#111827;font-size:60px;font-weight:900;letter-spacing:-.04em;line-height:.98}"
+  "css": ".site-hero h2{background:none;-webkit-text-fill-color:#111827;color:#111827;font-weight:900;letter-spacing:-.04em;line-height:.98}@media(min-width:700px){.site-hero h2{font-size:60px}}"
  },
  "add-one-purposeful-entrance-on-focal-element": {
   "view": "overview",
@@ -458,11 +458,11 @@
  },
  "avoid-default-hero-plus-three-cards-layout": {
   "view": "site",
-  "css": ".features{grid-template-columns:1.4fr 1fr;text-align:left}.feature:first-child{grid-row:span 2}.feature:first-child p{font-size:14px}"
+  "css": "@media (min-width:700px){.features{grid-template-columns:1.4fr 1fr;text-align:left}.feature:first-child{grid-row:span 2}.feature:first-child p{font-size:14px}}"
  },
  "avoid-default-left-text-right-image-hero": {
   "view": "site",
-  "css": ".hero-shot{max-width:none;margin:34px -40px 0;border-radius:0}"
+  "css": ".hero-shot{max-width:none;border-radius:0}"
  },
  "avoid-default-sun-moon-theme-toggle": {
   "view": "settings",
@@ -515,7 +515,7 @@
  },
  "avoid-identical-three-column-testimonial-cards": {
   "view": "site",
-  "css": ".quote:nth-child(2){background:#f4ede1;transform:translateY(16px)}.quote:nth-child(3){font-style:normal}"
+  "css": ".quote:nth-child(2){background:#f4ede1;color:#3d4a5c}.quote:nth-child(2) cite{color:#3d4a5c}.quote:nth-child(3){font-style:normal}@media(min-width:700px){.quote:nth-child(2){transform:translateY(16px)}}"
  },
  "avoid-large-payload": {
   "kind": "performance",
@@ -636,7 +636,7 @@
  },
  "bento-cards-with-dominant-size": {
   "view": "site",
-  "css": ".features{grid-template-columns:2fr 1fr 1fr}"
+  "css": "@media(min-width:700px){.features{grid-template-columns:2fr 1fr 1fr}}"
  },
  "bfcache": {
   "kind": "performance",
@@ -834,7 +834,7 @@
  },
  "card-only-when-grouping": {
   "view": "settings",
-  "css": ".card{background:none;border:0;box-shadow:none;border-radius:0}"
+  "css": ".card{background:none;border:0;box-shadow:none;border-radius:0}.card :is(.subcopy,.metric-label,.metric-note,.help,.legend,.activity small,.switch-row small,.section-head span,.empty-state p,.loading-label,.form-actions small,.detail-grid small,.table-footer,th,.bar-labels,.pie-legend,.kpi small){color:#3d4a5c}.card .chart-labels{fill:#3d4a5c}"
  },
  "carousel-items-include-image": {
   "kind": "content",
@@ -902,7 +902,27 @@
  },
  "clamp-variable-length-text-in-grids": {
   "view": "site",
-  "css": ".feature p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}"
+  "css": "@media(min-width:900px){.feature p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}}",
+  "patch": [
+   {
+    "sel": ".feature:nth-child(1) p",
+    "attr": {
+     "title": "Blazing-fast performance that scales effortlessly with your growing team and evolving needs."
+    }
+   },
+   {
+    "sel": ".feature:nth-child(2) p",
+    "attr": {
+     "title": "Bank-grade security keeps your data safe, secure and protected around the clock, always."
+    }
+   },
+   {
+    "sel": ".feature:nth-child(3) p",
+    "attr": {
+     "title": "Cutting-edge AI seamlessly automates your workflows so you can focus on what matters most."
+    }
+   }
+  ]
  },
  "clean-copy-button-for-responses": {
   "kind": "behaviour",
@@ -1149,7 +1169,7 @@
  },
  "copy-button-on-code-blocks": {
   "view": "docs",
-  "css": ".article pre{position:relative}.copy{position:absolute;top:6px;right:6px;font-size:11px;padding:2px 8px}",
+  "css": ".article pre{position:static}.article .copy{position:static;display:block;margin:0 0 8px auto;font-size:12px;padding:3px 10px;color:#1f2a3a;background:#fff;border:1px solid #cbd2db}",
   "patch": [
    {
     "sel": ".article pre",
@@ -1265,9 +1285,16 @@
   "view": "overview",
   "css": "button{border-radius:2px}.card{border-radius:2px;border-color:#b8c3d1;box-shadow:3px 3px 0 #dce1e8}"
  },
+ "dark": {
+  "view": "overview",
+  "css": "body{background:#142434;color:#e1eaf2}.app-nav,.card,.toast,.app-modal{background:#1c3043;color:#e1eaf2;border-color:#3c5267}h1,h2,h3,.metric-value,td:first-child{color:#f1f5f9}.hero{background:#1c3043}.subcopy,.metric-label,.metric-note,.help,footer{color:#aec0d1}input,select,textarea,button,th{background:#243b50;color:#e1eaf2;border-color:#526d84}.chart-area{fill:#243b50}.chart-grid{stroke:#3c5267}.chart-labels{fill:#aec0d1}.nav-item[aria-current=page]{background:#304d66;color:white}.brand{color:#e1eaf2}.topbar{color:#aec0d1}.tabs button{color:#aec0d1}.tabs button[aria-selected=true]{color:#fff}.form-actions small,.detail-grid small,.switch-row small{color:#aec0d1}.text-link,a{color:#9ec1e6}.article,.article p,.article li,.article td,.article th,.article h1,.article h2,.article summary{color:#e1eaf2}.toc a,.toc b,.crumbs,.crumbs a,.byline,.article figcaption,.fn,.doc-feedback{color:#aec0d1}.toc a.on{color:#fff}.callout{background:#2a3b4d;border-color:#526d84;color:#e1eaf2}.article blockquote{color:#c5d3e0;border-color:#526d84}.article code{background:#243b50;color:#e1eaf2}.article pre code{background:none}.article td,.article th{border-color:#3c5267}.toc{border-color:#3c5267}.site-sec,.site-hero{background:#142434}.site-sec h3{color:#f1f5f9}.kicker{color:#c4b5fd}.site-hero p{color:#aec0d1}.feature,.quote,.plan{background:#1c3043;border-color:#3c5267;color:#e1eaf2}.feature b,.plan b,.price{color:#f1f5f9}.feature p,.quote cite,.price small,.plan ul,.faq details p{color:#aec0d1}.quote{color:#c9d6e2}.faq details{border-color:#3c5267}.billing{border-color:#3c5267}.plan .tag{background:#3b2a5c;color:#e9d5ff}",
+  "override": true,
+  "solo": true
+ },
  "dark-mode-elevation-via-lighter-surfaces": {
   "view": "site",
-  "css": ".plan{background:#1c2230;color:#e5e7eb;border-color:#2a3345}.plan b{color:#f3f4f6}.plan.pop{background:#262f42;box-shadow:none;border-color:#3b4760}"
+  "css": ".plan{background:#1c2230;color:#e5e7eb;border-color:#2a3345}.plan b,.plan .price{color:#f3f4f6}.plan .price small,.plan ul{color:#cbd5e1}.plan.pop{background:#262f42;box-shadow:none;border-color:#3b4760}",
+  "solo": true
  },
  "dark-mode-support": {
   "view": "overview",
@@ -1283,7 +1310,7 @@
  },
  "debounce-input": {
   "view": "projects",
-  "css": "#project-search[aria-busy=true]{border-color:#94a3b8;opacity:.7}",
+  "css": "#project-search[aria-busy=true]{border-color:#64748b;color:#25384e;background:#e2e8f0}",
   "patch": [
    {
     "sel": "#project-search",
@@ -1461,7 +1488,7 @@
   "patch": [
    {
     "sel": ".subcopy",
-    "after": "<div class=\"notice\" style=\"margin-top:12px\"><span>Tip: use the New project button to kick off work.</span><button>Dismiss</button> <button class=\"secondary\">Don't show again</button></div>"
+    "after": "<div class=\"notice\" style=\"margin-top:12px;flex-wrap:wrap\"><span>Tip: use the New project button to kick off work.</span><span style=\"display:flex;flex-wrap:wrap;gap:8px\"><button>Dismiss</button> <button class=\"secondary\">Don't show again</button></span></div>"
    }
   ]
  },
@@ -1475,7 +1502,7 @@
  },
  "distinguish-user-and-assistant-messages": {
   "view": "assistant",
-  "css": ".msg.user{margin-left:auto;max-width:80%;background:#e8edf7}.msg.bot{background:transparent}"
+  "css": ".msg.user{margin-left:auto;max-width:80%;background:#e8edf7;color:#1f2a3a}.msg.user time{color:#3d4a5c}.msg.bot{background:transparent}"
  },
  "diverging-palettes-need-semantic-midpoint": {
   "kind": "judgment",
@@ -1652,7 +1679,7 @@
   "patch": [
    {
     "sel": ".kpis",
-    "append": "<div class=\"kpi\"><small>Customer score</small><b>—</b> <span class=\"delta\" style=\"color:#8a97a8\">No data yet</span></div>"
+    "append": "<div class=\"kpi\"><small style=\"font-size:12px;color:#3d4a5c\">Customer score</small><b>—</b> <span class=\"delta\" style=\"font-size:12px;color:#3d4a5c\">No data yet</span></div>"
    }
   ]
  },
@@ -1711,6 +1738,7 @@
  },
  "empty-table-header": {
   "view": "projects",
+  "css": "#projects .data-table th:last-child{color:#3d4a5c}",
   "patch": [
    {
     "sel": "#projects .data-table th:last-child",
@@ -1838,6 +1866,7 @@
  },
  "error-suggestion": {
   "view": "signin",
+  "css": ".auth-form .err{color:#b42318;font-size:12px}",
   "patch": [
    {
     "sel": "#si-err",
@@ -2029,13 +2058,18 @@
   "view": "site",
   "css": ".hero-shot{max-width:none;width:100%;border:1px solid #cbd2db;border-radius:10px;overflow:hidden;box-shadow:0 8px 24px rgba(41,51,66,.14)}.hero-shot img{width:100%;height:auto;display:block}"
  },
+ "flat": {
+  "view": "overview",
+  "css": ".metric{background:transparent;border:0!important;box-shadow:none!important;border-radius:0!important;padding-left:0}.card :is(.subcopy,.metric-label,.metric-note,.help,.legend,.activity small,.switch-row small,.section-head span,.empty-state p,.loading-label,.form-actions small,.detail-grid small,.table-footer,th,.bar-labels,.pie-legend,.kpi small){color:#3d4a5c}.card .chart-labels{fill:#3d4a5c}",
+  "override": true
+ },
  "flatten-component-trees": {
   "kind": "agent",
   "why": "Code structure advice to an AI agent"
  },
  "floating-pill-nav-content-sized": {
   "view": "site",
-  "css": ".site-nav{width:max-content;max-width:720px;margin:16px auto;border-radius:999px;box-shadow:0 4px 16px rgba(15,23,42,.12)}"
+  "css": ".site-nav{width:fit-content;max-width:min(720px,calc(100% - 24px));margin:16px auto;border-radius:999px;box-shadow:0 4px 16px rgba(15,23,42,.12);flex-wrap:wrap}"
  },
  "fluid-spacing-clamp": {
   "view": "site",
@@ -2165,10 +2199,11 @@
  },
  "friction-proportional-to-commitment": {
   "view": "editor",
+  "css": ".b2-p{font-size:13px;color:#3d4a5c;margin:0 0 8px}",
   "patch": [
    {
     "sel": ".form-actions",
-    "before": "<p class=\"help\">Saving is one click. Deleting a project asks you to type its name first.</p>"
+    "before": "<p class=\"b2-p\">Saving is one click. Deleting a project asks you to type its name first.</p>"
    }
   ]
  },
@@ -2764,7 +2799,7 @@
  },
  "keep-semantic-color-cut-decorative-color": {
   "view": "signin",
-  "css": ".auth-art{background:#eef1f5}"
+  "css": ".auth-art{background:#eef1f5}.auth-art h2{color:#1f2a3a}.auth-art p{color:#3d4a5c;opacity:1}"
  },
  "keep-spacing-cadence-even-between-sections": {
   "view": "site",
@@ -3183,7 +3218,7 @@
  },
  "make-distinctive-non-templated-design-choices": {
   "view": "site",
-  "css": ".site-hero{text-align:left;max-width:720px;margin-left:0}.hero-ctas{justify-content:flex-start}.features{grid-template-columns:2fr 1fr 1fr}"
+  "css": "@media(min-width:700px){.site-hero{text-align:left;max-width:720px;margin-left:0}.hero-ctas{justify-content:flex-start}.features{grid-template-columns:2fr 1fr 1fr}}"
  },
  "make-every-panel-feel-connected": {
   "view": "overview",
@@ -3276,7 +3311,7 @@
  },
  "master-detail-split-view-on-tablets": {
   "view": "overview",
-  "css": ".split-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr);gap:24px}"
+  "css": "@media(min-width:700px){.split-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr);gap:24px}}"
  },
  "match-art-direction-to-app-category": {
   "view": "site",
@@ -3397,7 +3432,7 @@
   "patch": [
    {
     "sel": "#project-date",
-    "after": "<div class=\"help\">Shown on the timeline. You can change it later.</div>"
+    "after": "<div class=\"help\" style=\"font-size:12px;color:#3d4a5c\">Shown on the timeline. You can change it later.</div>"
    }
   ]
  },
@@ -3715,7 +3750,7 @@
  },
  "no-card-in-card": {
   "view": "site",
-  "css": ".feature,.quote{border:0;box-shadow:none;background:none;backdrop-filter:none;padding:0}"
+  "css": ".feature,.quote{border:0;box-shadow:none;background:none;backdrop-filter:none;padding:0}.feature p,.quote,.quote cite{color:#4b5563}"
  },
  "no-cognitive-test-login": {
   "view": "signin",
@@ -3906,8 +3941,8 @@
   "css": ".hero-shot{box-shadow:0 8px 24px #1118271a}.plan.pop{box-shadow:0 8px 24px #1118271a}.quote{box-shadow:0 1px 3px #1118270d}"
  },
  "no-horizontal-scroll": {
-  "view": "docs",
-  "css": ".article pre{overflow-x:auto;max-width:100%}.long{overflow-wrap:anywhere}"
+  "kind": "behaviour",
+  "why": "The demo already keeps wide content inside its box, so there is nothing to fix on screen"
  },
  "no-hover-animation-on-images": {
   "view": "site",
@@ -4040,7 +4075,7 @@
  },
  "no-purple-blue-gradient": {
   "view": "signin",
-  "css": ".auth-art{background:#e8ebf1}"
+  "css": ".auth-art{background:#e8ebf1}.auth-art h2{color:#1f2a3a}.auth-art p{color:#3d4a5c;opacity:1}"
  },
  "no-rainbow-decoration": {
   "view": "reports",
@@ -4158,7 +4193,7 @@
  },
  "no-uniform-three-column-icon-grids": {
   "view": "site",
-  "css": ".features{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}.feature:first-child{grid-row:span 2}"
+  "css": "@media (min-width:700px){.features{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}.feature:first-child{grid-row:span 2}}"
  },
  "no-universal-hover-scale-on-cards": {
   "view": "site",
@@ -4565,7 +4600,7 @@
  },
  "pick-one-hero-scale-decisively": {
   "view": "site",
-  "css": ".site-hero h2{font-size:64px}"
+  "css": "@media(min-width:700px){.site-hero h2{font-size:64px}}"
  },
  "pick-real-nav-archetype-not-minimal-nav": {
   "kind": "judgment",
@@ -4695,10 +4730,11 @@
  },
  "prefill-likely-answers": {
   "view": "editor",
+  "css": ".b2-note{font-size:12px;color:#3d4a5c;margin:5px 0 0}",
   "patch": [
    {
     "sel": "#project-date",
-    "after": "<div class=\"help\">Pre-filled with a likely date; change it if needed.</div>"
+    "after": "<div class=\"b2-note\">Pre-filled with a likely date; change it if needed.</div>"
    }
   ]
  },
@@ -5012,10 +5048,11 @@
  },
  "redundant-entry-none": {
   "view": "editor",
+  "css": ".b2-note{font-size:12px;color:#3d4a5c;margin:5px 0 0}",
   "patch": [
    {
     "sel": "#project-owner",
-    "after": "<div class='help'>Pre-filled from your last project. Change it if someone else leads.</div>"
+    "after": "<div class='b2-note'>Pre-filled from your last project. Change it if someone else leads.</div>"
    }
   ]
  },
@@ -5041,10 +5078,11 @@
  },
  "relative-or-absolute-time-by-context": {
   "view": "docs",
+  "css": ".b2-abs{color:#3d4a5c;font-size:12px}",
   "patch": [
    {
     "sel": ".byline",
-    "append": "<span> (28 Sep 2026)</span>"
+    "append": "<span class=\"b2-abs\"> (28 Sep 2026)</span>"
    }
   ]
  },
@@ -5270,7 +5308,18 @@
  },
  "scrollable-focusable": {
   "view": "docs",
-  "css": ".article pre{overflow:auto}.article pre:focus-visible{outline:2px solid #1d4ed8;outline-offset:2px}"
+  "state": {
+   "focusSel": ".article pre"
+  },
+  "patch": [
+   {
+    "sel": ".article pre",
+    "attr": {
+     "tabindex": "0"
+    }
+   }
+  ],
+  "css": ".article pre:focus-visible{outline:3px solid #1d4ed8;outline-offset:2px}"
  },
  "seamless-active-nav-indicator": {
   "view": "overview",
@@ -5410,10 +5459,11 @@
  },
  "share-link-for-responses": {
   "view": "assistant",
+  "css": ".msg-tools{flex-wrap:wrap}",
   "patch": [
    {
     "sel": ".msg-tools",
-    "append": "<button aria-label=\"Share link\" style=\"font-size:11px\">🔗 Share link</button>"
+    "append": "<button aria-label=\"Share link\" style=\"font-size:12px;color:#3d4a5c\">🔗 Share link</button>"
    }
   ]
  },
@@ -5457,10 +5507,11 @@
  },
  "show-change-history": {
   "view": "editor",
+  "css": ".b2-hist small{color:#3d4a5c!important;font-size:12px!important}.b2-hist li,.b2-hist h2{color:#293342}",
   "patch": [
    {
     "sel": "#editor section:last-child",
-    "after": "<section class=\"card\"><h2>Change history</h2><ul class=\"activity\"><li>Target date changed to 16 Oct<small>Maya Chen · 2 hours ago</small></li><li>Owner set to James Lee<small>Olivia Ruiz · yesterday</small></li></ul></section>"
+    "after": "<section class=\"card b2-hist\"><h2>Change history</h2><ul class=\"activity\"><li>Target date changed to 16 Oct<small>Maya Chen · 2 hours ago</small></li><li>Owner set to James Lee<small>Olivia Ruiz · yesterday</small></li></ul></section>"
    }
   ]
  },
@@ -5617,7 +5668,7 @@
   "patch": [
    {
     "sel": "#project-owner",
-    "after": "<div class=\"help\">Defaults to you (James Lee).</div>"
+    "after": "<div class=\"help\" style=\"font-size:12px;color:#3d4a5c\">Defaults to you (James Lee).</div>"
    }
   ]
  },
@@ -5945,7 +5996,7 @@
  },
  "table-row-actions": {
   "view": "projects",
-  "css": ".data-table .row-action{opacity:.6}.data-table tr:hover .row-action,.row-action:focus-visible{opacity:1}.row-action:focus-visible{outline:2px solid #46597a;outline-offset:2px}"
+  "css": "@media(hover:hover) and (min-width:700px){.data-table .row-action{background:transparent;border-color:transparent;color:#3d4a5c}.data-table tr:hover .row-action{background:#fff;border-color:#cbd2db}}.row-action:focus-visible{background:#fff;border-color:#cbd2db;outline:2px solid #46597a;outline-offset:2px}"
  },
  "table-sort-filter": {
   "view": "projects",
@@ -6203,7 +6254,7 @@
  },
  "typographic-rhythm-instead-of-cards": {
   "view": "overview",
-  "css": ".card{border:0;box-shadow:none;background:none;padding:0 0 16px;border-radius:0}"
+  "css": ".card{border:0;box-shadow:none;background:none;padding:0 0 16px;border-radius:0}.card :is(.subcopy,.metric-label,.metric-note,.help,.legend,.activity small,.switch-row small,.section-head span,.empty-state p,.loading-label,.form-actions small,.detail-grid small,.table-footer,th,.bar-labels,.pie-legend,.kpi small){color:#3d4a5c}.card .chart-labels{fill:#3d4a5c}"
  },
  "typography-only-hero-is-always-acceptable": {
   "view": "site",
@@ -6289,7 +6340,7 @@
  },
  "use-bold-but-controlled-creative-ambition": {
   "view": "site",
-  "css": ".site-hero{text-align:left;background:#fff;padding-left:56px}.site-hero h2{background:none;color:#1e293b;font-size:58px;line-height:.98;max-width:12em;margin-left:0}.site-hero p{margin-left:0;color:#475569;font-weight:400;max-width:34em}.hero-ctas{justify-content:flex-start}"
+  "css": "@media(min-width:700px){.site-hero .kicker{color:#6d28d9}.site-hero{text-align:left;background:#fff;padding-left:56px}.site-hero h2{background:none;color:#1e293b;font-size:58px;line-height:.98;max-width:12em;margin-left:0}.site-hero p{margin-left:0;color:#475569;font-weight:400;max-width:34em}.hero-ctas{justify-content:flex-start}}"
  },
  "use-charcoal-graphite-neutrals-with-restrained-g": {
   "view": "site",
@@ -6301,7 +6352,7 @@
  },
  "use-connectors-and-containers-in-diagrams": {
   "view": "reports",
-  "css": ".stepper{align-items:center;gap:4px}.stepper .st{border:1px solid #cbd2db;border-radius:6px;padding:3px 8px;background:#fff}.stepper .st.on{background:#46597a;color:#fff;border-color:#46597a}.stepper .ar{color:#8a97a8}",
+  "css": ".stepper{align-items:center;gap:4px;font-size:12px;flex-wrap:wrap;color:#3d4a5c}.stepper .st{border:1px solid #8a97a8;border-radius:6px;padding:3px 8px;background:#fff;color:#3d4a5c}.stepper .st.on{background:#46597a;color:#fff;border-color:#46597a}.stepper .ar{color:#3d4a5c}",
   "patch": [
    {
     "sel": ".stepper",
@@ -6524,7 +6575,7 @@
  },
  "use-square-blocks-with-staggered-vertical-rhythm": {
   "view": "site",
-  "css": ".feature{aspect-ratio:1/1}.feature:nth-child(even){margin-top:24px}"
+  "css": "@media (min-width:700px){.feature{min-height:220px}.feature:nth-child(even){transform:translateY(24px)}.features{padding-bottom:24px}}"
  },
  "use-starting-style-for-entry-animation": {
   "view": "overview",
@@ -6588,7 +6639,7 @@
   "patch": [
    {
     "sel": "#project-date",
-    "after": "<div class=\"help\">Extra spaces are removed for you.</div>"
+    "after": "<div class=\"help\" style=\"font-size:12px;color:#3d4a5c\">Extra spaces are removed for you.</div>"
    }
   ]
  },
@@ -6622,7 +6673,7 @@
  },
  "vary-dashboard-navigation-beyond-left-sidebar": {
   "view": "overview",
-  "css": ".app{display:block}.app-nav{display:flex;flex-direction:row;align-items:center;gap:6px;width:auto;height:auto;position:static;padding:8px 16px;border-right:0;border-bottom:1px solid #dce1e8}.app-nav .brand{margin:0 16px 0 0}.nav-group,.nav-bottom{display:none}"
+  "css": ".app{display:block}.app-nav{display:flex;flex-direction:row;align-items:center;gap:6px;width:auto;height:auto;position:static;padding:8px 16px;border-right:0;border-bottom:1px solid #dce1e8}.app-nav .brand{margin:0 16px 0 0}.nav-group,.nav-bottom{display:none}.app-nav{flex-wrap:wrap}"
  },
  "vary-footer-archetype-between-runs": {
   "kind": "process",
@@ -6681,7 +6732,7 @@
  },
  "vary-section-layouts": {
   "view": "site",
-  "css": ".site-sec{text-align:left}.features{grid-template-columns:1fr}.feature{display:grid;grid-template-columns:40px 180px 1fr;align-items:center;text-align:left}.feature b,.feature p{margin:0}"
+  "css": "@media (min-width:700px){.site-sec{text-align:left}.features{grid-template-columns:1fr}.feature{display:flex;gap:16px;align-items:center;text-align:left}.feature b{flex:0 0 180px}.feature b,.feature p{margin:0}}"
  },
  "vary-section-rhythm-and-density": {
   "view": "site",

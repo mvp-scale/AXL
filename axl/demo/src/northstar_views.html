@@ -12,21 +12,21 @@ body[data-view=site] footer,body[data-view=signin] footer,body[data-view=docs] f
 .icon-btn{width:30px;height:30px;padding:0;display:inline-grid;place-items:center;font-size:14px;line-height:1;border-radius:50%}
 a{color:#4d6c8f;text-decoration:none}
 /* ---------- public home page ---------- */
-.promo{display:flex;justify-content:center;gap:10px;align-items:center;background:linear-gradient(90deg,#7c3aed,#db2777);color:#fff;font-size:11px;padding:6px 10px}
+.promo{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px;align-items:center;background:linear-gradient(90deg,#7c3aed,#db2777);color:#fff;font-size:11px;padding:6px 10px}
 .promo a{color:#fff;font-weight:700}.promo a+a{opacity:.8}.promo button{background:transparent;border:0;color:#fff;padding:0 4px;font-size:13px}
 .site-nav{display:flex;align-items:center;gap:18px;padding:14px 28px;background:#fff;border-bottom:1px solid #eef0f4;position:sticky;top:0;z-index:5}
 .site-nav .logo{font-weight:800;font-size:17px;color:#1e1b4b;margin-right:auto;letter-spacing:-.5px}
 .site-nav a{font-size:13px;color:#6b7280}.site-nav .search{width:120px;border:1px solid #e5e7eb;border-radius:6px;padding:5px 8px;font-size:12px;color:#9ca3af;background:#f9fafb}
 .site-nav .cta{background:linear-gradient(135deg,#6366f1,#a855f7);color:#fff;border:0;border-radius:999px;padding:8px 16px;font-size:13px;box-shadow:0 0 22px #a855f788}
 .site-hero{text-align:center;padding:56px 40px 44px;background:radial-gradient(circle at 50% 0,#ede9fe,#fff 70%)}
-.kicker{font-size:10px;letter-spacing:.3em;color:#a78bfa;text-transform:uppercase;font-weight:600}
+.kicker{display:block;font-size:10px;letter-spacing:.3em;color:#a78bfa;text-transform:uppercase;font-weight:600}
 .site-hero h2{font-size:46px;line-height:1.05;font-weight:800;letter-spacing:-1.5px;margin:12px auto 14px;max-width:none;text-transform:none;background:linear-gradient(90deg,#4f46e5,#db2777);-webkit-background-clip:text;background-clip:text;color:transparent}
 .site-hero p{font-size:15px;font-weight:300;color:#9ca3af;max-width:none;margin:0 auto 22px}
 .hero-ctas{display:flex;gap:10px;justify-content:center}.hero-ctas button{border-radius:999px;padding:10px 20px;font-size:14px}
 .hero-ctas .go{background:linear-gradient(135deg,#6366f1,#a855f7);color:#fff;border:0;box-shadow:0 10px 30px #7c3aed55}
 .hero-shot{margin:34px auto 0;max-width:620px;height:150px;border-radius:24px;background:linear-gradient(135deg,#c7d2fe,#fbcfe8);box-shadow:0 30px 60px #6d28d933;display:grid;place-items:center;color:#6d28d9;font-size:12px}
 .hero-shot img{width:92%;height:120px;object-fit:cover;border-radius:14px;display:block}
-.logos{display:flex;justify-content:center;gap:34px;padding:18px;color:#c4c9d4;font-weight:800;font-size:15px;letter-spacing:.06em;filter:grayscale(1)}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;padding:18px;color:#c4c9d4;font-weight:800;font-size:15px;letter-spacing:.06em;filter:grayscale(1)}
 .site-sec{padding:34px 40px;text-align:center}
 .site-sec h3{font-size:24px;font-weight:800;margin:6px 0 20px;letter-spacing:-.6px;color:#111827;text-transform:uppercase}
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}
@@ -60,17 +60,17 @@ a{color:#4d6c8f;text-decoration:none}
 .callout{background:#fff8db;border:1px solid #f5e3a3;padding:10px 12px;font-size:12px;margin:12px 0;border-radius:6px}
 .article blockquote{margin:12px 0;padding:0 0 0 12px;border-left:3px solid #dce1e8;font-style:italic;color:#7c899a}
 .article figure{margin:14px 0}.article figure img{width:100%;height:130px;object-fit:cover;display:block;border-radius:6px}.article figcaption{font-size:10px;color:#a2adbb;margin-top:4px}
-.article pre{background:#1e293b;color:#e2e8f0;padding:10px;border-radius:6px;font-size:12px;white-space:pre;overflow:visible;max-width:100%}
+.article pre{background:#1e293b;color:#e2e8f0;padding:10px;border-radius:6px;font-size:12px;white-space:pre;overflow-x:auto;max-width:100%}
 .article code{font-size:12px;background:#eef1f5;padding:1px 4px;border-radius:3px}.article pre code{background:none;padding:0}
 .article kbd{font:11px monospace;border:1px solid #cbd2db;border-radius:3px;padding:0 4px}
 .article table{border-collapse:collapse;font-size:12px;margin:10px 0}.article td,.article th{border:1px solid #e3e8ef;padding:4px 8px;text-align:left}
 .article ol,.article ul{padding-left:18px;margin:6px 0}.article li{margin:2px 0}
-.article .long{font-weight:600}
+.article .long{font-weight:600;overflow-wrap:anywhere}
 .fn{font-size:9px;color:#a2adbb;border-top:1px solid #eef1f5;margin-top:14px;padding-top:6px}
 .pager{display:flex;justify-content:space-between;margin-top:16px;font-size:12px}
 .doc-feedback{display:flex;gap:8px;align-items:center;font-size:12px;color:#8a97a8;margin-top:14px}
 /* ---------- assistant ---------- */
-.chat{display:grid;grid-template-rows:1fr auto;height:470px;background:#fff;border:1px solid #dce1e8;border-radius:8px;overflow:hidden}
+.chat{display:grid;grid-template-rows:minmax(0,1fr) auto;height:470px;background:#fff;border:1px solid #dce1e8;border-radius:8px;overflow:hidden}
 .thread{overflow:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
 .msg{max-width:78%;font-size:13px;line-height:1.4;padding:10px 12px;border-radius:14px}
 .msg.user{align-self:flex-end;background:#46597a;color:#fff;border-bottom-right-radius:3px}
@@ -125,7 +125,8 @@ a{color:#4d6c8f;text-decoration:none}
 .stepper{display:flex;gap:6px;font-size:10px;color:#a2adbb;margin:6px 0}.stepper b{color:#25384e}
 .drawer{position:fixed;top:0;right:0;bottom:0;width:260px;background:#fff;border-left:1px solid #dce1e8;box-shadow:-10px 0 30px #1b344522;padding:16px;z-index:20;font-size:12px}
 .drawer[hidden]{display:none}
-@media(max-width:500px){.features,.quotes,.plans,.site-foot,.auth,.doc,.rep-grid,.kpis{grid-template-columns:1fr}.toc,.auth-art{display:none}.site-hero h2{font-size:30px}.site-nav a{display:none}.site-sec,.site-hero{padding:24px 16px}}
+@media(max-width:900px){.site-nav a{display:none}.site-nav{gap:10px;padding:12px 16px}}
+@media(max-width:500px){.features,.quotes,.plans,.site-foot,.auth,.doc,.rep-grid,.kpis{grid-template-columns:minmax(0,1fr)}.toc,.auth-art{display:none}.site-hero h2{font-size:30px}.site-nav a{display:none}.site-sec,.site-hero{padding:24px 16px}}
 </style>
 <!--NAV-->
 <button class="nav-item" data-view="reports">Reports</button><button class="nav-item" data-view="assistant">Assistant</button><div class="nav-group">Public site</div><button class="nav-item" data-view="site">Home page</button><button class="nav-item" data-view="docs">Help article</button><button class="nav-item" data-view="signin">Sign in</button>

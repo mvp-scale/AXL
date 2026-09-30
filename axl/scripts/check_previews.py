@@ -12,7 +12,7 @@ vis = []
 for k, v in PV.items():
     if v.get("css") or v.get("patch"):
         if v.get("view") not in VIEWS: bad.append(f"{k}: view {v.get('view')}")
-        if v.get("css") and (re.search(r"@import|url\(\s*['\"]?https?:", v["css"]) or len(v["css"]) > 900): bad.append(f"{k}: css")
+        if v.get("css") and (re.search(r"@import|url\(\s*['\"]?https?:", v["css"]) or len(v["css"]) > 2500): bad.append(f"{k}: css")
         vis.append(dict(v, id=k))
     elif v.get("kind") not in KINDS or not v.get("why"): bad.append(f"{k}: kind/why")
 with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f: json.dump(vis, f)

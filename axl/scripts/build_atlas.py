@@ -41,8 +41,9 @@ tweaks = {t["id"]: dict(t, css=EFF.get(t["effect"]) if t.get("effect") else EXTR
 PV = json.load(open(f"{D}/previews.json")) if os.path.exists(f"{D}/previews.json") else {}
 for t in tweaks.values():
     p = PV.get(t["id"], {})
-    if t["css"]: t.update(view="overview", state=None, patch=None, kind=None, why=None)
+    if t["css"] and not p.get("override"): t.update(view="overview", state=None, patch=None, kind=None, why=None)
     else: t.update(css=p.get("css"), patch=p.get("patch"), view=p.get("view"), state=p.get("state"), kind=p.get("kind"), why=p.get("why"))
+    t["solo"] = bool(p.get("solo")) or None   # theme-level previews (dark mode) are shown only on their own, never stacked
 by_eff = {t["effect"]: t["id"] for t in TW["tweaks"] if t.get("effect")}
 groups = collections.OrderedDict(); vague = []
 for c in claims:
@@ -147,7 +148,7 @@ RULES = [r for r in RULES if r["values"]]
 rules_d = [{"id": r["id"], "class": r["class"], "element": r["element"], "kind": r["kind"], "code": r["code"], "label": r["label"], "sources": r["sources"],
             "values": [{"v": v["value"], "q": v["qids"]} for v in r["values"]], "tweaks": r["tweaks"], "pv": r["preview"]} for r in RULES]
 data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/northstar.html", encoding="utf-8").read(),
-  "categories": TW["categories"], "tweaks": [dict({k: t[k] for k in ("id", "name", "category", "check", "css", "patch", "view", "state", "kind", "why") if t.get(k) is not None}, asks=prov(t)) for t in tweaks.values()],
+  "categories": TW["categories"], "tweaks": [dict({k: t[k] for k in ("id", "name", "category", "check", "css", "patch", "view", "state", "kind", "why", "solo") if t.get(k) is not None}, asks=prov(t)) for t in tweaks.values()],
   "rules": rules_d, "elements": {e["id"]: {"name": e["name"], "family": e["family"]} for e in VOC["elements"]}, "classes": [c for c in VOC["classes"] if not c.get("staged")],
   "quotes": quotes, "srcnames": SIDX,
   # the one-file checker: the same engine the command line injects, plus axe-core and the element selectors

@@ -378,9 +378,16 @@ const D = /*DATA*/null;
   // content edits in words an agent can apply: "In <sel>: change the text to …" etc.
   const PATCH_TXT = ps => ps.map(o => `In ${o.sel}: ` + [o.text != null ? `set the text to "${o.text}"` : '', o.attr ? Object.entries(o.attr).map(([k, v]) => v == null ? `remove ${k}` : `set ${k}="${v}"`).join(', ') : '',
     ...['before', 'after', 'prepend', 'append'].filter(w => o[w] != null).map(w => `insert ${w === 'before' || w === 'after' ? w + ' it' : 'at the ' + (w === 'prepend' ? 'start' : 'end')}: ${o[w]}`)].filter(Boolean).join('; ')).join('\n');
-  const cssOf = ids => ids.map(i => T[i] && T[i].css).filter(Boolean).join('\n');
+  // each preview only applies on the demo page it was made (and checked) for: its CSS is nested under that page's view
+  const KEYF = /@keyframes\s+[\w-]+\s*\{(?:[^{}]*\{[^{}]*\})*[^{}]*\}/g;
+  const scoped = t => { const css = t.css || ''; if (!t.view) return css;
+    const kf = (css.match(KEYF) || []).join('\n'), body = css.replace(KEYF, '').replace(/(^|[},])\s*(html|:root)(?=[\s{.:\[,>])/g, '$1 &');
+    return `${kf}\n:root:has(body[data-view="${t.view}"]) {\n${body}\n}`; };
+  // theme-level previews (dark mode) recolour everything, so they are shown only on their own, never stacked with other rules
+  const stack = ids => ids.length > 1 ? ids.filter(i => !(T[i] && T[i].solo)) : ids;
+  const cssOf = ids => stack(ids).map(i => T[i] && T[i].css ? scoped(T[i]) : '').filter(Boolean).join('\n');
   const shows = t => !!(t && (t.css || t.patch));
-  const patchOf = ids => ids.flatMap(i => T[i] && T[i].patch || []);
+  const patchOf = ids => stack(ids).flatMap(i => T[i] && T[i].patch || []);
   const post = (css, patch) => { try { pv.contentWindow.postMessage({ type: 'lab-recipe', css, highlight: '', patch: patch || [] }, '*'); } catch (e) {} };
   const PROPS = ['color', 'backgroundColor', 'backgroundImage', 'fontSize', 'fontWeight', 'fontFamily', 'letterSpacing', 'lineHeight', 'textAlign', 'fontVariantNumeric', 'textWrap',
     'paddingTop', 'paddingLeft', 'marginTop', 'marginBottom', 'borderTopWidth', 'borderTopColor', 'borderRadius', 'boxShadow', 'maxWidth', 'display', 'rowGap', 'columnGap', 'gridTemplateColumns', 'minHeight', 'textDecorationLine', 'filter', 'outlineStyle'];
