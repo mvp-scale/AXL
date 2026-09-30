@@ -72,7 +72,11 @@ for vs in words.values():
 CANON = [("better-web-ui", "better-web-ui"), ("Agent Skills Finder", "Agent Skills Finder"), ("openclaw", "OpenClaw"), ("ui-final-polish", "ui-final-polish"),
          ("make-interfaces-feel-better", "Feel Better"), ("better-ui skill", "UI Skills"), ("alvarovillalbaa", "Villalba"), ("ce-polish", "Compound Eng."),
          ("UI Craft", "UI Craft"), ("ui-craft", "UI Craft"), ("Impeccable", "Impeccable"), ("IxDF", "IxDF"), ("awesome-design-skills", "Awesome Design"),
-         ("taste-skill", "Taste-Skill"), ("mcouthon", "mcouthon"), ("design-overhaul", "design-overhaul")]
+         ("taste-skill", "Taste-Skill"), ("mcouthon", "mcouthon"), ("design-overhaul", "design-overhaul"),
+         ("Anthropic frontend-design", "Anthropic"), ("frontend-design-deslop", "samber deslop"), ("make-interfaces-feel-better", "Feel Better"), ("shadcn/ui skills", "shadcn/ui"),
+         ("OneRedOak design review", "OneRedOak"), ("OpenAI UI guidelines", "OpenAI"), ("Vercel Web Interface", "Vercel"), ("Apple Human Interface", "Apple HIG"),
+         ("Nielsen Norman", "NN/g"), ("GOV.UK", "GOV.UK"), ("web.dev", "web.dev"), ("Unslop", "Unslop UI"), ("Hallmark", "Hallmark"), ("Claw Design", "Claw Design"),
+         ("Google DESIGN.md", "Google DESIGN.md"), ("W3C WCAG", "W3C WCAG 2.2"), ("axe-core", "axe-core"), ("Lighthouse", "Lighthouse")]
 def canon(n):
     for k, v in CANON:
         if k.lower() in n.lower(): return v
@@ -87,6 +91,22 @@ for w0, vs in words.items():
         for t in v["tweaks"]:
             if t in tweaks and t not in e["tweaks"]: e["tweaks"].append(t)
         if not e["quote"] and v.get("quote"): e["quote"] = v["quote"]
+# ---- the full harvest: every source's own rule set, grouped by its commands (or "checklist") ----
+CATF = f"{D}/catalog.json"
+catalog = json.load(open(CATF))["rules"] if os.path.exists(CATF) else []
+DENY = {"taste", "document", "visualize", "overdrive", "android", "ios", "brandkit", "stitch", "new", "work", "ui", "craft", "frontend", "design", "live", "image", "code", "gpt", "manual", "finish", "reviewer", "asset", "producer", "applier", "setup", "init", "doctor", "hooks", "detector", "antipatterns"}
+def cmd_word(c):
+    if not c: return "checklist"
+    c = re.sub(r"^(ui-craft-|impeccable-)", "", c.lower()); c = re.sub(r"-skill(-v\d+)?$", "", c); c = {"minimalist": "minimal", "brutalist": "brutalist"}.get(c, c)
+    return c if re.fullmatch(r"[a-z]{4,14}", c) and c not in DENY else "checklist"
+for r in catalog:
+    key = (cmd_word(r["command"]), canon(r["src"]))
+    e = entries.setdefault(key, {"word": key[0], "src": key[1], "tweaks": [], "quote": None, "url": r.get("url") or "", "kind": "primary", "derives_from": None})
+    for t_ in r["tweaks"]:
+        if t_ in tweaks and t_ not in e["tweaks"]: e["tweaks"].append(t_)
+    if not e["quote"] and r["tweaks"]: e["quote"] = r["text"]
+    for t_ in r["tweaks"]:
+        if t_ in tweaks: tweaks[t_]["asks"].append({"src": key[1], "word": key[0], "text": r["text"], "verified": True, "url": r.get("url") or ""})
 entries = list(entries.values())
 srcs = sorted({e["src"] for e in entries}, key=lambda s: (-sum(e["src"] == s for e in entries), s))
 wl = sorted({e["word"] for e in entries if isverb(e["word"])}, key=lambda w: (-sum(e["word"] == w for e in entries), w))
@@ -100,11 +120,11 @@ def prov(t):
         if t["id"] in e["tweaks"] and e.get("quote") and not any(o["src"] == e["src"] for o in out):
             out.append({"src": e["src"], "quote": e["quote"], "url": e["url"], "verified": True})
     if t.get("source_quote"): out.append({"src": "W3C WCAG 2.2" if "w3.org" in t["source_url"] else "Smashing Magazine", "quote": t["source_quote"], "url": t["source_url"], "verified": True})
-    return out[:8]
+    return out
 data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/before.html", encoding="utf-8").read(),
   "categories": TW["categories"], "tweaks": [dict({k: t[k] for k in ("id", "name", "category", "check", "css")}, asks=prov(t)) for t in tweaks.values()],
   "entries": entries, "words": wl, "sources": srcs, "vague": vague[:40],
-  "stats": {"statements": len(claims) + len(entries), "sources": len(srcs), "words": len(wl), "tweaks": len(tweaks), "vague": len(vague)}}
+  "stats": {"rules": len(catalog), "statements": len(claims) + len(catalog), "sources": len(srcs), "words": len(wl), "tweaks": len(tweaks), "vague": len(vague)}}
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 html = open(f"{A}/scripts/atlas_template.html", encoding="utf-8").read().replace("/*DATA*/null", js)
 open(f"{A}/site/index.html", "w", encoding="utf-8").write(html)
