@@ -116,7 +116,7 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .tw .d{width:9px;height:9px;border-radius:50%;background:var(--line);flex:none;transition:background .25s,transform .25s}
 .tw .nm{flex:1}
 .tw .ck{color:var(--ok);font-size:.75rem}
-.tw .nv{font:600 .62rem var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);border-radius:4px;padding:1px 4px}
+.tw .nv{font-size:.8rem;color:var(--muted)}
 .tw .ct{font:700 .7rem var(--mono);color:var(--muted);min-width:2.6em;text-align:right}
 .tw.lit{color:var(--ink);font-weight:650}
 .tw.lit .d{background:var(--cur,var(--ink));transform:scale(1.35)}
@@ -344,7 +344,7 @@ const D = /*DATA*/null;
   hold.addEventListener('keyup', e => { if (e.key === ' ' || e.key === 'Enter') peek(false); });
 
   /* ---- the board: every tweak, once ---- */
-  $('#board').innerHTML = D.categories.map(c => { const ts = D.tweaks.filter(t => t.category === c).sort((a, b) => D.entries.filter(e => e.tweaks.includes(b.id)).length - D.entries.filter(e => e.tweaks.includes(a.id)).length); return ts.length ? `<div class="col"><h3><button type="button" aria-expanded="true">${esc(c)} <span style="color:var(--muted);font-weight:500">(${ts.length})</span></button><span data-cc="${esc(c)}"></span></h3>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false"><span class="d"></span><span class="nm">${esc(t.name)}</span>${t.css ? '' : '<span class="nv" title="No visible change on a static page">not visual</span>'}${t.check ? '<span class="ck" title="a tool checks it">✓</span>' : ''}<span class="ct"></span><span class="ex" aria-hidden="true">${(t.asks || []).length ? '›' : ''}</span></button>`).join('')}</div>` : ''; }).join('');
+  $('#board').innerHTML = D.categories.map(c => { const ts = D.tweaks.filter(t => t.category === c).sort((a, b) => D.entries.filter(e => e.tweaks.includes(b.id)).length - D.entries.filter(e => e.tweaks.includes(a.id)).length); return ts.length ? `<div class="col"><h3><button type="button" aria-expanded="true">${esc(c)} <span style="color:var(--muted);font-weight:500">(${ts.length})</span></button><span data-cc="${esc(c)}"></span></h3>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false"><span class="d"></span><span class="nm">${esc(t.name)}</span>${t.css ? '' : '<span class="nv" title="No preview on the demo page" aria-label="no preview">◌</span>'}${t.check ? '<span class="ck" title="a tool checks it">✓</span>' : ''}<span class="ct"></span><span class="ex" aria-hidden="true">${(t.asks || []).length ? '›' : ''}</span></button>`).join('')}</div>` : ''; }).join('');
   $('#nothing').addEventListener('click', e => { if (e.target.id !== 'useIts') return; const s = st.walk === 's' ? walkItems('s')[st.idx % walkItems('s').length] : [...st.sel.s][0]; stopWalk(); st.sel.w = new Set(D.entries.filter(x => x.src === s).map(x => x.word)); st.sel.s = new Set([s]); render(); });
   $('#steps').addEventListener('click', e => { const b = e.target.closest('.stop'); if (!b) return; clearTimeout(timer); st.idx = +b.dataset.j; showStep(); timer = setTimeout(step, 2400); });
   // tap a tweak: open what every source says about it, with one button to add it to yours

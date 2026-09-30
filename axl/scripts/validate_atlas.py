@@ -14,14 +14,14 @@ def main():
     except Exception as e:
         print("FAIL invalid JSON: %s" % e); return 1
     cats, T = tw.get("categories", []), tw.get("tweaks", [])
-    if len(cats) != 8: errs.append("categories=%d" % len(cats))
-    if not 45 <= len(T) <= 300: errs.append("tweaks=%d" % len(T))
+    if len(cats) != 11: errs.append("categories=%d" % len(cats))
+    if not 45 <= len(T) <= 3000: errs.append("tweaks=%d" % len(T))
     ids = [t["id"] for t in T]
     if len(set(ids)) != len(ids): errs.append("duplicate ids")
     for t in T:
         if t.get("category") not in cats: errs.append("bad category " + t["id"])
         if t.get("check") is not None and t["check"] not in CHECKS: errs.append("bad check " + t["id"])
-        if t.get("kind") not in ("visual", "behavior", "process"): errs.append("bad kind " + t["id"])
+        if t.get("kind") is not None and t.get("kind") not in ("visual", "behavior", "process"): errs.append("bad kind " + t["id"])
     used = [t["effect"] for t in T if t.get("effect")]
     if len(set(used)) != len(used): errs.append("effect reused")
     if len(used) != 42: errs.append("effects used=%d" % len(used))

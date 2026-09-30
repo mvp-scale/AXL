@@ -8,7 +8,8 @@ Check a page against your word: `python3 axl.py check my-polish.axl.json yourpag
 |---|---|
 | `site/index.html` | The page (built; do not edit by hand) |
 | `axl.py` | The tool: `check`, `fix`, `tweaks`. Deterministic; no agent interprets anything |
-| `data/tweaks.json`, `data/tweak_map.json` | The 71 tweaks, and which source statement asks for which (model-assisted, reviewable) |
+| `data/tweaks.json`, `data/catalog.json` | 1,325 tweaks and the 5,800 source rules behind them (verbatim, sorted by model, reviewable) |
+| `data/harvest/` | Raw per-source harvests and the scripts' intermediate files |
 | `data/claims.json`, `data/sources.json`, `receipts/` | The statements, their verbatim quotes, the fetched sources and the saved tool runs |
 | `scripts/atlas_template.html`, `scripts/build_atlas.py` | Source and builder of the page |
 | `tools/`, `demo/` | The pinned checkers and the demo app they run on |

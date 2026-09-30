@@ -27,7 +27,7 @@ for i, r in enumerate(R):
     assign[i] = [x for x in re.split(r"[,\s]+", v) if x in ids][:2]
 CATS = {"Type", "Color", "Space & layout", "Surface", "Motion", "Interaction & states", "Access", "Content & process", "Components", "Performance", "Agent workflow"}
 # a NEW tweak is accepted when at least 2 rules (any source) proposed the same name; singletons stay as unsorted rules
-acc = {k: v for k, v in new.items() if v["n"] >= 2 and k not in ids}
+acc = {k: v for k, v in new.items() if k not in ids}   # every proposed tweak is kept; singletons show "one source"
 tweaks = []
 for t in TX:
     o = OLD.get(t["id"], {})
