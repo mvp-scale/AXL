@@ -48,7 +48,25 @@ src = [{"id": s["id"], "url": s["url"], "publisher": s["publisher"], "kind": s["
         "cited": s["id"] in used} for s in S]
 rc = {k: {"id": k, "tool": r["tool"], "version": r["version"], "command": r["command"], "exit_code": r["exit_code"], "findings": len(r["findings"]), "fails": sum(1 for f in r["findings"] if f.get("result") == "fail"), "role": r["role"],
           "sample": [f.get("evidence", "")[:110] for f in r["findings"][:3]], "ran_at": r["ran_at"]} for k, r in runs.items()}
-data = {"claims": cl, "sources": src, "lineage": {"edges": LIN["edges"], "roots": LIN["roots"], "clusters": LIN["rebrand_clusters"]}, "verbs": V, "definitions": DEFS, "metrics": M, "receipts": rc, "css": CSS,
+pj = json.load(open(f"{SITE}/img/pins.json"))
+pat = {p["id"]: p for d in DEFS for p in d["patterns"]}
+pins = []
+for i, pn in enumerate(pj["pins"], 1):
+    p = pat[pn["pattern"]]; c = next(x for x in cl if x["id"] == p["claim_id"])
+    pins.append({"n": i, "id": pn["id"], "title": pn["title"], "unit": pn["unit"], "before": pn["before"], "after": pn["after"], "rect": pn["rect"], "claim_id": p["claim_id"], "status": p["status"], "tier": p["tier"],
+                 "roots": len(p["independent_roots"]), "plain": p["plain"], "command": (p["check"] or {}).get("command"), "tool": (p["check"] or {}).get("tool"), "pass": (p["check"] or {}).get("pass_criteria"),
+                 "receipts": [{"id": r["id"], "role": r["role"], "fails": rc[r["id"]]["fails"]} for r in p["receipts"] if r["id"] in rc]})
+QS = [("https://github.com/pbakaus/impeccable", r"Final pass, design system alignment, and shipping readiness", "a final pass before shipping"),
+      ("https://claude.com/blog/improving-frontend-design-through-skills", r"prompting for motion \(animations and micro-interactions\) adds polish that static designs lack", "added motion"),
+      ("https://github.com/Leonxlnx/taste-skill", r"Polished, calm, expensive UI with softer contrast, whitespace, premium fonts, spring motion", "an expensive look, with softer contrast")]
+quotes = []
+for url, rx, meaning in QS:
+    src_ = next(x for x in S if x["url"] == url); txt = open(f"{ROOT}/axl/receipts/sources/{src_['id']}.txt", encoding="utf-8").read(); m = re.search(rx, txt)
+    assert m, rx
+    quotes.append({"publisher": src_["publisher"], "quote": txt[m.start():m.end()], "url": url, "meaning": meaning})
+_pd = next(d for d in DEFS if d["verb"] == "polish"); rids = {r["id"] for p in _pd["patterns"] for r in p["receipts"]}
+totals = {"before": sum(rc[i]["fails"] for i in rids if rc[i]["role"] == "before"), "after": sum(rc[i]["fails"] for i in rids if rc[i]["role"] == "after")}
+data = {"pins": pins, "frame": pj["frame"], "polish_quotes": quotes, "polish_totals": totals, "claims": cl, "sources": src, "lineage": {"edges": LIN["edges"], "roots": LIN["roots"], "clusters": LIN["rebrand_clusters"]}, "verbs": V, "definitions": DEFS, "metrics": M, "receipts": rc, "css": CSS,
         "excluded": {"private_kit": M["private_kit_excluded"]}}
 open(f"{SITE}/data/data.js", "w", encoding="utf-8").write("window.AXL=" + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n")
 for f in ("before.html", "after.html", "polished.html", "fixture-motion-unguarded.html", "fixture-motion-guarded.html", "fixture-typeset.html"):

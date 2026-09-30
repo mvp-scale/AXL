@@ -11,7 +11,7 @@ const { CHROME } = require('./common');
     p.on('requestfailed', r => errs.push('requestfailed ' + r.url()));
     const external = []; p.on('request', r => { if (!r.url().startsWith(url) && !r.url().startsWith('data:') && !r.url().startsWith('blob:')) external.push(r.url()); });
     await p.goto(url); await p.waitForFunction('window.axlReady'); await p.waitForTimeout(600);
-    await p.click('[data-all]'); await p.waitForTimeout(400);
+    await p.click('#go'); await p.waitForTimeout(400);
     const axe = await new AxeBuilder({ page: p }).exclude('iframe').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     const bad = axe.violations.filter(v => ['serious', 'critical'].includes(v.impact)).map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.length, sample: v.nodes[0].target.join(' ') }));
     const overflow = await p.evaluate('document.scrollingElement.scrollWidth - innerWidth');

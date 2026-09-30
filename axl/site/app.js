@@ -21,18 +21,26 @@
 
   /* verb chips */
   (function chips() {
-    const html = A.definitions.map(d => `<button type="button" data-verb="${d.verb}" aria-pressed="${d.verb === st.verb}">${d.verb}</button>`).join('');
+    const html = A.definitions.slice().sort((x, y) => (y.verb === 'polish') - (x.verb === 'polish')).map(d => `<button type="button" data-verb="${d.verb}" aria-pressed="${d.verb === st.verb}">${d.verb}</button>`).join('');
     const undef = A.verbs.filter(v => v.resolution === 'undefined').length;
     $('#verbs').innerHTML = html + `<a class="more" href="#dictionary">+ ${undef} words with no measurable meaning yet</a>`;
-    $('#verbs').addEventListener('click', e => { const b = e.target.closest('button[data-verb]'); if (!b) return; st.verb = b.dataset.verb; st.applied = new Set(); st.extraCss = null; $$('#verbs button').forEach(x => x.setAttribute('aria-pressed', x === b)); renderDefn(); applyPane(); });
+    $('#verbs').addEventListener('click', e => { const b = e.target.closest('button[data-verb]'); if (!b) return; st.verb = b.dataset.verb; st.extraCss = null; $$('#verbs button').forEach(x => x.setAttribute('aria-pressed', x === b)); applyAll(true); });
   })();
+
+  function applyAll(on) {
+    st.extraCss = null; st.applied = new Set();
+    if (on) defByVerb[st.verb].patterns.forEach(p => { if (A.css[p.id]) st.applied.add(p.id); });
+    const go = $('#go'); go.setAttribute('aria-pressed', on); go.textContent = on ? `Undo “${st.verb}”` : `Apply “${st.verb}”`;
+    renderDefn(); applyPane();
+  }
+  $('#go').addEventListener('click', () => applyAll($('#go').getAttribute('aria-pressed') !== 'true'));
 
   /* stage panes */
   const frames = { L: $('#frameL iframe'), R: $('#frameR iframe') }, wraps = { L: $('#frameL'), R: $('#frameR') };
   function sizeFrames() {
     for (const k of ['L', 'R']) {
       const w = wraps[k], f = frames[k], avail = w.clientWidth || 300;
-      const fw = st.viewport === 'phone' ? 375 : 1100, fh = st.viewport === 'phone' ? 720 : 760, sc = Math.min(1, avail / fw);
+      const fw = st.viewport === 'phone' ? 375 : 980, fh = st.viewport === 'phone' ? 700 : 660, sc = Math.min(1, avail / fw);
       f.style.width = fw + 'px'; f.style.height = fh + 'px'; f.style.transform = `scale(${sc})`; w.style.height = Math.round(fh * sc) + 'px';
     }
   }
@@ -52,7 +60,13 @@
 
   /* receipts helpers */
   const rcs = ids => (ids || []).map(i => A.receipts[i]).filter(Boolean);
+  function readout() {
+    const ids = [...new Set(defByVerb[st.verb].patterns.flatMap(p => p.receipts.map(r => r.id)))], rs = rcs(ids);
+    const b = rs.filter(r => r.role === 'before').reduce((n, r) => n + r.fails, 0), z = rs.filter(r => r.role === 'after').reduce((n, r) => n + r.fails, 0), on = st.applied.size > 0;
+    $('#readout').innerHTML = `<b class="bad">${b}</b> tool findings on the original → <b class="${on ? 'good' : 'bad'}">${on ? z : b}</b> ${on ? `with “${esc(st.verb)}” applied` : 'nothing applied yet'}`;
+  }
   function renderScores() {
+    readout();
     const ids = [...st.applied].flatMap(id => { for (const d of A.definitions) for (const p of d.patterns) if (p.id === id) return p.receipts.map(r => r.id); return []; });
     const rs = rcs([...new Set(ids)]), b = rs.filter(r => r.role === 'before'), a = rs.filter(r => r.role === 'after');
     const sum = xs => xs.reduce((n, r) => n + r.fails, 0);
@@ -82,15 +96,14 @@
     if (shown) rec = `<div class="receipt"><strong>${esc(shown.name)}</strong><span class="cmd" id="cmdText" tabindex="0" role="region" aria-label="Command to run">${esc(shown.check.command)}</span><button type="button" data-copy="${esc(shown.check.command)}">Copy command</button>
       <p class="small">Passes when: ${esc(shown.check.pass_criteria)}.<br>Parameter: ${esc(shown.parameter_origin || 'source')}. Coverage: ${esc(shown.coverage || '')}.</p>${shown.disagreement ? `<p class="small"><b>Where sources disagree:</b> ${esc(shown.disagreement)}</p>` : ''}${receiptTable(rcs(shown.receipts.map(r => r.id)))}
       <p class="small">Syntax example, not the explanation: <code>${esc(shown.example || '')}</code></p></div>`;
-    $('#defn').innerHTML = `<h2>${esc(d.verb)}</h2><p class="plain">${esc(d.plain)}</p><p class="never"><b>Stays subjective:</b> ${esc(d.stays_subjective)}</p>
-      <p class="small">${d.patterns.length} measurable patterns. ${v.resolution === 'tool-backed' ? 'At least one is enforced by a tool with a receipt.' : ''}</p><ul class="patterns">${pats}</ul>
-      <button type="button" class="primary" data-all="1">Apply every check for “${esc(d.verb)}”</button>${rec}`;
+    $('#defn').innerHTML = `<div class="head"><h2>${esc(d.verb)}</h2><p class="plain">${esc(d.plain)}</p><p class="never"><b>Stays subjective:</b> ${esc(d.stays_subjective)}</p>
+      <p class="small">${d.patterns.length} measurable patterns. ${v.resolution === 'tool-backed' ? 'At least one is enforced by a tool with a receipt.' : ''}</p>${rec}</div><div class="body"><ul class="patterns">${pats}</ul></div>`;
     st.claim = shown ? shown.claim_id : (d.patterns[0] && d.patterns[0].claim_id) || st.claim; pinText();
   }
   $('#defn').addEventListener('click', e => {
     const a = e.target.closest('[data-apply]'), o = e.target.closest('[data-open]'), c = e.target.closest('[data-copy]'), all = e.target.closest('[data-all]');
     if (a) { const id = a.dataset.apply; st.extraCss = null; st.applied.has(id) ? st.applied.delete(id) : st.applied.add(id); renderDefn(); applyPane(); }
-    if (all) { st.extraCss = null; defByVerb[st.verb].patterns.forEach(p => { if (A.css[p.id]) st.applied.add(p.id); }); renderDefn(); applyPane(); }
+    if (all) applyAll(true);
     if (o) openDrawer(o.dataset.open);
     if (c) { copy(c.dataset.copy, c); }
   });
@@ -236,7 +249,7 @@
 
   /* footer + boot */
   const m = A.metrics; $('#footNote').textContent = `${m.public_claims} public claims from ${m.sources_total} sources (${m.sources_fetched} fetched); ${A.excluded.private_kit} private-kit claims excluded; ${m.receipts} receipts, each with the exact command to re-run. Quotes are copied verbatim from pages fetched on the dates shown in the Sources drawer. No vendor endorsement is implied.`;
-  renderDefn(); renderRail(); drawLineage([]); selectClaim(A.definitions[0].patterns[0].claim_id); sizeFrames();
+  applyAll(true); renderRail(); drawLineage([]); selectClaim(A.definitions[0].patterns[0].claim_id); sizeFrames();
   window.axlOpenClaim = id => { selectClaim(id); openDrawer(id); return { open: !drawer.hidden, html: $('#paneClaim').innerHTML }; };
   window.axlAllClaimIds = () => A.claims.map(c => c.id);
   window.axlReady = true;
