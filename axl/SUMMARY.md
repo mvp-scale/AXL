@@ -5,7 +5,8 @@ Open `axl/site/index.html` (one file).
 ## What the page does
 - **Two matching pickers:** Commands (44: polish, bolder, quieter… plus "checklist" for sources that publish a general checklist) × Sources (36). Both are multi-select, colour-coded, and ▶ walks through either one.
 - **The demo is a working app you can click through** (Northstar, nine views): Overview, Projects, New project, Settings, Reports, Assistant, and a public Home page, Help article and Sign in. Click, type, open menus and dialogs. Hold **Shift** (or the button) to see the original in the same state.
-- **Every tweak on the board (1,325) can be tapped.** The page jumps to the view where that tweak applies and outlines what changed ("Back to the list ↓" returns you to the row). Tweaks that can't be seen on a page say why (behaviour, performance, process…).
+- **All 1,325 tweaks are one list** next to the pinned page on wide screens (stacked on phones): search, All/Lit now/Tool-checked/Yours, and category chips. ↑/↓ walks the list, previewing each tweak.
+- **Every tweak can be tapped.** The page jumps to the view where that tweak applies and outlines what changed ("Back to the list ↓" returns you to the row). Tweaks that can't be seen on a page say why (behaviour, performance, process…).
 - **Build your own word** from any tweaks, then **Get my word**: an agent prompt with the exact change (CSS and/or text edit) and every source that asks for it, a console check script, and a definition file for `axl.py check`.
 
 ## Demo coverage (this pass)
