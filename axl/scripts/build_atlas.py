@@ -51,7 +51,7 @@ if os.path.exists(VSF):
 for vs in words.values():
     for v in vs: v["tweaks"] = [t for t in v["tweaks"] if t in tweaks]
     vs.sort(key=lambda v: (v.get("kind") == "derivative", -len(v["tweaks"])))
-srcs = sorted({g["src"] for g in groups.values()})
+srcs = sorted({v["src"] for vs in words.values() for v in vs})
 data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/before.html", encoding="utf-8").read(),
   "categories": TW["categories"], "tweaks": list(tweaks.values()), "words": [{"word": w, "versions": vs} for w, vs in words.items()], "sources": srcs,
   "vague": vague[:40], "stats": {"statements": len(claims), "sources": len(srcs), "words": len(words), "tweaks": len(tweaks), "vague": len(vague),

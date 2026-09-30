@@ -276,16 +276,17 @@ const D = /*DATA*/null;
       if (r.cat) { s += `<text class="cat" x="${LX}" y="${r.y}">${esc(r.cat)}</text>`; return; }
       const t = T[r.id], on = lines.map((l, i) => l.set.has(r.id) ? i : -1).filter(i => i >= 0), mine = st.mine.has(r.id), theirs = on.filter(i => !lines[i].mine);
       let mark;
-      if (on.length > 1) mark = `<line x1="${x(on[0])}" y1="${r.y}" x2="${x(on[on.length - 1])}" y2="${r.y}" stroke="var(--ink)" stroke-width="2.5"/>` + on.map(i => `<circle cx="${x(i)}" cy="${r.y}" r="6.5" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.5"/>`).join('');
-      else mark = `<circle cx="${x(on[0])}" cy="${r.y}" r="5.5" fill="var(--panel)" stroke="${lines[on[0]].color}" stroke-width="3"/>`;
+      if (on.length > 1) mark = `<line x1="${x(on[0])}" y1="${r.y}" x2="${x(on[on.length - 1])}" y2="${r.y}" stroke="var(--ink)" stroke-width="2.5"/>` + on.map(i => `<circle cx="${x(i)}" cy="${r.y}" r="${Math.min(6.5, LANE * .4)}" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.5"/>`).join('');
+      else mark = `<circle cx="${x(on[0])}" cy="${r.y}" r="${Math.min(5.5, LANE * .38)}" fill="var(--panel)" stroke="${lines[on[0]].color}" stroke-width="3"/>`;
       const agree = theirs.length > 1 ? ` <tspan style="font:700 10px var(--mono)" fill="var(--muted)">${theirs.length}/${vs.length}</tspan>` : '';
       s += `<g class="row${mine ? ' mine' : ''}" role="button" tabindex="0" aria-pressed="${mine}" data-id="${esc(r.id)}" aria-label="${esc(t.name)}, asked by ${theirs.length} of ${vs.length} sources${t.check ? ', a tool checks it' : ''}"><rect class="hit" x="0" y="${r.y - ROW / 2 + 1}" width="${W}" height="${ROW - 2}" rx="6"/>${mark}<text class="lbl" x="${LX}" y="${r.y + 4.5}" font-size="13.5">${esc(t.name)}${t.check ? ' <tspan class="ck">✓</tspan>' : ''}${agree}</text></g>`;
     });
     $('#metro').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="group" aria-label="Subway map: each source's line through the tweaks it asks for">${s}</svg>`;
     // headline numbers: the lack of a standard, counted
     const union = new Set(vs.flatMap(v => v.tweaks)), shared = [...union].filter(i => vs.filter(v => v.tweaks.includes(i)).length > 1).length, all = [...union].filter(i => vs.every(v => v.tweaks.includes(i))).length;
-    $('#mapTitle').textContent = vs.length > 1 ? `How ${vs.length} sources define “${st.word}”` : `How ${vs[0].src} defines “${st.word}”`;
-    $('#nums').innerHTML = `<div><b>${vs.length}</b><span>source${vs.length > 1 ? 's' : ''}</span></div><div><b>${union.size}</b><span>different tweaks</span></div>` + (vs.length > 1 ? `<div><b>${shared}</b><span>shared by 2+</span></div><div class="${all ? '' : 'zero'}"><b>${all}</b><span>shared by all</span></div>` : '');
+    $('#mapTitle').textContent = vs.length > 1 ? `${vs.length} definitions of “${st.word}”` : `How ${vs[0].src} defines “${st.word}”`;
+    const indep = new Set(vs.map(v => v.derives_from || v.src)).size;
+    $('#nums').innerHTML = `<div><b>${vs.length}</b><span>definition${vs.length > 1 ? 's' : ''}</span></div>` + (vs.length > 1 ? `<div><b>${indep}</b><span>independent authors</span></div>` : '') + `<div><b>${union.size}</b><span>different tweaks</span></div>` + (vs.length > 1 ? `<div><b>${shared}</b><span>shared by 2+</span></div><div class="${all ? '' : 'zero'}"><b>${all}</b><span>shared by all</span></div>` : '');
   }
   const toggle = id => { stopAuto(); st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mode = 'mine'; render(true); };
   $('#metro').addEventListener('click', e => { const r = e.target.closest('.row'); if (r) toggle(r.dataset.id); });
@@ -311,7 +312,7 @@ const D = /*DATA*/null;
   function render(flash) {
     const v = cur(), nv = VS().length;
     paint(!!flash); renderVersions(); renderMap();
-    $('#claim').innerHTML = nv > 1 ? `<b>Same word.</b> ${nv} sources, ${nv} different pages.` : `Only <b>${esc(v.src)}</b> uses this word.`;
+    $('#claim').innerHTML = nv > 1 ? `<b>Same word.</b> ${nv} definitions, ${nv} different pages.` : `Only <b>${esc(v.src)}</b> uses this word.`;
     $('#says').innerHTML = st.mode === 'mine' ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.`
       : `${esc(v.src)}: ${v.quote ? `<q>${esc(v.quote)}</q>` : `${v.tweaks.length} tweaks from ${v.n || 0} statements`} <a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">source</a>`;
     $$('#allcats .tw').forEach(b => b.setAttribute('aria-pressed', st.mine.has(b.dataset.id)));

@@ -1,0 +1,553 @@
+{
+ "retrieved": "2026-09-30T05:15:52Z",
+ "queries": [
+  "skill polish UI final pass alignment spacing consistency",
+  "cursor rules polish UI bolder quieter delight design skill github",
+  "what does polish the UI mean design details",
+  "UI polish checklist frontend design details",
+  "skills.sh polish ui kenlck kcchien",
+  "Vercel v0 Lovable Bolt make it more polished",
+  "declutter simplify UI skill SKILL.md",
+  "modernize UI skill claude code",
+  "premium feel UI design agent skill",
+  "minimal clean design prompt AI UI generator",
+  "elevate UI design skill refine visual design",
+  "Refactoring UI polish simplify clean",
+  "UI polish design engineering blog small details",
+  "github awesome cursor rules frontend polish",
+  "delight microinteractions NN/g Smashing",
+  "simplify declutter interface progressive disclosure NN/g",
+  "refine UI skill Framer Figma Make Stitch",
+  "add delight skill moments of joy microinteractions",
+  "declutter design skill command remove noise",
+  "tone down quieter bolder design skill",
+  "modernize UI redesign guide outdated interface",
+  "simplify skill UI Claude Code fewer elements"
+ ],
+ "entries": [
+  {
+   "word": "polish",
+   "source": "better-web-ui \"polish\" skill",
+   "publisher": "aladicf (GitHub)",
+   "url": "https://raw.githubusercontent.com/aladicf/better-web-ui/main/skills/polish/SKILL.md",
+   "file": "vs_aladicf-polish.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "Impeccable (pbakaus)",
+   "quote": "Perform a final quality pass fixing alignment, spacing, consistency, and micro-detail issues before shipping.",
+   "tweaks": [
+    "spacing"
+   ]
+  },
+  {
+   "word": "polish",
+   "source": "Agent Skills Finder: polish guide",
+   "publisher": "agentskillsfinder.com",
+   "url": "https://agentskillsfinder.com/skills/polish",
+   "file": "vs_agentskillsfinder-polish.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "Impeccable (pbakaus)",
+   "quote": "It is designed to catch the small issues that make interfaces feel unfinished: misalignment, uneven spacing, inconsistent copy, missing states, rough transitions, and edge-case gaps that are easy to miss before launch.",
+   "tweaks": [
+    "spacing",
+    "states-designed",
+    "copy-specific",
+    "stress-test"
+   ]
+  },
+  {
+   "word": "polish",
+   "source": "ui-polish-pass (openclaw/skills)",
+   "publisher": "aa-on-ai via OpenClaw / OpenSkillIndex",
+   "url": "https://openskillindex.com/skills/openclaw-skills-ui-polish-pass",
+   "file": "vs_openclaw-ui-polish-pass.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Pass 1: Spacing & Breathing Room Section spacing — major sections have clear visual separation (32-48px minimum between groups)",
+   "tweaks": [
+    "spacing",
+    "airy"
+   ]
+  },
+  {
+   "word": "polish",
+   "source": "ui-final-polish skill",
+   "publisher": "johnwayneeee / aiskillstore marketplace",
+   "url": "https://claudeskills.info/skills/aiskillstore/marketplace/ui-final-polish/",
+   "file": "vs_ui-final-polish.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Final visual polish for an existing UI without redesigning it. Use after structure is clear, when asked to improve spacing, alignment, text hierarchy, readability, shadows, highlights, effects, action placement, or overall production feel.",
+   "tweaks": [
+    "spacing",
+    "type",
+    "shadow",
+    "primary"
+   ]
+  },
+  {
+   "word": "polish",
+   "source": "make-interfaces-feel-better (plugin page)",
+   "publisher": "open-design.ai",
+   "url": "https://open-design.ai/plugins/make-interfaces-feel-better/",
+   "file": "vs_make-interfaces-feel-better.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "jakubkrehel/make-interfaces-feel-better",
+   "quote": "A set of design engineering principles for interface polish: concentric radii, optical alignment, layered shadows, staggered enter animations, tabular numbers, hit areas, and transition specificity.",
+   "tweaks": [
+    "shadow",
+    "tabular",
+    "target",
+    "focal-motion",
+    "transform-only"
+   ]
+  },
+  {
+   "word": "polish",
+   "source": "better-ui skill (UI Skills listing)",
+   "publisher": "ui-skills.com / jakubkrehel",
+   "url": "https://www.ui-skills.com/skills/jakubkrehel/better-ui/",
+   "file": "vs_ui-skills-better-ui.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "jakubkrehel/make-interfaces-feel-better",
+   "quote": "Design engineering principles for making interfaces feel polished. Use when building UI components, reviewing frontend code, implementing animations, hover states, shadows, borders, micro-interactions, enter/exit animations, or any visual detail work.",
+   "tweaks": [
+    "shadow",
+    "motion"
+   ]
+  },
+  {
+   "word": "polish",
+   "source": "ui-polish review skill (alvarovillalbaa/plugins)",
+   "publisher": "alvarovillalbaa (GitHub) via skills.sh",
+   "url": "https://www.skills.sh/alvarovillalbaa/plugins/polish",
+   "file": "vs_alvaro-polish.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "This child skill owns UI polish, visual defects, layout fit, spacing, states, motion, interaction finish, and screenshot-based cleanup.",
+   "tweaks": [
+    "spacing",
+    "states-designed",
+    "motion"
+   ]
+  },
+  {
+   "word": "polish",
+   "source": "ce-polish (compound-engineering-plugin)",
+   "publisher": "EveryInc (GitHub) via Tessl",
+   "url": "https://tessl.io/registry/skills/github/EveryInc/compound-engineering-plugin/ce-polish/review",
+   "file": "vs_ce-polish.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Polish a working feature through user-directed live browser feedback. Use when a functional feature needs focused UX refinement before shipping.",
+   "tweaks": []
+  },
+  {
+   "word": "polish",
+   "source": "UI Craft skill (Polish Pass)",
+   "publisher": "educlopez (GitHub) via Skillselion",
+   "url": "https://skillselion.com/skills/educlopez/ui-craft/polish",
+   "file": "vs_educlopez-polish.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Minor (polish that separates good from great — full list in review.md Polish Pass): no tabular-nums on data, missing text-wrap: balance , straight quotes, no &nbsp; in brand names, testimonial star ratings, hero metric without adjacent context.",
+   "tweaks": [
+    "tabular",
+    "wrap",
+    "paragraph"
+   ]
+  },
+  {
+   "word": "bolder",
+   "source": "better-web-ui \"bolder\" skill",
+   "publisher": "aladicf (GitHub)",
+   "url": "https://raw.githubusercontent.com/aladicf/better-web-ui/main/skills/bolder/SKILL.md",
+   "file": "vs_aladicf-bolder.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "Impeccable (pbakaus)",
+   "quote": "Increase visual impact, contrast, personality, and compositional confidence when a design feels bland, generic, or too safe.",
+   "tweaks": []
+  },
+  {
+   "word": "bolder",
+   "source": "ui-craft \"bolder\" skill",
+   "publisher": "educlopez (GitHub) via Skillselion",
+   "url": "https://skillselion.com/skills/educlopez/ui-craft/bolder",
+   "file": "vs_educlopez-bolder.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "A ui-craft lens that amplifies a technically-correct but forgettable UI through typography and hierarchy, not color or decoration.",
+   "tweaks": [
+    "type",
+    "tracking",
+    "type-scale"
+   ]
+  },
+  {
+   "word": "bolder",
+   "source": "Impeccable bolder command",
+   "publisher": "pbakaus (GitHub)",
+   "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/bolder.md",
+   "file": "vs_impeccable-bolder.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Your job is to raise one part to the conviction the rest already implies, without rebuilding anything the brief did not name.",
+   "tweaks": []
+  },
+  {
+   "word": "quieter",
+   "source": "better-web-ui \"quieter\" skill",
+   "publisher": "aladicf (GitHub)",
+   "url": "https://raw.githubusercontent.com/aladicf/better-web-ui/main/skills/quieter/SKILL.md",
+   "file": "vs_aladicf-quieter.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "Impeccable (pbakaus)",
+   "quote": "Reduce visual intensity, saturation, and noise while preserving hierarchy and character. Use when the structure is basically sound but the design feels too loud, bold, garish, aggressive, or overstimulating",
+   "tweaks": [
+    "mute-color"
+   ]
+  },
+  {
+   "word": "quieter",
+   "source": "ui-craft \"quieter\" skill",
+   "publisher": "educlopez (GitHub) via Skillselion",
+   "url": "https://skillselion.com/skills/educlopez/ui-craft/quieter",
+   "file": "vs_educlopez-quieter.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "A ui-craft lens that tones down visual weight by cutting accents, softening type, reducing shadows, and removing decorative motion.",
+   "tweaks": [
+    "accent",
+    "quiet",
+    "shadow",
+    "pause-motion"
+   ]
+  },
+  {
+   "word": "quieter",
+   "source": "Impeccable quieter command",
+   "publisher": "pbakaus (GitHub)",
+   "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/quieter.md",
+   "file": "vs_impeccable-quieter.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Operate + Read: \"quieter\" means reducing visual noise. Fewer background accents, flatter cards, less color, less motion.",
+   "tweaks": [
+    "accent",
+    "flat",
+    "mute-color",
+    "pause-motion"
+   ]
+  },
+  {
+   "word": "delight",
+   "source": "better-web-ui \"delight\" skill",
+   "publisher": "aladicf (GitHub)",
+   "url": "https://raw.githubusercontent.com/aladicf/better-web-ui/main/skills/delight/SKILL.md",
+   "file": "vs_aladicf-delight.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "Impeccable (pbakaus)",
+   "quote": "Add moments of joy, personality, and surprise through success states, empty states, loading moments, hover details,",
+   "tweaks": [
+    "delight-moments",
+    "states-designed",
+    "motion"
+   ]
+  },
+  {
+   "word": "delight",
+   "source": "ui-craft \"delight\" skill",
+   "publisher": "educlopez (GitHub) via Skillselion",
+   "url": "https://skillselion.com/skills/educlopez/ui-craft/delight",
+   "file": "vs_educlopez-delight.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Add one or two memorable micro-interactions through copy specificity, hover choreography, state transitions, or a signature detail, without decoration or confetti.",
+   "tweaks": [
+    "delight-moments",
+    "copy-specific",
+    "motion"
+   ]
+  },
+  {
+   "word": "delight",
+   "source": "Impeccable delight command",
+   "publisher": "pbakaus (GitHub)",
+   "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/delight.md",
+   "file": "vs_impeccable-delight.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "effort worth acknowledging; - waiting that can become informative; - an empty or first-use state that can orient;",
+   "tweaks": [
+    "delight-moments",
+    "states-designed"
+   ]
+  },
+  {
+   "word": "clarify",
+   "source": "better-web-ui \"clarify\" skill",
+   "publisher": "aladicf (GitHub)",
+   "url": "https://raw.githubusercontent.com/aladicf/better-web-ui/main/skills/clarify/SKILL.md",
+   "file": "vs_aladicf-clarify.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "Impeccable (pbakaus)",
+   "quote": "Improve UX writing, marketing copy, labels, microcopy, instructions, and error messages",
+   "tweaks": [
+    "copy-specific",
+    "states-designed"
+   ]
+  },
+  {
+   "word": "clarify",
+   "source": "ui-craft \"clarify\" skill",
+   "publisher": "educlopez (GitHub) via Skillselion",
+   "url": "https://skillselion.com/skills/educlopez/ui-craft/clarify",
+   "file": "vs_educlopez-clarify.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Review UX copy across buttons, errors, empty states, and form hints, critiquing by default and applying edits only on request.",
+   "tweaks": [
+    "copy-specific",
+    "states-designed"
+   ]
+  },
+  {
+   "word": "clarify",
+   "source": "Impeccable clarify command",
+   "publisher": "pbakaus (GitHub)",
+   "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/clarify.md",
+   "file": "vs_impeccable-clarify.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Use a specific verb and object when the outcome is not already obvious. Labels should describe what will happen, not the gesture used to trigger it.",
+   "tweaks": [
+    "copy-specific"
+   ]
+  },
+  {
+   "word": "distill",
+   "source": "better-web-ui \"distill\" skill",
+   "publisher": "aladicf (GitHub)",
+   "url": "https://raw.githubusercontent.com/aladicf/better-web-ui/main/skills/distill/SKILL.md",
+   "file": "vs_aladicf-distill.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "Impeccable (pbakaus)",
+   "quote": "removing obstacles between users and their goals. Every element should justify its existence.",
+   "tweaks": [
+    "remove-clutter"
+   ]
+  },
+  {
+   "word": "distill",
+   "source": "ui-craft \"distill\" skill",
+   "publisher": "educlopez (GitHub) via Skillselion",
+   "url": "https://skillselion.com/skills/educlopez/ui-craft/distill",
+   "file": "vs_educlopez-distill.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Cut content, structure, visuals, and dead code that doesn't answer a user question or drive an action, respecting the CRAFT_LEVEL knob.",
+   "tweaks": [
+    "remove-clutter"
+   ]
+  },
+  {
+   "word": "distill",
+   "source": "Impeccable distill command",
+   "publisher": "pbakaus (GitHub)",
+   "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/distill.md",
+   "file": "vs_impeccable-distill.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Strip a design to its essence. Remove anything that doesn't earn its place: redundant elements, repeated information, decorative noise, cosmetic complexity.",
+   "tweaks": [
+    "remove-clutter"
+   ]
+  },
+  {
+   "word": "simplify",
+   "source": "better-web-ui \"distill\" skill (description)",
+   "publisher": "aladicf (GitHub)",
+   "url": "https://raw.githubusercontent.com/aladicf/better-web-ui/main/skills/distill/SKILL.md",
+   "file": "vs_aladicf-distill.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "Impeccable (pbakaus)",
+   "quote": "Simplify cluttered UI by removing unnecessary elements, choices, features, and structural complexity.",
+   "tweaks": [
+    "remove-clutter"
+   ]
+  },
+  {
+   "word": "simplify",
+   "source": "IxDF: Progressive Disclosure",
+   "publisher": "Interaction Design Foundation",
+   "url": "https://ixdf.org/literature/topics/progressive-disclosure",
+   "file": "vs_ixdf-progressive-disclosure.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "When designers simplify the main interface, new users do not need to look at or read through content they do not yet need.",
+   "tweaks": [
+    "progressive-disclosure"
+   ]
+  },
+  {
+   "word": "declutter",
+   "source": "IxDF: Progressive Disclosure",
+   "publisher": "Interaction Design Foundation",
+   "url": "https://ixdf.org/literature/topics/progressive-disclosure",
+   "file": "vs_ixdf-progressive-disclosure.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Progressive disclosure declutters the UI to prevent confusion and cognitive overload",
+   "tweaks": [
+    "progressive-disclosure",
+    "remove-clutter"
+   ]
+  },
+  {
+   "word": "clean",
+   "source": "Clean skill (awesome-design-skills)",
+   "publisher": "Skillselion catalog of bergside/awesome-design-skills",
+   "url": "https://skillselion.com/skills/bergside/awesome-design-skills/clean",
+   "file": "vs_bergside-clean.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "bergside/awesome-design-skills",
+   "quote": "clean is a Claude agent design skill that applies a minimal UI system with ample whitespace, legible typography, and a limited color palette",
+   "tweaks": [
+    "airy",
+    "accent"
+   ]
+  },
+  {
+   "word": "minimal",
+   "source": "Minimal skill (awesome-design-skills)",
+   "publisher": "Skillselion catalog of bergside/awesome-design-skills",
+   "url": "https://skillselion.com/skills/bergside/awesome-design-skills/minimal",
+   "file": "vs_bergside-minimal.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "bergside/awesome-design-skills",
+   "quote": "minimal is a design skill that guides developers toward clean dashboards, marketing pages, and mobile screens using restrained palettes, generous whitespace, and typography-led layouts.",
+   "tweaks": [
+    "airy",
+    "accent",
+    "type"
+   ]
+  },
+  {
+   "word": "minimal",
+   "source": "Minimalist UI skill (taste-skill listing)",
+   "publisher": "claudemarketplaces.com",
+   "url": "https://claudemarketplaces.com/skills/leonxlnx/taste-skill/minimalist-ui",
+   "file": "vs_taste-minimalist-ui.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "leonxlnx/taste-skill",
+   "quote": "A prescriptive UI framework that enforces editorial minimalism by banning the usual AI design clichés. It blocks Inter/Roboto fonts, Lucide icons, heavy shadows, and rounded-full buttons",
+   "tweaks": [
+    "banned-fonts",
+    "shadow",
+    "crisp"
+   ]
+  },
+  {
+   "word": "premium",
+   "source": "Premium skill (awesome-design-skills)",
+   "publisher": "Skillselion catalog of bergside/awesome-design-skills",
+   "url": "https://skillselion.com/skills/bergside/awesome-design-skills/premium",
+   "file": "vs_bergside-premium.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "bergside/awesome-design-skills",
+   "quote": "premium is a design-system agent skill that ships Apple-inspired premium interfaces with restrained palettes, generous whitespace, subtle gradients, and elevated typography",
+   "tweaks": [
+    "airy",
+    "accent",
+    "type"
+   ]
+  },
+  {
+   "word": "premium",
+   "source": "Elegant skill (awesome-design-skills)",
+   "publisher": "Skillselion catalog of bergside/awesome-design-skills",
+   "url": "https://skillselion.com/skills/bergside/awesome-design-skills/elegant",
+   "file": "vs_bergside-elegant.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "bergside/awesome-design-skills",
+   "quote": "elegant is a Claude Code design skill that elevates premium web UI polish for developers who need typography, palette, and spacing that signal trust and higher price points.",
+   "tweaks": []
+  },
+  {
+   "word": "premium",
+   "source": "mcouthon/agents design skill",
+   "publisher": "mcouthon (GitHub) via SkillsCat",
+   "url": "https://skills.cat/skills/mcouthon/agents/design",
+   "file": "vs_skillscat-mcouthon-design.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Rich, premium, dimensional. Stripe and Mercury use this approach.",
+   "tweaks": [
+    "shadow"
+   ]
+  },
+  {
+   "word": "modernize",
+   "source": "design-overhaul skill",
+   "publisher": "Skills Hub",
+   "url": "https://skills-hub.ai/skills/design-overhaul",
+   "file": "vs_design-overhaul.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "primary",
+   "derives_from": null,
+   "quote": "Complete autonomous design overhaul — tears down dated patterns and rebuilds with modern CSS, proper tokens, purposeful motion, and production-grade quality.",
+   "tweaks": [
+    "design-tokens",
+    "motion"
+   ]
+  },
+  {
+   "word": "modernize",
+   "source": "Modern skill (awesome-design-skills)",
+   "publisher": "Skillselion catalog of bergside/awesome-design-skills",
+   "url": "https://skillselion.com/skills/bergside/awesome-design-skills/modern",
+   "file": "vs_bergside-modern.txt",
+   "retrieved_at": "2026-09-30T05:15:52Z",
+   "kind": "derivative",
+   "derives_from": "bergside/awesome-design-skills",
+   "quote": "modern is a Claude agent design skill that applies a contemporary editorial UI system with serif typography, minimal palettes, and explicit component states",
+   "tweaks": [
+    "serif",
+    "accent",
+    "states-designed"
+   ]
+  }
+ ]
+}
