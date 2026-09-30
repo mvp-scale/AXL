@@ -12,11 +12,11 @@
 :root{
   --bg:#f7f7f5;--panel:#ffffff;--ink:#131316;--muted:#5b5d66;--line:#dfe0e4;--soft:#eeeff1;
   --mine:#d1175e;--on-mine:#ffffff;--ok:#0b7a4b;
-  --s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;
+  --s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#008300;--s6:#4a3aa7;--s7:#e34948;--sx:#9a9ca5;
   --sans:"Inter Tight","Helvetica Neue",Arial,system-ui,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#008300;--s6:#9085e9;--s7:#e66767;--sx:#6b6e78;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#008300;--s6:#9085e9;--s7:#e66767;--sx:#6b6e78;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 var(--sans);-webkit-font-smoothing:antialiased}
 button,input{font:inherit;color:inherit}
@@ -44,7 +44,7 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 /* bench */
 .bench{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(340px,1fr);gap:clamp(12px,1.8vw,24px);min-height:0;align-items:start}
 .left{display:flex;flex-direction:column;gap:8px;min-width:0;position:sticky;top:8px}
-.versions{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.versions{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:thin;padding-bottom:3px}.ver{flex:none}
 .ver{min-height:36px;padding:0 12px 0 8px;border-radius:99px;border:1.5px solid var(--line);font-weight:600;font-size:.88rem;display:inline-flex;align-items:center;gap:7px;position:relative;overflow:hidden;background:var(--panel)}
 .ver i{width:14px;height:6px;border-radius:3px;background:var(--c,var(--ink))}
 .ver kbd{border:0;background:transparent;padding:0;color:var(--muted);font-size:.7rem}
@@ -54,10 +54,18 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .ver[aria-pressed="true"] .bar{animation:fill 1.8s linear forwards}
 .stopped .ver .bar{display:none}
 @keyframes fill{to{width:100%}}
-.frame{position:relative;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line),0 24px 60px -36px rgba(0,0,0,.45);aspect-ratio:980/760;width:100%;max-height:calc(100svh - 210px);cursor:zoom-out;touch-action:manipulation;user-select:none}
+.frame{position:relative;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line),0 24px 60px -36px rgba(0,0,0,.45);aspect-ratio:980/760;width:100%;max-height:calc(100svh - 190px);user-select:none}
 .frame iframe{position:absolute;left:0;top:0;width:980px;height:760px;border:0;transform-origin:0 0;pointer-events:none}
-.peek{position:absolute;left:12px;top:12px;z-index:2;font:700 .75rem var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:var(--ink);color:var(--bg);opacity:0;transition:opacity .12s}
-.frame.peeking .peek{opacity:1}
+.frame{outline:3px solid var(--fc,transparent);outline-offset:-3px}
+#pv{transition:opacity .16s ease}
+.frame.peeking #pv{opacity:0}
+.frame.peeking{--fc:var(--ink)}
+.state{position:absolute;left:12px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;font:700 .85rem var(--sans);padding:7px 12px;border-radius:99px;background:var(--fc,var(--ink));color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);pointer-events:none}
+.frame.peeking .state{background:#fff;color:#131316;box-shadow:0 0 0 2px #131316}
+.hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);user-select:none;touch-action:none}
+.hold kbd{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.frame.peeking .hold{background:#fff;color:#131316}.frame.peeking .hold kbd{color:#131316;border-color:#131316}
+@media (hover:none){.hold kbd{display:none}}
 .hint{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
 .says{min-height:2.6em;font-size:.95rem;color:var(--muted);margin:0}
 .says q{color:var(--ink);font-weight:600}.says a{color:inherit;font:.78rem var(--mono)}
@@ -141,8 +149,8 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
   <div class="bench">
     <section class="left" aria-label="The page">
       <div class="versions" id="versions" role="group" aria-label="Whose version is shown"></div>
-      <div class="frame" id="frame" title="Hold to see the original"><span class="peek" aria-hidden="true">Original</span><iframe id="pv" title="Demo page with the selected version applied" tabindex="-1"></iframe></div>
-      <div class="hint"><span class="keys">Hold <kbd>Shift</kbd> to see the original · <kbd>1</kbd>–<kbd>4</kbd> sources · <kbd>Y</kbd> yours</span><span class="touch">Press and hold the page to compare.</span></div>
+      <div class="frame" id="frame"><iframe id="pv0" title="Demo page, original" tabindex="-1" aria-hidden="true"></iframe><iframe id="pv" title="Demo page with the selected version applied" tabindex="-1"></iframe><span class="state" id="state"></span><button class="hold" id="hold" type="button" aria-label="Hold to see the original"><kbd>Shift</kbd> hold to see the original</button></div>
+      <div class="hint"><span class="keys"><kbd>1</kbd>–<kbd>9</kbd> switch source · <kbd>Y</kbd> yours · changed parts flash when you switch</span></div>
       <p class="says" id="says" aria-live="polite"></p>
     </section>
 
@@ -150,7 +158,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
       <div class="maph"><h2 id="mapTitle"></h2><span style="font-size:.8rem;color:var(--muted)">tap a stop to add it to yours</span></div>
       <div class="nums" id="nums"></div>
       <div class="metro" id="metro"></div>
-      <div class="legend"><span><svg width="34" height="14" aria-hidden="true"><line x1="7" y1="7" x2="27" y2="7" stroke="var(--ink)" stroke-width="2"/><circle cx="7" cy="7" r="5" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/><circle cx="27" cy="7" r="5" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/></svg> shared stop: those sources agree</span><span><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="var(--panel)" stroke="var(--muted)" stroke-width="2.5"/></svg> one source only</span><span style="color:var(--ok)">✓ a tool checks it</span></div>
+      <div class="legend"><span><svg width="34" height="14" aria-hidden="true"><line x1="7" y1="7" x2="27" y2="7" stroke="var(--ink)" stroke-width="2"/><circle cx="7" cy="7" r="5" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/><circle cx="27" cy="7" r="5" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/></svg> shared stop: those sources agree</span><span><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="var(--panel)" stroke="var(--muted)" stroke-width="2.5"/></svg> one source only</span><span><svg width="30" height="10" aria-hidden="true"><line x1="2" y1="5" x2="28" y2="5" stroke="var(--muted)" stroke-width="4" stroke-dasharray="2 6" stroke-linecap="round"/></svg> copies another source</span><span style="color:var(--ok)">✓ a tool checks it</span></div>
       <details class="all"><summary id="allSum"></summary><div class="allcats" id="allcats"></div></details>
     </section>
   </div>
@@ -187,10 +195,10 @@ const D = /*DATA*/null;
   const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const T = Object.fromEntries(D.tweaks.map(t => [t.id, t])), CAT = D.categories;
-  const LC = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)'];
+  const LC = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)', 'var(--s5)', 'var(--s6)', 'var(--s7)']; const lc = i => LC[i] || 'var(--sx)';
   const st = { word: 'polish', v: 0, mine: new Set(), mode: 'theirs', auto: true, peek: false };
   let timer = null;
-  const W = () => D.words.find(w => w.word === st.word), VS = () => W().versions.slice(0, 4), cur = () => VS()[Math.min(st.v, VS().length - 1)];
+  const W = () => D.words.find(w => w.word === st.word), VS = () => W().versions, cur = () => VS()[Math.min(st.v, VS().length - 1)];
 
   /* ---- word picker (custom, never a native select) ---- */
   const pop = $('#wordPop'), wbtn = $('#wordBtn');
@@ -202,44 +210,58 @@ const D = /*DATA*/null;
   document.addEventListener('click', e => { if (!pop.hidden && !e.target.closest('#wordPop,#wordBtn')) openPop(false); });
   function setWord(w) { stopAuto(); st.word = w; st.v = 0; st.mode = 'theirs'; if (!st.mine.size) $('#myName').value = w; $('#wordTxt').textContent = w; render(); }
 
-  /* ---- the page ---- */
-  const pv = $('#pv'), frame = $('#frame');
-  pv.srcdoc = D.before;
-  const fit = () => { pv.style.transform = `scale(${frame.clientWidth / D.frame.width})`; };
+  /* ---- the page: original underneath, the chosen version on top ---- */
+  const pv = $('#pv'), pv0 = $('#pv0'), frame = $('#frame');
+  pv.srcdoc = D.before; pv0.srcdoc = D.before;
+  const fit = () => { const s = `scale(${frame.clientWidth / D.frame.width})`; pv.style.transform = s; pv0.style.transform = s; };
   new ResizeObserver(fit).observe(frame);
   const cssOf = ids => [...ids].map(i => T[i] && T[i].css).filter(Boolean).join('\n');
-  const shownSet = () => st.peek || st.mode === 'orig' ? new Set() : st.mode === 'mine' ? st.mine : new Set(cur().tweaks);
-  const paint = () => { try { pv.contentWindow.postMessage({ type: 'lab-recipe', css: cssOf(shownSet()), highlight: '' }, '*'); } catch (e) {} };
-  pv.addEventListener('load', () => { fit(); paint(); });
+  const selsOf = css => [...new Set([...css.replace(/@media[^{]*\{/g, '').matchAll(/([^{}]+)\{[^{}]*\}/g)].flatMap(m => m[1].split(',')).map(s => s.replace(/::?[a-z-]+(\([^)]*\))?/g, '').trim()).filter(s => s && s !== '*' && !/^(html|body)$/.test(s)))];
+  const shownSet = () => st.mode === 'orig' ? new Set() : st.mode === 'mine' ? st.mine : new Set(cur().tweaks);
+  let flashT = null, lastCss = null;
+  const post = (f, css, hl) => { try { f.contentWindow.postMessage({ type: 'lab-recipe', css, highlight: hl }, '*'); } catch (e) {} };
+  function paint(flash) {
+    const css = cssOf(shownSet());
+    const hl = flash && !reduced && css ? selsOf(css).map(s => `${s}`).join(',') + '{outline:2px dashed rgba(209,23,94,.6)!important;outline-offset:1px}' : '';
+    post(pv, css, hl); lastCss = css;
+    clearTimeout(flashT); if (hl) flashT = setTimeout(() => post(pv, css, ''), 1100);
+    const v = cur(), mine = st.mode === 'mine', idx = VS().indexOf(v);
+    frame.style.setProperty('--fc', mine ? 'var(--mine)' : lc(idx));
+    $('#state').textContent = st.peek ? 'Original' : mine ? `Your ${$('#myName').value || 'word'}` : `${v.src}'s ${st.word}`;
+  }
+  pv.addEventListener('load', () => { fit(); paint(false); }); pv0.addEventListener('load', fit);
 
-  /* ---- compare: hold Shift, or press and hold the page ---- */
-  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); paint(); };
+  /* ---- compare: hold Shift or the button; the version fades away to the original underneath ---- */
+  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#state').textContent = on ? 'Original' : ''; paint(!on); };
   addEventListener('keydown', e => {
     if (e.target.closest && e.target.closest('input')) return;
     if (e.key === 'Shift') { stopAuto(); peek(true); return; }
     if (e.key === 'Escape') { if (!pop.hidden) { openPop(false); wbtn.focus(); } return; }
-    const n = +e.key; if (n >= 1 && n <= VS().length && !e.metaKey && !e.ctrlKey) { stopAuto(); st.mode = 'theirs'; st.v = n - 1; render(); }
-    if (e.key === 'y' || e.key === 'Y') { stopAuto(); st.mode = 'mine'; render(); }
+    const n = +e.key; if (n >= 1 && n <= Math.min(9, VS().length) && !e.metaKey && !e.ctrlKey) { stopAuto(); st.mode = 'theirs'; st.v = n - 1; render(true); }
+    if (e.key === 'y' || e.key === 'Y') { stopAuto(); st.mode = 'mine'; render(true); }
   });
   addEventListener('keyup', e => { if (e.key === 'Shift') peek(false); });
   addEventListener('blur', () => peek(false));
-  frame.addEventListener('pointerdown', e => { stopAuto(); peek(true); frame.setPointerCapture(e.pointerId); });
-  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(ev => frame.addEventListener(ev, () => peek(false)));
+  const hold = $('#hold');
+  hold.addEventListener('pointerdown', e => { e.preventDefault(); stopAuto(); peek(true); hold.setPointerCapture(e.pointerId); });
+  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(ev => hold.addEventListener(ev, () => peek(false)));
+  hold.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); stopAuto(); peek(true); } });
+  hold.addEventListener('keyup', e => { if (e.key === ' ' || e.key === 'Enter') peek(false); });
 
   /* ---- versions row ---- */
   function renderVersions() {
-    $('#versions').innerHTML = VS().map((v, i) => `<button class="ver" type="button" data-i="${i}" style="--c:${LC[i]}" aria-pressed="${st.mode === 'theirs' && st.v === i}"><i></i>${esc(v.src)}<kbd>${i + 1}</kbd><span class="bar"></span></button>`).join('')
+    $('#versions').innerHTML = VS().map((v, i) => `<button class="ver" type="button" data-i="${i}" style="--c:${lc(i)}" aria-pressed="${st.mode === 'theirs' && st.v === i}"><i></i>${esc(v.src)}${i < 9 ? `<kbd>${i + 1}</kbd>` : ''}<span class="bar"></span></button>`).join('')
       + `<button class="ver mine" type="button" data-i="mine" aria-pressed="${st.mode === 'mine'}"><i></i>yours<kbd>Y</kbd></button>`;
   }
-  $('#versions').addEventListener('click', e => { const b = e.target.closest('.ver'); if (!b) return; stopAuto(); if (b.dataset.i === 'mine') st.mode = 'mine'; else { st.mode = 'theirs'; st.v = +b.dataset.i; } render(); });
+  $('#versions').addEventListener('click', e => { const b = e.target.closest('.ver'); if (!b) return; stopAuto(); if (b.dataset.i === 'mine') st.mode = 'mine'; else { st.mode = 'theirs'; st.v = +b.dataset.i; } render(true); });
 
   /* ---- the subway map ---- */
   function renderMap() {
-    const vs = VS(), lines = vs.map((v, i) => ({ name: v.src, color: LC[i], set: new Set(v.tweaks), active: st.mode === 'theirs' && st.v === i }));
+    const vs = VS(), lines = vs.map((v, i) => ({ name: v.src, color: lc(i), dash: v.kind === 'derivative', set: new Set(v.tweaks), active: st.mode === 'theirs' && st.v === i }));
     if (st.mine.size) lines.push({ name: 'yours', color: 'var(--mine)', set: st.mine, active: st.mode === 'mine', mine: true });
     const ids = [...new Set(lines.flatMap(l => [...l.set]))].filter(i => T[i]);
     const byCat = CAT.map(c => ({ c, s: ids.filter(i => T[i].category === c).sort((a, b) => lines.filter(l => l.set.has(b)).length - lines.filter(l => l.set.has(a)).length || T[a].name.localeCompare(T[b].name)) })).filter(x => x.s.length);
-    const LANE = 22, X0 = 20, nL = lines.length, LX = X0 + (nL - 1) * LANE + 26, ROW = 28, CATH = 24, W = 460;
+    const LANE = lines.length <= 6 ? 22 : Math.max(10, Math.floor(150 / lines.length)), X0 = 20, nL = lines.length, LX = X0 + (nL - 1) * LANE + 26, ROW = 28, CATH = 24, W = 460;
     const x = i => X0 + i * LANE; let y = 58; const rows = [];
     byCat.forEach(g => { rows.push({ cat: g.c, y: y + 16 }); y += CATH; g.s.forEach(id => { rows.push({ id, y: y + ROW / 2 }); y += ROW; }); });
     const H = y + 16, anyActive = lines.some(l => l.active);
@@ -248,7 +270,7 @@ const D = /*DATA*/null;
     // origin station: the word, all lines leave from here
     s += `<rect x="${x(0) - 11}" y="12" width="${(nL - 1) * LANE + 22}" height="22" rx="11" fill="var(--ink)"/><text x="${LX}" y="28" style="font-weight:800;font-size:17px;letter-spacing:-.02em">${esc(st.word)}</text>`;
     lines.forEach((l, i) => { const op = anyActive && !l.active ? .22 : 1;
-      s += `<g class="ln" opacity="${op}"><line x1="${x(i)}" y1="23" x2="${x(i)}" y2="${last[i]}" stroke="${l.color}" stroke-width="6" stroke-linecap="round"/><circle cx="${x(i)}" cy="${last[i]}" r="7" fill="${l.color}"/></g>`; });
+      s += `<g class="ln" opacity="${op}"><line x1="${x(i)}" y1="23" x2="${x(i)}" y2="${last[i]}" stroke="${l.color}" stroke-width="${LANE < 16 ? 4 : 6}" stroke-linecap="round"${l.dash ? ' stroke-dasharray="2 6"' : ''}/><circle cx="${x(i)}" cy="${last[i]}" r="7" fill="${l.color}"/></g>`; });
     rows.forEach(r => {
       if (r.cat) { s += `<text class="cat" x="${LX}" y="${r.y}">${esc(r.cat)}</text>`; return; }
       const t = T[r.id], on = lines.map((l, i) => l.set.has(r.id) ? i : -1).filter(i => i >= 0), mine = st.mine.has(r.id), theirs = on.filter(i => !lines[i].mine);
@@ -264,7 +286,7 @@ const D = /*DATA*/null;
     $('#mapTitle').textContent = vs.length > 1 ? `How ${vs.length} sources define “${st.word}”` : `How ${vs[0].src} defines “${st.word}”`;
     $('#nums').innerHTML = `<div><b>${vs.length}</b><span>source${vs.length > 1 ? 's' : ''}</span></div><div><b>${union.size}</b><span>different tweaks</span></div>` + (vs.length > 1 ? `<div><b>${shared}</b><span>shared by 2+</span></div><div class="${all ? '' : 'zero'}"><b>${all}</b><span>shared by all</span></div>` : '');
   }
-  const toggle = id => { stopAuto(); st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mode = 'mine'; render(); };
+  const toggle = id => { stopAuto(); st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mode = 'mine'; render(true); };
   $('#metro').addEventListener('click', e => { const r = e.target.closest('.row'); if (r) toggle(r.dataset.id); });
   $('#metro').addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { const r = e.target.closest('.row'); if (r) { e.preventDefault(); toggle(r.dataset.id); requestAnimationFrame(() => { const n = $(`#metro .row[data-id="${r.dataset.id}"]`); if (n) n.focus(); }); } } });
 
@@ -285,9 +307,9 @@ const D = /*DATA*/null;
   $('#myName').addEventListener('input', facts);
   $('#clear').addEventListener('click', () => { st.mine.clear(); st.mode = 'theirs'; render(); });
 
-  function render() {
+  function render(flash) {
     const v = cur(), nv = VS().length;
-    paint(); renderVersions(); renderMap();
+    paint(!!flash); renderVersions(); renderMap();
     $('#claim').innerHTML = nv > 1 ? `<b>Same word.</b> ${nv} sources, ${nv} different pages.` : `Only <b>${esc(v.src)}</b> uses this word.`;
     $('#says').innerHTML = st.mode === 'mine' ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.`
       : `${esc(v.src)}: ${v.quote ? `<q>${esc(v.quote)}</q>` : `${v.tweaks.length} tweaks from ${v.n || 0} statements`} <a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">source</a>`;
@@ -298,7 +320,7 @@ const D = /*DATA*/null;
   }
 
   /* ---- the hook: cycle through everyone's version until the visitor touches anything ---- */
-  function tick() { if (!st.auto) return; st.v = (st.v + 1) % VS().length; st.mode = 'theirs'; render(); timer = setTimeout(tick, 1800); }
+  function tick() { if (!st.auto) return; st.v = (st.v + 1) % VS().length; st.mode = 'theirs'; render(false); timer = setTimeout(tick, 1800); }
   function stopAuto() { if (!st.auto) return; st.auto = false; clearTimeout(timer); document.body.classList.add('stopped'); }
   if (!reduced && VS().length > 1) timer = setTimeout(tick, 1800); else stopAuto();
 

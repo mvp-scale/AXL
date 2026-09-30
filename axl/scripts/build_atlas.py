@@ -44,8 +44,13 @@ words = collections.OrderedDict([("polish", polish)])
 for (src, w), g in groups.items():
     if (src, w) == ("Impeccable", "polish"): continue
     words.setdefault(w, []).append(dict(g, quote=None))
+VSF = f"{D}/verb_sources.json"
+if os.path.exists(VSF):
+    for e in json.load(open(VSF))["entries"]:
+        words.setdefault(e["word"], []).append({"src": e["source"], "word": e["word"], "url": e["url"], "quote": e["quote"], "tweaks": e["tweaks"], "kind": e.get("kind"), "derives_from": e.get("derives_from"), "n": 1})
 for vs in words.values():
     for v in vs: v["tweaks"] = [t for t in v["tweaks"] if t in tweaks]
+    vs.sort(key=lambda v: (v.get("kind") == "derivative", -len(v["tweaks"])))
 srcs = sorted({g["src"] for g in groups.values()})
 data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/before.html", encoding="utf-8").read(),
   "categories": TW["categories"], "tweaks": list(tweaks.values()), "words": [{"word": w, "versions": vs} for w, vs in words.items()], "sources": srcs,
