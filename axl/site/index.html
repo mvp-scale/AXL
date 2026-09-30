@@ -368,7 +368,10 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
   }
   let appView = 'overview', stated = false;
   const sync = (state, both) => { [both ? pv : null, pv0].forEach(f => { try { f && f.contentWindow.postMessage({ type: 'lab-sync-state', state }, '*'); } catch (e) {} }); };
+  // move the demo to where the selection shows, only when the selection changes: a repaint (e.g. letting go of Shift) keeps the view the person is on
+  let lastSel = null;
   function goView(ids) {
+    const key = ids.join(','); if (key === lastSel) return; lastSel = key;
     const n = {}; ids.forEach(i => { const v = shows(T[i]) && T[i].view; if (v) n[v] = (n[v] || 0) + 1; });
     const vs = Object.keys(n); if (!vs.length) return;
     const one = ids.length === 1 && T[ids[0]].state; if (vs.includes(appView) && !one && !stated) return; stated = !!one;
@@ -379,6 +382,7 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
     if (e.source !== pv.contentWindow || !e.data || e.data.type !== 'lab-app-state') return;
     appView = e.data.state.view; sync(e.data.state, false);
     if (st.walk) { stopWalk(); renderPicks(); }
+    lastSel = current().tweaks.join(',');   // the person navigated the demo: keep their view until they pick something else
     clearTimeout(markT); markT = setTimeout(markChanges, 160);
   });
   function paint(cur) { goView(cur.tweaks); post(cssOf(cur.tweaks), patchOf(cur.tweaks)); clearTimeout(markT); markT = setTimeout(markChanges, 120); }
@@ -386,7 +390,7 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
     const w = pv.contentWindow; w.addEventListener('scroll', () => { try { pv0.contentWindow.scrollTo(0, w.scrollY); } catch (e) {} });
     w.addEventListener('keydown', e => { if (e.key === 'Shift' && !e.target.closest('input,textarea,select')) { stopWalk(); renderPicks(); peek(true); } });
     w.addEventListener('keyup', e => { if (e.key === 'Shift') peek(false); }); }); pv0.addEventListener('load', fit);
-  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (!on) paint(current()); };
+  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (!on) { lastSel = current().tweaks.join(','); paint(current()); } };   // letting go of Shift never moves the demo
   addEventListener('keydown', e => {
     if (e.target.closest && e.target.closest('input')) return;
     if (e.key === 'Shift') { stopWalk(); renderPicks(); peek(true); }
