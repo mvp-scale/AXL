@@ -3,13 +3,12 @@
 Open `axl/site/index.html` (one file).
 
 ## What the page does, in the order a person meets it
-1. **0–2 s, no clicks.** The word "polish" and the demo page. The page changes every 1.8 s as it cycles through four sources' versions of "polish" (Impeccable, Taste-Skill, Anthropic, OneRedOak), each with its verbatim quote. The only claim: "Same word. 4 sources, 4 different pages."
-2. **Beside it:** all 71 tweaks behind the words, in 8 categories. Shading shows how many of the 12 sources ask for each one, a tick means a tool can check it, and an outline marks the tweaks in the version on screen.
-3. **1 tap:** a tweak joins *your* word and the page switches to your version. The bar shows how many of your tweaks a tool can check and which existing words yours is closest to ("closest to quieter (Impeccable) 57%"). This is the "polish-adjacent" grouping, computed live.
-4. **Save:** your word as a small JSON file, plus the command `python3 axl/axl.py check my-polish.axl.json yourpage.html`. No agent interprets it.
-5. **Scroll, if curious:** a table of which source asks for which tweak (only 21 of 71 are asked for by 3 or more sources), and the statements no tool can check (55 of 363).
-
-Any of the 29 words can be picked from the word menu.
+1. **0–2 s, no clicks.** The word "polish" and the demo page. The page changes every 1.8 s as it cycles through four sources' versions of "polish", each with its verbatim quote. The only claim: "Same word. 4 sources, 4 different pages."
+2. **The subway map (right).** Each source is a coloured line leaving the station "polish" and stopping at the tweaks it asks for, grouped by category. A stop that several lines share is joined across them, so you can see which sources agree. Headline numbers: 4 sources, 20 different tweaks, 6 shared by two or more, **0 shared by all**.
+3. **Compare instantly.** Hold **Shift**, or press and hold the page on a phone, to flash the original; release to go back. Keys **1–4** switch source and **Y** shows yours.
+4. **1 tap on a stop** adds it to *your* line (pink) and the page shows your version. The bar shows how many of your tweaks a tool can check and the nearest named words ("polish (Taste-Skill) 33%, bolder (Impeccable) 20%").
+5. **Save:** your word as a small JSON file, plus `python3 axl/axl.py check my-polish.axl.json yourpage.html`.
+6. **The word menu** lists all 29 words with how many sources define each. **All 71 tweaks** sit in a collapsed list under the map. Below the fold is one line ("12 sources. 29 words. 71 tweaks. No standard.") and the statements no tool can check.
 
 ## Checked by the gates (all pass)
 - Site: `scripts/gates/site_check.py` checks that the page changes on its own within 2 s, one tap builds your word, save gives a valid file with a command, there are no network requests and no overflow, and axe finds nothing serious at 390 and 1440 px in light and dark.
