@@ -28,7 +28,10 @@ const { CHROME } = require('./common');
     // one tap on the board builds your word; save gives a file and a command
     await p.locator('#board .tw').first().click(); r.after_one_tap = await p.evaluate(() => ({ mine: document.querySelectorAll('#board .tw[aria-pressed=true]').length, state: document.getElementById('stateTxt').textContent }));
     await p.locator('#board .tw').nth(3).click(); await p.click('#save'); await p.waitForTimeout(300);
-    r.saved = await p.evaluate(() => { try { const d = JSON.parse(document.getElementById('json').textContent); return d.axl_verb === '0.1' && d.tweaks.length === 2 && /axl\.py check/.test(document.getElementById('cmd').textContent); } catch (e) { return false; } });
+    const prompt = await p.evaluate("document.getElementById('out').textContent"); await p.click('.tabs button[data-t=script]'); const script = await p.evaluate("document.getElementById('out').textContent");
+    await p.click('.tabs button[data-t=file]'); const file = await p.evaluate("document.getElementById('out').textContent");
+    r.saved = (() => { try { const d = JSON.parse(file); return d.axl_verb === '0.1' && d.tweaks.length === 2 && /Who asks for it/.test(prompt) && /DevTools console/.test(script); } catch (e) { return false; } })();
+    try { new Function(script); r.script_parses = true; } catch (e) { r.script_parses = String(e); }
     await p.keyboard.press('Escape'); r.sheet_closed = await p.evaluate("!document.getElementById('sheet').classList.contains('open')");
     r.chips = await p.evaluate("document.querySelectorAll('#board .tw').length");
     r.overflow = await p.evaluate('document.scrollingElement.scrollWidth - innerWidth');

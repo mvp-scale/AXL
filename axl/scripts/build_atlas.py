@@ -90,8 +90,19 @@ for w0, vs in words.items():
 entries = list(entries.values())
 srcs = sorted({e["src"] for e in entries}, key=lambda s: (-sum(e["src"] == s for e in entries), s))
 wl = sorted({e["word"] for e in entries if isverb(e["word"])}, key=lambda w: (-sum(e["word"] == w for e in entries), w))
+def prov(t):
+    out, seen = [], set()
+    for a in t["asks"]:
+        k = (canon(a["src"]), a["text"][:60])
+        if k in seen: continue
+        seen.add(k); out.append({"src": canon(a["src"]), "quote": a["text"], "url": a["url"], "verified": a["verified"]})
+    for e in entries:
+        if t["id"] in e["tweaks"] and e.get("quote") and not any(o["src"] == e["src"] for o in out):
+            out.append({"src": e["src"], "quote": e["quote"], "url": e["url"], "verified": True})
+    if t.get("source_quote"): out.append({"src": "W3C WCAG 2.2" if "w3.org" in t["source_url"] else "Smashing Magazine", "quote": t["source_quote"], "url": t["source_url"], "verified": True})
+    return out[:8]
 data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/before.html", encoding="utf-8").read(),
-  "categories": TW["categories"], "tweaks": [{k: t[k] for k in ("id", "name", "category", "check", "css")} for t in tweaks.values()],
+  "categories": TW["categories"], "tweaks": [dict({k: t[k] for k in ("id", "name", "category", "check", "css")}, asks=prov(t)) for t in tweaks.values()],
   "entries": entries, "words": wl, "sources": srcs, "vague": vague[:40],
   "stats": {"statements": len(claims) + len(entries), "sources": len(srcs), "words": len(wl), "tweaks": len(tweaks), "vague": len(vague)}}
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")

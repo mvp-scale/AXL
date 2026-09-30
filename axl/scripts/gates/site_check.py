@@ -24,7 +24,7 @@ for x in out["runs"]:
     if not x["word_walk"].startswith("\u201c"): errs.append((t, "walking words", x["word_walk"]))
     a1 = x["after_one_tap"]
     if not (a1["mine"] == 1 and a1["state"].startswith("Your")): errs.append((t, "one tap does not build your word", a1))
-    if not x["saved"] or not x["sheet_closed"]: errs.append((t, "save sheet"))
+    if not x["saved"] or not x["sheet_closed"] or x.get("script_parses") is not True: errs.append((t, "save outputs", x.get("script_parses")))
     if x["chips"] < 45: errs.append((t, "board too small", x["chips"]))
     if x["overflow"] > 1: errs.append((t, "horizontal overflow", x["overflow"]))
 if errs: print("PHASE 7 Site: FAIL", json.dumps(errs)[:1200]); sys.exit(1)

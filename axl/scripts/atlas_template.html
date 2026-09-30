@@ -127,6 +127,12 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .sheet p{margin:0 0 10px;color:var(--muted)}
 pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overflow:auto;font:.8rem/1.45 var(--mono);max-height:260px}
 .row2{display:flex;gap:8px;flex-wrap:wrap}
+.sheet{width:min(860px,100%)}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:8px 0 8px;overflow-x:auto}
+.tabs button{min-height:44px;padding:0 12px;font-weight:600;font-size:.9rem;color:var(--muted);white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--ink);box-shadow:inset 0 -3px 0 var(--mine)}
+.tabnote{font-size:.88rem}
+#out{max-height:50svh;white-space:pre-wrap}
 .scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:39;opacity:0;pointer-events:none;transition:opacity .3s}.scrim.open{opacity:1;pointer-events:auto}
 .below{padding-block:64px 80px;display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
 .below h2{font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-.03em;margin:0}
@@ -180,7 +186,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
     <div class="name">my <input id="myName" aria-label="Name of your word" value="polish" maxlength="24"></div>
     <div class="facts" id="facts" aria-live="polite"></div>
     <button class="btn" id="clear" type="button">Clear</button>
-    <button class="btn primary" id="save" type="button">Save my word</button>
+    <button class="btn primary" id="save" type="button">Get my word</button>
   </footer>
 
   <main class="below">
@@ -194,10 +200,15 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
 <div class="scrim" id="scrim"></div>
 <aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" inert>
   <h2 id="sheetTitle"></h2>
-  <p>This file is the whole definition. A command runs the checks; no agent has to guess what the word means.</p>
-  <pre id="json" tabindex="0"></pre>
-  <pre id="cmd" tabindex="0"></pre>
-  <div class="row2"><button class="btn primary" id="dl" type="button">Download</button><button class="btn" id="cp" type="button">Copy file</button><button class="btn" id="cpc" type="button">Copy command</button><button class="btn" id="close" type="button">Close</button></div>
+  <p id="sheetSub"></p>
+  <div class="tabs" role="tablist">
+    <button role="tab" type="button" data-t="prompt" aria-selected="true">1 · Give it to your agent</button>
+    <button role="tab" type="button" data-t="script" aria-selected="false">2 · Check any page</button>
+    <button role="tab" type="button" data-t="file" aria-selected="false">3 · Definition file</button>
+  </div>
+  <p class="tabnote" id="tabNote"></p>
+  <pre id="out" tabindex="0"></pre>
+  <div class="row2"><button class="btn primary" id="cp" type="button">Copy</button><button class="btn" id="dl" type="button">Download</button><button class="btn" id="close" type="button">Close</button></div>
 </aside>
 
 <script>
@@ -363,24 +374,73 @@ const D = /*DATA*/null;
     const e = cur.entries.length === 1 ? cur.entries[0] : cur.entries.find(x => x.quote);
     const visTxt = cur.tweaks.length ? ` <span style="font:.78rem var(--mono)">${vis} of ${cur.tweaks.length} tweaks visible</span>` : '';
     $('#says').innerHTML = st.mineView ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.` : e && e.quote ? `${esc(e.src)} on “${esc(e.word)}”: <q>${esc(e.quote)}</q> <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">source</a>${visTxt}` : `${cur.tweaks.length} tweaks from ${cur.entries.length} definitions.${visTxt}`;
-    $('#save').disabled = !st.mine.size; facts();
+    facts();
   }
 
-  /* ---- save ---- */
+  /* ---- save: three outputs ---- */
   const sheet = $('#sheet'), scrim = $('#scrim');
   const slug = s => (s || 'word').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'word';
-  function doc() { const name = $('#myName').value.trim() || 'word'; return { axl_verb: '0.1', name, tweaks: [...st.mine],
-    checks: [...st.mine].filter(i => T[i].check).map(i => ({ tweak: i, check: T[i].check })), judgment: [...st.mine].filter(i => !T[i].check).map(i => T[i].name),
-    closest: D.entries.map(e => ({ word: e.word, source: e.src, overlap: +jac([...st.mine], e.tweaks).toFixed(2) })).sort((a, b) => b.overlap - a.overlap).slice(0, 3) }; }
-  $('#save').addEventListener('click', () => { const d = doc(), f = slug(d.name) + '.axl.json';
-    $('#sheetTitle').textContent = `my ${d.name}`; $('#json').textContent = JSON.stringify(d, null, 2); $('#cmd').textContent = `python3 axl/axl.py check ${f} yourpage.html`;
-    sheet.inert = false; sheet.classList.add('open'); scrim.classList.add('open'); $('#dl').focus(); });
+  let OUT = {}, tab = 'prompt';
+  const chosen = () => st.mine.size ? [...st.mine] : current().tweaks;
+  function build() {
+    const name = ($('#myName').value.trim() || 'my word'), ids = chosen(), f = slug(name);
+    const ts = ids.map(i => T[i]).filter(Boolean), auto = ts.filter(t => t.check), judge = ts.filter(t => !t.check);
+    const prov = t => (t.asks || []).map(a => `     - ${a.src}: "${a.quote.replace(/\s+/g, ' ').slice(0, 160)}"${a.verified ? '' : ' (paraphrase)'} — ${a.url}`).join('\n') || '     - (no source quote on record)';
+    const prompt = `# ${name}\n\nApply exactly these ${ts.length} changes to the UI. Do not redesign anything else.\n` +
+      ts.map((t, i) => `\n${i + 1}. ${t.name}  [${t.category}]\n   Change:\n${t.css ? t.css.replace(/\}/g, '}\n').split('\n').filter(Boolean).map(l => '     ' + l).join('\n') : '     (no CSS: ' + (t.check ? 'behaviour/markup change, verified by the check below' : 'needs judgment; describe what you changed') + ')'}\n   Check: ${t.check ? t.check : 'manual review'}\n   Who asks for it:\n${prov(t)}`).join('\n') +
+      `\n\nWhen done, run the check script (tab 2) on the page and fix every FAIL it reports. Repeat until it reports 0 failures.\n`;
+    const checks = [...new Set(auto.map(t => t.check))];
+    const script = CHECK_SCRIPT(name, checks, auto.map(t => ({ id: t.id, name: t.name, check: t.check })));
+    const file = { axl_verb: '0.1', name, tweaks: ids, checks: auto.map(t => ({ tweak: t.id, check: t.check })), judgment: judge.map(t => t.name),
+      provenance: Object.fromEntries(ts.map(t => [t.id, (t.asks || []).map(a => ({ source: a.src, quote: a.quote, url: a.url }))])) };
+    OUT = { prompt: { text: prompt, file: `${f}.prompt.md`, note: `Paste this into Claude Code, Cursor or any agent. Every change lists its exact CSS and who asks for it.` },
+      script: { text: script, file: `${f}.check.js`, note: `Open your page, press F12, paste into the Console. It prints PASS/FAIL per check with the elements that fail, and copies a report you can hand back to your agent. Or from the repo: python3 axl/axl.py check ${f}.axl.json yourpage.html` },
+      file: { text: JSON.stringify(file, null, 2), file: `${f}.axl.json`, note: `The whole definition: tweaks, checks, and provenance. python3 axl/axl.py check ${f}.axl.json yourpage.html runs it.` } };
+    $('#sheetTitle').textContent = name; $('#sheetSub').textContent = `${ts.length} tweaks · ${auto.length} checked automatically · ${judge.length} need a person`;
+  }
+  function showTab(k) { tab = k; $$('.tabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.t === k)); $('#out').textContent = OUT[k].text; $('#tabNote').textContent = OUT[k].note; }
+  $$('.tabs button').forEach(b => b.addEventListener('click', () => showTab(b.dataset.t)));
+  $('#save').addEventListener('click', () => { stopWalk(); build(); showTab('prompt'); sheet.inert = false; sheet.classList.add('open'); scrim.classList.add('open'); $('#cp').focus(); });
   const closeSheet = () => { sheet.classList.remove('open'); scrim.classList.remove('open'); sheet.inert = true; $('#save').focus(); };
   $('#close').addEventListener('click', closeSheet); scrim.addEventListener('click', closeSheet);
-  const copy = (t, b) => { const o = b.textContent, ok = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = o, 1200); }; try { navigator.clipboard.writeText(t).then(ok, ok); } catch (e) { ok(); } };
-  $('#cp').addEventListener('click', e => copy($('#json').textContent, e.currentTarget));
-  $('#cpc').addEventListener('click', e => copy($('#cmd').textContent, e.currentTarget));
-  $('#dl').addEventListener('click', () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([$('#json').textContent], { type: 'application/json' })); a.download = slug(doc().name) + '.axl.json'; document.body.appendChild(a); a.click(); a.remove(); });
+  const copy = (t, b) => { const o = b.textContent, ok = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = o, 1200); };
+    try { navigator.clipboard.writeText(t).then(ok, () => { const r = document.createRange(); r.selectNodeContents($('#out')); getSelection().removeAllRanges(); getSelection().addRange(r); b.textContent = 'Selected: press Ctrl+C'; }); } catch (e) { ok(); } };
+  $('#cp').addEventListener('click', e => copy(OUT[tab].text, e.currentTarget));
+  $('#dl').addEventListener('click', () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([OUT[tab].text], { type: 'text/plain' })); a.download = OUT[tab].file; document.body.appendChild(a); a.click(); a.remove(); });
+
+  /* a self-contained check that runs in any page's DevTools console */
+  function CHECK_SCRIPT(name, checks, tweaks) {
+    return `/* AXL check: ${name}. Paste into the DevTools console of the page you want to check. */
+(() => {
+  const TWEAKS = ${JSON.stringify(tweaks)};
+  const vis = e => { const r = e.getBoundingClientRect(); return r.width > 0 && r.height > 0 && getComputedStyle(e).visibility !== 'hidden'; };
+  const sel = e => e.id ? '#' + e.id : e.tagName.toLowerCase() + (typeof e.className === 'string' && e.className.trim() ? '.' + e.className.trim().split(/\\s+/)[0] : '');
+  const rgb = s => (s.match(/[\\d.]+/g) || [0, 0, 0, 1]).map(Number);
+  const lum = ([r, g, b]) => { const f = x => { x /= 255; return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4; }; return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b); };
+  const bg = e => { for (let n = e; n; n = n.parentElement) { const c = rgb(getComputedStyle(n).backgroundColor); if (c.length < 4 || c[3] > 0) return c; } return [255, 255, 255]; };
+  const all = [...document.querySelectorAll('body *')].filter(vis);
+  const text = all.filter(e => [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim()));
+  const C = {
+    'contrast': () => text.filter(e => { const s = getComputedStyle(e), a = lum(rgb(s.color)), b = lum(bg(e)), r = (Math.max(a, b) + .05) / (Math.min(a, b) + .05), big = parseFloat(s.fontSize) >= 24 || (parseFloat(s.fontSize) >= 18.66 && +s.fontWeight >= 700); return r < (big ? 3 : 4.5); }).map(e => sel(e) + ' contrast too low'),
+    'target-44': () => all.filter(e => e.matches('button,a[href],input:not([type=hidden]),select,textarea,[role=button]')).filter(e => { const r = e.getBoundingClientRect(); return r.width < 44 || r.height < 44; }).map(e => { const r = e.getBoundingClientRect(); return sel(e) + ' is ' + Math.round(r.width) + 'x' + Math.round(r.height); }),
+    'spacing-4': () => all.flatMap(e => { const s = getComputedStyle(e); return ['paddingTop','paddingLeft','marginTop','marginBottom','rowGap','columnGap'].filter(p => { const v = parseFloat(s[p]); return v && isFinite(v) && Math.round(v * 100) % 400; }).map(p => sel(e) + ' ' + p + ' ' + s[p]); }),
+    'body-16': () => text.filter(e => e.matches('p,li,td,label,input,select,textarea') && parseFloat(getComputedStyle(e).fontSize) < 14).map(e => sel(e) + ' ' + getComputedStyle(e).fontSize),
+    'leading-1.5': () => text.filter(e => e.matches('p') && e.textContent.trim().length > 40).filter(e => { const s = getComputedStyle(e); return (s.lineHeight === 'normal' ? 1.2 : parseFloat(s.lineHeight) / parseFloat(s.fontSize)) < 1.5; }).map(e => sel(e) + ' line-height too tight'),
+    'measure-80': () => text.filter(e => e.matches('p,li') && e.textContent.length > 80 && e.getBoundingClientRect().width / (parseFloat(getComputedStyle(e).fontSize) * .5) > 80).map(e => sel(e) + ' lines longer than 80 characters'),
+    'reflow-320': () => document.documentElement.scrollWidth > innerWidth + 1 ? ['page scrolls sideways at ' + innerWidth + 'px (resize to 320px and re-run)'] : [],
+    'duration-500': () => all.filter(e => Math.max(...getComputedStyle(e).transitionDuration.split(',').map(v => parseFloat(v) * (v.includes('ms') ? 1 : 1000))) > 500).map(e => sel(e) + ' transition over 500ms'),
+    'no-gradient': () => all.filter(e => /gradient/.test(getComputedStyle(e).backgroundImage)).map(e => sel(e) + ' uses a gradient'),
+    'banned-fonts': () => [...new Set(all.filter(e => e.matches('h1,h2,h3')).map(e => getComputedStyle(e).fontFamily.split(',')[0].replace(/["']/g, '').trim()))].filter(f => /^(inter|roboto|arial|open sans|lato|system-ui|space grotesk)$/i.test(f)).map(f => 'headings use ' + f),
+    'reduced-motion': () => { let ok = false; for (const s of document.styleSheets) { try { for (const r of s.cssRules) if (r.media && /prefers-reduced-motion/.test(r.media.mediaText)) ok = true; } catch (e) {} } return ok ? [] : ['no prefers-reduced-motion rule found']; },
+    'focus-visible': () => { const bad = []; for (const s of document.styleSheets) { try { for (const r of s.cssRules) if (r.selectorText && /:focus(?!-visible)/.test(r.selectorText) && /outline:\\s*(none|0)/.test(r.cssText)) bad.push(r.selectorText + ' removes the focus outline'); } catch (e) {} } return bad; },
+  };
+  const rows = TWEAKS.map(t => { const f = C[t.check]; if (!f) return { tweak: t.name, check: t.check, result: 'SKIP', details: 'run with axe-core / the axl CLI' }; const fails = f(); return { tweak: t.name, check: t.check, result: fails.length ? 'FAIL' : 'PASS', count: fails.length, details: fails.slice(0, 12).join('; ') }; });
+  console.table(rows);
+  const report = '# AXL report: ${name}\\n' + rows.map(r => '- ' + r.result + ' ' + r.tweak + (r.count ? ' (' + r.count + '): ' + r.details : '')).join('\\n');
+  try { copy(report); console.log('Report copied. Paste it to your agent and ask it to fix every FAIL.'); } catch (e) { console.log(report); }
+  return rows.filter(r => r.result === 'FAIL').length + ' failing checks';
+})();`;
+  }
 
   $('#bigNo').textContent = `${D.stats.sources} sources. ${D.stats.words} commands. ${D.stats.tweaks} tweaks. No standard.`;
   $('#vagueSub').textContent = `${D.stats.vague} statements name no concrete change at all. These are the ones an agent has to guess.`;
