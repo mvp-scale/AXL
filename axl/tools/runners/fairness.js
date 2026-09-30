@@ -23,8 +23,10 @@ const MEASURE = async () => {
   const clipped = texts.filter(e => { const c = getComputedStyle(e); return (/(hidden|clip)/.test(c.overflowX + c.overflowY) || c.textOverflow === 'ellipsis') && (e.scrollWidth > e.clientWidth + 2 || e.scrollHeight > e.clientHeight + 2); }).length;
   const offscreen = els.filter(e => { const q = clip(e, e.getBoundingClientRect()); return q.r > q.l && (q.r > W + 2 || q.l < -2); }).filter(e => !e.closest('[aria-hidden=true]')).length;
   const tiny = texts.filter(e => parseFloat(getComputedStyle(e).fontSize) < 11).length;
+  // squeezed: readable paragraphs forced into a column narrower than 280px on a screen that has room for more
+  const squeezed = W >= 700 ? texts.filter(e => (e.textContent || '').trim().length >= 80 && e.getBoundingClientRect().width < 280).length : 0;
   let contrast = 0; try { const r = await axe.run(panel, { runOnly: ['color-contrast'] }); contrast = r.violations.reduce((n, v) => n + v.nodes.length, 0); } catch (e) {}
-  return { hscroll: document.documentElement.scrollWidth > W + 1 ? 1 : 0, offscreen, overlap, clipped, tiny, contrast };
+  return { hscroll: document.documentElement.scrollWidth > W + 1 ? 1 : 0, offscreen, overlap, clipped, tiny, squeezed, contrast };
 };
 (async () => {
   const jobs = JSON.parse(fs.readFileSync(process.argv[2], 'utf8')); const demo = 'file://' + path.resolve(__dirname, '../../demo/northstar.html');

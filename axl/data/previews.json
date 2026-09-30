@@ -361,7 +361,7 @@
  },
  "auth-panel-tinted-neutral-not-brand-flood": {
   "view": "signin",
-  "css": ".auth-art{background:#eef0f3;color:#293342}"
+  "css": ".auth-art{background:#eef0f3;color:#293342}.auth-art p{opacity:1;color:#3d4a5c}.auth-art h2{color:#25384e}"
  },
  "author-real-content-instead-of-placeholder-chrom": {
   "view": "site",
@@ -1338,7 +1338,7 @@
  },
  "default-to-light-theme": {
   "view": "signin",
-  "css": ".auth-art{background:#eef1f5;color:#25384e}.auth-art h2{color:#25384e}"
+  "css": ".auth-art{background:#eef1f5;color:#25384e}.auth-art h2{color:#25384e}.auth-art p{opacity:1;color:#3d4a5c}"
  },
  "defer-render-blocking": {
   "kind": "performance",
@@ -1866,7 +1866,7 @@
  },
  "error-suggestion": {
   "view": "signin",
-  "css": ".auth-form .err{color:#b42318;font-size:12px}",
+  "css": ".auth-form .err{color:#b42318;font-size:12px}.auth-form .err{color:#b42318}",
   "patch": [
    {
     "sel": "#si-err",
@@ -4671,7 +4671,8 @@
   ],
   "state": {
    "siErr": "Error: invalid input"
-  }
+  },
+  "css": ".auth-form .err{color:#b42318}"
  },
  "post-process-generated-imagery": {
   "kind": "process",
@@ -5092,7 +5093,7 @@
  },
  "remove-sidebars": {
   "view": "docs",
-  "css": ".toc{display:none}"
+  "css": ".toc{display:none}.doc{grid-template-columns:minmax(0,1fr)}.article{max-width:72ch}"
  },
  "remove-unnecessary-flow-steps": {
   "view": "signin",
