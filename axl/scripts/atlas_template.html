@@ -60,8 +60,9 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 #pv{transition:opacity .16s ease}
 .frame.peeking #pv{opacity:0}
 .frame.peeking{--fc:var(--ink)}
-.state{position:absolute;left:12px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;font:700 .85rem var(--sans);padding:7px 12px;border-radius:99px;background:var(--fc,var(--ink));color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);pointer-events:none}
-.frame.peeking .state{background:#fff;color:#131316;box-shadow:0 0 0 2px #131316}
+.state{position:absolute;left:12px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;font:700 .85rem var(--sans);padding:7px 12px 7px 10px;border-radius:99px;background:#131316;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);pointer-events:none}
+.state::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--fc,#fff)}
+.frame.peeking .state{background:#fff;color:#131316;box-shadow:0 0 0 2px #131316}.frame.peeking .state::before{background:#131316}
 .hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);user-select:none;touch-action:none}
 .hold kbd{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 .frame.peeking .hold{background:#fff;color:#131316}.frame.peeking .hold kbd{color:#131316;border-color:#131316}
