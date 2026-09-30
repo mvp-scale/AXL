@@ -26,8 +26,8 @@ const { CHROME } = require('./common');
     await p.click('#pickS .pbtn'); r.source_tiles = await p.evaluate("document.querySelectorAll('#pickS .tile').length"); await p.click('#pickS .done');
     await p.click('#pickW .play'); await p.waitForTimeout(3100); r.word_walk = await p.evaluate("document.getElementById('stateTxt').textContent"); await p.click('#pickW .play');
     // one tap on the board builds your word; save gives a file and a command
-    await p.locator('#board .tw').first().click(); r.after_one_tap = await p.evaluate(() => ({ mine: document.querySelectorAll('#board .tw[aria-pressed=true]').length, state: document.getElementById('stateTxt').textContent }));
-    await p.locator('#board .tw').nth(3).click(); await p.click('#save'); await p.waitForTimeout(300);
+    await p.locator('#board .tw').first().click(); await p.locator('#board .more .add').click(); r.after_one_tap = await p.evaluate(() => ({ mine: document.querySelectorAll('#board .tw[aria-pressed=true]').length, state: document.getElementById('stateTxt').textContent }));
+    await p.locator('#board .tw').nth(3).click(); await p.locator('#board .more .add').click(); await p.click('#save'); await p.waitForTimeout(300);
     const prompt = await p.evaluate("document.getElementById('out').textContent"); await p.click('.tabs button[data-t=script]'); const script = await p.evaluate("document.getElementById('out').textContent");
     await p.click('.tabs button[data-t=file]'); const file = await p.evaluate("document.getElementById('out').textContent");
     r.saved = (() => { try { const d = JSON.parse(file); return d.axl_verb === '0.1' && d.tweaks.length === 2 && /Who asks for it/.test(prompt) && /DevTools console/.test(script); } catch (e) { return false; } })();

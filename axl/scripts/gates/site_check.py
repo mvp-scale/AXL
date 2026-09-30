@@ -29,4 +29,4 @@ for x in out["runs"]:
     if x["overflow"] > 1: errs.append((t, "horizontal overflow", x["overflow"]))
 if errs: print("PHASE 7 Site: FAIL", json.dumps(errs)[:1200]); sys.exit(1)
 r = out["runs"][-1]
-print(f"PHASE 7 Site: PASS — one file; plays on its own inside 3 s ({r['lit_during_walk']} tweaks lit); commands and sources pickers ({r['word_tiles']} x {r['source_tiles']}) multi-select and walk; hold Shift shows the original; one tap builds your word; save gives a checkable file; no network, no overflow, axe clean at 390/1440 light and dark")
+print(f"PHASE 7 Site: PASS — one file; plays on its own inside 3 s ({r['lit_during_walk']} tweaks lit); commands and sources pickers ({r['word_tiles']} x {r['source_tiles']}) multi-select and walk; hold Shift shows the original; tap a tweak to see its sources, add it to yours; save gives a checkable file; no network, no overflow, axe clean at 390/1440 light and dark")

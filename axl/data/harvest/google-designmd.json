@@ -1,0 +1,700 @@
+{
+ "source": "Google DESIGN.md",
+ "publisher": "Google Labs",
+ "kind": "standard",
+ "urls": [
+  "https://github.com/google-labs-code/design.md",
+  "https://github.com/google-labs-code/design.md/blob/main/docs/spec.md"
+ ],
+ "retrieved_at": "2026-09-30T06:35:16Z",
+ "items": [
+  {
+   "text": "DESIGN.md is a self-contained, plain-text representation of a design system. It defines the visual identity of a brand and product, thereby ensuring that these stylistic choices can be followed across design sessions and between different AI agents and tools.",
+   "file": "h_google-designmd__2.txt",
+   "section": "DESIGN.md Format",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "As a human-readable, open-format document, it serves as a living source of truth that both humans and AI can understand and refine.",
+   "file": "h_google-designmd__2.txt",
+   "section": "DESIGN.md Format",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A DESIGN.md file contains two parts: An optional YAML frontmatter, and a markdown body. The YAML front matter contains machine-readable design tokens. The markdown body sections provide human-readable design rationale and guidance.",
+   "file": "h_google-designmd__2.txt",
+   "section": "DESIGN.md Format",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Prose may use descriptive color names (e.g., \"Midnight Forest Green\") that correspond to systematic token names (e.g., `primary`). The tokens are the normative values; the prose provides context for how to apply them.",
+   "file": "h_google-designmd__2.txt",
+   "section": "DESIGN.md Format",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "DESIGN.md may embed design tokens in a structured format. The system that we use to describe design tokens is inspired by the [Design Token JSON spec](https://www.designtokens.org/tr/2025.10/format/#abstract).",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Design tokens are embedded as YAML front matter at the beginning of the file. The front matter block must begin with a line containing exactly `---` and end with a line containing exactly `---`.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The `<scale-level>` placeholder represents a named level in a sizing or spacing scale. Common level names include `xs`, `sm`, `md`, `lg`, `xl`, and `full`. Any descriptive string key is valid.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "All color values are internally converted to sRGB for WCAG contrast checking. The original format is preserved for display and export.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Hex notation (`#RRGGBB`) remains the recommended default for simplicity and broad tooling support.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`fontWeight` (number) - A numeric font weight value (e.g., `400`, `700`). In YAML, this may be expressed as either a bare number or a quoted string; both are equivalent.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`lineHeight` (Dimension | number) - Accepts either a Dimension (e.g., `24px`, `1.5rem`) or a unitless number (e.g., `1.6`). A unitless number represents a multiplier of the element's `fontSize`, which is the recommended CSS practice.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "`fontFeature` (string) - configures [`font-feature-settings`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-feature-settings).",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`fontVariation` (string) - configures [`font-variation-settings`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variation-settings).",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Dimension**: A dimension value is a string with a unit suffix. Valid units are: px, em, rem.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Omitted**: An array of sections that are intentionally omitted from the design system. This suppresses linter warnings for missing sections (e.g. colors, typography, spacing, rounded, components). Each entry can be:",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Token References**: A token reference must be wrapped in curly braces, and contain an object path to another value in the YAML tree. For most token groups, the reference must point to a primitive value (e.g., `colors.primary-60`), not a group (e.g., `colors`).",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Within the `components` section, references to composite values (e.g., `{typography.label-md}`) are permitted.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Schema",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Every `DESIGN.md` follows the same structure. Sections can be omitted if they're not relevant to your project, but those present should appear in the sequence listed below. All sections use `<h2>` (`##`) headings.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Sections",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "An optional `<h1>` heading may appear for document titling purposes but is not parsed as a section.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Sections",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This section is a holistic description of a product's look and feel. It defines the brand personality, target audience, and the emotional response the UI should evoke, such as whether it should feel playful or professional, dense or spacious.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Overview",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "It serves as foundational context for guiding the agent's high-level stylistic decisions when a specific rule or token isn't explicitly defined.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Overview",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This section defines the color palettes for the design system.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Colors",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "At least the `primary` color palette must be defined, and additional color palettes may be defined as needed.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Colors",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When there are multiple color palettes, the design system may assign a semantic role for each palette. A common convention is to name the palettes in this order: `primary`, `secondary`, `tertiary`, and `neutral`.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Colors",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The `colors` section defines all color design tokens. The color tokens should be derived from the key color palettes defined in the markdown prose. The exact mapping from color palettes to color tokens may follow any consistent naming convention.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This section defines typography levels.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Typography",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Most design systems have 9 - 15 typography levels. The design system may prescribe a role for each typography level.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Typography",
+   "category": "Type",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "A common naming convention for typography levels is to use semantic categories such as `headline`, `display`, `body`, `label`, `caption`. Each category may further be divided into different sizes, such as `small`, `medium`, and `large`.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Typography",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The `typography` section defines the precise font properties for the typography design tokens.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This section describes the layout and spacing strategy.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Layout",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Many design systems follow a grid-based layout. Others, like Liquid Glass, use margins, safe areas, and dynamic padding.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Layout",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The spacing section defines the spacing design tokens. These may include spacing units that are useful for implementing the layout model. For example, a fixed grid layout may have spacing units for column spans, gutters, and margins.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This section describes how visual hierarchy is conveyed based on the design style. If elevation is used, it defines the required styling (spread, blur, color). For flat designs, this section explains the alternative methods used to convey visual hierarchy (e.g., borders, color contrast).",
+   "file": "h_google-designmd__2.txt",
+   "section": "Elevation & Depth",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This section describes how visual elements are shaped.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Shapes",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The `rounded` section defines the design tokens for rounded corners used in buttons, cards, and other rectangular shapes.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This section provides style guidance for component atoms within the design system. The following are common component types. Design systems are encouraged to define additional components relevant to their domain.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Components",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "> **Note:** The components specification is actively evolving. The current structure provides intentional flexibility for domain-specific component definitions while the spec matures.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Components",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The components section defines a collection of design tokens used to ensure consistent styling of common components. It's a map\\<string, map\\<string, string>> that maps a component identifier to a group of sub token names and values.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The design token values may be literal values, or references to previously defined design tokens.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Variants**. A component may have a variant for different UI states such as active, hover, pressed, etc. Those variant components may be defined under a different but related key, for example, \"button-primary\", \"button-primary-hover\", \"button-primary-active\".",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The agent will consider all variants and make the appropriate styling decisions.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Design Tokens",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This section provides practical guidelines and common pitfalls. These act as guardrails when creating designs.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Do's and Don'ts",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The following names are commonly used across design systems. They are not required but are provided as guidance for consistency.",
+   "file": "h_google-designmd__2.txt",
+   "section": "Recommended Token Names (Non-Normative)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Colors:** `primary`, `secondary`, `tertiary`, `neutral`, `surface`, `on-surface`, `error`",
+   "file": "h_google-designmd__2.txt",
+   "section": "Recommended Token Names (Non-Normative)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Typography:** `headline-display`, `headline-lg`, `headline-md`, `body-lg`, `body-md`, `body-sm`, `label-lg`, `label-md`, `label-sm`",
+   "file": "h_google-designmd__2.txt",
+   "section": "Recommended Token Names (Non-Normative)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Rounded:** `none`, `sm`, `md`, `lg`, `xl`, `full`",
+   "file": "h_google-designmd__2.txt",
+   "section": "Recommended Token Names (Non-Normative)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Duplicate section heading | Error; reject the file | Two `## Colors` headings |",
+   "file": "h_google-designmd__2.txt",
+   "section": "Consumer Behavior for Unknown Content",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "A DESIGN.md file combines machine-readable design tokens (YAML front matter) with human-readable design rationale (markdown prose). Tokens give agents exact values. Prose tells them *why* those values exist and how to apply them.",
+   "file": "h_google-designmd__1.txt",
+   "section": "The Format",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "An agent that reads this file will produce a UI with deep ink headlines in Public Sans, a warm limestone background, and Boston Clay call-to-action buttons.",
+   "file": "h_google-designmd__1.txt",
+   "section": "The Format",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**YAML front matter** — Machine-readable design tokens, delimited by `---` fences at the top of the file.",
+   "file": "h_google-designmd__1.txt",
+   "section": "File Structure",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Markdown body** — Human-readable design rationale organized into `##` sections.",
+   "file": "h_google-designmd__1.txt",
+   "section": "File Structure",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The tokens are the normative values. The prose provides context for how to apply them.",
+   "file": "h_google-designmd__1.txt",
+   "section": "File Structure",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Sections use `##` headings. They can be omitted, but those present must appear in this order:",
+   "file": "h_google-designmd__1.txt",
+   "section": "Section Order",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Valid component properties: `backgroundColor`, `textColor`, `typography`, `rounded`, `padding`, `size`, `height`, `width`.",
+   "file": "h_google-designmd__1.txt",
+   "section": "Component Tokens",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Variants (hover, active, pressed) are expressed as separate component entries with a related key name.",
+   "file": "h_google-designmd__1.txt",
+   "section": "Component Tokens",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Duplicate section heading | Error; reject the file |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Consumer Behavior for Unknown Content",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The linter runs eleven rules against a parsed DESIGN.md. Each rule produces findings at a fixed severity level.",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Rule | Severity | What it checks |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| `broken-ref` | error | Token references (`{colors.primary}`) that don't resolve to any defined token |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| `missing-primary` | warning | Colors are defined but no `primary` color exists — agents will auto-generate one |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "| `contrast-ratio` | warning | Component `backgroundColor`/`textColor` pairs below WCAG AA minimum (4.5:1) |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "| `orphaned-tokens` | warning | Color tokens defined but never referenced by any component |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| `token-summary` | info | Summary of how many tokens are defined in each section |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| `missing-sections` | info | Optional sections (spacing, rounded) absent when other tokens exist |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| `missing-typography` | warning | Colors are defined but no typography tokens exist — agents will use default fonts |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| `section-order` | warning | Sections appear out of the canonical order defined by the spec |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| `unknown-key` | warning | A top-level YAML key looks like a typo of a known schema key (e.g. `colours:` → `colors:`); custom extension keys stay silent |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| `token-like-ignored` | warning | An unknown top-level key has token-like values (e.g. hex colors, font families, dimensions) suggesting it was dropped or misspelled |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| `omitted-rules` | info | Validates the `omitted` configuration mapping for unknown or redundant sections |",
+   "file": "h_google-designmd__1.txt",
+   "section": "Linting Rules",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "DESIGN.md captures how a design looks, feels, and behaves. The prose is where the design lives. Everything else in the document exists to support it.",
+   "file": "h_google-designmd__3.txt",
+   "section": "DESIGN.md Philosophy",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**The quality of a generated design is determined less by the precision of its values than by how clearly the intent is described.**",
+   "file": "h_google-designmd__3.txt",
+   "section": "DESIGN.md Philosophy",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "DESIGN.md contains two primary aspects: tokens and prose. The specification is focused on describing this design context to keep designs consistent between generations and to provide an area of creative exploration. The prose is the most vital part of the specification.",
+   "file": "h_google-designmd__3.txt",
+   "section": "Prose, not Tokens, is the focus of the specification",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "The token values serve as context and are not rendering instructions. Generally, we do not accept or recommend token requirements in the specification.",
+   "file": "h_google-designmd__3.txt",
+   "section": "Tokens",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This keeps tokens as context that serves as a reference in the prose and focuses DESIGN.md on documenting the nature of the design and not trying to reinvent the decades long work established by languages and tools that came before us.",
+   "file": "h_google-designmd__3.txt",
+   "section": "Tokens",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A design that references \"A 1970s graduate lecture handout in the tradition of an old and established university\" evokes a complete world: the one color of ink, the generous margins, the serif set at a reading size, and the absence of decoration.",
+   "file": "h_google-designmd__3.txt",
+   "section": "A specific reference carries more than a list of adjectives",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "That single sentence carries more useful information than a dozen metric values. It carries the reasoning behind the values.",
+   "file": "h_google-designmd__3.txt",
+   "section": "A specific reference carries more than a list of adjectives",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "\"Modern, clean, trustworthy, premium\" evokes nothing specific. A model creates something in the center of what those words describe, creating an output that is typically generic. Adjectives describe a region. A specific reference describes a point.",
+   "file": "h_google-designmd__3.txt",
+   "section": "A specific reference carries more than a list of adjectives",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A clear design reference carries its restrictions automatically. A model knows what a lecture handout is, and it knows what a lecture handout is not. It does not glow or use a gradient. You don't have to list these.",
+   "file": "h_google-designmd__3.txt",
+   "section": "Negative Constraints: What you leave out defines the character",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Naming the object names them, the same way naming a dog tells the model that dogs don't meow.",
+   "file": "h_google-designmd__3.txt",
+   "section": "Negative Constraints: What you leave out defines the character",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The negative constraints arrive for free when the reference is specific enough. An intentional list of \"don'ts\" is useful. A long rambling list is often a sign the description was too vague to carry them.",
+   "file": "h_google-designmd__3.txt",
+   "section": "Negative Constraints: What you leave out defines the character",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A strong reference and an intentional list of do's and don'ts working together is the sweet spot.",
+   "file": "h_google-designmd__3.txt",
+   "section": "Negative Constraints: What you leave out defines the character",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The spec defines the structural minimum that every DESIGN.md shares: a name, and a small set of categories (colors, typography, spacing, rounded, components) that are universal enough to standardize. Everything beyond that minimum is yours to define.",
+   "file": "h_google-designmd__3.txt",
+   "section": "The format grows through its users, not its spec",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The format accepts any key, any section, any structure your design system needs.",
+   "file": "h_google-designmd__3.txt",
+   "section": "The format grows through its users, not its spec",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The spec standardizes the categories where consistency helps. It leaves open the categories where flexibility helps more: motion, iconography, elevation, text casing, paragraph measure. One team's motion tokens are CSS animation curves. Another's are audio-domain time constants measured in buffer blocks.",
+   "file": "h_google-designmd__3.txt",
+   "section": "The format grows through its users, not its spec",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "The right shape is specific to each system, and the format already lets you define it:",
+   "file": "h_google-designmd__3.txt",
+   "section": "The format grows through its users, not its spec",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The linter accepts these values and agents read the prose. No spec change was needed because the tokens themselves are context rather than instruction.",
+   "file": "h_google-designmd__3.txt",
+   "section": "The format grows through its users, not its spec",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

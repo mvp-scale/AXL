@@ -1,0 +1,1035 @@
+{
+ "source": "OneRedOak design review",
+ "publisher": "OneRedOak",
+ "kind": "skill",
+ "urls": [
+  "https://github.com/OneRedOak/claude-code-workflows/tree/main/design-review"
+ ],
+ "retrieved_at": "2026-09-30T06:35:16Z",
+ "items": [
+  {
+   "text": "[ ] **Users First:** Prioritize user needs, workflows, and ease of use in every design decision.",
+   "file": "h_oneredoak__2.txt",
+   "section": "I. Core Design Philosophy & Strategy",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Meticulous Craft:** Aim for precision, polish, and high quality in every UI element and interaction.",
+   "file": "h_oneredoak__2.txt",
+   "section": "I. Core Design Philosophy & Strategy",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Speed & Performance:** Design for fast load times and snappy, responsive interactions.",
+   "file": "h_oneredoak__2.txt",
+   "section": "I. Core Design Philosophy & Strategy",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Simplicity & Clarity:** Strive for a clean, uncluttered interface. Ensure labels, instructions, and information are unambiguous.",
+   "file": "h_oneredoak__2.txt",
+   "section": "I. Core Design Philosophy & Strategy",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Focus & Efficiency:** Help users achieve their goals quickly and with minimal friction. Minimize unnecessary steps or distractions.",
+   "file": "h_oneredoak__2.txt",
+   "section": "I. Core Design Philosophy & Strategy",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Consistency:** Maintain a uniform design language (colors, typography, components, patterns) across the entire dashboard.",
+   "file": "h_oneredoak__2.txt",
+   "section": "I. Core Design Philosophy & Strategy",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Accessibility (WCAG AA+):** Design for inclusivity. Ensure sufficient color contrast, keyboard navigability, and screen reader compatibility.",
+   "file": "h_oneredoak__2.txt",
+   "section": "I. Core Design Philosophy & Strategy",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "[ ] **Opinionated Design (Thoughtful Defaults):** Establish clear, efficient default workflows and settings, reducing decision fatigue for users.",
+   "file": "h_oneredoak__2.txt",
+   "section": "I. Core Design Philosophy & Strategy",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Primary Brand Color:** User-specified, used strategically.",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Neutrals:** A scale of grays (5-7 steps) for text, backgrounds, borders.",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "[ ] **Semantic Colors:** Define specific colors for Success (green), Error/Destructive (red), Warning (yellow/amber), Informational (blue).",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Dark Mode Palette:** Create a corresponding accessible dark mode palette.",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Accessibility Check:** Ensure all color combinations meet WCAG AA contrast ratios.",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "[ ] **Primary Font Family:** Choose a clean, legible sans-serif font (e.g., Inter, Manrope, system-ui).",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Modular Scale:** Define distinct sizes for H1, H2, H3, H4, Body Large, Body Medium (Default), Body Small/Caption. (e.g., H1: 32px, Body: 14px/16px).",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "[ ] **Font Weights:** Utilize a limited set of weights (e.g., Regular, Medium, SemiBold, Bold).",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Line Height:** Ensure generous line height for readability (e.g., 1.5-1.7 for body text).",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Type",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "[ ] **Base Unit:** Establish a base unit (e.g., 8px).",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "[ ] **Spacing Scale:** Use multiples of the base unit for all padding, margins, and layout spacing (e.g., 4px, 8px, 12px, 16px, 24px, 32px).",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "[ ] **Consistent Values:** Use a small set of consistent border radii (e.g., Small: 4-6px for inputs/buttons; Medium: 8-12px for cards/modals).",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "[ ] Modals/Dialogs (for confirmations, forms, detailed views)",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Badges/Tags (for status indicators, categorization)",
+   "file": "h_oneredoak__2.txt",
+   "section": "II. Design System Foundation (Tokens & Core Components)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Responsive Grid System:** Design based on a responsive grid (e.g., 12-column) for consistent layout across devices.",
+   "file": "h_oneredoak__2.txt",
+   "section": "III. Layout, Visual Hierarchy & Structure",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Strategic White Space:** Use ample negative space to improve clarity, reduce cognitive load, and create visual balance.",
+   "file": "h_oneredoak__2.txt",
+   "section": "III. Layout, Visual Hierarchy & Structure",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Clear Visual Hierarchy:** Guide the user's eye using typography (size, weight, color), spacing, and element positioning.",
+   "file": "h_oneredoak__2.txt",
+   "section": "III. Layout, Visual Hierarchy & Structure",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Consistent Alignment:** Maintain consistent alignment of elements.",
+   "file": "h_oneredoak__2.txt",
+   "section": "III. Layout, Visual Hierarchy & Structure",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Persistent Left Sidebar: For primary navigation between modules.",
+   "file": "h_oneredoak__2.txt",
+   "section": "III. Layout, Visual Hierarchy & Structure",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Content Area: Main space for module-specific interfaces.",
+   "file": "h_oneredoak__2.txt",
+   "section": "III. Layout, Visual Hierarchy & Structure",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] (Optional) Top Bar: For global search, user profile, notifications.",
+   "file": "h_oneredoak__2.txt",
+   "section": "III. Layout, Visual Hierarchy & Structure",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Mobile-First Considerations:** Ensure the design adapts gracefully to smaller screens.",
+   "file": "h_oneredoak__2.txt",
+   "section": "III. Layout, Visual Hierarchy & Structure",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Purposeful Micro-interactions:** Use subtle animations and visual feedback for user actions (hovers, clicks, form submissions, status changes).",
+   "file": "h_oneredoak__2.txt",
+   "section": "IV. Interaction Design & Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Feedback should be immediate and clear.",
+   "file": "h_oneredoak__2.txt",
+   "section": "IV. Interaction Design & Animations",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Animations should be quick (150-300ms) and use appropriate easing (e.g., ease-in-out).",
+   "file": "h_oneredoak__2.txt",
+   "section": "IV. Interaction Design & Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "[ ] **Loading States:** Implement clear loading indicators (skeleton screens for page loads, spinners for in-component actions).",
+   "file": "h_oneredoak__2.txt",
+   "section": "IV. Interaction Design & Animations",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Transitions:** Use smooth transitions for state changes, modal appearances, and section expansions.",
+   "file": "h_oneredoak__2.txt",
+   "section": "IV. Interaction Design & Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Avoid Distraction:** Animations should enhance usability, not overwhelm or slow down the user.",
+   "file": "h_oneredoak__2.txt",
+   "section": "IV. Interaction Design & Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Keyboard Navigation:** Ensure all interactive elements are keyboard accessible and focus states are clear.",
+   "file": "h_oneredoak__2.txt",
+   "section": "IV. Interaction Design & Animations",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Clear Media Display:** Prominent image/video previews (grid or list view).",
+   "file": "h_oneredoak__2.txt",
+   "section": "A. Multimedia Moderation Module",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Obvious Moderation Actions:** Clearly labeled buttons (Approve, Reject, Flag, etc.) with distinct styling (e.g., primary/secondary, color-coding). Use icons for quick recognition.",
+   "file": "h_oneredoak__2.txt",
+   "section": "A. Multimedia Moderation Module",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Visible Status Indicators:** Use color-coded Badges for content status (Pending, Approved, Rejected).",
+   "file": "h_oneredoak__2.txt",
+   "section": "A. Multimedia Moderation Module",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Contextual Information:** Display relevant metadata (uploader, timestamp, flags) alongside media.",
+   "file": "h_oneredoak__2.txt",
+   "section": "A. Multimedia Moderation Module",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Bulk Actions: Allow selection and moderation of multiple items.",
+   "file": "h_oneredoak__2.txt",
+   "section": "A. Multimedia Moderation Module",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Keyboard Shortcuts: For common moderation actions.",
+   "file": "h_oneredoak__2.txt",
+   "section": "A. Multimedia Moderation Module",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Minimize Fatigue:** Clean, uncluttered interface; consider dark mode option.",
+   "file": "h_oneredoak__2.txt",
+   "section": "A. Multimedia Moderation Module",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Smart Alignment: Left-align text, right-align numbers.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Clear Headers: Bold column headers.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Zebra Striping (Optional): For dense tables.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Legible Typography: Simple, clean sans-serif fonts.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Adequate Row Height & Spacing.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Column Sorting: Clickable headers with sort indicators.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Intuitive Filtering: Accessible filter controls (dropdowns, text inputs) above the table.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Global Table Search.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Pagination (preferred for admin tables) or virtual/infinite scroll.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Sticky Headers / Frozen Columns: If applicable.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Expandable Rows: For detailed information.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Inline Editing: For quick modifications.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Bulk Actions: Checkboxes and contextual toolbar.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] Action Icons/Buttons per Row: (Edit, Delete, View Details) clearly distinguishable.",
+   "file": "h_oneredoak__2.txt",
+   "section": "B. Data Tables Module (Contacts, Admin Settings)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Clarity & Simplicity:** Clear, unambiguous labels for all settings. Concise helper text or tooltips for descriptions. Avoid jargon.",
+   "file": "h_oneredoak__2.txt",
+   "section": "C. Configuration Panels Module (Microsite, Admin Settings)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Logical Grouping:** Group related settings into sections or tabs.",
+   "file": "h_oneredoak__2.txt",
+   "section": "C. Configuration Panels Module (Microsite, Admin Settings)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Progressive Disclosure:** Hide advanced or less-used settings by default (e.g., behind \"Advanced Settings\" toggle, accordions).",
+   "file": "h_oneredoak__2.txt",
+   "section": "C. Configuration Panels Module (Microsite, Admin Settings)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Appropriate Input Types:** Use correct form controls (text fields, checkboxes, toggles, selects, sliders) for each setting.",
+   "file": "h_oneredoak__2.txt",
+   "section": "C. Configuration Panels Module (Microsite, Admin Settings)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Visual Feedback:** Immediate confirmation of changes saved (e.g., toast notifications, inline messages). Clear error messages for invalid inputs.",
+   "file": "h_oneredoak__2.txt",
+   "section": "C. Configuration Panels Module (Microsite, Admin Settings)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Sensible Defaults:** Provide default values for all settings.",
+   "file": "h_oneredoak__2.txt",
+   "section": "C. Configuration Panels Module (Microsite, Admin Settings)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Reset Option:** Easy way to \"Reset to Defaults\" for sections or entire configuration.",
+   "file": "h_oneredoak__2.txt",
+   "section": "C. Configuration Panels Module (Microsite, Admin Settings)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Microsite Preview (If Applicable):** Show a live or near-live preview of microsite changes.",
+   "file": "h_oneredoak__2.txt",
+   "section": "C. Configuration Panels Module (Microsite, Admin Settings)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Utility-First (Recommended for LLM):** e.g., Tailwind CSS. Define design tokens in config, apply via utility classes.",
+   "file": "h_oneredoak__2.txt",
+   "section": "VI. CSS & Styling Architecture",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **BEM with Sass:** If not utility-first, use structured BEM naming with Sass variables for tokens.",
+   "file": "h_oneredoak__2.txt",
+   "section": "VI. CSS & Styling Architecture",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **CSS-in-JS (Scoped Styles):** e.g., Stripe's approach for Elements.",
+   "file": "h_oneredoak__2.txt",
+   "section": "VI. CSS & Styling Architecture",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Integrate Design Tokens:** Ensure colors, fonts, spacing, radii tokens are directly usable in the chosen CSS architecture.",
+   "file": "h_oneredoak__2.txt",
+   "section": "VI. CSS & Styling Architecture",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Maintainability & Readability:** Code should be well-organized and easy to understand.",
+   "file": "h_oneredoak__2.txt",
+   "section": "VI. CSS & Styling Architecture",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Performance:** Optimize CSS delivery; avoid unnecessary bloat.",
+   "file": "h_oneredoak__2.txt",
+   "section": "VI. CSS & Styling Architecture",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Iterative Design & Testing:** Continuously test with users and iterate on designs.",
+   "file": "h_oneredoak__2.txt",
+   "section": "VII. General Best Practices",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Clear Information Architecture:** Organize content and navigation logically.",
+   "file": "h_oneredoak__2.txt",
+   "section": "VII. General Best Practices",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Responsive Design:** Ensure the dashboard is fully functional and looks great on all device sizes (desktop, tablet, mobile).",
+   "file": "h_oneredoak__2.txt",
+   "section": "VII. General Best Practices",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "[ ] **Documentation:** Maintain clear documentation for the design system and components.",
+   "file": "h_oneredoak__2.txt",
+   "section": "VII. General Best Practices",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Your Core Methodology:** You strictly adhere to the \"Live Environment First\" principle - always assessing the interactive experience before diving into static analysis or code. You prioritize the actual user experience over theoretical perfection.",
+   "file": "h_oneredoak__3.txt",
+   "section": null,
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Analyze the PR description to understand motivation, changes, and testing notes (or just the description of the work to review in the user's message if no PR supplied)",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 0: Preparation",
+   "category": "Content & process",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Review the code diff to understand implementation scope",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 0: Preparation",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Set up the live preview environment using Playwright",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 0: Preparation",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Configure initial viewport (1440x900 for desktop)",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 0: Preparation",
+   "category": "Space & layout",
+   "command": "design-review",
+   "measurable": true
+  },
+  {
+   "text": "Execute the primary user flow following testing notes",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 1: Interaction and User Flow",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Test all interactive states (hover, active, disabled)",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 1: Interaction and User Flow",
+   "category": "Interaction & states",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Verify destructive action confirmations",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 1: Interaction and User Flow",
+   "category": "Interaction & states",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Assess perceived performance and responsiveness",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 1: Interaction and User Flow",
+   "category": "Performance",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Test desktop viewport (1440px) - capture screenshot",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 2: Responsiveness Testing",
+   "category": "Space & layout",
+   "command": "design-review",
+   "measurable": true
+  },
+  {
+   "text": "Test tablet viewport (768px) - verify layout adaptation",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 2: Responsiveness Testing",
+   "category": "Space & layout",
+   "command": "design-review",
+   "measurable": true
+  },
+  {
+   "text": "Test mobile viewport (375px) - ensure touch optimization",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 2: Responsiveness Testing",
+   "category": "Space & layout",
+   "command": "design-review",
+   "measurable": true
+  },
+  {
+   "text": "Verify no horizontal scrolling or element overlap",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 2: Responsiveness Testing",
+   "category": "Interaction & states",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Assess layout alignment and spacing consistency",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 3: Visual Polish",
+   "category": "Space & layout",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Verify typography hierarchy and legibility",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 3: Visual Polish",
+   "category": "Type",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Check color palette consistency and image quality",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 3: Visual Polish",
+   "category": "Color",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Ensure visual hierarchy guides user attention",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 3: Visual Polish",
+   "category": "Space & layout",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Test complete keyboard navigation (Tab order)",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 4: Accessibility (WCAG 2.1 AA)",
+   "category": "Access",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Verify visible focus states on all interactive elements",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 4: Accessibility (WCAG 2.1 AA)",
+   "category": "Access",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Confirm keyboard operability (Enter/Space activation)",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 4: Accessibility (WCAG 2.1 AA)",
+   "category": "Access",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Validate semantic HTML usage",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 4: Accessibility (WCAG 2.1 AA)",
+   "category": "Access",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Check form labels and associations",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 4: Accessibility (WCAG 2.1 AA)",
+   "category": "Interaction & states",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Verify image alt text",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 4: Accessibility (WCAG 2.1 AA)",
+   "category": "Access",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Test color contrast ratios (4.5:1 minimum)",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 4: Accessibility (WCAG 2.1 AA)",
+   "category": "Access",
+   "command": "design-review",
+   "measurable": true
+  },
+  {
+   "text": "Test form validation with invalid inputs",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 5: Robustness Testing",
+   "category": "Interaction & states",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Stress test with content overflow scenarios",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 5: Robustness Testing",
+   "category": "Space & layout",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Verify loading, empty, and error states",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 5: Robustness Testing",
+   "category": "Interaction & states",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Check edge case handling",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 5: Robustness Testing",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Verify component reuse over duplication",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 6: Code Health",
+   "category": "Components",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Check for design token usage (no magic numbers)",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 6: Code Health",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Ensure adherence to established patterns",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 6: Code Health",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Review grammar and clarity of all text",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 7: Content and Console",
+   "category": "Content & process",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "Check browser console for errors/warnings",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 7: Content and Console",
+   "category": "Interaction & states",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "**Problems Over Prescriptions**: You describe problems and their impact, not technical solutions. Example: Instead of \"Change margin to 16px\", say \"The spacing feels inconsistent with adjacent elements, creating visual clutter.\"",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 7: Content and Console",
+   "category": "Space & layout",
+   "command": "design-review",
+   "measurable": true
+  },
+  {
+   "text": "**[Blocker]**: Critical failures requiring immediate fix",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 7: Content and Console",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "**[High-Priority]**: Significant issues to fix before merge",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 7: Content and Console",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "**[Medium-Priority]**: Improvements for follow-up",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 7: Content and Console",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "**[Nitpick]**: Minor aesthetic details (prefix with \"Nit:\")",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 7: Content and Console",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "**Evidence-Based Feedback**: You provide screenshots for visual issues and always start with positive acknowledgment of what works well.",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 7: Content and Console",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "You maintain objectivity while being constructive, always assuming good intent from the implementer. Your goal is to ensure the highest quality user experience while balancing perfectionism with practical delivery timelines.",
+   "file": "h_oneredoak__3.txt",
+   "section": "Phase 7: Content and Console",
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  },
+  {
+   "text": "When making visual (front-end, UI/UX) changes, always refer to these files for guidance",
+   "file": "h_oneredoak__4.txt",
+   "section": "Design Principles",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Identify what changed** - Review the modified components/pages",
+   "file": "h_oneredoak__4.txt",
+   "section": "Quick Visual Check",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Navigate to affected pages** - Use `mcp__playwright__browser_navigate` to visit each changed view",
+   "file": "h_oneredoak__4.txt",
+   "section": "Quick Visual Check",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Verify design compliance** - Compare against `/context/design-principles.md` and `/context/style-guide.md`",
+   "file": "h_oneredoak__4.txt",
+   "section": "Quick Visual Check",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Validate feature implementation** - Ensure the change fulfills the user's specific request",
+   "file": "h_oneredoak__4.txt",
+   "section": "Quick Visual Check",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Check acceptance criteria** - Review any provided context files or requirements",
+   "file": "h_oneredoak__4.txt",
+   "section": "Quick Visual Check",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Capture evidence** - Take full page screenshot at desktop viewport (1440px) of each changed view",
+   "file": "h_oneredoak__4.txt",
+   "section": "Quick Visual Check",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**Check for errors** - Run `mcp__playwright__browser_console_messages`",
+   "file": "h_oneredoak__4.txt",
+   "section": "Quick Visual Check",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Completing significant UI/UX features",
+   "file": "h_oneredoak__4.txt",
+   "section": "Comprehensive Design Review",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Before finalizing PRs with visual changes",
+   "file": "h_oneredoak__4.txt",
+   "section": "Comprehensive Design Review",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Needing comprehensive accessibility and responsiveness testing",
+   "file": "h_oneredoak__4.txt",
+   "section": "Comprehensive Design Review",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Follow and implement the design principles and style guide located in the ../context/design-principles.md and ../context/style-guide.md docs.",
+   "file": "h_oneredoak__5.txt",
+   "section": null,
+   "category": "Agent workflow",
+   "command": "design-review",
+   "measurable": false
+  }
+ ]
+}

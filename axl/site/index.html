@@ -94,6 +94,20 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .boardh{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:14px 0 8px;flex-wrap:wrap}
 .boardh h2{margin:0;font-size:1.3rem;letter-spacing:-.02em}
 .boardh span{font-size:.82rem;color:var(--muted)}
+.bfilter{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.srch input{min-height:44px;width:min(420px,80vw);border-radius:99px;border:1.5px solid var(--line);background:var(--panel);padding:0 16px;font:inherit}
+.seg{display:inline-flex;border-radius:99px;box-shadow:0 0 0 1.5px var(--line);overflow:hidden;background:var(--panel)}
+.seg button{min-height:40px;padding:0 14px;font-weight:600;font-size:.85rem;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.bcount{font-size:.82rem;color:var(--muted)}
+.col h3 button{all:unset;cursor:pointer}
+.col.closed .tw{display:none}
+.tw.hide{display:none}
+.more{margin:2px 6px 6px 23px;padding:8px 10px;border-radius:8px;background:var(--soft);font-size:.82rem;color:var(--ink)}
+.more q{display:block;margin:0 0 6px}.more q::before,.more q::after{content:none}
+.more small{display:block;font:.7rem var(--mono);color:var(--muted);margin-top:-3px;margin-bottom:6px}
+.more .add{min-height:32px;padding:0 12px;border-radius:99px;background:var(--mine);color:var(--on-mine);font-weight:700;font-size:.8rem}
+.tw .ex{font:700 .75rem var(--mono);color:var(--muted);padding:0 4px}
 .board{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;align-items:start}
 .col{background:var(--panel);border-radius:14px;box-shadow:0 0 0 1px var(--line);padding:10px 10px 8px}
 .col h3{margin:2px 4px 6px;font:700 .68rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between}
@@ -179,6 +193,9 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
 
   <section aria-labelledby="bh">
     <div class="boardh"><h2 id="bh">Every tweak, lighting up</h2><span id="bsub"></span></div>
+    <div class="bfilter"><label class="srch"><span class="sr">Search tweaks and rules</span><input id="q" type="search" placeholder="Search tweaks and source rules…" autocomplete="off"></label>
+      <div class="seg" role="group" aria-label="Show"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="lit" aria-pressed="false">Lit now</button><button type="button" data-f="checked" aria-pressed="false">Tool-checked</button><button type="button" data-f="mine" aria-pressed="false">Yours</button></div>
+      <span class="bcount" id="bcount"></span></div>
     <div class="board" id="board"></div>
   </section>
 
@@ -327,10 +344,36 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
   hold.addEventListener('keyup', e => { if (e.key === ' ' || e.key === 'Enter') peek(false); });
 
   /* ---- the board: every tweak, once ---- */
-  $('#board').innerHTML = D.categories.map(c => { const ts = D.tweaks.filter(t => t.category === c).sort((a, b) => D.entries.filter(e => e.tweaks.includes(b.id)).length - D.entries.filter(e => e.tweaks.includes(a.id)).length); return ts.length ? `<div class="col"><h3><span>${esc(c)}</span><span data-cc="${esc(c)}"></span></h3>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false"><span class="d"></span><span class="nm">${esc(t.name)}</span>${t.css ? '' : '<span class="nv" title="No visible change on a static page">not visual</span>'}${t.check ? '<span class="ck" title="a tool checks it">✓</span>' : ''}<span class="ct"></span></button>`).join('')}</div>` : ''; }).join('');
+  $('#board').innerHTML = D.categories.map(c => { const ts = D.tweaks.filter(t => t.category === c).sort((a, b) => D.entries.filter(e => e.tweaks.includes(b.id)).length - D.entries.filter(e => e.tweaks.includes(a.id)).length); return ts.length ? `<div class="col"><h3><button type="button" aria-expanded="true">${esc(c)} <span style="color:var(--muted);font-weight:500">(${ts.length})</span></button><span data-cc="${esc(c)}"></span></h3>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false"><span class="d"></span><span class="nm">${esc(t.name)}</span>${t.css ? '' : '<span class="nv" title="No visible change on a static page">not visual</span>'}${t.check ? '<span class="ck" title="a tool checks it">✓</span>' : ''}<span class="ct"></span><span class="ex" aria-hidden="true">${(t.asks || []).length ? '›' : ''}</span></button>`).join('')}</div>` : ''; }).join('');
   $('#nothing').addEventListener('click', e => { if (e.target.id !== 'useIts') return; const s = st.walk === 's' ? walkItems('s')[st.idx % walkItems('s').length] : [...st.sel.s][0]; stopWalk(); st.sel.w = new Set(D.entries.filter(x => x.src === s).map(x => x.word)); st.sel.s = new Set([s]); render(); });
   $('#steps').addEventListener('click', e => { const b = e.target.closest('.stop'); if (!b) return; clearTimeout(timer); st.idx = +b.dataset.j; showStep(); timer = setTimeout(step, 2400); });
-  $('#board').addEventListener('click', e => { const b = e.target.closest('.tw'); if (!b) return; stopWalk(); const id = b.dataset.id; st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mineView = st.mine.size > 0; render(true); });
+  // tap a tweak: open what every source says about it, with one button to add it to yours
+  $('#board').addEventListener('click', e => {
+    const add = e.target.closest('.add'); if (add) { stopWalk(); const id = add.dataset.id; st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mineView = st.mine.size > 0; render(true); openMore(id); return; }
+    const h = e.target.closest('h3 button'); if (h) { h.closest('.col').classList.toggle('closed'); h.setAttribute('aria-expanded', !h.closest('.col').classList.contains('closed')); return; }
+    const b = e.target.closest('.tw'); if (!b) return; const id = b.dataset.id, open = b.nextElementSibling && b.nextElementSibling.classList.contains('more');
+    $$('#board .more').forEach(m => m.remove()); if (!open) openMore(id);
+  });
+  function openMore(id) {
+    $$('#board .more').forEach(m => m.remove()); const b = $(`#board .tw[data-id="${id}"]`); if (!b) return; const t = T[id], on = st.mine.has(id);
+    const asks = (t.asks || []);
+    const div = document.createElement('div'); div.className = 'more';
+    div.innerHTML = `${asks.slice(0, 12).map(a => `<q>${esc(a.quote)}</q><small>${esc(a.src)}${a.verified === false ? ' · paraphrase' : ''} · <a href="${esc(a.url || '#')}" target="_blank" rel="noopener noreferrer">source</a></small>`).join('') || '<small>No source text on record.</small>'}${asks.length > 12 ? `<small>+ ${asks.length - 12} more</small>` : ''}${t.css ? `<small>Change: ${esc(t.css.slice(0, 160))}${t.css.length > 160 ? '…' : ''}</small>` : ''}<button type="button" class="add" data-id="${esc(id)}">${on ? 'Remove from yours' : 'Add to yours'}</button>`;
+    b.after(div);
+  }
+  // search + filters
+  let bf = 'all';
+  const IDX = Object.fromEntries(D.tweaks.map(t => [t.id, (t.name + ' ' + t.category + ' ' + (t.aka || []).join(' ') + ' ' + (t.asks || []).map(a => a.quote + ' ' + a.src).join(' ')).toLowerCase()]));
+  function filterBoard() {
+    const q = $('#q').value.trim().toLowerCase(); let n = 0;
+    $$('#board .tw').forEach(b => { const id = b.dataset.id; let ok = !q || q.split(/\s+/).every(w => IDX[id].includes(w));
+      if (bf === 'lit') ok = ok && b.classList.contains('lit'); if (bf === 'checked') ok = ok && !!T[id].check; if (bf === 'mine') ok = ok && st.mine.has(id);
+      b.classList.toggle('hide', !ok); if (ok) n++; });
+    $$('#board .col').forEach(c => { c.hidden = !c.querySelector('.tw:not(.hide)'); });
+    $('#bcount').textContent = `${n} of ${D.tweaks.length} tweaks · ${D.stats.rules || 0} source rules`;
+  }
+  $('#q').addEventListener('input', filterBoard);
+  $$('.bfilter .seg button').forEach(b => b.addEventListener('click', () => { bf = b.dataset.f; $$('.bfilter .seg button').forEach(x => x.setAttribute('aria-pressed', x === b)); filterBoard(); }));
 
   /* ---- your word ---- */
   const jac = (a, b) => { const B = new Set(b); let i = 0; a.forEach(x => { if (B.has(x)) i++; }); const u = new Set([...a, ...b]).size; return u ? i / u : 0; };
@@ -374,7 +417,7 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
     const e = cur.entries.length === 1 ? cur.entries[0] : cur.entries.find(x => x.quote);
     const visTxt = cur.tweaks.length ? ` <span style="font:.78rem var(--mono)">${vis} of ${cur.tweaks.length} tweaks visible</span>` : '';
     $('#says').innerHTML = st.mineView ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.` : e && e.quote ? `${esc(e.src)} on “${esc(e.word)}”: <q>${esc(e.quote)}</q> <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">source</a>${visTxt}` : `${cur.tweaks.length} tweaks from ${cur.entries.length} definitions.${visTxt}`;
-    facts();
+    facts(); if (typeof filterBoard === 'function' && bf !== 'all') filterBoard();
   }
 
   /* ---- save: three outputs ---- */
@@ -449,7 +492,7 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
 
   // open: polish, all sources, walking through the sources
   if (!reduced) startWalk('s');
-  render(false);
+  render(false); filterBoard();
   window.axlReady = true;
 })();
 </script>
