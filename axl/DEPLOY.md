@@ -3,7 +3,7 @@
 Nothing here runs from a build session. Files are written; you run them.
 
 ## What gets published
-`axl/site/` (static, no runtime network calls) plus `receipts/*.json` and `metrics.*` copied into it by the build.
+`axl/site/index.html`: one self-contained file (styles, script, data, demo pages and close-up images inline; no runtime network calls). Receipts stay in the repository.
 
 ## One-time setup
 ```bash

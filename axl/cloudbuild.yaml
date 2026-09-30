@@ -1,4 +1,4 @@
-# AXL build: install pinned tools, rebuild data, run the Phase 5-7 gates, publish the site (and receipts) to Firebase Hosting.
+# AXL build: install pinned tools, rebuild data, run the gates, publish the single-file site (axl/site/index.html) to Firebase Hosting.
 # Run from the repository root:  gcloud builds submit --config axl/cloudbuild.yaml --substitutions=_DEPLOY=1
 # Nothing is deployed unless _DEPLOY=1 and the project is set (see axl/DEPLOY.md).
 substitutions:
@@ -43,13 +43,8 @@ steps:
     entrypoint: python3
     args: ["axl/scripts/gates/phase8.py"]
     waitFor: ["gate-7-site"]
-  - id: receipts-to-site
-    name: ${_PLAYWRIGHT_IMAGE}
-    entrypoint: bash
-    waitFor: ["gate-8-skills"]
-    args: ["-c", "mkdir -p axl/site/receipts && cp axl/receipts/runs/*.json axl/site/receipts/ && cp axl/reports/metrics.json axl/reports/metrics.md axl/site/receipts/"]
   - id: publish
     name: node:22
     entrypoint: bash
-    waitFor: ["receipts-to-site"]
+    waitFor: ["gate-8-skills"]
     args: ["-c", "if [ \"${_DEPLOY}\" = \"1\" ]; then npx --yes firebase-tools@14 deploy --only hosting --project \"$PROJECT_ID\" --config axl/firebase.json; else echo 'skipping publish: _DEPLOY is not 1'; fi"]

@@ -110,7 +110,7 @@
    "license": "unknown",
    "lineage_note": "Anthropic blog describing the same guidance; treated as one root with the cookbook",
    "publisher": "Anthropic",
-   "retrieved_at": "2026-09-30T01:39:20+00:00",
+   "retrieved_at": "2026-09-30T04:25:37+00:00",
    "url": "https://claude.com/blog/improving-frontend-design-through-skills"
   },
   {
@@ -130,7 +130,7 @@
    "license": "unknown",
    "lineage_note": "Deque rule page implements WCAG 2.2 SC 2.5.8 (page lists Guidelines: WCAG 2.2 (AA)); treated as derived from the W3C text",
    "publisher": "Deque",
-   "retrieved_at": "2026-09-30T00:50:12+00:00",
+   "retrieved_at": "2026-09-30T04:25:37+00:00",
    "url": "https://dequeuniversity.com/rules/axe/4.8/target-size"
   },
   {
@@ -183,7 +183,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "MDN",
-   "retrieved_at": "2026-09-30T01:39:20+00:00",
+   "retrieved_at": "2026-09-30T04:25:37+00:00",
    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
   },
   {
@@ -201,7 +201,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "OpenAI",
-   "retrieved_at": "2026-09-30T01:39:21+00:00",
+   "retrieved_at": "2026-09-30T04:25:38+00:00",
    "url": "https://developers.openai.com/plugins/concepts/ui-guidelines"
   },
   {
@@ -222,7 +222,7 @@
    "license": "unknown",
    "lineage_note": "Listing page links to github.com/oneredoak/claude-code-workflows",
    "publisher": "dynamicworkflow.run (OneRedOak workflow listing)",
-   "retrieved_at": "2026-09-30T01:39:23+00:00",
+   "retrieved_at": "2026-09-30T04:25:40+00:00",
    "url": "https://dynamicworkflow.run/workflows/oneredoak-claude-code-workflows-design-review"
   },
   {
@@ -256,7 +256,7 @@
    "kind": "primary",
    "license": "Apache-2.0",
    "publisher": "Google Chrome",
-   "retrieved_at": "2026-09-30T01:39:23+00:00",
+   "retrieved_at": "2026-09-30T04:25:40+00:00",
    "url": "https://github.com/GoogleChrome/lighthouse"
   },
   {
@@ -273,7 +273,7 @@
    "kind": "primary",
    "license": "MIT",
    "publisher": "Leonxlnx",
-   "retrieved_at": "2026-09-30T01:39:24+00:00",
+   "retrieved_at": "2026-09-30T04:25:40+00:00",
    "url": "https://github.com/Leonxlnx/taste-skill"
   },
   {
@@ -308,7 +308,7 @@
    "kind": "primary",
    "license": "other (LICENSE file present, not auto-identified)",
    "publisher": "Myndex",
-   "retrieved_at": "2026-09-30T01:39:24+00:00",
+   "retrieved_at": "2026-09-30T04:25:41+00:00",
    "url": "https://github.com/Myndex/SAPC-APCA"
   },
   {
@@ -326,7 +326,7 @@
    "license": "MIT",
    "lineage_note": "",
    "publisher": "OneRedOak",
-   "retrieved_at": "2026-09-30T01:39:24+00:00",
+   "retrieved_at": "2026-09-30T04:25:41+00:00",
    "url": "https://github.com/OneRedOak/claude-code-workflows"
   },
   {
@@ -364,7 +364,7 @@
    "license": "unknown",
    "lineage_note": "Same Anthropic prompt (frontend_aesthetics) as the cookbook; direction of derivation unverified, treated as one root",
    "publisher": "Anthropic",
-   "retrieved_at": "2026-09-30T01:39:24+00:00",
+   "retrieved_at": "2026-09-30T04:25:41+00:00",
    "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design"
   },
   {
@@ -381,7 +381,7 @@
    "kind": "primary",
    "license": "MPL-2.0",
    "publisher": "Deque",
-   "retrieved_at": "2026-09-30T01:39:24+00:00",
+   "retrieved_at": "2026-09-30T04:25:41+00:00",
    "url": "https://github.com/dequelabs/axe-core"
   },
   {
@@ -398,7 +398,7 @@
    "kind": "primary",
    "license": "MIT",
    "publisher": "educlopez",
-   "retrieved_at": "2026-09-30T01:39:25+00:00",
+   "retrieved_at": "2026-09-30T04:25:41+00:00",
    "url": "https://github.com/educlopez/ui-craft"
   },
   {
@@ -435,7 +435,7 @@
    "kind": "primary",
    "license": "Apache-2.0",
    "publisher": "Google Labs",
-   "retrieved_at": "2026-09-30T01:39:25+00:00",
+   "retrieved_at": "2026-09-30T04:25:41+00:00",
    "url": "https://github.com/google-labs-code/design.md"
   },
   {
@@ -472,7 +472,7 @@
    "kind": "primary",
    "license": "MIT",
    "publisher": "Nutlope / Together AI",
-   "retrieved_at": "2026-09-30T01:39:25+00:00",
+   "retrieved_at": "2026-09-30T04:25:42+00:00",
    "url": "https://github.com/nutlope/hallmark"
   },
   {
@@ -492,7 +492,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Impeccable README: Anthropic's frontend-design 'was the first widely-used design skill for Claude. Impeccable started from there.'",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:25+00:00",
+   "retrieved_at": "2026-09-30T04:25:42+00:00",
    "url": "https://github.com/pbakaus/impeccable"
   },
   {
@@ -512,7 +512,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:25+00:00",
+   "retrieved_at": "2026-09-30T04:25:42+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/adapt.md"
   },
   {
@@ -532,7 +532,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:25+00:00",
+   "retrieved_at": "2026-09-30T04:25:42+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/animate.md"
   },
   {
@@ -552,7 +552,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:26+00:00",
+   "retrieved_at": "2026-09-30T04:25:42+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md"
   },
   {
@@ -572,7 +572,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:26+00:00",
+   "retrieved_at": "2026-09-30T04:25:43+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/bolder.md"
   },
   {
@@ -592,7 +592,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:26+00:00",
+   "retrieved_at": "2026-09-30T04:25:43+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/clarify.md"
   },
   {
@@ -612,7 +612,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:26+00:00",
+   "retrieved_at": "2026-09-30T04:25:43+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/colorize.md"
   },
   {
@@ -632,7 +632,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:26+00:00",
+   "retrieved_at": "2026-09-30T04:25:43+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/critique.md"
   },
   {
@@ -652,7 +652,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:26+00:00",
+   "retrieved_at": "2026-09-30T04:25:43+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/delight.md"
   },
   {
@@ -672,7 +672,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:27+00:00",
+   "retrieved_at": "2026-09-30T04:25:44+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/distill.md"
   },
   {
@@ -692,7 +692,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:27+00:00",
+   "retrieved_at": "2026-09-30T04:25:44+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/extract.md"
   },
   {
@@ -712,7 +712,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:27+00:00",
+   "retrieved_at": "2026-09-30T04:25:44+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/harden.md"
   },
   {
@@ -732,7 +732,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:27+00:00",
+   "retrieved_at": "2026-09-30T04:25:44+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/layout.md"
   },
   {
@@ -752,7 +752,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:27+00:00",
+   "retrieved_at": "2026-09-30T04:25:44+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/onboard.md"
   },
   {
@@ -772,7 +772,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:28+00:00",
+   "retrieved_at": "2026-09-30T04:25:45+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/optimize.md"
   },
   {
@@ -792,7 +792,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:28+00:00",
+   "retrieved_at": "2026-09-30T04:25:45+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/polish.md"
   },
   {
@@ -812,7 +812,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:28+00:00",
+   "retrieved_at": "2026-09-30T04:25:45+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/quieter.md"
   },
   {
@@ -832,7 +832,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:28+00:00",
+   "retrieved_at": "2026-09-30T04:25:45+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/shape.md"
   },
   {
@@ -852,7 +852,7 @@
    "license": "Apache-2.0",
    "lineage_note": "Command reference inside the Impeccable repo",
    "publisher": "pbakaus/impeccable",
-   "retrieved_at": "2026-09-30T01:39:28+00:00",
+   "retrieved_at": "2026-09-30T04:25:45+00:00",
    "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/typeset.md"
   },
   {
@@ -869,7 +869,7 @@
    "kind": "primary",
    "license": "MIT",
    "publisher": "schoero",
-   "retrieved_at": "2026-09-30T01:39:28+00:00",
+   "retrieved_at": "2026-09-30T04:25:46+00:00",
    "url": "https://github.com/schoero/eslint-plugin-better-tailwindcss"
   },
   {
@@ -886,7 +886,7 @@
    "kind": "primary",
    "license": "MIT",
    "publisher": "schoero",
-   "retrieved_at": "2026-09-30T01:39:29+00:00",
+   "retrieved_at": "2026-09-30T04:25:46+00:00",
    "url": "https://github.com/schoero/eslint-plugin-better-tailwindcss/blob/main/docs/rules/no-restricted-classes.md"
   },
   {
@@ -922,7 +922,7 @@
    "kind": "primary",
    "license": "MIT",
    "publisher": "yuchangxu1989-Openclaw",
-   "retrieved_at": "2026-09-30T01:39:29+00:00",
+   "retrieved_at": "2026-09-30T04:25:46+00:00",
    "url": "https://github.com/yuchangxu1989-Openclaw/claw-design"
   },
   {
@@ -941,7 +941,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "Motion",
-   "retrieved_at": "2026-09-30T01:39:29+00:00",
+   "retrieved_at": "2026-09-30T04:25:46+00:00",
    "url": "https://motion.dev/docs/react-accessibility"
   },
   {
@@ -999,7 +999,7 @@
    "license": "unknown",
    "lineage_note": "Roundup listing frontend-design, Impeccable, Taste-Skill (names + install commands)",
    "publisher": "novitckii.com",
-   "retrieved_at": "2026-09-30T01:39:29+00:00",
+   "retrieved_at": "2026-09-30T04:25:46+00:00",
    "url": "https://novitckii.com/resources/claude-design-skills/"
   },
   {
@@ -1034,7 +1034,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "Anthropic",
-   "retrieved_at": "2026-09-30T01:39:30+00:00",
+   "retrieved_at": "2026-09-30T04:25:47+00:00",
    "url": "https://platform.claude.com/cookbook/coding-prompting-for-frontend-aesthetics"
   },
   {
@@ -1051,7 +1051,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "Microsoft Playwright",
-   "retrieved_at": "2026-09-30T01:39:30+00:00",
+   "retrieved_at": "2026-09-30T04:25:47+00:00",
    "url": "https://playwright.dev/docs/accessibility-testing"
   },
   {
@@ -1068,7 +1068,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "Microsoft Playwright",
-   "retrieved_at": "2026-09-30T01:39:30+00:00",
+   "retrieved_at": "2026-09-30T04:25:47+00:00",
    "url": "https://playwright.dev/docs/test-snapshots"
   },
   {
@@ -1121,7 +1121,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "Stylelint",
-   "retrieved_at": "2026-09-30T01:39:30+00:00",
+   "retrieved_at": "2026-09-30T04:25:47+00:00",
    "url": "https://stylelint.io/user-guide/get-started"
   },
   {
@@ -1282,7 +1282,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "shadcn/ui",
-   "retrieved_at": "2026-09-30T01:39:31+00:00",
+   "retrieved_at": "2026-09-30T04:25:48+00:00",
    "url": "https://ui.shadcn.com/docs/skills"
   },
   {
@@ -1320,7 +1320,7 @@
    "license": "unknown",
    "lineage_note": "Blog about Impeccable 4.0 (45 mentions of Impeccable)",
    "publisher": "chaseai.io",
-   "retrieved_at": "2026-09-30T01:39:31+00:00",
+   "retrieved_at": "2026-09-30T04:25:48+00:00",
    "url": "https://www.chaseai.io/blog/impeccable-4-claude-code-design-skill"
   },
   {
@@ -1342,7 +1342,7 @@
    "license": "unknown",
    "lineage_note": "Playbook cites github.com/JCarterJohnson/vibecoded-design-tells as the source repo for its automated check; partial lineage, repo not fetched",
    "publisher": "claudecodehq.com",
-   "retrieved_at": "2026-09-30T01:39:32+00:00",
+   "retrieved_at": "2026-09-30T04:25:48+00:00",
    "url": "https://www.claudecodehq.com/playbooks/unslop-ui"
   },
   {
@@ -1377,7 +1377,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "Nielsen Norman Group",
-   "retrieved_at": "2026-09-30T01:39:32+00:00",
+   "retrieved_at": "2026-09-30T04:25:49+00:00",
    "url": "https://www.nngroup.com/articles/ten-usability-heuristics/"
   },
   {
@@ -1524,7 +1524,7 @@
    "license": "unknown",
    "lineage_note": "Article discusses Anthropic's cookbook system prompt and DESIGN.md",
    "publisher": "Adpharm",
-   "retrieved_at": "2026-09-30T01:39:33+00:00",
+   "retrieved_at": "2026-09-30T04:25:50+00:00",
    "url": "https://www.theadpharm.com/insights/claude-design-without-the-ai-slop-look"
   },
   {
@@ -1577,7 +1577,7 @@
    "kind": "primary",
    "license": "unknown",
    "publisher": "W3C",
-   "retrieved_at": "2026-09-30T01:39:33+00:00",
+   "retrieved_at": "2026-09-30T04:25:50+00:00",
    "url": "https://www.w3.org/TR/WCAG22/"
   },
   {
@@ -1597,7 +1597,7 @@
    "license": "unknown",
    "lineage_note": "Understanding document companion to the WCAG 2.2 Recommendation; same lineage",
    "publisher": "W3C",
-   "retrieved_at": "2026-09-30T01:39:33+00:00",
+   "retrieved_at": "2026-09-30T04:25:50+00:00",
    "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
   },
   {
@@ -1617,7 +1617,7 @@
    "license": "unknown",
    "lineage_note": "Understanding document companion to the WCAG 2.2 Recommendation; same lineage",
    "publisher": "W3C",
-   "retrieved_at": "2026-09-30T01:39:33+00:00",
+   "retrieved_at": "2026-09-30T04:25:50+00:00",
    "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html"
   },
   {
@@ -1637,7 +1637,7 @@
    "license": "unknown",
    "lineage_note": "Understanding document companion to the WCAG 2.2 Recommendation; same lineage",
    "publisher": "W3C",
-   "retrieved_at": "2026-09-30T01:39:34+00:00",
+   "retrieved_at": "2026-09-30T04:25:50+00:00",
    "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
   },
   {

@@ -31,7 +31,7 @@ async function measure(page, spec) {
   const pins = [];
   const shots = {};
   for (const variant of ['before', 'polished']) {
-    const ctx = await b.newContext({ viewport: { width: 980, height: 660 }, deviceScaleFactor: 2 }); const page = await ctx.newPage();
+    const ctx = await b.newContext({ viewport: { width: 980, height: 760 }, deviceScaleFactor: 3 }); const page = await ctx.newPage();
     await page.goto('file://' + path.join(DEMO, variant + '.html')); await page.waitForTimeout(300);
     for (const s of SPECS) {
       const m = await measure(page, s); (shots[s.id] = shots[s.id] || {})[variant] = m;
@@ -41,8 +41,10 @@ async function measure(page, spec) {
     }
     await ctx.close();
   }
-  for (const s of SPECS) { const a = shots[s.id]; pins.push({ id: s.id, pattern: s.pattern, title: s.title, unit: s.unit, before: a.before.value, after: a.polished.value, rect: a.before.box, rectAfter: a.polished.box }); }
+  const mob = {}; { const ctx = await b.newContext({ viewport: { width: 420, height: 820 } }); const page = await ctx.newPage(); await page.goto('file://' + path.join(DEMO, 'before.html')); await page.waitForTimeout(300);
+    for (const s of SPECS) { const el = page.locator(s.sel).first(); mob[s.id] = await el.boundingBox(); } await ctx.close(); }
+  for (const s of SPECS) { const a = shots[s.id]; pins.push({ id: s.id, pattern: s.pattern, title: s.title, unit: s.unit, before: a.before.value, after: a.polished.value, rect: a.before.box, rectAfter: a.polished.box, rectM: mob[s.id] }); }
   await b.close();
-  fs.writeFileSync(path.join(out, 'pins.json'), JSON.stringify({ frame: { width: 980, height: 660 }, pins }, null, 1));
+  fs.writeFileSync(path.join(out, 'pins.json'), JSON.stringify({ frame: { width: 980, height: 760 }, frameM: { width: 420, height: 820 }, pins }, null, 1));
   console.log(JSON.stringify(pins.map(p => [p.id, p.before, p.after])));
 })();
