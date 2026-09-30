@@ -150,6 +150,9 @@ data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/norths
   "categories": TW["categories"], "tweaks": [dict({k: t[k] for k in ("id", "name", "category", "check", "css", "patch", "view", "state", "kind", "why") if t.get(k) is not None}, asks=prov(t)) for t in tweaks.values()],
   "rules": rules_d, "elements": {e["id"]: {"name": e["name"], "family": e["family"]} for e in VOC["elements"]}, "classes": [c for c in VOC["classes"] if not c.get("staged")],
   "quotes": quotes, "srcnames": SIDX,
+  # the one-file checker: the same engine the command line injects, plus axe-core and the element selectors
+  "checker": {"engine": open(f"{A}/tools/engine/axl-engine.js", encoding="utf-8").read(), "axe": open(f"{A}/tools/node_modules/axe-core/axe.min.js", encoding="utf-8").read(),
+              "vocab": {e["id"]: [e["name"], e.get("css", "")] for e in VOC["elements"]}, "axe_version": json.load(open(f"{A}/tools/node_modules/axe-core/package.json"))["version"]},
   "entries": entries, "words": wl, "sources": srcs, "vague": vague[:40],
   "stats": {"rules": len(catalog), "statements": len(claims) + len(catalog), "sources": len(srcs), "words": len(wl), "tweaks": len(tweaks), "vague": len(vague)}}
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")

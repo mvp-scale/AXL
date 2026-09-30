@@ -9,8 +9,12 @@ Open `axl/site/index.html` (one file).
 - **Get my word → one kit** (Markdown): rules in words + code + quote IDs, how to use them, and the `axl` definition block; an optional console check.
 - Numbers and method: `reports/phase3-rules.md`.
 
+## Checking a site (phase 6, tested)
+- `python3 axl/axl.py check <kit.axl.md> <page or URL>` runs a kit on any page: CSS rules by computed value, `wcag:` by axe-core, `lighthouse:` by Lighthouse, `axl:` by the measures built so far; PASS / FAIL (with the fix and elements) / ASK / not checkable yet / INVALID. Tested on Northstar (before and after the fixes) and on www.gov.uk.
+- **No install:** the site's "Check any page (one file)" downloads one ~600 KB file (engine + axe-core + the rules) to paste into any page's console; works offline. `axl.py bundle` makes the same file. How-to: `HOW_TO_CHECK.md`. Gate: `scripts/gates/kit_check.py`.
+
 ## Not done yet
-- **Phase 4:** the 127 proposed `axl:` measures (and the CLI reading the kit) are not implemented; "measurable" means a check can be written, not that it exists. Existing checks (12 console checks, axe, Lighthouse) still run.
+- **Phase 4 (rest):** 20 of the 127 proposed `axl:` measures are built; rules using the others report "not checkable yet".
 - **Phase 7:** the command matrix view is deferred until its place is decided.
 - 25 rules without evidence are withheld; a LICENSE and deployment are still open.
 

@@ -255,7 +255,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
   <p id="sheetSub"></p>
   <div class="tabs" role="tablist">
     <button role="tab" type="button" data-t="prompt" aria-selected="true">Your kit</button>
-    <button role="tab" type="button" data-t="script" aria-selected="false">Console check (optional)</button>
+    <button role="tab" type="button" data-t="script" aria-selected="false">Check any page (one file)</button>
   </div>
   <p class="tabnote" id="tabNote"></p>
   <pre id="out" tabindex="0"></pre>
@@ -551,12 +551,15 @@ const D = /*DATA*/null;
     const kit = `# ${name}\n\n**${rs.length} rules · ${auto.length} measurable · ${ask.length} questions for a person or agent.**\n` +
       `Every rule is written in standard terms (ARIA roles, CSS properties, WCAG 2.2, Lighthouse); quote IDs look up the exact source statement on the AXL site.\n\n## Rules\n\n${rules}\n\n` +
       `## Give it to your agent\n\nApply every rule above to the UI. Automatic rules must pass; answer each question rule with yes or a change. Don't redesign anything the rules don't cover.\n\n` +
-      `## Check a site\n\n\`\`\`\naxl check ${f}.axl.md https://yoursite.com\n\`\`\`\nReports PASS / FAIL / ASK per rule, with JSON for your agent. (A quick browser-console version is in the second tab; the CLI is the recommended way.)\n\n` +
+      `## Check a site\n\n\`\`\`\naxl check ${f}.axl.md https://yoursite.com\n\`\`\`\nReports PASS / FAIL / ASK per rule with the fix, and JSON for your agent. No command line? The second tab gives one file you paste into the browser console on any site.\n\n` +
       `## Definition\n\n\`\`\`axl\nword: ${name}\nrules:\n${rs.map(r => `  - ${r.code}`).join('\n')}\n\`\`\`\n`;
-    const tw = [...new Set(rs.flatMap(r => r.tweaks))].map(t => T[t]).filter(t => t && t.check);
-    const script = CHECK_SCRIPT(name, [...new Set(tw.map(t => t.check))], tw.map(t => ({ id: t.id, name: t.name, check: t.check })));
-    OUT = { prompt: { text: kit, file: `${f}.axl.md`, note: `One file: the rules in plain words and code, how to use them, and the definition the CLI reads. Sources are quote IDs you can look up here.` },
-      script: { text: script, file: `${f}.check.js`, note: `Optional: paste into your browser's console on any page for the checks that already exist (${[...new Set(tw.map(t => t.check))].length}). The CLI covers more.` } };
+    // one self-contained file: axe-core + the AXL engine + these rules; paste into the console on any page (works offline)
+    const lines = rs.map(r => r.code), C = D.checker;
+    const script = `/* AXL check: ${name} (${rs.length} rules). One file, nothing to install, works offline.\n   Use: open any web page, press F12 to open DevTools, go to Console, paste this whole file, press Enter.\n   It prints PASS / FAIL / ASK per rule with the fix, and copies a JSON report for your agent.\n   For phone width, dark mode, hover and Lighthouse use the command line: python3 axl/axl.py check ${f}.axl.md <url>\n   Includes axe-core ${C.axe_version} (MPL-2.0, https://github.com/dequelabs/axe-core). */\n` +
+      C.axe + `\n;window.AXL_VOCAB=${JSON.stringify(C.vocab)};\n` + C.engine + `\nAXL.run(${JSON.stringify(name)}, ${JSON.stringify(lines)});\n`;
+    OUT = { prompt: { text: kit, file: `${f}.axl.md`, note: `One file: the rules in plain words and code, how to use them, and the definition the command line reads. Sources are quote IDs you can look up here.` },
+      script: { text: script.length > 60000 ? script.slice(0, 1400) + `\n\n/* … axe-core and the AXL engine (${Math.round(script.length / 1024)} KB in total) — use Download or Copy to get the whole file … */\n\nAXL.run(${JSON.stringify(name)}, ${JSON.stringify(lines, null, 1)});` : script, full: script, file: `${f}.check.js`,
+        note: `One file (${Math.round(script.length / 1024)} KB): paste it into the browser console on any website, or keep it for offline use. Nothing to install. It checks what a page can check about itself; the command line adds phone width, dark mode, hover and Lighthouse.` } };
     $('#sheetTitle').textContent = name; $('#sheetSub').textContent = `${rs.length} rules · ${auto.length} measurable · ${ask.length} questions`;
   }
   function showTab(k) { tab = k; $$('.tabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.t === k)); $('#out').textContent = OUT[k].text; $('#tabNote').textContent = OUT[k].note; }
@@ -566,8 +569,8 @@ const D = /*DATA*/null;
   $('#close').addEventListener('click', closeSheet); scrim.addEventListener('click', closeSheet);
   const copy = (t, b) => { const o = b.textContent, ok = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = o, 1200); };
     try { navigator.clipboard.writeText(t).then(ok, () => { const r = document.createRange(); r.selectNodeContents($('#out')); getSelection().removeAllRanges(); getSelection().addRange(r); b.textContent = 'Selected: press Ctrl+C'; }); } catch (e) { ok(); } };
-  $('#cp').addEventListener('click', e => copy(OUT[tab].text, e.currentTarget));
-  $('#dl').addEventListener('click', () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([OUT[tab].text], { type: 'text/plain' })); a.download = OUT[tab].file; document.body.appendChild(a); a.click(); a.remove(); });
+  $('#cp').addEventListener('click', e => copy(OUT[tab].full || OUT[tab].text, e.currentTarget));
+  $('#dl').addEventListener('click', () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([OUT[tab].full || OUT[tab].text], { type: 'text/plain' })); a.download = OUT[tab].file; document.body.appendChild(a); a.click(); a.remove(); });
 
   /* a self-contained check that runs in any page's DevTools console */
   function CHECK_SCRIPT(name, checks, tweaks) {

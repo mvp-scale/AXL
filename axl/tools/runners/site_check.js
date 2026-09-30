@@ -28,9 +28,11 @@ const { CHROME } = require('./common');
     // one tap on the board builds your word; save gives a file and a command
     await p.locator('#board .erh').first().click(); await p.locator('#board .er.open .tw').first().click(); await p.locator('#board .more .add').click(); r.after_one_tap = await p.evaluate(() => ({ mine: document.querySelectorAll('#board .tw[aria-pressed=true]').length, state: document.getElementById('stateTxt').textContent }));
     await p.locator('#board .er.open .tw').nth(1).click(); await p.locator('#board .more .add').click(); await p.click('#save'); await p.waitForTimeout(300);
-    const prompt = await p.evaluate("document.getElementById('out').textContent"); await p.click('.tabs button[data-t=script]'); const script = await p.evaluate("document.getElementById('out').textContent");
+    const prompt = await p.evaluate("document.getElementById('out').textContent"); await p.click('.tabs button[data-t=script]');
+    // the one-file checker is large; the gate parses the real downloaded file, not the on-screen preview
+    const [dl] = await Promise.all([p.waitForEvent('download'), p.click('#dl')]); const script = require('fs').readFileSync(await dl.path(), 'utf8');
     // one kit: rules (plain words + code + quote IDs) and the definition block the CLI reads
-    r.saved = (() => { const m = prompt.match(/```axl\n([\s\S]*?)```/); return /## Rules/.test(prompt) && !!m && (m[1].match(/^  - /gm) || []).length === 2 && /DevTools console/.test(script); })();
+    r.saved = (() => { const m = prompt.match(/```axl\n([\s\S]*?)```/); return /## Rules/.test(prompt) && !!m && (m[1].match(/^  - /gm) || []).length === 2 && /DevTools/.test(script); })();
     try { new Function(script); r.script_parses = true; } catch (e) { r.script_parses = String(e); }
     await p.keyboard.press('Escape'); r.sheet_closed = await p.evaluate("!document.getElementById('sheet').classList.contains('open')");
     r.chips = await p.evaluate("document.querySelectorAll('#board .tw').length");

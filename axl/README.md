@@ -1,5 +1,7 @@
 # AXL
 
+**Check any website against your word:** see [`HOW_TO_CHECK.md`](HOW_TO_CHECK.md): one file you paste into the browser console (no install), or `python3 axl/axl.py check your-word.axl.md https://any-site.com`.
+
 Open **`site/index.html`**: one file, no server, no network. It shows that design words like "polish" mean different things to different sources, lays out every concrete tweak behind them, and lets you build your own version of a word as a file a tool can check.
 
 Check a page against your word: `python3 axl.py check my-polish.axl.json yourpage.html`

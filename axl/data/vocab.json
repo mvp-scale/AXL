@@ -7,7 +7,8 @@
    "family": "Landmarks & navigation",
    "standard": "WAI-ARIA 1.2",
    "find": "nav, [role=navigation]",
-   "singular": true
+   "singular": true,
+   "css": "nav,[role=navigation]"
   },
   {
    "id": "aria:banner",
@@ -15,7 +16,8 @@
    "family": "Landmarks & navigation",
    "standard": "WAI-ARIA 1.2",
    "find": "body > header, [role=banner]",
-   "singular": true
+   "singular": true,
+   "css": "body>header,[role=banner]"
   },
   {
    "id": "aria:contentinfo",
@@ -23,7 +25,8 @@
    "family": "Landmarks & navigation",
    "standard": "WAI-ARIA 1.2",
    "find": "body > footer, [role=contentinfo]",
-   "singular": true
+   "singular": true,
+   "css": "body>footer,[role=contentinfo]"
   },
   {
    "id": "aria:main",
@@ -31,7 +34,8 @@
    "family": "Landmarks & navigation",
    "standard": "WAI-ARIA 1.2",
    "find": "main, [role=main]",
-   "singular": true
+   "singular": true,
+   "css": "main,[role=main]"
   },
   {
    "id": "aria:search",
@@ -39,7 +43,8 @@
    "family": "Landmarks & navigation",
    "standard": "WAI-ARIA 1.2",
    "find": "search, [role=search], input[type=search]",
-   "singular": true
+   "singular": true,
+   "css": "search,[role=search],input[type=search]"
   },
   {
    "id": "ui:breadcrumb",
@@ -47,7 +52,8 @@
    "family": "Landmarks & navigation",
    "standard": "Open UI",
    "find": "nav[aria-label*=readcrumb], .breadcrumb",
-   "singular": false
+   "singular": false,
+   "css": "nav[aria-label*=readcrumb],.breadcrumb,.crumbs"
   },
   {
    "id": "aria:tablist",
@@ -55,7 +61,8 @@
    "family": "Landmarks & navigation",
    "standard": "WAI-ARIA 1.2",
    "find": "[role=tablist]",
-   "singular": false
+   "singular": false,
+   "css": "[role=tablist]"
   },
   {
    "id": "aria:menu",
@@ -63,7 +70,8 @@
    "family": "Landmarks & navigation",
    "standard": "WAI-ARIA 1.2",
    "find": "[role=menu], [role=menubar]",
-   "singular": false
+   "singular": false,
+   "css": "[role=menu],[role=menubar],.menu"
   },
   {
    "id": "text:display",
@@ -71,7 +79,8 @@
    "family": "Document structure",
    "standard": "Material 3 type scale",
    "find": "text in the page's largest size band (hero headlines)",
-   "singular": true
+   "singular": true,
+   "css": "h1,[class*=hero] h1,[class*=hero] h2,.display"
   },
   {
    "id": "aria:heading",
@@ -79,7 +88,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "h1–h6, [role=heading]",
-   "singular": false
+   "singular": false,
+   "css": "h1,h2,h3,h4,h5,h6,[role=heading]"
   },
   {
    "id": "text:body",
@@ -87,7 +97,8 @@
    "family": "Document structure",
    "standard": "Material 3 type scale",
    "find": "running text: p, li, td, dd in the page's most common size band",
-   "singular": true
+   "singular": true,
+   "css": "p,li,dd,blockquote,td"
   },
   {
    "id": "text:label",
@@ -95,7 +106,8 @@
    "family": "Document structure",
    "standard": "Material 3 type scale",
    "find": "label, legend, th, small UI text",
-   "singular": false
+   "singular": false,
+   "css": "label,legend,th"
   },
   {
    "id": "text:caption",
@@ -103,7 +115,8 @@
    "family": "Document structure",
    "standard": "HTML figcaption/small (extends Material 3 type scale)",
    "find": "figcaption, small, text below the body size band",
-   "singular": false
+   "singular": false,
+   "css": "figcaption,small,caption"
   },
   {
    "id": "text:code",
@@ -111,7 +124,8 @@
    "family": "Document structure",
    "standard": "HTML code/pre",
    "find": "code, pre, kbd",
-   "singular": true
+   "singular": true,
+   "css": "code,pre,kbd"
   },
   {
    "id": "text:*",
@@ -119,7 +133,8 @@
    "family": "Document structure",
    "standard": "all rendered text",
    "find": "every element with rendered text",
-   "singular": true
+   "singular": true,
+   "css": "body *"
   },
   {
    "id": "aria:link",
@@ -127,7 +142,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "a[href], [role=link]",
-   "singular": false
+   "singular": false,
+   "css": "a[href],[role=link]"
   },
   {
    "id": "aria:list",
@@ -135,7 +151,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "ul, ol, [role=list]",
-   "singular": false
+   "singular": false,
+   "css": "ul,ol,[role=list]"
   },
   {
    "id": "aria:table",
@@ -143,7 +160,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "table, [role=table], [role=grid]",
-   "singular": false
+   "singular": false,
+   "css": "table,[role=table],[role=grid]"
   },
   {
    "id": "aria:img",
@@ -151,7 +169,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "img, picture, svg[role=img], [role=img]",
-   "singular": false
+   "singular": false,
+   "css": "img,picture,svg[role=img],[role=img]"
   },
   {
    "id": "ui:icon",
@@ -159,7 +178,8 @@
    "family": "Document structure",
    "standard": "Open UI",
    "find": "small svg/img/glyph beside text or alone in a control",
-   "singular": false
+   "singular": false,
+   "css": "svg:not([role=img]),.icon,[class*=icon] svg,i[class*=icon]"
   },
   {
    "id": "aria:figure",
@@ -167,7 +187,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "figure, video, audio, [role=figure]",
-   "singular": false
+   "singular": false,
+   "css": "figure,video,audio,[role=figure]"
   },
   {
    "id": "ui:chart",
@@ -175,7 +196,8 @@
    "family": "Document structure",
    "standard": "Open UI (not in research list; ARIA graphics module)",
    "find": "svg charts, canvas, [role=graphics-document]",
-   "singular": false
+   "singular": false,
+   "css": "svg.chart,canvas,[role=graphics-document],.chart"
   },
   {
    "id": "aria:button",
@@ -183,7 +205,8 @@
    "family": "Widgets & forms",
    "standard": "WAI-ARIA 1.2",
    "find": "button, [role=button], input[type=submit]",
-   "singular": false
+   "singular": false,
+   "css": "button,[role=button],input[type=submit],input[type=button]"
   },
   {
    "id": "aria:textbox",
@@ -191,7 +214,8 @@
    "family": "Widgets & forms",
    "standard": "WAI-ARIA 1.2",
    "find": "input (text types), textarea, [role=textbox]",
-   "singular": false
+   "singular": false,
+   "css": "input:not([type]),input[type=text],input[type=email],input[type=search],input[type=password],input[type=tel],input[type=url],input[type=number],textarea,[role=textbox]"
   },
   {
    "id": "aria:checkbox",
@@ -199,7 +223,8 @@
    "family": "Widgets & forms",
    "standard": "WAI-ARIA 1.2",
    "find": "input[type=checkbox|radio], [role=checkbox|radio]",
-   "singular": false
+   "singular": false,
+   "css": "input[type=checkbox],input[type=radio],[role=checkbox],[role=radio]"
   },
   {
    "id": "aria:combobox",
@@ -207,7 +232,8 @@
    "family": "Widgets & forms",
    "standard": "WAI-ARIA 1.2",
    "find": "select, [role=combobox], [role=listbox]",
-   "singular": false
+   "singular": false,
+   "css": "select,[role=combobox],[role=listbox]"
   },
   {
    "id": "aria:switch",
@@ -215,7 +241,8 @@
    "family": "Widgets & forms",
    "standard": "WAI-ARIA 1.2",
    "find": "[role=switch]",
-   "singular": false
+   "singular": false,
+   "css": "[role=switch]"
   },
   {
    "id": "aria:slider",
@@ -223,7 +250,8 @@
    "family": "Widgets & forms",
    "standard": "WAI-ARIA 1.2",
    "find": "input[type=range], [role=slider]",
-   "singular": false
+   "singular": false,
+   "css": "input[type=range],[role=slider]"
   },
   {
    "id": "aria:form",
@@ -231,7 +259,8 @@
    "family": "Widgets & forms",
    "standard": "WAI-ARIA 1.2",
    "find": "form, [role=form]",
-   "singular": false
+   "singular": false,
+   "css": "form,[role=form]"
   },
   {
    "id": "ui:file",
@@ -239,7 +268,8 @@
    "family": "Widgets & forms",
    "standard": "Open UI",
    "find": "input[type=file]",
-   "singular": false
+   "singular": false,
+   "css": "input[type=file]"
   },
   {
    "id": "aria:alert",
@@ -247,7 +277,8 @@
    "family": "Live regions & feedback",
    "standard": "WAI-ARIA 1.2",
    "find": "[role=alert], [aria-live=assertive]",
-   "singular": false
+   "singular": false,
+   "css": "[role=alert],[aria-live=assertive]"
   },
   {
    "id": "aria:status",
@@ -255,7 +286,8 @@
    "family": "Live regions & feedback",
    "standard": "WAI-ARIA 1.2",
    "find": "[role=status], output, [aria-live=polite]",
-   "singular": false
+   "singular": false,
+   "css": "[role=status],output,[aria-live=polite]"
   },
   {
    "id": "ui:toast",
@@ -263,7 +295,8 @@
    "family": "Live regions & feedback",
    "standard": "Open UI",
    "find": "transient status popups",
-   "singular": false
+   "singular": false,
+   "css": ".toast,[class*=toast]"
   },
   {
    "id": "aria:progressbar",
@@ -271,7 +304,8 @@
    "family": "Live regions & feedback",
    "standard": "WAI-ARIA 1.2",
    "find": "progress, [role=progressbar]",
-   "singular": false
+   "singular": false,
+   "css": "progress,[role=progressbar]"
   },
   {
    "id": "ui:skeleton",
@@ -279,7 +313,8 @@
    "family": "Live regions & feedback",
    "standard": "Open UI",
    "find": ".skeleton, [aria-busy=true] placeholders",
-   "singular": false
+   "singular": false,
+   "css": ".skeleton,[class*=skeleton]"
   },
   {
    "id": "aria:tooltip",
@@ -287,7 +322,8 @@
    "family": "Live regions & feedback",
    "standard": "WAI-ARIA 1.2",
    "find": "[role=tooltip], [title]",
-   "singular": false
+   "singular": false,
+   "css": "[role=tooltip]"
   },
   {
    "id": "aria:dialog",
@@ -295,7 +331,8 @@
    "family": "Windows",
    "standard": "WAI-ARIA 1.2",
    "find": "dialog, [role=dialog]",
-   "singular": false
+   "singular": false,
+   "css": "dialog,[role=dialog]"
   },
   {
    "id": "aria:alertdialog",
@@ -303,7 +340,8 @@
    "family": "Windows",
    "standard": "WAI-ARIA 1.2",
    "find": "[role=alertdialog]",
-   "singular": false
+   "singular": false,
+   "css": "[role=alertdialog]"
   },
   {
    "id": "ui:card",
@@ -311,7 +349,8 @@
    "family": "Components",
    "standard": "Open UI",
    "find": "bordered/elevated boxes grouping one item",
-   "singular": false
+   "singular": false,
+   "css": ".card,[class*=card]"
   },
   {
    "id": "ui:badge",
@@ -319,7 +358,8 @@
    "family": "Components",
    "standard": "Open UI",
    "find": "small labelled pills",
-   "singular": false
+   "singular": false,
+   "css": ".badge,.tag,.chip,[class*=badge]"
   },
   {
    "id": "ui:avatar",
@@ -327,7 +367,8 @@
    "family": "Components",
    "standard": "Open UI",
    "find": "round person images or initials",
-   "singular": false
+   "singular": false,
+   "css": ".avatar,[class*=avatar]"
   },
   {
    "id": "ui:carousel",
@@ -335,7 +376,8 @@
    "family": "Components",
    "standard": "Open UI",
    "find": "horizontally scrolling item sets",
-   "singular": false
+   "singular": false,
+   "css": "[class*=carousel],[aria-roledescription=carousel]"
   },
   {
    "id": "ui:accordion",
@@ -343,7 +385,8 @@
    "family": "Components",
    "standard": "Open UI",
    "find": "details/summary, [aria-expanded] sections",
-   "singular": false
+   "singular": false,
+   "css": "details,[aria-expanded]"
   },
   {
    "id": "ui:popup",
@@ -351,7 +394,8 @@
    "family": "Components",
    "standard": "Open UI",
    "find": "[popover], floating panels",
-   "singular": false
+   "singular": false,
+   "css": "[popover],.popover,[class*=popover]"
   },
   {
    "id": "state:hover",
@@ -359,7 +403,8 @@
    "family": "States",
    "standard": "CSS Selectors 4 / ARIA states",
    "find": ":hover",
-   "singular": true
+   "singular": true,
+   "css": "a,button,[role=button],[role=link]"
   },
   {
    "id": "state:focus-visible",
@@ -367,7 +412,8 @@
    "family": "States",
    "standard": "CSS Selectors 4 / ARIA states",
    "find": ":focus-visible",
-   "singular": true
+   "singular": true,
+   "css": "a[href],button,input,select,textarea,[tabindex]"
   },
   {
    "id": "state:active",
@@ -375,7 +421,8 @@
    "family": "States",
    "standard": "CSS Selectors 4 / ARIA states",
    "find": ":active, [aria-pressed=true]",
-   "singular": true
+   "singular": true,
+   "css": "[aria-pressed=true]"
   },
   {
    "id": "state:disabled",
@@ -383,7 +430,8 @@
    "family": "States",
    "standard": "CSS Selectors 4 / ARIA states",
    "find": ":disabled, [aria-disabled=true]",
-   "singular": true
+   "singular": true,
+   "css": ":disabled,[aria-disabled=true]"
   },
   {
    "id": "state:invalid",
@@ -391,7 +439,8 @@
    "family": "States",
    "standard": "CSS Selectors 4 / ARIA states",
    "find": ":invalid, [aria-invalid=true]",
-   "singular": true
+   "singular": true,
+   "css": "[aria-invalid=true],:invalid"
   },
   {
    "id": "state:busy",
@@ -399,7 +448,8 @@
    "family": "States",
    "standard": "CSS Selectors 4 / ARIA states",
    "find": "[aria-busy=true]",
-   "singular": true
+   "singular": true,
+   "css": "[aria-busy=true]"
   },
   {
    "id": "state:empty",
@@ -407,7 +457,8 @@
    "family": "States",
    "standard": "CSS Selectors 4 / ARIA states",
    "find": "views with no items (list/table with zero rows)",
-   "singular": false
+   "singular": false,
+   "css": ".empty-state,[class*=empty]"
   },
   {
    "id": "state:selected",
@@ -415,7 +466,8 @@
    "family": "States",
    "standard": "CSS Selectors 4 / ARIA states",
    "find": "[aria-selected=true], [aria-current]",
-   "singular": true
+   "singular": true,
+   "css": "[aria-selected=true],[aria-current]:not([aria-current=false])"
   },
   {
    "id": "media:dark",
@@ -423,7 +475,8 @@
    "family": "Contexts",
    "standard": "CSS Media Queries 5",
    "find": "prefers-color-scheme: dark",
-   "singular": true
+   "singular": true,
+   "css": "html"
   },
   {
    "id": "media:narrow",
@@ -431,7 +484,8 @@
    "family": "Contexts",
    "standard": "CSS Media Queries 5",
    "find": "width <= 390px",
-   "singular": false
+   "singular": false,
+   "css": "html"
   },
   {
    "id": "media:reduced-motion",
@@ -439,7 +493,8 @@
    "family": "Contexts",
    "standard": "CSS Media Queries 5",
    "find": "prefers-reduced-motion: reduce",
-   "singular": true
+   "singular": true,
+   "css": "html"
   },
   {
    "id": "media:forced-colors",
@@ -447,7 +502,8 @@
    "family": "Contexts",
    "standard": "CSS Media Queries 5",
    "find": "forced-colors: active",
-   "singular": true
+   "singular": true,
+   "css": "html"
   },
   {
    "id": "media:print",
@@ -455,7 +511,8 @@
    "family": "Contexts",
    "standard": "CSS Media Queries 5",
    "find": "print",
-   "singular": true
+   "singular": true,
+   "css": "html"
   },
   {
    "id": "page",
@@ -463,7 +520,8 @@
    "family": "Whole page",
    "standard": "HTML document",
    "find": "the document",
-   "singular": true
+   "singular": true,
+   "css": "html"
   },
   {
    "id": "process",
@@ -471,7 +529,8 @@
    "family": "Off the page",
    "standard": "none (AXL)",
    "find": "not on the page: team or agent process",
-   "singular": true
+   "singular": true,
+   "css": ""
   },
   {
    "id": "aria:toolbar",
@@ -479,7 +538,8 @@
    "family": "Widgets & forms",
    "standard": "WAI-ARIA 1.2",
    "find": "[role=toolbar]",
-   "singular": false
+   "singular": false,
+   "css": "[role=toolbar]"
   },
   {
    "id": "aria:region",
@@ -487,7 +547,8 @@
    "family": "Landmarks & navigation",
    "standard": "WAI-ARIA 1.2",
    "find": "section[aria-label], [role=region]",
-   "singular": false
+   "singular": false,
+   "css": "section[aria-label],section[aria-labelledby],[role=region]"
   },
   {
    "id": "aria:row",
@@ -495,7 +556,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "tr, [role=row]",
-   "singular": false
+   "singular": false,
+   "css": "tr,[role=row]"
   },
   {
    "id": "aria:listitem",
@@ -503,7 +565,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "li, [role=listitem]",
-   "singular": false
+   "singular": false,
+   "css": "li,[role=listitem]"
   },
   {
    "id": "aria:separator",
@@ -511,7 +574,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "hr, [role=separator]",
-   "singular": false
+   "singular": false,
+   "css": "hr,[role=separator]"
   },
   {
    "id": "aria:meter",
@@ -519,7 +583,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "meter, [role=meter]",
-   "singular": false
+   "singular": false,
+   "css": "meter,[role=meter]"
   },
   {
    "id": "aria:grid",
@@ -527,7 +592,8 @@
    "family": "Widgets & forms",
    "standard": "WAI-ARIA 1.2",
    "find": "[role=grid]",
-   "singular": false
+   "singular": false,
+   "css": "[role=grid]"
   },
   {
    "id": "aria:blockquote",
@@ -535,7 +601,8 @@
    "family": "Document structure",
    "standard": "WAI-ARIA 1.2",
    "find": "blockquote, [role=blockquote]",
-   "singular": false
+   "singular": false,
+   "css": "blockquote"
   }
  ],
  "classes": [
