@@ -1,73 +1,73 @@
-# AXL Rule Standard (draft 0.2)
+# AXL Command Standard (draft 0.3)
 
-A rule is **element + property + test**, written in the web's existing standard vocabularies. AXL adds as little vocabulary of its own as it can.
-A command like "polish" is a list of rules. Any two commands can be compared rule by rule because rules with the same element and property are the same rule.
+**What AXL is:** design commands like *polish*, *bolder* or *quieter* have no shared definition. AXL records what each source means by a command, expresses it in the web's existing standard structure, and shows where definitions agree, differ or conflict. Anyone can then define their own version and check a site against it.
 
-## 1. The rule
+**What AXL is not:** a UI ontology. The structure of UI (what can be styled, what elements exist, how accessibility and performance are checked) is already defined by W3C and industry standards. AXL references it and defines only the command layer on top.
+
+## 1. What AXL defines
 
 ```
-<element>  <property>  <test>  [<context>]
-text:body  font-size   >= 16px
-aria:textbox font-size >= 16px  @media:narrow
-text:*     wcag:1.4.3  pass
-state:invalid  ask  "Does the message say how to fix it?"
+Command      a word people give designers or agents: polish, bolder, quieter, distill …
+ └ Definition   one source's (or one person's) meaning of that command
+     ├ origin     who defined it and where (e.g. Impeccable, first published <date>)
+     ├ linkage    the rules it points to, each with the value that source asks for
+     └ evidence   the statements behind each link, as permanent quote IDs
 ```
 
-- **Rule ID** = `<element>/<property>` (e.g. `text:body/font-size`). Two sources asking about the same element and property are asking about the same rule; if their values differ, that is a visible disagreement, not two rules.
-- **Test**: `>= <= == between A B contains !contains pass` with a value and unit, or `ask "<yes/no question>"` when no script can decide.
-- **Context** (optional) narrows where the rule applies: a `state:` or `media:` term.
-
-## 2. Element: standard vocabularies, namespaced
-
-| Namespace | Standard | Found on a page by | Examples |
-|---|---|---|---|
-| `aria:` | WAI-ARIA 1.2 roles (W3C Recommendation, 2023); 1.3 roles when published | the accessibility tree (native HTML and explicit `role`) | `aria:button` `aria:link` `aria:textbox` `aria:heading` `aria:dialog` `aria:navigation` `aria:img` `aria:table` `aria:alert` `aria:status` `aria:tab` |
-| `text:` | Type-scale roles (Material 3: display, headline, title, body, label) + `caption`, `code` | size/weight bands of the page's own type scale, plus element hints (`h1`…, `p`, `label`, `figcaption`, `code`) | `text:display` `text:headline` `text:title` `text:body` `text:label` `text:caption` `text:code` `text:*` |
-| `ui:` | Open UI component names (W3C Community Group research) | class, `data-` and structural heuristics; weakest namespace, so each heuristic is documented | `ui:card` `ui:badge` `ui:avatar` `ui:toast` `ui:skeleton` `ui:icon` `ui:carousel` |
-| `state:` | ARIA states + CSS pseudo-classes | `:hover` `:focus-visible` `:disabled`, `aria-invalid` `aria-busy` `aria-expanded`… | `state:hover` `state:focus-visible` `state:disabled` `state:invalid` `state:busy` `state:empty` |
-| `media:` | CSS media features | emulated in the browser | `media:dark` `media:reduced-motion` `media:narrow` (≤ 390px) `media:print` |
-| `page` | the whole document | | `page` |
-| `x-<name>:` | anyone's own extension | defined by its author | `x-acme:pricing-table` |
-
-## 3. Property: standard vocabularies, namespaced
-
-| Namespace | Standard | Examples |
+| Object | Fields | Example |
 |---|---|---|
-| (none) | CSS properties, as computed by the browser | `font-size` `line-height` `font-weight` `letter-spacing` `text-transform` `text-align` `border-radius` `box-shadow` `transition-duration` `background-image` `max-width` |
-| `wcag:` | WCAG 2.2 success criteria, run by axe where axe covers them | `wcag:1.4.3` contrast · `wcag:1.4.10` reflow · `wcag:2.4.7` focus visible · `wcag:2.5.8` target size · `wcag:3.1.1` page language |
-| `lighthouse:` | Lighthouse audit IDs | `lighthouse:cls` `lighthouse:lcp` `lighthouse:unsized-images` `lighthouse:font-display` |
-| `axl:` | **only** measures no standard defines, each defined once in `axl/measures.md` | `axl:distinct-font-sizes` `axl:distinct-font-families` `axl:distinct-hues` `axl:icon-sets` `axl:emoji-as-icons` `axl:spacing-off-scale` `axl:chars-per-line` |
-| `ask` | a yes/no question when nothing can be measured | `ask "Is there exactly one action that stands out most?"` |
+| Command | `id`, aliases | `polish` (aliases: refine, finalize) |
+| Definition | `command`, `source` (source ID or `you`), `origin` (URL, date), `based_on` (another definition it copies or extends), `rules` | `polish@impeccable` |
+| Link | `rule`, `test` (that source's value), `evidence` (quote IDs) | `text:body font-size >= 16px ← impeccable:b3b1d9` |
 
-An `axl:` measure is added only when no CSS property, WCAG criterion or Lighthouse audit expresses it. Each one is implemented once and proven on Northstar: it fails on the original and passes with the demo fix.
+**Credit.** The definition that originated a command is marked `origin` (earliest public definition, or the one others demonstrably copy, per `data/lineage.json`). Where a source is the reference definition, as Impeccable is for *polish*, it's credited as such. Copies and rebrands are linked with `based_on` and counted as one independent voice.
 
-## 4. Grouping (display only)
+## 2. What AXL references (not ours)
 
-Rules are grouped for people, never renamed:
-- **By class**, derived from the property: font and text properties → Type; colour, `wcag:1.4.3`, `axl:distinct-hues` → Color; spacing and size → Space & layout; radius, shadow, borders, `background-image` → Surface; `transition-*`, `animation-*`, `media:reduced-motion` → Motion; `state:*` → Interaction & states; `ui:*` and composite `aria:*` → Components; `wcag:*` → Access; `lighthouse:*` → Performance; `ask` with element `page` or `process` → Content & process / Agent workflow.
-- **By element**, e.g. "text:body · 4 rules".
-- **A plain label** may be shown ("Minimum body text size"); it is not an identifier.
+A **rule** is `<element> <property> <test>`, written in standard vocabularies. Its ID is `<element>/<property>`.
 
-## 5. Evidence
+| Part | Vocabulary | Source of truth |
+|---|---|---|
+| Element | `aria:` roles | WAI-ARIA 1.2 (W3C Rec., 2023); 1.3 roles when published |
+| | `text:` roles | type-scale roles (display, headline, title, body, label) + caption, code |
+| | `ui:` components | Open UI component research (W3C Community Group) |
+| | `state:` | ARIA states + CSS pseudo-classes |
+| | `media:` | CSS media features |
+| | `page`, `process` | the whole document; work that isn't on the page |
+| Property | CSS properties | CSS specifications (computed values) |
+| | `wcag:` | WCAG 2.2 success criteria |
+| | `lighthouse:` | Lighthouse audit IDs |
+| Test | `>= <= == between contains !contains pass` + value | |
 
-Every rule lists the source statements behind each stated value, as permanent quote IDs (`<source-id>:<hash of exact text>`, see `data/catalog.json`):
+**Grouping for display** is read from the standards too, never invented:
+- **Aspect**, by the property's family: Type (CSS Fonts, Text) · Color & theming (CSS Color) · Space & layout (Box Model, Sizing, Flexbox, Grid) · Surface (Backgrounds & Borders) · Imagery (CSS Images, Filter Effects) · Motion (Transitions, Animations) · Access (WCAG) · Performance (Lighthouse, Core Web Vitals) · Search & metadata (Lighthouse SEO) · Locale (Writing Modes, Logical Properties) · Content and Process (no standard; see §3). Staged: Sound & haptics.
+- **Element family**, by ARIA's own role categories: Landmarks & navigation · Document structure · Widgets & forms · Live regions & feedback · Windows · plus Components (`ui:`), States (`state:`) and Contexts (`media:`). Staged: conversational/AI interfaces, voice, spatial.
 
-```
-text:body/font-size   >= 16px   ← impeccable:b3b1d9, ui-craft:f24d64, deslop:b4223e
-                      >= 14px   ← hallmark:f0d4a2, taste-skill:f282ba
-default: 16px (most statements)
-```
+## 3. AXL's gap-fillers (kept minimal, each listed)
 
-## 6. When a rule is accepted
+Only where no standard expresses what a source asks for:
+- **`axl:` measures:** computed page properties no standard names, e.g. `axl:distinct-font-sizes`, `axl:icon-sets`, `axl:emoji-as-icons`, `axl:spacing-off-scale`. Each is defined once in `axl/measures.md`, implemented once in `axl.py`, and proven on the Northstar demo (fails on the original, passes with the fix).
+- **`ask` tests:** a yes/no question when nothing can be measured, e.g. `state:invalid ask "Does every error say how to fix it?"`. Content and Process rules are mostly these.
+- **`x-<name>:` elements:** anyone's own extension, defined by its author.
 
-1. Element and property come from the vocabularies above; anything `x-` or `axl:` is defined in its list.
-2. It has at least one evidence quote ID, or cites the standard it comes from (e.g. a WCAG criterion).
+## 4. Views this makes possible
+
+- **Main screen:** a command and its rules, what each rule changes on Northstar, sources as compact IDs, and building your own definition.
+- **Command matrix** (secondary screen, "see the problem"): for one command, the rules down the side (grouped by aspect) and the definitions across the top (Impeccable, Taste-Skill, UI Craft … you). Each cell holds that source's value, blank where it doesn't ask for that rule. A final column shows how many independent sources ask for the rule. What it shows at a glance: the origin definition, which rules everyone shares (few), which one source adds, and where values conflict (16px vs 14px).
+- **The whole space:** the union of every definition of a command. This is the most complete answer to "what could *polish* mean?", with the origin and each source credited.
+- **Across commands:** the same rule linked from *polish*, *harden* and *audit* shows where commands overlap.
+
+## 5. When a link is accepted
+
+1. The rule uses the vocabularies above (or a listed gap-filler).
+2. It cites at least one quote ID from that source's own statements, and the quote says what the link claims.
 3. An automatic rule passes the Northstar round-trip; an `ask` rule is a yes/no question about something observable.
-4. No other rule has the same `element/property` (otherwise it is the same rule with another value).
+4. The same `element/property` is never two rules; different values are a disagreement, shown in the matrix.
 
-## 7. Files
+## 6. Files
 
-- `data/rules.json`: every rule (element, property, default test, evidence, label)
-- `axl/measures.md`: the `axl:` measures, each with its exact definition
-- `data/catalog.json`: statements with permanent quote IDs; `data/sources_index.json`: source IDs
+- `data/commands.json`: commands, definitions, links (the AXL-owned layer)
+- `data/rules.json`: rules referenced by links (element, property, default test, label)
+- `axl/measures.md`: `axl:` measures
+- `data/catalog.json`: statements with permanent quote IDs; `data/sources_index.json`: source IDs; `data/lineage.json`: who copies whom
 - `data/previews.json`: the Northstar demonstration per rule
