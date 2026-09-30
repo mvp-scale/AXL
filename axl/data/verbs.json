@@ -1,0 +1,1599 @@
+{
+ "verbs": [
+  {
+   "verb": "polish",
+   "mentions_across_sources": 62,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-polish",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/polish.md",
+     "quote": "Polish is refinement, never concealed redesign. Preserve the incumbent visual world, content, behavior, and everything outside scope. If the concept itself is wrong, say so and recommend redesign or `bolder` instead of smuggling in a replacement.\nA detector result is"
+    },
+    {
+     "source_id": "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow",
+     "kind": "derivative",
+     "root": "src_github-com-oneredoak-claude-code-workflows",
+     "url": "https://dynamicworkflow.run/workflows/oneredoak-claude-code-workflows-design-review",
+     "quote": "The review proceeds through explicit phases: interaction and user flow; desktop, tablet, and mobile responsiveness; visual polish; WCAG 2.1 AA checks such as keyboard navigation, focus visibility, semantic HTML, labels, alt text, and contrast; robustness for validation, overflow, loading, empty,"
+    },
+    {
+     "source_id": "src_github-com-dequelabs-axe-core",
+     "kind": "primary",
+     "root": "src_github-com-dequelabs-axe-core",
+     "url": "https://github.com/dequelabs/axe-core",
+     "quote": "- Polish\n- Portuguese (Brazilian)\n- Spanish\n- Swedish\n## Updates & Security\nAxe-core has a new minor release every 3 to 5 months, which usually introduces new rules and features. We recommend scheduling time to upgrade to these versions."
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "For everything else — reviews, animations, forms, polish — the skill routes by intent: just describe what you're building.\n**New here?** Run `/start` — it reads your project (framework, tokens, brief, existing UI) and tells you what ui-craft can do"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0108",
+    "clm_0109",
+    "clm_0110",
+    "clm_0111",
+    "clm_0112",
+    "clm_0113",
+    "clm_0114",
+    "clm_0115",
+    "clm_0116",
+    "clm_0117",
+    "clm_0118",
+    "clm_0119",
+    "clm_0120",
+    "clm_0121",
+    "clm_0122"
+   ],
+   "linked_tiers": {
+    "subjective": 14,
+    "process": 1
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "distill",
+   "mentions_across_sources": 7,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-distill",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/distill.md",
+     "quote": "Strip a design to its essence. Remove anything that doesn't earn its place: redundant elements, repeated information, decorative noise, cosmetic complexity.\n---\n## Assess Current State\nAnalyze what makes the design feel complex or cluttered:\n1. **Identify complexity sources**:\n -"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/ui-craft:distill` | Strip to essence. Cut every section that doesn't earn its space. Absorbs visual-weight reduction (softer type, less motion). | `/polish` |\n| `/ui-craft:delight` | Add purposeful micro-interactions — copy first, animation last. | `/finalize` |\n| `/ui-craft:polish`"
+    },
+    {
+     "source_id": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+     "kind": "derivative",
+     "root": "src_github-com-google-labs-code-design-md+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://www.theadpharm.com/insights/claude-design-without-the-ai-slop-look",
+     "quote": "Anthropic’s three counter-strategies, distilled from the cookbook:\nDirect attention to specific design dimensions (typography, color, motion, backgrounds) rather than asking for “a nice design.”\nReference design inspirations by name (IDE themes, magazine traditions, cultural aesthetics) without being prescriptive enough to"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0123",
+    "clm_0124",
+    "clm_0125",
+    "clm_0126",
+    "clm_0127",
+    "clm_0128",
+    "clm_0129",
+    "clm_0130",
+    "clm_0131",
+    "clm_0132",
+    "clm_0133",
+    "clm_0134",
+    "clm_0135",
+    "clm_0136",
+    "clm_0137"
+   ],
+   "linked_tiers": {
+    "subjective": 15
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "delight",
+   "mentions_across_sources": 14,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-delight",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/delight.md",
+     "quote": "Make the experience memorable at moments that earn it. Delight is not a layer of generic whimsy; it is product character revealed through a useful interaction, a humane response, or an unexpectedly considered detail.\n---\n## Visitor mode\n- **Persuade"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/ui-craft:delight` | Add purposeful micro-interactions — copy first, animation last. | `/finalize` |\n| `/ui-craft:polish` | Final pass — the compound details that turn \"done\" into \"crafted\". | `/finalize` |\n| `/ui-craft:bolder` | Raise DESIGN_VARIANCE and motion amplitude —"
+    },
+    {
+     "source_id": "src_novitckii-com-resources-claude-design-skills",
+     "kind": "derivative",
+     "root": "src_github-com-leonxlnx-taste-skill+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://novitckii.com/resources/claude-design-skills/",
+     "quote": "A response map for frustration, confusion, delight, and distress — validate without amplifying, de-escalate, hand off when needed.\nnpx skills add Owl-Listener/ai-design-skills --skill emotional-design\nView repo ↗\n36template-designby Owl Listener\nParameterized prompt templates with named, typed, bounded variables and conditional"
+    },
+    {
+     "source_id": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+     "kind": "derivative",
+     "root": "src_github-com-google-labs-code-design-md+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://www.theadpharm.com/insights/claude-design-without-the-ai-slop-look",
+     "quote": "make creative, distinctive frontends that surprise and delight. Focus on:\nTypography: Choose fonts that are beautiful, unique, and interesting. Avoid\ngeneric fonts like Arial and Inter; opt instead for distinctive choices that\nelevate the frontend's aesthetics.\nColor & Theme: Commit"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0138",
+    "clm_0139",
+    "clm_0140",
+    "clm_0141",
+    "clm_0142",
+    "clm_0143",
+    "clm_0144",
+    "clm_0145",
+    "clm_0146",
+    "clm_0147",
+    "clm_0148",
+    "clm_0149",
+    "clm_0150",
+    "clm_0151",
+    "clm_0152"
+   ],
+   "linked_tiers": {
+    "subjective": 15
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "bolder",
+   "mentions_across_sources": 15,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-bolder",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/bolder.md",
+     "quote": "An open direction round owns the word first: \"bolder\" said while a direction decision is on the table is the Bolder hand register steer, a fresh deal of foreign forms (see new-work.md), not this command. This command refines a surface"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/ui-craft:bolder` | Raise DESIGN_VARIANCE and motion amplitude — stronger composition, type, and signature without a full rebuild. | `/critique` |\n| `/ui-craft:quieter` | Lower variance and motion — more restrained grids, type, and color. Honors `prefers-reduced-motion`. | `/critique` |"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0153",
+    "clm_0154",
+    "clm_0155",
+    "clm_0156",
+    "clm_0157",
+    "clm_0158",
+    "clm_0159",
+    "clm_0160"
+   ],
+   "linked_tiers": {
+    "subjective": 8
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "quieter",
+   "mentions_across_sources": 9,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-quieter",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/quieter.md",
+     "quote": "Quiet design is harder than bold design. Subtlety needs precision. Reduce visual intensity in designs that are too loud, aggressive, or overstimulating without losing personality or making the result generic.\n---\n## Visitor mode\nPersuade + Experience: \"quieter\" means more"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/ui-craft:quieter` | Lower variance and motion — more restrained grids, type, and color. Honors `prefers-reduced-motion`. | `/critique` |\n**Review a surface:**\n| Command | Does | Next step |\n|---------|------|-----------|\n| `/ui-craft:heuristic` | **Signature move.** Scored critique — Nielsen"
+    },
+    {
+     "source_id": "src_w3-org-tr-wcag22",
+     "kind": "primary",
+     "root": "src_w3-org-tr-wcag22",
+     "url": "https://www.w3.org/TR/WCAG22/",
+     "quote": "be approximately four times quieter than the foreground speech content.\nSuccess Criterion 1.4.8 Visual Presentation\nUnderstanding Visual Presentation | \nHow to Meet Visual Presentation\n(Level AAA)\nFor the visual presentation of blocks of text, a mechanism is available to achieve"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0161",
+    "clm_0162",
+    "clm_0163",
+    "clm_0164",
+    "clm_0165",
+    "clm_0166",
+    "clm_0167",
+    "clm_0168",
+    "clm_0169",
+    "clm_0170",
+    "clm_0171",
+    "clm_0172",
+    "clm_0173",
+    "clm_0174",
+    "clm_0175"
+   ],
+   "linked_tiers": {
+    "subjective": 15
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "animate",
+   "mentions_across_sources": 30,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-animate",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/animate.md",
+     "quote": "Use motion to explain state, relationship, and hierarchy, or to create one authored moment the surface has earned. Decoration without purpose is animation debt.\n---\n## Visitor mode\n- **Persuade + Experience:** motion may carry the voice. Prefer one rehearsed"
+    },
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "Default to ease-out under 300ms, animate only transform and opacity, scale popovers from their trigger, and never animate high-frequency actions. See references/motion.md.\nIconography. One grid, one stroke, one radius across the set; do not let the unmodified default starter-kit set"
+    },
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "- Tailwind/AOS: `data-aos=\"fade-up\"` everywhere, `animate-*` on most sections,\n `hover:scale-105` on every card.\n- Scrolljacking libraries wired to the whole page.\n**Fix:** use motion only when it communicates state or guides attention, and make it the\nexception, not the wrapper around"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| **1 · Direct** | Control over one pass | `/craft`, `/critique`, `/polish`, `/animate`, … | A focused pass on one surface, aimed by you | one command |\n| **2 · Persist** | Consistency across sessions | `/brief`, `/tokens`,"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0176",
+    "clm_0177",
+    "clm_0178",
+    "clm_0179",
+    "clm_0180",
+    "clm_0181",
+    "clm_0182",
+    "clm_0183",
+    "clm_0184",
+    "clm_0185",
+    "clm_0186",
+    "clm_0187"
+   ],
+   "linked_tiers": {
+    "subjective": 12
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "colorize",
+   "mentions_across_sources": 2,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-colorize",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/colorize.md",
+     "quote": "Introduce color as hierarchy, meaning, and atmosphere. Preserve confirmed brand and semantic conventions; do not replace a visual world under the guise of colorizing it.\n---\n## Visitor mode\n- **Persuade + Experience:** color may carry the voice and own"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/ui-craft:colorize` | Introduce color strategically — one accent, 3–5 placements, no decoration. | `/tokens` |\n| `/ui-craft:clarify` | UX copy — button labels, error messages, empty states, CTAs. | `/critique` |\n| `/ui-craft:extract` | Pull repeated patterns into shared"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0188",
+    "clm_0189",
+    "clm_0190",
+    "clm_0191",
+    "clm_0192",
+    "clm_0193",
+    "clm_0194",
+    "clm_0195",
+    "clm_0196",
+    "clm_0197",
+    "clm_0198",
+    "clm_0199",
+    "clm_0200",
+    "clm_0201",
+    "clm_0202"
+   ],
+   "linked_tiers": {
+    "subjective": 15
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "clarify",
+   "mentions_across_sources": 3,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-clarify",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/clarify.md",
+     "quote": "Rewrite unclear interface text so users understand what happened, what matters, and what to do next. Preserve factual meaning, product terminology, and brand voice.\n## Audit the language\nRead the entire interaction path, not isolated strings. Identify:\n- ambiguous nouns,"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/ui-craft:clarify` | UX copy — button labels, error messages, empty states, CTAs. | `/critique` |\n| `/ui-craft:extract` | Pull repeated patterns into shared components and tokens. | `/tokens` |\n| `/ui-craft:distill` | Strip to essence. Cut every section that"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0203",
+    "clm_0204",
+    "clm_0205",
+    "clm_0206",
+    "clm_0207",
+    "clm_0208",
+    "clm_0209",
+    "clm_0210",
+    "clm_0211",
+    "clm_0212",
+    "clm_0213",
+    "clm_0214",
+    "clm_0215",
+    "clm_0216",
+    "clm_0217"
+   ],
+   "linked_tiers": {
+    "subjective": 15
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "harden",
+   "mentions_across_sources": 13,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-harden",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/harden.md",
+     "quote": "Designs that only work with perfect data aren't production-ready. Harden the interface against the inputs, errors, languages, and network conditions that real users will throw at it.\n## Assess Hardening Needs\nIdentify weaknesses and edge cases:\n1. **Test with extreme"
+    },
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "A 7-axis, 0-21 scoring scale for evaluating how well a CLI is designed for AI agents rather than humans — machine-readable output, raw payload input, schema introspection, context-window discipline, input hardening, safety rails, and agent knowledge packaging.\n5 minutesIntermediate\nDeveloper"
+    },
+    {
+     "source_id": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "kind": "primary",
+     "root": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "url": "https://developers.openai.com/plugins/concepts/ui-guidelines",
+     "quote": "Propose security hardening \n Write vulnerability reports \n Export and track findings \n Changelog \n Codex Security CLI \n Quickstart \n Run bulk scans \n Run scans in CI \n GitLab CI/CD \n Reference \n FAQ \n TypeScript SDK \n Codex Security Cloud \n Setup \n Security Review \n Improving the threat model \n FAQ \n Cyber"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/harden` |\n| `/ui-craft:unhappy` | State-first pass — design every non-happy state (idle/loading/empty/error/partial/conflict/offline) before the happy path. | `/harden` |\n| `/ui-craft:harden` | Production readiness — loading/empty/error states, i18n, offline, edge cases. | `/finalize` |\n### Rung 2 ·"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0218",
+    "clm_0219",
+    "clm_0220",
+    "clm_0221",
+    "clm_0222",
+    "clm_0223",
+    "clm_0224",
+    "clm_0225",
+    "clm_0226",
+    "clm_0227"
+   ],
+   "linked_tiers": {
+    "subjective": 10
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "adapt",
+   "mentions_across_sources": 23,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-adapt",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/adapt.md",
+     "quote": "Adapt an existing design to a different context: another screen size, device, platform, or use case. The trap is treating adaptation as scaling. The job is rethinking the experience for the new context.\n**Web only** (mobile web included). Native platforms"
+    },
+    {
+     "source_id": "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow",
+     "kind": "derivative",
+     "root": "src_github-com-oneredoak-claude-code-workflows",
+     "url": "https://dynamicworkflow.run/workflows/oneredoak-claude-code-workflows-design-review",
+     "quote": "It will inspect the source, adapt the workflow to its native format, show the planned changes, and validate the installation.\nAgent install prompt\nInstall and adapt the workflow \"Claude Code Design Review Workflow\" from:\nhttps://github.com/OneRedOak/claude-code-workflows/blob/main/design-review\nFirst inspect the source README,"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/ui-craft:adapt` | Responsive pass — mobile, tablet, desktop, touch, safe areas. | `/audit` |\n| `/ui-craft:typeset` | Typography pass — fonts, scale, tracking, micro-typography. | `/polish` |\n| `/ui-craft:colorize` | Introduce color strategically — one accent, 3–5 placements, no"
+    },
+    {
+     "source_id": "src_motion-dev-docs-react-accessibility",
+     "kind": "primary",
+     "root": "src_motion-dev-docs-react-accessibility",
+     "url": "https://motion.dev/docs/react-accessibility",
+     "quote": "Adapt or disable animations based on the device's Reduced Motion setting.\n02Motion component\nAnimate elements with a declarative API. Supports variants, gestures, and layout animations.\n03React animation\nAn overview of animating React with motion components, variants, gestures, and keyframes.\nMotion++One"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0228",
+    "clm_0229",
+    "clm_0230",
+    "clm_0231",
+    "clm_0232",
+    "clm_0233",
+    "clm_0234",
+    "clm_0235",
+    "clm_0236",
+    "clm_0237",
+    "clm_0238",
+    "clm_0239",
+    "clm_0240",
+    "clm_0241",
+    "clm_0242"
+   ],
+   "linked_tiers": {
+    "subjective": 15
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "optimize",
+   "mentions_across_sources": 18,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-optimize",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/optimize.md",
+     "quote": "Performance is a feature. Identify the actual bottleneck for THIS interface, fix it, then measure. Don't optimize what isn't slow.\n## Assess Performance Issues\nUnderstand current performance and identify problems:\n1. **Measure current state**:\n - **Core Web Vitals**: LCP, INP,"
+    },
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "Each optimizes for a different thing and has its own layout grammar and density. A composite artifact (a marketing site with an embedded app, an AI chat inside a SaaS app) is designed region by region.\nWHO and WHY? Audience,"
+    },
+    {
+     "source_id": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "kind": "primary",
+     "root": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "url": "https://developers.openai.com/plugins/concepts/ui-guidelines",
+     "quote": "Optimize Metadata \n Submit a Claude Code plugin \n Security & Privacy \n Troubleshooting \n Resources \n Changelog \n Plugin guidelines \n MCP server review requirements \n Plugin UI reference \n Checkout API reference \n Home \n Get started \n Trigger workspace agent runs \n Authenticate with Workspace Agent access tokens \n Home \n Guides"
+    },
+    {
+     "source_id": "src_github-com-googlechrome-lighthouse",
+     "kind": "primary",
+     "root": "src_github-com-googlechrome-lighthouse",
+     "url": "https://github.com/GoogleChrome/lighthouse",
+     "quote": "* **[Siteimprove Performance](https://siteimprove.com/en/performance/)** — Siteimprove Performance is a web Performance monitoring solution that enables a marketer, manager or decision maker to understand and optimize website load times. Get easy-to-use insights with a focus on quick and impactful wins. Siteimprove Performance"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0243",
+    "clm_0244",
+    "clm_0245",
+    "clm_0246",
+    "clm_0247",
+    "clm_0248",
+    "clm_0249",
+    "clm_0250",
+    "clm_0251",
+    "clm_0252",
+    "clm_0253"
+   ],
+   "linked_tiers": {
+    "subjective": 11
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "typeset",
+   "mentions_across_sources": 6,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-typeset",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/typeset.md",
+     "quote": "Typography carries information, hierarchy, and voice. Improve it inside the established visual world; do not replace the identity unless the user asked to.\n---\n## Visitor mode\n- **Persuade + Experience:** display type may carry the voice. Use decisive contrast"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/ui-craft:typeset` | Typography pass — fonts, scale, tracking, micro-typography. | `/polish` |\n| `/ui-craft:colorize` | Introduce color strategically — one accent, 3–5 placements, no decoration. | `/tokens` |\n| `/ui-craft:clarify` | UX copy — button labels, error messages, empty"
+    },
+    {
+     "source_id": "src_ui-shadcn-com-docs-skills",
+     "kind": "primary",
+     "root": "src_ui-shadcn-com-docs-skills",
+     "url": "https://ui.shadcn.com/docs/skills",
+     "quote": "Typeset\nSkills\nRegistry\nChangelog\nComponents\nAccordion\nAlert\nAlert Dialog\nAspect Ratio\nAttachment\nAvatar\nBadge\nBreadcrumb\nBubble\nButton\nButton Group\nCalendar\nCard\nCarousel\nChart\nCheckbox\nCollapsible\nCombobox\nCommand\nContext Menu\nData Table\nDate Picker\nDialog\nDirection\nDrawer\nDropdown Menu\nEmpty\nField"
+    }
+   ],
+   "shared_deltas": [
+    {
+     "claim_id": "clm_0268",
+     "selector": "text",
+     "property": "font-size",
+     "before": null,
+     "after": "1rem",
+     "status": "single-source"
+    }
+   ],
+   "tool_candidates": [
+    "stylelint"
+   ],
+   "linked_claim_ids": [
+    "clm_0254",
+    "clm_0255",
+    "clm_0256",
+    "clm_0257",
+    "clm_0258",
+    "clm_0259",
+    "clm_0260",
+    "clm_0261",
+    "clm_0262",
+    "clm_0263",
+    "clm_0264",
+    "clm_0265",
+    "clm_0266",
+    "clm_0267",
+    "clm_0268"
+   ],
+   "linked_tiers": {
+    "subjective": 14,
+    "measurable": 1
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "measurable",
+   "note": "at least one linked claim has a concrete delta; the rest of the verb stays subjective"
+  },
+  {
+   "verb": "layout",
+   "mentions_across_sources": 168,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-layout",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/layout.md",
+     "quote": "Layout turns product priority into reading order, grouping, rhythm, and usable space. Diagnose the structural problem before moving boxes.\n---\n## Visitor mode\n- **Persuade + Experience:** composition may be asymmetric, fluid, or intentionally disruptive when the selected world earns"
+    },
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "Identify the project (landing page, SaaS app, dashboard, ecommerce, presentation, docs, portfolio...) and its positioning and personality, commit to brand adjectives, translate into a typography and color system, then apply the craft layer (layout, components and states, motion, iconography, imagery,"
+    },
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "Taste, brand, and layout judgment are still yours. A\nguardrail is not a designer.\nUse this file whenever building, styling, reviewing, refactoring, or auditing any\nwebsite, landing page, web app UI, dashboard, or front-end component. Trigger it\nespecially when the"
+    },
+    {
+     "source_id": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+     "kind": "primary",
+     "root": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+     "quote": "Layout cookbook\n Column layouts\n Centering an element\n Card component\n See all…\n JavaScriptJS\n JavaScript: Scripting language\n JS reference\n Standard built-in objects\n Expressions & operators\n Statements & declarations\n Functions\n See all…\n JS guides\n Control flow & error handling\n Loops and iteration\n Working"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0269",
+    "clm_0270",
+    "clm_0271",
+    "clm_0272",
+    "clm_0273",
+    "clm_0274",
+    "clm_0275",
+    "clm_0276",
+    "clm_0277",
+    "clm_0278"
+   ],
+   "linked_tiers": {
+    "subjective": 10
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "onboard",
+   "mentions_across_sources": 29,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-onboard",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/onboard.md",
+     "quote": "Get users to first value as fast as possible. Onboarding's job is not to teach the product. Its job is to get people to the moment that proves the product is worth their time.\n## Assess Onboarding Needs\nUnderstand what"
+    },
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "WHAT is the artifact? Classify it: marketing/landing page, pricing page, SaaS application, dashboard/data tool, ecommerce, marketplace, mobile app, AI/conversational interface, email/newsletter, blog/editorial publication, onboarding/auth flow, settings/admin/CMS, presentation/deck, docs/API reference, portfolio/brand site, or one of the long-tail types in references/artifact-types.md. Each"
+    },
+    {
+     "source_id": "src_github-com-yuchangxu1989-openclaw-claw-design",
+     "kind": "primary",
+     "root": "src_github-com-yuchangxu1989-openclaw-claw-design",
+     "url": "https://github.com/yuchangxu1989-Openclaw/claw-design",
+     "quote": "做一个微服务系统架构图，给新同事 onboarding 用，节点分层清楚一点。\n```\n```text\n用我们公司的品牌色做一个发布会落地页，首屏要能直接讲清新品价值。\n```\n### 生成后继续改\n产物出来后，继续用自然语言改：\n```text\n把标题换成深蓝色，第一页少一点装饰。\n```\n```text\n第二页图表太挤了，拆成两页。\n```\n```text\n整体更像企业客户提案，不要太互联网。\n```\nClaw Design 会按你的新指令修改已有结果，不会把整套东西推倒重来。\n---\n## 命令行使用（CLI）\n装完包后会得到一个 `claw-design` 命令。`generate` 需要文本 LLM：可以由已配置文本 LLM 的 OpenClaw 注入，也可以在程序内通过 `createPipeline(theme, { classifierProvider })` 手动注入。没有 LLM"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0279",
+    "clm_0280",
+    "clm_0281",
+    "clm_0282",
+    "clm_0283",
+    "clm_0284",
+    "clm_0285",
+    "clm_0286",
+    "clm_0287",
+    "clm_0288",
+    "clm_0289"
+   ],
+   "linked_tiers": {
+    "subjective": 11
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "critique",
+   "mentions_across_sources": 59,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-critique",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/critique.md",
+     "quote": "Resolve one stable target, run two independent assessments, synthesize a design critique, persist a snapshot, and ask the user what to improve next. The chat response is the primary deliverable; the snapshot is an archive of that run.\n### Hard"
+    },
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "Build world-class Claude skills through a guided 10-step conversation — explore where Claude fails by default, research the domain, draft, self-critique, test on a real scenario, and iterate until the skill actually improves output.\n10 minutesIntermediate\nDeveloper Tools\nTwilio SMS"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| **1 · Direct** | Control over one pass | `/craft`, `/critique`, `/polish`, `/animate`, … | A focused pass on one surface, aimed by you | one command |\n| **2 · Persist** | Consistency across sessions | `/brief`, `/tokens`,"
+    },
+    {
+     "source_id": "src_github-com-nutlope-hallmark",
+     "kind": "primary",
+     "root": "src_github-com-nutlope-hallmark",
+     "url": "https://github.com/nutlope/hallmark",
+     "quote": "Hallmark picks a macrostructure for the brief, dresses it in one of twenty-one themes, runs fifty-seven slop-test gates plus a pre-emit self-critique, and refuses the on-distribution defaults every LLM was trained into. Two pages by Hallmark for two different briefs"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0290",
+    "clm_0291",
+    "clm_0292",
+    "clm_0293",
+    "clm_0294",
+    "clm_0295",
+    "clm_0296",
+    "clm_0297",
+    "clm_0298",
+    "clm_0299",
+    "clm_0300",
+    "clm_0301"
+   ],
+   "linked_tiers": {
+    "subjective": 12
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "audit",
+   "mentions_across_sources": 100,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-audit",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md",
+     "quote": "Run systematic **technical** quality checks and generate a comprehensive report. Don't fix issues; document them for other commands to address.\nThis is a code-level audit, not a design critique. Check what's measurable and verifiable in the implementation.\n**Web only.** Native"
+    },
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "Commit to words first (what this is, who it serves, the adjectives it must feel like), then translate those words into a typography and color system, then build from tokens, then apply the craft layer (layout, components, motion, iconography, imagery,"
+    },
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "A frontend guardrail built from a 3.2M-post Reddit analysis of what people actually call AI slop, with a build mode that forces design decisions up front and an audit mode that scans existing code for the tells\n10 minutesBy JCarterJohnsonSource"
+    },
+    {
+     "source_id": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "kind": "primary",
+     "root": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "url": "https://developers.openai.com/plugins/concepts/ui-guidelines",
+     "quote": "Compliance API and audit events \n Explore use cases \n Collections \n Home \n Videos \n Showcase \n OpenAI Academy \n Online trainings \n Community \n Codex Ambassadors \n Codex for Students \n Codex for Open Source \n Events \n Blog \n Company blog \n Developer blog \n Explore use cases \n Collections \n Home \n Videos \n Showcase \n OpenAI"
+    }
+   ],
+   "shared_deltas": [
+    {
+     "claim_id": "clm_0302",
+     "selector": "text",
+     "property": "contrast-ratio",
+     "before": null,
+     "after": ">= 4.5:1",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0303",
+     "selector": "animated elements",
+     "property": "transition-duration",
+     "before": null,
+     "after": "0.01ms",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0305",
+     "selector": "interactive controls",
+     "property": ":focus-visible outline",
+     "before": null,
+     "after": "visible focus indicator present",
+     "status": "single-source"
+    }
+   ],
+   "tool_candidates": [
+    "axe-core / playwright",
+    "axe-core color-contrast",
+    "stylelint"
+   ],
+   "linked_claim_ids": [
+    "clm_0302",
+    "clm_0303",
+    "clm_0304",
+    "clm_0305",
+    "clm_0306",
+    "clm_0307",
+    "clm_0308",
+    "clm_0309",
+    "clm_0310",
+    "clm_0311",
+    "clm_0312",
+    "clm_0313",
+    "clm_0314",
+    "clm_0315",
+    "clm_0316"
+   ],
+   "linked_tiers": {
+    "measurable": 3,
+    "subjective": 12
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "measurable",
+   "note": "at least one linked claim has a concrete delta; the rest of the verb stays subjective"
+  },
+  {
+   "verb": "extract",
+   "mentions_across_sources": 18,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-extract",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/extract.md",
+     "quote": "Identify reusable patterns, components, and design tokens, then extract and consolidate them into the design system for systematic reuse.\n## Step 1: Discover the Design System\nFind the design system, component library, or shared UI directory. Understand its structure: component"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `/ui-craft:extract` | Pull repeated patterns into shared components and tokens. | `/tokens` |\n| `/ui-craft:distill` | Strip to essence. Cut every section that doesn't earn its space. Absorbs visual-weight reduction (softer type, less motion). | `/polish` |\n| `/ui-craft:delight`"
+    },
+    {
+     "source_id": "src_github-com-nutlope-hallmark",
+     "kind": "primary",
+     "root": "src_github-com-nutlope-hallmark",
+     "url": "https://github.com/nutlope/hallmark",
+     "quote": "| `hallmark study <screenshot \\| URL>` | Extract the **DNA** from a design you admire: macrostructure, type-pairing, colour anchor. Refuses pixel-clones and paid templates. Optionally emits a portable `design.md` for handoff to other AI tools. |\n---\n## Different briefs,"
+    },
+    {
+     "source_id": "src_w3-org-tr-wcag22",
+     "kind": "primary",
+     "root": "src_w3-org-tr-wcag22",
+     "url": "https://www.w3.org/TR/WCAG22/",
+     "quote": "user agents, including assistive technologies, can extract and present this information to users in different modalities\nExample 1\nDetermined in a markup language from elements and attributes that are accessed directly\n by commonly available assistive technology.\nExample 2\nDetermined from"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0317",
+    "clm_0318",
+    "clm_0319",
+    "clm_0320",
+    "clm_0321",
+    "clm_0322",
+    "clm_0323",
+    "clm_0324",
+    "clm_0325",
+    "clm_0326",
+    "clm_0327",
+    "clm_0328",
+    "clm_0329",
+    "clm_0330",
+    "clm_0331"
+   ],
+   "linked_tiers": {
+    "subjective": 15
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "shape",
+   "mentions_across_sources": 80,
+   "required": true,
+   "definitions": [
+    {
+     "source_id": "src_impeccable-shape",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/shape.md",
+     "quote": "Discover what should be made and how it should work, then return a confirmed design brief without code.\n## Phase 1: Discovery interview\nDo not write code or choose visual direction yet.\n### Cadence\n- Use the structured question tool"
+    },
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "LobeHub Zustand store data-shape patterns. Use when designing store state, list/detail splits, normalized maps, reducers, messagesMap, topicsMap, or choosing shared type sources.\nlobehubGet\nInstallation\nOpen GitHub Repository\nRepository\nOwnersamber\nRepocc-skills\nLicenseMIT\nstars178View on GitHub →\nRelated Skills\ndesign106Kfrontend-dev-guidelines46Kui-ux-designer44K\nNeed help?"
+    },
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "Run it in three shapes as needed:\n- **Full report** — every finding plus the vibe score.\n- **High severity only** — the strongest signals, for a fast pass.\n- **Machine-readable** — a JSON list of findings for CI. Gate"
+    },
+    {
+     "source_id": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+     "kind": "primary",
+     "root": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+     "quote": "Shape generator\n About\n Get to know MDN better\n About MDN\n Advertise with us\n Community\n MDN on GitHub\n Blog\n Web\n CSS\n Reference\n At-rules\n @media\n prefers-reduced-motion\nprefers-reduced-motion CSS media feature\n Baseline\nWidely available\nThis feature is well established and works across many"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [
+    "clm_0332",
+    "clm_0333",
+    "clm_0334",
+    "clm_0335",
+    "clm_0336",
+    "clm_0337",
+    "clm_0338",
+    "clm_0339",
+    "clm_0340",
+    "clm_0341",
+    "clm_0342",
+    "clm_0343",
+    "clm_0344"
+   ],
+   "linked_tiers": {
+    "subjective": 12,
+    "process": 1
+   },
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "simplify",
+   "mentions_across_sources": 5,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_novitckii-com-resources-claude-design-skills",
+     "kind": "derivative",
+     "root": "src_github-com-leonxlnx-taste-skill+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://novitckii.com/resources/claude-design-skills/",
+     "quote": "Read frustration from caps, punctuation, repetition, and latency — then adapt (simplify, slow down, offer a human) before the user rage-quits.\nnpx skills add Owl-Listener/ai-design-skills --skill frustration-detection\nView repo ↗\n31feedback-loopsby Owl Listener\nDesign correction and rating mechanisms — ambient"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "single source of definition; agreement cannot be assessed",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "elevate",
+   "mentions_across_sources": 3,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_claude-com-blog-improving-frontend-design-through-skills",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://claude.com/blog/improving-frontend-design-through-skills",
+     "quote": "Avoid generic fonts like Arial and Inter; opt instead for distinctive choices that elevate the frontend's aesthetics.\n- Color & Theme: Commit to a cohesive aesthetic. Use CSS variables for consistency. Dominant colors with sharp accents outperform timid, evenly-distributed palettes."
+    },
+    {
+     "source_id": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+     "kind": "derivative",
+     "root": "src_github-com-google-labs-code-design-md+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://www.theadpharm.com/insights/claude-design-without-the-ai-slop-look",
+     "quote": "elevate the frontend's aesthetics.\nColor & Theme: Commit to a cohesive aesthetic. Use CSS variables for\nconsistency. Dominant colors with sharp accents outperform timid,\nevenly-distributed palettes. Draw from IDE themes and cultural aesthetics\nfor inspiration.\nMotion: Use animations for effects"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "definitions overlap textually",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "premium",
+   "mentions_across_sources": 9,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "Elite mobile app image-generation skill for creating premium, app-native screen concepts and flows. Designed for iOS, Android, and cross-platform mobile products. Prioritizes clean hierarchy, comfortably readable text, strong multi-screen consistency, controlled color palettes, non-generic creative direction, textured surfaces, image-led composition,"
+    },
+    {
+     "source_id": "src_github-com-google-labs-code-design-md",
+     "kind": "primary",
+     "root": "src_github-com-google-labs-code-design-md",
+     "url": "https://github.com/google-labs-code/design.md",
+     "quote": "premium matte finish — a high-end broadsheet or contemporary gallery.\n## Colors\nThe palette is rooted in high-contrast neutrals and a single accent color.\n- **Primary (#1A1C1E):** Deep ink for headlines and core text.\n- **Secondary (#6C7278):** Sophisticated slate for"
+    },
+    {
+     "source_id": "src_github-com-googlechrome-lighthouse",
+     "kind": "primary",
+     "root": "src_github-com-googlechrome-lighthouse",
+     "url": "https://github.com/GoogleChrome/lighthouse",
+     "quote": "* **[Foo](https://www.foo.software/lighthouse)** - Lighthouse-as-a-service offering free and premium plans. Provides monitoring and historical reporting of Lighthouse audits with CircleCI, GitHub, and other integrations. Features include Slack notifications, PR comment reporting and more.\n* **[Apdex](https://apdex.co)** - Apdex is a website performance"
+    },
+    {
+     "source_id": "src_github-com-leonxlnx-taste-skill",
+     "kind": "primary",
+     "root": "src_github-com-leonxlnx-taste-skill",
+     "url": "https://github.com/Leonxlnx/taste-skill",
+     "quote": "<img src=\"assets/readme-banner.webp\" alt=\"Taste Skill - Anti-slop Agent Skills for premium frontends\" width=\"100%\" />\n</p>\n<h1 align=\"center\">Taste Skill</h1>\n<p align=\"center\">\n <em>The Anti-Slop Frontend Framework for AI Agents</em>\n</p>\n<p align=\"center\" style=\"margin-bottom: 8px;\">\n <a href=\"https://tasteskill.dev\" title=\"Visit tasteskill.dev\"><img src=\"assets/readme-buttons/btn-site.webp\" alt=\"Visit tasteskill.dev\" height=\"56\" /></a>"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "clean",
+   "mentions_across_sources": 25,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "Prioritizes clean hierarchy, comfortably readable text, strong multi-screen consistency, controlled color palettes, non-generic creative direction, textured surfaces, image-led composition, tasteful custom iconography, and clean phone mockup framing. By default, screens should be shown inside a subtle premium iPhone or similar"
+    },
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "and clean,\" which means nothing.\n- **A color decision.** A real brand color or a deliberately chosen one, stated. Not the\n framework default, and not the cream/sage default either.\n- **A type decision.** A specific typeface or pairing chosen for"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "Exit code 0 when clean, 1 when findings — usable as a CI gate. Rules mirror the Anti-Slop Test in `skills/ui-craft/SKILL.md`.\n### Diff-scoped scanning — `--scope`, `--base`, `--fail-on`\nScope findings to what a branch actually changed, so CI only flags"
+    },
+    {
+     "source_id": "src_github-com-google-labs-code-design-md",
+     "kind": "primary",
+     "root": "src_github-com-google-labs-code-design-md",
+     "url": "https://github.com/google-labs-code/design.md",
+     "quote": "After fixing config, retry with `npm cache clean --force` if a stale 404 was cached.\nAll commands accept a file path or `-` for stdin. Output defaults to JSON.\n> **Windows tip**: when invoking the CLI directly from a `package.json`"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "minimal",
+   "mentions_across_sources": 14,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_claude-com-blog-improving-frontend-design-through-skills",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://claude.com/blog/improving-frontend-design-through-skills",
+     "quote": "You might notice that when you ask an LLM to build a landing page without guidance, it will almost always conform to Inter fonts, purple gradients on white backgrounds, and minimal animations. \nThe issue?  Distributional convergence. During sampling, models predict"
+    },
+    {
+     "source_id": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "kind": "primary",
+     "root": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "url": "https://developers.openai.com/plugins/concepts/ui-guidelines",
+     "quote": "Avoid custom gradients or patterns that break ChatGPT’s minimal look.\nUse brand accent colors on primary buttons inside app display modes.\nUse brand colors on accents and badges. Don’t change text colors or other core component styles.\nDon’t apply colors"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| `ui-craft-minimal` | \"minimal\", \"Linear-like\", \"Notion-like\", \"whitespace-heavy\" | CRAFT=8 / MOTION=3 / DENSITY=2 | Monochrome + one accent, Inter/Geist, hairline borders |\n| `ui-craft-editorial` | \"editorial\", \"magazine\", \"Medium-like\", \"Substack-like\", \"long-form\" | CRAFT=9 / MOTION=4 / DENSITY=3 | Serif display +"
+    },
+    {
+     "source_id": "src_github-com-nutlope-hallmark",
+     "kind": "primary",
+     "root": "src_github-com-nutlope-hallmark",
+     "url": "https://github.com/nutlope/hallmark",
+     "quote": "<td><b>Tally</b><br/><sub>SaaS · modern-minimal</sub></td>\n <td><b>Wayfare</b><br/><sub>Travel · atmospheric</sub></td>\n <td><b>NAJM</b><br/><sub>Fashion brand</sub></td>\n <td><b>Hyperlane</b><br/><sub>Dev infrastructure</sub></td>\n </tr>\n</table>\nEach page is self-contained HTML + CSS, stamped with its macrostructure in the CSS comment. Browse the full set at [usehallmark.com](https://www.usehallmark.com) or under [`site/_tests/`](site/_tests/).\n---\n## Custom <sup>NEW</sup>"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "bold",
+   "mentions_across_sources": 20,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_claude-com-blog-improving-frontend-design-through-skills",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://claude.com/blog/improving-frontend-design-through-skills",
+     "quote": "AI-generated admin dashboard with bold typography, cohesive dark theme, and purposeful motion, using the same prompt in addition to the frontend skill.\nImproving artifact quality in claude.ai with Skills\nDesign taste isn't the only limitation. Claude also faces architectural constraints"
+    },
+    {
+     "source_id": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "kind": "primary",
+     "root": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "url": "https://developers.openai.com/plugins/concepts/ui-guidelines",
+     "quote": "Use partner styling such as bold, italic, or highlights only within content areas, not for structural UI.\nLimit variation in font size as much as possible, preferring body and body-small sizes.\nDon’t use custom fonts, even in full screen modes."
+    },
+    {
+     "source_id": "src_nngroup-com-articles-ten-usability-heuristics",
+     "kind": "primary",
+     "root": "src_nngroup-com-articles-ten-usability-heuristics",
+     "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+     "quote": "Use traditional error-message visuals, like bold, red text.\nTell users what went wrong in language they will understand — avoid technical jargon.\nOffer users a solution, like a shortcut that can solve the error immediately.\nLearn more\nFull article: Error-Message"
+    },
+    {
+     "source_id": "src_novitckii-com-resources-claude-design-skills",
+     "kind": "derivative",
+     "root": "src_github-com-leonxlnx-taste-skill+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://novitckii.com/resources/claude-design-skills/",
+     "quote": "Forces Claude to commit to one bold aesthetic direction and answer purpose/tone/constraints before any CSS — and bans the default fonts.\nnpx skills add anthropics/skills --skill frontend-design\nView repo ↗\n02impeccableby Paul Bakaus\n23 one-word commands (polish, critique, animate) that"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "subtle",
+   "mentions_across_sources": 3,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "By default, screens should be shown inside a subtle premium iPhone or similar phone mockup with a visible frame, while the main focus stays on the app content itself. This skill generates images only. It does not write code.\nleonxlnxGet"
+    },
+    {
+     "source_id": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
+     "kind": "primary",
+     "root": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html",
+     "quote": "There is also a subtle focus\n around the whole slider component, but it does not need to be assessed to pass this success criterion.\nFocus indicator around only the subcomponent\nFigure 22. The same tabs as in the prior set,"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "playful",
+   "mentions_across_sources": 8,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "WHO and WHY? Audience, positioning (corporate vs creative vs technical vs luxury vs playful), and the single primary action or outcome.\nCommit to words. Lock 3 to 5 brand adjectives and a 3-word aesthetic essence before any visual exploration. This"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "For playful and brutalist aesthetics (Clay / Gumroad / Duolingo / Arc-playful, Nothing-phone / Swiss-print / brutalist), see `examples/presets/playful.md` and `examples/presets/brutalist.md`. The main `ui-craft` skill applies these preset knob values + style overrides on top of the base rules when"
+    },
+    {
+     "source_id": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+     "kind": "derivative",
+     "root": "src_github-com-google-labs-code-design-md+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://www.theadpharm.com/insights/claude-design-without-the-ai-slop-look",
+     "quote": "Playful Color\nFigma, Duolingo, Mailchimp, Cal.com\nConsumer, education\nGlass / Soft-Futurism\nApple, Arc, Airbnb, Spotify\nPremium consumer\nNeon Brutalist\nThe Verge, Pitchfork, PlayStation\nStatement marketing pages\nCult / Indie\nA24, Criterion, Letterboxd, Obsidian\nAnything that needs to feel like it"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "professional",
+   "mentions_across_sources": 3,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_motion-dev-docs-react-accessibility",
+     "kind": "primary",
+     "root": "src_motion-dev-docs-react-accessibility",
+     "url": "https://motion.dev/docs/react-accessibility",
+     "quote": "The professional animation toolkit.One payment / Lifetime updatesGet Motion+Get Motion+Advertise here\nAnimations can have serious usability implications, even inducing motion sickness in some people.\nAll modern operating systems provide a setting called \"Reduced Motion\", where people can indicate they prefer"
+    },
+    {
+     "source_id": "src_w3-org-tr-wcag22",
+     "kind": "primary",
+     "root": "src_w3-org-tr-wcag22",
+     "url": "https://www.w3.org/TR/WCAG22/",
+     "quote": "Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.\nGuideline 2.3 Seizures and Physical Reactions\nUnderstanding Seizures and Physical Reactions | \nHow to Meet Seizures and Physical Reactions"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "cohesive",
+   "mentions_across_sources": 8,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "Use distinctive fonts, a cohesive committed palette, and motion only where it serves the interaction.\nCraft-layer NEVERs: do not ship components with only a resting state; do not use placeholder text as the label; do not color buttons by meaning"
+    },
+    {
+     "source_id": "src_claude-com-blog-improving-frontend-design-through-skills",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://claude.com/blog/improving-frontend-design-through-skills",
+     "quote": "What about cohesive aesthetics across the entire interface? \nThemes\nAnother dimension we can prompt for is designs inspired by well-known themes and aesthetics. Claude has a rich understanding of popular themes; we can use this to communicate the specific aesthetics"
+    },
+    {
+     "source_id": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+     "kind": "derivative",
+     "root": "src_github-com-google-labs-code-design-md+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://www.theadpharm.com/insights/claude-design-without-the-ai-slop-look",
+     "quote": "Color & Theme: Commit to a cohesive aesthetic. Use CSS variables for\nconsistency. Dominant colors with sharp accents outperform timid,\nevenly-distributed palettes. Draw from IDE themes and cultural aesthetics\nfor inspiration.\nMotion: Use animations for effects and micro-interactions. Prioritize\nCSS-only"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "consistent",
+   "mentions_across_sources": 75,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "Tokens make a UI consistent; the craft layer makes it good. This is the \"design an application\" half of the skill and the half most AI output skips. Apply each of the following to the artifact, pulling the matching reference"
+    },
+    {
+     "source_id": "src_claude-com-blog-improving-frontend-design-through-skills",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://claude.com/blog/improving-frontend-design-through-skills",
+     "quote": "The skill becomes organizational knowledge that persists and scales, ensuring consistent quality across projects.\nThis pattern extends beyond frontend work. Any domain where Claude produces generic outputs despite having more expansive understanding is a candidate for Skill development. The method"
+    },
+    {
+     "source_id": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "kind": "primary",
+     "root": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "url": "https://developers.openai.com/plugins/concepts/ui-guidelines",
+     "quote": "Use consistent visual hierarchy across cards.\nfullscreen\nImmersive experiences that expand beyond the inline card, giving users space for multi-step workflows or deeper exploration. The ChatGPT composer remains overlaid, allowing users to continue “talking to the app” through natural conversation"
+    },
+    {
+     "source_id": "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow",
+     "kind": "derivative",
+     "root": "src_github-com-oneredoak-claude-code-workflows",
+     "url": "https://dynamicworkflow.run/workflows/oneredoak-claude-code-workflows-design-review",
+     "quote": "The approach is designed to make design review less manual and subjective by giving teams a consistent way to assess frontend changes against documented standards.\nResources\nThe directory includes a Design Principles Example, Design Review Agent, Claude.md Snippet, and Slash"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "hierarchy",
+   "mentions_across_sources": 62,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "The mechanisms behind every choice live in references/design-theory.md (hierarchy, Gestalt, CRAP, signal-vs-noise, affordances, the interaction laws); read it once so the rest is reasoning rather than rule-following.\nAsking questions (CRITICAL)\nALWAYS use the AskUserQuestion tool for ANY question to the"
+    },
+    {
+     "source_id": "src_claude-com-blog-improving-frontend-design-through-skills",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://claude.com/blog/improving-frontend-design-through-skills",
+     "quote": "AI-generated admin dashboard with standard UI components with minimal visual hierarchy. No skills were used.\n‍\nAI-generated admin dashboard with bold typography, cohesive dark theme, and purposeful motion, using the same prompt in addition to the frontend skill.\nImproving artifact"
+    },
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "- **No information hierarchy.** Every section the same weight, nothing leading the eye.\n Decide what the user should see first and make the layout say so.\nFixing color and font on an incoherent layout still leaves a site that reads"
+    },
+    {
+     "source_id": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "kind": "primary",
+     "root": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+     "url": "https://developers.openai.com/plugins/concepts/ui-guidelines",
+     "quote": "Use consistent visual hierarchy across cards.\nfullscreen\nImmersive experiences that expand beyond the inline card, giving users space for multi-step workflows or deeper exploration. The ChatGPT composer remains overlaid, allowing users to continue “talking to the app” through natural conversation"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "rhythm",
+   "mentions_across_sources": 21,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+     "kind": "derivative",
+     "root": "src_samber-frontend-design-deslop",
+     "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop",
+     "quote": "Spacing rhythm: vary spacing by relationship (tight within a group, generous between sections). One uniform value everywhere is a tell.\nDensity fits the artifact. Dashboards and pro tools tolerate high density; marketing and portfolio pages want air.\nMatch implementation complexity"
+    },
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "identical slate gray cards, that specific blue accent, and the same padding rhythm. You\ncan spot it from a screenshot.\" (r/ClaudeAI). Also: \"It is because everyone use shadcn/ui.\"\n**Why it reads as AI:** shadcn/ui and Tailwind are excellent, but their"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "Hierarchy / type system / surface stack / spacing rhythm / iconography / states / motion / microcopy / pixel honesty / data formatting |\n| Principles catalog | 42 example principles across 8 product categories, seed material for the"
+    },
+    {
+     "source_id": "src_github-com-pbakaus-impeccable",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/pbakaus/impeccable",
+     "quote": "| `/impeccable layout` | Fix layout, spacing, visual rhythm |\n| `/impeccable delight` | Add moments of joy |\n| `/impeccable overdrive` | Add technically extraordinary effects |\n| `/impeccable clarify` | Improve unclear UX copy |\n| `/impeccable adapt`"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "dense",
+   "mentions_across_sources": 13,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "brutalist, utilitarian-dense, warm-consumer, technical-mono, and so on), not \"modern\n and clean,\" which means nothing.\n- **A color decision.** A real brand color or a deliberately chosen one, stated. Not the\n framework default, and not the cream/sage default either.\n- **A"
+    },
+    {
+     "source_id": "src_github-com-anthropics-skills-tree-main-skills-frontend-desig",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+     "quote": "a broadsheet-style layout with hairline rules, zero border-radius, and dense newspaper-like columns;\n4. the SaaS-card kit: content chopped into identical rounded cards, one border-radius on everything regardless of hierarchy, the same soft grey shadow (rgba(0,0,0,.1)) under each, and gradient washes"
+    },
+    {
+     "source_id": "src_github-com-educlopez-ui-craft",
+     "kind": "primary",
+     "root": "src_github-com-educlopez-ui-craft",
+     "url": "https://github.com/educlopez/ui-craft",
+     "quote": "| **VISUAL_DENSITY** (default 5) | whitespace-heavy editorial | dashboard-dense |\nAt `MOTION_INTENSITY 8+` the skill loads [`references/stack.md`](skills/ui-craft/references/stack.md) only if the user opts into Motion / GSAP / Three.js during Discovery.\n## Style variants\nThree opt-in sibling skills that pre-commit to"
+    },
+    {
+     "source_id": "src_github-com-leonxlnx-taste-skill",
+     "kind": "primary",
+     "root": "src_github-com-leonxlnx-taste-skill",
+     "url": "https://github.com/Leonxlnx/taste-skill",
+     "quote": "- **VISUAL_DENSITY**: Information per viewport (lower: spacious · higher: dense dashboards).\n## Examples\nCreated with taste-skill:\n<p>\n <img src=\"examples/floria-top.webp\" width=\"400\" />\n <img src=\"examples/floria-bottom.webp\" width=\"400\" />\n</p>\n## Support the project\nIf Taste Skill helps you, consider sponsoring:\n[Sponsor on GitHub](https://github.com/sponsors/Leonxlnx)"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "compact",
+   "mentions_across_sources": 5,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_claude-com-blog-improving-frontend-design-through-skills",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://claude.com/blog/improving-frontend-design-through-skills",
+     "quote": "Bringing this all together, we developed a ~400 token prompt – compact enough to load without bloating context (even when loaded as a skill) – that dramatically improves frontend output across typography, color, motion, and backgrounds:\n<frontend_aesthetics>\nYou tend to"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "single source of definition; agreement cannot be assessed",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  },
+  {
+   "verb": "warm",
+   "mentions_across_sources": 14,
+   "required": false,
+   "definitions": [
+    {
+     "source_id": "src_claudecodehq-com-playbooks-unslop-ui",
+     "kind": "derivative",
+     "root": "src_jcarterjohnson-vibecoded-design-tells",
+     "url": "https://www.claudecodehq.com/playbooks/unslop-ui",
+     "quote": "The 2026 tell is a warm\ncream background with a serif display font (Instrument Serif, Fraunces) and a sage or\nforest green accent, which is the current Claude/Anthropic house style. Swapping the\nfirst for the second is not unslopping. It"
+    },
+    {
+     "source_id": "src_github-com-anthropics-skills-tree-main-skills-frontend-desig",
+     "kind": "primary",
+     "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+     "quote": "a warm cream background (near #F4F1EA) with a high-contrast serif display and a terracotta or warm-clay accent (often near #D97757 — Anthropic's own Claude-interaction accent, so on a user's brief it reads as a tell);\n2. a near-black background with"
+    },
+    {
+     "source_id": "src_github-com-google-labs-code-design-md",
+     "kind": "primary",
+     "root": "src_github-com-google-labs-code-design-md",
+     "url": "https://github.com/google-labs-code/design.md",
+     "quote": "- **Neutral (#F7F5F2):** Warm limestone foundation, softer than pure white.\n```\nAn agent that reads this file will produce a UI with deep ink headlines in Public Sans, a warm limestone background, and Boston Clay call-to-action buttons.\n## Getting Started"
+    },
+    {
+     "source_id": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+     "kind": "derivative",
+     "root": "src_github-com-google-labs-code-design-md+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+     "url": "https://www.theadpharm.com/insights/claude-design-without-the-ai-slop-look",
+     "quote": "Warm Editorial\nAnthropic, Notion, Resend, Substack\nProsumer, knowledge tools\nData-Dense Pro\nClickHouse, PostHog, Grafana, Sentry\nAnalytics, dashboards\nCinematic Dark\nRunway, ElevenLabs, Midjourney\nAI products, creator tools\nPlayful Color\nFigma, Duolingo, Mailchimp, Cal.com\nConsumer, education\nGlass / Soft-Futurism\nApple, Arc, Airbnb,"
+    }
+   ],
+   "shared_deltas": [],
+   "tool_candidates": [],
+   "linked_claim_ids": [],
+   "linked_tiers": {},
+   "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
+   "resolution": "undefined",
+   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+  }
+ ]
+}
