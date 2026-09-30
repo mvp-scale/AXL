@@ -1,0 +1,797 @@
+{
+ "edges": [
+  {
+   "from": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+   "to": "src_samber-frontend-design-deslop"
+  },
+  {
+   "from": "src_claude-com-blog-improving-frontend-design-through-skills",
+   "to": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "from": "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow",
+   "to": "src_github-com-oneredoak-claude-code-workflows"
+  },
+  {
+   "from": "src_github-com-anthropics-skills-tree-main-skills-frontend-desig",
+   "to": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "from": "src_github-com-pbakaus-impeccable",
+   "to": "src_github-com-anthropics-skills-tree-main-skills-frontend-desig"
+  },
+  {
+   "from": "src_impeccable-adapt",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-animate",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-audit",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-bolder",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-clarify",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-colorize",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-critique",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-delight",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-distill",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-extract",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-harden",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-layout",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-onboard",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-optimize",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-polish",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-quieter",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-shape",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_impeccable-typeset",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_novitckii-com-resources-claude-design-skills",
+   "to": "src_github-com-anthropics-skills-tree-main-skills-frontend-desig"
+  },
+  {
+   "from": "src_novitckii-com-resources-claude-design-skills",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_novitckii-com-resources-claude-design-skills",
+   "to": "src_github-com-leonxlnx-taste-skill"
+  },
+  {
+   "from": "src_chaseai-io-blog-impeccable-4-claude-code-design-skill",
+   "to": "src_github-com-pbakaus-impeccable"
+  },
+  {
+   "from": "src_claudecodehq-com-playbooks-unslop-ui",
+   "to": "src_jcarterjohnson-vibecoded-design-tells"
+  },
+  {
+   "from": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+   "to": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "from": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+   "to": "src_github-com-google-labs-code-design-md"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "src_acdigest-substack-com-p-designmd-the-complete-guide",
+   "kind": "derivative",
+   "publisher": "acdigest.substack.com",
+   "root": "src_acdigest-substack-com-p-designmd-the-complete-guide"
+  },
+  {
+   "id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+   "kind": "derivative",
+   "publisher": "aiagentskills.net (samber skill listing)",
+   "root": "src_samber-frontend-design-deslop"
+  },
+  {
+   "id": "src_aiautomators-io-blog-shadcnlint-an-agent-first-linter-for-ta",
+   "kind": "derivative",
+   "publisher": "aiautomators.io",
+   "root": "src_aiautomators-io-blog-shadcnlint-an-agent-first-linter-for-ta"
+  },
+  {
+   "id": "src_betterstack-com-community-guides-ai-design-md-ai",
+   "kind": "derivative",
+   "publisher": "betterstack.com",
+   "root": "src_betterstack-com-community-guides-ai-design-md-ai"
+  },
+  {
+   "id": "src_blog-logrocket-com-headless-ui-alternatives",
+   "kind": "derivative",
+   "publisher": "blog.logrocket.com",
+   "root": "src_blog-logrocket-com-headless-ui-alternatives"
+  },
+  {
+   "id": "src_claude-com-blog-improving-frontend-design-through-skills",
+   "kind": "primary",
+   "publisher": "Anthropic",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_dequeuniversity-com-rules-axe-4-8-target-size",
+   "kind": "primary",
+   "publisher": "Deque",
+   "root": "src_dequeuniversity-com-rules-axe-4-8-target-size"
+  },
+  {
+   "id": "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc",
+   "kind": "derivative",
+   "publisher": "dev.to",
+   "root": "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc"
+  },
+  {
+   "id": "src_dev-to-uianimation-duolingo-style-animation-in-mobile-apps-h",
+   "kind": "derivative",
+   "publisher": "dev.to",
+   "root": "src_dev-to-uianimation-duolingo-style-animation-in-mobile-apps-h"
+  },
+  {
+   "id": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+   "kind": "primary",
+   "publisher": "MDN",
+   "root": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc"
+  },
+  {
+   "id": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+   "kind": "primary",
+   "publisher": "OpenAI",
+   "root": "src_developers-openai-com-plugins-concepts-ui-guidelines"
+  },
+  {
+   "id": "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow",
+   "kind": "derivative",
+   "publisher": "dynamicworkflow.run (OneRedOak workflow listing)",
+   "root": "src_github-com-oneredoak-claude-code-workflows"
+  },
+  {
+   "id": "src_evilmartians-com-chronicles-ai-makes-design-system-guardrail",
+   "kind": "primary",
+   "publisher": "evilmartians.com",
+   "root": "src_evilmartians-com-chronicles-ai-makes-design-system-guardrail"
+  },
+  {
+   "id": "src_github-com-googlechrome-lighthouse",
+   "kind": "primary",
+   "publisher": "Google Chrome",
+   "root": "src_github-com-googlechrome-lighthouse"
+  },
+  {
+   "id": "src_github-com-leonxlnx-taste-skill",
+   "kind": "primary",
+   "publisher": "Leonxlnx",
+   "root": "src_github-com-leonxlnx-taste-skill"
+  },
+  {
+   "id": "src_github-com-leonxlnx-taste-skill-blob-main-skills-taste-skill",
+   "kind": "derivative",
+   "publisher": "github.com",
+   "root": "src_github-com-leonxlnx-taste-skill-blob-main-skills-taste-skill"
+  },
+  {
+   "id": "src_github-com-myndex-sapc-apca",
+   "kind": "primary",
+   "publisher": "Myndex",
+   "root": "src_github-com-myndex-sapc-apca"
+  },
+  {
+   "id": "src_github-com-oneredoak-claude-code-workflows",
+   "kind": "primary",
+   "publisher": "OneRedOak",
+   "root": "src_github-com-oneredoak-claude-code-workflows"
+  },
+  {
+   "id": "src_github-com-anthropics-skills-blob-main-skills-frontend-desig",
+   "kind": "derivative",
+   "publisher": "github.com",
+   "root": "src_github-com-anthropics-skills-blob-main-skills-frontend-desig"
+  },
+  {
+   "id": "src_github-com-anthropics-skills-tree-main-skills-frontend-desig",
+   "kind": "primary",
+   "publisher": "Anthropic",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_github-com-dequelabs-axe-core",
+   "kind": "primary",
+   "publisher": "Deque",
+   "root": "src_github-com-dequelabs-axe-core"
+  },
+  {
+   "id": "src_github-com-educlopez-ui-craft",
+   "kind": "primary",
+   "publisher": "educlopez",
+   "root": "src_github-com-educlopez-ui-craft"
+  },
+  {
+   "id": "src_github-com-egerrity-okchroma",
+   "kind": "derivative",
+   "publisher": "github.com",
+   "root": "src_github-com-egerrity-okchroma"
+  },
+  {
+   "id": "src_github-com-google-labs-code-design-md",
+   "kind": "primary",
+   "publisher": "Google Labs",
+   "root": "src_github-com-google-labs-code-design-md"
+  },
+  {
+   "id": "src_github-com-graemegeorge-oklch-palette",
+   "kind": "derivative",
+   "publisher": "github.com",
+   "root": "src_github-com-graemegeorge-oklch-palette"
+  },
+  {
+   "id": "src_github-com-nutlope-hallmark",
+   "kind": "primary",
+   "publisher": "Nutlope / Together AI",
+   "root": "src_github-com-nutlope-hallmark"
+  },
+  {
+   "id": "src_github-com-pbakaus-impeccable",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-adapt",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-animate",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-audit",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-bolder",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-clarify",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-colorize",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-critique",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-delight",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-distill",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-extract",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-harden",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-layout",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-onboard",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-optimize",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-polish",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-quieter",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-shape",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_impeccable-typeset",
+   "kind": "primary",
+   "publisher": "pbakaus/impeccable",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_github-com-schoero-eslint-plugin-better-tailwindcss",
+   "kind": "primary",
+   "publisher": "schoero",
+   "root": "src_github-com-schoero-eslint-plugin-better-tailwindcss"
+  },
+  {
+   "id": "src_github-com-schoero-eslint-plugin-better-tailwindcss-blob-mai",
+   "kind": "primary",
+   "publisher": "schoero",
+   "root": "src_github-com-schoero-eslint-plugin-better-tailwindcss-blob-mai"
+  },
+  {
+   "id": "src_github-com-shadcn-ui-ui-discussions-10269",
+   "kind": "derivative",
+   "publisher": "github.com",
+   "root": "src_github-com-shadcn-ui-ui-discussions-10269"
+  },
+  {
+   "id": "src_github-com-yuchangxu1989-openclaw-claw-design",
+   "kind": "primary",
+   "publisher": "yuchangxu1989-Openclaw",
+   "root": "src_github-com-yuchangxu1989-openclaw-claw-design"
+  },
+  {
+   "id": "src_motion-dev-docs-react-accessibility",
+   "kind": "primary",
+   "publisher": "Motion",
+   "root": "src_motion-dev-docs-react-accessibility"
+  },
+  {
+   "id": "src_motion-dev-docs-react-animate-view",
+   "kind": "derivative",
+   "publisher": "motion.dev",
+   "root": "src_motion-dev-docs-react-animate-view"
+  },
+  {
+   "id": "src_news-ycombinator-com-item-id-49058547",
+   "kind": "derivative",
+   "publisher": "news.ycombinator.com",
+   "root": "src_news-ycombinator-com-item-id-49058547"
+  },
+  {
+   "id": "src_novitckii-com-resources-claude-design-skills",
+   "kind": "derivative",
+   "publisher": "novitckii.com",
+   "root": "src_github-com-leonxlnx-taste-skill+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_paddo-dev-blog-tailwind-joins-shopify",
+   "kind": "derivative",
+   "publisher": "paddo.dev",
+   "root": "src_paddo-dev-blog-tailwind-joins-shopify"
+  },
+  {
+   "id": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+   "kind": "primary",
+   "publisher": "Anthropic",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_playwright-dev-docs-accessibility-testing",
+   "kind": "primary",
+   "publisher": "Microsoft Playwright",
+   "root": "src_playwright-dev-docs-accessibility-testing"
+  },
+  {
+   "id": "src_playwright-dev-docs-test-snapshots",
+   "kind": "primary",
+   "publisher": "Microsoft Playwright",
+   "root": "src_playwright-dev-docs-test-snapshots"
+  },
+  {
+   "id": "src_qaskills-sh-blog-claude-code-screenshot-frontend-verificatio",
+   "kind": "derivative",
+   "publisher": "qaskills.sh",
+   "root": "src_qaskills-sh-blog-claude-code-screenshot-frontend-verificatio"
+  },
+  {
+   "id": "src_react-dev-reference-react-viewtransition",
+   "kind": "derivative",
+   "publisher": "react.dev",
+   "root": "src_react-dev-reference-react-viewtransition"
+  },
+  {
+   "id": "src_stylelint-io-user-guide-get-started",
+   "kind": "primary",
+   "publisher": "Stylelint",
+   "root": "src_stylelint-io-user-guide-get-started"
+  },
+  {
+   "id": "src_tailwindcss-com-docs-theme",
+   "kind": "primary",
+   "publisher": "tailwindcss.com",
+   "root": "src_tailwindcss-com-docs-theme"
+  },
+  {
+   "id": "src_themotiondesign-com-writing-motion-for-react-view-transition",
+   "kind": "derivative",
+   "publisher": "themotiondesign.com",
+   "root": "src_themotiondesign-com-writing-motion-for-react-view-transition"
+  },
+  {
+   "id": "src_tianpan-co-blog-2026-07-02-your-design-system-needs-to-be-a",
+   "kind": "primary",
+   "publisher": "tianpan.co",
+   "root": "src_tianpan-co-blog-2026-07-02-your-design-system-needs-to-be-a"
+  },
+  {
+   "id": "src_tomodahinata-com-en-blog-tailwind-css-v4-css-first-design-to",
+   "kind": "derivative",
+   "publisher": "tomodahinata.com",
+   "root": "src_tomodahinata-com-en-blog-tailwind-css-v4-css-first-design-to"
+  },
+  {
+   "id": "src_ui-shadcn-com-docs-changelog-2025-12-shadcn-create",
+   "kind": "derivative",
+   "publisher": "ui.shadcn.com",
+   "root": "src_ui-shadcn-com-docs-changelog-2025-12-shadcn-create"
+  },
+  {
+   "id": "src_ui-shadcn-com-docs-changelog-2026-03-cli-v4",
+   "kind": "derivative",
+   "publisher": "ui.shadcn.com",
+   "root": "src_ui-shadcn-com-docs-changelog-2026-03-cli-v4"
+  },
+  {
+   "id": "src_ui-shadcn-com-docs-changelog-2026-04-preset-commands",
+   "kind": "derivative",
+   "publisher": "ui.shadcn.com",
+   "root": "src_ui-shadcn-com-docs-changelog-2026-04-preset-commands"
+  },
+  {
+   "id": "src_ui-shadcn-com-docs-registry",
+   "kind": "derivative",
+   "publisher": "ui.shadcn.com",
+   "root": "src_ui-shadcn-com-docs-registry"
+  },
+  {
+   "id": "src_ui-shadcn-com-docs-skills",
+   "kind": "primary",
+   "publisher": "shadcn/ui",
+   "root": "src_ui-shadcn-com-docs-skills"
+  },
+  {
+   "id": "src_buildmvpfast-com-blog-design-md-file-ai-coding-agents-brand",
+   "kind": "derivative",
+   "publisher": "buildmvpfast.com",
+   "root": "src_buildmvpfast-com-blog-design-md-file-ai-coding-agents-brand"
+  },
+  {
+   "id": "src_chaseai-io-blog-impeccable-4-claude-code-design-skill",
+   "kind": "derivative",
+   "publisher": "chaseai.io",
+   "root": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_claudecodehq-com-playbooks-unslop-ui",
+   "kind": "derivative",
+   "publisher": "claudecodehq.com",
+   "root": "src_jcarterjohnson-vibecoded-design-tells"
+  },
+  {
+   "id": "src_maviklabs-com-blog-design-tokens-tailwind-v4-2026",
+   "kind": "derivative",
+   "publisher": "maviklabs.com",
+   "root": "src_maviklabs-com-blog-design-tokens-tailwind-v4-2026"
+  },
+  {
+   "id": "src_nngroup-com-articles-ten-usability-heuristics",
+   "kind": "primary",
+   "publisher": "Nielsen Norman Group",
+   "root": "src_nngroup-com-articles-ten-usability-heuristics"
+  },
+  {
+   "id": "src_pkgpulse-com-guides-shadcn-ui-vs-base-ui-vs-radix-components",
+   "kind": "derivative",
+   "publisher": "pkgpulse.com",
+   "root": "src_pkgpulse-com-guides-shadcn-ui-vs-base-ui-vs-radix-components"
+  },
+  {
+   "id": "src_radix-ui-com-colors-docs-overview-custom-palettes",
+   "kind": "derivative",
+   "publisher": "radix-ui.com",
+   "root": "src_radix-ui-com-colors-docs-overview-custom-palettes"
+  },
+  {
+   "id": "src_radix-ui-com-colors-docs-palette-composition-understanding-t",
+   "kind": "derivative",
+   "publisher": "radix-ui.com",
+   "root": "src_radix-ui-com-colors-docs-palette-composition-understanding-t"
+  },
+  {
+   "id": "src_shadcnblocks-com-blog-shadcn-component-styles-vega-nova-maia",
+   "kind": "derivative",
+   "publisher": "shadcnblocks.com",
+   "root": "src_shadcnblocks-com-blog-shadcn-component-styles-vega-nova-maia"
+  },
+  {
+   "id": "src_shadcndeck-com-blog-radix-vs-base-ui",
+   "kind": "derivative",
+   "publisher": "shadcndeck.com",
+   "root": "src_shadcndeck-com-blog-radix-vs-base-ui"
+  },
+  {
+   "id": "src_tailwind-variants-org-docs-comparison",
+   "kind": "derivative",
+   "publisher": "tailwind-variants.org",
+   "root": "src_tailwind-variants-org-docs-comparison"
+  },
+  {
+   "id": "src_tailwind-variants-org-docs-typescript",
+   "kind": "derivative",
+   "publisher": "tailwind-variants.org",
+   "root": "src_tailwind-variants-org-docs-typescript"
+  },
+  {
+   "id": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+   "kind": "derivative",
+   "publisher": "Adpharm",
+   "root": "src_github-com-google-labs-code-design-md+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  },
+  {
+   "id": "src_tipranks-com-news-press-releases-duolingo-doubles-down-on-de",
+   "kind": "derivative",
+   "publisher": "tipranks.com",
+   "root": "src_tipranks-com-news-press-releases-duolingo-doubles-down-on-de"
+  },
+  {
+   "id": "src_untitledui-com-blog-tailwind-plus-alternatives",
+   "kind": "derivative",
+   "publisher": "untitledui.com",
+   "root": "src_untitledui-com-blog-tailwind-plus-alternatives"
+  },
+  {
+   "id": "src_w3-org-tr-wcag22",
+   "kind": "primary",
+   "publisher": "W3C",
+   "root": "src_w3-org-tr-wcag22"
+  },
+  {
+   "id": "src_w3-org-wai-wcag22-understanding-contrast-minimum-html",
+   "kind": "primary",
+   "publisher": "W3C",
+   "root": "src_w3-org-wai-wcag22-understanding-contrast-minimum-html"
+  },
+  {
+   "id": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
+   "kind": "primary",
+   "publisher": "W3C",
+   "root": "src_w3-org-wai-wcag22-understanding-focus-appearance-html"
+  },
+  {
+   "id": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html",
+   "kind": "primary",
+   "publisher": "W3C",
+   "root": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
+  },
+  {
+   "id": "src_samber-frontend-design-deslop",
+   "kind": "primary",
+   "publisher": "samber",
+   "root": "src_samber-frontend-design-deslop"
+  },
+  {
+   "id": "src_jcarterjohnson-vibecoded-design-tells",
+   "kind": "primary",
+   "publisher": "JCarterJohnson",
+   "root": "src_jcarterjohnson-vibecoded-design-tells"
+  }
+ ],
+ "rebrand_clusters": {
+  "src_github-com-oneredoak-claude-code-workflows": [
+   "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow",
+   "src_github-com-oneredoak-claude-code-workflows"
+  ],
+  "src_jcarterjohnson-vibecoded-design-tells": [
+   "src_claudecodehq-com-playbooks-unslop-ui",
+   "src_jcarterjohnson-vibecoded-design-tells"
+  ],
+  "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a": [
+   "src_chaseai-io-blog-impeccable-4-claude-code-design-skill",
+   "src_claude-com-blog-improving-frontend-design-through-skills",
+   "src_github-com-anthropics-skills-tree-main-skills-frontend-desig",
+   "src_github-com-pbakaus-impeccable",
+   "src_impeccable-adapt",
+   "src_impeccable-animate",
+   "src_impeccable-audit",
+   "src_impeccable-bolder",
+   "src_impeccable-clarify",
+   "src_impeccable-colorize",
+   "src_impeccable-critique",
+   "src_impeccable-delight",
+   "src_impeccable-distill",
+   "src_impeccable-extract",
+   "src_impeccable-harden",
+   "src_impeccable-layout",
+   "src_impeccable-onboard",
+   "src_impeccable-optimize",
+   "src_impeccable-polish",
+   "src_impeccable-quieter",
+   "src_impeccable-shape",
+   "src_impeccable-typeset",
+   "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+  ],
+  "src_samber-frontend-design-deslop": [
+   "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+   "src_samber-frontend-design-deslop"
+  ]
+ },
+ "roots": {
+  "src_acdigest-substack-com-p-designmd-the-complete-guide": "src_acdigest-substack-com-p-designmd-the-complete-guide",
+  "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des": "src_samber-frontend-design-deslop",
+  "src_aiautomators-io-blog-shadcnlint-an-agent-first-linter-for-ta": "src_aiautomators-io-blog-shadcnlint-an-agent-first-linter-for-ta",
+  "src_betterstack-com-community-guides-ai-design-md-ai": "src_betterstack-com-community-guides-ai-design-md-ai",
+  "src_blog-logrocket-com-headless-ui-alternatives": "src_blog-logrocket-com-headless-ui-alternatives",
+  "src_buildmvpfast-com-blog-design-md-file-ai-coding-agents-brand": "src_buildmvpfast-com-blog-design-md-file-ai-coding-agents-brand",
+  "src_chaseai-io-blog-impeccable-4-claude-code-design-skill": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_claude-com-blog-improving-frontend-design-through-skills": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_claudecodehq-com-playbooks-unslop-ui": "src_jcarterjohnson-vibecoded-design-tells",
+  "src_dequeuniversity-com-rules-axe-4-8-target-size": "src_dequeuniversity-com-rules-axe-4-8-target-size",
+  "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc": "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc",
+  "src_dev-to-uianimation-duolingo-style-animation-in-mobile-apps-h": "src_dev-to-uianimation-duolingo-style-animation-in-mobile-apps-h",
+  "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+  "src_developers-openai-com-plugins-concepts-ui-guidelines": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+  "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow": "src_github-com-oneredoak-claude-code-workflows",
+  "src_evilmartians-com-chronicles-ai-makes-design-system-guardrail": "src_evilmartians-com-chronicles-ai-makes-design-system-guardrail",
+  "src_github-com-anthropics-skills-blob-main-skills-frontend-desig": "src_github-com-anthropics-skills-blob-main-skills-frontend-desig",
+  "src_github-com-anthropics-skills-tree-main-skills-frontend-desig": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_github-com-dequelabs-axe-core": "src_github-com-dequelabs-axe-core",
+  "src_github-com-educlopez-ui-craft": "src_github-com-educlopez-ui-craft",
+  "src_github-com-egerrity-okchroma": "src_github-com-egerrity-okchroma",
+  "src_github-com-google-labs-code-design-md": "src_github-com-google-labs-code-design-md",
+  "src_github-com-googlechrome-lighthouse": "src_github-com-googlechrome-lighthouse",
+  "src_github-com-graemegeorge-oklch-palette": "src_github-com-graemegeorge-oklch-palette",
+  "src_github-com-leonxlnx-taste-skill": "src_github-com-leonxlnx-taste-skill",
+  "src_github-com-leonxlnx-taste-skill-blob-main-skills-taste-skill": "src_github-com-leonxlnx-taste-skill-blob-main-skills-taste-skill",
+  "src_github-com-myndex-sapc-apca": "src_github-com-myndex-sapc-apca",
+  "src_github-com-nutlope-hallmark": "src_github-com-nutlope-hallmark",
+  "src_github-com-oneredoak-claude-code-workflows": "src_github-com-oneredoak-claude-code-workflows",
+  "src_github-com-pbakaus-impeccable": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_github-com-schoero-eslint-plugin-better-tailwindcss": "src_github-com-schoero-eslint-plugin-better-tailwindcss",
+  "src_github-com-schoero-eslint-plugin-better-tailwindcss-blob-mai": "src_github-com-schoero-eslint-plugin-better-tailwindcss-blob-mai",
+  "src_github-com-shadcn-ui-ui-discussions-10269": "src_github-com-shadcn-ui-ui-discussions-10269",
+  "src_github-com-yuchangxu1989-openclaw-claw-design": "src_github-com-yuchangxu1989-openclaw-claw-design",
+  "src_impeccable-adapt": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-animate": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-audit": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-bolder": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-clarify": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-colorize": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-critique": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-delight": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-distill": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-extract": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-harden": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-layout": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-onboard": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-optimize": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-polish": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-quieter": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-shape": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_impeccable-typeset": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_jcarterjohnson-vibecoded-design-tells": "src_jcarterjohnson-vibecoded-design-tells",
+  "src_maviklabs-com-blog-design-tokens-tailwind-v4-2026": "src_maviklabs-com-blog-design-tokens-tailwind-v4-2026",
+  "src_motion-dev-docs-react-accessibility": "src_motion-dev-docs-react-accessibility",
+  "src_motion-dev-docs-react-animate-view": "src_motion-dev-docs-react-animate-view",
+  "src_news-ycombinator-com-item-id-49058547": "src_news-ycombinator-com-item-id-49058547",
+  "src_nngroup-com-articles-ten-usability-heuristics": "src_nngroup-com-articles-ten-usability-heuristics",
+  "src_novitckii-com-resources-claude-design-skills": "src_github-com-leonxlnx-taste-skill+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_paddo-dev-blog-tailwind-joins-shopify": "src_paddo-dev-blog-tailwind-joins-shopify",
+  "src_pkgpulse-com-guides-shadcn-ui-vs-base-ui-vs-radix-components": "src_pkgpulse-com-guides-shadcn-ui-vs-base-ui-vs-radix-components",
+  "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_playwright-dev-docs-accessibility-testing": "src_playwright-dev-docs-accessibility-testing",
+  "src_playwright-dev-docs-test-snapshots": "src_playwright-dev-docs-test-snapshots",
+  "src_qaskills-sh-blog-claude-code-screenshot-frontend-verificatio": "src_qaskills-sh-blog-claude-code-screenshot-frontend-verificatio",
+  "src_radix-ui-com-colors-docs-overview-custom-palettes": "src_radix-ui-com-colors-docs-overview-custom-palettes",
+  "src_radix-ui-com-colors-docs-palette-composition-understanding-t": "src_radix-ui-com-colors-docs-palette-composition-understanding-t",
+  "src_react-dev-reference-react-viewtransition": "src_react-dev-reference-react-viewtransition",
+  "src_samber-frontend-design-deslop": "src_samber-frontend-design-deslop",
+  "src_shadcnblocks-com-blog-shadcn-component-styles-vega-nova-maia": "src_shadcnblocks-com-blog-shadcn-component-styles-vega-nova-maia",
+  "src_shadcndeck-com-blog-radix-vs-base-ui": "src_shadcndeck-com-blog-radix-vs-base-ui",
+  "src_stylelint-io-user-guide-get-started": "src_stylelint-io-user-guide-get-started",
+  "src_tailwind-variants-org-docs-comparison": "src_tailwind-variants-org-docs-comparison",
+  "src_tailwind-variants-org-docs-typescript": "src_tailwind-variants-org-docs-typescript",
+  "src_tailwindcss-com-docs-theme": "src_tailwindcss-com-docs-theme",
+  "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo": "src_github-com-google-labs-code-design-md+src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+  "src_themotiondesign-com-writing-motion-for-react-view-transition": "src_themotiondesign-com-writing-motion-for-react-view-transition",
+  "src_tianpan-co-blog-2026-07-02-your-design-system-needs-to-be-a": "src_tianpan-co-blog-2026-07-02-your-design-system-needs-to-be-a",
+  "src_tipranks-com-news-press-releases-duolingo-doubles-down-on-de": "src_tipranks-com-news-press-releases-duolingo-doubles-down-on-de",
+  "src_tomodahinata-com-en-blog-tailwind-css-v4-css-first-design-to": "src_tomodahinata-com-en-blog-tailwind-css-v4-css-first-design-to",
+  "src_ui-shadcn-com-docs-changelog-2025-12-shadcn-create": "src_ui-shadcn-com-docs-changelog-2025-12-shadcn-create",
+  "src_ui-shadcn-com-docs-changelog-2026-03-cli-v4": "src_ui-shadcn-com-docs-changelog-2026-03-cli-v4",
+  "src_ui-shadcn-com-docs-changelog-2026-04-preset-commands": "src_ui-shadcn-com-docs-changelog-2026-04-preset-commands",
+  "src_ui-shadcn-com-docs-registry": "src_ui-shadcn-com-docs-registry",
+  "src_ui-shadcn-com-docs-skills": "src_ui-shadcn-com-docs-skills",
+  "src_untitledui-com-blog-tailwind-plus-alternatives": "src_untitledui-com-blog-tailwind-plus-alternatives",
+  "src_w3-org-tr-wcag22": "src_w3-org-tr-wcag22",
+  "src_w3-org-wai-wcag22-understanding-contrast-minimum-html": "src_w3-org-wai-wcag22-understanding-contrast-minimum-html",
+  "src_w3-org-wai-wcag22-understanding-focus-appearance-html": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
+  "src_w3-org-wai-wcag22-understanding-target-size-minimum-html": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
+ }
+}
