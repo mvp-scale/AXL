@@ -47,6 +47,9 @@ def render(rule):
     agree = lambda x: re.sub(r"^\{el\} (use|come|have|meet|include|show|keep)\b", lambda m: "{el} " + ({"have": "has"}.get(m.group(1), m.group(1) + "s") if one else m.group(1)), x)
     if prop in P: s = agree(P[prop]).format(el=who, t=t, v=val)
     elif prop.startswith("wcag:"): s = agree(P["wcag:pass"]).format(el=who, sc=prop[5:], what=WCAG.get(prop[5:], ""))
+    elif op == "!contains": s = f"{who} {_prop(prop)} is never {val}"
+    elif op == "contains": s = f"{who} {_prop(prop)} includes {val}"
+    elif op == "==": s = f"{who} {_prop(prop)} is {val}"
     else: s = P["css"].format(el=who, p=_prop(prop), t=t, v=val)
     if ctx: s += " — " + ", ".join(EL[c]["name"].lower() if c in EL else c for c in ctx)
     return s[0].upper() + s[1:]
