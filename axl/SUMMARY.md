@@ -1,40 +1,54 @@
-# AXL — pass 1 summary (Phases 0–4)
+# AXL — build summary (Phases 0–9)
 
-Branch: `claude/plan-phases-0-4-e54290` (the session forced this name instead of `axl-build`; logged in `DECISIONS.md`). One commit per phase, all pushed. `legacy/` and `best-practices/` are untouched (`git diff origin/main` on both is empty).
+Branch `claude/plan-phases-0-4-e54290` (forced by the session; `axl-build` was not used, see `DECISIONS.md` D1). Every phase was committed and pushed. `legacy/` and `best-practices/` are unchanged. **Nothing is deployed.**
 
 ## Gates
 | Phase | Result | Evidence |
 |---|---|---|
-| 0 Setup | PASS | tree exists; legacy/best-practices unchanged |
-| 1 Extract | PASS | 41 groups, 470 prescriptions, 3 truncated, 3 caveats (g4 items 8–10), 331 map to no legacy effect; re-run is byte-identical |
-| 2 Recon | PASS | 90 URLs registered, 52 fetched (all HTTP 200), 16 new primaries beyond legacy, 0 dead among fetched |
-| 3 Claims | PASS | 475 claims; 243 quotes verified verbatim against saved text; validator has 0 errors |
-| 4 Verbs | PASS | 34 verbs; every delta cites a measurable claim id; every definition quote is verbatim |
+| 0 Setup | PASS | tree exists; legacy/ and best-practices/ untouched |
+| 1 Extract | PASS | 41 groups, 470 prescriptions, deterministic |
+| 2 Recon | PASS | 90 sources registered, 52 fetched OK, 16 new primaries, lineage complete |
+| 3 Claims | PASS | 485 claims, 253 quotes verbatim-verified against saved text |
+| 4 Verbs | PASS | 34 verbs: 7 tool-backed, 27 undefined |
+| 5 Tools | PASS | 27/27 receipts reproduce (100%); 21 claims enforced, 16 fail before and pass after |
+| 6 Metrics | PASS | computed from `claims.json` (`reports/metrics.md`) |
+| 7 Site | PASS | 375 and 1440 px, light and dark: 0 console errors, 0 serious/critical axe, no external requests; 378/378 claims open the Sources drawer; export validates against the AXL schema |
+| 8 Skills | PASS | 4 skills, lint clean (no subjective claims), scripts exit 0 on the demo; auto-correct cut failing findings 42 to 11 |
+| 9 GCP | PASS (files only) | `cloudbuild.yaml`, `cloudbuild.nightly.yaml`, `firebase.json`, `DEPLOY.md` parse; not deployed |
 
-Nothing is BLOCKED (no `BLOCKED.md`). Phases 5–9 were not run, by instruction.
+Nothing is blocked (no `BLOCKED.md`).
 
-## Headline numbers (public claims only, 368)
-- Status: **0 verified**, 243 single-source, 125 unverified, 0 rejected.
-- Tier: 325 subjective, 32 process, 11 measurable, 0 enforced (no tool has been run yet).
-- 107 private-kit claims (g0–g11) are excluded (`reports/excluded.md`).
-- Verbs: 32 of 34 resolve to `undefined`; 2 (`typeset`, `audit`) resolve to `measurable` on one to three concrete claims each.
-- Rebrand clusters (roots with ≥ 2 sources): 5. The largest is 23 sources: Impeccable's own README says it "started from" Anthropic's frontend-design, and Anthropic's blog, cookbook and skill are treated as one root.
+## Headline (computed)
+- Of **332** audited public UI-guidance statements, **97.9%** have no measurable definition ("luck"), **2.1%** do, **1.8%** are enforced by a tool with a receipt.
+- **3** claims are double-sourced (two independent roots). 5 rebrand clusters; the largest has 23 sources.
+- **7 words are defined and automated:** polish, layout, typeset, adapt, animate, audit, extract. **27 words are honestly undefined** (bolder, quieter, delight, clarify, ...).
+- 107 private-kit claims excluded (`reports/excluded.md`).
 
-## What to review first
-1. **`verified` = 0 is a real result, not a bug.** Only Impeccable's per-command pages matched (243 claims), and they all share one root. Every other group is a paraphrase in the legacy page and its text was not found in the source. Two independent roots for one claim never occurred.
-2. Lineage calls in `data/sources.json` (`derives_from`, `lineage_note`): the Impeccable→Anthropic and blog/cookbook/skill decisions are conservative judgment calls (D5).
-3. Tier and `delta` extraction is regex over claim text (D8). It is deliberately conservative, so 11 measurable is a floor; a manual pass would raise it.
-4. Verb "disagreement" is an auto-flag (no shared 4-word phrase), not an analysis of the actual disagreements.
+## What was built beyond Phases 0–4
+- **Real tool runs on the Northstar demo** (axe-core 4.13, Lighthouse 13.5, Playwright 1.63, Stylelint 17, `@google/design.md` lint 0.4): the original page really fails (11 low-contrast nodes, no title, `outline:none`, a gradient, 61 spacing/target findings); axe and Lighthouse agree. Each run is a receipt with the exact command. better-tailwindcss and APCA were dropped (`reports/tools.md`).
+- **A closed loop:** `fix.js` checks, generates a CSS patch, re-checks. 61 findings to 0 in one round (56 rules).
+- **AXL definitions** (`data/definitions.json`, 7 verbs, 13 patterns): plain-language meaning, threshold, verbatim source quotes, command, receipts, and where sources disagree.
+- **Site** (`axl/site/`): launch view (pick a word, see original vs applied with tool findings), dictionary, evidence rail, lineage map, Sources drawer, AXL export. Open with `cd axl/site && python3 -m http.server`.
+- **Language** (`SPEC.md`, `spec/axl.schema.json`, two examples) and **skills** (`axl/skills/`).
 
-## Known gaps / caveats
-- Recon fetched 52 sources, above the "about 40" cap: 18 Impeccable pages and 16 new primaries were required by the plan. The other ~38 URLs from `SOURCES.md` are registered but not fetched (`reports/recon.md`).
-- The samber skill, OneRedOak, and Taste-Skill v1 `SKILL.md` were not fetched at the deep path (README only), so those groups are `unverified`; the samber and vibecoded-design-tells roots are placeholders.
-- Licences are detected from LICENSE files; non-GitHub pages and `anthropics/skills` are `unknown`. **The repo still needs a `LICENSE`; the owner must choose it.**
-- `receipts/sources/` is gitignored, so a fresh checkout must run `python3 axl/scripts/refetch_sources.py --init` before Phase 3/4 gates.
-- `pip install jsonschema` is required for `validate_claims.py`.
-- The Section 4 language spec (`spec/*.schema.json` beyond `claim.schema.json`, `SPEC.md`) is not part of Phases 0–4 and was not written.
+## Review first
+1. **The 13 AXL definitions are proposals.** Claim text and thresholds are written by AXL; each cites verbatim quotes, but the choice of 4px, 44px, 500ms and 14px as thresholds is ours where marked "AXL default". Two are double-sourced (44px targets, reduced motion) plus colour tokens.
+2. **Lineage judgment calls** (`sources.json`): Impeccable derives from Anthropic's frontend-design; Anthropic blog/cookbook/skill are one root; WCAG Understanding pages share the WCAG root. All conservative.
+3. **Regex tiering** (D8): 11 measurable + 21 enforced is a floor.
+4. **Copy on the site** is plain-language first; check it reads the way you want.
+
+## Known gaps
+- Open finding: the demo table overflows a 320px screen by 12px (receipt `craft-reflow-320-polished`, marked `discriminates: false`).
+- Checks cover the visible screen state at one width. `target-size` (24px) passes on the original too, so it does not discriminate.
+- The site's demo "original" pane is intentionally faulty, so it is excluded from the axe gate.
+- The site preview applies CSS only for patterns a receipt validated; others show the command instead.
+- Zero verified claims came from the legacy paraphrased groups (g30–extra40): their text is not in the fetched sources. Deeper fetches (Taste-Skill v1 `SKILL.md`, samber, OneRedOak files) were not done.
+- Recon fetched 52 sources (cap "about 40" exceeded to satisfy the plan's minimums).
+- **The repo still needs a `LICENSE`; the owner must choose it.** Source licences are auto-detected or `unknown`.
+- Not run: any deploy, a mobile tool runner, live in-browser tool execution (designed in `DEPLOY.md`).
 
 ## Run next
-1. `pip install jsonschema && python3 axl/scripts/refetch_sources.py --init` (restores saved texts).
-2. Phase 5: install and pin axe-core, Lighthouse, Playwright, Stylelint, better-tailwindcss; run them on the Northstar demo (`data/legacy_effects.json` → `appTemplate`) and write `receipts/runs/`. `tool_candidate` on 11 measurable claims says which tool to try.
-3. Phase 6 (metrics) can run right after; Phases 7–9 follow. Write `spec/` schemas and `SPEC.md` before Phase 8.
+1. Read the site: `cd axl/site && python3 -m http.server`, then review `reports/metrics.md` and `data/definitions.json`.
+2. Fresh checkout: `pip install jsonschema pyyaml && (cd axl/tools && npm ci) && bash axl/scripts/build_all.sh`.
+3. Deploy when ready: follow `axl/DEPLOY.md` (`GCP_PROJECT`, then `gcloud builds submit --config axl/cloudbuild.yaml --substitutions=_DEPLOY=1 .`).
+4. Next research pass: fetch the deeper legacy sources and re-run Phase 3; add definitions for `bolder`, `quieter`, `colorize`, `harden` only if a measurable source appears.

@@ -17,3 +17,5 @@
 - D15: `definitions_spec.py` holds the curated AXL definitions (6 verbs, 12 patterns). Claim text/threshold are AXL-written; each pattern must locate a verbatim quote in a saved source or the build fails. Patterns give 2 `verified` claims (target size 44px; reduced motion) where two independent roots support the same parameter.
 - D16: WCAG "Understanding" pages and the Deque rule page derive from the WCAG 2.2 Recommendation (one root). HSL saturation check for "quieter" (70-85%) was tried and dropped: it flags near-white tints, so `quieter` stays undefined.
 - D17: Known open finding: the Northstar table overflows a 320px viewport by 12px (receipt craft-reflow-320-polished). Claim is enforced (a tool ran) but `discriminates: false`.
+- D18: Hosting is Firebase Hosting (serves `axl/site/`); alternative Cloud Storage bucket + HTTPS load balancer + CDN not used (more parts). Nightly re-check is Cloud Scheduler -> Cloud Build trigger (`cloudbuild.nightly.yaml`).
+- D19: Nothing was deployed: `DEPLOY` and `GCP_PROJECT` were not set in the build session.

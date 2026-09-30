@@ -1,0 +1,55 @@
+# AXL build: install pinned tools, rebuild data, run the Phase 5-7 gates, publish the site (and receipts) to Firebase Hosting.
+# Run from the repository root:  gcloud builds submit --config axl/cloudbuild.yaml --substitutions=_DEPLOY=1
+# Nothing is deployed unless _DEPLOY=1 and the project is set (see axl/DEPLOY.md).
+substitutions:
+  _DEPLOY: "0"
+  _PLAYWRIGHT_IMAGE: mcr.microsoft.com/playwright:v1.63.0-noble
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: E2_HIGHCPU_8
+timeout: 1800s
+steps:
+  - id: install
+    name: ${_PLAYWRIGHT_IMAGE}
+    entrypoint: bash
+    args: ["-c", "cd axl/tools && npm ci && cd ../.. && pip install --quiet --break-system-packages jsonschema pyyaml"]
+  - id: sources
+    name: ${_PLAYWRIGHT_IMAGE}
+    entrypoint: bash
+    args: ["-c", "python3 axl/scripts/refetch_sources.py --init"]
+  - id: data
+    name: ${_PLAYWRIGHT_IMAGE}
+    entrypoint: bash
+    waitFor: ["sources"]
+    env: ["CHROME_PATH=/ms-playwright/chromium-1194/chrome-linux/chrome"]
+    args: ["-c", "python3 axl/scripts/build_demo.py && python3 axl/scripts/run_receipts.py && bash axl/scripts/build_all.sh"]
+  - id: gate-5-tools
+    name: ${_PLAYWRIGHT_IMAGE}
+    entrypoint: python3
+    args: ["axl/scripts/gates/phase5.py"]
+    waitFor: ["data"]
+  - id: gate-6-metrics
+    name: ${_PLAYWRIGHT_IMAGE}
+    entrypoint: python3
+    args: ["axl/scripts/gates/phase6.py"]
+    waitFor: ["gate-5-tools"]
+  - id: gate-7-site
+    name: ${_PLAYWRIGHT_IMAGE}
+    entrypoint: python3
+    args: ["axl/scripts/gates/site_check.py"]
+    waitFor: ["gate-6-metrics"]
+  - id: gate-8-skills
+    name: ${_PLAYWRIGHT_IMAGE}
+    entrypoint: python3
+    args: ["axl/scripts/gates/phase8.py"]
+    waitFor: ["gate-7-site"]
+  - id: receipts-to-site
+    name: ${_PLAYWRIGHT_IMAGE}
+    entrypoint: bash
+    waitFor: ["gate-8-skills"]
+    args: ["-c", "mkdir -p axl/site/receipts && cp axl/receipts/runs/*.json axl/site/receipts/ && cp axl/reports/metrics.json axl/reports/metrics.md axl/site/receipts/"]
+  - id: publish
+    name: node:22
+    entrypoint: bash
+    waitFor: ["receipts-to-site"]
+    args: ["-c", "if [ \"${_DEPLOY}\" = \"1\" ]; then npx --yes firebase-tools@14 deploy --only hosting --project \"$PROJECT_ID\" --config axl/firebase.json; else echo 'skipping publish: _DEPLOY is not 1'; fi"]

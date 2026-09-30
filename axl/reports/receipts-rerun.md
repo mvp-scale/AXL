@@ -1,5 +1,5 @@
 # Receipt re-run
 
-- receipts: 25
-- reproduced: 25 (100%)
+- receipts: 27
+- reproduced: 27 (100%)
 - unreproducible: none
