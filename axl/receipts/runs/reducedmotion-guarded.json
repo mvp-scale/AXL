@@ -8,5 +8,5 @@
  "stdout_excerpt": "{\"tool\":\"playwright emulateMedia(reducedMotion)\",\"findings\":[]}",
  "findings": [],
  "role": "after",
- "ran_at": "2026-09-30T01:18:16+00:00"
+ "ran_at": "2026-09-30T01:24:47+00:00"
 }

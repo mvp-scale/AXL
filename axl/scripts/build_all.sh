@@ -7,4 +7,5 @@ python3 axl/scripts/extract_legacy.py
 python3 axl/scripts/build_sources.py && python3 axl/scripts/lineage.py
 python3 axl/scripts/build_claims.py
 python3 axl/scripts/apply_receipts.py
+python3 axl/scripts/build_definitions.py
 python3 axl/scripts/build_verbs.py

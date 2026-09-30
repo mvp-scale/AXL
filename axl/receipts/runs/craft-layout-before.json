@@ -1,0 +1,373 @@
+{
+ "id": "craft-layout-before",
+ "tool": "axl craft checks",
+ "version": "axl craft.js on playwright 1.63.0",
+ "command": "node axl/tools/runners/craft.js axl/demo/before.html 1440 spacing-4,target-44",
+ "input_hash": "9ee3fbb8883ae6d20b3adf1b38addc503209437cfacd469c50879a2a69e77866",
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"axl craft checks (Playwright computed style)\",\"width\":1440,\"findings\":[{\"rule_id\":\"spacing-4\",\"result\":\"fail\",\"evidence\":\"marginBottom 7px is not a multiple of 4px\",\"location\":\"#page-title\",\"property\":\"marginBottom\",\"value\":\"7px\"},{\"rule_id\":\"spacing-4\",\"result\":\"fail\",\"evidence\":\"paddingBottom 10px is not a multiple of 4px\",\"location\":\"button.nav-item\",\"property\":\"paddingBottom\",\"value\":\"10px\"},{\"rule_id\":\"spacing-4\",\"result\":\"fail\",\"evidence\":\"paddingLeft 10px is not a multiple of 4px\",\"location\":\"button.nav-item\",\"property\":\"paddingLeft\",\"value\":\"10px\"},{\"rule_id\":\"spacing-4\",\"resu",
+ "findings": [
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginBottom 7px is not a multiple of 4px",
+   "location": "#page-title",
+   "property": "marginBottom",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingBottom 10px is not a multiple of 4px",
+   "location": "button.nav-item",
+   "property": "paddingBottom",
+   "value": "10px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingLeft 10px is not a multiple of 4px",
+   "location": "button.nav-item",
+   "property": "paddingLeft",
+   "value": "10px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingRight 10px is not a multiple of 4px",
+   "location": "button.nav-item",
+   "property": "paddingRight",
+   "value": "10px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingTop 10px is not a multiple of 4px",
+   "location": "button.nav-item",
+   "property": "paddingTop",
+   "value": "10px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingBottom 3px is not a multiple of 4px",
+   "location": "button.row-action",
+   "property": "paddingBottom",
+   "value": "3px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingLeft 7px is not a multiple of 4px",
+   "location": "button.row-action",
+   "property": "paddingLeft",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingRight 7px is not a multiple of 4px",
+   "location": "button.row-action",
+   "property": "paddingRight",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingTop 3px is not a multiple of 4px",
+   "location": "button.row-action",
+   "property": "paddingTop",
+   "value": "3px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingBottom 25px is not a multiple of 4px",
+   "location": "div.brand",
+   "property": "paddingBottom",
+   "value": "25px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingLeft 7px is not a multiple of 4px",
+   "location": "div.brand",
+   "property": "paddingLeft",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingRight 7px is not a multiple of 4px",
+   "location": "div.brand",
+   "property": "paddingRight",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "columnGap 14px is not a multiple of 4px",
+   "location": "div.hero",
+   "property": "columnGap",
+   "value": "14px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "rowGap 14px is not a multiple of 4px",
+   "location": "div.hero",
+   "property": "rowGap",
+   "value": "14px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginBottom 3px is not a multiple of 4px",
+   "location": "div.metric-value",
+   "property": "marginBottom",
+   "value": "3px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginTop 7px is not a multiple of 4px",
+   "location": "div.metric-value",
+   "property": "marginTop",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginTop 476.016px is not a multiple of 4px",
+   "location": "div.nav-bottom",
+   "property": "marginTop",
+   "value": "476.016px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingLeft 7px is not a multiple of 4px",
+   "location": "div.nav-bottom",
+   "property": "paddingLeft",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingRight 7px is not a multiple of 4px",
+   "location": "div.nav-bottom",
+   "property": "paddingRight",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginBottom 10px is not a multiple of 4px",
+   "location": "div.section-head",
+   "property": "marginBottom",
+   "value": "10px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginTop 18px is not a multiple of 4px",
+   "location": "footer",
+   "property": "marginTop",
+   "value": "18px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginBottom 10px is not a multiple of 4px",
+   "location": "h2",
+   "property": "marginBottom",
+   "value": "10px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingBottom 10px is not a multiple of 4px",
+   "location": "li",
+   "property": "paddingBottom",
+   "value": "10px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingTop 10px is not a multiple of 4px",
+   "location": "li",
+   "property": "paddingTop",
+   "value": "10px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "columnGap 7px is not a multiple of 4px",
+   "location": "nav.app-nav",
+   "property": "columnGap",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingBottom 22px is not a multiple of 4px",
+   "location": "nav.app-nav",
+   "property": "paddingBottom",
+   "value": "22px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingTop 22px is not a multiple of 4px",
+   "location": "nav.app-nav",
+   "property": "paddingTop",
+   "value": "22px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "rowGap 7px is not a multiple of 4px",
+   "location": "nav.app-nav",
+   "property": "rowGap",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginTop 18px is not a multiple of 4px",
+   "location": "section.cards",
+   "property": "marginTop",
+   "value": "18px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginTop 18px is not a multiple of 4px",
+   "location": "section.split-grid",
+   "property": "marginTop",
+   "value": "18px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginTop 18px is not a multiple of 4px",
+   "location": "section",
+   "property": "marginTop",
+   "value": "18px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "marginTop 3px is not a multiple of 4px",
+   "location": "small",
+   "property": "marginTop",
+   "value": "3px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingBottom 3px is not a multiple of 4px",
+   "location": "span.badge",
+   "property": "paddingBottom",
+   "value": "3px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingLeft 7px is not a multiple of 4px",
+   "location": "span.badge",
+   "property": "paddingLeft",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingRight 7px is not a multiple of 4px",
+   "location": "span.badge",
+   "property": "paddingRight",
+   "value": "7px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingTop 3px is not a multiple of 4px",
+   "location": "span.badge",
+   "property": "paddingTop",
+   "value": "3px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingBottom 11px is not a multiple of 4px",
+   "location": "td",
+   "property": "paddingBottom",
+   "value": "11px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingTop 11px is not a multiple of 4px",
+   "location": "td",
+   "property": "paddingTop",
+   "value": "11px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingBottom 11px is not a multiple of 4px",
+   "location": "th",
+   "property": "paddingBottom",
+   "value": "11px"
+  },
+  {
+   "rule_id": "spacing-4",
+   "result": "fail",
+   "evidence": "paddingTop 11px is not a multiple of 4px",
+   "location": "th",
+   "property": "paddingTop",
+   "value": "11px"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 111x40 CSS px is below 44x44",
+   "location": "button.nav-item",
+   "property": "min-size",
+   "value": "111x40"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 110x38 CSS px is below 44x44",
+   "location": "button.primary",
+   "property": "min-size",
+   "value": "110x38"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 48x25 CSS px is below 44x44",
+   "location": "button.row-action",
+   "property": "min-size",
+   "value": "48x25"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 140x38 CSS px is below 44x44",
+   "location": "button.secondary",
+   "property": "min-size",
+   "value": "140x38"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 30x38 CSS px is below 44x44",
+   "location": "button.tip",
+   "property": "min-size",
+   "value": "30x38"
+  }
+ ],
+ "role": "before",
+ "ran_at": "2026-09-30T01:24:50+00:00"
+}

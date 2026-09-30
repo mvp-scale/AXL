@@ -34,9 +34,60 @@
      "quote": "For everything else — reviews, animations, forms, polish — the skill routes by intent: just describe what you're building.\n**New here?** Run `/start` — it reads your project (framework, tokens, brief, existing UI) and tells you what ui-craft can do"
     }
    ],
-   "shared_deltas": [],
-   "tool_candidates": [],
-   "enforced_claim_ids": [],
+   "shared_deltas": [
+    {
+     "claim_id": "clm_0305",
+     "selector": "interactive controls",
+     "property": ":focus-visible outline",
+     "before": null,
+     "after": "visible focus indicator present",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0471",
+     "selector": "text",
+     "property": "contrast-ratio",
+     "before": null,
+     "after": ">= 4.5:1 (>= 3:1 large text)",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0476",
+     "selector": "all elements",
+     "property": "padding / margin / gap",
+     "before": "off-scale values (7px, 25px)",
+     "after": "multiples of 4px",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0477",
+     "selector": "button, a, input, select",
+     "property": "min-width / min-height",
+     "before": "intrinsic size (about 30px tall)",
+     "after": ">= 44px",
+     "status": "verified"
+    },
+    {
+     "claim_id": "clm_0483",
+     "selector": "*",
+     "property": "@media (prefers-reduced-motion: reduce)",
+     "before": "transitions run",
+     "after": "transition and animation removed",
+     "status": "verified"
+    }
+   ],
+   "tool_candidates": [
+    "axe-core / playwright",
+    "axe-core color-contrast",
+    "axl craft checks"
+   ],
+   "enforced_claim_ids": [
+    "clm_0305",
+    "clm_0471",
+    "clm_0476",
+    "clm_0477",
+    "clm_0483"
+   ],
    "linked_claim_ids": [
     "clm_0108",
     "clm_0109",
@@ -52,15 +103,28 @@
     "clm_0119",
     "clm_0120",
     "clm_0121",
-    "clm_0122"
+    "clm_0122",
+    "clm_0305",
+    "clm_0471",
+    "clm_0476",
+    "clm_0477",
+    "clm_0483"
+   ],
+   "axl_patterns": [
+    "on-grid-spacing",
+    "readable-contrast",
+    "visible-focus",
+    "reachable-targets",
+    "reduced-motion"
    ],
    "linked_tiers": {
     "subjective": 14,
-    "process": 1
+    "process": 1,
+    "enforced": 5
    },
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
-   "resolution": "undefined",
-   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+   "resolution": "tool-backed",
+   "note": "at least one linked claim is enforced: a command was run and has a receipt; the rest of the verb stays subjective"
   },
   {
    "verb": "distill",
@@ -109,6 +173,7 @@
     "clm_0136",
     "clm_0137"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 15
    },
@@ -170,6 +235,7 @@
     "clm_0151",
     "clm_0152"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 15
    },
@@ -210,6 +276,7 @@
     "clm_0159",
     "clm_0160"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 8
    },
@@ -264,6 +331,7 @@
     "clm_0174",
     "clm_0175"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 15
    },
@@ -305,9 +373,31 @@
      "quote": "| **1 · Direct** | Control over one pass | `/craft`, `/critique`, `/polish`, `/animate`, … | A focused pass on one surface, aimed by you | one command |\n| **2 · Persist** | Consistency across sessions | `/brief`, `/tokens`,"
     }
    ],
-   "shared_deltas": [],
-   "tool_candidates": [],
-   "enforced_claim_ids": [],
+   "shared_deltas": [
+    {
+     "claim_id": "clm_0482",
+     "selector": "*",
+     "property": "transition-duration",
+     "before": "unbounded",
+     "after": "<= 500ms (feedback 100-150ms)",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0483",
+     "selector": "*",
+     "property": "@media (prefers-reduced-motion: reduce)",
+     "before": "transitions run",
+     "after": "transition and animation removed",
+     "status": "verified"
+    }
+   ],
+   "tool_candidates": [
+    "axl craft checks"
+   ],
+   "enforced_claim_ids": [
+    "clm_0482",
+    "clm_0483"
+   ],
    "linked_claim_ids": [
     "clm_0176",
     "clm_0177",
@@ -320,14 +410,21 @@
     "clm_0184",
     "clm_0185",
     "clm_0186",
-    "clm_0187"
+    "clm_0187",
+    "clm_0482",
+    "clm_0483"
+   ],
+   "axl_patterns": [
+    "motion-duration",
+    "reduced-motion"
    ],
    "linked_tiers": {
-    "subjective": 12
+    "subjective": 12,
+    "enforced": 2
    },
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
-   "resolution": "undefined",
-   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+   "resolution": "tool-backed",
+   "note": "at least one linked claim is enforced: a command was run and has a receipt; the rest of the verb stays subjective"
   },
   {
    "verb": "colorize",
@@ -369,6 +466,7 @@
     "clm_0201",
     "clm_0202"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 15
    },
@@ -416,6 +514,7 @@
     "clm_0216",
     "clm_0217"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 15
    },
@@ -472,6 +571,7 @@
     "clm_0226",
     "clm_0227"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 10
    },
@@ -513,9 +613,40 @@
      "quote": "Adapt or disable animations based on the device's Reduced Motion setting.\n02Motion component\nAnimate elements with a declarative API. Supports variants, gestures, and layout animations.\n03React animation\nAn overview of animating React with motion components, variants, gestures, and keyframes.\nMotion++One"
     }
    ],
-   "shared_deltas": [],
-   "tool_candidates": [],
-   "enforced_claim_ids": [],
+   "shared_deltas": [
+    {
+     "claim_id": "clm_0477",
+     "selector": "button, a, input, select",
+     "property": "min-width / min-height",
+     "before": "intrinsic size (about 30px tall)",
+     "after": ">= 44px",
+     "status": "verified"
+    },
+    {
+     "claim_id": "clm_0479",
+     "selector": "page",
+     "property": "horizontal overflow at 320px",
+     "before": "table 332px wide",
+     "after": "no element extends past the viewport",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0481",
+     "selector": "p, li, td, label, input",
+     "property": "font-size",
+     "before": "13px",
+     "after": ">= 14px (body 16px)",
+     "status": "single-source"
+    }
+   ],
+   "tool_candidates": [
+    "axl craft checks"
+   ],
+   "enforced_claim_ids": [
+    "clm_0477",
+    "clm_0479",
+    "clm_0481"
+   ],
    "linked_claim_ids": [
     "clm_0228",
     "clm_0229",
@@ -531,14 +662,23 @@
     "clm_0239",
     "clm_0240",
     "clm_0241",
-    "clm_0242"
+    "clm_0242",
+    "clm_0477",
+    "clm_0479",
+    "clm_0481"
+   ],
+   "axl_patterns": [
+    "reachable-targets",
+    "reflow",
+    "text-size-floor"
    ],
    "linked_tiers": {
-    "subjective": 15
+    "subjective": 15,
+    "enforced": 3
    },
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
-   "resolution": "undefined",
-   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+   "resolution": "tool-backed",
+   "note": "at least one linked claim is enforced: a command was run and has a receipt; the rest of the verb stays subjective"
   },
   {
    "verb": "optimize",
@@ -590,6 +730,7 @@
     "clm_0252",
     "clm_0253"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 11
    },
@@ -632,12 +773,41 @@
      "before": null,
      "after": "1rem",
      "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0478",
+     "selector": "p, li",
+     "property": "max-width",
+     "before": "unbounded",
+     "after": "<= 80 characters (about 60ch)",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0480",
+     "selector": "p, .subcopy",
+     "property": "line-height",
+     "before": "1.45",
+     "after": ">= 1.5",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0481",
+     "selector": "p, li, td, label, input",
+     "property": "font-size",
+     "before": "13px",
+     "after": ">= 14px (body 16px)",
+     "status": "single-source"
     }
    ],
    "tool_candidates": [
+    "axl craft checks",
     "stylelint"
    ],
-   "enforced_claim_ids": [],
+   "enforced_claim_ids": [
+    "clm_0478",
+    "clm_0480",
+    "clm_0481"
+   ],
    "linked_claim_ids": [
     "clm_0254",
     "clm_0255",
@@ -653,15 +823,24 @@
     "clm_0265",
     "clm_0266",
     "clm_0267",
-    "clm_0268"
+    "clm_0268",
+    "clm_0478",
+    "clm_0480",
+    "clm_0481"
+   ],
+   "axl_patterns": [
+    "line-length",
+    "running-text-leading",
+    "text-size-floor"
    ],
    "linked_tiers": {
     "subjective": 14,
-    "measurable": 1
+    "measurable": 1,
+    "enforced": 3
    },
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
-   "resolution": "measurable",
-   "note": "at least one linked claim has a concrete delta; the rest of the verb stays subjective"
+   "resolution": "tool-backed",
+   "note": "at least one linked claim is enforced: a command was run and has a receipt; the rest of the verb stays subjective"
   },
   {
    "verb": "layout",
@@ -697,9 +876,40 @@
      "quote": "Layout cookbook\n Column layouts\n Centering an element\n Card component\n See all…\n JavaScriptJS\n JavaScript: Scripting language\n JS reference\n Standard built-in objects\n Expressions & operators\n Statements & declarations\n Functions\n See all…\n JS guides\n Control flow & error handling\n Loops and iteration\n Working"
     }
    ],
-   "shared_deltas": [],
-   "tool_candidates": [],
-   "enforced_claim_ids": [],
+   "shared_deltas": [
+    {
+     "claim_id": "clm_0476",
+     "selector": "all elements",
+     "property": "padding / margin / gap",
+     "before": "off-scale values (7px, 25px)",
+     "after": "multiples of 4px",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0478",
+     "selector": "p, li",
+     "property": "max-width",
+     "before": "unbounded",
+     "after": "<= 80 characters (about 60ch)",
+     "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0479",
+     "selector": "page",
+     "property": "horizontal overflow at 320px",
+     "before": "table 332px wide",
+     "after": "no element extends past the viewport",
+     "status": "single-source"
+    }
+   ],
+   "tool_candidates": [
+    "axl craft checks"
+   ],
+   "enforced_claim_ids": [
+    "clm_0476",
+    "clm_0478",
+    "clm_0479"
+   ],
    "linked_claim_ids": [
     "clm_0269",
     "clm_0270",
@@ -710,14 +920,23 @@
     "clm_0275",
     "clm_0276",
     "clm_0277",
-    "clm_0278"
+    "clm_0278",
+    "clm_0476",
+    "clm_0478",
+    "clm_0479"
+   ],
+   "axl_patterns": [
+    "on-grid-spacing",
+    "line-length",
+    "reflow"
    ],
    "linked_tiers": {
-    "subjective": 10
+    "subjective": 10,
+    "enforced": 3
    },
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
-   "resolution": "undefined",
-   "note": "no measurable definition in any fetched source; the skill must say so instead of guessing"
+   "resolution": "tool-backed",
+   "note": "at least one linked claim is enforced: a command was run and has a receipt; the rest of the verb stays subjective"
   },
   {
    "verb": "onboard",
@@ -762,6 +981,7 @@
     "clm_0288",
     "clm_0289"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 11
    },
@@ -820,6 +1040,7 @@
     "clm_0300",
     "clm_0301"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 12
    },
@@ -885,17 +1106,27 @@
      "before": null,
      "after": "visible focus indicator present",
      "status": "single-source"
+    },
+    {
+     "claim_id": "clm_0484",
+     "selector": "page",
+     "property": "accessibility rule violations",
+     "before": "2 rules failing (color-contrast, document-title)",
+     "after": "0",
+     "status": "single-source"
     }
    ],
    "tool_candidates": [
     "axe-core / playwright",
     "axe-core color-contrast",
+    "axl craft checks",
     "stylelint"
    ],
    "enforced_claim_ids": [
     "clm_0302",
     "clm_0303",
-    "clm_0305"
+    "clm_0305",
+    "clm_0484"
    ],
    "linked_claim_ids": [
     "clm_0302",
@@ -912,10 +1143,14 @@
     "clm_0313",
     "clm_0314",
     "clm_0315",
-    "clm_0316"
+    "clm_0316",
+    "clm_0484"
+   ],
+   "axl_patterns": [
+    "rules-engine-clean"
    ],
    "linked_tiers": {
-    "enforced": 3,
+    "enforced": 4,
     "subjective": 12
    },
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
@@ -976,6 +1211,7 @@
     "clm_0330",
     "clm_0331"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 15
    },
@@ -1035,6 +1271,7 @@
     "clm_0343",
     "clm_0344"
    ],
+   "axl_patterns": [],
    "linked_tiers": {
     "subjective": 12,
     "process": 1
@@ -1060,6 +1297,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "single source of definition; agreement cannot be assessed",
    "resolution": "undefined",
@@ -1089,6 +1327,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "definitions overlap textually",
    "resolution": "undefined",
@@ -1132,6 +1371,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1175,6 +1415,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1218,6 +1459,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1261,6 +1503,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1281,7 +1524,7 @@
     {
      "source_id": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
      "kind": "primary",
-     "root": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
+     "root": "src_w3-org-tr-wcag22",
      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html",
      "quote": "There is also a subtle focus\n around the whole slider component, but it does not need to be assessed to pass this success criterion.\nFocus indicator around only the subcomponent\nFigure 22. The same tabs as in the prior set,"
     }
@@ -1290,6 +1533,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1326,6 +1570,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1355,6 +1600,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1391,6 +1637,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1434,6 +1681,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1477,6 +1725,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1520,6 +1769,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1563,6 +1813,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",
@@ -1585,6 +1836,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "single source of definition; agreement cannot be assessed",
    "resolution": "undefined",
@@ -1628,6 +1880,7 @@
    "tool_candidates": [],
    "enforced_claim_ids": [],
    "linked_claim_ids": [],
+   "axl_patterns": [],
    "linked_tiers": {},
    "disagreement": "auto-flag: definitions share no 4-word phrase; possible divergence, needs human review",
    "resolution": "undefined",

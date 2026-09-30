@@ -125,7 +125,10 @@ LIN = {  # id -> (derives_from, note). Evidence = text of the fetched page (see 
  sid("https://novitckii.com/resources/claude-design-skills/"): ([ANT, IMPR, TASTE], "Roundup listing frontend-design, Impeccable, Taste-Skill (names + install commands)"),
  sid("https://www.chaseai.io/blog/impeccable-4-claude-code-design-skill"): ([IMPR], "Blog about Impeccable 4.0 (45 mentions of Impeccable)"),
  sid("https://www.claudecodehq.com/playbooks/unslop-ui"): ([JCJ], "Playbook cites github.com/JCarterJohnson/vibecoded-design-tells as the source repo for its automated check; partial lineage, repo not fetched"),
- sid("https://dequeuniversity.com/rules/axe/4.8/target-size"): ([sid("https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html")], "Deque rule page implements WCAG 2.2 SC 2.5.8 (page lists Guidelines: WCAG 2.2 (AA)); treated as derived from the W3C text"),
+ sid("https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"): ([sid("https://www.w3.org/TR/WCAG22/")], "Understanding document companion to the WCAG 2.2 Recommendation; same lineage"),
+ sid("https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"): ([sid("https://www.w3.org/TR/WCAG22/")], "Understanding document companion to the WCAG 2.2 Recommendation; same lineage"),
+ sid("https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html"): ([sid("https://www.w3.org/TR/WCAG22/")], "Understanding document companion to the WCAG 2.2 Recommendation; same lineage"),
+ sid("https://dequeuniversity.com/rules/axe/4.8/target-size"): ([sid("https://www.w3.org/TR/WCAG22/")], "Deque rule page implements WCAG 2.2 SC 2.5.8 (page lists Guidelines: WCAG 2.2 (AA)); treated as derived from the W3C text"),
  sid("https://www.theadpharm.com/insights/claude-design-without-the-ai-slop-look"): ([COOK, sid("https://github.com/google-labs-code/design.md")], "Article discusses Anthropic's cookbook system prompt and DESIGN.md"),
 }
 for r in out:

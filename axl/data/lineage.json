@@ -10,7 +10,7 @@
   },
   {
    "from": "src_dequeuniversity-com-rules-axe-4-8-target-size",
-   "to": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
+   "to": "src_w3-org-tr-wcag22"
   },
   {
    "from": "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow",
@@ -123,6 +123,18 @@
   {
    "from": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
    "to": "src_github-com-google-labs-code-design-md"
+  },
+  {
+   "from": "src_w3-org-wai-wcag22-understanding-contrast-minimum-html",
+   "to": "src_w3-org-tr-wcag22"
+  },
+  {
+   "from": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
+   "to": "src_w3-org-tr-wcag22"
+  },
+  {
+   "from": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html",
+   "to": "src_w3-org-tr-wcag22"
   }
  ],
  "nodes": [
@@ -166,7 +178,7 @@
    "id": "src_dequeuniversity-com-rules-axe-4-8-target-size",
    "kind": "primary",
    "publisher": "Deque",
-   "root": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
+   "root": "src_w3-org-tr-wcag22"
   },
   {
    "id": "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc",
@@ -640,19 +652,19 @@
    "id": "src_w3-org-wai-wcag22-understanding-contrast-minimum-html",
    "kind": "primary",
    "publisher": "W3C",
-   "root": "src_w3-org-wai-wcag22-understanding-contrast-minimum-html"
+   "root": "src_w3-org-tr-wcag22"
   },
   {
    "id": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
    "kind": "primary",
    "publisher": "W3C",
-   "root": "src_w3-org-wai-wcag22-understanding-focus-appearance-html"
+   "root": "src_w3-org-tr-wcag22"
   },
   {
    "id": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html",
    "kind": "primary",
    "publisher": "W3C",
-   "root": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
+   "root": "src_w3-org-tr-wcag22"
   },
   {
    "id": "src_samber-frontend-design-deslop",
@@ -705,8 +717,11 @@
    "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
    "src_samber-frontend-design-deslop"
   ],
-  "src_w3-org-wai-wcag22-understanding-target-size-minimum-html": [
+  "src_w3-org-tr-wcag22": [
    "src_dequeuniversity-com-rules-axe-4-8-target-size",
+   "src_w3-org-tr-wcag22",
+   "src_w3-org-wai-wcag22-understanding-contrast-minimum-html",
+   "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
    "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
   ]
  },
@@ -720,7 +735,7 @@
   "src_chaseai-io-blog-impeccable-4-claude-code-design-skill": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
   "src_claude-com-blog-improving-frontend-design-through-skills": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
   "src_claudecodehq-com-playbooks-unslop-ui": "src_jcarterjohnson-vibecoded-design-tells",
-  "src_dequeuniversity-com-rules-axe-4-8-target-size": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html",
+  "src_dequeuniversity-com-rules-axe-4-8-target-size": "src_w3-org-tr-wcag22",
   "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc": "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc",
   "src_dev-to-uianimation-duolingo-style-animation-in-mobile-apps-h": "src_dev-to-uianimation-duolingo-style-animation-in-mobile-apps-h",
   "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
@@ -798,8 +813,8 @@
   "src_ui-shadcn-com-docs-skills": "src_ui-shadcn-com-docs-skills",
   "src_untitledui-com-blog-tailwind-plus-alternatives": "src_untitledui-com-blog-tailwind-plus-alternatives",
   "src_w3-org-tr-wcag22": "src_w3-org-tr-wcag22",
-  "src_w3-org-wai-wcag22-understanding-contrast-minimum-html": "src_w3-org-wai-wcag22-understanding-contrast-minimum-html",
-  "src_w3-org-wai-wcag22-understanding-focus-appearance-html": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
-  "src_w3-org-wai-wcag22-understanding-target-size-minimum-html": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
+  "src_w3-org-wai-wcag22-understanding-contrast-minimum-html": "src_w3-org-tr-wcag22",
+  "src_w3-org-wai-wcag22-understanding-focus-appearance-html": "src_w3-org-tr-wcag22",
+  "src_w3-org-wai-wcag22-understanding-target-size-minimum-html": "src_w3-org-tr-wcag22"
  }
 }

@@ -1,0 +1,12 @@
+{
+ "id": "craft-layout-after",
+ "tool": "axl craft checks",
+ "version": "axl craft.js on playwright 1.63.0",
+ "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+ "input_hash": "fad51697990266b075b87a4d34c092c093b555083280841043c48fde7e8da064",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\":\"axl craft checks (Playwright computed style)\",\"width\":1440,\"findings\":[]}",
+ "findings": [],
+ "role": "after",
+ "ran_at": "2026-09-30T01:24:51+00:00"
+}

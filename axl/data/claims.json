@@ -11480,7 +11480,7 @@
    "tool_candidate": "axe-core color-contrast",
    "supports": [],
    "independent_roots": [
-    "src_w3-org-wai-wcag22-understanding-contrast-minimum-html"
+    "src_w3-org-tr-wcag22"
    ],
    "status": "single-source",
    "notes": "seed claim from recon (standards/tool docs); tier set from claim text; no tool run yet; enforced via receipts axe-before-1440, axe-after-1440, axe-before-375, axe-after-375, contrast-before, contrast-after, lighthouse-before, lighthouse-after; coverage: computed contrast of rendered text (axe); large-text 3:1 exception handled by axe",
@@ -11525,7 +11525,7 @@
    "tool_candidate": "axe-core target-size",
    "supports": [],
    "independent_roots": [
-    "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
+    "src_w3-org-tr-wcag22"
    ],
    "status": "single-source",
    "notes": "seed claim from recon (standards/tool docs); tier set from claim text; no tool run yet; enforced via receipts axe-after-1440, axe-after-375; coverage: checked on the after variant only: the before variant also passes, so this receipt does not discriminate",
@@ -11564,7 +11564,7 @@
    "tool_candidate": null,
    "supports": [],
    "independent_roots": [
-    "src_w3-org-wai-wcag22-understanding-focus-appearance-html"
+    "src_w3-org-tr-wcag22"
    ],
    "status": "single-source",
    "notes": "seed claim from recon (standards/tool docs); tier set from claim text; no tool run yet; enforced via receipts stylelint-before, stylelint-after; coverage: partial: catches removed focus indicators, does not measure focus contrast",
@@ -11603,7 +11603,7 @@
    "tool_candidate": "axe-core target-size",
    "supports": [],
    "independent_roots": [
-    "src_w3-org-wai-wcag22-understanding-target-size-minimum-html"
+    "src_w3-org-tr-wcag22"
    ],
    "status": "single-source",
    "notes": "seed claim from recon (standards/tool docs); tier set from claim text; no tool run yet; enforced via receipts axe-after-1440, axe-after-375; coverage: checked on the after variant only: the before variant also passes, so this receipt does not discriminate",
@@ -11644,6 +11644,387 @@
    "legacy_id": null,
    "receipts": [
     "visual-screenshot"
+   ],
+   "discriminates": true
+  },
+  {
+   "id": "clm_0476",
+   "verb": "polish",
+   "text": "Padding, margins and gaps are multiples of 4px (a documented spacing scale with a 4-unit base).",
+   "quote": "Use a documented spacing scale rather than one-off values. A 4-unit base usually provides the useful middle steps that an 8-only scale misses.",
+   "source_id": "src_impeccable-layout",
+   "source_url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/layout.md",
+   "retrieved_at": "2026-09-30T00:54:33+00:00",
+   "quote_verified": true,
+   "origin": "public",
+   "tier": "enforced",
+   "surface": [
+    "web",
+    "mobile"
+   ],
+   "delta": {
+    "selector": "all elements",
+    "property": "padding / margin / gap",
+    "before": "off-scale values (7px, 25px)",
+    "after": "multiples of 4px"
+   },
+   "enforcement": {
+    "tool": "axl craft checks",
+    "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+    "pass_criteria": "no padding, margin or gap on a visible element is off the 4px scale"
+   },
+   "tool_candidate": "axl craft checks",
+   "supports": [],
+   "independent_roots": [
+    "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+   ],
+   "status": "single-source",
+   "notes": "def:on-grid-spacing; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (principle and the 4-unit base); enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only, at the checked width; enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only, at the checked width",
+   "legacy_id": null,
+   "receipts": [
+    "craft-layout-before",
+    "craft-layout-after",
+    "fix-loop-polish"
+   ],
+   "discriminates": true
+  },
+  {
+   "id": "clm_0477",
+   "verb": "polish",
+   "text": "Interactive targets (buttons, links, inputs) are at least 44x44 CSS pixels.",
+   "quote": "Touch targets 44x44px minimum (not hover-dependent)",
+   "source_id": "src_impeccable-adapt",
+   "source_url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/adapt.md",
+   "retrieved_at": "2026-09-30T00:54:30+00:00",
+   "quote_verified": true,
+   "origin": "public",
+   "tier": "enforced",
+   "surface": [
+    "web",
+    "mobile"
+   ],
+   "delta": {
+    "selector": "button, a, input, select",
+    "property": "min-width / min-height",
+    "before": "intrinsic size (about 30px tall)",
+    "after": ">= 44px"
+   },
+   "enforcement": {
+    "tool": "axl craft checks",
+    "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+    "pass_criteria": "every visible interactive element measures at least 44x44 CSS px"
+   },
+   "tool_candidate": "axl craft checks",
+   "supports": [
+    {
+     "source_id": "src_w3-org-tr-wcag22",
+     "quote": "The size of the target for pointer inputs is at least 44 by 44 CSS pixels"
+    }
+   ],
+   "independent_roots": [
+    "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+    "src_w3-org-tr-wcag22"
+   ],
+   "status": "verified",
+   "notes": "def:reachable-targets; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (44x44px minimum; WCAG 2.5.5 (Enhanced, AAA)); enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only; enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only",
+   "legacy_id": null,
+   "receipts": [
+    "craft-layout-before",
+    "craft-layout-after",
+    "fix-loop-polish"
+   ],
+   "discriminates": true
+  },
+  {
+   "id": "clm_0478",
+   "verb": "layout",
+   "text": "Blocks of running text are no wider than 80 characters per line.",
+   "quote": "Width is no more than 80 characters or glyphs (40 if CJK)",
+   "source_id": "src_w3-org-tr-wcag22",
+   "source_url": "https://www.w3.org/TR/WCAG22/",
+   "retrieved_at": "2026-09-30T00:54:38+00:00",
+   "quote_verified": true,
+   "origin": "public",
+   "tier": "enforced",
+   "surface": [
+    "web",
+    "mobile"
+   ],
+   "delta": {
+    "selector": "p, li",
+    "property": "max-width",
+    "before": "unbounded",
+    "after": "<= 80 characters (about 60ch)"
+   },
+   "enforcement": {
+    "tool": "axl craft checks",
+    "command": "node axl/tools/runners/craft.js axl/demo/before.html 1440 measure-80",
+    "pass_criteria": "no paragraph of more than 80 characters renders wider than about 80 characters"
+   },
+   "tool_candidate": "axl craft checks",
+   "supports": [],
+   "independent_roots": [
+    "src_w3-org-tr-wcag22"
+   ],
+   "status": "single-source",
+   "notes": "def:line-length; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (WCAG 1.4.8 (AAA)); enforced via receipts craft-measure-before; coverage: estimated from box width and font size; enforced via receipts craft-measure-before; coverage: estimated from box width and font size",
+   "legacy_id": null,
+   "receipts": [
+    "craft-measure-before"
+   ],
+   "discriminates": false
+  },
+  {
+   "id": "clm_0479",
+   "verb": "layout",
+   "text": "Vertical-scrolling content reflows at a width equivalent to 320 CSS pixels without horizontal scrolling.",
+   "quote": "Vertical scrolling content at a width equivalent to 320 CSS pixels",
+   "source_id": "src_w3-org-tr-wcag22",
+   "source_url": "https://www.w3.org/TR/WCAG22/",
+   "retrieved_at": "2026-09-30T00:54:38+00:00",
+   "quote_verified": true,
+   "origin": "public",
+   "tier": "enforced",
+   "surface": [
+    "web",
+    "mobile"
+   ],
+   "delta": {
+    "selector": "page",
+    "property": "horizontal overflow at 320px",
+    "before": "table 332px wide",
+    "after": "no element extends past the viewport"
+   },
+   "enforcement": {
+    "tool": "axl craft checks",
+    "command": "node axl/tools/runners/craft.js axl/demo/polished.html 320 reflow-320",
+    "pass_criteria": "no visible element's right edge is past the 320px viewport"
+   },
+   "tool_candidate": "axl craft checks",
+   "supports": [],
+   "independent_roots": [
+    "src_w3-org-tr-wcag22"
+   ],
+   "status": "single-source",
+   "notes": "def:reflow; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (WCAG 1.4.10 Reflow); enforced via receipts craft-reflow-375-before, craft-reflow-320-polished; coverage: elements outside data-table scrolling regions are not exempted (WCAG allows two-dimensional content); enforced via receipts craft-reflow-375-before, craft-reflow-320-polished; coverage: elements outside data-table scrolling regions are not exempted (WCAG allows two-dimensional content)",
+   "legacy_id": null,
+   "receipts": [
+    "craft-reflow-375-before",
+    "craft-reflow-320-polished"
+   ],
+   "discriminates": false
+  },
+  {
+   "id": "clm_0480",
+   "verb": "typeset",
+   "text": "Running text has a line spacing (leading) of at least 1.5 times the font size.",
+   "quote": "Line spacing (leading) is at least space-and-a-half within paragraphs",
+   "source_id": "src_w3-org-tr-wcag22",
+   "source_url": "https://www.w3.org/TR/WCAG22/",
+   "retrieved_at": "2026-09-30T00:54:38+00:00",
+   "quote_verified": true,
+   "origin": "public",
+   "tier": "enforced",
+   "surface": [
+    "web",
+    "mobile"
+   ],
+   "delta": {
+    "selector": "p, .subcopy",
+    "property": "line-height",
+    "before": "1.45",
+    "after": ">= 1.5"
+   },
+   "enforcement": {
+    "tool": "axl craft checks",
+    "command": "node axl/tools/runners/craft.js axl/demo/fixture-typeset.html 1440 body-16,leading-1.5",
+    "pass_criteria": "every paragraph over 40 characters has computed line-height / font-size >= 1.5"
+   },
+   "tool_candidate": "axl craft checks",
+   "supports": [],
+   "independent_roots": [
+    "src_w3-org-tr-wcag22"
+   ],
+   "status": "single-source",
+   "notes": "def:running-text-leading; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (WCAG 1.4.8 (AAA)); enforced via receipts craft-type-before, craft-type-after; coverage: paragraphs and .subcopy only; enforced via receipts craft-type-before, craft-type-after; coverage: paragraphs and .subcopy only",
+   "legacy_id": null,
+   "receipts": [
+    "craft-type-before",
+    "craft-type-after"
+   ],
+   "discriminates": true
+  },
+  {
+   "id": "clm_0481",
+   "verb": "typeset",
+   "text": "Body text is 16px on mobile and secondary text is never below 14px.",
+   "quote": "16px body on mobile, the same floor the typography guidance sets; 14px only for genuinely secondary text",
+   "source_id": "src_impeccable-harden",
+   "source_url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/harden.md",
+   "retrieved_at": "2026-09-30T00:54:32+00:00",
+   "quote_verified": true,
+   "origin": "public",
+   "tier": "enforced",
+   "surface": [
+    "web",
+    "mobile"
+   ],
+   "delta": {
+    "selector": "p, li, td, label, input",
+    "property": "font-size",
+    "before": "13px",
+    "after": ">= 14px (body 16px)"
+   },
+   "enforcement": {
+    "tool": "axl craft checks",
+    "command": "node axl/tools/runners/craft.js axl/demo/fixture-typeset.html 1440 body-16,leading-1.5",
+    "pass_criteria": "no checked text element computes below 14px"
+   },
+   "tool_candidate": "axl craft checks",
+   "supports": [],
+   "independent_roots": [
+    "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+   ],
+   "status": "single-source",
+   "notes": "def:text-size-floor; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (16px body, 14px floor); enforced via receipts craft-type-before, craft-type-after; coverage: the 16px body rule is not separately checked; enforced via receipts craft-type-before, craft-type-after; coverage: the 16px body rule is not separately checked",
+   "legacy_id": null,
+   "receipts": [
+    "craft-type-before",
+    "craft-type-after"
+   ],
+   "discriminates": true
+  },
+  {
+   "id": "clm_0482",
+   "verb": "animate",
+   "text": "Routine transitions run 500ms or shorter; longer durations are reserved for a deliberately authored focal entrance.",
+   "quote": "| 300–500 ms | layout, overlay, or view transition |",
+   "source_id": "src_impeccable-animate",
+   "source_url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/animate.md",
+   "retrieved_at": "2026-09-30T00:54:31+00:00",
+   "quote_verified": true,
+   "origin": "public",
+   "tier": "enforced",
+   "surface": [
+    "web",
+    "mobile"
+   ],
+   "delta": {
+    "selector": "*",
+    "property": "transition-duration",
+    "before": "unbounded",
+    "after": "<= 500ms (feedback 100-150ms)"
+   },
+   "enforcement": {
+    "tool": "axl craft checks",
+    "command": "node axl/tools/runners/craft.js axl/demo/fixture-motion-unguarded.html 1440 duration-500",
+    "pass_criteria": "no element has a transition-duration above 500ms"
+   },
+   "tool_candidate": "axl craft checks",
+   "supports": [
+    {
+     "source_id": "src_impeccable-animate",
+     "quote": "| 500–800 ms | a deliberately authored focal entrance |"
+    }
+   ],
+   "independent_roots": [
+    "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+   ],
+   "status": "single-source",
+   "notes": "def:motion-duration; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (upper band for layout / overlay change; longer only for an authored entrance); enforced via receipts craft-duration-unguarded; coverage: transitions only; animation-duration is not checked; enforced via receipts craft-duration-unguarded; coverage: transitions only; animation-duration is not checked",
+   "legacy_id": null,
+   "receipts": [
+    "craft-duration-unguarded"
+   ],
+   "discriminates": false
+  },
+  {
+   "id": "clm_0483",
+   "verb": "animate",
+   "text": "Under prefers-reduced-motion: reduce, no element keeps a transition or animation longer than 1ms.",
+   "quote": "minimize the amount of non-essential motion",
+   "source_id": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+   "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+   "retrieved_at": "2026-09-30T00:54:26+00:00",
+   "quote_verified": true,
+   "origin": "public",
+   "tier": "enforced",
+   "surface": [
+    "web",
+    "mobile"
+   ],
+   "delta": {
+    "selector": "*",
+    "property": "@media (prefers-reduced-motion: reduce)",
+    "before": "transitions run",
+    "after": "transition and animation removed"
+   },
+   "enforcement": {
+    "tool": "playwright emulateMedia",
+    "command": "node axl/tools/runners/reducedmotion.js axl/demo/fixture-motion-guarded.html",
+    "pass_criteria": "under emulated reduced motion no element has a transition or animation longer than 1ms"
+   },
+   "tool_candidate": "axl craft checks",
+   "supports": [
+    {
+     "source_id": "src_impeccable-audit",
+     "quote": "Motion sensitivity**: `prefers-reduced-motion` needs an intentional alternative that preserves state change and hierarchy"
+    }
+   ],
+   "independent_roots": [
+    "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+    "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+   ],
+   "status": "verified",
+   "notes": "def:reduced-motion; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (what the setting means; a reduced alternative is required); enforced via receipts reducedmotion-unguarded, reducedmotion-guarded; coverage: checks that motion stops; it cannot check that state change is still communicated; enforced via receipts reducedmotion-unguarded, reducedmotion-guarded; coverage: checks that motion stops; it cannot check that state change is still communicated",
+   "legacy_id": null,
+   "receipts": [
+    "reducedmotion-unguarded",
+    "reducedmotion-guarded"
+   ],
+   "discriminates": true
+  },
+  {
+   "id": "clm_0484",
+   "verb": "audit",
+   "text": "Automated accessibility rule engines (axe-core WCAG 2.0-2.2 A/AA, Lighthouse accessibility audits) report zero violations; they cover only part of WCAG.",
+   "quote": "find **on average 57% of WCAG issues automatically**",
+   "source_id": "src_github-com-dequelabs-axe-core",
+   "source_url": "https://github.com/dequelabs/axe-core",
+   "retrieved_at": "2026-09-30T00:54:30+00:00",
+   "quote_verified": true,
+   "origin": "public",
+   "tier": "enforced",
+   "surface": [
+    "web",
+    "mobile"
+   ],
+   "delta": {
+    "selector": "page",
+    "property": "accessibility rule violations",
+    "before": "2 rules failing (color-contrast, document-title)",
+    "after": "0"
+   },
+   "enforcement": {
+    "tool": "axe-core",
+    "command": "node axl/tools/runners/axe.js axl/demo/after.html 1440",
+    "pass_criteria": "axe reports 0 violations for tags wcag2a, wcag2aa, wcag21aa, wcag22aa"
+   },
+   "tool_candidate": "axl craft checks",
+   "supports": [],
+   "independent_roots": [
+    "src_github-com-dequelabs-axe-core"
+   ],
+   "status": "single-source",
+   "notes": "def:rules-engine-clean; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (how much automation covers); enforced via receipts axe-before-1440, axe-after-1440, axe-before-375, axe-after-375, lighthouse-before, lighthouse-after; coverage: axe states it finds about 57% of WCAG issues automatically; a clean run is not a full audit; enforced via receipts axe-before-1440, axe-after-1440, axe-before-375, axe-after-375, lighthouse-before, lighthouse-after; coverage: axe states it finds about 57% of WCAG issues automatically; a clean run is not a full audit",
+   "legacy_id": null,
+   "receipts": [
+    "axe-before-1440",
+    "axe-after-1440",
+    "axe-before-375",
+    "axe-after-375",
+    "lighthouse-before",
+    "lighthouse-after"
    ],
    "discriminates": true
   }

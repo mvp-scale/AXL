@@ -1,12 +1,12 @@
 {
- "id": "axe-after-1440",
+ "id": "axe-polished-1440",
  "tool": "axe-core",
  "version": "axe-core 4.13.0 via @axe-core/playwright 4.13.0",
- "command": "node axl/tools/runners/axe.js axl/demo/after.html 1440",
- "input_hash": "fdeff315dfa1ae675d57ba43d2a00842e4e68cd4931b55b7541a634a5a2200e2",
+ "command": "node axl/tools/runners/axe.js axl/demo/polished.html 1440",
+ "input_hash": "fad51697990266b075b87a4d34c092c093b555083280841043c48fde7e8da064",
  "exit_code": 0,
  "stdout_excerpt": "{\"tool\":\"axe-core\",\"engine\":\"4.13.0\",\"width\":1440,\"violations\":0,\"findings\":[],\"passed_rules\":25,\"passed_ids\":[\"aria-allowed-attr\",\"aria-conditional-attr\",\"aria-deprecated-role\",\"aria-hidden-body\",\"aria-prohibited-attr\",\"aria-required-attr\",\"aria-roles\",\"aria-valid-attr\",\"aria-valid-attr-value\",\"avoid-inline-spacing\",\"button-name\",\"bypass\",\"color-contrast\",\"document-title\",\"duplicate-id-aria\",\"html-has-lang\",\"html-lang-valid\",\"list\",\"listitem\",\"meta-viewport\",\"nested-interactive\",\"svg-img-alt\",\"target-size\",\"td-headers-attr\",\"th-has-data-cells\"]}",
  "findings": [],
  "role": "after",
- "ran_at": "2026-09-30T01:24:33+00:00"
+ "ran_at": "2026-09-30T01:24:56+00:00"
 }

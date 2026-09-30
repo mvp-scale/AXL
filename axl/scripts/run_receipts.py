@@ -9,7 +9,8 @@ def versions():
     return {"axe-core": "axe-core " + v("axe-core") + " via @axe-core/playwright " + v("@axe-core/playwright"), "lighthouse": "lighthouse " + v("lighthouse"),
             "stylelint": "stylelint " + v("stylelint"), "design.md lint": "@google/design.md " + v("@google/design.md"),
             "wcag-contrast": "axl contrast.js (WCAG 2.x relative luminance)", "playwright emulateMedia": "playwright " + v("playwright"),
-            "playwright toHaveScreenshot": "@playwright/test " + v("@playwright/test")}
+            "playwright toHaveScreenshot": "@playwright/test " + v("@playwright/test"),
+            "axl craft checks": "axl craft.js on playwright " + v("playwright"), "axl fix.js": "axl fix.js on playwright " + v("playwright") + " + axe-core " + v("axe-core")}
 def input_hash(files):
     h = hashlib.sha256()
     for f in sorted(files): h.update(f.encode()); h.update(open(f"{ROOT}/{f}", "rb").read())

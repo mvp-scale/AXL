@@ -1,0 +1,37 @@
+{
+ "id": "craft-type-before",
+ "tool": "axl craft checks",
+ "version": "axl craft.js on playwright 1.63.0",
+ "command": "node axl/tools/runners/craft.js axl/demo/before.html 1440 body-16,leading-1.5",
+ "input_hash": "9ee3fbb8883ae6d20b3adf1b38addc503209437cfacd469c50879a2a69e77866",
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"axl craft checks (Playwright computed style)\",\"width\":1440,\"findings\":[{\"rule_id\":\"body-16\",\"result\":\"fail\",\"evidence\":\"text is 13px (floor 14px for secondary text)\",\"location\":\"li\",\"property\":\"font-size\",\"value\":\"13px\"},{\"rule_id\":\"body-16\",\"result\":\"fail\",\"evidence\":\"text is 13px (floor 14px for secondary text)\",\"location\":\"td\",\"property\":\"font-size\",\"value\":\"13px\"},{\"rule_id\":\"leading-1.5\",\"result\":\"fail\",\"evidence\":\"line-height 1.45 is below 1.5 for running text\",\"location\":\"#page-copy\",\"property\":\"line-height\",\"value\":\"1.45\"}]}",
+ "findings": [
+  {
+   "rule_id": "body-16",
+   "result": "fail",
+   "evidence": "text is 13px (floor 14px for secondary text)",
+   "location": "li",
+   "property": "font-size",
+   "value": "13px"
+  },
+  {
+   "rule_id": "body-16",
+   "result": "fail",
+   "evidence": "text is 13px (floor 14px for secondary text)",
+   "location": "td",
+   "property": "font-size",
+   "value": "13px"
+  },
+  {
+   "rule_id": "leading-1.5",
+   "result": "fail",
+   "evidence": "line-height 1.45 is below 1.5 for running text",
+   "location": "#page-copy",
+   "property": "line-height",
+   "value": "1.45"
+  }
+ ],
+ "role": "before",
+ "ran_at": "2026-09-30T01:24:52+00:00"
+}

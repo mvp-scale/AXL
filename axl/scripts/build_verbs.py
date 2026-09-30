@@ -9,6 +9,7 @@ D = f"{ROOT}/axl/data"; TXT = f"{ROOT}/axl/receipts/sources"
 S = {s["id"]: s for s in json.load(open(f"{D}/sources.json"))["sources"]}
 LIN = json.load(open(f"{D}/lineage.json"))["roots"]
 C = [c for c in json.load(open(f"{D}/claims.json"))["claims"] if c["origin"] == "public"]
+DEF = {d["verb"]: d for d in json.load(open(f"{D}/definitions.json"))["definitions"]}
 REQ = "polish distill delight bolder quieter animate colorize clarify harden adapt optimize typeset layout onboard critique audit extract shape".split()
 CAND = "simplify elevate refine tighten soften declutter modernize sharpen premium clean minimal bold subtle playful professional elegant crisp calm energetic vibrant intuitive cohesive consistent balanced hierarchy rhythm airy dense compact warm".split()
 raw = {i: open(f"{TXT}/{i}.txt", encoding="utf-8").read() for i in S if os.path.exists(f"{TXT}/{i}.txt")}
@@ -30,7 +31,8 @@ def definition_of(v, i):
     return slice40(t, st) if m.end() - st < 400 else slice40(t, m.start())
 out = []
 for v in verbs:
-    linked = [c for c in C if c["verb"] == v or (v in REQ and c["verb"] == v) or (c["legacy_id"] is None and pat(v).search(c["text"]))]
+    defids = {p["claim_id"] for p in DEF.get(v, {}).get("patterns", [])}
+    linked = [c for c in C if c["id"] in defids or c["verb"] == v or (v in REQ and c["verb"] == v) or (c["legacy_id"] is None and pat(v).search(c["text"]))]
     meas = [c for c in linked if c["tier"] in ("measurable", "enforced") and c["delta"]]
     enf = [c for c in linked if c["tier"] == "enforced"]
     tool = [c for c in linked if c["tool_candidate"]]
@@ -51,7 +53,7 @@ for v in verbs:
     out.append({"verb": v, "mentions_across_sources": counts[v], "required": v in REQ, "definitions": defs,
         "shared_deltas": [{"claim_id": c["id"], "selector": c["delta"]["selector"], "property": c["delta"]["property"], "before": c["delta"]["before"], "after": c["delta"]["after"], "status": c["status"]} for c in meas],
         "tool_candidates": sorted({c["tool_candidate"] for c in tool}), "enforced_claim_ids": [c["id"] for c in enf], "linked_claim_ids": [c["id"] for c in linked],
-        "linked_tiers": dict(collections.Counter(c["tier"] for c in linked)),
+        "axl_patterns": [p["id"] for p in DEF.get(v, {}).get("patterns", [])], "linked_tiers": dict(collections.Counter(c["tier"] for c in linked)),
         "disagreement": disagree, "resolution": res,
         "note": {"measurable": "at least one linked claim has a concrete delta; the rest of the verb stays subjective",
                  "tool-backed": "at least one linked claim is enforced: a command was run and has a receipt; the rest of the verb stays subjective",

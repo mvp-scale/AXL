@@ -182,6 +182,27 @@ for verb, text, sid_, pat, delta, tool in SEEDS:
         c["quote"] = d.raw[m.start(): m.end()]
         c["independent_roots"] = independent(sid_, []); c["status"] = "single-source"
     claims.append(c)
+# ---------- AXL definitions (curated patterns; see definitions_spec.py) ----------
+sys.path.insert(0, os.path.dirname(__file__))
+import definitions_spec as DS
+for pat in DS.PATTERNS:
+    if "text" not in pat: continue
+    prim, supports = None, []
+    for url, rx, what in pat["basis"]:
+        cands = [sid(url)] if not url.startswith("impeccable:") else []
+        sid_ = cands[0]
+        m = re.search(rx, doc(sid_).raw, re.S)
+        if not m: sys.exit(f"definition {pat['id']}: quote not found in {sid_}: {rx[:60]}")
+        q = doc(sid_).raw[m.start(): m.end()]
+        if prim is None: prim = (sid_, q)
+        else: supports.append({"source_id": sid_, "quote": q})
+    ps, pq = prim
+    c = {"id": new_id(), "verb": pat["verbs"][0], "text": pat["text"], "quote": pq, "source_id": ps, "source_url": S[ps]["url"], "retrieved_at": S[ps]["retrieved_at"],
+         "quote_verified": True, "origin": "public", "tier": "measurable", "surface": ["web", "mobile"], "delta": dict(zip(("selector", "property", "before", "after"), pat["delta"])),
+         "enforcement": None, "tool_candidate": "axl craft checks", "supports": supports, "independent_roots": independent(ps, supports), "status": "unverified",
+         "notes": f"def:{pat['id']}; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (" + "; ".join(w for _, _, w in pat["basis"]) + ")", "legacy_id": None}
+    c["status"] = "verified" if len(c["independent_roots"]) >= 2 else "single-source"
+    claims.append(c)
 # 4.5:1 and 24px are also stated by axe-core's rule page: record as a *derived* support only (same lineage), not independent
 json.dump({"claims": claims}, open(f"{D}/claims.json", "w"), indent=1, ensure_ascii=False)
 cnt = collections.Counter((c["tier"], c["status"]) for c in claims)

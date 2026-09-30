@@ -1,0 +1,77 @@
+{
+ "id": "craft-reflow-375-before",
+ "tool": "axl craft checks",
+ "version": "axl craft.js on playwright 1.63.0",
+ "command": "node axl/tools/runners/craft.js axl/demo/before.html 375 reflow-320,target-44",
+ "input_hash": "9ee3fbb8883ae6d20b3adf1b38addc503209437cfacd469c50879a2a69e77866",
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"axl craft checks (Playwright computed style)\",\"width\":375,\"findings\":[{\"rule_id\":\"target-44\",\"result\":\"fail\",\"evidence\":\"target 79x33 CSS px is below 44x44\",\"location\":\"button.nav-item\",\"property\":\"min-size\",\"value\":\"79x33\"},{\"rule_id\":\"target-44\",\"result\":\"fail\",\"evidence\":\"target 63x33 CSS px is below 44x44\",\"location\":\"button.nav-item\",\"property\":\"min-size\",\"value\":\"63x33\"},{\"rule_id\":\"target-44\",\"result\":\"fail\",\"evidence\":\"target 88x33 CSS px is below 44x44\",\"location\":\"button.nav-item\",\"property\":\"min-size\",\"value\":\"88x33\"},{\"rule_id\":\"target-44\",\"result\":\"fail\",\"evidence\":\"targe",
+ "findings": [
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 79x33 CSS px is below 44x44",
+   "location": "button.nav-item",
+   "property": "min-size",
+   "value": "79x33"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 63x33 CSS px is below 44x44",
+   "location": "button.nav-item",
+   "property": "min-size",
+   "value": "63x33"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 88x33 CSS px is below 44x44",
+   "location": "button.nav-item",
+   "property": "min-size",
+   "value": "88x33"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 65x33 CSS px is below 44x44",
+   "location": "button.nav-item",
+   "property": "min-size",
+   "value": "65x33"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 90x35 CSS px is below 44x44",
+   "location": "button.primary",
+   "property": "min-size",
+   "value": "90x35"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 48x25 CSS px is below 44x44",
+   "location": "button.row-action",
+   "property": "min-size",
+   "value": "48x25"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 140x38 CSS px is below 44x44",
+   "location": "button.secondary",
+   "property": "min-size",
+   "value": "140x38"
+  },
+  {
+   "rule_id": "target-44",
+   "result": "fail",
+   "evidence": "target 30x38 CSS px is below 44x44",
+   "location": "button.tip",
+   "property": "min-size",
+   "value": "30x38"
+  }
+ ],
+ "role": "before",
+ "ran_at": "2026-09-30T01:24:53+00:00"
+}

@@ -1,0 +1,1054 @@
+{
+ "definitions": [
+  {
+   "verb": "polish",
+   "plain": "Finish what is already there. Nothing off the spacing grid, nothing too faint to read, nothing you cannot reach with a keyboard. Polish never redesigns; it only removes defects that a tool can count.",
+   "stays_subjective": "Whether the result feels 'refined' overall.",
+   "patterns": [
+    {
+     "id": "on-grid-spacing",
+     "name": "Spacing sits on a 4px scale",
+     "plain": "Every gap and padding is a multiple of 4px, so nothing looks accidentally 7px or 25px.",
+     "claim_id": "clm_0476",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+     ],
+     "delta": {
+      "selector": "all elements",
+      "property": "padding / margin / gap",
+      "before": "off-scale values (7px, 25px)",
+      "after": "multiples of 4px"
+     },
+     "basis": [
+      {
+       "source_id": "src_impeccable-layout",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/layout.md",
+       "quote": "Use a documented spacing scale rather than one-off values. A 4-unit base usually provides the useful middle steps that an 8-only scale misses.",
+       "supports": "principle and the 4-unit base"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+      "pass_criteria": "no padding, margin or gap on a visible element is off the 4px scale"
+     },
+     "receipts": [
+      {
+       "id": "craft-layout-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 45,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "craft-layout-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "fix-loop-polish",
+       "role": "pair",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl fix.js",
+       "version": "axl fix.js on playwright 1.63.0 + axe-core 4.13.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "source: scale principle and 4-unit base; AXL default: strict multiples of 4px (a project scale can replace it)",
+     "coverage": "visible panel only, at the checked width",
+     "disagreement": null,
+     "example": "section { margin-top: 24px; }   /* not 25px */"
+    },
+    {
+     "id": "readable-contrast",
+     "name": "Text contrast is at least 4.5:1",
+     "plain": "Text is dark enough against its background for most people to read it.",
+     "claim_id": "clm_0471",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_w3-org-tr-wcag22"
+     ],
+     "delta": {
+      "selector": "text",
+      "property": "contrast-ratio",
+      "before": null,
+      "after": ">= 4.5:1 (>= 3:1 large text)"
+     },
+     "basis": [
+      {
+       "source_id": "src_w3-org-wai-wcag22-understanding-contrast-minimum-html",
+       "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+       "quote": "has a contrast ratio of at least 4.5:1",
+       "supports": null
+      }
+     ],
+     "check": {
+      "tool": "axe-core color-contrast + WCAG luminance check",
+      "command": "node axl/tools/runners/axe.js axl/demo/after.html 1440",
+      "pass_criteria": "axe reports 0 color-contrast violations and every listed text pair is >= 4.5:1"
+     },
+     "receipts": [
+      {
+       "id": "axe-before-1440",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 2,
+       "tool": "axe-core",
+       "version": "axe-core 4.13.0 via @axe-core/playwright 4.13.0"
+      },
+      {
+       "id": "axe-after-1440",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axe-core",
+       "version": "axe-core 4.13.0 via @axe-core/playwright 4.13.0"
+      },
+      {
+       "id": "contrast-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 2,
+       "tool": "wcag-contrast",
+       "version": "axl contrast.js (WCAG 2.x relative luminance)"
+      },
+      {
+       "id": "contrast-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 2,
+       "tool": "wcag-contrast",
+       "version": "axl contrast.js (WCAG 2.x relative luminance)"
+      },
+      {
+       "id": "lighthouse-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 2,
+       "tool": "lighthouse",
+       "version": "lighthouse 13.5.0"
+      },
+      {
+       "id": "lighthouse-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "lighthouse",
+       "version": "lighthouse 13.5.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": null,
+     "coverage": null,
+     "disagreement": null,
+     "example": null
+    },
+    {
+     "id": "visible-focus",
+     "name": "Keyboard focus is visible",
+     "plain": "When you tab to a button you can see where you are.",
+     "claim_id": "clm_0305",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+     ],
+     "delta": {
+      "selector": "interactive controls",
+      "property": ":focus-visible outline",
+      "before": null,
+      "after": "visible focus indicator present"
+     },
+     "basis": [
+      {
+       "source_id": "src_impeccable-audit",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md",
+       "quote": "Keyboard navigation**: Missing focus indicators, illogical tab order, keyboard traps",
+       "supports": null
+      }
+     ],
+     "check": {
+      "tool": "stylelint (no outline:none)",
+      "command": "node axl/tools/runners/stylelint.js axl/demo/css/after.css",
+      "pass_criteria": "no `outline: none/0` declaration remains in the stylesheet"
+     },
+     "receipts": [
+      {
+       "id": "stylelint-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 2,
+       "tool": "stylelint",
+       "version": "stylelint 17.15.0"
+      },
+      {
+       "id": "stylelint-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "stylelint",
+       "version": "stylelint 17.15.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": null,
+     "coverage": null,
+     "disagreement": null,
+     "example": null
+    },
+    {
+     "id": "reachable-targets",
+     "name": "Tap targets are at least 44x44px",
+     "plain": "Buttons and inputs are big enough to hit with a thumb.",
+     "claim_id": "clm_0477",
+     "tier": "enforced",
+     "status": "verified",
+     "independent_roots": [
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+      "src_w3-org-tr-wcag22"
+     ],
+     "delta": {
+      "selector": "button, a, input, select",
+      "property": "min-width / min-height",
+      "before": "intrinsic size (about 30px tall)",
+      "after": ">= 44px"
+     },
+     "basis": [
+      {
+       "source_id": "src_impeccable-adapt",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/adapt.md",
+       "quote": "Touch targets 44x44px minimum (not hover-dependent)",
+       "supports": "44x44px minimum"
+      },
+      {
+       "source_id": "src_w3-org-tr-wcag22",
+       "url": "https://www.w3.org/TR/WCAG22/",
+       "quote": "The size of the target for pointer inputs is at least 44 by 44 CSS pixels",
+       "supports": "WCAG 2.5.5 (Enhanced, AAA)"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+      "pass_criteria": "every visible interactive element measures at least 44x44 CSS px"
+     },
+     "receipts": [
+      {
+       "id": "craft-layout-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 45,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "craft-layout-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "fix-loop-polish",
+       "role": "pair",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl fix.js",
+       "version": "axl fix.js on playwright 1.63.0 + axe-core 4.13.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "source: 44x44 in both sources",
+     "coverage": "visible panel only",
+     "disagreement": "WCAG 2.2 AA only requires 24x24 (2.5.8); 44x44 is the AAA / platform-guideline figure",
+     "example": "button, input { min-height: 44px; }"
+    },
+    {
+     "id": "reduced-motion",
+     "name": "Motion gives way to prefers-reduced-motion",
+     "plain": "When a person asks their device for less motion, the interface stops moving things around.",
+     "claim_id": "clm_0483",
+     "tier": "enforced",
+     "status": "verified",
+     "independent_roots": [
+      "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+     ],
+     "delta": {
+      "selector": "*",
+      "property": "@media (prefers-reduced-motion: reduce)",
+      "before": "transitions run",
+      "after": "transition and animation removed"
+     },
+     "basis": [
+      {
+       "source_id": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+       "quote": "minimize the amount of non-essential motion",
+       "supports": "what the setting means"
+      },
+      {
+       "source_id": "src_impeccable-audit",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md",
+       "quote": "Motion sensitivity**: `prefers-reduced-motion` needs an intentional alternative that preserves state change and hierarchy",
+       "supports": "a reduced alternative is required"
+      }
+     ],
+     "check": {
+      "tool": "playwright emulateMedia",
+      "command": "node axl/tools/runners/reducedmotion.js axl/demo/fixture-motion-guarded.html",
+      "pass_criteria": "under emulated reduced motion no element has a transition or animation longer than 1ms"
+     },
+     "receipts": [
+      {
+       "id": "reducedmotion-unguarded",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 8,
+       "tool": "playwright emulateMedia",
+       "version": "playwright 1.63.0"
+      },
+      {
+       "id": "reducedmotion-guarded",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "playwright emulateMedia",
+       "version": "playwright 1.63.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "AXL default: 1ms (effectively instant)",
+     "coverage": "checks that motion stops; it cannot check that state change is still communicated",
+     "disagreement": "The same Impeccable audit page warns against a blanket 0.01ms kill that destroys useful feedback. The check accepts an instant change as compliant and leaves 'is feedback preserved?' to a person.",
+     "example": "@media (prefers-reduced-motion: reduce) { * { transition: none; animation: none; } }"
+    }
+   ]
+  },
+  {
+   "verb": "layout",
+   "plain": "Give content a predictable rhythm and a readable line, and make sure it still fits when the screen is narrow.",
+   "stays_subjective": "Whether the composition is 'balanced' or 'has breathing room'.",
+   "patterns": [
+    {
+     "id": "on-grid-spacing",
+     "name": "Spacing sits on a 4px scale",
+     "plain": "Every gap and padding is a multiple of 4px, so nothing looks accidentally 7px or 25px.",
+     "claim_id": "clm_0476",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+     ],
+     "delta": {
+      "selector": "all elements",
+      "property": "padding / margin / gap",
+      "before": "off-scale values (7px, 25px)",
+      "after": "multiples of 4px"
+     },
+     "basis": [
+      {
+       "source_id": "src_impeccable-layout",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/layout.md",
+       "quote": "Use a documented spacing scale rather than one-off values. A 4-unit base usually provides the useful middle steps that an 8-only scale misses.",
+       "supports": "principle and the 4-unit base"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+      "pass_criteria": "no padding, margin or gap on a visible element is off the 4px scale"
+     },
+     "receipts": [
+      {
+       "id": "craft-layout-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 45,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "craft-layout-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "fix-loop-polish",
+       "role": "pair",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl fix.js",
+       "version": "axl fix.js on playwright 1.63.0 + axe-core 4.13.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "source: scale principle and 4-unit base; AXL default: strict multiples of 4px (a project scale can replace it)",
+     "coverage": "visible panel only, at the checked width",
+     "disagreement": null,
+     "example": "section { margin-top: 24px; }   /* not 25px */"
+    },
+    {
+     "id": "line-length",
+     "name": "Running text is at most 80 characters wide",
+     "plain": "Paragraphs never stretch so wide that the eye loses its place.",
+     "claim_id": "clm_0478",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_w3-org-tr-wcag22"
+     ],
+     "delta": {
+      "selector": "p, li",
+      "property": "max-width",
+      "before": "unbounded",
+      "after": "<= 80 characters (about 60ch)"
+     },
+     "basis": [
+      {
+       "source_id": "src_w3-org-tr-wcag22",
+       "url": "https://www.w3.org/TR/WCAG22/",
+       "quote": "Width is no more than 80 characters or glyphs (40 if CJK)",
+       "supports": "WCAG 1.4.8 (AAA)"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/before.html 1440 measure-80",
+      "pass_criteria": "no paragraph of more than 80 characters renders wider than about 80 characters"
+     },
+     "receipts": [
+      {
+       "id": "craft-measure-before",
+       "role": "before",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      }
+     ],
+     "discriminates": false,
+     "parameter_origin": "source: 80 characters",
+     "coverage": "estimated from box width and font size",
+     "disagreement": null,
+     "example": "p { max-width: 65ch; }"
+    },
+    {
+     "id": "reflow",
+     "name": "Content fits a 320px-wide screen",
+     "plain": "On a very small screen nothing forces sideways scrolling.",
+     "claim_id": "clm_0479",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_w3-org-tr-wcag22"
+     ],
+     "delta": {
+      "selector": "page",
+      "property": "horizontal overflow at 320px",
+      "before": "table 332px wide",
+      "after": "no element extends past the viewport"
+     },
+     "basis": [
+      {
+       "source_id": "src_w3-org-tr-wcag22",
+       "url": "https://www.w3.org/TR/WCAG22/",
+       "quote": "Vertical scrolling content at a width equivalent to 320 CSS pixels",
+       "supports": "WCAG 1.4.10 Reflow"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/polished.html 320 reflow-320",
+      "pass_criteria": "no visible element's right edge is past the 320px viewport"
+     },
+     "receipts": [
+      {
+       "id": "craft-reflow-375-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 8,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "craft-reflow-320-polished",
+       "role": "finding",
+       "exit_code": 1,
+       "findings": 7,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      }
+     ],
+     "discriminates": false,
+     "parameter_origin": "source: 320 CSS px",
+     "coverage": "elements outside data-table scrolling regions are not exempted (WCAG allows two-dimensional content)",
+     "disagreement": null,
+     "example": ".data-table { display: block; overflow-x: auto; }"
+    }
+   ]
+  },
+  {
+   "verb": "typeset",
+   "plain": "Make text comfortable to read: big enough, spaced enough, and not too wide.",
+   "stays_subjective": "Whether the typeface has the right personality.",
+   "patterns": [
+    {
+     "id": "line-length",
+     "name": "Running text is at most 80 characters wide",
+     "plain": "Paragraphs never stretch so wide that the eye loses its place.",
+     "claim_id": "clm_0478",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_w3-org-tr-wcag22"
+     ],
+     "delta": {
+      "selector": "p, li",
+      "property": "max-width",
+      "before": "unbounded",
+      "after": "<= 80 characters (about 60ch)"
+     },
+     "basis": [
+      {
+       "source_id": "src_w3-org-tr-wcag22",
+       "url": "https://www.w3.org/TR/WCAG22/",
+       "quote": "Width is no more than 80 characters or glyphs (40 if CJK)",
+       "supports": "WCAG 1.4.8 (AAA)"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/before.html 1440 measure-80",
+      "pass_criteria": "no paragraph of more than 80 characters renders wider than about 80 characters"
+     },
+     "receipts": [
+      {
+       "id": "craft-measure-before",
+       "role": "before",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      }
+     ],
+     "discriminates": false,
+     "parameter_origin": "source: 80 characters",
+     "coverage": "estimated from box width and font size",
+     "disagreement": null,
+     "example": "p { max-width: 65ch; }"
+    },
+    {
+     "id": "running-text-leading",
+     "name": "Running text has line-height of at least 1.5",
+     "plain": "Lines of text have enough air between them to read comfortably.",
+     "claim_id": "clm_0480",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_w3-org-tr-wcag22"
+     ],
+     "delta": {
+      "selector": "p, .subcopy",
+      "property": "line-height",
+      "before": "1.45",
+      "after": ">= 1.5"
+     },
+     "basis": [
+      {
+       "source_id": "src_w3-org-tr-wcag22",
+       "url": "https://www.w3.org/TR/WCAG22/",
+       "quote": "Line spacing (leading) is at least space-and-a-half within paragraphs",
+       "supports": "WCAG 1.4.8 (AAA)"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/fixture-typeset.html 1440 body-16,leading-1.5",
+      "pass_criteria": "every paragraph over 40 characters has computed line-height / font-size >= 1.5"
+     },
+     "receipts": [
+      {
+       "id": "craft-type-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 3,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "craft-type-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "source: 1.5",
+     "coverage": "paragraphs and .subcopy only",
+     "disagreement": null,
+     "example": "p { line-height: 1.65; }"
+    },
+    {
+     "id": "text-size-floor",
+     "name": "Text is at least 14px (body 16px)",
+     "plain": "Small print is not smaller than 14px; main text is 16px.",
+     "claim_id": "clm_0481",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+     ],
+     "delta": {
+      "selector": "p, li, td, label, input",
+      "property": "font-size",
+      "before": "13px",
+      "after": ">= 14px (body 16px)"
+     },
+     "basis": [
+      {
+       "source_id": "src_impeccable-harden",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/harden.md",
+       "quote": "16px body on mobile, the same floor the typography guidance sets; 14px only for genuinely secondary text",
+       "supports": "16px body, 14px floor"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/fixture-typeset.html 1440 body-16,leading-1.5",
+      "pass_criteria": "no checked text element computes below 14px"
+     },
+     "receipts": [
+      {
+       "id": "craft-type-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 3,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "craft-type-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "source: 16px body, 14px secondary; the check enforces the 14px floor only",
+     "coverage": "the 16px body rule is not separately checked",
+     "disagreement": null,
+     "example": "li, td { font-size: 14px; }"
+    }
+   ]
+  },
+  {
+   "verb": "adapt",
+   "plain": "Make the same interface work on a phone and on a desktop: targets you can tap and content that does not spill off the side.",
+   "stays_subjective": "Which content to drop or reorder for small screens.",
+   "patterns": [
+    {
+     "id": "reachable-targets",
+     "name": "Tap targets are at least 44x44px",
+     "plain": "Buttons and inputs are big enough to hit with a thumb.",
+     "claim_id": "clm_0477",
+     "tier": "enforced",
+     "status": "verified",
+     "independent_roots": [
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+      "src_w3-org-tr-wcag22"
+     ],
+     "delta": {
+      "selector": "button, a, input, select",
+      "property": "min-width / min-height",
+      "before": "intrinsic size (about 30px tall)",
+      "after": ">= 44px"
+     },
+     "basis": [
+      {
+       "source_id": "src_impeccable-adapt",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/adapt.md",
+       "quote": "Touch targets 44x44px minimum (not hover-dependent)",
+       "supports": "44x44px minimum"
+      },
+      {
+       "source_id": "src_w3-org-tr-wcag22",
+       "url": "https://www.w3.org/TR/WCAG22/",
+       "quote": "The size of the target for pointer inputs is at least 44 by 44 CSS pixels",
+       "supports": "WCAG 2.5.5 (Enhanced, AAA)"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/polished.html 1440 spacing-4,target-44",
+      "pass_criteria": "every visible interactive element measures at least 44x44 CSS px"
+     },
+     "receipts": [
+      {
+       "id": "craft-layout-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 45,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "craft-layout-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "fix-loop-polish",
+       "role": "pair",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl fix.js",
+       "version": "axl fix.js on playwright 1.63.0 + axe-core 4.13.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "source: 44x44 in both sources",
+     "coverage": "visible panel only",
+     "disagreement": "WCAG 2.2 AA only requires 24x24 (2.5.8); 44x44 is the AAA / platform-guideline figure",
+     "example": "button, input { min-height: 44px; }"
+    },
+    {
+     "id": "reflow",
+     "name": "Content fits a 320px-wide screen",
+     "plain": "On a very small screen nothing forces sideways scrolling.",
+     "claim_id": "clm_0479",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_w3-org-tr-wcag22"
+     ],
+     "delta": {
+      "selector": "page",
+      "property": "horizontal overflow at 320px",
+      "before": "table 332px wide",
+      "after": "no element extends past the viewport"
+     },
+     "basis": [
+      {
+       "source_id": "src_w3-org-tr-wcag22",
+       "url": "https://www.w3.org/TR/WCAG22/",
+       "quote": "Vertical scrolling content at a width equivalent to 320 CSS pixels",
+       "supports": "WCAG 1.4.10 Reflow"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/polished.html 320 reflow-320",
+      "pass_criteria": "no visible element's right edge is past the 320px viewport"
+     },
+     "receipts": [
+      {
+       "id": "craft-reflow-375-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 8,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "craft-reflow-320-polished",
+       "role": "finding",
+       "exit_code": 1,
+       "findings": 7,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      }
+     ],
+     "discriminates": false,
+     "parameter_origin": "source: 320 CSS px",
+     "coverage": "elements outside data-table scrolling regions are not exempted (WCAG allows two-dimensional content)",
+     "disagreement": null,
+     "example": ".data-table { display: block; overflow-x: auto; }"
+    },
+    {
+     "id": "text-size-floor",
+     "name": "Text is at least 14px (body 16px)",
+     "plain": "Small print is not smaller than 14px; main text is 16px.",
+     "claim_id": "clm_0481",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+     ],
+     "delta": {
+      "selector": "p, li, td, label, input",
+      "property": "font-size",
+      "before": "13px",
+      "after": ">= 14px (body 16px)"
+     },
+     "basis": [
+      {
+       "source_id": "src_impeccable-harden",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/harden.md",
+       "quote": "16px body on mobile, the same floor the typography guidance sets; 14px only for genuinely secondary text",
+       "supports": "16px body, 14px floor"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/fixture-typeset.html 1440 body-16,leading-1.5",
+      "pass_criteria": "no checked text element computes below 14px"
+     },
+     "receipts": [
+      {
+       "id": "craft-type-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 3,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      },
+      {
+       "id": "craft-type-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "source: 16px body, 14px secondary; the check enforces the 14px floor only",
+     "coverage": "the 16px body rule is not separately checked",
+     "disagreement": null,
+     "example": "li, td { font-size: 14px; }"
+    }
+   ]
+  },
+  {
+   "verb": "animate",
+   "plain": "Motion that is quick enough to feel like feedback, and that gives way when a person asks for less motion.",
+   "stays_subjective": "Whether the motion 'feels delightful'.",
+   "patterns": [
+    {
+     "id": "motion-duration",
+     "name": "State-change motion is 500ms or shorter",
+     "plain": "Hover and press feedback is quick; only a deliberate entrance takes longer.",
+     "claim_id": "clm_0482",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+     ],
+     "delta": {
+      "selector": "*",
+      "property": "transition-duration",
+      "before": "unbounded",
+      "after": "<= 500ms (feedback 100-150ms)"
+     },
+     "basis": [
+      {
+       "source_id": "src_impeccable-animate",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/animate.md",
+       "quote": "| 300–500 ms | layout, overlay, or view transition |",
+       "supports": "upper band for layout / overlay change"
+      },
+      {
+       "source_id": "src_impeccable-animate",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/animate.md",
+       "quote": "| 500–800 ms | a deliberately authored focal entrance |",
+       "supports": "longer only for an authored entrance"
+      }
+     ],
+     "check": {
+      "tool": "axl craft checks",
+      "command": "node axl/tools/runners/craft.js axl/demo/fixture-motion-unguarded.html 1440 duration-500",
+      "pass_criteria": "no element has a transition-duration above 500ms"
+     },
+     "receipts": [
+      {
+       "id": "craft-duration-unguarded",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axl craft checks",
+       "version": "axl craft.js on playwright 1.63.0"
+      }
+     ],
+     "discriminates": false,
+     "parameter_origin": "source: duration bands; AXL default: 500ms cap for everything",
+     "coverage": "transitions only; animation-duration is not checked",
+     "disagreement": null,
+     "example": "button { transition: transform 140ms ease-out; }"
+    },
+    {
+     "id": "reduced-motion",
+     "name": "Motion gives way to prefers-reduced-motion",
+     "plain": "When a person asks their device for less motion, the interface stops moving things around.",
+     "claim_id": "clm_0483",
+     "tier": "enforced",
+     "status": "verified",
+     "independent_roots": [
+      "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+      "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+     ],
+     "delta": {
+      "selector": "*",
+      "property": "@media (prefers-reduced-motion: reduce)",
+      "before": "transitions run",
+      "after": "transition and animation removed"
+     },
+     "basis": [
+      {
+       "source_id": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+       "quote": "minimize the amount of non-essential motion",
+       "supports": "what the setting means"
+      },
+      {
+       "source_id": "src_impeccable-audit",
+       "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md",
+       "quote": "Motion sensitivity**: `prefers-reduced-motion` needs an intentional alternative that preserves state change and hierarchy",
+       "supports": "a reduced alternative is required"
+      }
+     ],
+     "check": {
+      "tool": "playwright emulateMedia",
+      "command": "node axl/tools/runners/reducedmotion.js axl/demo/fixture-motion-guarded.html",
+      "pass_criteria": "under emulated reduced motion no element has a transition or animation longer than 1ms"
+     },
+     "receipts": [
+      {
+       "id": "reducedmotion-unguarded",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 8,
+       "tool": "playwright emulateMedia",
+       "version": "playwright 1.63.0"
+      },
+      {
+       "id": "reducedmotion-guarded",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "playwright emulateMedia",
+       "version": "playwright 1.63.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "AXL default: 1ms (effectively instant)",
+     "coverage": "checks that motion stops; it cannot check that state change is still communicated",
+     "disagreement": "The same Impeccable audit page warns against a blanket 0.01ms kill that destroys useful feedback. The check accepts an instant change as compliant and leaves 'is feedback preserved?' to a person.",
+     "example": "@media (prefers-reduced-motion: reduce) { * { transition: none; animation: none; } }"
+    }
+   ]
+  },
+  {
+   "verb": "audit",
+   "plain": "Run the automated accessibility rules and get a pass or fail list. It tells you what a machine can find, never that the page is good.",
+   "stays_subjective": "Everything the rules engines cannot see (meaning, tone, task fit).",
+   "patterns": [
+    {
+     "id": "rules-engine-clean",
+     "name": "Automated accessibility rules report no violations",
+     "plain": "Run the machine checks (axe-core, Lighthouse) and get a plain pass or fail. Passing does not mean the page is good, only that nothing machine-detectable is broken.",
+     "claim_id": "clm_0484",
+     "tier": "enforced",
+     "status": "single-source",
+     "independent_roots": [
+      "src_github-com-dequelabs-axe-core"
+     ],
+     "delta": {
+      "selector": "page",
+      "property": "accessibility rule violations",
+      "before": "2 rules failing (color-contrast, document-title)",
+      "after": "0"
+     },
+     "basis": [
+      {
+       "source_id": "src_github-com-dequelabs-axe-core",
+       "url": "https://github.com/dequelabs/axe-core",
+       "quote": "find **on average 57% of WCAG issues automatically**",
+       "supports": "how much automation covers"
+      }
+     ],
+     "check": {
+      "tool": "axe-core",
+      "command": "node axl/tools/runners/axe.js axl/demo/after.html 1440",
+      "pass_criteria": "axe reports 0 violations for tags wcag2a, wcag2aa, wcag21aa, wcag22aa"
+     },
+     "receipts": [
+      {
+       "id": "axe-before-1440",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 2,
+       "tool": "axe-core",
+       "version": "axe-core 4.13.0 via @axe-core/playwright 4.13.0"
+      },
+      {
+       "id": "axe-after-1440",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axe-core",
+       "version": "axe-core 4.13.0 via @axe-core/playwright 4.13.0"
+      },
+      {
+       "id": "axe-before-375",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 2,
+       "tool": "axe-core",
+       "version": "axe-core 4.13.0 via @axe-core/playwright 4.13.0"
+      },
+      {
+       "id": "axe-after-375",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "axe-core",
+       "version": "axe-core 4.13.0 via @axe-core/playwright 4.13.0"
+      },
+      {
+       "id": "lighthouse-before",
+       "role": "before",
+       "exit_code": 1,
+       "findings": 2,
+       "tool": "lighthouse",
+       "version": "lighthouse 13.5.0"
+      },
+      {
+       "id": "lighthouse-after",
+       "role": "after",
+       "exit_code": 0,
+       "findings": 0,
+       "tool": "lighthouse",
+       "version": "lighthouse 13.5.0"
+      }
+     ],
+     "discriminates": true,
+     "parameter_origin": "source: axe-core's own rule set",
+     "coverage": "axe states it finds about 57% of WCAG issues automatically; a clean run is not a full audit",
+     "disagreement": null,
+     "example": "npx @axe-core/cli http://localhost:8000 --tags wcag2aa"
+    }
+   ]
+  }
+ ],
+ "note": "AXL definitions: claim text and thresholds are written by AXL; each pattern cites verbatim source quotes and a re-runnable receipt."
+}
