@@ -44,29 +44,34 @@ def main():
     if os.path.exists(f"{D}/rules_src/_questions.json"):
         for m in json.load(open(f"{D}/rules_src/_questions.json")):
             for f in m["from"]: QM[f] = m
+    # rule links per tweak: the per-area files, then links for statements recovered from the harvest filter (add_recovered.py)
+    items = []
     for f in sorted(glob.glob(f"{D}/rules_src/[a-z]*.json")):
-        area = os.path.basename(f)[:-5]; src = json.load(open(f))
-        for t, rs in src["tweaks"].items():
-            for r in rs:
-                x = parse(r["rule"])
-                if x["property"] == "ask":
-                    cls = r.get("class"); m = QM.get(f'{x["element"]} ask "{x["question"]}"')
-                    if m: x["element"], x["question"], cls = m["element"], m["question"], m["class"]
-                    rid = f"{x['element']}/ask:{hashlib.sha1(x['question'].lower().encode()).hexdigest()[:6]}"
-                else:
-                    rid = f"{x['element']}/{x['property']}" + "".join(f"@{c}" for c in x["context"])
-                    p = x["property"]
-                    cls = ("access" if p.startswith("wcag:") else ("seo" if p[11:] in LH_SEO else "perf") if p.startswith("lighthouse:")
-                           else MEASURE_CLASS.get(p) or ORIGIN.get(area) if p.startswith("axl:") else css_class(p) or ORIGIN.get(area))
-                if not cls: problems.append(f"no class for {rid} (from {area}/{t})"); cls = "interaction"
-                R = rules.setdefault(rid, {"id": rid, "element": x["element"], "property": x["property"], "context": x["context"], "class": cls,
-                                            "question": x.get("question"), "tests": collections.Counter(), "values": collections.defaultdict(set), "tweaks": set()})
-                if x["property"] != "ask": R["tests"][x["test"]] += 1; R.setdefault("ttest", {})[t] = x["test"]
-                R["tweaks"].add(t)
-                for v in r.get("values", []):
-                    for q in v.get("qids", []):
-                        if q not in cat: problems.append(f"unknown qid {q} in {rid}")
-                        else: R["values"][v.get("value") if v.get("value") not in ("", None) else None].add(q)
+        area = os.path.basename(f)[:-5]
+        items += [(area, t, r) for t, rs in json.load(open(f))["tweaks"].items() for r in rs]
+    if os.path.exists(f"{D}/rules_src/_recovered.json"):
+        items += [(r["area"], t, dict(r, **{"class": r.get("class") or ORIGIN.get(r["area"]) or "content"}))
+                  for t, rs in json.load(open(f"{D}/rules_src/_recovered.json"))["tweaks"].items() for r in rs]
+    for area, t, r in items:
+        x = parse(r["rule"])
+        if x["property"] == "ask":
+            cls = r.get("class"); m = QM.get(f'{x["element"]} ask "{x["question"]}"')
+            if m: x["element"], x["question"], cls = m["element"], m["question"], m["class"]
+            rid = f"{x['element']}/ask:{hashlib.sha1(x['question'].lower().encode()).hexdigest()[:6]}"
+        else:
+            rid = f"{x['element']}/{x['property']}" + "".join(f"@{c}" for c in x["context"])
+            p = x["property"]
+            cls = ("access" if p.startswith("wcag:") else ("seo" if p[11:] in LH_SEO else "perf") if p.startswith("lighthouse:")
+                   else MEASURE_CLASS.get(p) or ORIGIN.get(area) if p.startswith("axl:") else css_class(p) or ORIGIN.get(area))
+        if not cls: problems.append(f"no class for {rid} (from {area}/{t})"); cls = "interaction"
+        R = rules.setdefault(rid, {"id": rid, "element": x["element"], "property": x["property"], "context": x["context"], "class": cls,
+                                    "question": x.get("question"), "tests": collections.Counter(), "values": collections.defaultdict(set), "tweaks": set()})
+        if x["property"] != "ask": R["tests"][x["test"]] += 1; R.setdefault("ttest", {})[t] = x["test"]
+        R["tweaks"].add(t)
+        for v in r.get("values", []):
+            for q in v.get("qids", []):
+                if q not in cat: problems.append(f"unknown qid {q} in {rid}")
+                else: R["values"][v.get("value") if v.get("value") not in ("", None) else None].add(q)
     # tweaks from the earlier curated set have no harvested statements: their evidence is the public claims mapped to them (claim IDs)
     claims = {c["id"]: c for c in json.load(open(f"{D}/claims.json"))["claims"] if c["origin"] == "public"}
     tclaims = collections.defaultdict(set)

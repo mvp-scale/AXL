@@ -933,6 +933,15 @@
 "sources": [
 "axe"
 ]
+},
+{
+"value": null,
+"qids": [
+"impeccable:130549"
+],
+"sources": [
+"impeccable"
+]
 }
 ],
 "sources": [
@@ -4052,6 +4061,7 @@
 "qids": [
 "impeccable:0a8fa1",
 "impeccable:367c41",
+"impeccable:5d8bf5",
 "impeccable:7e41df",
 "impeccable:c1a8e1",
 "nngroup:5cd495",
@@ -5351,15 +5361,18 @@
 {
 "value": null,
 "qids": [
-"deslop:9e9765"
+"deslop:9e9765",
+"impeccable:10c0db"
 ],
 "sources": [
-"deslop"
+"deslop",
+"impeccable"
 ]
 }
 ],
 "sources": [
-"deslop"
+"deslop",
+"impeccable"
 ],
 "tweaks": [
 "keyboard-tested"
@@ -7330,14 +7343,17 @@
 {
 "value": null,
 "qids": [
+"impeccable:6d1bb9",
 "taste-skill:1a299b"
 ],
 "sources": [
+"impeccable",
 "taste-skill"
 ]
 }
 ],
 "sources": [
+"impeccable",
 "taste-skill"
 ],
 "tweaks": [
@@ -7410,6 +7426,7 @@
 "hallmark:b2e377",
 "hallmark:cc1f47",
 "hallmark:ef6494",
+"impeccable:11379f",
 "impeccable:4d300f",
 "openai:cbc548",
 "taste-skill:881453",
@@ -7722,6 +7739,7 @@
 "hallmark:eb1e98",
 "impeccable:061c9c",
 "impeccable:21f4b8",
+"impeccable:7d939f",
 "impeccable:815b3c",
 "impeccable:9dc16c",
 "impeccable:f490af",
@@ -7956,6 +7974,7 @@
 "deslop:da5281",
 "impeccable:5091ac",
 "impeccable:a2a3e9",
+"impeccable:e972d3",
 "impeccable:eb0cee",
 "ui-craft:4a4ea6"
 ],
@@ -9186,6 +9205,7 @@
 "hallmark:391316",
 "impeccable:607856",
 "impeccable:8efb33",
+"impeccable:d01627",
 "impeccable:da32a5",
 "taste-skill:064bb7",
 "taste-skill:0be53b",
@@ -9533,15 +9553,18 @@
 "value": null,
 "qids": [
 "apple-hig:ab7f63",
-"apple-hig:cc15ca"
+"apple-hig:cc15ca",
+"impeccable:47bfaf"
 ],
 "sources": [
-"apple-hig"
+"apple-hig",
+"impeccable"
 ]
 }
 ],
 "sources": [
-"apple-hig"
+"apple-hig",
+"impeccable"
 ],
 "tweaks": [
 "dark-mode-support"
@@ -10658,9 +10681,19 @@
 "sources": [
 "taste-skill"
 ]
+},
+{
+"value": null,
+"qids": [
+"impeccable:99daad"
+],
+"sources": [
+"impeccable"
+]
 }
 ],
 "sources": [
+"impeccable",
 "taste-skill"
 ],
 "tweaks": [
@@ -13799,15 +13832,19 @@
 {
 "value": null,
 "qids": [
-"hallmark:782166"
+"hallmark:782166",
+"impeccable:6851db",
+"impeccable:7a9f0b"
 ],
 "sources": [
-"hallmark"
+"hallmark",
+"impeccable"
 ]
 }
 ],
 "sources": [
-"hallmark"
+"hallmark",
+"impeccable"
 ],
 "tweaks": [
 "dropdowns-must-not-clip-inside-overflow-hidden"
@@ -14212,6 +14249,7 @@
 {
 "value": null,
 "qids": [
+"impeccable:0cbc99",
 "impeccable:33e7ed",
 "ui-craft:85a6ee"
 ],
@@ -16173,6 +16211,7 @@
 "value": null,
 "qids": [
 "impeccable:410f2b",
+"impeccable:b513ed",
 "nngroup:3f6a2c",
 "ui-craft:0ef62f",
 "ui-craft:85a6ee",
@@ -16458,16 +16497,19 @@
 "value": null,
 "qids": [
 "hallmark:4e26fd",
+"impeccable:cb83f4",
 "ui-craft:5e7477"
 ],
 "sources": [
 "hallmark",
+"impeccable",
 "ui-craft"
 ]
 }
 ],
 "sources": [
 "hallmark",
+"impeccable",
 "ui-craft"
 ],
 "tweaks": [
@@ -17734,6 +17776,7 @@
 "value": null,
 "qids": [
 "deslop:58f733",
+"impeccable:0bf391",
 "impeccable:0f5a96",
 "taste-skill:0516d5",
 "taste-skill:736a1c",
@@ -17844,16 +17887,19 @@
 "value": null,
 "qids": [
 "anthropic:e0b017",
+"impeccable:8a7e14",
 "taste-skill:34d464"
 ],
 "sources": [
 "anthropic",
+"impeccable",
 "taste-skill"
 ]
 }
 ],
 "sources": [
 "anthropic",
+"impeccable",
 "taste-skill"
 ],
 "tweaks": [
@@ -17941,6 +17987,8 @@
 "deslop:6b5cc1",
 "hallmark:2cd968",
 "hallmark:4e26fd",
+"impeccable:223daa",
+"impeccable:35266d",
 "impeccable:ab96ee",
 "ui-craft:01f776",
 "ui-craft:65649d",
@@ -17985,6 +18033,8 @@
 "qids": [
 "hallmark:78f27d",
 "hallmark:edb004",
+"impeccable:5c9a1f",
+"impeccable:8bc1dc",
 "ui-craft:a3c046",
 "ui-craft:eee2c5",
 "vercel:502923",
@@ -17994,6 +18044,7 @@
 ],
 "sources": [
 "hallmark",
+"impeccable",
 "ui-craft",
 "vercel"
 ]
@@ -18001,6 +18052,7 @@
 ],
 "sources": [
 "hallmark",
+"impeccable",
 "ui-craft",
 "vercel"
 ],
@@ -18062,6 +18114,8 @@
 {
 "value": null,
 "qids": [
+"impeccable:0d1a84",
+"impeccable:160c67",
 "impeccable:cc7d56"
 ],
 "sources": [
@@ -18201,6 +18255,15 @@
 "claw-design",
 "deslop",
 "hallmark",
+"impeccable"
+]
+},
+{
+"value": null,
+"qids": [
+"impeccable:914aad"
+],
+"sources": [
 "impeccable"
 ]
 }
@@ -18643,6 +18706,7 @@
 "hallmark:4a9130",
 "hallmark:f4a4bc",
 "impeccable:2ad43d",
+"impeccable:5811db",
 "impeccable:8c16d5",
 "impeccable:aa3ded",
 "ui-craft:16e691",
@@ -19028,6 +19092,7 @@
 "qids": [
 "impeccable:0e5fee",
 "impeccable:df0caa",
+"impeccable:e17a7d",
 "ui-craft:0d608e",
 "unslop:e5691d",
 "vercel:c94a81"
@@ -19081,6 +19146,8 @@
 "value": null,
 "qids": [
 "impeccable:00010c",
+"impeccable:55db64",
+"impeccable:daad7d",
 "vercel:f37715"
 ],
 "sources": [
@@ -19274,6 +19341,7 @@
 "value": null,
 "qids": [
 "impeccable:2b9811",
+"impeccable:505e69",
 "impeccable:cd2a34"
 ],
 "sources": [
@@ -20128,10 +20196,20 @@
 "taste-skill",
 "unslop"
 ]
+},
+{
+"value": null,
+"qids": [
+"impeccable:6139fe"
+],
+"sources": [
+"impeccable"
+]
 }
 ],
 "sources": [
 "hallmark",
+"impeccable",
 "taste-skill",
 "unslop"
 ],
@@ -20433,6 +20511,7 @@
 "hallmark:cf50e8",
 "hallmark:fa4ee5",
 "impeccable:13b159",
+"impeccable:2eee5b",
 "impeccable:6e4d36",
 "ui-craft:5b55bc",
 "ui-craft:68cc56"
@@ -20785,7 +20864,9 @@
 "anthropic:ee3b05",
 "deslop:c17b4d",
 "impeccable:410f2b",
+"impeccable:5bb0de",
 "impeccable:8ff610",
+"impeccable:ff2ec6",
 "nngroup:07c8f8",
 "nngroup:12c78e",
 "nngroup:a01a77",
@@ -20895,6 +20976,8 @@
 {
 "value": null,
 "qids": [
+"impeccable:0083b5",
+"impeccable:165740",
 "impeccable:210927",
 "impeccable:8ff610",
 "nngroup:9275ca",
@@ -20980,7 +21063,9 @@
 {
 "value": null,
 "qids": [
-"impeccable:cb7bc1"
+"impeccable:1ef8df",
+"impeccable:cb7bc1",
+"impeccable:db7425"
 ],
 "sources": [
 "impeccable"
@@ -21549,11 +21634,21 @@
 "ui-craft",
 "unslop"
 ]
+},
+{
+"value": null,
+"qids": [
+"impeccable:398942"
+],
+"sources": [
+"impeccable"
+]
 }
 ],
 "sources": [
 "claw-design",
 "hallmark",
+"impeccable",
 "taste-skill",
 "ui-craft",
 "unslop"
@@ -24587,16 +24682,19 @@
 "value": null,
 "qids": [
 "anthropic:ed4777",
+"impeccable:af466e",
 "ui-craft:25b15a"
 ],
 "sources": [
 "anthropic",
+"impeccable",
 "ui-craft"
 ]
 }
 ],
 "sources": [
 "anthropic",
+"impeccable",
 "ui-craft"
 ],
 "tweaks": [
@@ -25159,6 +25257,7 @@
 "value": null,
 "qids": [
 "impeccable:176733",
+"impeccable:31f1f0",
 "impeccable:399113",
 "taste-skill:fb3075"
 ],
@@ -25319,7 +25418,11 @@
 {
 "value": null,
 "qids": [
-"impeccable:18e6ee"
+"impeccable:18e6ee",
+"impeccable:5c8c87",
+"impeccable:63637b",
+"impeccable:b579ff",
+"impeccable:f6dc5a"
 ],
 "sources": [
 "impeccable"
@@ -25350,6 +25453,8 @@
 "value": null,
 "qids": [
 "impeccable:077081",
+"impeccable:1087d6",
+"impeccable:6a98f9",
 "impeccable:c64edd"
 ],
 "sources": [
@@ -27430,7 +27535,9 @@
 "value": null,
 "qids": [
 "deslop:bc4b5d",
-"impeccable:4d1e6b"
+"impeccable:155681",
+"impeccable:4d1e6b",
+"impeccable:76eace"
 ],
 "sources": [
 "deslop",
@@ -27465,7 +27572,9 @@
 "value": null,
 "qids": [
 "hallmark:d15e85",
+"impeccable:3b3629",
 "impeccable:52b4ae",
+"impeccable:c76c55",
 "taste-skill:420cbf",
 "taste-skill:59ad17",
 "taste-skill:ad4b83",
@@ -28271,6 +28380,7 @@
 "deslop:aa1545",
 "hallmark:381ce7",
 "impeccable:95ccbe",
+"impeccable:ebc97e",
 "ui-craft:26a88b"
 ],
 "sources": [
@@ -28898,9 +29008,12 @@
 "impeccable:18ed70",
 "impeccable:232b33",
 "impeccable:45a099",
+"impeccable:7e8bad",
 "impeccable:7f857e",
 "impeccable:b77e63",
+"impeccable:cdf90b",
 "impeccable:df4815",
+"impeccable:eb27e9",
 "impeccable:ed4148",
 "ui-craft:3ff566"
 ],
@@ -28978,6 +29091,8 @@
 "value": null,
 "qids": [
 "deslop:95ea2d",
+"impeccable:170eec",
+"impeccable:4612ea",
 "impeccable:e005dd"
 ],
 "sources": [
@@ -29017,6 +29132,7 @@
 "hallmark:2f8f04",
 "hallmark:9bf0c6",
 "hallmark:ac0d9a",
+"impeccable:23532c",
 "impeccable:2766bf",
 "impeccable:28616f",
 "impeccable:986c1d",
@@ -29085,6 +29201,7 @@
 ],
 "preview": [
 "progressive-disclosure",
+"touch-target-44",
 "touch-target-spacing"
 ]
 },
@@ -29107,6 +29224,7 @@
 "hallmark:9bf0c6",
 "impeccable:2766bf",
 "impeccable:28616f",
+"impeccable:48de56",
 "impeccable:986c1d",
 "impeccable:da8505",
 "taste-skill:448895",
@@ -31273,6 +31391,7 @@
 "hallmark:96151b",
 "hallmark:bfc512",
 "hallmark:c8780e",
+"impeccable:006a83",
 "impeccable:60b875",
 "impeccable:6b338d",
 "ui-craft:0540fe",
@@ -33911,8 +34030,10 @@
 {
 "value": null,
 "qids": [
+"impeccable:8aa709",
 "impeccable:9520b6",
-"impeccable:a63e19"
+"impeccable:a63e19",
+"impeccable:a77f0a"
 ],
 "sources": [
 "impeccable"
@@ -36265,8 +36386,10 @@
 "deslop:6e666b",
 "hallmark:bb7df9",
 "impeccable:018921",
+"impeccable:621920",
 "impeccable:6b3702",
 "impeccable:8e90c6",
+"impeccable:b3b385",
 "impeccable:f3bf2e",
 "taste-skill:8987e0",
 "ui-craft:14cb50"
@@ -38120,7 +38243,10 @@
 "apple-hig:16c83a",
 "apple-hig:add817",
 "impeccable:021139",
-"impeccable:aa6c08"
+"impeccable:093a13",
+"impeccable:aa6c08",
+"impeccable:c87c01",
+"impeccable:db09f0"
 ],
 "sources": [
 "apple-hig",
@@ -38432,11 +38558,13 @@
 "qids": [
 "claw-design:4853c7",
 "deslop:aaa17a",
+"impeccable:84014f",
 "ui-craft:d94b84"
 ],
 "sources": [
 "claw-design",
 "deslop",
+"impeccable",
 "ui-craft"
 ]
 }
@@ -38444,6 +38572,7 @@
 "sources": [
 "claw-design",
 "deslop",
+"impeccable",
 "ui-craft"
 ],
 "tweaks": [
@@ -39203,6 +39332,7 @@
 "value": null,
 "qids": [
 "deslop:721625",
+"impeccable:6d214c",
 "impeccable:fef407",
 "ui-craft:0211df",
 "ui-craft:3051ad",
@@ -39541,6 +39671,7 @@
 "value": null,
 "qids": [
 "impeccable:a4053c",
+"impeccable:d9b458",
 "impeccable:ed3181",
 "lighthouse:c6c975",
 "ui-craft:dc9a1e"
@@ -42452,6 +42583,7 @@
 {
 "value": null,
 "qids": [
+"impeccable:4e1e47",
 "impeccable:a56ad2"
 ],
 "sources": [
@@ -43470,9 +43602,11 @@
 "hallmark:942a74",
 "impeccable:0c9106",
 "impeccable:198b7b",
+"impeccable:1d93db",
 "impeccable:21418b",
 "impeccable:4ba15d",
 "impeccable:af2893",
+"impeccable:d08d91",
 "impeccable:fa0456",
 "oneredoak:9620ce",
 "taste-skill:4d2bec",
@@ -44107,6 +44241,7 @@
 "hallmark:b28eaa",
 "hallmark:d4c8fb",
 "hallmark:e5ac04",
+"impeccable:6b502c",
 "impeccable:ab2f4f",
 "impeccable:da1e7b",
 "impeccable:f779f6",
@@ -47521,15 +47656,18 @@
 {
 "value": null,
 "qids": [
-"deslop:71d775"
+"deslop:71d775",
+"impeccable:be91a6"
 ],
 "sources": [
-"deslop"
+"deslop",
+"impeccable"
 ]
 }
 ],
 "sources": [
-"deslop"
+"deslop",
+"impeccable"
 ],
 "tweaks": [
 "animate-status-only-when-data-changes"
@@ -48114,10 +48252,20 @@
 "ui-craft",
 "vercel"
 ]
+},
+{
+"value": null,
+"qids": [
+"impeccable:305413"
+],
+"sources": [
+"impeccable"
+]
 }
 ],
 "sources": [
 "hallmark",
+"impeccable",
 "ui-craft",
 "vercel"
 ],
@@ -48239,6 +48387,7 @@
 {
 "value": null,
 "qids": [
+"impeccable:253b33",
 "impeccable:93bc43",
 "ui-craft:060e27"
 ],
@@ -49506,14 +49655,17 @@
 {
 "value": null,
 "qids": [
+"impeccable:34c750",
 "lighthouse:dd286b"
 ],
 "sources": [
+"impeccable",
 "lighthouse"
 ]
 }
 ],
 "sources": [
+"impeccable",
 "lighthouse"
 ],
 "tweaks": [
@@ -50609,6 +50761,15 @@
 "hallmark",
 "impeccable",
 "ui-craft"
+]
+},
+{
+"value": null,
+"qids": [
+"impeccable:eabfe7"
+],
+"sources": [
+"impeccable"
 ]
 }
 ],
@@ -51736,6 +51897,7 @@
 "qids": [
 "deslop:b6a6bc",
 "hallmark:3ec53b",
+"impeccable:cd0884",
 "impeccable:f49a8a",
 "taste-skill:bdd287",
 "ui-craft:71a34c"
@@ -51948,15 +52110,18 @@
 {
 "value": null,
 "qids": [
-"hallmark:14ddc6"
+"hallmark:14ddc6",
+"impeccable:71ca26"
 ],
 "sources": [
-"hallmark"
+"hallmark",
+"impeccable"
 ]
 }
 ],
 "sources": [
-"hallmark"
+"hallmark",
+"impeccable"
 ],
 "tweaks": [
 "badge"
@@ -53130,12 +53295,22 @@
 "hallmark",
 "taste-skill"
 ]
+},
+{
+"value": null,
+"qids": [
+"impeccable:398942"
+],
+"sources": [
+"impeccable"
+]
 }
 ],
 "sources": [
 "deslop",
 "feel-better",
 "hallmark",
+"impeccable",
 "taste-skill"
 ],
 "tweaks": [
@@ -58424,6 +58599,24 @@
 "sources": [
 "taste-skill"
 ]
+},
+{
+"value": null,
+"qids": [
+"impeccable:ebd761"
+],
+"sources": [
+"impeccable"
+]
+},
+{
+"value": "80",
+"qids": [
+"impeccable:61dcdf"
+],
+"sources": [
+"impeccable"
+]
 }
 ],
 "sources": [
@@ -58633,9 +58826,19 @@
 "sources": [
 "ui-craft"
 ]
+},
+{
+"value": null,
+"qids": [
+"impeccable:21831e"
+],
+"sources": [
+"impeccable"
+]
 }
 ],
 "sources": [
+"impeccable",
 "taste-skill",
 "ui-craft"
 ],
@@ -60527,6 +60730,8 @@
 "hallmark:94ac7b",
 "hallmark:95f8aa",
 "hallmark:ab5d49",
+"impeccable:20d4d3",
+"impeccable:b002b1",
 "impeccable:e52313"
 ],
 "sources": [
@@ -61811,10 +62016,20 @@
 "sources": [
 "hallmark"
 ]
+},
+{
+"value": null,
+"qids": [
+"impeccable:c047c3"
+],
+"sources": [
+"impeccable"
+]
 }
 ],
 "sources": [
-"hallmark"
+"hallmark",
+"impeccable"
 ],
 "tweaks": [
 "no-all-caps-or-justified-body-text"
@@ -62139,15 +62354,18 @@
 {
 "value": null,
 "qids": [
-"deslop:29e2ea"
+"deslop:29e2ea",
+"impeccable:7a2403"
 ],
 "sources": [
-"deslop"
+"deslop",
+"impeccable"
 ]
 }
 ],
 "sources": [
-"deslop"
+"deslop",
+"impeccable"
 ],
 "tweaks": [
 "limit-display-faces-to-headlines"
@@ -63179,6 +63397,1087 @@
 ],
 "preview": [
 "fluid-type-scale-across-viewports"
+]
+},
+{
+"id": "page/ask:26438e",
+"class": "color",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Does the color scheme derive from the user's wallpaper (dynamic color) with a static fallback?\"",
+"label": "Does the color scheme derive from the user's wallpaper (dynamic color) with a static fallback?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:1c36d0",
+"impeccable:3b76ce"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"dynamic-color-with-fallback"
+],
+"preview": [
+"dynamic-color-with-fallback"
+]
+},
+{
+"id": "ui:card/ask:ed6215",
+"class": "surface",
+"element": "ui:card",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "ui:card ask \"Is elevation conveyed through tonal surface levels rather than arbitrary drop shadows?\"",
+"label": "Is elevation conveyed through tonal surface levels rather than arbitrary drop shadows?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:746d6f"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"tonal-elevation-over-drop-shadows"
+],
+"preview": [
+"tonal-elevation-over-drop-shadows"
+]
+},
+{
+"id": "text:*/ask:6018c5",
+"class": "content",
+"element": "text:*",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "text:* ask \"Are messages written as complete translatable strings rather than concatenated fragments?\"",
+"label": "Are messages written as complete translatable strings rather than concatenated fragments?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:a9be9c"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"whole-translatable-messages"
+],
+"preview": [
+"whole-translatable-messages"
+]
+},
+{
+"id": "aria:heading/ask:631088",
+"class": "layout",
+"element": "aria:heading",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "aria:heading ask \"Is there more space above a heading than below it?\"",
+"label": "Is there more space above a heading than below it?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:99f4dd"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"spacing"
+],
+"preview": [
+"spacing"
+]
+},
+{
+"id": "aria:heading/ask:b6af88",
+"class": "layout",
+"element": "aria:heading",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "aria:heading ask \"Does each heading sit closer to its own content than to the block above?\"",
+"label": "Does each heading sit closer to its own content than to the block above?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:d7aa60"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"spacing"
+],
+"preview": [
+"spacing"
+]
+},
+{
+"id": "page/ask:0abcd7",
+"class": "motion",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Is motion one authored moment rather than scattered effects or an identical entrance on every section?\"",
+"label": "Is motion one authored moment rather than scattered effects or an identical entrance on every section?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b8c30a"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"one-authored-motion-moment"
+],
+"preview": [
+"one-authored-motion-moment"
+]
+},
+{
+"id": "page/ask:031475",
+"class": "motion",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Do entrance animations use an exponential ease-out starting from an already-visible default?\"",
+"label": "Do entrance animations use an exponential ease-out starting from an already-visible default?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:0b8132"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"exponential-ease-out-entrances"
+],
+"preview": [
+"exponential-ease-out-entrances"
+]
+},
+{
+"id": "page/ask:aa6d31",
+"class": "motion",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Are blur, backdrop-filter, clip-path, mask and shadow animated only where they stay smooth?\"",
+"label": "Are blur, backdrop-filter, clip-path, mask and shadow animated only where they stay smooth?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:c38dd3"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"smooth-non-transform-animation-only"
+],
+"preview": [
+"smooth-non-transform-animation-only"
+]
+},
+{
+"id": "page/ask:b1db9d",
+"class": "interaction",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Are text selection, caret, scrollbars, focus rings, underline offset and tabular numerals styled rather than left at browser defaults?\"",
+"label": "Are text selection, caret, scrollbars, focus rings, underline offset and tabular numerals styled rather than left at browser defaults?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:a3152c"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"style-browser-default-surfaces"
+],
+"preview": [
+"style-browser-default-surfaces"
+]
+},
+{
+"id": "page/ask:00f709",
+"class": "layout",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Is the page free of the hero-metric template of big number, small label, supporting stats and accent?\"",
+"label": "Is the page free of the hero-metric template of big number, small label, supporting stats and accent?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:ab0930"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-hero-metric-template"
+],
+"preview": [
+"no-hero-metric-template"
+]
+},
+{
+"id": "aria:navigation/ask:984b88",
+"class": "content",
+"element": "aria:navigation",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "aria:navigation ask \"Does the navigation have at most 5 top-level items?\"",
+"label": "Does the navigation have at most 5 top-level items?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:1bef2f"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"limit-top-level-nav-items"
+],
+"preview": [
+"limit-top-level-nav-items"
+]
+},
+{
+"id": "page/ask:940d2a",
+"class": "layout",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Does a portfolio or gallery index ask for one decision per screen rather than showing filter, sort and tag controls at once?\"",
+"label": "Does a portfolio or gallery index ask for one decision per screen rather than showing filter, sort and tag controls at once?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:1b032d"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"one-decision-per-index-screen"
+],
+"preview": [
+"one-decision-per-index-screen"
+]
+},
+{
+"id": "page/ask:6a3c97",
+"class": "interaction",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Are options visible rather than buried in hidden menus?\"",
+"label": "Are options visible rather than buried in hidden menus?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:cb6463"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"keep-options-visible"
+],
+"preview": [
+"keep-options-visible"
+]
+},
+{
+"id": "page/ask:9f442d",
+"class": "layout",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Is the interface free of decorative clutter competing for attention?\"",
+"label": "Is the interface free of decorative clutter competing for attention?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:bfccaf"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-decorative-clutter"
+],
+"preview": [
+"no-decorative-clutter"
+]
+},
+{
+"id": "page/ask:3417d5",
+"class": "motion",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Can slow animations be skipped or interrupted?\"",
+"label": "Can slow animations be skipped or interrupted?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:510ebc"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"skippable-slow-animations"
+],
+"preview": [
+"skippable-slow-animations"
+]
+},
+{
+"id": "page/ask:fa9a4f",
+"class": "interaction",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Are batch actions offered where users handle many items?\"",
+"label": "Are batch actions offered where users handle many items?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:ace2d7"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"offer-batch-actions"
+],
+"preview": [
+"offer-batch-actions"
+]
+},
+{
+"id": "page/ask:d8cdde",
+"class": "interaction",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Is progress preserved across tab switches and interruptions?\"",
+"label": "Is progress preserved across tab switches and interruptions?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:084c64"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"preserve-progress-on-interruption"
+],
+"preview": [
+"preserve-progress-on-interruption"
+]
+},
+{
+"id": "ui:popup/ask:089266",
+"class": "surface",
+"element": "ui:popup",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "ui:popup ask \"Are blur and translucency limited to system materials behind bars and sheets?\"",
+"label": "Are blur and translucency limited to system materials behind bars and sheets?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b2cbf3"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"use-system-materials-for-blur"
+],
+"preview": [
+"use-system-materials-for-blur"
+]
+},
+{
+"id": "aria:list/ask:faa881",
+"class": "content",
+"element": "aria:list",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "aria:list ask \"Are settings-shaped lists grouped or inset rather than built as bespoke card stacks?\"",
+"label": "Are settings-shaped lists grouped or inset rather than built as bespoke card stacks?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:5beb00"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"grouped-lists-for-settings"
+],
+"preview": [
+"grouped-lists-for-settings"
+]
+},
+{
+"id": "aria:form/ask:7e7068",
+"class": "content",
+"element": "aria:form",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "aria:form ask \"Does each requested piece of information say why it is being asked?\"",
+"label": "Does each requested piece of information say why it is being asked?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:576880"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"explain-why-you-ask"
+],
+"preview": [
+"explain-why-you-ask"
+]
+},
+{
+"id": "process/ask:0f4137",
+"class": "content",
+"element": "process",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "process ask \"Do tour steps teach workflows rather than naming individual features?\"",
+"label": "Do tour steps teach workflows rather than naming individual features?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:4c18db"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"tours-teach-workflows"
+],
+"preview": [
+"tours-teach-workflows"
+]
+},
+{
+"id": "aria:tooltip/ask:fed2ec",
+"class": "content",
+"element": "aria:tooltip",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "aria:tooltip ask \"Does a dismissed tooltip stay dismissed instead of reappearing?\"",
+"label": "Does a dismissed tooltip stay dismissed instead of reappearing?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b0e55d"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"respect-tooltip-dismissals"
+],
+"preview": [
+"respect-tooltip-dismissals"
+]
+},
+{
+"id": "page/ask:c9b1e0",
+"class": "content",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Are standard affordances such as scrollbars, form controls and modals left standard rather than reinvented?\"",
+"label": "Are standard affordances such as scrollbars, form controls and modals left standard rather than reinvented?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:04246a"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"keep-standard-affordances"
+],
+"preview": [
+"keep-standard-affordances"
+]
+},
+{
+"id": "state:disabled/ask:0123b2",
+"class": "color",
+"element": "state:disabled",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "state:disabled ask \"Are inactive states free of heavy or fully saturated color?\"",
+"label": "Are inactive states free of heavy or fully saturated color?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:5a8a87"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"mute-inactive-state-color"
+],
+"preview": [
+"mute-inactive-state-color"
+]
+},
+{
+"id": "page/ask:5428b3",
+"class": "content",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Is the same visual vocabulary used across screens, with delight saved for moments?\"",
+"label": "Is the same visual vocabulary used across screens, with delight saved for moments?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:96098b"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"consistent-visual-vocabulary"
+],
+"preview": [
+"consistent-visual-vocabulary"
+]
+},
+{
+"id": "page/ask:e3e457",
+"class": "perf",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Do animations hold 60fps?\"",
+"label": "Do animations hold 60fps?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:3445ca"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"animations-hold-60fps"
+],
+"preview": [
+"animations-hold-60fps"
+]
+},
+{
+"id": "page/ask:c06c11",
+"class": "motion",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Is the page free of a decorative blinking cursor that simulates typing?\"",
+"label": "Is the page free of a decorative blinking cursor that simulates typing?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:124f36"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-decorative-blinking-cursor"
+],
+"preview": [
+"no-decorative-blinking-cursor"
+]
+},
+{
+"id": "aria:img/ask:a94d42",
+"class": "surface",
+"element": "aria:img",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "aria:img ask \"Are illustrations free of pictorial scenes built from piles of primitive shapes?\"",
+"label": "Are illustrations free of pictorial scenes built from piles of primitive shapes?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:2ae0c3"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-shape-assembled-illustrations"
+],
+"preview": [
+"no-shape-assembled-illustrations"
+]
+},
+{
+"id": "page/ask:742966",
+"class": "motion",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Is the page free of continuously auto-scrolling content?\"",
+"label": "Is the page free of continuously auto-scrolling content?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:d3b547"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-auto-scrolling-marquees"
+],
+"preview": [
+"no-auto-scrolling-marquees"
+]
+},
+{
+"id": "ui:icon/ask:c47f52",
+"class": "content",
+"element": "ui:icon",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "ui:icon ask \"Is the icon free of a rounded-square container stacked above its heading?\"",
+"label": "Is the icon free of a rounded-square container stacked above its heading?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:3b8795"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-icon-tile-above-heading"
+],
+"preview": [
+"no-icon-tile-above-heading"
+]
+},
+{
+"id": "text:*/ask:76e438",
+"class": "content",
+"element": "text:*",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "text:* ask \"Is the copy free of repeated short-rebuttal or manufactured-contrast aphorisms?\"",
+"label": "Is the copy free of repeated short-rebuttal or manufactured-contrast aphorisms?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b89aec"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-ai-cliche-copy"
+],
+"preview": [
+"no-ai-cliche-copy"
+]
+},
+{
+"id": "text:*/ask:5e1ba2",
+"class": "content",
+"element": "text:*",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "text:* ask \"Is the copy free of dismissing things as theater?\"",
+"label": "Is the copy free of dismissing things as theater?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:66caa1"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-ai-cliche-copy"
+],
+"preview": [
+"no-ai-cliche-copy"
+]
+},
+{
+"id": "page/ask:aef29f",
+"class": "access",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Is page text visible at rest, not left at opacity 0 or hidden?\"",
+"label": "Is page text visible at rest, not left at opacity 0 or hidden?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:9be542"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-content-invisible-at-rest"
+],
+"preview": [
+"no-content-invisible-at-rest"
+]
+},
+{
+"id": "text:*/ask:0ce232",
+"class": "access",
+"element": "text:*",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "text:* ask \"Is all text free of being covered by an opaque element or other text?\"",
+"label": "Is all text free of being covered by an opaque element or other text?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:e657b2"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"no-text-occluded-by-overlaps"
+],
+"preview": [
+"no-text-occluded-by-overlaps"
+]
+},
+{
+"id": "page/ask:64328d",
+"class": "layout",
+"element": "page",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "page ask \"Do columns in the opening section stay balanced rather than one running far past the fold?\"",
+"label": "Do columns in the opening section stay balanced rather than one running far past the fold?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:829cb5"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"balance-opening-columns"
+],
+"preview": [
+"balance-opening-columns"
+]
+},
+{
+"id": "ui:card/ask:13a570",
+"class": "surface",
+"element": "ui:card",
+"property": "ask",
+"context": [],
+"kind": "ask",
+"code": "ui:card ask \"Is the same text free of being repeated three or more times within one card?\"",
+"label": "Is the same text free of being repeated three or more times within one card?",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:9ce261"
+],
+"sources": [
+"impeccable"
+]
+}
+],
+"sources": [
+"impeccable"
+],
+"tweaks": [
+"remove-clutter"
+],
+"preview": [
+"remove-clutter"
 ]
 }
 ]

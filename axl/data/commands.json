@@ -296,6 +296,20 @@
 ]
 },
 {
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
 "rule": "state:focus-visible/wcag:2.4.7",
 "qids": [],
 "via": [
@@ -544,7 +558,8 @@
 {
 "rule": "page/axl:spacing-off-scale",
 "qids": [
-"impeccable:6f9765"
+"impeccable:6f9765",
+"impeccable:b3b385"
 ],
 "via": [
 "design-tokens",
@@ -889,7 +904,8 @@
 {
 "rule": "state:invalid/ask:9d564b",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -898,7 +914,8 @@
 {
 "rule": "page/ask:a4fa8e",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -907,7 +924,8 @@
 {
 "rule": "process/ask:daaa74",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -916,7 +934,8 @@
 {
 "rule": "state:empty/ask:804805",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -925,7 +944,8 @@
 {
 "rule": "state:empty/ask:427105",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -934,7 +954,8 @@
 {
 "rule": "ui:skeleton/ask:b1f4cd",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -943,7 +964,8 @@
 {
 "rule": "ui:skeleton/lighthouse:cumulative-layout-shift",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -952,7 +974,8 @@
 {
 "rule": "ui:skeleton/transition-delay",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -961,7 +984,8 @@
 {
 "rule": "ui:skeleton/ask:0056d8",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -970,7 +994,8 @@
 {
 "rule": "ui:skeleton/ask:eddf55",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -979,7 +1004,8 @@
 {
 "rule": "aria:progressbar/ask:e06a6e",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -988,7 +1014,8 @@
 {
 "rule": "aria:progressbar/ask:f28359",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -997,7 +1024,8 @@
 {
 "rule": "aria:status/ask:bdb8e0",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -1006,7 +1034,8 @@
 {
 "rule": "aria:status/ask:666fa5",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -1015,7 +1044,8 @@
 {
 "rule": "ui:toast/ask:8f8077",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -1024,7 +1054,8 @@
 {
 "rule": "ui:avatar/ask:f54148",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -1033,7 +1064,8 @@
 {
 "rule": "ui:file/ask:320b70",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -1042,7 +1074,8 @@
 {
 "rule": "aria:form/ask:575813",
 "qids": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "via": [
 "states-designed"
@@ -1050,56 +1083,90 @@
 },
 {
 "rule": "text:label/margin-bottom",
-"qids": [],
+"qids": [
+"impeccable:b3b385"
+],
 "via": [
 "spacing"
 ]
 },
 {
 "rule": "page/ask:c1aefb",
-"qids": [],
+"qids": [
+"impeccable:b3b385"
+],
 "via": [
 "spacing"
 ]
 },
 {
 "rule": "text:body/max-width",
-"qids": [],
+"qids": [
+"impeccable:b3b385"
+],
 "via": [
 "spacing"
 ]
 },
 {
 "rule": "aria:main/padding",
-"qids": [],
+"qids": [
+"impeccable:b3b385"
+],
 "via": [
 "spacing"
 ]
 },
 {
 "rule": "aria:main/gap",
-"qids": [],
+"qids": [
+"impeccable:b3b385"
+],
 "via": [
 "spacing"
 ]
 },
 {
 "rule": "aria:form/gap",
-"qids": [],
+"qids": [
+"impeccable:b3b385"
+],
 "via": [
 "spacing"
 ]
 },
 {
 "rule": "aria:form/margin-bottom",
-"qids": [],
+"qids": [
+"impeccable:b3b385"
+],
 "via": [
 "spacing"
 ]
 },
 {
 "rule": "page/ask:4d533b",
-"qids": [],
+"qids": [
+"impeccable:b3b385"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [
+"impeccable:b3b385"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [
+"impeccable:b3b385"
+],
 "via": [
 "spacing"
 ]
@@ -1925,6 +1992,20 @@
 ]
 },
 {
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
 "rule": "aria:heading/axl:heading-body-weight-gap",
 "qids": [],
 "via": [
@@ -2237,6 +2318,20 @@
 ]
 },
 {
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
 "rule": "state:invalid/ask:9d564b",
 "qids": [],
 "via": [
@@ -2509,6 +2604,20 @@
 ]
 },
 {
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
 "rule": "page/ask:84d8c8",
 "qids": [],
 "via": [
@@ -2718,6 +2827,20 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [],
 "via": [
 "spacing"
@@ -3076,6 +3199,20 @@
 "via": [
 "spacing"
 ]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [],
+"via": [
+"spacing"
+]
 }
 ]
 },
@@ -3124,6 +3261,7 @@
 "impeccable:52b4ae",
 "impeccable:96d463",
 "impeccable:9710e0",
+"impeccable:c76c55",
 "impeccable:ef01f1",
 "impeccable:f8215c",
 "impeccable:fcc246"
@@ -3341,6 +3479,21 @@
 ]
 },
 {
+"rule": "ui:card/ask:13a570",
+"qids": [
+"impeccable:01dd85",
+"impeccable:12f6c7",
+"impeccable:96d463",
+"impeccable:9710e0",
+"impeccable:ef01f1",
+"impeccable:f8215c",
+"impeccable:fcc246"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
 "rule": "page/axl:accent-hues",
 "qids": [],
 "via": [
@@ -3402,7 +3555,10 @@
 {
 "rule": "aria:menu/ask:801e76",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:7e8bad",
+"impeccable:c76c55",
+"impeccable:cdf90b"
 ],
 "via": [
 "primary",
@@ -3411,35 +3567,50 @@
 },
 {
 "rule": "page/ask:81083d",
-"qids": [],
+"qids": [
+"impeccable:7e8bad",
+"impeccable:cdf90b"
+],
 "via": [
 "progressive-disclosure"
 ]
 },
 {
 "rule": "aria:form/ask:663ecb",
-"qids": [],
+"qids": [
+"impeccable:7e8bad",
+"impeccable:cdf90b"
+],
 "via": [
 "progressive-disclosure"
 ]
 },
 {
 "rule": "page/ask:767653",
-"qids": [],
+"qids": [
+"impeccable:7e8bad",
+"impeccable:cdf90b"
+],
 "via": [
 "progressive-disclosure"
 ]
 },
 {
 "rule": "aria:button/min-height",
-"qids": [],
+"qids": [
+"impeccable:7e8bad",
+"impeccable:cdf90b"
+],
 "via": [
 "progressive-disclosure"
 ]
 },
 {
 "rule": "aria:button/min-width",
-"qids": [],
+"qids": [
+"impeccable:7e8bad",
+"impeccable:cdf90b"
+],
 "via": [
 "progressive-disclosure"
 ]
@@ -3468,7 +3639,8 @@
 {
 "rule": "aria:button/wcag:1.4.11",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3477,7 +3649,8 @@
 {
 "rule": "page/ask:a3f9ca",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3487,7 +3660,8 @@
 "rule": "page/ask:fe02a9",
 "qids": [
 "impeccable:176733",
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "preserve-visual-hierarchy-when-simplifying",
@@ -3497,7 +3671,8 @@
 {
 "rule": "aria:button/ask:f49876",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3506,7 +3681,8 @@
 {
 "rule": "ui:card/ask:2f40ba",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3515,7 +3691,8 @@
 {
 "rule": "aria:button/lighthouse:interactive-element-affordance",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3524,7 +3701,8 @@
 {
 "rule": "aria:button/ask:9127e5",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3533,7 +3711,8 @@
 {
 "rule": "aria:alertdialog/ask:b663eb",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3542,7 +3721,8 @@
 {
 "rule": "aria:toolbar/ask:39a43f",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3551,7 +3731,8 @@
 {
 "rule": "aria:navigation/ask:e77738",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3560,7 +3741,8 @@
 {
 "rule": "page/ask:f71ca7",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3569,7 +3751,8 @@
 {
 "rule": "page/ask:262d08",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3578,7 +3761,8 @@
 {
 "rule": "page/ask:dd31fc",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3587,7 +3771,8 @@
 {
 "rule": "aria:button/ask:9029b3",
 "qids": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "via": [
 "primary"
@@ -3596,7 +3781,8 @@
 {
 "rule": "text:*/ask:7fb948",
 "qids": [
-"impeccable:7e41df"
+"impeccable:7e41df",
+"impeccable:8a7e14"
 ],
 "via": [
 "copy-specific",
@@ -3606,14 +3792,18 @@
 },
 {
 "rule": "text:*/ask:d6b158",
-"qids": [],
+"qids": [
+"impeccable:8a7e14"
+],
 "via": [
 "copy-specific"
 ]
 },
 {
 "rule": "text:*/axl:em-dashes-per-paragraph",
-"qids": [],
+"qids": [
+"impeccable:8a7e14"
+],
 "via": [
 "copy-specific"
 ]
@@ -3621,7 +3811,8 @@
 {
 "rule": "text:*/ask:186eaa",
 "qids": [
-"impeccable:7e41df"
+"impeccable:7e41df",
+"impeccable:8a7e14"
 ],
 "via": [
 "copy-specific",
@@ -3630,21 +3821,27 @@
 },
 {
 "rule": "aria:heading/ask:92e18b",
-"qids": [],
+"qids": [
+"impeccable:8a7e14"
+],
 "via": [
 "copy-specific"
 ]
 },
 {
 "rule": "ui:toast/ask:d14601",
-"qids": [],
+"qids": [
+"impeccable:8a7e14"
+],
 "via": [
 "copy-specific"
 ]
 },
 {
 "rule": "state:empty/ask:4ed01e",
-"qids": [],
+"qids": [
+"impeccable:8a7e14"
+],
 "via": [
 "copy-specific"
 ]
@@ -4144,6 +4341,33 @@
 "via": [
 "limit-component-variants"
 ]
+},
+{
+"rule": "page/ask:160bc9",
+"qids": [
+"impeccable:84014f"
+],
+"via": [
+"left-edge-alignment"
+]
+},
+{
+"rule": "page/ask:61c823",
+"qids": [
+"impeccable:84014f"
+],
+"via": [
+"left-edge-alignment"
+]
+},
+{
+"rule": "text:body/text-align",
+"qids": [
+"impeccable:84014f"
+],
+"via": [
+"left-edge-alignment"
+]
 }
 ]
 },
@@ -4291,6 +4515,15 @@
 },
 {
 "rule": "page/ask:de5b06",
+"qids": [
+"ui-craft:b47d83"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:card/ask:13a570",
 "qids": [
 "ui-craft:b47d83"
 ],
@@ -4648,6 +4881,13 @@
 },
 {
 "rule": "page/ask:de5b06",
+"qids": [],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:card/ask:13a570",
 "qids": [],
 "via": [
 "remove-clutter"
@@ -6365,6 +6605,19 @@
 ]
 },
 {
+"rule": "ui:card/ask:13a570",
+"qids": [
+"impeccable:198b7b",
+"impeccable:21418b",
+"impeccable:2e3f03",
+"impeccable:4ba15d",
+"impeccable:4d300f"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
 "rule": "aria:heading/axl:heading-body-weight-gap",
 "qids": [
 "impeccable:0099d2",
@@ -7330,6 +7583,24 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [
+"impeccable:4b2dac"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [
+"impeccable:4b2dac"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [
 "impeccable:4b2dac"
 ],
@@ -8383,8 +8654,11 @@
 },
 {
 "rule": "text:*/axl:gray-on-colored-background",
-"qids": [],
+"qids": [
+"impeccable:e972d3"
+],
 "via": [
+"no-gray-text-on-colored-backgrounds",
 "quiet"
 ]
 },
@@ -9782,6 +10056,15 @@
 "via": [
 "color-not-only"
 ]
+},
+{
+"rule": "text:*/ask:6018c5",
+"qids": [
+"impeccable:a9be9c"
+],
+"via": [
+"whole-translatable-messages"
+]
 }
 ]
 },
@@ -10259,8 +10542,11 @@
 "rule": "page/ask:f908c9",
 "qids": [
 "impeccable:00010c",
+"impeccable:55db64",
 "impeccable:587fc2",
-"impeccable:636c8a"
+"impeccable:636c8a",
+"impeccable:daad7d",
+"impeccable:e17a7d"
 ],
 "via": [
 "stress-test"
@@ -10270,8 +10556,11 @@
 "rule": "page/wcag:1.4.10@media:narrow",
 "qids": [
 "impeccable:00010c",
+"impeccable:55db64",
 "impeccable:587fc2",
-"impeccable:636c8a"
+"impeccable:636c8a",
+"impeccable:daad7d",
+"impeccable:e17a7d"
 ],
 "via": [
 "stress-test"
@@ -10281,8 +10570,11 @@
 "rule": "text:*/ask:2b6428",
 "qids": [
 "impeccable:00010c",
+"impeccable:55db64",
 "impeccable:587fc2",
-"impeccable:636c8a"
+"impeccable:636c8a",
+"impeccable:daad7d",
+"impeccable:e17a7d"
 ],
 "via": [
 "stress-test"
@@ -10292,8 +10584,11 @@
 "rule": "page/ask:8ff379",
 "qids": [
 "impeccable:00010c",
+"impeccable:55db64",
 "impeccable:587fc2",
-"impeccable:636c8a"
+"impeccable:636c8a",
+"impeccable:daad7d",
+"impeccable:e17a7d"
 ],
 "via": [
 "stress-test"
@@ -10303,8 +10598,11 @@
 "rule": "page/ask:8ee8a4",
 "qids": [
 "impeccable:00010c",
+"impeccable:55db64",
 "impeccable:587fc2",
-"impeccable:636c8a"
+"impeccable:636c8a",
+"impeccable:daad7d",
+"impeccable:e17a7d"
 ],
 "via": [
 "stress-test"
@@ -10314,6 +10612,10 @@
 "rule": "page/ask:252088",
 "qids": [
 "impeccable:055c3f",
+"impeccable:0d1a84",
+"impeccable:160c67",
+"impeccable:5c9a1f",
+"impeccable:8bc1dc",
 "impeccable:d66c8e",
 "impeccable:e61ba3"
 ],
@@ -10325,6 +10627,10 @@
 "rule": "page/ask:40ff97",
 "qids": [
 "impeccable:055c3f",
+"impeccable:0d1a84",
+"impeccable:160c67",
+"impeccable:5c9a1f",
+"impeccable:8bc1dc",
 "impeccable:d66c8e",
 "impeccable:e61ba3"
 ],
@@ -10336,6 +10642,10 @@
 "rule": "text:*/ask:13f57d",
 "qids": [
 "impeccable:055c3f",
+"impeccable:0d1a84",
+"impeccable:160c67",
+"impeccable:5c9a1f",
+"impeccable:8bc1dc",
 "impeccable:d66c8e",
 "impeccable:e61ba3"
 ],
@@ -10347,6 +10657,10 @@
 "rule": "text:*/axl:fixed-size-text-containers",
 "qids": [
 "impeccable:055c3f",
+"impeccable:0d1a84",
+"impeccable:160c67",
+"impeccable:5c9a1f",
+"impeccable:8bc1dc",
 "impeccable:d66c8e",
 "impeccable:e61ba3"
 ],
@@ -10358,6 +10672,10 @@
 "rule": "page/axl:translation-space-budget",
 "qids": [
 "impeccable:055c3f",
+"impeccable:0d1a84",
+"impeccable:160c67",
+"impeccable:5c9a1f",
+"impeccable:8bc1dc",
 "impeccable:d66c8e",
 "impeccable:e61ba3"
 ],
@@ -10369,6 +10687,10 @@
 "rule": "page/ask:939de8",
 "qids": [
 "impeccable:055c3f",
+"impeccable:0d1a84",
+"impeccable:160c67",
+"impeccable:5c9a1f",
+"impeccable:8bc1dc",
 "impeccable:d66c8e",
 "impeccable:e61ba3"
 ],
@@ -10379,8 +10701,10 @@
 {
 "rule": "state:invalid/ask:9d564b",
 "qids": [
+"impeccable:0083b5",
 "impeccable:1208b0",
-"impeccable:e58661"
+"impeccable:e58661",
+"impeccable:ff2ec6"
 ],
 "via": [
 "error-message-human",
@@ -10581,10 +10905,12 @@
 {
 "rule": "text:*/font-size",
 "qids": [
+"impeccable:130549",
 "impeccable:b3b1d9"
 ],
 "via": [
-"body-16"
+"body-16",
+"text-resize-200"
 ]
 },
 {
@@ -10609,7 +10935,9 @@
 {
 "rule": "aria:alert/ask:fffbe7",
 "qids": [
-"impeccable:1208b0"
+"impeccable:0083b5",
+"impeccable:1208b0",
+"impeccable:ff2ec6"
 ],
 "via": [
 "error-message-human"
@@ -10618,7 +10946,9 @@
 {
 "rule": "state:invalid/ask:ce85c5",
 "qids": [
-"impeccable:1208b0"
+"impeccable:0083b5",
+"impeccable:1208b0",
+"impeccable:ff2ec6"
 ],
 "via": [
 "error-message-human"
@@ -10627,7 +10957,9 @@
 {
 "rule": "state:invalid/ask:87a140",
 "qids": [
-"impeccable:1208b0"
+"impeccable:0083b5",
+"impeccable:1208b0",
+"impeccable:ff2ec6"
 ],
 "via": [
 "error-message-human"
@@ -10636,7 +10968,9 @@
 {
 "rule": "state:invalid/ask:4b4253",
 "qids": [
-"impeccable:1208b0"
+"impeccable:0083b5",
+"impeccable:1208b0",
+"impeccable:ff2ec6"
 ],
 "via": [
 "error-message-human"
@@ -10751,6 +11085,15 @@
 ],
 "via": [
 "color-not-only"
+]
+},
+{
+"rule": "page/wcag:1.4.4",
+"qids": [
+"impeccable:130549"
+],
+"via": [
+"text-resize-200"
 ]
 }
 ]
@@ -11048,6 +11391,7 @@
 "rule": "aria:button/lighthouse:target-size",
 "qids": [
 "impeccable:2766bf",
+"impeccable:48de56",
 "impeccable:aa1a11",
 "impeccable:da8505"
 ],
@@ -11060,6 +11404,7 @@
 "rule": "aria:button/min-height",
 "qids": [
 "impeccable:2766bf",
+"impeccable:48de56",
 "impeccable:aa1a11",
 "impeccable:da8505",
 "impeccable:df4815"
@@ -11074,6 +11419,7 @@
 "rule": "aria:button/min-width",
 "qids": [
 "impeccable:2766bf",
+"impeccable:48de56",
 "impeccable:da8505",
 "impeccable:df4815"
 ],
@@ -11086,6 +11432,7 @@
 "rule": "aria:button/wcag:2.5.5",
 "qids": [
 "impeccable:2766bf",
+"impeccable:48de56",
 "impeccable:da8505"
 ],
 "via": [
@@ -11096,6 +11443,7 @@
 "rule": "aria:slider/ask:e05487",
 "qids": [
 "impeccable:2766bf",
+"impeccable:48de56",
 "impeccable:da8505"
 ],
 "via": [
@@ -11106,6 +11454,7 @@
 "rule": "aria:button/ask:8fee82",
 "qids": [
 "impeccable:2766bf",
+"impeccable:48de56",
 "impeccable:da8505"
 ],
 "via": [
@@ -11116,6 +11465,7 @@
 "rule": "aria:button/min-height@media:narrow",
 "qids": [
 "impeccable:2766bf",
+"impeccable:48de56",
 "impeccable:da8505"
 ],
 "via": [
@@ -11126,6 +11476,7 @@
 "rule": "aria:button/ask:682553",
 "qids": [
 "impeccable:2766bf",
+"impeccable:48de56",
 "impeccable:da8505"
 ],
 "via": [
@@ -11499,6 +11850,7 @@
 {
 "rule": "state:hover/ask:f0bf3a",
 "qids": [
+"impeccable:006a83",
 "impeccable:60b875",
 "impeccable:6ce1c0"
 ],
@@ -11509,6 +11861,7 @@
 {
 "rule": "page/ask:46adc4",
 "qids": [
+"impeccable:006a83",
 "impeccable:60b875",
 "impeccable:6ce1c0"
 ],
@@ -11519,6 +11872,7 @@
 {
 "rule": "aria:tooltip/ask:2f14de",
 "qids": [
+"impeccable:006a83",
 "impeccable:60b875",
 "impeccable:6ce1c0"
 ],
@@ -11578,6 +11932,34 @@
 ],
 "via": [
 "hamburger-menu-a11y"
+]
+},
+{
+"rule": "aria:button/ask:633857",
+"qids": [
+"impeccable:155681",
+"impeccable:76eace"
+],
+"via": [
+"bottom-of-screen-thumb-reach-actions"
+]
+},
+{
+"rule": "ui:card/container-type",
+"qids": [
+"impeccable:6d214c"
+],
+"via": [
+"container-queries"
+]
+},
+{
+"rule": "page/ask:47f20c",
+"qids": [
+"impeccable:6d214c"
+],
+"via": [
+"container-queries"
 ]
 }
 ]
@@ -11867,9 +12249,11 @@
 {
 "rule": "aria:img/lighthouse:image-delivery-insight",
 "qids": [
+"impeccable:253b33",
 "impeccable:93bc43"
 ],
 "via": [
+"image-compression",
 "modern-image-formats"
 ]
 },
@@ -12309,7 +12693,8 @@
 {
 "rule": "text:body/axl:chars-per-line",
 "qids": [
-"impeccable:cae509"
+"impeccable:cae509",
+"impeccable:ebd761"
 ],
 "via": [
 "leading",
@@ -12391,6 +12776,7 @@
 {
 "rule": "page/lighthouse:font-display-insight",
 "qids": [
+"impeccable:505e69",
 "impeccable:cd2a34"
 ],
 "via": [
@@ -12658,7 +13044,8 @@
 {
 "rule": "text:label/line-height",
 "qids": [
-"impeccable:cae509"
+"impeccable:cae509",
+"impeccable:ebd761"
 ],
 "via": [
 "line-height-scale"
@@ -12667,7 +13054,8 @@
 {
 "rule": "text:*/axl:unitless-line-height",
 "qids": [
-"impeccable:cae509"
+"impeccable:cae509",
+"impeccable:ebd761"
 ],
 "via": [
 "line-height-scale"
@@ -12676,7 +13064,8 @@
 {
 "rule": "text:body/ask:74d9ab",
 "qids": [
-"impeccable:cae509"
+"impeccable:cae509",
+"impeccable:ebd761"
 ],
 "via": [
 "line-height-scale"
@@ -12703,6 +13092,7 @@
 {
 "rule": "text:*/axl:unused-font-files",
 "qids": [
+"impeccable:505e69",
 "impeccable:cd2a34"
 ],
 "via": [
@@ -12712,6 +13102,7 @@
 {
 "rule": "text:*/ask:cf4ba6",
 "qids": [
+"impeccable:505e69",
 "impeccable:cd2a34"
 ],
 "via": [
@@ -13063,6 +13454,24 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [
+"impeccable:6b3702"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [
+"impeccable:6b3702"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [
 "impeccable:6b3702"
 ],
@@ -13886,7 +14295,11 @@
 {
 "rule": "page/ask:fefd2c",
 "qids": [
-"impeccable:18e6ee"
+"impeccable:18e6ee",
+"impeccable:5c8c87",
+"impeccable:63637b",
+"impeccable:b579ff",
+"impeccable:f6dc5a"
 ],
 "via": [
 "onboarding-gets-users-to-value-quickly"
@@ -13896,6 +14309,7 @@
 "rule": "process/ask:839252",
 "qids": [
 "impeccable:077081",
+"impeccable:6a98f9",
 "impeccable:c64edd"
 ],
 "via": [
@@ -13906,8 +14320,10 @@
 {
 "rule": "process/ask:163f98",
 "qids": [
+"impeccable:8aa709",
 "impeccable:9520b6",
-"impeccable:a63e19"
+"impeccable:a63e19",
+"impeccable:a77f0a"
 ],
 "via": [
 "don-t-block-product-with-onboarding"
@@ -14069,6 +14485,75 @@
 "via": [
 "help-entry-point-in-onboarding"
 ]
+},
+{
+"rule": "aria:form/ask:7e7068",
+"qids": [
+"impeccable:576880"
+],
+"via": [
+"explain-why-you-ask"
+]
+},
+{
+"rule": "process/ask:0f4137",
+"qids": [
+"impeccable:4c18db"
+],
+"via": [
+"tours-teach-workflows"
+]
+},
+{
+"rule": "state:empty/ask:fe5366",
+"qids": [
+"impeccable:1ef8df",
+"impeccable:cb83f4",
+"impeccable:db7425"
+],
+"via": [
+"empty-copy-guides",
+"illustration-or-icon-in-empty-state"
+]
+},
+{
+"rule": "state:empty/ask:4ed01e",
+"qids": [
+"impeccable:1ef8df",
+"impeccable:db7425"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "state:empty/ask:b2bd59",
+"qids": [
+"impeccable:1ef8df",
+"impeccable:db7425"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "state:empty/ask:03bd96",
+"qids": [
+"impeccable:1ef8df",
+"impeccable:db7425"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "aria:tooltip/ask:fed2ec",
+"qids": [
+"impeccable:b0e55d"
+],
+"via": [
+"respect-tooltip-dismissals"
+]
 }
 ]
 },
@@ -14100,9 +14585,11 @@
 {
 "rule": "aria:button/ask:834ee2",
 "qids": [
+"impeccable:3b3629",
 "impeccable:73757d"
 ],
 "via": [
+"primary",
 "remove-clutter"
 ]
 },
@@ -14224,6 +14711,15 @@
 ]
 },
 {
+"rule": "ui:card/ask:13a570",
+"qids": [
+"impeccable:73757d"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
 "rule": "process/ask:f95f39",
 "qids": [],
 "via": [
@@ -14254,22 +14750,30 @@
 {
 "rule": "aria:menu/ask:801e76",
 "qids": [
+"impeccable:170eec",
 "impeccable:232b33",
+"impeccable:3b3629",
+"impeccable:4612ea",
 "impeccable:7f857e",
 "impeccable:b77e63",
-"impeccable:e005dd"
+"impeccable:e005dd",
+"impeccable:eb27e9"
 ],
 "via": [
+"primary",
 "progressive-disclosure"
 ]
 },
 {
 "rule": "page/ask:81083d",
 "qids": [
+"impeccable:170eec",
 "impeccable:232b33",
+"impeccable:4612ea",
 "impeccable:7f857e",
 "impeccable:b77e63",
-"impeccable:e005dd"
+"impeccable:e005dd",
+"impeccable:eb27e9"
 ],
 "via": [
 "progressive-disclosure"
@@ -14278,10 +14782,13 @@
 {
 "rule": "aria:form/ask:663ecb",
 "qids": [
+"impeccable:170eec",
 "impeccable:232b33",
+"impeccable:4612ea",
 "impeccable:7f857e",
 "impeccable:b77e63",
-"impeccable:e005dd"
+"impeccable:e005dd",
+"impeccable:eb27e9"
 ],
 "via": [
 "progressive-disclosure"
@@ -14290,10 +14797,13 @@
 {
 "rule": "page/ask:767653",
 "qids": [
+"impeccable:170eec",
 "impeccable:232b33",
+"impeccable:4612ea",
 "impeccable:7f857e",
 "impeccable:b77e63",
-"impeccable:e005dd"
+"impeccable:e005dd",
+"impeccable:eb27e9"
 ],
 "via": [
 "progressive-disclosure"
@@ -14302,11 +14812,14 @@
 {
 "rule": "aria:button/min-height",
 "qids": [
+"impeccable:170eec",
 "impeccable:232b33",
+"impeccable:4612ea",
 "impeccable:7f857e",
 "impeccable:986c1d",
 "impeccable:b77e63",
-"impeccable:e005dd"
+"impeccable:e005dd",
+"impeccable:eb27e9"
 ],
 "via": [
 "progressive-disclosure",
@@ -14316,11 +14829,14 @@
 {
 "rule": "aria:button/min-width",
 "qids": [
+"impeccable:170eec",
 "impeccable:232b33",
+"impeccable:4612ea",
 "impeccable:7f857e",
 "impeccable:986c1d",
 "impeccable:b77e63",
-"impeccable:e005dd"
+"impeccable:e005dd",
+"impeccable:eb27e9"
 ],
 "via": [
 "progressive-disclosure",
@@ -14368,6 +14884,7 @@
 {
 "rule": "text:*/ask:7fb948",
 "qids": [
+"impeccable:5d8bf5",
 "impeccable:c1a8e1"
 ],
 "via": [
@@ -14405,6 +14922,7 @@
 {
 "rule": "page/wcag:3.1.3",
 "qids": [
+"impeccable:5d8bf5",
 "impeccable:c1a8e1"
 ],
 "via": [
@@ -14414,6 +14932,7 @@
 {
 "rule": "page/wcag:3.1.6",
 "qids": [
+"impeccable:5d8bf5",
 "impeccable:c1a8e1"
 ],
 "via": [
@@ -14524,7 +15043,10 @@
 {
 "rule": "aria:alert/ask:fffbe7",
 "qids": [
-"impeccable:8ff610"
+"impeccable:165740",
+"impeccable:5bb0de",
+"impeccable:8ff610",
+"impeccable:b513ed"
 ],
 "via": [
 "error-message-human"
@@ -14533,7 +15055,10 @@
 {
 "rule": "state:invalid/ask:9d564b",
 "qids": [
-"impeccable:8ff610"
+"impeccable:165740",
+"impeccable:5bb0de",
+"impeccable:8ff610",
+"impeccable:b513ed"
 ],
 "via": [
 "error-message-human",
@@ -14543,7 +15068,10 @@
 {
 "rule": "state:invalid/ask:ce85c5",
 "qids": [
-"impeccable:8ff610"
+"impeccable:165740",
+"impeccable:5bb0de",
+"impeccable:8ff610",
+"impeccable:b513ed"
 ],
 "via": [
 "error-message-human",
@@ -14553,7 +15081,10 @@
 {
 "rule": "state:invalid/ask:87a140",
 "qids": [
-"impeccable:8ff610"
+"impeccable:165740",
+"impeccable:5bb0de",
+"impeccable:8ff610",
+"impeccable:b513ed"
 ],
 "via": [
 "error-message-human"
@@ -14562,7 +15093,10 @@
 {
 "rule": "state:invalid/ask:4b4253",
 "qids": [
-"impeccable:8ff610"
+"impeccable:165740",
+"impeccable:5bb0de",
+"impeccable:8ff610",
+"impeccable:b513ed"
 ],
 "via": [
 "error-message-human"
@@ -14906,6 +15440,269 @@
 ],
 "via": [
 "touch-target-44"
+]
+},
+{
+"rule": "process/ask:839252",
+"qids": [
+"impeccable:1087d6"
+],
+"via": [
+"interactive-onboarding"
+]
+},
+{
+"rule": "aria:button/wcag:1.4.11",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "page/ask:a3f9ca",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "page/ask:fe02a9",
+"qids": [
+"impeccable:31f1f0",
+"impeccable:3b3629"
+],
+"via": [
+"preserve-visual-hierarchy-when-simplifying",
+"primary"
+]
+},
+{
+"rule": "aria:button/ask:f49876",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "ui:card/ask:2f40ba",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "aria:button/lighthouse:interactive-element-affordance",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "aria:button/ask:9127e5",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "aria:alertdialog/ask:b663eb",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "aria:toolbar/ask:39a43f",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "aria:navigation/ask:e77738",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "page/ask:f71ca7",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "page/ask:262d08",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "page/ask:dd31fc",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "aria:button/ask:9029b3",
+"qids": [
+"impeccable:3b3629"
+],
+"via": [
+"primary"
+]
+},
+{
+"rule": "aria:navigation/ask:984b88",
+"qids": [
+"impeccable:1bef2f"
+],
+"via": [
+"limit-top-level-nav-items"
+]
+},
+{
+"rule": "page/ask:940d2a",
+"qids": [
+"impeccable:1b032d"
+],
+"via": [
+"one-decision-per-index-screen"
+]
+},
+{
+"rule": "page/ask:6a3c97",
+"qids": [
+"impeccable:cb6463"
+],
+"via": [
+"keep-options-visible"
+]
+},
+{
+"rule": "page/ask:9f442d",
+"qids": [
+"impeccable:bfccaf"
+],
+"via": [
+"no-decorative-clutter"
+]
+},
+{
+"rule": "process/ask:fe1c86",
+"qids": [
+"impeccable:10c0db"
+],
+"via": [
+"keyboard-tested"
+]
+},
+{
+"rule": "page/ask:3417d5",
+"qids": [
+"impeccable:510ebc"
+],
+"via": [
+"skippable-slow-animations"
+]
+},
+{
+"rule": "page/ask:fa9a4f",
+"qids": [
+"impeccable:ace2d7"
+],
+"via": [
+"offer-batch-actions"
+]
+},
+{
+"rule": "state:empty/ask:fe5366",
+"qids": [
+"impeccable:35266d"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "state:empty/ask:4ed01e",
+"qids": [
+"impeccable:35266d"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "state:empty/ask:b2bd59",
+"qids": [
+"impeccable:35266d"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "state:empty/ask:03bd96",
+"qids": [
+"impeccable:35266d"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "page/ask:d8cdde",
+"qids": [
+"impeccable:084c64"
+],
+"via": [
+"preserve-progress-on-interruption"
+]
+},
+{
+"rule": "page/axl:lazy-loaded-lcp-element",
+"qids": [
+"impeccable:305413"
+],
+"via": [
+"lazy-load-images"
+]
+},
+{
+"rule": "aria:img/axl:eager-below-fold-images",
+"qids": [
+"impeccable:305413"
+],
+"via": [
+"lazy-load-images"
 ]
 }
 ]
@@ -15339,21 +16136,27 @@
 },
 {
 "rule": "page/transition-property",
-"qids": [],
+"qids": [
+"impeccable:6b502c"
+],
 "via": [
 "transform-only"
 ]
 },
 {
 "rule": "page/lighthouse:non-composited-animations",
-"qids": [],
+"qids": [
+"impeccable:6b502c"
+],
 "via": [
 "transform-only"
 ]
 },
 {
 "rule": "page/will-change",
-"qids": [],
+"qids": [
+"impeccable:6b502c"
+],
 "via": [
 "transform-only"
 ]
@@ -15361,6 +16164,7 @@
 {
 "rule": "page/ask:de1239",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15370,6 +16174,7 @@
 {
 "rule": "page/axl:hardcoded-colors",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15379,6 +16184,7 @@
 {
 "rule": "page/axl:spacing-off-scale",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15388,6 +16194,7 @@
 {
 "rule": "text:*/axl:distinct-font-sizes",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15397,6 +16204,7 @@
 {
 "rule": "text:*/axl:distinct-font-weights",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15406,6 +16214,7 @@
 {
 "rule": "page/axl:oklch-color-share",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15415,6 +16224,7 @@
 {
 "rule": "page/ask:249618",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15424,6 +16234,7 @@
 {
 "rule": "process/ask:aa0713",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15433,6 +16244,7 @@
 {
 "rule": "process/ask:298a39",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15442,6 +16254,7 @@
 {
 "rule": "page/ask:79f890",
 "qids": [
+"impeccable:914aad",
 "impeccable:f31f80"
 ],
 "via": [
@@ -15649,6 +16462,7 @@
 {
 "rule": "aria:button/lighthouse:target-size",
 "qids": [
+"impeccable:23532c",
 "impeccable:6c4a9f"
 ],
 "via": [
@@ -15658,6 +16472,7 @@
 {
 "rule": "aria:button/min-height",
 "qids": [
+"impeccable:23532c",
 "impeccable:6c4a9f"
 ],
 "via": [
@@ -15667,6 +16482,7 @@
 {
 "rule": "aria:button/min-width",
 "qids": [
+"impeccable:23532c",
 "impeccable:6c4a9f"
 ],
 "via": [
@@ -15676,6 +16492,7 @@
 {
 "rule": "aria:button/wcag:2.5.5",
 "qids": [
+"impeccable:23532c",
 "impeccable:6c4a9f"
 ],
 "via": [
@@ -15685,6 +16502,7 @@
 {
 "rule": "aria:slider/ask:e05487",
 "qids": [
+"impeccable:23532c",
 "impeccable:6c4a9f"
 ],
 "via": [
@@ -15694,6 +16512,7 @@
 {
 "rule": "aria:button/ask:8fee82",
 "qids": [
+"impeccable:23532c",
 "impeccable:6c4a9f"
 ],
 "via": [
@@ -15703,6 +16522,7 @@
 {
 "rule": "aria:button/min-height@media:narrow",
 "qids": [
+"impeccable:23532c",
 "impeccable:6c4a9f"
 ],
 "via": [
@@ -15712,10 +16532,29 @@
 {
 "rule": "aria:button/ask:682553",
 "qids": [
+"impeccable:23532c",
 "impeccable:6c4a9f"
 ],
 "via": [
 "touch-target-44"
+]
+},
+{
+"rule": "page/ask:682de7",
+"qids": [
+"impeccable:eabfe7"
+],
+"via": [
+"will-change-only-during-animation"
+]
+},
+{
+"rule": "page/axl:persistent-will-change-elements",
+"qids": [
+"impeccable:eabfe7"
+],
+"via": [
+"will-change-only-during-animation"
 ]
 }
 ]
@@ -16646,6 +17485,20 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [],
 "via": [
 "spacing"
@@ -17669,6 +18522,26 @@
 "via": [
 "no-ai-cliche-copy"
 ]
+},
+{
+"rule": "text:*/ask:76e438",
+"qids": [
+"unslop:179423",
+"unslop:f75fef"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
+"qids": [
+"unslop:179423",
+"unslop:f75fef"
+],
+"via": [
+"no-ai-cliche-copy"
+]
 }
 ]
 },
@@ -18392,6 +19265,17 @@
 ]
 },
 {
+"rule": "ui:card/ask:13a570",
+"qids": [
+"anthropic:64f301",
+"anthropic:ab3550",
+"anthropic:cc07f5"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
 "rule": "text:display/font-family",
 "qids": [
 "anthropic:189ff1",
@@ -18547,6 +19431,28 @@
 },
 {
 "rule": "page/ask:1ede40",
+"qids": [
+"anthropic:6df8c3",
+"anthropic:841820",
+"anthropic:cb07ca"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:76e438",
+"qids": [
+"anthropic:6df8c3",
+"anthropic:841820",
+"anthropic:cb07ca"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
 "qids": [
 "anthropic:6df8c3",
 "anthropic:841820",
@@ -20151,6 +21057,22 @@
 ]
 },
 {
+"rule": "ui:card/ask:13a570",
+"qids": [
+"hallmark:3ec53b",
+"hallmark:548637",
+"hallmark:663ab5",
+"hallmark:91027b",
+"hallmark:942a74",
+"hallmark:c34a33",
+"hallmark:e018e1",
+"hallmark:e6344e"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
 "rule": "ui:card/box-shadow",
 "qids": [
 "hallmark:0d7455",
@@ -21209,6 +22131,40 @@
 },
 {
 "rule": "page/ask:1ede40",
+"qids": [
+"hallmark:36eaad",
+"hallmark:53ca20",
+"hallmark:6644c5",
+"hallmark:8a16ba",
+"hallmark:a9418d",
+"hallmark:b64bf8",
+"hallmark:cb6174",
+"hallmark:e7f21b",
+"hallmark:fd4217"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:76e438",
+"qids": [
+"hallmark:36eaad",
+"hallmark:53ca20",
+"hallmark:6644c5",
+"hallmark:8a16ba",
+"hallmark:a9418d",
+"hallmark:b64bf8",
+"hallmark:cb6174",
+"hallmark:e7f21b",
+"hallmark:fd4217"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
 "qids": [
 "hallmark:36eaad",
 "hallmark:53ca20",
@@ -26783,6 +27739,24 @@
 ]
 },
 {
+"rule": "aria:heading/ask:631088",
+"qids": [
+"hallmark:bb7df9"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [
+"hallmark:bb7df9"
+],
+"via": [
+"spacing"
+]
+},
+{
 "rule": "page/ask:6db375",
 "qids": [
 "hallmark:b7d30b",
@@ -30033,6 +31007,24 @@
 ]
 },
 {
+"rule": "text:*/ask:76e438",
+"qids": [
+"claw-design:014d47"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
+"qids": [
+"claw-design:014d47"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
 "rule": "page/axl:purple-blue-gradients",
 "qids": [
 "claw-design:be6c55",
@@ -30870,6 +31862,30 @@
 ]
 },
 {
+"rule": "aria:heading/ask:631088",
+"qids": [
+"claw-design:59f92d",
+"claw-design:5c43b9",
+"claw-design:698d11",
+"claw-design:bce1dd"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [
+"claw-design:59f92d",
+"claw-design:5c43b9",
+"claw-design:698d11",
+"claw-design:bce1dd"
+],
+"via": [
+"spacing"
+]
+},
+{
 "rule": "page/ask:84d8c8",
 "qids": [
 "claw-design:0b07e1",
@@ -31339,6 +32355,24 @@
 },
 {
 "rule": "page/ask:de5b06",
+"qids": [
+"claw-design:0da73f",
+"claw-design:4eb10d",
+"claw-design:52fd9a",
+"claw-design:68637f",
+"claw-design:7a1400",
+"claw-design:7d8c62",
+"claw-design:abc94e",
+"claw-design:e275be",
+"claw-design:ed17ba",
+"claw-design:fb970a"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:card/ask:13a570",
 "qids": [
 "claw-design:0da73f",
 "claw-design:4eb10d",
@@ -32027,6 +33061,20 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [],
 "via": [
 "spacing"
@@ -33970,6 +35018,39 @@
 ]
 },
 {
+"rule": "ui:card/ask:13a570",
+"qids": [
+"taste-skill:00fccf",
+"taste-skill:0bf12c",
+"taste-skill:0df026",
+"taste-skill:1e81ed",
+"taste-skill:3d89ed",
+"taste-skill:41a308",
+"taste-skill:54af7f",
+"taste-skill:5fc505",
+"taste-skill:63a7b2",
+"taste-skill:6b015a",
+"taste-skill:79f1df",
+"taste-skill:7b5516",
+"taste-skill:89c2a5",
+"taste-skill:927876",
+"taste-skill:ac2886",
+"taste-skill:b44156",
+"taste-skill:bbec1b",
+"taste-skill:bc172c",
+"taste-skill:c6d75a",
+"taste-skill:d623f3",
+"taste-skill:d7439f",
+"taste-skill:de59c1",
+"taste-skill:eab7c1",
+"taste-skill:eace9b",
+"taste-skill:f0af2b"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
 "rule": "page/ask:82857d",
 "qids": [
 "taste-skill:ae3973"
@@ -35400,6 +36481,54 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [
+"taste-skill:02e2ae",
+"taste-skill:1196b1",
+"taste-skill:397272",
+"taste-skill:3d89ed",
+"taste-skill:6b015a",
+"taste-skill:75594d",
+"taste-skill:803adf",
+"taste-skill:8987e0",
+"taste-skill:9a83a4",
+"taste-skill:bd87b3",
+"taste-skill:c8ba1a",
+"taste-skill:cd3eea",
+"taste-skill:d1962b",
+"taste-skill:d6b840",
+"taste-skill:f6b564",
+"taste-skill:faf3f3"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [
+"taste-skill:02e2ae",
+"taste-skill:1196b1",
+"taste-skill:397272",
+"taste-skill:3d89ed",
+"taste-skill:6b015a",
+"taste-skill:75594d",
+"taste-skill:803adf",
+"taste-skill:8987e0",
+"taste-skill:9a83a4",
+"taste-skill:bd87b3",
+"taste-skill:c8ba1a",
+"taste-skill:cd3eea",
+"taste-skill:d1962b",
+"taste-skill:d6b840",
+"taste-skill:f6b564",
+"taste-skill:faf3f3"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [
 "taste-skill:02e2ae",
 "taste-skill:1196b1",
@@ -37524,6 +38653,32 @@
 },
 {
 "rule": "page/ask:1ede40",
+"qids": [
+"taste-skill:0516d5",
+"taste-skill:82427b",
+"taste-skill:cf2cbc",
+"taste-skill:db9da6",
+"taste-skill:e46e5d"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:76e438",
+"qids": [
+"taste-skill:0516d5",
+"taste-skill:82427b",
+"taste-skill:cf2cbc",
+"taste-skill:db9da6",
+"taste-skill:e46e5d"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
 "qids": [
 "taste-skill:0516d5",
 "taste-skill:82427b",
@@ -40202,6 +41357,15 @@
 ]
 },
 {
+"rule": "ui:card/ask:13a570",
+"qids": [
+"openai:ad62fd"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
 "rule": "process/ask:ec0e2f",
 "qids": [],
 "via": [
@@ -40863,6 +42027,24 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [
+"openai:aae758"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [
+"openai:aae758"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [
 "openai:aae758"
 ],
@@ -42353,6 +43535,15 @@
 ]
 },
 {
+"rule": "ui:card/ask:13a570",
+"qids": [
+"deslop:df3072"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
 "rule": "page/axl:spacing-off-scale",
 "qids": [
 "deslop:03079a",
@@ -42442,6 +43633,20 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [],
 "via": [
 "spacing"
@@ -45341,6 +46546,26 @@
 ]
 },
 {
+"rule": "text:*/ask:76e438",
+"qids": [
+"deslop:58f733",
+"deslop:ef1608"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
+"qids": [
+"deslop:58f733",
+"deslop:ef1608"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
 "rule": "page/ask:da7064",
 "qids": [
 "deslop:fab244"
@@ -47228,6 +48453,20 @@
 ]
 },
 {
+"rule": "aria:heading/ask:631088",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [],
+"via": [
+"spacing"
+]
+},
+{
 "rule": "state:focus-visible/wcag:2.4.7",
 "qids": [
 "oneredoak:420018"
@@ -47637,6 +48876,15 @@
 },
 {
 "rule": "page/ask:de5b06",
+"qids": [
+"oneredoak:7630d3"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:card/ask:13a570",
 "qids": [
 "oneredoak:7630d3"
 ],
@@ -48685,6 +49933,13 @@
 "via": [
 "remove-clutter"
 ]
+},
+{
+"rule": "ui:card/ask:13a570",
+"qids": [],
+"via": [
+"remove-clutter"
+]
 }
 ]
 },
@@ -48844,6 +50099,13 @@
 },
 {
 "rule": "page/ask:de5b06",
+"qids": [],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:card/ask:13a570",
 "qids": [],
 "via": [
 "remove-clutter"
@@ -49632,6 +50894,24 @@
 },
 {
 "rule": "page/ask:1ede40",
+"qids": [
+"taste-skill:5ecefe"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:76e438",
+"qids": [
+"taste-skill:5ecefe"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
 "qids": [
 "taste-skill:5ecefe"
 ],
@@ -58639,7 +59919,10 @@
 "rule": "page/padding",
 "qids": [
 "impeccable:021139",
-"impeccable:aa6c08"
+"impeccable:093a13",
+"impeccable:aa6c08",
+"impeccable:c87c01",
+"impeccable:db09f0"
 ],
 "via": [
 "safe-area-insets"
@@ -58649,7 +59932,10 @@
 "rule": "page/ask:a2bc09",
 "qids": [
 "impeccable:021139",
-"impeccable:aa6c08"
+"impeccable:093a13",
+"impeccable:aa6c08",
+"impeccable:c87c01",
+"impeccable:db09f0"
 ],
 "via": [
 "safe-area-insets"
@@ -58910,6 +60196,7 @@
 {
 "rule": "media:dark/wcag:1.4.3",
 "qids": [
+"impeccable:47bfaf",
 "impeccable:570161",
 "impeccable:59b6d0",
 "impeccable:5ad11c",
@@ -58925,6 +60212,7 @@
 {
 "rule": "page/axl:dark-scheme-declared",
 "qids": [
+"impeccable:47bfaf",
 "impeccable:59b6d0",
 "impeccable:5ad11c",
 "impeccable:aed3b9"
@@ -58936,6 +60224,7 @@
 {
 "rule": "media:dark/ask:1e161f",
 "qids": [
+"impeccable:47bfaf",
 "impeccable:59b6d0",
 "impeccable:5ad11c",
 "impeccable:aed3b9"
@@ -58947,6 +60236,7 @@
 {
 "rule": "page/ask:b48ba7",
 "qids": [
+"impeccable:47bfaf",
 "impeccable:59b6d0",
 "impeccable:5ad11c",
 "impeccable:aed3b9"
@@ -58958,6 +60248,7 @@
 {
 "rule": "page/ask:dc942a",
 "qids": [
+"impeccable:47bfaf",
 "impeccable:59b6d0",
 "impeccable:5ad11c",
 "impeccable:aed3b9"
@@ -59070,8 +60361,11 @@
 "rule": "page/axl:spacing-off-scale",
 "qids": [
 "impeccable:018921",
+"impeccable:621920",
 "impeccable:77bb43",
-"impeccable:b37c58"
+"impeccable:99f4dd",
+"impeccable:b37c58",
+"impeccable:d7aa60"
 ],
 "via": [
 "design-tokens",
@@ -59149,16 +60443,19 @@
 {
 "rule": "ui:icon/axl:emoji-as-icons",
 "qids": [
+"impeccable:398942",
 "impeccable:4ddb7a",
 "impeccable:9864e3"
 ],
 "via": [
-"icon-consistency"
+"icon-consistency",
+"no-emoji-in-copy"
 ]
 },
 {
 "rule": "ui:icon/axl:icon-sets",
 "qids": [
+"impeccable:398942",
 "impeccable:4ddb7a",
 "impeccable:9864e3"
 ],
@@ -59169,6 +60466,7 @@
 {
 "rule": "ui:icon/axl:distinct-stroke-widths",
 "qids": [
+"impeccable:398942",
 "impeccable:4ddb7a",
 "impeccable:9864e3"
 ],
@@ -59179,6 +60477,7 @@
 {
 "rule": "ui:icon/axl:distinct-icon-grids",
 "qids": [
+"impeccable:398942",
 "impeccable:4ddb7a",
 "impeccable:9864e3"
 ],
@@ -59189,6 +60488,7 @@
 {
 "rule": "ui:icon/ask:d66537",
 "qids": [
+"impeccable:398942",
 "impeccable:4ddb7a",
 "impeccable:9864e3",
 "impeccable:f49a8a"
@@ -59201,6 +60501,7 @@
 {
 "rule": "ui:icon/ask:ab8512",
 "qids": [
+"impeccable:398942",
 "impeccable:4ddb7a",
 "impeccable:9864e3"
 ],
@@ -59211,6 +60512,7 @@
 {
 "rule": "ui:icon/ask:20596e",
 "qids": [
+"impeccable:398942",
 "impeccable:4ddb7a",
 "impeccable:9864e3"
 ],
@@ -59221,6 +60523,7 @@
 {
 "rule": "ui:icon/ask:99dc05",
 "qids": [
+"impeccable:398942",
 "impeccable:4ddb7a",
 "impeccable:9864e3"
 ],
@@ -59231,6 +60534,7 @@
 {
 "rule": "ui:icon/ask:fd0942",
 "qids": [
+"impeccable:398942",
 "impeccable:4ddb7a",
 "impeccable:9864e3"
 ],
@@ -59327,6 +60631,9 @@
 "rule": "text:body/max-width",
 "qids": [
 "impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60",
 "impeccable:e813d1",
 "impeccable:f57bc3"
 ],
@@ -59338,6 +60645,8 @@
 {
 "rule": "text:body/axl:chars-per-line",
 "qids": [
+"impeccable:21831e",
+"impeccable:61dcdf",
 "impeccable:98c011",
 "impeccable:b6c61d",
 "impeccable:e813d1",
@@ -59346,7 +60655,8 @@
 "via": [
 "align",
 "max-line-length-65ch",
-"serif"
+"serif",
+"width"
 ]
 },
 {
@@ -59430,23 +60740,29 @@
 "rule": "ui:card/ask:bffd74",
 "qids": [
 "impeccable:632577",
+"impeccable:9ce261",
+"impeccable:cd0884",
 "impeccable:e6bd9f",
 "impeccable:f49a8a"
 ],
 "via": [
 "border-or-shadow-not-both",
 "no-card-in-card",
-"radius-consistent"
+"radius-consistent",
+"remove-clutter",
+"surface"
 ]
 },
 {
 "rule": "ui:card/axl:nested-cards",
 "qids": [
 "impeccable:632577",
+"impeccable:9ce261",
 "impeccable:e6bd9f"
 ],
 "via": [
-"no-card-in-card"
+"no-card-in-card",
+"remove-clutter"
 ]
 },
 {
@@ -59493,10 +60809,14 @@
 {
 "rule": "ui:card/ask:66fb32",
 "qids": [
-"impeccable:632577"
+"impeccable:632577",
+"impeccable:9ce261",
+"impeccable:cd0884"
 ],
 "via": [
-"card-only-when-grouping"
+"card-only-when-grouping",
+"remove-clutter",
+"surface"
 ]
 },
 {
@@ -59754,6 +61074,7 @@
 "rule": "page/background-image",
 "qids": [
 "impeccable:02314c",
+"impeccable:11379f",
 "impeccable:152c92",
 "impeccable:5a26b2"
 ],
@@ -59765,6 +61086,7 @@
 {
 "rule": "page/ask:f82df2",
 "qids": [
+"impeccable:11379f",
 "impeccable:152c92",
 "impeccable:5a26b2"
 ],
@@ -60193,6 +61515,7 @@
 "rule": "aria:figure/ask:e6308c",
 "qids": [
 "impeccable:13b159",
+"impeccable:2eee5b",
 "impeccable:6e4d36"
 ],
 "via": [
@@ -60203,9 +61526,13 @@
 "rule": "text:*/ask:dffdc7",
 "qids": [
 "impeccable:13b159",
+"impeccable:2eee5b",
 "impeccable:459367",
+"impeccable:6139fe",
+"impeccable:66caa1",
 "impeccable:6e4d36",
 "impeccable:912f32",
+"impeccable:b89aec",
 "impeccable:e4fe26"
 ],
 "via": [
@@ -60218,6 +61545,7 @@
 "rule": "text:*/ask:4e61a8",
 "qids": [
 "impeccable:13b159",
+"impeccable:2eee5b",
 "impeccable:6e4d36",
 "impeccable:912f32"
 ],
@@ -60230,6 +61558,7 @@
 "rule": "page/ask:30c2b3",
 "qids": [
 "impeccable:13b159",
+"impeccable:2eee5b",
 "impeccable:6e4d36"
 ],
 "via": [
@@ -60240,6 +61569,7 @@
 "rule": "text:*/ask:bcf6a2",
 "qids": [
 "impeccable:13b159",
+"impeccable:2eee5b",
 "impeccable:6e4d36"
 ],
 "via": [
@@ -60250,6 +61580,7 @@
 "rule": "aria:img/ask:39ecd8",
 "qids": [
 "impeccable:13b159",
+"impeccable:2eee5b",
 "impeccable:6e4d36"
 ],
 "via": [
@@ -60260,6 +61591,7 @@
 "rule": "text:*/ask:b689ca",
 "qids": [
 "impeccable:13b159",
+"impeccable:2eee5b",
 "impeccable:6e4d36"
 ],
 "via": [
@@ -60270,15 +61602,19 @@
 "rule": "text:*/ask:a703e0",
 "qids": [
 "impeccable:13b159",
-"impeccable:6e4d36"
+"impeccable:2eee5b",
+"impeccable:6e4d36",
+"impeccable:9ce261"
 ],
 "via": [
-"no-fake-stats"
+"no-fake-stats",
+"remove-clutter"
 ]
 },
 {
 "rule": "text:*/font-family",
 "qids": [
+"impeccable:21831e",
 "impeccable:b6c61d",
 "impeccable:ff7c95"
 ],
@@ -60308,6 +61644,7 @@
 {
 "rule": "text:*/axl:distinct-font-families",
 "qids": [
+"impeccable:21831e",
 "impeccable:b6c61d"
 ],
 "via": [
@@ -60317,6 +61654,7 @@
 {
 "rule": "text:body/font-family",
 "qids": [
+"impeccable:21831e",
 "impeccable:b6c61d"
 ],
 "via": [
@@ -60326,6 +61664,7 @@
 {
 "rule": "page/ask:055991",
 "qids": [
+"impeccable:21831e",
 "impeccable:b6c61d"
 ],
 "via": [
@@ -60335,6 +61674,7 @@
 {
 "rule": "aria:banner/ask:ff202a",
 "qids": [
+"impeccable:21831e",
 "impeccable:b6c61d"
 ],
 "via": [
@@ -60463,10 +61803,12 @@
 {
 "rule": "page/ask:a5afc0",
 "qids": [
-"impeccable:624c9f"
+"impeccable:624c9f",
+"impeccable:9ce261"
 ],
 "via": [
-"focal-motion"
+"focal-motion",
+"remove-clutter"
 ]
 },
 {
@@ -60793,7 +62135,10 @@
 {
 "rule": "text:label/margin-bottom",
 "qids": [
-"impeccable:018921"
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
 ],
 "via": [
 "spacing"
@@ -60802,7 +62147,10 @@
 {
 "rule": "page/ask:c1aefb",
 "qids": [
-"impeccable:018921"
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
 ],
 "via": [
 "spacing"
@@ -60811,7 +62159,10 @@
 {
 "rule": "aria:main/padding",
 "qids": [
-"impeccable:018921"
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
 ],
 "via": [
 "spacing"
@@ -60820,7 +62171,10 @@
 {
 "rule": "aria:main/gap",
 "qids": [
-"impeccable:018921"
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
 ],
 "via": [
 "spacing"
@@ -60829,7 +62183,10 @@
 {
 "rule": "aria:form/gap",
 "qids": [
-"impeccable:018921"
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
 ],
 "via": [
 "spacing"
@@ -60838,7 +62195,10 @@
 {
 "rule": "aria:form/margin-bottom",
 "qids": [
-"impeccable:018921"
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
 ],
 "via": [
 "spacing"
@@ -60847,7 +62207,34 @@
 {
 "rule": "page/ask:4d533b",
 "qids": [
-"impeccable:018921"
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
+"qids": [
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
 ],
 "via": [
 "spacing"
@@ -60904,6 +62291,7 @@
 "rule": "page/axl:colored-glow-shadows",
 "qids": [
 "impeccable:8efb33",
+"impeccable:d01627",
 "impeccable:da32a5"
 ],
 "via": [
@@ -60914,6 +62302,7 @@
 "rule": "page/ask:475f03",
 "qids": [
 "impeccable:8efb33",
+"impeccable:d01627",
 "impeccable:da32a5"
 ],
 "via": [
@@ -60924,6 +62313,7 @@
 "rule": "page/ask:296125",
 "qids": [
 "impeccable:8efb33",
+"impeccable:d01627",
 "impeccable:da32a5"
 ],
 "via": [
@@ -60951,19 +62341,27 @@
 {
 "rule": "aria:heading/ask:da7000",
 "qids": [
+"impeccable:20d4d3",
+"impeccable:b002b1",
 "impeccable:e52313"
 ],
 "via": [
+"no-section-eyebrows-or-number-kickers-by-default",
 "no-tiny-numbered-section-labels"
 ]
 },
 {
 "rule": "text:*/axl:em-dashes-per-paragraph",
 "qids": [
+"impeccable:0bf391",
 "impeccable:459367",
+"impeccable:6139fe",
+"impeccable:66caa1",
+"impeccable:b89aec",
 "impeccable:e4fe26"
 ],
 "via": [
+"copy-specific",
 "no-ai-cliche-copy"
 ]
 },
@@ -60971,6 +62369,9 @@
 "rule": "text:*/axl:cliche-words",
 "qids": [
 "impeccable:459367",
+"impeccable:6139fe",
+"impeccable:66caa1",
+"impeccable:b89aec",
 "impeccable:e4fe26"
 ],
 "via": [
@@ -60981,6 +62382,9 @@
 "rule": "text:*/ask:40b55b",
 "qids": [
 "impeccable:459367",
+"impeccable:6139fe",
+"impeccable:66caa1",
+"impeccable:b89aec",
 "impeccable:e4fe26"
 ],
 "via": [
@@ -60991,6 +62395,35 @@
 "rule": "page/ask:1ede40",
 "qids": [
 "impeccable:459367",
+"impeccable:6139fe",
+"impeccable:66caa1",
+"impeccable:b89aec",
+"impeccable:e4fe26"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:76e438",
+"qids": [
+"impeccable:459367",
+"impeccable:6139fe",
+"impeccable:66caa1",
+"impeccable:b89aec",
+"impeccable:e4fe26"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
+"qids": [
+"impeccable:459367",
+"impeccable:6139fe",
+"impeccable:66caa1",
+"impeccable:b89aec",
 "impeccable:e4fe26"
 ],
 "via": [
@@ -61037,10 +62470,12 @@
 {
 "rule": "aria:img/lighthouse:image-alt",
 "qids": [
-"impeccable:912f32"
+"impeccable:912f32",
+"impeccable:d9b458"
 ],
 "via": [
-"alt-text"
+"alt-text",
+"responsive-images"
 ]
 },
 {
@@ -61266,10 +62701,12 @@
 {
 "rule": "text:body/letter-spacing",
 "qids": [
-"impeccable:4529fc"
+"impeccable:4529fc",
+"impeccable:c047c3"
 ],
 "via": [
-"loosen-tracking-on-small-caps-labels"
+"loosen-tracking-on-small-caps-labels",
+"no-all-caps-or-justified-body-text"
 ]
 },
 {
@@ -61306,6 +62743,541 @@
 ],
 "via": [
 "no-horizontal-scroll"
+]
+},
+{
+"rule": "page/ask:26438e",
+"qids": [
+"impeccable:1c36d0",
+"impeccable:3b76ce"
+],
+"via": [
+"dynamic-color-with-fallback"
+]
+},
+{
+"rule": "ui:card/ask:ed6215",
+"qids": [
+"impeccable:746d6f"
+],
+"via": [
+"tonal-elevation-over-drop-shadows"
+]
+},
+{
+"rule": "aria:img/lighthouse:image-aspect-ratio",
+"qids": [
+"impeccable:d9b458"
+],
+"via": [
+"responsive-images"
+]
+},
+{
+"rule": "aria:img/lighthouse:image-size-responsive",
+"qids": [
+"impeccable:d9b458"
+],
+"via": [
+"responsive-images"
+]
+},
+{
+"rule": "page/ask:0abcd7",
+"qids": [
+"impeccable:b8c30a"
+],
+"via": [
+"one-authored-motion-moment"
+]
+},
+{
+"rule": "page/ask:031475",
+"qids": [
+"impeccable:0b8132"
+],
+"via": [
+"exponential-ease-out-entrances"
+]
+},
+{
+"rule": "page/ask:aa6d31",
+"qids": [
+"impeccable:c38dd3"
+],
+"via": [
+"smooth-non-transform-animation-only"
+]
+},
+{
+"rule": "page/ask:b1db9d",
+"qids": [
+"impeccable:a3152c"
+],
+"via": [
+"style-browser-default-surfaces"
+]
+},
+{
+"rule": "text:*/ask:7fb948",
+"qids": [
+"impeccable:0bf391"
+],
+"via": [
+"copy-specific"
+]
+},
+{
+"rule": "text:*/ask:d6b158",
+"qids": [
+"impeccable:0bf391"
+],
+"via": [
+"copy-specific"
+]
+},
+{
+"rule": "text:*/ask:186eaa",
+"qids": [
+"impeccable:0bf391"
+],
+"via": [
+"copy-specific"
+]
+},
+{
+"rule": "aria:heading/ask:92e18b",
+"qids": [
+"impeccable:0bf391"
+],
+"via": [
+"copy-specific"
+]
+},
+{
+"rule": "ui:toast/ask:d14601",
+"qids": [
+"impeccable:0bf391"
+],
+"via": [
+"copy-specific"
+]
+},
+{
+"rule": "state:empty/ask:4ed01e",
+"qids": [
+"impeccable:0bf391"
+],
+"via": [
+"copy-specific"
+]
+},
+{
+"rule": "page/ask:00f709",
+"qids": [
+"impeccable:ab0930"
+],
+"via": [
+"no-hero-metric-template"
+]
+},
+{
+"rule": "aria:heading/ask:d21080",
+"qids": [
+"impeccable:20d4d3",
+"impeccable:b002b1"
+],
+"via": [
+"no-section-eyebrows-or-number-kickers-by-default"
+]
+},
+{
+"rule": "text:label/ask:fac865",
+"qids": [
+"impeccable:af466e"
+],
+"via": [
+"numbered-markers-only-for-real-sequences"
+]
+},
+{
+"rule": "text:display/background-clip",
+"qids": [
+"impeccable:99daad"
+],
+"via": [
+"no-gradient-text-on-large-headers"
+]
+},
+{
+"rule": "text:*/axl:emoji-in-text",
+"qids": [
+"impeccable:398942"
+],
+"via": [
+"no-emoji-in-copy"
+]
+},
+{
+"rule": "aria:heading/axl:emoji-in-text",
+"qids": [
+"impeccable:398942"
+],
+"via": [
+"no-emoji-in-copy"
+]
+},
+{
+"rule": "page/axl:accent-hues",
+"qids": [
+"impeccable:7d939f"
+],
+"via": [
+"accent"
+]
+},
+{
+"rule": "page/axl:accent-coverage",
+"qids": [
+"impeccable:7d939f"
+],
+"via": [
+"accent"
+]
+},
+{
+"rule": "page/ask:0210f6",
+"qids": [
+"impeccable:7d939f"
+],
+"via": [
+"accent"
+]
+},
+{
+"rule": "ui:popup/ask:089266",
+"qids": [
+"impeccable:b2cbf3"
+],
+"via": [
+"use-system-materials-for-blur"
+]
+},
+{
+"rule": "aria:list/ask:faa881",
+"qids": [
+"impeccable:5beb00"
+],
+"via": [
+"grouped-lists-for-settings"
+]
+},
+{
+"rule": "page/ask:811407",
+"qids": [
+"impeccable:6d1bb9"
+],
+"via": [
+"inspect-page-in-both-color-modes"
+]
+},
+{
+"rule": "page/ask:e3e457",
+"qids": [
+"impeccable:3445ca"
+],
+"via": [
+"animations-hold-60fps"
+]
+},
+{
+"rule": "aria:status/ask:10cb38",
+"qids": [
+"impeccable:be91a6"
+],
+"via": [
+"animate-status-only-when-data-changes"
+]
+},
+{
+"rule": "page/ask:c06c11",
+"qids": [
+"impeccable:124f36"
+],
+"via": [
+"no-decorative-blinking-cursor"
+]
+},
+{
+"rule": "aria:img/ask:a94d42",
+"qids": [
+"impeccable:2ae0c3"
+],
+"via": [
+"no-shape-assembled-illustrations"
+]
+},
+{
+"rule": "page/ask:742966",
+"qids": [
+"impeccable:d3b547"
+],
+"via": [
+"no-auto-scrolling-marquees"
+]
+},
+{
+"rule": "ui:icon/ask:c47f52",
+"qids": [
+"impeccable:3b8795"
+],
+"via": [
+"no-icon-tile-above-heading"
+]
+},
+{
+"rule": "ui:badge/ask:5519c9",
+"qids": [
+"impeccable:71ca26"
+],
+"via": [
+"badge"
+]
+},
+{
+"rule": "page/ask:93a61e",
+"qids": [
+"impeccable:71ca26",
+"impeccable:9ce261"
+],
+"via": [
+"badge",
+"remove-clutter"
+]
+},
+{
+"rule": "ui:badge/ask:fc4b33",
+"qids": [
+"impeccable:71ca26"
+],
+"via": [
+"badge"
+]
+},
+{
+"rule": "ui:badge/ask:ac632b",
+"qids": [
+"impeccable:71ca26"
+],
+"via": [
+"badge"
+]
+},
+{
+"rule": "ui:badge/ask:6a2373",
+"qids": [
+"impeccable:71ca26"
+],
+"via": [
+"badge"
+]
+},
+{
+"rule": "page/lighthouse:errors-in-console",
+"qids": [
+"impeccable:34c750"
+],
+"via": [
+"error-free-console"
+]
+},
+{
+"rule": "page/ask:aef29f",
+"qids": [
+"impeccable:9be542"
+],
+"via": [
+"no-content-invisible-at-rest"
+]
+},
+{
+"rule": "text:*/ask:0ce232",
+"qids": [
+"impeccable:e657b2"
+],
+"via": [
+"no-text-occluded-by-overlaps"
+]
+},
+{
+"rule": "page/ask:64328d",
+"qids": [
+"impeccable:829cb5"
+],
+"via": [
+"balance-opening-columns"
+]
+},
+{
+"rule": "aria:main/max-width",
+"qids": [
+"impeccable:61dcdf"
+],
+"via": [
+"width"
+]
+},
+{
+"rule": "text:body/text-transform",
+"qids": [
+"impeccable:c047c3"
+],
+"via": [
+"no-all-caps-or-justified-body-text"
+]
+},
+{
+"rule": "text:body/ask:c06212",
+"qids": [
+"impeccable:c047c3"
+],
+"via": [
+"no-all-caps-or-justified-body-text"
+]
+},
+{
+"rule": "page/ask:e94e0b",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "aria:button/ask:834ee2",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "page/ask:a974be",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "page/ask:4a63ff",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:icon/ask:cb0343",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:chart/ask:75f830",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "page/ask:6202f1",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "page/ask:0fb136",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "page/ask:d1568f",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "page/ask:de5b06",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:card/ask:13a570",
+"qids": [
+"impeccable:9ce261"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:popup/ask:d03642",
+"qids": [
+"impeccable:7a9f0b"
+],
+"via": [
+"dropdowns-must-not-clip-inside-overflow-hidden"
+]
+},
+{
+"rule": "page/ask:6467d4",
+"qids": [
+"impeccable:cd0884"
+],
+"via": [
+"surface"
+]
+},
+{
+"rule": "page/ask:bbaa3a",
+"qids": [
+"impeccable:cd0884"
+],
+"via": [
+"surface"
+]
+},
+{
+"rule": "ui:card/ask:b24d1a",
+"qids": [
+"impeccable:cd0884"
+],
+"via": [
+"surface"
 ]
 }
 ]
@@ -61414,9 +63386,12 @@
 {
 "rule": "page/ask:a5afc0",
 "qids": [
-"impeccable:a7c6e7"
+"impeccable:1d93db",
+"impeccable:a7c6e7",
+"impeccable:d08d91"
 ],
 "via": [
+"every-animation-must-communicate",
 "remove-clutter"
 ]
 },
@@ -61512,6 +63487,15 @@
 },
 {
 "rule": "page/ask:de5b06",
+"qids": [
+"impeccable:a7c6e7"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:card/ask:13a570",
 "qids": [
 "impeccable:a7c6e7"
 ],
@@ -61937,6 +63921,141 @@
 ],
 "via": [
 "no-entrance-every-render"
+]
+},
+{
+"rule": "page/ask:ed2f70",
+"qids": [
+"impeccable:4e1e47"
+],
+"via": [
+"responsive-behavior-is-structural-reorder-or-col"
+]
+},
+{
+"rule": "state:empty/ask:fe5366",
+"qids": [
+"impeccable:223daa"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "state:empty/ask:4ed01e",
+"qids": [
+"impeccable:223daa"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "state:empty/ask:b2bd59",
+"qids": [
+"impeccable:223daa"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "state:empty/ask:03bd96",
+"qids": [
+"impeccable:223daa"
+],
+"via": [
+"empty-copy-guides"
+]
+},
+{
+"rule": "ui:popup/ask:d03642",
+"qids": [
+"impeccable:6851db"
+],
+"via": [
+"dropdowns-must-not-clip-inside-overflow-hidden"
+]
+},
+{
+"rule": "page/ask:d0226c",
+"qids": [
+"impeccable:5811db"
+],
+"via": [
+"reuse-components"
+]
+},
+{
+"rule": "page/ask:28f5a1",
+"qids": [
+"impeccable:5811db"
+],
+"via": [
+"reuse-components"
+]
+},
+{
+"rule": "page/ask:35e995",
+"qids": [
+"impeccable:5811db"
+],
+"via": [
+"reuse-components"
+]
+},
+{
+"rule": "text:display/ask:d4a3a2",
+"qids": [
+"impeccable:7a2403"
+],
+"via": [
+"limit-display-faces-to-headlines"
+]
+},
+{
+"rule": "page/ask:c9b1e0",
+"qids": [
+"impeccable:04246a"
+],
+"via": [
+"keep-standard-affordances"
+]
+},
+{
+"rule": "state:disabled/ask:0123b2",
+"qids": [
+"impeccable:5a8a87"
+],
+"via": [
+"mute-inactive-state-color"
+]
+},
+{
+"rule": "aria:dialog/ask:45d741",
+"qids": [
+"impeccable:0cbc99"
+],
+"via": [
+"modals-only-for-interrupting-decisions"
+]
+},
+{
+"rule": "aria:alert/ask:fffbe7",
+"qids": [
+"impeccable:0cbc99"
+],
+"via": [
+"modals-only-for-interrupting-decisions"
+]
+},
+{
+"rule": "page/ask:5428b3",
+"qids": [
+"impeccable:96098b"
+],
+"via": [
+"consistent-visual-vocabulary"
 ]
 }
 ]
@@ -64102,6 +66221,17 @@
 },
 {
 "rule": "page/ask:de5b06",
+"qids": [
+"nngroup:299ce3",
+"nngroup:5098c9",
+"nngroup:9a0739"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:card/ask:13a570",
 "qids": [
 "nngroup:299ce3",
 "nngroup:5098c9",
@@ -66457,6 +68587,24 @@
 ]
 },
 {
+"rule": "text:*/ask:76e438",
+"qids": [
+"taste-skill:7bf8e5"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
+"qids": [
+"taste-skill:7bf8e5"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
 "rule": "ui:toast/axl:exclamation-marks",
 "qids": [
 "taste-skill:420660"
@@ -66898,6 +69046,15 @@
 },
 {
 "rule": "page/ask:de5b06",
+"qids": [
+"taste-skill:de8e93"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
+"rule": "ui:card/ask:13a570",
 "qids": [
 "taste-skill:de8e93"
 ],
@@ -67441,6 +69598,24 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [
+"taste-skill:2975da"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [
+"taste-skill:2975da"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [
 "taste-skill:2975da"
 ],
@@ -73283,6 +75458,19 @@
 ]
 },
 {
+"rule": "ui:card/ask:13a570",
+"qids": [
+"ui-craft:1ca9b0",
+"ui-craft:2bf78b",
+"ui-craft:551660",
+"ui-craft:62790c",
+"ui-craft:f9a5f5"
+],
+"via": [
+"remove-clutter"
+]
+},
+{
 "rule": "aria:button/wcag:1.4.11",
 "qids": [
 "ui-craft:4397e1",
@@ -74287,6 +76475,26 @@
 },
 {
 "rule": "page/ask:1ede40",
+"qids": [
+"ui-craft:1d4502",
+"ui-craft:724753"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:76e438",
+"qids": [
+"ui-craft:1d4502",
+"ui-craft:724753"
+],
+"via": [
+"no-ai-cliche-copy"
+]
+},
+{
+"rule": "text:*/ask:5e1ba2",
 "qids": [
 "ui-craft:1d4502",
 "ui-craft:724753"
@@ -75550,6 +77758,28 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [
+"ui-craft:a7ce9c",
+"ui-craft:ab90a8",
+"ui-craft:f1ccf0"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [
+"ui-craft:a7ce9c",
+"ui-craft:ab90a8",
+"ui-craft:f1ccf0"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [
 "ui-craft:a7ce9c",
 "ui-craft:ab90a8",
@@ -81065,6 +83295,24 @@
 },
 {
 "rule": "page/ask:4d533b",
+"qids": [
+"ui-craft:14cb50"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:631088",
+"qids": [
+"ui-craft:14cb50"
+],
+"via": [
+"spacing"
+]
+},
+{
+"rule": "aria:heading/ask:b6af88",
 "qids": [
 "ui-craft:14cb50"
 ],

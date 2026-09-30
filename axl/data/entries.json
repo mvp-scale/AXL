@@ -69,7 +69,8 @@
 "impeccable:399113"
 ],
 "states-designed": [
-"impeccable:8f5a67"
+"impeccable:8f5a67",
+"impeccable:ebc97e"
 ],
 "align-to-grid": [
 "impeccable:2ba427"
@@ -112,6 +113,9 @@
 ],
 "design-tokens": [
 "impeccable:6f9765"
+],
+"spacing": [
+"impeccable:b3b385"
 ]
 }
 },
@@ -295,7 +299,8 @@
 "flatten-component-trees",
 "design-tokens",
 "limit-component-variants",
-"preserve-visual-hierarchy-when-simplifying"
+"preserve-visual-hierarchy-when-simplifying",
+"left-edge-alignment"
 ],
 "quote": "Strip a design to its essence. Remove anything that doesn't earn its place: redundant elements, repeated information, decorative noise, cosmetic complexity.",
 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/distill.md",
@@ -312,7 +317,8 @@
 "impeccable:f8215c"
 ],
 "primary": [
-"impeccable:52b4ae"
+"impeccable:52b4ae",
+"impeccable:c76c55"
 ],
 "palette-limit": [
 "impeccable:a78d2e"
@@ -385,6 +391,16 @@
 ],
 "preserve-visual-hierarchy-when-simplifying": [
 "impeccable:176733"
+],
+"progressive-disclosure": [
+"impeccable:7e8bad",
+"impeccable:cdf90b"
+],
+"left-edge-alignment": [
+"impeccable:84014f"
+],
+"copy-specific": [
+"impeccable:8a7e14"
 ]
 }
 },
@@ -887,7 +903,8 @@
 "tinted-neutrals",
 "dark-mode-support",
 "semantic-color-tokens",
-"non-text-contrast"
+"non-text-contrast",
+"no-gray-text-on-colored-backgrounds"
 ],
 "quote": "Introduce color as hierarchy, meaning, and atmosphere. Preserve confirmed brand and semantic conventions; do not replace a visual world under the guise of colorizing it.",
 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/colorize.md",
@@ -934,6 +951,9 @@
 ],
 "non-text-contrast": [
 "impeccable:a5e15b"
+],
+"no-gray-text-on-colored-backgrounds": [
+"impeccable:e972d3"
 ]
 }
 },
@@ -962,7 +982,8 @@
 "plain-language",
 "alt-decorative-empty",
 "label-in-name",
-"color-not-only"
+"color-not-only",
+"whole-translatable-messages"
 ],
 "quote": "Use a specific verb and object when the outcome is not already obvious. Labels should describe what will happen, not the gesture used to trigger it.",
 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/clarify.md",
@@ -1030,6 +1051,9 @@
 ],
 "color-not-only": [
 "impeccable:2231d9"
+],
+"whole-translatable-messages": [
+"impeccable:a9be9c"
 ]
 }
 },
@@ -1084,7 +1108,8 @@
 "error-message-human",
 "virtualize-long-lists",
 "pointer-cancel",
-"color-not-only"
+"color-not-only",
+"text-resize-200"
 ],
 "quote": "Designs that only work with perfect data aren't production-ready. Harden the interface against the inputs, errors, languages, and network conditions that real users will throw at it.",
 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/harden.md",
@@ -1094,7 +1119,10 @@
 "stress-test": [
 "impeccable:587fc2",
 "impeccable:636c8a",
-"impeccable:00010c"
+"impeccable:00010c",
+"impeccable:daad7d",
+"impeccable:55db64",
+"impeccable:e17a7d"
 ],
 "fluid-spacing-clamp": [
 "impeccable:8eb863"
@@ -1105,14 +1133,20 @@
 "localize": [
 "impeccable:055c3f",
 "impeccable:e61ba3",
-"impeccable:d66c8e"
+"impeccable:d66c8e",
+"impeccable:0d1a84",
+"impeccable:8bc1dc",
+"impeccable:160c67",
+"impeccable:5c9a1f"
 ],
 "text-spacing": [
 "impeccable:b86036",
 "impeccable:de29f2"
 ],
 "error-message-human": [
-"impeccable:1208b0"
+"impeccable:1208b0",
+"impeccable:ff2ec6",
+"impeccable:0083b5"
 ],
 "virtualize-long-lists": [
 "impeccable:11f1c8"
@@ -1126,6 +1160,9 @@
 ],
 "states-designed": [
 "impeccable:e58661"
+],
+"text-resize-200": [
+"impeccable:130549"
 ]
 }
 },
@@ -1158,7 +1195,9 @@
 "no-hover-only",
 "safe-area-insets",
 "table-responsive",
-"hamburger-menu-a11y"
+"hamburger-menu-a11y",
+"bottom-of-screen-thumb-reach-actions",
+"container-queries"
 ],
 "quote": "Single column instead of multi-column",
 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/adapt.md",
@@ -1177,7 +1216,8 @@
 ],
 "touch-target-44": [
 "impeccable:2766bf",
-"impeccable:da8505"
+"impeccable:da8505",
+"impeccable:48de56"
 ],
 "bottom-sheets-instead-of-dropdowns-on-mobile": [
 "impeccable:176f84"
@@ -1233,7 +1273,8 @@
 ],
 "no-hover-only": [
 "impeccable:6ce1c0",
-"impeccable:60b875"
+"impeccable:60b875",
+"impeccable:006a83"
 ],
 "safe-area-insets": [
 "impeccable:9e8255"
@@ -1243,6 +1284,13 @@
 ],
 "hamburger-menu-a11y": [
 "impeccable:97cba8"
+],
+"bottom-of-screen-thumb-reach-actions": [
+"impeccable:76eace",
+"impeccable:155681"
+],
+"container-queries": [
+"impeccable:6d214c"
 ]
 }
 },
@@ -1278,7 +1326,8 @@
 "long-tasks-split",
 "paginate-instead-of-loading-everything",
 "image-dimensions",
-"layout-shift-zero"
+"layout-shift-zero",
+"image-compression"
 ],
 "quote": "Performance is a feature. Identify the actual bottleneck for THIS interface, fix it, then measure. Don't optimize what isn't slow.",
 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/optimize.md",
@@ -1344,6 +1393,9 @@
 "layout-shift-zero": [
 "impeccable:c23bdd",
 "impeccable:ec40b9"
+],
+"image-compression": [
+"impeccable:253b33"
 ]
 }
 },
@@ -1416,7 +1468,8 @@
 "impeccable:cae509"
 ],
 "line-height-scale": [
-"impeccable:cae509"
+"impeccable:cae509",
+"impeccable:ebd761"
 ],
 "tabular": [
 "impeccable:4135b9"
@@ -1425,7 +1478,8 @@
 "impeccable:cd2a34"
 ],
 "font-loading-no-block": [
-"impeccable:cd2a34"
+"impeccable:cd2a34",
+"impeccable:505e69"
 ],
 "fluid-spacing-clamp": [
 "impeccable:9393b8"
@@ -1547,7 +1601,12 @@
 "short-tours-of-3-7-steps",
 "provide-sample-data-in-onboarding",
 "help-entry-point-in-onboarding",
-"track-onboarding-completion-and-dismissals"
+"track-onboarding-completion-and-dismissals",
+"explain-why-you-ask",
+"tours-teach-workflows",
+"illustration-or-icon-in-empty-state",
+"empty-copy-guides",
+"respect-tooltip-dismissals"
 ],
 "quote": "What's the minimum users need to learn to be successful?",
 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/onboard.md",
@@ -1560,14 +1619,20 @@
 "impeccable:ed4148"
 ],
 "onboarding-gets-users-to-value-quickly": [
-"impeccable:18e6ee"
+"impeccable:18e6ee",
+"impeccable:5c8c87",
+"impeccable:63637b",
+"impeccable:b579ff",
+"impeccable:f6dc5a"
 ],
 "real-functionality-in-onboarding": [
 "impeccable:077081"
 ],
 "don-t-block-product-with-onboarding": [
 "impeccable:9520b6",
-"impeccable:a63e19"
+"impeccable:a63e19",
+"impeccable:a77f0a",
+"impeccable:8aa709"
 ],
 "skippable-onboarding": [
 "impeccable:12e3e1",
@@ -1580,7 +1645,8 @@
 "impeccable:367c41"
 ],
 "interactive-onboarding": [
-"impeccable:c64edd"
+"impeccable:c64edd",
+"impeccable:6a98f9"
 ],
 "delight-moments": [
 "impeccable:caf4d8"
@@ -1604,6 +1670,22 @@
 "track-onboarding-completion-and-dismissals": [
 "impeccable:5ac86c",
 "impeccable:0f4a38"
+],
+"explain-why-you-ask": [
+"impeccable:576880"
+],
+"tours-teach-workflows": [
+"impeccable:4c18db"
+],
+"illustration-or-icon-in-empty-state": [
+"impeccable:cb83f4"
+],
+"empty-copy-guides": [
+"impeccable:db7425",
+"impeccable:1ef8df"
+],
+"respect-tooltip-dismissals": [
+"impeccable:b0e55d"
 ]
 }
 },
@@ -1635,7 +1717,20 @@
 "keyboard-operable",
 "bottom-of-screen-thumb-reach-actions",
 "autocomplete-attributes",
-"touch-target-44"
+"touch-target-44",
+"interactive-onboarding",
+"primary",
+"limit-top-level-nav-items",
+"one-decision-per-index-screen",
+"preserve-visual-hierarchy-when-simplifying",
+"keep-options-visible",
+"no-decorative-clutter",
+"keyboard-tested",
+"skippable-slow-animations",
+"offer-batch-actions",
+"empty-copy-guides",
+"preserve-progress-on-interruption",
+"lazy-load-images"
 ],
 "quote": "[ ] **Progressive disclosure**: Is complexity revealed only when the user needs it?",
 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/critique.md",
@@ -1646,7 +1741,10 @@
 "impeccable:232b33",
 "impeccable:e005dd",
 "impeccable:7f857e",
-"impeccable:b77e63"
+"impeccable:b77e63",
+"impeccable:eb27e9",
+"impeccable:4612ea",
+"impeccable:170eec"
 ],
 "one-reading-path-with-related-links-gathered-at-": [
 "impeccable:7a9924"
@@ -1661,7 +1759,8 @@
 "impeccable:c1a8e1"
 ],
 "unusual-words": [
-"impeccable:c1a8e1"
+"impeccable:c1a8e1",
+"impeccable:5d8bf5"
 ],
 "co-locate-information-needed-for-a-decision": [
 "impeccable:dc0a86"
@@ -1686,7 +1785,10 @@
 "impeccable:9dc16c"
 ],
 "error-message-human": [
-"impeccable:8ff610"
+"impeccable:8ff610",
+"impeccable:b513ed",
+"impeccable:165740",
+"impeccable:5bb0de"
 ],
 "error-suggestion": [
 "impeccable:8ff610"
@@ -1719,6 +1821,45 @@
 ],
 "touch-target-44": [
 "impeccable:986c1d"
+],
+"interactive-onboarding": [
+"impeccable:1087d6"
+],
+"primary": [
+"impeccable:3b3629"
+],
+"limit-top-level-nav-items": [
+"impeccable:1bef2f"
+],
+"one-decision-per-index-screen": [
+"impeccable:1b032d"
+],
+"preserve-visual-hierarchy-when-simplifying": [
+"impeccable:31f1f0"
+],
+"keep-options-visible": [
+"impeccable:cb6463"
+],
+"no-decorative-clutter": [
+"impeccable:bfccaf"
+],
+"keyboard-tested": [
+"impeccable:10c0db"
+],
+"skippable-slow-animations": [
+"impeccable:510ebc"
+],
+"offer-batch-actions": [
+"impeccable:ace2d7"
+],
+"empty-copy-guides": [
+"impeccable:35266d"
+],
+"preserve-progress-on-interruption": [
+"impeccable:084c64"
+],
+"lazy-load-images": [
+"impeccable:305413"
 ]
 }
 },
@@ -1757,7 +1898,8 @@
 "pointer-cancel",
 "dragging-alternative",
 "audit-first",
-"touch-target-44"
+"touch-target-44",
+"will-change-only-during-animation"
 ],
 "quote": "**Contrast issues**: Text contrast ratios < 4.5:1 (or 7:1 for AAA)",
 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md",
@@ -1795,10 +1937,18 @@
 "impeccable:1c53d4"
 ],
 "design-tokens": [
-"impeccable:f31f80"
+"impeccable:f31f80",
+"impeccable:914aad"
 ],
 "touch-target-44": [
-"impeccable:6c4a9f"
+"impeccable:6c4a9f",
+"impeccable:23532c"
+],
+"transform-only": [
+"impeccable:6b502c"
+],
+"will-change-only-during-animation": [
+"impeccable:eabfe7"
 ]
 }
 },
@@ -9111,7 +9261,40 @@
 "align",
 "hyphenation",
 "loosen-tracking-on-small-caps-labels",
-"no-horizontal-scroll"
+"no-horizontal-scroll",
+"dynamic-color-with-fallback",
+"tonal-elevation-over-drop-shadows",
+"responsive-images",
+"one-authored-motion-moment",
+"exponential-ease-out-entrances",
+"smooth-non-transform-animation-only",
+"style-browser-default-surfaces",
+"copy-specific",
+"no-hero-metric-template",
+"no-section-eyebrows-or-number-kickers-by-default",
+"numbered-markers-only-for-real-sequences",
+"no-gradient-text-on-large-headers",
+"no-emoji-in-copy",
+"accent",
+"use-system-materials-for-blur",
+"grouped-lists-for-settings",
+"inspect-page-in-both-color-modes",
+"animations-hold-60fps",
+"animate-status-only-when-data-changes",
+"no-decorative-blinking-cursor",
+"no-shape-assembled-illustrations",
+"no-auto-scrolling-marquees",
+"no-icon-tile-above-heading",
+"badge",
+"error-free-console",
+"no-content-invisible-at-rest",
+"no-text-occluded-by-overlaps",
+"balance-opening-columns",
+"width",
+"no-all-caps-or-justified-body-text",
+"remove-clutter",
+"dropdowns-must-not-clip-inside-overflow-hidden",
+"surface"
 ],
 "quote": "**Restructure, don't stretch.** A scaled-up phone UI on a tablet is the failure mode. Use size classes (iOS) / window size classes (Android) to switch structure.",
 "url": "https://github.com/pbakaus/impeccable",
@@ -9159,7 +9342,10 @@
 ],
 "safe-area-insets": [
 "impeccable:aa6c08",
-"impeccable:021139"
+"impeccable:021139",
+"impeccable:093a13",
+"impeccable:db09f0",
+"impeccable:c87c01"
 ],
 "reduce": [
 "impeccable:aa6c08",
@@ -9189,7 +9375,8 @@
 "dark-mode-support": [
 "impeccable:59b6d0",
 "impeccable:5ad11c",
-"impeccable:aed3b9"
+"impeccable:aed3b9",
+"impeccable:47bfaf"
 ],
 "single-floating-action-button": [
 "impeccable:212aea"
@@ -9211,7 +9398,8 @@
 ],
 "icon-consistency": [
 "impeccable:9864e3",
-"impeccable:4ddb7a"
+"impeccable:4ddb7a",
+"impeccable:398942"
 ],
 "contrast-text": [
 "impeccable:eb0cee",
@@ -9254,7 +9442,8 @@
 ],
 "no-decorative-stripe-or-grid-background-textures": [
 "impeccable:5a26b2",
-"impeccable:152c92"
+"impeccable:152c92",
+"impeccable:11379f"
 ],
 "no-hover-animation-on-images": [
 "impeccable:6e6910",
@@ -9293,13 +9482,15 @@
 ],
 "no-fake-stats": [
 "impeccable:13b159",
-"impeccable:6e4d36"
+"impeccable:6e4d36",
+"impeccable:2eee5b"
 ],
 "banned-fonts": [
 "impeccable:ff7c95"
 ],
 "serif": [
-"impeccable:b6c61d"
+"impeccable:b6c61d",
+"impeccable:21831e"
 ],
 "responsive-breakpoints": [
 "impeccable:a14c30",
@@ -9367,7 +9558,10 @@
 "impeccable:02314c"
 ],
 "spacing": [
-"impeccable:018921"
+"impeccable:018921",
+"impeccable:621920",
+"impeccable:99f4dd",
+"impeccable:d7aa60"
 ],
 "bouncy": [
 "impeccable:a2a04a"
@@ -9381,7 +9575,8 @@
 ],
 "no-neon-glow": [
 "impeccable:8efb33",
-"impeccable:da32a5"
+"impeccable:da32a5",
+"impeccable:d01627"
 ],
 "no-italic-emphasis": [
 "impeccable:8813c4"
@@ -9394,7 +9589,10 @@
 ],
 "no-ai-cliche-copy": [
 "impeccable:e4fe26",
-"impeccable:459367"
+"impeccable:459367",
+"impeccable:6139fe",
+"impeccable:b89aec",
+"impeccable:66caa1"
 ],
 "cap-hero-headline-size": [
 "impeccable:39ef44",
@@ -9444,6 +9642,107 @@
 ],
 "no-horizontal-scroll": [
 "impeccable:e6ee39"
+],
+"dynamic-color-with-fallback": [
+"impeccable:1c36d0",
+"impeccable:3b76ce"
+],
+"tonal-elevation-over-drop-shadows": [
+"impeccable:746d6f"
+],
+"responsive-images": [
+"impeccable:d9b458"
+],
+"one-authored-motion-moment": [
+"impeccable:b8c30a"
+],
+"exponential-ease-out-entrances": [
+"impeccable:0b8132"
+],
+"smooth-non-transform-animation-only": [
+"impeccable:c38dd3"
+],
+"style-browser-default-surfaces": [
+"impeccable:a3152c"
+],
+"copy-specific": [
+"impeccable:0bf391"
+],
+"no-hero-metric-template": [
+"impeccable:ab0930"
+],
+"no-section-eyebrows-or-number-kickers-by-default": [
+"impeccable:b002b1",
+"impeccable:20d4d3"
+],
+"numbered-markers-only-for-real-sequences": [
+"impeccable:af466e"
+],
+"no-gradient-text-on-large-headers": [
+"impeccable:99daad"
+],
+"no-emoji-in-copy": [
+"impeccable:398942"
+],
+"accent": [
+"impeccable:7d939f"
+],
+"use-system-materials-for-blur": [
+"impeccable:b2cbf3"
+],
+"grouped-lists-for-settings": [
+"impeccable:5beb00"
+],
+"inspect-page-in-both-color-modes": [
+"impeccable:6d1bb9"
+],
+"animations-hold-60fps": [
+"impeccable:3445ca"
+],
+"animate-status-only-when-data-changes": [
+"impeccable:be91a6"
+],
+"no-decorative-blinking-cursor": [
+"impeccable:124f36"
+],
+"no-shape-assembled-illustrations": [
+"impeccable:2ae0c3"
+],
+"no-auto-scrolling-marquees": [
+"impeccable:d3b547"
+],
+"no-icon-tile-above-heading": [
+"impeccable:3b8795"
+],
+"badge": [
+"impeccable:71ca26"
+],
+"error-free-console": [
+"impeccable:34c750"
+],
+"no-content-invisible-at-rest": [
+"impeccable:9be542"
+],
+"no-text-occluded-by-overlaps": [
+"impeccable:e657b2"
+],
+"balance-opening-columns": [
+"impeccable:829cb5"
+],
+"width": [
+"impeccable:61dcdf"
+],
+"no-all-caps-or-justified-body-text": [
+"impeccable:c047c3"
+],
+"remove-clutter": [
+"impeccable:9ce261"
+],
+"dropdowns-must-not-clip-inside-overflow-hidden": [
+"impeccable:7a9f0b"
+],
+"surface": [
+"impeccable:cd0884"
 ]
 }
 },
@@ -9469,7 +9768,17 @@
 "states-designed",
 "hover-state",
 "micro-interaction-100-200",
-"no-entrance-every-render"
+"no-entrance-every-render",
+"responsive-behavior-is-structural-reorder-or-col",
+"empty-copy-guides",
+"dropdowns-must-not-clip-inside-overflow-hidden",
+"every-animation-must-communicate",
+"reuse-components",
+"limit-display-faces-to-headlines",
+"keep-standard-affordances",
+"mute-inactive-state-color",
+"modals-only-for-interrupting-decisions",
+"consistent-visual-vocabulary"
 ],
 "quote": "Familiarity is often a feature here. The test is whether a category-fluent user can trust the interface immediately or must pause at every subtly-off component.",
 "url": "https://github.com/pbakaus/impeccable",
@@ -9506,6 +9815,37 @@
 ],
 "no-entrance-every-render": [
 "impeccable:5db418"
+],
+"responsive-behavior-is-structural-reorder-or-col": [
+"impeccable:4e1e47"
+],
+"empty-copy-guides": [
+"impeccable:223daa"
+],
+"dropdowns-must-not-clip-inside-overflow-hidden": [
+"impeccable:6851db"
+],
+"every-animation-must-communicate": [
+"impeccable:d08d91",
+"impeccable:1d93db"
+],
+"reuse-components": [
+"impeccable:5811db"
+],
+"limit-display-faces-to-headlines": [
+"impeccable:7a2403"
+],
+"keep-standard-affordances": [
+"impeccable:04246a"
+],
+"mute-inactive-state-color": [
+"impeccable:5a8a87"
+],
+"modals-only-for-interrupting-decisions": [
+"impeccable:0cbc99"
+],
+"consistent-visual-vocabulary": [
+"impeccable:96098b"
 ]
 }
 },

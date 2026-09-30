@@ -67096,6 +67096,1619 @@
 "also": [],
 "check": null,
 "qid": "webdev:61e395"
+},
+{
+"src": "Impeccable",
+"text": "Thumbs-first design (controls within thumb reach)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "adapt",
+"tweaks": [
+"bottom-of-screen-thumb-reach-actions"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:76eace",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Touch targets 44x44px but allow denser layouts than phone",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "adapt",
+"tweaks": [
+"touch-target-44"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:48de56",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "No hover states (not reliable)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "adapt",
+"tweaks": [
+"no-hover-only"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:006a83",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Container Queries**: Adapt based on container, not viewport",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "adapt",
+"tweaks": [
+"container-queries"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:6d214c",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Consider thumb zones (easier to reach bottom than top)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "adapt",
+"tweaks": [
+"bottom-of-screen-thumb-reach-actions"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:155681",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Respect safe areas and window insets in every new configuration (notch, hinge, status bar, keyboard).",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "adapt.native",
+"tweaks": [
+"safe-area-insets"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:093a13",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Dynamic Color (Material You)** where it fits: derive the scheme from the user's wallpaper on Android 12+, with a static fallback. <!-- rule:android-color-dynamic-color -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "android",
+"tweaks": [
+"dynamic-color-with-fallback"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:1c36d0",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Tonal elevation.** Convey elevation through the standard surface tonal levels (plus shadow where appropriate); no arbitrary drop shadows. <!-- rule:android-color-tonal-elevation -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "android",
+"tweaks": [
+"tonal-elevation-over-drop-shadows"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:746d6f",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Expensive animations**: Casual layout-property animation, unbounded blur/filter/shadow effects, or effects that visibly drop frames",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "audit",
+"tweaks": [
+"transform-only"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:6b502c",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**will-change overuse**: `will-change` applied broadly or left on at rest (it is a targeted hint for known expensive animations, not a baseline requirement)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "audit",
+"tweaks": [
+"will-change-only-during-animation"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:eabfe7",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Hard-coded colors**: Colors not using design tokens",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "audit",
+"tweaks": [
+"design-tokens"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:914aad",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Touch targets**: Interactive elements < 44x44px",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "audit",
+"tweaks": [
+"touch-target-44"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:23532c",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Image handling**: full-size images decoded for thumbnails, no caching",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "audit.native",
+"tweaks": [
+"responsive-images"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:d9b458",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Dynamic Color** (Android 12+): no static fallback scheme, or ignored where it fits",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "audit.native",
+"tweaks": [
+"dynamic-color-with-fallback"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:3b76ce",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Keyboard/IME handling**: inputs hidden behind the keyboard, no inset adjustment",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "audit.native",
+"tweaks": [
+"safe-area-insets"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:db09f0",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Write complete translatable messages rather than concatenated fragments.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "clarify",
+"tweaks": [
+"whole-translatable-messages"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:a9be9c",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "On colored surfaces, derive secondary text from the foreground or surface hue rather than using washed-out generic gray.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "colorize",
+"tweaks": [
+"no-gray-text-on-colored-backgrounds"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:e972d3",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Depth:** shadows carry an offset and a soft blur. A zero-offset colored halo is decoration. <!-- rule:skill-color-no-glow-halo -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"no-neon-glow"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:d01627",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Spacing:** tight groups, generous separation, more space above a heading than below it. Read the computed values. <!-- rule:skill-layout-spacing-rhythm -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"spacing"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:621920",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Motion:** one authored moment, not scattered effects and not one identical entrance on every section.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"one-authored-motion-moment"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:b8c30a",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Exponential ease-out from an already-visible default.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"exponential-ease-out-entrances"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:0b8132",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Reach past transform and opacity: blur, backdrop-filter, clip-path, mask, and shadow belong to the palette when they stay smooth. <!-- rule:skill-motion-floor --> <!-- rule:skill-motion-materials-palette --> <!-- rule:skill-motion-no-section-fade -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"smooth-non-transform-animation-only"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:c38dd3",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Text selection, the caret, custom scrollbars, focus rings, underline offset, and the numerals in tabular data all ship with browser defaults that belong to no design system.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"style-browser-default-surfaces"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:a3152c",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Copy:** the product's own language. Controls name their action; errors name the problem and the recovery. <!-- rule:skill-copy-design-material -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"copy-specific"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:0bf391",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "The hero-metric template: big number, small label, supporting stats, accent. <!-- rule:skill-ban-hero-metric -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"no-hero-metric-template"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:ab0930",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "A kicker or eyebrow above a heading. This one is a ban, not a default: no brief earns it back. The heading carries its own weight; delete the label and let the heading speak. <!-- rule:skill-ban-eyebrow-on-every-section -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"no-section-eyebrows-or-number-kickers-by-default"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:b002b1",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Section numbers (01 / 02 / 03) unless the sequence itself carries information the reader needs. <!-- rule:skill-ban-numbered-section-markers -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"numbered-markers-only-for-real-sequences"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:af466e",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Gradient text. Emphasis comes from weight or size. <!-- rule:skill-ban-gradient-text -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"no-gradient-text-on-large-headers"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:99daad",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Unicode glyphs or emoji standing in for an icon system. Icons are drawn, from a real library or authored SVG, in one consistent stroke and weight. <!-- rule:skill-ban-glyph-icons -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"icon-consistency",
+"no-emoji-in-copy"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:398942",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Claims and configuration come from supplied truth; label illustrative values honestly. Naming a concept and then ironizing it is not a claim. <!-- rule:skill-codex-material-honesty --> <!-- rule:skill-ban-codex-x-theater -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "craft-floor",
+"tweaks": [
+"no-fake-stats"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:2eee5b",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Progressive disclosure: show what's needed now, hide the rest",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"progressive-disclosure"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:eb27e9",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Onboarding that teaches through action, not walls of text",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"interactive-onboarding"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:1087d6",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "[ ] **Chunking**: Is information presented in digestible groups (≤4 items per group)?",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"progressive-disclosure"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:4612ea",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Action buttons: 1 primary, 1–2 secondary, group the rest in a menu",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"primary"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:3b3629",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Navigation menus: ≤5 top-level items (group the rest under clear categories)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"limit-top-level-nav-items"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:1bef2f",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Portfolio and gallery indexes: one decision per screen (which piece to open), not filter, sort, and tag controls all at once",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"one-decision-per-index-screen"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:1b032d",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Problem**: Presenting 10+ choices at once with no hierarchy.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"progressive-disclosure"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:170eec",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Problem**: Every element has the same visual weight; nothing stands out.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"preserve-visual-hierarchy-when-simplifying"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:31f1f0",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Form validation feedback (inline, not just on submit)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"error-message-human"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:b513ed",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Familiar terminology (no unexplained jargon)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"unusual-words"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:5d8bf5",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Visible options (not buried in hidden menus)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"keep-options-visible"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:cb6463",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "No decorative clutter competing for attention",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"no-decorative-clutter"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:bfccaf",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Plain language error messages (no error codes for users)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"error-message-human"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:165740",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Specific problem identification (\"Email is missing @\" not \"Invalid input\")",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"error-message-human"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:5bb0de",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "No keyboard navigation for primary actions",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"keyboard-tested"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:10c0db",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Slow animations that can't be skipped",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"skippable-slow-animations"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:510ebc",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "One-item-at-a-time workflows where batch would be natural",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"offer-batch-actions"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:ace2d7",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Empty states that show nothing useful (\"No results\" with no guidance)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"empty-copy-guides"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:35266d",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "No state persistence; progress lost on tab switch or interruption",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"preserve-progress-on-interruption"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:084c64",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Heavy assets loading on every page (no lazy loading)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "critique",
+"tweaks": [
+"lazy-load-images"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:305413",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Information overload**: Everything visible at once, no progressive disclosure",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "distill",
+"tweaks": [
+"progressive-disclosure"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:7e8bad",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Progressive disclosure**: Hide complexity behind clear entry points (accordions, modals, step-through flows)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "distill",
+"tweaks": [
+"progressive-disclosure"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:cdf90b",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Consistent alignment**: Pick left or center, stick with it",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "distill",
+"tweaks": [
+"left-edge-alignment"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:84014f",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Clear next action**: ONE obvious next action, not five competing ones",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "distill",
+"tweaks": [
+"primary"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:c76c55",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Active voice**: \"Save changes\" not \"Changes will be saved\"",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "distill",
+"tweaks": [
+"copy-specific"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:8a7e14",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Long translations (German is often 30% longer than English)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"localize"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:0d1a84",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Number formats (1,000 vs 1.000)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"localize"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:8bc1dc",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Test text scaling (zoom to 200%)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"text-resize-200"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:130549",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Test with longest language (usually German)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"localize"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:160c67",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Test with emoji (they can be 2-4 bytes)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"stress-test"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:daad7d",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "500: Show generic error, offer support",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"error-message-human"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:ff2ec6",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Test with extreme data (very long, very short, empty)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"stress-test"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:55db64",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Ignore internationalization (design for global)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"localize"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:5c9a1f",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Leave error messages generic (\"Error occurred\")",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"error-message-human"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:0083b5",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Long text**: Try names with 100+ characters",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "harden",
+"tweaks": [
+"stress-test"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:e17a7d",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Safe area.** Lay out inside the safe-area insets. No controls under the notch, Dynamic Island, home indicator, or rounded corners. <!-- rule:ios-layout-safe-area -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "ios",
+"tweaks": [
+"safe-area-insets"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:c87c01",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Semantic system colors** (label, secondaryLabel, systemBackground, separator, tint). They adapt to Dark Mode and increased contrast automatically; raw hex breaks there. <!-- rule:ios-color-semantic-system -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "ios",
+"tweaks": [
+"dark-mode-support"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:47bfaf",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**One tint color** drives interactive elements; decoration is not its job. <!-- rule:ios-color-single-tint -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "ios",
+"tweaks": [
+"accent"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:7d939f",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**System materials** for blur and translucency behind bars and sheets; no hand-rolled glassmorphism. <!-- rule:ios-color-system-materials -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "ios",
+"tweaks": [
+"use-system-materials-for-blur"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:b2cbf3",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Grouped/inset lists** for settings-shaped content; no bespoke card stacks. <!-- rule:ios-components-grouped-lists -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "ios",
+"tweaks": [
+"grouped-lists-for-settings"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:5beb00",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Dark Mode and Dynamic Type belong in the pass.** `xcrun simctl ui booted appearance dark` flips appearance, reusing the capture's UDID when several are booted; a check at a large Dynamic Type size catches the truncation a fixed layout hides. <!-- rule:ios-verify-appearance-and-type -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "ios",
+"tweaks": [
+"inspect-page-in-both-color-modes"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:6d1bb9",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Pace the scroll like a studio.** Vary density, scale, image, motion, and quiet inside one grammar; a dense passage earns a quiet one, and the page ends anchored by a real close. One spacing rhythm throughout, with more space above a heading than below it.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "new-work",
+"tweaks": [
+"spacing"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:99f4dd",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Get users to first value as fast as possible. Onboarding's job is not to teach the product. Its job is to get people to the moment that proves the product is worth their time.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"onboarding-gets-users-to-value-quickly"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:5c8c87",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Demonstrate with working examples, not just descriptions",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"interactive-onboarding"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:6a98f9",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Teach 20% that delivers 80% of value",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"onboarding-gets-users-to-value-quickly"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:63637b",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Teach features when users need them, not upfront",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"onboarding-gets-users-to-value-quickly"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:b579ff",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Explain why you're asking for each piece of information",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"explain-why-you-ask"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:576880",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Introduce 1-3 core concepts (not everything)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"onboarding-gets-users-to-value-quickly"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:f6dc5a",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Allow users to click through tour freely",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"don-t-block-product-with-onboarding"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:a77f0a",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Focus on workflow, not features (\"Create a project\" not \"This is the project button\")",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"tours-teach-workflows"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:4c18db",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Illustration or icon (not just text on blank page)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"illustration-or-icon-in-empty-state"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:cb83f4",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**No results**: Search or filter returned nothing (suggest different query, clear filters)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"empty-copy-guides"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:db7425",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**No permissions**: Can't access (explain why, how to get access)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"empty-copy-guides"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:1ef8df",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Show same tooltip repeatedly (respect dismissals)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"respect-tooltip-dismissals"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:b0e55d",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Block all UI during tour (let users explore)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "onboard",
+"tweaks": [
+"don-t-block-product-with-onboarding"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:8aa709",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Responsive behavior is structural (collapse sidebar, responsive table, breakpoint-driven columns), not fluid typography. <!-- rule:product-layout-responsive-structural -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"responsive-behavior-is-structural-reorder-or-col"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:4e1e47",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Empty states that teach the interface, not \"nothing here.\" <!-- rule:product-components-empty-states -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"empty-copy-guides"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:223daa",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Overlays escape their container. An absolutely positioned dropdown inside an `overflow: hidden` or `overflow: auto` ancestor gets clipped; reach for `<dialog>`, the popover API, `position: fixed`, or a portal. <!-- rule:skill-interaction-dropdown-clipping -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"dropdowns-must-not-clip-inside-overflow-hidden"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:6851db",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Motion conveys state, not decoration. State change, feedback, loading, reveal: nothing else. <!-- rule:product-motion-state-not-decoration -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"every-animation-must-communicate"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:d08d91",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Decorative motion that doesn't convey state. <!-- rule:product-ban-decorative-motion -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"every-animation-must-communicate"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:1d93db",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Inconsistent component vocabulary across screens. If the \"save\" button looks different in two places, one is wrong. <!-- rule:product-ban-inconsistent-components -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"reuse-components"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:5811db",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Display fonts in UI labels, buttons, data. <!-- rule:product-ban-display-fonts-ui -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"limit-display-faces-to-headlines"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:7a2403",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Reinventing standard affordances for flavor (custom scrollbars, weird form controls, non-standard modals). <!-- rule:product-ban-reinvented-affordances -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"keep-standard-affordances"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:04246a",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Heavy color or full-saturation accents on inactive states. <!-- rule:product-ban-heavy-inactive-color -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"mute-inactive-state-color"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:5a8a87",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Modal as first thought. Modals are usually laziness. Exhaust inline / progressive alternatives first. <!-- rule:product-ban-modal-first-thought -->",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"modals-only-for-interrupting-decisions"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:0cbc99",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Consistency over surprise. The same visual vocabulary screen to screen is a virtue; delight is saved for moments, not pages.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "operate",
+"tweaks": [
+"consistent-visual-vocabulary"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:96098b",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Compress images (80-85% quality is usually imperceptible)",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "optimize",
+"tweaks": [
+"image-compression"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:253b33",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Target 60fps. If dropping below 50, simplify.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "overdrive",
+"tweaks": [
+"animations-hold-60fps"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:3445ca",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Group related content tightly and separate distinct groups generously.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "polish",
+"tweaks": [
+"spacing"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:b3b385",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Every control needs appropriate default, hover, focus, active, disabled, loading, error, and success behavior.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "polish",
+"tweaks": [
+"states-designed"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:ebc97e",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "**Reading:** Does body copy stay within a comfortable 45–75 character measure? Are line height, paragraph rhythm, contrast, and tracking tuned to the actual face, width, language, and surface?",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "typeset",
+"tweaks": [
+"line-height-scale"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:ebd761",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Loading does not create disruptive reflow or invisible text.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "typeset",
+"tweaks": [
+"font-loading-no-block"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:505e69",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Overused font: Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"serif"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:21831e",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Pulsing status dot: Small pulsing status dots simulate liveness decoratively. Reserve pulse animation for indicators tied to genuinely live, changing data; a static indicator with clear labeling is honest and calmer.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"animate-status-only-when-data-changes"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:be91a6",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Decorative blinking cursor: A blinking text cursor animated into a hero or landing section simulates typing where no input exists. It borrows the dev-tool aesthetic as decoration. Real editable fields draw their own caret; anywhere else, let the composition hold attention without a fake prompt.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-decorative-blinking-cursor"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:124f36",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Shape-assembled illustration: A large inline SVG that builds a pictorial scene from a pile of primitive shapes reads as placeholder clip art, not illustration.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-shape-assembled-illustrations"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:2ae0c3",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Auto-scrolling marquee: Continuously auto-scrolling content demands attention it has not earned and hides half its content at any moment. Reserve motion for content that changes; let readers move at their own pace.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-auto-scrolling-marquees"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:d3b547",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Icon tile stacked above heading: A small rounded-square icon container above a heading is the universal AI feature-card template — every generator outputs this exact shape. Try a side-by-side icon and heading, or let the icon sit in flow without its own container.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-icon-tile-above-heading"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:3b8795",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Hero eyebrow / pill chip: A tiny uppercase letter-spaced label sitting immediately above an oversized hero headline — or the same shape rendered as a pill chip — is now the default AI SaaS hero.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"badge"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:71ca26",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Kicker / eyebrow label above heading: A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-section-eyebrows-or-number-kickers-by-default"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:20d4d3",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Marketing buzzword: Generic SaaS phrases (streamline / empower / supercharge / world-class / enterprise-grade / next-generation / cutting-edge / etc) are instant AI tells. Pick a specific verb and noun that says what the product literally does.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-ai-cliche-copy"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:6139fe",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Aphoristic-cadence copy: Three or more sections landing on a short rebuttal sentence (\"X. No Y.\" / \"X. Just Y.\") or a manufactured-contrast aphorism (\"Not a feature. A platform.\") reads as AI cadence, not voice. Once is fine; the pattern is the tell.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-ai-cliche-copy"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:b89aec",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Uncaught script error on load: A script threw an uncaught exception or failed to parse while the page loaded. Broken JavaScript silently kills reveals, interactions, and dynamic content, and can leave most of a page invisible. Fix the error before judging anything else.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"error-free-console"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:34c750",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Content invisible at rest: A large share of the page text sits at opacity 0 or visibility hidden even after every reveal handler had a chance to run.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-content-invisible-at-rest"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:9be542",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Text occluded by an overlapping element: Text is painted under an opaque element or a second text run, so part of it cannot be read.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-text-occluded-by-overlaps"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:e657b2",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "One column stretches the first viewport: A multi-column opening section lets one column run far past the fold while its sibling fits in a single viewport, so the short column floats in dead space and the fold falls deep inside one section.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"balance-opening-columns"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:829cb5",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Line length too long: Text lines wider than ~80 characters are hard to read.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"width"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:61dcdf",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "When headings across a page sit as close or closer to the block above than to their own content, every section reads as if it captions the previous one.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"spacing"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:d7aa60",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "All-caps body text: Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-all-caps-or-justified-body-text"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:c047c3",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Same text repeated inside one container: The same literal text rendered three or more times in structurally different spots inside a single card or panel is redundant messaging — usually a status or label wired into every slot of a template.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"remove-clutter"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:9ce261",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Positioned child clipped by overflow container: A clipping container (overflow hidden or clip) wrapping an absolutely-positioned child cuts off tooltips, menus, and popovers that need to escape. Let the overflow be visible, or move the positioned layer out of the clip.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"dropdowns-must-not-clip-inside-overflow-hidden"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:7a9f0b",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Hairline border with wide shadow: A hairline border paired with a wide, diffuse shadow is a recurring generated-UI signature. Commit to one — a defined edge or a soft elevation — rather than both at once.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"surface"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:cd0884",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Repeating-gradient stripes: Repeating-gradient stripes used as surface decoration are a recurring generated-UI signature. Reach for a deliberate texture or leave the surface plain.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-decorative-stripe-or-grid-background-textures"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:11379f",
+"recovered": true
+},
+{
+"src": "Impeccable",
+"text": "Theater framing copy: Dismissing something as \"theater\" is a recurring generated-copy tic. Say plainly what the thing does or does not do.",
+"url": "https://github.com/pbakaus/impeccable",
+"command": "detector-antipatterns",
+"tweaks": [
+"no-ai-cliche-copy"
+],
+"also": [],
+"check": null,
+"qid": "impeccable:66caa1",
+"recovered": true
 }
 ]
 }

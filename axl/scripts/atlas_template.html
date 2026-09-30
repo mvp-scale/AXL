@@ -107,6 +107,7 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .stop.on i{background:var(--on-c)}
 @keyframes lit{0%{background:color-mix(in srgb,var(--cur,var(--ink)) 22%,transparent)}100%{background:transparent}}
 .tw.fresh{animation:lit 1.2s ease-out}
+.pvnote{margin:2px 2px 0;font-size:.82rem;color:var(--muted)}
 .says{min-height:1.5em;margin:8px 2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.98rem;color:var(--muted)}
 .says q{color:var(--ink);font-weight:600}.says a{color:inherit;font:.78rem var(--mono)}
 
@@ -252,6 +253,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
       <button class="hold" id="hold" type="button" aria-label="Hold to see the original"><kbd>Shift</kbd> hold for original</button>
     </div>
     <p class="says" id="says" aria-live="polite"></p>
+    <p class="pvnote">Previews show each rule on its own, as written. An agent following a source will usually do more than its rules say.</p>
   </section>
 
   <section class="list" aria-labelledby="bh">

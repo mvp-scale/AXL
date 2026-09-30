@@ -1,0 +1,1683 @@
+{
+"note": "rule links for statements recovered by add_recovered.py (see data/harvest/_recovered.json)",
+"tweaks": {
+"bottom-of-screen-thumb-reach-actions": [
+{
+"rule": "aria:button ask \"Are primary actions placed at the bottom of the screen within thumb reach?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:76eace"
+]
+}
+]
+},
+{
+"rule": "aria:button ask \"Are primary actions placed at the bottom of the screen within thumb reach?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:155681"
+]
+}
+]
+}
+],
+"touch-target-44": [
+{
+"rule": "aria:button min-width >= 44px",
+"area": "interaction",
+"values": [
+{
+"value": "44px",
+"qids": [
+"impeccable:48de56"
+]
+}
+]
+},
+{
+"rule": "aria:button min-height >= 44px",
+"area": "interaction",
+"values": [
+{
+"value": "44px",
+"qids": [
+"impeccable:23532c"
+]
+}
+]
+}
+],
+"no-hover-only": [
+{
+"rule": "page ask \"Does every hover affordance have a non-hover and keyboard equivalent?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:006a83"
+]
+}
+]
+}
+],
+"container-queries": [
+{
+"rule": "page ask \"Does each component respond to the space it occupies rather than the viewport?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:6d214c"
+]
+}
+]
+}
+],
+"safe-area-insets": [
+{
+"rule": "page ask \"Is content kept clear of system UI such as the camera housing, status bar, navigation bar and keyboard?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:093a13"
+]
+}
+]
+},
+{
+"rule": "page ask \"Is content kept clear of system UI such as the camera housing, status bar, navigation bar and keyboard?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:db09f0"
+]
+}
+]
+},
+{
+"rule": "page ask \"Is content kept clear of system UI such as the camera housing, status bar, navigation bar and keyboard?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:c87c01"
+]
+}
+]
+}
+],
+"dynamic-color-with-fallback": [
+{
+"rule": "page ask \"Does the color scheme derive from the user's wallpaper (dynamic color) with a static fallback?\"",
+"area": "color",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:1c36d0"
+]
+}
+]
+},
+{
+"rule": "page ask \"Does the color scheme derive from the user's wallpaper (dynamic color) with a static fallback?\"",
+"area": "color",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:3b76ce"
+]
+}
+]
+}
+],
+"tonal-elevation-over-drop-shadows": [
+{
+"rule": "ui:card ask \"Is elevation conveyed through tonal surface levels rather than arbitrary drop shadows?\"",
+"area": "surface",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:746d6f"
+]
+}
+]
+}
+],
+"transform-only": [
+{
+"rule": "page transition-property !contains width",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:6b502c"
+]
+}
+]
+}
+],
+"will-change-only-during-animation": [
+{
+"rule": "page axl:persistent-will-change-elements == 0",
+"area": "perf",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:eabfe7"
+]
+}
+]
+}
+],
+"design-tokens": [
+{
+"rule": "page axl:hardcoded-colors == 0",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:914aad"
+]
+}
+]
+}
+],
+"responsive-images": [
+{
+"rule": "aria:img lighthouse:image-size-responsive pass",
+"area": "perf",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:d9b458"
+]
+}
+]
+}
+],
+"whole-translatable-messages": [
+{
+"rule": "text:* ask \"Are messages written as complete translatable strings rather than concatenated fragments?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:a9be9c"
+]
+}
+]
+}
+],
+"no-gray-text-on-colored-backgrounds": [
+{
+"rule": "text:* axl:gray-on-colored-background == 0",
+"area": "color",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:e972d3"
+]
+}
+]
+}
+],
+"no-neon-glow": [
+{
+"rule": "page axl:colored-glow-shadows == 0",
+"area": "color",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:d01627"
+]
+}
+]
+}
+],
+"spacing": [
+{
+"rule": "page ask \"Is spacing tight within groups and generous between sections, so a rhythm is visible?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:621920"
+]
+}
+]
+},
+{
+"rule": "aria:heading ask \"Is there more space above a heading than below it?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:99f4dd"
+]
+}
+]
+},
+{
+"rule": "page ask \"Is spacing tight within groups and generous between sections, so a rhythm is visible?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b3b385"
+]
+}
+]
+},
+{
+"rule": "aria:heading ask \"Does each heading sit closer to its own content than to the block above?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:d7aa60"
+]
+}
+]
+}
+],
+"one-authored-motion-moment": [
+{
+"rule": "page ask \"Is motion one authored moment rather than scattered effects or an identical entrance on every section?\"",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b8c30a"
+]
+}
+]
+}
+],
+"exponential-ease-out-entrances": [
+{
+"rule": "page ask \"Do entrance animations use an exponential ease-out starting from an already-visible default?\"",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:0b8132"
+]
+}
+]
+}
+],
+"smooth-non-transform-animation-only": [
+{
+"rule": "page ask \"Are blur, backdrop-filter, clip-path, mask and shadow animated only where they stay smooth?\"",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:c38dd3"
+]
+}
+]
+}
+],
+"style-browser-default-surfaces": [
+{
+"rule": "page ask \"Are text selection, caret, scrollbars, focus rings, underline offset and tabular numerals styled rather than left at browser defaults?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:a3152c"
+]
+}
+]
+}
+],
+"copy-specific": [
+{
+"rule": "text:* ask \"Is the copy specific and written in the product's own language, not generic or whimsical?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:0bf391"
+]
+}
+]
+},
+{
+"rule": "text:* ask \"Is the copy written in the active voice?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:8a7e14"
+]
+}
+]
+}
+],
+"no-hero-metric-template": [
+{
+"rule": "page ask \"Is the page free of the hero-metric template of big number, small label, supporting stats and accent?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:ab0930"
+]
+}
+]
+}
+],
+"no-section-eyebrows-or-number-kickers-by-default": [
+{
+"rule": "aria:heading ask \"Do section heads appear without eyebrows, number kickers or section tags, unless numbering is asked for?\"",
+"area": "type",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b002b1"
+]
+}
+]
+},
+{
+"rule": "aria:heading ask \"Do section heads appear without eyebrows, number kickers or section tags, unless numbering is asked for?\"",
+"area": "type",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:20d4d3"
+]
+}
+]
+}
+],
+"numbered-markers-only-for-real-sequences": [
+{
+"rule": "text:label ask \"Are numbered markers used only for real sequences such as steps or a timeline?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:af466e"
+]
+}
+]
+}
+],
+"no-gradient-text-on-large-headers": [
+{
+"rule": "text:display background-clip !contains text",
+"area": "color",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:99daad"
+]
+}
+]
+}
+],
+"no-emoji-in-copy": [
+{
+"rule": "ui:icon axl:emoji-as-icons == 0",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:398942"
+]
+}
+]
+}
+],
+"icon-consistency": [
+{
+"rule": "ui:icon axl:distinct-stroke-widths <= 1",
+"area": "surface",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:398942"
+]
+}
+]
+}
+],
+"no-fake-stats": [
+{
+"rule": "page ask \"Is every metric, stat and claim supplied by the user or labelled as sample data, never invented?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:2eee5b"
+]
+}
+]
+}
+],
+"progressive-disclosure": [
+{
+"rule": "page ask \"Is complexity revealed progressively, showing only what is needed at each step?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:eb27e9"
+]
+}
+]
+},
+{
+"rule": "page ask \"Are long lists and forms chunked into groups or steps?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:4612ea"
+]
+}
+]
+},
+{
+"rule": "page ask \"Are long lists and forms chunked into groups or steps?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:170eec"
+]
+}
+]
+},
+{
+"rule": "page ask \"Is complexity revealed progressively, showing only what is needed at each step?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:7e8bad"
+]
+}
+]
+},
+{
+"rule": "page ask \"Is complexity revealed progressively, showing only what is needed at each step?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:cdf90b"
+]
+}
+]
+}
+],
+"interactive-onboarding": [
+{
+"rule": "process ask \"Is onboarding interactive where possible, letting users do rather than only read?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:1087d6"
+]
+}
+]
+},
+{
+"rule": "process ask \"Is onboarding interactive where possible, letting users do rather than only read?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:6a98f9"
+]
+}
+]
+}
+],
+"primary": [
+{
+"rule": "aria:button ask \"Is there exactly one primary action per view section?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:3b3629"
+]
+}
+]
+},
+{
+"rule": "aria:button ask \"Is there exactly one primary action per view section?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:c76c55"
+]
+}
+]
+}
+],
+"limit-top-level-nav-items": [
+{
+"rule": "aria:navigation ask \"Does the navigation have at most 5 top-level items?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:1bef2f"
+]
+}
+]
+}
+],
+"one-decision-per-index-screen": [
+{
+"rule": "page ask \"Does a portfolio or gallery index ask for one decision per screen rather than showing filter, sort and tag controls at once?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:1b032d"
+]
+}
+]
+}
+],
+"preserve-visual-hierarchy-when-simplifying": [
+{
+"rule": "page ask \"Does something still stand out, so hierarchy is never eliminated?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:31f1f0"
+]
+}
+]
+}
+],
+"error-message-human": [
+{
+"rule": "aria:alert ask \"Are errors shown inline near the field rather than in a vanishing toast or modal?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b513ed"
+]
+}
+]
+},
+{
+"rule": "state:invalid ask \"Are errors in plain language, with no internal codes or jargon as the primary message?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:165740"
+]
+}
+]
+},
+{
+"rule": "state:invalid ask \"Does every error name the specific cause when it is known?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:5bb0de"
+]
+}
+]
+},
+{
+"rule": "state:invalid ask \"Does every error give a next step such as retry or contact support, and never dead-end?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:ff2ec6"
+]
+}
+]
+},
+{
+"rule": "state:invalid ask \"Are errors in plain language, with no internal codes or jargon as the primary message?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:0083b5"
+]
+}
+]
+}
+],
+"unusual-words": [
+{
+"rule": "text:* ask \"Is plain language used, with unavoidable domain terms defined inline or by tooltip?\"",
+"area": "access",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:5d8bf5"
+]
+}
+]
+}
+],
+"keep-options-visible": [
+{
+"rule": "page ask \"Are options visible rather than buried in hidden menus?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:cb6463"
+]
+}
+]
+}
+],
+"no-decorative-clutter": [
+{
+"rule": "page ask \"Is the interface free of decorative clutter competing for attention?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:bfccaf"
+]
+}
+]
+}
+],
+"keyboard-tested": [
+{
+"rule": "process ask \"Has the whole interface been tabbed through with the keyboard only, operating every control without a mouse?\"",
+"area": "access",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:10c0db"
+]
+}
+]
+}
+],
+"skippable-slow-animations": [
+{
+"rule": "page ask \"Can slow animations be skipped or interrupted?\"",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:510ebc"
+]
+}
+]
+}
+],
+"offer-batch-actions": [
+{
+"rule": "page ask \"Are batch actions offered where users handle many items?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:ace2d7"
+]
+}
+]
+}
+],
+"empty-copy-guides": [
+{
+"rule": "state:empty ask \"Does every empty state explain why it is empty and offer the next action?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:35266d"
+]
+}
+]
+},
+{
+"rule": "state:empty ask \"Do empty states distinguish first use, no results, filters, permissions and failure?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:db7425"
+]
+}
+]
+},
+{
+"rule": "state:empty ask \"Do empty states distinguish first use, no results, filters, permissions and failure?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:1ef8df"
+]
+}
+]
+},
+{
+"rule": "state:empty ask \"Does every empty state explain why it is empty and offer the next action?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:223daa"
+]
+}
+]
+}
+],
+"preserve-progress-on-interruption": [
+{
+"rule": "page ask \"Is progress preserved across tab switches and interruptions?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:084c64"
+]
+}
+]
+}
+],
+"lazy-load-images": [
+{
+"rule": "aria:img axl:eager-below-fold-images == 0",
+"area": "perf",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:305413"
+]
+}
+]
+}
+],
+"left-edge-alignment": [
+{
+"rule": "page ask \"Does each section use no more than one or two alignment types?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:84014f"
+]
+}
+]
+}
+],
+"localize": [
+{
+"rule": "text:* ask \"Is text allowed to expand instead of being abbreviated early?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:0d1a84"
+]
+}
+]
+},
+{
+"rule": "page ask \"Are language-specific punctuation, dates and numbers formatted by locale rather than hard-coded?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:8bc1dc"
+]
+}
+]
+},
+{
+"rule": "text:* ask \"Is text allowed to expand instead of being abbreviated early?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:160c67"
+]
+}
+]
+},
+{
+"rule": "page ask \"Are language-specific punctuation, dates and numbers formatted by locale rather than hard-coded?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:5c9a1f"
+]
+}
+]
+}
+],
+"text-resize-200": [
+{
+"rule": "page wcag:1.4.4 pass",
+"area": "access",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:130549"
+]
+}
+]
+}
+],
+"stress-test": [
+{
+"rule": "page ask \"Does the design hold up with short, average and very long user content and emoji?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:daad7d"
+]
+}
+]
+},
+{
+"rule": "page ask \"Does the design hold up with short, average and very long user content and emoji?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:55db64"
+]
+}
+]
+},
+{
+"rule": "text:* ask \"Do text containers handle long content with truncation, clamping or wrapping?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:e17a7d"
+]
+}
+]
+}
+],
+"dark-mode-support": [
+{
+"rule": "page ask \"Does every custom colour have light, dark and increased-contrast variants?\"",
+"area": "color",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:47bfaf"
+]
+}
+]
+}
+],
+"accent": [
+{
+"rule": "page ask \"Is accent colour used only for the primary action, current selection and state indicators, not decoration?\"",
+"area": "color",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:7d939f"
+]
+}
+]
+}
+],
+"use-system-materials-for-blur": [
+{
+"rule": "ui:popup ask \"Are blur and translucency limited to system materials behind bars and sheets?\"",
+"area": "surface",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b2cbf3"
+]
+}
+]
+}
+],
+"grouped-lists-for-settings": [
+{
+"rule": "aria:list ask \"Are settings-shaped lists grouped or inset rather than built as bespoke card stacks?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:5beb00"
+]
+}
+]
+}
+],
+"inspect-page-in-both-color-modes": [
+{
+"rule": "page ask \"Was the page inspected in both light and dark mode?\"",
+"area": "agent",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:6d1bb9"
+]
+}
+]
+}
+],
+"onboarding-gets-users-to-value-quickly": [
+{
+"rule": "page ask \"Does onboarding get users to value quickly instead of teaching everything?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:5c8c87"
+]
+}
+]
+},
+{
+"rule": "page ask \"Does onboarding get users to value quickly instead of teaching everything?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:63637b"
+]
+}
+]
+},
+{
+"rule": "page ask \"Does onboarding get users to value quickly instead of teaching everything?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b579ff"
+]
+}
+]
+},
+{
+"rule": "page ask \"Does onboarding get users to value quickly instead of teaching everything?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:f6dc5a"
+]
+}
+]
+}
+],
+"explain-why-you-ask": [
+{
+"rule": "aria:form ask \"Does each requested piece of information say why it is being asked?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:576880"
+]
+}
+]
+}
+],
+"don-t-block-product-with-onboarding": [
+{
+"rule": "process ask \"Can users reach the product without completing a long onboarding?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:a77f0a"
+]
+}
+]
+},
+{
+"rule": "process ask \"Can users reach the product without completing a long onboarding?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:8aa709"
+]
+}
+]
+}
+],
+"tours-teach-workflows": [
+{
+"rule": "process ask \"Do tour steps teach workflows rather than naming individual features?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:4c18db"
+]
+}
+]
+}
+],
+"illustration-or-icon-in-empty-state": [
+{
+"rule": "state:empty ask \"Does the empty state have an illustration or at minimum a subtle icon?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:cb83f4"
+]
+}
+]
+}
+],
+"respect-tooltip-dismissals": [
+{
+"rule": "aria:tooltip ask \"Does a dismissed tooltip stay dismissed instead of reappearing?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b0e55d"
+]
+}
+]
+}
+],
+"responsive-behavior-is-structural-reorder-or-col": [
+{
+"rule": "page ask \"Does responsive behaviour restructure (reorder, collapse, reflow or reveal) based on what stays important?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:4e1e47"
+]
+}
+]
+}
+],
+"dropdowns-must-not-clip-inside-overflow-hidden": [
+{
+"rule": "ui:popup ask \"Do dropdowns avoid being clipped by an overflow hidden container?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:6851db"
+]
+}
+]
+},
+{
+"rule": "ui:popup ask \"Do dropdowns avoid being clipped by an overflow hidden container?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:7a9f0b"
+]
+}
+]
+}
+],
+"every-animation-must-communicate": [
+{
+"rule": "page ask \"Does every animation communicate a state, hierarchy or relationship?\"",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:d08d91"
+]
+}
+]
+},
+{
+"rule": "page ask \"Does every animation communicate a state, hierarchy or relationship?\"",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:1d93db"
+]
+}
+]
+}
+],
+"reuse-components": [
+{
+"rule": "page ask \"Are repeated components built once and shared rather than re-implemented?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:5811db"
+]
+}
+]
+}
+],
+"limit-display-faces-to-headlines": [
+{
+"rule": "text:display ask \"Are display or decorative faces used only for headlines, with limited accent?\"",
+"area": "type",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:7a2403"
+]
+}
+]
+}
+],
+"keep-standard-affordances": [
+{
+"rule": "page ask \"Are standard affordances such as scrollbars, form controls and modals left standard rather than reinvented?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:04246a"
+]
+}
+]
+}
+],
+"mute-inactive-state-color": [
+{
+"rule": "state:disabled ask \"Are inactive states free of heavy or fully saturated color?\"",
+"area": "color",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:5a8a87"
+]
+}
+]
+}
+],
+"modals-only-for-interrupting-decisions": [
+{
+"rule": "aria:dialog ask \"Are dialogs used only for decisions that must interrupt?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:0cbc99"
+]
+}
+]
+}
+],
+"consistent-visual-vocabulary": [
+{
+"rule": "page ask \"Is the same visual vocabulary used across screens, with delight saved for moments?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:96098b"
+]
+}
+]
+}
+],
+"image-compression": [
+{
+"rule": "aria:img lighthouse:image-delivery-insight pass",
+"area": "perf",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:253b33"
+]
+}
+]
+}
+],
+"animations-hold-60fps": [
+{
+"rule": "page ask \"Do animations hold 60fps?\"",
+"area": "perf",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:3445ca"
+]
+}
+]
+}
+],
+"states-designed": [
+{
+"rule": "page ask \"Does every interactive component have designed default, hover, focus, active, disabled, loading and error states?\"",
+"area": "interaction",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:ebc97e"
+]
+}
+]
+}
+],
+"line-height-scale": [
+{
+"rule": "text:body axl:chars-per-line between 45 75",
+"area": "type",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:ebd761"
+]
+}
+]
+}
+],
+"font-loading-no-block": [
+{
+"rule": "page lighthouse:font-display-insight pass",
+"area": "perf",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:505e69"
+]
+}
+]
+}
+],
+"serif": [
+{
+"rule": "text:body font-family !contains Inter",
+"area": "type",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:21831e"
+]
+}
+]
+}
+],
+"animate-status-only-when-data-changes": [
+{
+"rule": "aria:status ask \"Does a status pulse run only when the underlying data changes?\"",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:be91a6"
+]
+}
+]
+}
+],
+"no-decorative-blinking-cursor": [
+{
+"rule": "page ask \"Is the page free of a decorative blinking cursor that simulates typing?\"",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:124f36"
+]
+}
+]
+}
+],
+"no-shape-assembled-illustrations": [
+{
+"rule": "aria:img ask \"Are illustrations free of pictorial scenes built from piles of primitive shapes?\"",
+"area": "surface",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:2ae0c3"
+]
+}
+]
+}
+],
+"no-auto-scrolling-marquees": [
+{
+"rule": "page ask \"Is the page free of continuously auto-scrolling content?\"",
+"area": "motion",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:d3b547"
+]
+}
+]
+}
+],
+"no-icon-tile-above-heading": [
+{
+"rule": "ui:icon ask \"Is the icon free of a rounded-square container stacked above its heading?\"",
+"area": "component",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:3b8795"
+]
+}
+]
+}
+],
+"badge": [
+{
+"rule": "ui:badge ask \"Is there no badge pill directly above the H1?\"",
+"area": "surface",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:71ca26"
+]
+}
+]
+}
+],
+"no-ai-cliche-copy": [
+{
+"rule": "text:* axl:cliche-words == 0",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:6139fe"
+]
+}
+]
+},
+{
+"rule": "text:* ask \"Is the copy free of repeated short-rebuttal or manufactured-contrast aphorisms?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:b89aec"
+]
+}
+]
+},
+{
+"rule": "text:* ask \"Is the copy free of dismissing things as theater?\"",
+"area": "content",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:66caa1"
+]
+}
+]
+}
+],
+"error-free-console": [
+{
+"rule": "page lighthouse:errors-in-console pass",
+"area": "perf",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:34c750"
+]
+}
+]
+}
+],
+"no-content-invisible-at-rest": [
+{
+"rule": "page ask \"Is page text visible at rest, not left at opacity 0 or hidden?\"",
+"area": "access",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:9be542"
+]
+}
+]
+}
+],
+"no-text-occluded-by-overlaps": [
+{
+"rule": "text:* ask \"Is all text free of being covered by an opaque element or other text?\"",
+"area": "access",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:e657b2"
+]
+}
+]
+}
+],
+"balance-opening-columns": [
+{
+"rule": "page ask \"Do columns in the opening section stay balanced rather than one running far past the fold?\"",
+"area": "layout",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:829cb5"
+]
+}
+]
+}
+],
+"width": [
+{
+"rule": "text:body axl:chars-per-line <= 80",
+"area": "type",
+"values": [
+{
+"value": "80",
+"qids": [
+"impeccable:61dcdf"
+]
+}
+]
+}
+],
+"no-all-caps-or-justified-body-text": [
+{
+"rule": "text:body text-transform == none",
+"area": "type",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:c047c3"
+]
+}
+]
+}
+],
+"remove-clutter": [
+{
+"rule": "ui:card ask \"Is the same text free of being repeated three or more times within one card?\"",
+"area": "surface",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:9ce261"
+]
+}
+]
+}
+],
+"surface": [
+{
+"rule": "ui:card ask \"Does each card use only one container signal (border, shadow or background)?\"",
+"area": "surface",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:cd0884"
+]
+}
+]
+}
+],
+"no-decorative-stripe-or-grid-background-textures": [
+{
+"rule": "page background-image !contains repeating-linear-gradient",
+"area": "surface",
+"values": [
+{
+"value": null,
+"qids": [
+"impeccable:11379f"
+]
+}
+]
+}
+]
+}
+}
