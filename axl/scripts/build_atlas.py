@@ -17,7 +17,21 @@ def short(url):
     for k, v in SHORT:
         if k in u: return v
     return S[SU[url]["id"]]["publisher"] if url in SU else url
-tweaks = {t["id"]: dict(t, css=EFF.get(t["effect"]) if t.get("effect") else None, asks=[]) for t in TW["tweaks"]}
+EXTRA_CSS = {  # visible stand-ins on the Northstar demo for tweaks that have no legacy effect (AXL's rendering, not a source's CSS)
+ "contrast-text": ".topbar,.topbar span,#breadcrumb,.eyebrow,.subcopy,.metric-label,.metric-note{color:#3d4a5c!important}.activity small,li>small,th{color:#4f5d72!important}",
+ "body-16": "p,li,td,.subcopy,.project-detail{font-size:16px!important}",
+ "banned-fonts": "h1,h2,.brand{font-family:Charter,'Bitstream Charter','Iowan Old Style',Georgia,serif!important;letter-spacing:-.01em}",
+ "type-scale": "h1{font-size:30px!important;line-height:1.15}h2{font-size:19px!important}.metric-value{font-size:30px!important}.metric-label,.metric-note,th{font-size:12px!important}",
+ "remove-clutter": ".eyebrow,.metric-note,.topbar .user span:not(.avatar),.nav-bottom{display:none!important}",
+ "progressive-disclosure": ".activity li:nth-child(n+3),tbody tr:nth-child(n+4){display:none!important}",
+ "mute-color": "button.primary,.progress span,.chart-line,.badge{filter:saturate(.45)}",
+ "color-roles": ".badge.active{background:#e7f0fb!important;color:#1f4f8a!important}.badge.review{background:#fff4dc!important;color:#7a4b00!important}.badge.risk{background:#fdeaea!important;color:#9b1c1c!important}.badge.done{background:#e6f4ea!important;color:#1e6b34!important}",
+ "design-tokens": "button.primary{background:#1f3a5c!important;border-color:#1f3a5c!important}.chart-line{stroke:#1f3a5c!important}.progress span{background:#1f3a5c!important}h1,h2,.metric-value{color:#1f3a5c!important}",
+ "states-designed": ".card:empty,.empty-state{outline:2px dashed #8a97a8}.data-panel tbody tr:first-child td{background:#f3f6fa}",
+ "focal-motion": ".hero h1{text-shadow:0 0 0 transparent}",
+}
+EXTRA_CSS.pop("states-designed"); EXTRA_CSS.pop("focal-motion")   # not honestly visible as a static change
+tweaks = {t["id"]: dict(t, css=EFF.get(t["effect"]) if t.get("effect") else EXTRA_CSS.get(t["id"]), asks=[]) for t in TW["tweaks"]}
 by_eff = {t["effect"]: t["id"] for t in TW["tweaks"] if t.get("effect")}
 groups = collections.OrderedDict(); vague = []
 for c in claims:
@@ -59,8 +73,10 @@ def canon(n):
     for k, v in CANON:
         if k.lower() in n.lower(): return v
     return n
+isverb = lambda w: re.fullmatch(r"[a-z]+", w) is not None
 entries = {}
-for w, vs in words.items():
+for w0, vs in words.items():
+    w = w0 if isverb(w0) else "checklist"   # a source's own named guideline set ("design review", "audit gates"...) = its general checklist
     for v in vs:
         key = (w, canon(v["src"]))
         e = entries.setdefault(key, {"word": w, "src": key[1], "tweaks": [], "quote": v.get("quote"), "url": v["url"], "kind": v.get("kind") or "primary", "derives_from": v.get("derives_from")})
@@ -68,7 +84,6 @@ for w, vs in words.items():
             if t in tweaks and t not in e["tweaks"]: e["tweaks"].append(t)
         if not e["quote"] and v.get("quote"): e["quote"] = v["quote"]
 entries = list(entries.values())
-isverb = lambda w: re.fullmatch(r"[a-z]+", w) is not None
 srcs = sorted({e["src"] for e in entries}, key=lambda s: (-sum(e["src"] == s for e in entries), s))
 wl = sorted({e["word"] for e in entries if isverb(e["word"])}, key=lambda w: (-sum(e["word"] == w for e in entries), w))
 data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/before.html", encoding="utf-8").read(),

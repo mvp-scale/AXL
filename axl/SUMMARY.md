@@ -3,7 +3,7 @@
 Open `axl/site/index.html` (one file).
 
 ## What the page does
-- **Two matching pickers:** **Commands** (24: polish, bolder, quieter…) × **Sources** (25: Impeccable, UI Craft, Anthropic…). Both are multi-select, and each item has its own colour.
+- **Two matching pickers:** **Commands** (25: polish, bolder, quieter… plus "checklist" for sources that publish a general checklist instead of commands) × **Sources** (25: Impeccable, UI Craft, Anthropic…). Both are multi-select, and each item has its own colour.
 - **▶ on either picker walks through it:** one word or one source at a time. The demo changes, the progress ticks advance, a label names what's on screen, and the board of all 71 tweaks lights up in that colour.
 - **First screen:** "polish" × all 25 sources, walking the sources. The counters read 13 definitions, 11 independent, 28 tweaks, **0 shared by all**.
 - **Controls:** hold **Shift**, or the button on the page, for the original. Tap any tweak on the board to build your own word, then save it as a file that `axl.py check` runs.
@@ -22,3 +22,8 @@ Open `axl/site/index.html` (one file).
 - A LICENSE is still needed.
 - Nothing is deployed (`DEPLOY.md`).
 - The 13 older "AXL definitions" (`data/definitions.json`) still back the checks. They are proposals.
+
+## How changes are shown
+- The page compares the changed demo with the original element by element (computed styles) and outlines every element that differs, in the source's colour ("37 changed"). Toggle with "Outline changes".
+- 51 of 71 tweaks have a visible stand-in on the demo. The other 20 (performance, alt text, localisation, real-device testing, stress tests…) are labelled "not visual". A definition made only of those shows "Nothing to see" with what it asks for instead.
+- A source that doesn't use the chosen command says so and offers to show its own commands.

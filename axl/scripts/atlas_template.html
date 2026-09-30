@@ -66,6 +66,12 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .state::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--cur,#fff);flex:none}
 .state span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .frame.peeking .state{background:#fff;color:#131316;box-shadow:0 0 0 2px #131316}.frame.peeking .state::before{background:#131316}
+.nothing{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;max-width:min(440px,80%);background:#131316;color:#fff;border-radius:16px;padding:14px 18px;text-align:center;font-size:.95rem;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.nothing b{display:block;font-size:1.15rem;margin-bottom:4px}
+.nothing{pointer-events:auto}
+.marks{position:absolute;right:12px;top:12px;z-index:3;min-height:36px;padding:0 12px;border-radius:99px;background:#fff;color:#131316;font-weight:700;font-size:.8rem;box-shadow:0 0 0 2px var(--cur,#131316),0 6px 16px rgba(0,0,0,.18)}
+.marks[aria-pressed="false"]{box-shadow:0 0 0 1px #c9cbd1;color:#5b5d66}
+.frame.peeking .marks{visibility:hidden}
 .hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);touch-action:none}
 .hold kbd{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 .frame.peeking .hold{background:#fff;color:#131316}.frame.peeking .hold kbd{color:#131316;border-color:#131316}
@@ -94,6 +100,7 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .tw .d{width:9px;height:9px;border-radius:50%;background:var(--line);flex:none;transition:background .25s,transform .25s}
 .tw .nm{flex:1}
 .tw .ck{color:var(--ok);font-size:.75rem}
+.tw .nv{font:600 .62rem var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);border-radius:4px;padding:1px 4px}
 .tw .ct{font:700 .7rem var(--mono);color:var(--muted);min-width:2.6em;text-align:right}
 .tw.lit{color:var(--ink);font-weight:650}
 .tw.lit .d{background:var(--cur,var(--ink));transform:scale(1.35)}
@@ -155,6 +162,8 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
       <iframe id="pv0" title="Demo page, original" tabindex="-1" aria-hidden="true"></iframe>
       <iframe id="pv" title="Demo page with the current selection applied" tabindex="-1"></iframe>
       <span class="state" id="state"><span id="stateTxt"></span></span>
+      <div class="nothing" id="nothing" hidden></div>
+      <button class="marks" id="marksBtn" type="button" aria-pressed="true">Outline changes · <span id="marks"></span></button>
       <button class="hold" id="hold" type="button" aria-label="Hold to see the original"><kbd>Shift</kbd> hold for original</button>
     </div>
     <p class="says" id="says" aria-live="polite"></p>
@@ -201,7 +210,7 @@ const D = /*DATA*/null;
   const LIST = { w: D.words, s: D.sources };
   const color = (axis, name) => PAL[LIST[axis].indexOf(name)] || 'var(--cx)';
   const PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>', PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
-  const st = { sel: { w: new Set(['polish']), s: new Set(D.sources) }, walk: null, idx: 0, mine: new Set(), peek: false, mineView: false };
+  const st = { sel: { w: new Set(['polish']), s: new Set(D.sources) }, walk: null, idx: 0, mine: new Set(), peek: false, mineView: false, showMarks: true };
   let timer = null;
 
   /* the entries that match the selection, optionally narrowed to the current walk step */
@@ -209,7 +218,7 @@ const D = /*DATA*/null;
   const walkItems = axis => LIST[axis].filter(n => st.sel[axis].has(n) && D.entries.some(e => inSel(e) && (axis === 'w' ? e.word : e.src) === n));
   function current() {
     if (st.mineView) return { label: `Your ${$('#myName').value || 'word'}`, color: 'var(--mine)', tweaks: [...st.mine], entries: [] };
-    let es = D.entries.filter(inSel), label, col = 'var(--ink)';
+    let es = D.entries.filter(inSel), label, col = st.sel.s.size === 1 ? color('s', [...st.sel.s][0]) : st.sel.w.size === 1 && st.sel.s.size > 1 ? color('w', [...st.sel.w][0]) : 'var(--ink)';
     if (st.walk) { const items = walkItems(st.walk), n = items[st.idx % Math.max(1, items.length)]; if (n) { es = es.filter(e => (st.walk === 'w' ? e.word : e.src) === n); col = color(st.walk, n);
       const other = st.walk === 'w' ? st.sel.s : st.sel.w, one = other.size === 1 ? [...other][0] : null;
       label = st.walk === 'w' ? `“${n}”${one ? ` · ${one}` : ` · ${new Set(es.map(e => e.src)).size} sources`}` : `${n}${one ? ` · “${one}”` : ` · ${new Set(es.map(e => e.word)).size} commands`}`; } }
@@ -258,15 +267,35 @@ const D = /*DATA*/null;
   const fit = () => { const sc = Math.min(frame.clientWidth / D.frame.width, frame.clientHeight / D.frame.height), dx = (frame.clientWidth - D.frame.width * sc) / 2, s = `translateX(${dx}px) scale(${sc})`; pv.style.transform = s; pv0.style.transform = s; };
   new ResizeObserver(fit).observe(frame);
   const cssOf = ids => ids.map(i => T[i] && T[i].css).filter(Boolean).join('\n');
-  const selsOf = css => [...new Set([...css.replace(/@media[^{]*\{/g, '').matchAll(/([^{}]+)\{[^{}]*\}/g)].flatMap(m => m[1].split(',')).map(s => s.replace(/::?[a-z-]+(\([^)]*\))?/g, '').trim()).filter(s => s && s !== '*' && !/^(html|body)$/.test(s)))];
-  const post = (css, hl) => { try { pv.contentWindow.postMessage({ type: 'lab-recipe', css, highlight: hl }, '*'); } catch (e) {} };
-  let flashT = null;
-  function paint(cur, flash) {
-    const css = cssOf(cur.tweaks), hl = flash && !reduced && css ? selsOf(css).join(',') + '{outline:2px dashed rgba(209,23,94,.6)!important;outline-offset:1px}' : '';
-    post(css, hl); clearTimeout(flashT); if (hl) flashT = setTimeout(() => post(css, ''), 1100);
+  const post = (css) => { try { pv.contentWindow.postMessage({ type: 'lab-recipe', css, highlight: '' }, '*'); } catch (e) {} };
+  const PROPS = ['color', 'backgroundColor', 'backgroundImage', 'fontSize', 'fontWeight', 'fontFamily', 'letterSpacing', 'lineHeight', 'textAlign', 'fontVariantNumeric', 'textWrap',
+    'paddingTop', 'paddingLeft', 'marginTop', 'marginBottom', 'borderTopWidth', 'borderTopColor', 'borderRadius', 'boxShadow', 'maxWidth', 'display', 'rowGap', 'columnGap', 'gridTemplateColumns', 'minHeight', 'textDecorationLine', 'filter', 'outlineStyle'];
+  const INH = new Set(['color', 'fontSize', 'fontWeight', 'fontFamily', 'letterSpacing', 'lineHeight', 'textAlign', 'fontVariantNumeric', 'textWrap']);
+  let marked = 0, markT = null;
+  // compare every element of the changed page with the original, and outline the ones whose computed style differs
+  function markChanges() {
+    marked = 0;
+    try {
+      const d1 = pv.contentDocument, d0 = pv0.contentDocument; if (!d1 || !d0) return;
+      let s = d1.getElementById('axl-marks'); if (!s) { s = d1.createElement('style'); s.id = 'axl-marks'; d1.head.appendChild(s); }
+      let col = getComputedStyle(frame).outlineColor || 'rgb(209, 23, 94)'; const m = col.match(/\d+/g); if (m) col = `rgba(${m[0]},${m[1]},${m[2]},.8)`;
+      s.textContent = st.showMarks ? `[data-axl-diff]{outline:1.5px solid ${col}!important;outline-offset:1px!important;background-image:linear-gradient(${col.replace(',.8)', ',.07)')},${col.replace(',.8)', ',.07)')})!important}` : '';
+      const a = [...d1.querySelectorAll('body *')], b = [...d0.querySelectorAll('body *')], w1 = d1.defaultView, w0 = d0.defaultView, diffs = new Map();
+      a.forEach(el => el.removeAttribute('data-axl-diff'));
+      a.forEach((el, i) => {
+        const o = b[i]; if (!o || el.tagName !== o.tagName || el.closest('svg') && el.tagName !== 'svg') return;
+        const c1 = w1.getComputedStyle(el), c0 = w0.getComputedStyle(o), set = new Set();
+        PROPS.forEach(p => { if (p !== 'outlineStyle' && c1[p] !== c0[p]) set.add(p); });
+        diffs.set(el, set);
+        const pd = diffs.get(el.parentElement) || new Set();
+        if ([...set].some(p => !INH.has(p) || !pd.has(p))) { if (el.getBoundingClientRect().width || c1.display === 'none') { el.setAttribute('data-axl-diff', ''); marked++; } }
+      });
+    } catch (e) { marked = -1; }
+    const m = $('#marks'); if (m) m.textContent = marked > 0 ? `${marked} changed` : marked === 0 ? 'no change' : '';
   }
+  function paint(cur) { post(cssOf(cur.tweaks)); clearTimeout(markT); markT = setTimeout(markChanges, 120); }
   pv.addEventListener('load', () => { fit(); render(false); }); pv0.addEventListener('load', fit);
-  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (!on) paint(current(), true); };
+  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (!on) paint(current()); };
   addEventListener('keydown', e => {
     if (e.target.closest && e.target.closest('input')) return;
     if (e.key === 'Shift') { stopWalk(); renderPicks(); peek(true); }
@@ -275,6 +304,7 @@ const D = /*DATA*/null;
   });
   addEventListener('keyup', e => { if (e.key === 'Shift') peek(false); });
   addEventListener('blur', () => peek(false));
+  $('#marksBtn').addEventListener('click', e => { st.showMarks = !st.showMarks; e.currentTarget.setAttribute('aria-pressed', st.showMarks); markChanges(); });
   const hold = $('#hold');
   hold.addEventListener('pointerdown', e => { e.preventDefault(); stopWalk(); renderPicks(); peek(true); hold.setPointerCapture(e.pointerId); });
   ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(ev => hold.addEventListener(ev, () => peek(false)));
@@ -282,7 +312,8 @@ const D = /*DATA*/null;
   hold.addEventListener('keyup', e => { if (e.key === ' ' || e.key === 'Enter') peek(false); });
 
   /* ---- the board: every tweak, once ---- */
-  $('#board').innerHTML = D.categories.map(c => { const ts = D.tweaks.filter(t => t.category === c).sort((a, b) => D.entries.filter(e => e.tweaks.includes(b.id)).length - D.entries.filter(e => e.tweaks.includes(a.id)).length); return ts.length ? `<div class="col"><h3><span>${esc(c)}</span><span data-cc="${esc(c)}"></span></h3>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false"><span class="d"></span><span class="nm">${esc(t.name)}</span>${t.check ? '<span class="ck" title="a tool checks it">✓</span>' : ''}<span class="ct"></span></button>`).join('')}</div>` : ''; }).join('');
+  $('#board').innerHTML = D.categories.map(c => { const ts = D.tweaks.filter(t => t.category === c).sort((a, b) => D.entries.filter(e => e.tweaks.includes(b.id)).length - D.entries.filter(e => e.tweaks.includes(a.id)).length); return ts.length ? `<div class="col"><h3><span>${esc(c)}</span><span data-cc="${esc(c)}"></span></h3>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false"><span class="d"></span><span class="nm">${esc(t.name)}</span>${t.css ? '' : '<span class="nv" title="No visible change on a static page">not visual</span>'}${t.check ? '<span class="ck" title="a tool checks it">✓</span>' : ''}<span class="ct"></span></button>`).join('')}</div>` : ''; }).join('');
+  $('#nothing').addEventListener('click', e => { if (e.target.id !== 'useIts') return; const s = st.walk === 's' ? walkItems('s')[st.idx % walkItems('s').length] : [...st.sel.s][0]; stopWalk(); st.sel.w = new Set(D.entries.filter(x => x.src === s).map(x => x.word)); st.sel.s = new Set([s]); render(); });
   $('#steps').addEventListener('click', e => { const b = e.target.closest('.stop'); if (!b) return; clearTimeout(timer); st.idx = +b.dataset.j; showStep(); timer = setTimeout(step, 2400); });
   $('#board').addEventListener('click', e => { const b = e.target.closest('.tw'); if (!b) return; stopWalk(); const id = b.dataset.id; st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mineView = st.mine.size > 0; render(true); });
 
@@ -301,8 +332,14 @@ const D = /*DATA*/null;
   const renderPicks = () => { renderPick('w'); renderPick('s'); };
   function render(flash) {
     const cur = current(); frame.style.setProperty('--cur', cur.color); document.documentElement.style.setProperty('--cur', cur.color);
-    if (!st.peek && !st.blink) { paint(cur, flash); }
+    if (!st.peek && !st.blink) { paint(cur); }
     if (!st.peek) $('#stateTxt').textContent = cur.label;
+    const vis = cur.tweaks.filter(i => T[i].css).length, inv = cur.tweaks.length - vis, nb = $('#nothing');
+    nb.hidden = st.peek || st.mineView || vis > 0;
+    const srcOnly = st.sel.s.size === 1 || st.walk === 's' ? (st.walk === 's' ? walkItems('s')[st.idx % Math.max(1, walkItems('s').length)] : [...st.sel.s][0]) : null;
+    if (!nb.hidden && !cur.entries.length && srcOnly) { const ws = [...new Set(D.entries.filter(e => e.src === srcOnly).map(e => e.word))];
+      nb.innerHTML = `<b>${esc(srcOnly)} doesn't use ${st.sel.w.size === 1 ? `“${esc([...st.sel.w][0])}”` : 'these commands'}</b>It uses: ${ws.map(esc).join(', ')}.<br><button class="btn small" id="useIts" type="button" style="margin-top:10px;background:#fff;color:#131316">Show ${esc(srcOnly)}'s commands</button>`; }
+    else if (!nb.hidden) nb.innerHTML = cur.tweaks.length ? `<b>Nothing to see</b>This definition asks for ${inv} change${inv > 1 ? 's' : ''} a page can't show: ${cur.tweaks.map(i => esc(T[i].name.toLowerCase())).join(', ')}.` : `<b>Nothing to see</b>This definition names no concrete change at all.`;
     renderPicks();
     // walk progress
     const items = st.walk ? walkItems(st.walk) : [], k = items.length ? st.idx % items.length : 0;
@@ -320,7 +357,8 @@ const D = /*DATA*/null;
     $('#bsub').textContent = `${lit.size} lit for ${cur.label.replace(/[“”]/g, '')} · counts show how many of the ${n} selected definitions ask for each`;
     // quote
     const e = cur.entries.length === 1 ? cur.entries[0] : cur.entries.find(x => x.quote);
-    $('#says').innerHTML = st.mineView ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.` : e && e.quote ? `${esc(e.src)} on “${esc(e.word)}”: <q>${esc(e.quote)}</q> <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">source</a>` : `${cur.tweaks.length} tweaks from ${cur.entries.length} definitions.`;
+    const visTxt = cur.tweaks.length ? ` <span style="font:.78rem var(--mono)">${vis} of ${cur.tweaks.length} tweaks visible</span>` : '';
+    $('#says').innerHTML = st.mineView ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.` : e && e.quote ? `${esc(e.src)} on “${esc(e.word)}”: <q>${esc(e.quote)}</q> <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">source</a>${visTxt}` : `${cur.tweaks.length} tweaks from ${cur.entries.length} definitions.${visTxt}`;
     $('#save').disabled = !st.mine.size; facts();
   }
 
