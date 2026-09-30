@@ -76,6 +76,17 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .marks[aria-pressed="false"]{box-shadow:0 0 0 1px #c9cbd1;color:#5b5d66}
 .frame.peeking .marks{visibility:hidden}
 .hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);touch-action:none}
+.why{position:relative;margin:12px 0 0;padding:16px 20px;border-radius:16px;background:var(--ink);color:var(--bg);display:grid;grid-template-columns:1fr auto;gap:4px 24px;align-items:end;max-width:1100px}
+.why[hidden]{display:none}.why h2{grid-column:1/-1;margin:0 0 4px;font-size:clamp(1.1rem,2vw,1.45rem);letter-spacing:-.02em}
+.why p{margin:0;font-size:.95rem;line-height:1.5;opacity:.9;grid-column:1}.why b{color:var(--bg)}.why .btn{grid-column:2;grid-row:2/4;align-self:center;background:var(--mine);color:var(--on-mine);white-space:nowrap}
+.whyL{font:600 .8rem var(--sans);color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:4px 2px;margin-left:12px}
+.whyM{display:none}
+@media (max-width:760px){.why{grid-template-columns:1fr auto;padding:12px 14px;gap:6px 10px;align-items:center}.why h2{grid-column:1;margin:0;font-size:1rem}.why p{display:none;grid-column:1/-1}.why.more p{display:block}.why .btn{grid-column:2;grid-row:1/3;min-height:40px;padding:0 14px}.whyM{display:inline;grid-column:1;justify-self:start;font:600 .8rem var(--sans);color:var(--bg);text-decoration:underline;text-underline-offset:3px;padding:6px 0}.why.more .whyM{display:none}}
+.devs{position:absolute;left:12px;top:12px;z-index:3;display:inline-flex;border-radius:99px;background:#131316;padding:3px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.devs button{min-height:34px;padding:0 12px;border-radius:99px;color:#fff;font:600 .8rem var(--sans)}.devs button[aria-pressed="true"]{background:#fff;color:#131316}
+.frame.dev-tablet iframe,.frame.dev-mobile iframe{border-radius:22px;box-shadow:0 0 0 8px #1b1b1f,0 20px 50px rgba(0,0,0,.35)}
+.frame.dev-tablet,.frame.dev-mobile{background:var(--soft)}
+@media (max-width:760px){.devs{top:auto;bottom:62px;left:12px}.devs button{min-height:30px;padding:0 9px;font-size:.72rem}}
 .back{position:absolute;left:50%;transform:translateX(-50%);top:12px;z-index:3;min-height:40px;padding:0 14px;border-radius:99px;background:#fff;color:#131316;font-weight:700;font-size:.85rem;box-shadow:0 6px 18px rgba(0,0,0,.25)}.back[hidden]{display:none}
 .hold kbd{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 .frame.peeking .hold{background:#fff;color:#131316}.frame.peeking .hold kbd{color:#131316;border-color:#131316}
@@ -104,12 +115,12 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .cats button[aria-pressed="true"]{background:var(--ink);color:var(--bg);box-shadow:none}
 .duo{display:block}
 @media (min-width:1000px){
-  .wrap{max-width:1560px}
-  .duo{display:grid;grid-template-columns:minmax(360px,1fr) minmax(0,1.6fr);gap:24px;align-items:start}
+  .wrap{max-width:none;padding-inline:clamp(12px,1.6vw,24px)}
+  .duo{display:grid;grid-template-columns:clamp(340px,26vw,420px) minmax(0,1fr);gap:20px;align-items:start}
   .duo>.stage{grid-column:2;grid-row:1;position:sticky;top:10px}
   .duo>.list{grid-column:1;grid-row:1;min-width:0}
   .lhead{position:sticky}
-  .duo .frame{height:auto;aspect-ratio:980/760;max-height:calc(100svh - 150px)}
+  .duo .frame{height:calc(100svh - 210px);min-height:500px;aspect-ratio:auto;max-height:none}
   .boardh{margin-top:4px}
 }
 .srch input{min-height:44px;width:min(420px,100%);border-radius:99px;border:1.5px solid var(--line);background:var(--panel);padding:0 16px;font:inherit}
@@ -193,6 +204,13 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
 </head>
 <body>
 <div class="wrap">
+  <aside class="why" id="why" hidden aria-labelledby="whyH">
+    <h2 id="whyH">Everyone says “polish.” Nobody means the same thing.</h2>
+    <p>Dozens of skills, prompts and design guides now tell AI agents what <b>polish</b>, <b>clarify</b>, <b>critique</b> and <b>delight</b> mean. We read {S} of them. They don’t agree. Same word, different agent, different result. And everyone assumes there’s a standard. There isn’t.</p>
+    <p>So own your words: see every definition side by side, keep the rules you actually mean, name it, and check any site against it. Let’s settle the vocabulary and get back to building.</p>
+    <button class="btn primary" type="button" id="whyGo">Show me</button>
+    <button class="whyM" type="button" id="whyMore" aria-expanded="false">Why?</button>
+  </aside>
   <header class="bar">
     <div class="pick" id="pickW">
       <button class="pbtn" type="button" data-axis="w" aria-haspopup="true" aria-expanded="false"><small>Commands</small><b><i></i><span class="lab"></span></b></button>
@@ -205,7 +223,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
       <button class="play" type="button" data-play="s" aria-pressed="false" aria-label="Play through the sources"></button>
       <div class="pop" hidden data-pop="s"></div>
     </div>
-    <div class="nums" id="nums" aria-live="polite"></div>
+    <div class="nums" id="nums" aria-live="polite"></div><button class="whyL" id="whyOpen" type="button">Why AXL?</button>
   </header>
 
   <div class="duo">
@@ -216,6 +234,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
       <iframe id="pv" title="Demo page with the current selection applied" tabindex="-1"></iframe>
       <span class="state" id="state"><span id="stateTxt"></span></span>
       <div class="nothing" id="nothing" hidden></div>
+      <div class="devs" role="group" aria-label="Viewport"><button type="button" data-dev="desktop" aria-pressed="true">Desktop</button><button type="button" data-dev="tablet" aria-pressed="false">Tablet</button><button type="button" data-dev="mobile" aria-pressed="false">Mobile</button></div>
       <button class="marks" id="marksBtn" type="button" aria-pressed="true">Outline changes · <span id="marks"></span></button>
       <button class="back" id="back" type="button" hidden>Back to the list ↓</button>
       <button class="hold" id="hold" type="button" aria-label="Hold to see the original"><kbd>Shift</kbd> hold for original</button>
@@ -331,7 +350,18 @@ const D = /*DATA*/null;
   /* ---- the page: original underneath, the selection on top ---- */
   const pv = $('#pv'), pv0 = $('#pv0'), frame = $('#frame');
   pv.srcdoc = D.before; pv0.srcdoc = D.before;
-  const fit = () => { const sc = Math.min(frame.clientWidth / D.frame.width, frame.clientHeight / D.frame.height), dx = (frame.clientWidth - D.frame.width * sc) / 2, s = `translateX(${dx}px) scale(${sc})`; pv.style.transform = s; pv0.style.transform = s; };
+  const DEV = { tablet: [820, 1180], mobile: [390, 844] }; let dev = 'desktop';
+  const fit = () => {
+    const W = frame.clientWidth, H = frame.clientHeight, pad = dev === 'desktop' ? 0 : 56;
+    let w, h, sc;
+    if (dev === 'desktop') { const real = W >= D.frame.width; w = real ? W : D.frame.width; h = real ? H : D.frame.height; sc = real ? 1 : Math.min(W / w, H / h); }
+    else { [w, h] = DEV[dev]; sc = Math.min((W - 24) / w, (H - pad * 2) / h, 1); }
+    const dx = (W - w * sc) / 2, dy = dev === 'desktop' ? 0 : Math.max(pad, (H - h * sc) / 2);
+    [pv, pv0].forEach(f => { f.style.width = w + 'px'; f.style.height = h + 'px'; f.style.transform = `translate(${dx}px,${dy}px) scale(${sc})`; });
+  };
+  const setDev = d => { if (d === dev) return; dev = d; frame.classList.toggle('dev-tablet', d === 'tablet'); frame.classList.toggle('dev-mobile', d === 'mobile');
+    $$('.devs button').forEach(b => b.setAttribute('aria-pressed', b.dataset.dev === d)); fit(); clearTimeout(markT); markT = setTimeout(markChanges, 200); };
+  $$('.devs button').forEach(b => b.addEventListener('click', () => setDev(b.dataset.dev)));
   new ResizeObserver(fit).observe(frame);
   // content edits in words an agent can apply: "In <sel>: change the text to …" etc.
   const PATCH_TXT = ps => ps.map(o => `In ${o.sel}: ` + [o.text != null ? `set the text to "${o.text}"` : '', o.attr ? Object.entries(o.attr).map(([k, v]) => v == null ? `remove ${k}` : `set ${k}="${v}"`).join(', ') : '',
@@ -438,7 +468,7 @@ const D = /*DATA*/null;
   addEventListener('scroll', () => { if ($('#back').hidden) return; const r = frame.getBoundingClientRect(), on = r.bottom > 0 && r.top < innerHeight; if (on && r.top > -40) arrived = true; else if (arrived && !on) { $('#back').hidden = true; arrived = false; } }, { passive: true });
   const VIEWN = { overview: 'Overview', projects: 'Projects list', editor: 'New project form', settings: 'Settings', reports: 'Reports', assistant: 'Assistant chat', site: 'Home page', docs: 'Help article', signin: 'Sign in page' };
   function showRule(id) {
-    stopWalk(); st.focus = id; const b = $(`#board .tw[data-id="${id}"]`); if (b) openRow(b.closest('.er'), true); openMore(id); render(true);
+    stopWalk(); st.focus = id; if (/@media:narrow/.test(R[id].code)) setDev('mobile'); const b = $(`#board .tw[data-id="${id}"]`); if (b) openRow(b.closest('.er'), true); openMore(id); render(true);
   }
   const closeMore = () => { $$('#board .more').forEach(m => m.remove()); $$('#board .tw.on').forEach(x => x.classList.remove('on')); };
   const SRCN = D.srcnames || {};
@@ -537,6 +567,14 @@ const D = /*DATA*/null;
     $('#says').innerHTML = st.focus ? (fv ? `One rule, shown on the ${esc(VIEWN[fv.view] || 'page')}. Click around the page; tap the rule again to go back.` : 'One rule. It can’t be shown on a page; tap it again to go back.') : st.mineView ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} rule${st.mine.size === 1 ? '' : 's'}.` : e && e.quote ? `${esc(e.src)} on “${esc(e.word)}”: <q>${esc(e.quote)}</q> <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">source</a>${visTxt}` : `${litR.size} rules from ${cur.entries.length} definitions.`;
     facts(); if (typeof filterBoard === 'function' && bf !== 'all') filterBoard();
   }
+
+  /* ---- why AXL: first visit ---- */
+  { const why = $('#why'), seen = (() => { try { return localStorage.getItem('axl-why') === '1'; } catch (e) { return false; } })();
+    why.innerHTML = why.innerHTML.replace('{S}', D.sources.length);
+    const hide = () => { why.hidden = true; try { localStorage.setItem('axl-why', '1'); } catch (e) {} };
+    why.hidden = seen; $('#whyGo').addEventListener('click', hide);
+    $('#whyMore').addEventListener('click', () => { why.classList.add('more'); $('#whyMore').setAttribute('aria-expanded', 'true'); });
+    $('#whyOpen').addEventListener('click', () => { why.hidden = !why.hidden; }); }
 
   /* ---- save: three outputs ---- */
   const sheet = $('#sheet'), scrim = $('#scrim');
