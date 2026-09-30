@@ -61,7 +61,8 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 /* stage */
 .stage{position:relative}
 .frame{position:relative;border-radius:14px;overflow:hidden;background:var(--soft);box-shadow:0 0 0 1px var(--line),0 30px 80px -40px rgba(0,0,0,.45);aspect-ratio:980/760;width:100%;height:clamp(340px,calc(100svh - 400px),760px);margin-inline:auto;aspect-ratio:auto;user-select:none;outline:3px solid var(--cur,transparent);outline-offset:-3px}
-.frame iframe{position:absolute;left:0;top:0;width:980px;height:760px;border:0;transform-origin:0 0;pointer-events:none}
+.frame iframe{position:absolute;left:0;top:0;width:980px;height:760px;border:0;transform-origin:0 0}
+#pv0{pointer-events:none}
 #pv{transition:opacity .38s ease}
 .frame.peeking #pv{opacity:0}.frame.peeking{--cur:var(--ink)}
 .state{position:absolute;left:12px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;font:700 .9rem var(--sans);padding:8px 14px 8px 11px;border-radius:99px;background:#131316;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);pointer-events:none;max-width:60%}
@@ -75,6 +76,7 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .marks[aria-pressed="false"]{box-shadow:0 0 0 1px #c9cbd1;color:#5b5d66}
 .frame.peeking .marks{visibility:hidden}
 .hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);touch-action:none}
+.back{position:absolute;left:50%;transform:translateX(-50%);top:12px;z-index:3;min-height:40px;padding:0 14px;border-radius:99px;background:#fff;color:#131316;font-weight:700;font-size:.85rem;box-shadow:0 6px 18px rgba(0,0,0,.25)}.back[hidden]{display:none}
 .hold kbd{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 .frame.peeking .hold{background:#fff;color:#131316}.frame.peeking .hold kbd{color:#131316;border-color:#131316}
 .steps{display:flex;gap:6px;margin:0 0 10px;min-height:38px;align-items:center;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth}
@@ -186,6 +188,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
       <span class="state" id="state"><span id="stateTxt"></span></span>
       <div class="nothing" id="nothing" hidden></div>
       <button class="marks" id="marksBtn" type="button" aria-pressed="true">Outline changes · <span id="marks"></span></button>
+      <button class="back" id="back" type="button" hidden>Back to the list ↓</button>
       <button class="hold" id="hold" type="button" aria-label="Hold to see the original"><kbd>Shift</kbd> hold for original</button>
     </div>
     <p class="says" id="says" aria-live="polite"></p>
@@ -242,13 +245,14 @@ const D = /*DATA*/null;
   const probe = document.createElement('canvas').getContext('2d');
   const toRgb = c => { probe.fillStyle = '#000'; probe.fillStyle = c; probe.fillRect(0, 0, 1, 1); const d = probe.getImageData(0, 0, 1, 1).data; return [d[0], d[1], d[2]]; };
   const PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>', PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
-  const st = { sel: { w: new Set(['polish']), s: new Set(D.sources) }, walk: null, idx: 0, mine: new Set(), peek: false, mineView: false, showMarks: true };
+  const st = { sel: { w: new Set(['polish']), s: new Set(D.sources) }, walk: null, idx: 0, mine: new Set(), peek: false, mineView: false, showMarks: true, focus: null };
   let timer = null;
 
   /* the entries that match the selection, optionally narrowed to the current walk step */
   const inSel = e => st.sel.w.has(e.word) && st.sel.s.has(e.src);
   const walkItems = axis => LIST[axis].filter(n => st.sel[axis].has(n) && D.entries.some(e => inSel(e) && (axis === 'w' ? e.word : e.src) === n));
   function current() {
+    if (st.focus && T[st.focus]) { const t = T[st.focus]; return { label: t.name, color: 'var(--ink)', tweaks: [st.focus], entries: [] }; }
     if (st.mineView) return { label: `Your ${$('#myName').value || 'word'}`, color: 'var(--mine)', tweaks: [...st.mine], entries: [] };
     let es = D.entries.filter(inSel), label, col = st.sel.s.size === 1 ? color('s', [...st.sel.s][0]) : st.sel.w.size === 1 && st.sel.s.size > 1 ? color('w', [...st.sel.w][0]) : 'var(--ink)';
     if (st.walk) { const items = walkItems(st.walk), n = items[st.idx % Math.max(1, items.length)]; if (n) { es = es.filter(e => (st.walk === 'w' ? e.word : e.src) === n); col = color(st.walk, n);
@@ -274,14 +278,14 @@ const D = /*DATA*/null;
     const axis = p.querySelector('.pbtn').dataset.axis, pop = p.querySelector('.pop'), btn = p.querySelector('.pbtn');
     btn.addEventListener('click', () => { const open = pop.hidden; closePops(); pop.hidden = !open; btn.setAttribute('aria-expanded', open); renderPick(axis); if (open) (pop.querySelector('.tile') || pop).focus(); });
     pop.addEventListener('click', e => {
-      const t = e.target.closest('.tile'); stopWalk();
+      const t = e.target.closest('.tile'); stopWalk(); st.focus = null; closeMore();
       if (t) { const n = t.dataset.n, s = st.sel[axis]; s.has(n) ? s.delete(n) : s.add(n); }
       if (e.target.closest('[data-all]')) LIST[axis].forEach(n => st.sel[axis].add(n));
       if (e.target.closest('[data-none]')) st.sel[axis].clear();
       if (e.target.closest('.done')) { closePops(); btn.focus(); }
       st.mineView = false; render(true);
     });
-    p.querySelector('.play').addEventListener('click', () => { st.walk === axis ? stopWalk() : startWalk(axis); render(true); });
+    p.querySelector('.play').addEventListener('click', () => { st.focus = null; closeMore(); st.walk === axis ? stopWalk() : startWalk(axis); render(true); });
   });
   const closePops = () => $$('.pop').forEach(p => { p.hidden = true; p.parentNode.querySelector('.pbtn').setAttribute('aria-expanded', 'false'); });
   document.addEventListener('click', e => { if (e.target.isConnected && !e.target.closest('.pick')) closePops(); });
@@ -298,8 +302,13 @@ const D = /*DATA*/null;
   pv.srcdoc = D.before; pv0.srcdoc = D.before;
   const fit = () => { const sc = Math.min(frame.clientWidth / D.frame.width, frame.clientHeight / D.frame.height), dx = (frame.clientWidth - D.frame.width * sc) / 2, s = `translateX(${dx}px) scale(${sc})`; pv.style.transform = s; pv0.style.transform = s; };
   new ResizeObserver(fit).observe(frame);
+  // content edits in words an agent can apply: "In <sel>: change the text to …" etc.
+  const PATCH_TXT = ps => ps.map(o => `In ${o.sel}: ` + [o.text != null ? `set the text to "${o.text}"` : '', o.attr ? Object.entries(o.attr).map(([k, v]) => v == null ? `remove ${k}` : `set ${k}="${v}"`).join(', ') : '',
+    ...['before', 'after', 'prepend', 'append'].filter(w => o[w] != null).map(w => `insert ${w === 'before' || w === 'after' ? w + ' it' : 'at the ' + (w === 'prepend' ? 'start' : 'end')}: ${o[w]}`)].filter(Boolean).join('; ')).join('\n');
   const cssOf = ids => ids.map(i => T[i] && T[i].css).filter(Boolean).join('\n');
-  const post = (css) => { try { pv.contentWindow.postMessage({ type: 'lab-recipe', css, highlight: '' }, '*'); } catch (e) {} };
+  const shows = t => !!(t && (t.css || t.patch));
+  const patchOf = ids => ids.flatMap(i => T[i] && T[i].patch || []);
+  const post = (css, patch) => { try { pv.contentWindow.postMessage({ type: 'lab-recipe', css, highlight: '', patch: patch || [] }, '*'); } catch (e) {} };
   const PROPS = ['color', 'backgroundColor', 'backgroundImage', 'fontSize', 'fontWeight', 'fontFamily', 'letterSpacing', 'lineHeight', 'textAlign', 'fontVariantNumeric', 'textWrap',
     'paddingTop', 'paddingLeft', 'marginTop', 'marginBottom', 'borderTopWidth', 'borderTopColor', 'borderRadius', 'boxShadow', 'maxWidth', 'display', 'rowGap', 'columnGap', 'gridTemplateColumns', 'minHeight', 'textDecorationLine', 'filter', 'outlineStyle'];
   const INH = new Set(['color', 'fontSize', 'fontWeight', 'fontFamily', 'letterSpacing', 'lineHeight', 'textAlign', 'fontVariantNumeric', 'textWrap']);
@@ -311,11 +320,12 @@ const D = /*DATA*/null;
       const d1 = pv.contentDocument, d0 = pv0.contentDocument; if (!d1 || !d0) return;
       let s = d1.getElementById('axl-marks'); if (!s) { s = d1.createElement('style'); s.id = 'axl-marks'; d1.head.appendChild(s); }
       const m = toRgb(getComputedStyle(frame).outlineColor || '#d1175e'); let col = `rgba(${m[0]},${m[1]},${m[2]},.8)`;
-      s.textContent = st.showMarks ? `[data-axl-diff]{outline:1.5px solid ${col}!important;outline-offset:1px!important;background-image:linear-gradient(${col.replace(',.8)', ',.07)')},${col.replace(',.8)', ',.07)')})!important}` : '';
-      const a = [...d1.querySelectorAll('body *')], b = [...d0.querySelectorAll('body *')], w1 = d1.defaultView, w0 = d0.defaultView, diffs = new Map();
+      s.textContent = st.showMarks ? `[data-axl-diff]{outline:1.5px solid ${col}!important;outline-offset:1px!important}` : '';
+      const a = [...d1.querySelectorAll('body *')], bk = new Map([...d0.querySelectorAll('body [data-k]')].map(e => [e.dataset.k, e])), w1 = d1.defaultView, w0 = d0.defaultView, diffs = new Map();
       a.forEach(el => el.removeAttribute('data-axl-diff'));
       a.forEach((el, i) => {
-        const o = b[i]; if (!o || el.tagName !== o.tagName || el.closest('svg') && el.tagName !== 'svg') return;
+        if (el.hasAttribute('data-axl-ins') || el.hasAttribute('data-axl-p') && el.textContent !== (bk.get(el.dataset.k) || {}).textContent) { if (el.getClientRects().length && !el.parentElement.closest('[data-axl-ins]')) { el.setAttribute('data-axl-diff', ''); marked++; } return; }
+        const o = el.dataset.k != null ? bk.get(el.dataset.k) : null; if (!o || el.tagName !== o.tagName || el.closest('svg') && el.tagName !== 'svg') return;
         const c1 = w1.getComputedStyle(el), c0 = w0.getComputedStyle(o), set = new Set();
         PROPS.forEach(p => { if (p !== 'outlineStyle' && c1[p] !== c0[p]) set.add(p); });
         diffs.set(el, set);
@@ -325,14 +335,32 @@ const D = /*DATA*/null;
     } catch (e) { marked = -1; }
     const m = $('#marks'); if (m) m.textContent = marked > 0 ? `${marked} changed` : marked === 0 ? 'no change' : '';
   }
-  function paint(cur) { post(cssOf(cur.tweaks)); clearTimeout(markT); markT = setTimeout(markChanges, 120); }
-  pv.addEventListener('load', () => { fit(); render(false); }); pv0.addEventListener('load', fit);
+  let appView = 'overview', stated = false;
+  const sync = (state, both) => { [both ? pv : null, pv0].forEach(f => { try { f && f.contentWindow.postMessage({ type: 'lab-sync-state', state }, '*'); } catch (e) {} }); };
+  function goView(ids) {
+    const n = {}; ids.forEach(i => { const v = shows(T[i]) && T[i].view; if (v) n[v] = (n[v] || 0) + 1; });
+    const vs = Object.keys(n); if (!vs.length) return;
+    const one = ids.length === 1 && T[ids[0]].state; if (vs.includes(appView) && !one && !stated) return; stated = !!one;
+    appView = vs.includes(appView) ? appView : vs.sort((a, b) => n[b] - n[a])[0];
+    sync(Object.assign({ view: appView, modal: null, phase: 'ready', menu: false, drawer: false, siErr: '' }, one || {}), true);
+  }
+  addEventListener('message', e => {
+    if (e.source !== pv.contentWindow || !e.data || e.data.type !== 'lab-app-state') return;
+    appView = e.data.state.view; sync(e.data.state, false);
+    if (st.walk) { stopWalk(); renderPicks(); }
+    clearTimeout(markT); markT = setTimeout(markChanges, 160);
+  });
+  function paint(cur) { goView(cur.tweaks); post(cssOf(cur.tweaks), patchOf(cur.tweaks)); clearTimeout(markT); markT = setTimeout(markChanges, 120); }
+  pv.addEventListener('load', () => { fit(); render(false);
+    const w = pv.contentWindow; w.addEventListener('scroll', () => { try { pv0.contentWindow.scrollTo(0, w.scrollY); } catch (e) {} });
+    w.addEventListener('keydown', e => { if (e.key === 'Shift' && !e.target.closest('input,textarea,select')) { stopWalk(); renderPicks(); peek(true); } });
+    w.addEventListener('keyup', e => { if (e.key === 'Shift') peek(false); }); }); pv0.addEventListener('load', fit);
   const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (!on) paint(current()); };
   addEventListener('keydown', e => {
     if (e.target.closest && e.target.closest('input')) return;
     if (e.key === 'Shift') { stopWalk(); renderPicks(); peek(true); }
     if (e.key === 'Escape') { closePops(); if ($('#sheet').classList.contains('open')) closeSheet(); }
-    if (e.key === 'y' || e.key === 'Y') { stopWalk(); st.mineView = true; render(true); }
+    if (e.key === 'y' || e.key === 'Y') { stopWalk(); st.focus = null; st.mineView = true; render(true); }
   });
   addEventListener('keyup', e => { if (e.key === 'Shift') peek(false); });
   addEventListener('blur', () => peek(false));
@@ -344,21 +372,29 @@ const D = /*DATA*/null;
   hold.addEventListener('keyup', e => { if (e.key === ' ' || e.key === 'Enter') peek(false); });
 
   /* ---- the board: every tweak, once ---- */
-  $('#board').innerHTML = D.categories.map(c => { const ts = D.tweaks.filter(t => t.category === c).sort((a, b) => D.entries.filter(e => e.tweaks.includes(b.id)).length - D.entries.filter(e => e.tweaks.includes(a.id)).length); return ts.length ? `<div class="col"><h3><button type="button" aria-expanded="true">${esc(c)} <span style="color:var(--muted);font-weight:500">(${ts.length})</span></button><span data-cc="${esc(c)}"></span></h3>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false"><span class="d"></span><span class="nm">${esc(t.name)}</span>${t.css ? '' : '<span class="nv" title="No preview on the demo page" aria-label="no preview">◌</span>'}${t.check ? '<span class="ck" title="a tool checks it">✓</span>' : ''}<span class="ct"></span><span class="ex" aria-hidden="true">${(t.asks || []).length ? '›' : ''}</span></button>`).join('')}</div>` : ''; }).join('');
+  $('#board').innerHTML = D.categories.map(c => { const ts = D.tweaks.filter(t => t.category === c).sort((a, b) => D.entries.filter(e => e.tweaks.includes(b.id)).length - D.entries.filter(e => e.tweaks.includes(a.id)).length); return ts.length ? `<div class="col"><h3><button type="button" aria-expanded="true">${esc(c)} <span style="color:var(--muted);font-weight:500">(${ts.length})</span></button><span data-cc="${esc(c)}"></span></h3>${ts.map(t => `<button class="tw" type="button" data-id="${esc(t.id)}" aria-pressed="false"><span class="d"></span><span class="nm">${esc(t.name)}</span>${shows(t) ? '' : `<span class="nv" title="${esc(t.why ? 'Not visible: ' + t.why : 'No preview on the demo page')}" aria-label="no preview">◌</span>`}${t.check ? '<span class="ck" title="a tool checks it">✓</span>' : ''}<span class="ct"></span><span class="ex" aria-hidden="true">${(t.asks || []).length ? '›' : ''}</span></button>`).join('')}</div>` : ''; }).join('');
   $('#nothing').addEventListener('click', e => { if (e.target.id !== 'useIts') return; const s = st.walk === 's' ? walkItems('s')[st.idx % walkItems('s').length] : [...st.sel.s][0]; stopWalk(); st.sel.w = new Set(D.entries.filter(x => x.src === s).map(x => x.word)); st.sel.s = new Set([s]); render(); });
   $('#steps').addEventListener('click', e => { const b = e.target.closest('.stop'); if (!b) return; clearTimeout(timer); st.idx = +b.dataset.j; showStep(); timer = setTimeout(step, 2400); });
   // tap a tweak: open what every source says about it, with one button to add it to yours
   $('#board').addEventListener('click', e => {
-    const add = e.target.closest('.add'); if (add) { stopWalk(); const id = add.dataset.id; st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mineView = st.mine.size > 0; render(true); openMore(id); return; }
+    const add = e.target.closest('.add'); if (add) { stopWalk(); st.focus = null; const id = add.dataset.id; st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mineView = st.mine.size > 0; render(true); openMore(id); return; }
     const h = e.target.closest('h3 button'); if (h) { h.closest('.col').classList.toggle('closed'); h.setAttribute('aria-expanded', !h.closest('.col').classList.contains('closed')); return; }
     const b = e.target.closest('.tw'); if (!b) return; const id = b.dataset.id, open = b.nextElementSibling && b.nextElementSibling.classList.contains('more');
-    $$('#board .more').forEach(m => m.remove()); if (!open) openMore(id);
+    $$('#board .more').forEach(m => m.remove()); stopWalk(); st.focus = open ? null : id; if (!open) openMore(id); render(true);
+    // the page sits above the board: bring it into view to show the change, with a way straight back to this row
+    if (!open && shows(T[id]) && frame.getBoundingClientRect().bottom < 80) { backTo = id; arrived = false; $('#back').hidden = false; frame.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' }); }
   });
+  let backTo = null;
+  $('#back').addEventListener('click', () => { const b = backTo && $(`#board .tw[data-id="${backTo}"]`); $('#back').hidden = true; arrived = false; if (b) { b.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' }); b.focus({ preventScroll: true }); } });
+  let arrived = false;   // hide the back button once the person scrolls away from the page by themselves
+  addEventListener('scroll', () => { if ($('#back').hidden) return; const r = frame.getBoundingClientRect(), on = r.bottom > 0 && r.top < innerHeight; if (on && r.top > -40) arrived = true; else if (arrived && !on) { $('#back').hidden = true; arrived = false; } }, { passive: true });
+  const VIEWN = { overview: 'Overview', projects: 'Projects list', editor: 'New project form', settings: 'Settings', reports: 'Reports', assistant: 'Assistant chat', site: 'Home page', docs: 'Help article', signin: 'Sign in page' };
+  const closeMore = () => $$('#board .more').forEach(m => m.remove());
   function openMore(id) {
     $$('#board .more').forEach(m => m.remove()); const b = $(`#board .tw[data-id="${id}"]`); if (!b) return; const t = T[id], on = st.mine.has(id);
     const asks = (t.asks || []);
     const div = document.createElement('div'); div.className = 'more';
-    div.innerHTML = `${asks.slice(0, 12).map(a => `<q>${esc(a.quote)}</q><small>${esc(a.src)}${a.verified === false ? ' · paraphrase' : ''} · <a href="${esc(a.url || '#')}" target="_blank" rel="noopener noreferrer">source</a></small>`).join('') || '<small>No source text on record.</small>'}${asks.length > 12 ? `<small>+ ${asks.length - 12} more</small>` : ''}${t.css ? `<small>Change: ${esc(t.css.slice(0, 160))}${t.css.length > 160 ? '…' : ''}</small>` : ''}<button type="button" class="add" data-id="${esc(id)}">${on ? 'Remove from yours' : 'Add to yours'}</button>`;
+    div.innerHTML = `${asks.slice(0, 12).map(a => `<q>${esc(a.quote)}</q><small>${esc(a.src)}${a.verified === false ? ' · paraphrase' : ''} · <a href="${esc(a.url || '#')}" target="_blank" rel="noopener noreferrer">source</a></small>`).join('') || '<small>No source text on record.</small>'}${asks.length > 12 ? `<small>+ ${asks.length - 12} more</small>` : ''}${t.css ? `<small>Change: ${esc(t.css.slice(0, 160))}${t.css.length > 160 ? '…' : ''}</small>` : ''}${t.patch ? `<small>Edit: ${esc(PATCH_TXT(t.patch).slice(0, 160))}</small>` : ''}${!shows(t) && t.why ? `<small>Not visible on a page (${esc(t.kind || '')}): ${esc(t.why)}</small>` : ''}<button type="button" class="add" data-id="${esc(id)}">${on ? 'Remove from yours' : 'Add to yours'}</button>`;
     b.after(div);
   }
   // search + filters
@@ -392,11 +428,12 @@ const D = /*DATA*/null;
     const cur = current(); frame.style.setProperty('--cur', cur.color); document.documentElement.style.setProperty('--cur', cur.color);
     if (!st.peek && !st.blink) { paint(cur); }
     if (!st.peek) $('#stateTxt').textContent = cur.label;
-    const vis = cur.tweaks.filter(i => T[i].css).length, inv = cur.tweaks.length - vis, nb = $('#nothing');
+    const vis = cur.tweaks.filter(i => shows(T[i])).length, inv = cur.tweaks.length - vis, nb = $('#nothing');
     nb.hidden = st.peek || st.mineView || vis > 0;
     const srcOnly = st.sel.s.size === 1 || st.walk === 's' ? (st.walk === 's' ? walkItems('s')[st.idx % Math.max(1, walkItems('s').length)] : [...st.sel.s][0]) : null;
     if (!nb.hidden && !cur.entries.length && srcOnly) { const ws = [...new Set(D.entries.filter(e => e.src === srcOnly).map(e => e.word))];
       nb.innerHTML = `<b>${esc(srcOnly)} doesn't use ${st.sel.w.size === 1 ? `“${esc([...st.sel.w][0])}”` : 'these commands'}</b>It uses: ${ws.map(esc).join(', ')}.<br><button class="btn small" id="useIts" type="button" style="margin-top:10px;background:#fff;color:#131316">Show ${esc(srcOnly)}'s commands</button>`; }
+    else if (!nb.hidden && cur.tweaks.length === 1 && T[cur.tweaks[0]].why) { const t = T[cur.tweaks[0]]; nb.innerHTML = `<b>Not something a page can show</b>${esc(t.kind ? t.kind[0].toUpperCase() + t.kind.slice(1) : '')}: ${esc(t.why)}`; }
     else if (!nb.hidden) nb.innerHTML = cur.tweaks.length ? `<b>Nothing to see</b>This definition asks for ${inv} change${inv > 1 ? 's' : ''} a page can't show: ${cur.tweaks.map(i => esc(T[i].name.toLowerCase())).join(', ')}.` : `<b>Nothing to see</b>This definition names no concrete change at all.`;
     renderPicks();
     // walk progress
@@ -416,7 +453,7 @@ const D = /*DATA*/null;
     // quote
     const e = cur.entries.length === 1 ? cur.entries[0] : cur.entries.find(x => x.quote);
     const visTxt = cur.tweaks.length ? ` <span style="font:.78rem var(--mono)">${vis} of ${cur.tweaks.length} tweaks visible</span>` : '';
-    $('#says').innerHTML = st.mineView ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.` : e && e.quote ? `${esc(e.src)} on “${esc(e.word)}”: <q>${esc(e.quote)}</q> <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">source</a>${visTxt}` : `${cur.tweaks.length} tweaks from ${cur.entries.length} definitions.${visTxt}`;
+    $('#says').innerHTML = st.focus ? (T[st.focus] && shows(T[st.focus]) ? `One tweak, shown on the ${esc(VIEWN[T[st.focus].view] || 'page')}. Click around the page; tap the tweak again to go back.` : 'One tweak. Tap it again to go back.') : st.mineView ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweak${st.mine.size === 1 ? '' : 's'}.` : e && e.quote ? `${esc(e.src)} on “${esc(e.word)}”: <q>${esc(e.quote)}</q> <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">source</a>${visTxt}` : `${cur.tweaks.length} tweaks from ${cur.entries.length} definitions.${visTxt}`;
     facts(); if (typeof filterBoard === 'function' && bf !== 'all') filterBoard();
   }
 
@@ -429,8 +466,8 @@ const D = /*DATA*/null;
     const name = ($('#myName').value.trim() || 'my word'), ids = chosen(), f = slug(name);
     const ts = ids.map(i => T[i]).filter(Boolean), auto = ts.filter(t => t.check), judge = ts.filter(t => !t.check);
     const prov = t => (t.asks || []).map(a => `     - ${a.src}: "${a.quote.replace(/\s+/g, ' ').slice(0, 160)}"${a.verified ? '' : ' (paraphrase)'} — ${a.url}`).join('\n') || '     - (no source quote on record)';
-    const prompt = `# ${name}\n\nApply exactly these ${ts.length} changes to the UI. Do not redesign anything else.\n` +
-      ts.map((t, i) => `\n${i + 1}. ${t.name}  [${t.category}]\n   Change:\n${t.css ? t.css.replace(/\}/g, '}\n').split('\n').filter(Boolean).map(l => '     ' + l).join('\n') : '     (no CSS: ' + (t.check ? 'behaviour/markup change, verified by the check below' : 'needs judgment; describe what you changed') + ')'}\n   Check: ${t.check ? t.check : 'manual review'}\n   Who asks for it:\n${prov(t)}`).join('\n') +
+    const prompt = `# ${name}\n\nApply exactly these ${ts.length} changes to the UI. Do not redesign anything else.\nEach change is written as it was applied to the AXL demo page (Northstar): apply the same change to the matching parts of your UI.\n` +
+      ts.map((t, i) => `\n${i + 1}. ${t.name}  [${t.category}]\n   Change:\n${t.css ? t.css.replace(/\}/g, '}\n').split('\n').filter(Boolean).map(l => '     ' + l).join('\n') : ''}${t.patch ? (t.css ? '\n' : '') + PATCH_TXT(t.patch).split('\n').map(l => '     ' + l).join('\n') : ''}${shows(t) ? '' : '     (no CSS: ' + (t.why ? `${t.kind || 'behaviour'} — ${t.why}` : t.check ? 'behaviour/markup change, verified by the check below' : 'needs judgment; describe what you changed') + ')'}\n   Check: ${t.check ? t.check : 'manual review'}\n   Who asks for it:\n${prov(t)}`).join('\n') +
       `\n\nWhen done, run the check script (tab 2) on the page and fix every FAIL it reports. Repeat until it reports 0 failures.\n`;
     const checks = [...new Set(auto.map(t => t.check))];
     const script = CHECK_SCRIPT(name, checks, auto.map(t => ({ id: t.id, name: t.name, check: t.check })));

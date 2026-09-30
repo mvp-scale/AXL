@@ -4,6 +4,16 @@ before.html = template + <title>-less original; after.html = same + a fix layer 
 import json, os, re
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 T = json.load(open(f"{ROOT}/axl/data/legacy_effects.json"))["appTemplate"]
+# northstar.html = the same app plus AXL's extra views (Reports, Assistant, Home page, Help article, Sign in), used by the site and
+# tools/runners/preview_check.js. before/after/polished/fixtures stay the original app, so tool receipts keep reproducing. legacy/ is untouched.
+X = open(f"{ROOT}/axl/demo/src/northstar_views.html", encoding="utf-8").read()
+part = lambda k, nxt: X.split(f"<!--{k}-->")[1].split(f"<!--{nxt}-->")[0].strip() if nxt else X.split(f"<!--{k}-->")[1].strip()
+NS = T
+for anchor, add, before_it in (('<style id="recipe-style">', part("CSS", "NAV"), True), ('data-view="settings">Settings</button>', part("NAV", "PANELS"), False),
+                               ("<footer>", part("PANELS", "JS"), True), ("</body>", part("JS", None), True)):
+    assert NS.count(anchor) == 1, anchor
+    NS = NS.replace(anchor, add + anchor if before_it else anchor + add)
+open(f"{ROOT}/axl/demo/northstar.html", "w").write(NS)
 FIX = """/* contrast >= 4.5:1 (WCAG 1.4.3) */
 .topbar,.topbar span,#breadcrumb,.eyebrow{color:#4b596c}.activity small,li>small{color:#566579}th{color:#4f5d72}footer,footer span{color:#566579}
 /* visible focus (WCAG 2.4.7 / 2.4.13) */

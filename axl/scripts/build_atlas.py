@@ -36,6 +36,13 @@ EXTRA_CSS = {  # visible stand-ins on the Northstar demo for tweaks that have no
 }
 EXTRA_CSS.pop("states-designed"); EXTRA_CSS.pop("focal-motion")   # not honestly visible as a static change
 tweaks = {t["id"]: dict(t, css=EFF.get(t["effect"]) if t.get("effect") else EXTRA_CSS.get(t["id"]), asks=[]) for t in TW["tweaks"]}
+# previews for every other tweak: a real CSS change shown on the view where it applies (measured by tools/runners/preview_check.js),
+# or an honest reason it can't be seen on a static page. Written with model help, verified by script, reviewable in data/previews.json.
+PV = json.load(open(f"{D}/previews.json")) if os.path.exists(f"{D}/previews.json") else {}
+for t in tweaks.values():
+    p = PV.get(t["id"], {})
+    if t["css"]: t.update(view="overview", state=None, patch=None, kind=None, why=None)
+    else: t.update(css=p.get("css"), patch=p.get("patch"), view=p.get("view"), state=p.get("state"), kind=p.get("kind"), why=p.get("why"))
 by_eff = {t["effect"]: t["id"] for t in TW["tweaks"] if t.get("effect")}
 groups = collections.OrderedDict(); vague = []
 for c in claims:
@@ -121,8 +128,8 @@ def prov(t):
             out.append({"src": e["src"], "quote": e["quote"], "url": e["url"], "verified": True})
     if t.get("source_quote"): out.append({"src": "W3C WCAG 2.2" if "w3.org" in t["source_url"] else "Smashing Magazine", "quote": t["source_quote"], "url": t["source_url"], "verified": True})
     return out
-data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/before.html", encoding="utf-8").read(),
-  "categories": TW["categories"], "tweaks": [dict({k: t[k] for k in ("id", "name", "category", "check", "css")}, asks=prov(t)) for t in tweaks.values()],
+data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/northstar.html", encoding="utf-8").read(),
+  "categories": TW["categories"], "tweaks": [dict({k: t[k] for k in ("id", "name", "category", "check", "css", "patch", "view", "state", "kind", "why") if t.get(k) is not None}, asks=prov(t)) for t in tweaks.values()],
   "entries": entries, "words": wl, "sources": srcs, "vague": vague[:40],
   "stats": {"rules": len(catalog), "statements": len(claims) + len(catalog), "sources": len(srcs), "words": len(wl), "tweaks": len(tweaks), "vague": len(vague)}}
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")

@@ -10,4 +10,6 @@ python3 axl/scripts/apply_receipts.py
 python3 axl/scripts/build_definitions.py
 python3 axl/scripts/build_verbs.py
 python3 axl/scripts/validate_atlas.py
+python3 axl/scripts/build_demo.py
+python3 axl/scripts/check_previews.py
 python3 axl/scripts/build_atlas.py
