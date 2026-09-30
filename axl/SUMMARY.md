@@ -3,7 +3,7 @@
 Open `axl/site/index.html` (one file).
 
 ## What the page does
-- **Two matching pickers:** **Words** (24: polish, bolder, quieter…) × **Sources** (25: Impeccable, UI Craft, Anthropic…). Both are multi-select, and each item has its own colour.
+- **Two matching pickers:** **Commands** (24: polish, bolder, quieter…) × **Sources** (25: Impeccable, UI Craft, Anthropic…). Both are multi-select, and each item has its own colour.
 - **▶ on either picker walks through it:** one word or one source at a time. The demo changes, the progress ticks advance, a label names what's on screen, and the board of all 71 tweaks lights up in that colour.
 - **First screen:** "polish" × all 25 sources, walking the sources. The counters read 13 definitions, 11 independent, 28 tweaks, **0 shared by all**.
 - **Controls:** hold **Shift**, or the button on the page, for the original. Tap any tweak on the board to build your own word, then save it as a file that `axl.py check` runs.

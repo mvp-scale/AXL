@@ -11,7 +11,7 @@ const { CHROME } = require('./common');
     p.on('request', r => { const u = r.url(); if (!/^(data|blob|about|file):/.test(u) && !u.startsWith(url.split('/').slice(0, 3).join('/'))) ext.push(u); });
     await p.goto(url); await p.waitForFunction('window.axlReady');
     const r = { width, scheme, console_errors: errs, external: ext };
-    const s0 = await p.evaluate("document.getElementById('stateTxt').textContent"); await p.waitForTimeout(2100);
+    const s0 = await p.evaluate("document.getElementById('stateTxt').textContent"); await p.waitForTimeout(3100);
     const s1 = await p.evaluate("document.getElementById('stateTxt').textContent");
     r.walks_without_input = s0 !== s1;
     r.lit_during_walk = await p.evaluate("document.querySelectorAll('#board .tw.lit').length");
@@ -24,7 +24,7 @@ const { CHROME } = require('./common');
     await p.locator('#pickW .tile', { hasText: 'bolder' }).first().click(); await p.click('#pickW .done');
     r.multi_words = await p.evaluate("document.querySelector('#pickW .lab').textContent");
     await p.click('#pickS .pbtn'); r.source_tiles = await p.evaluate("document.querySelectorAll('#pickS .tile').length"); await p.click('#pickS .done');
-    await p.click('#pickW .play'); await p.waitForTimeout(2100); r.word_walk = await p.evaluate("document.getElementById('stateTxt').textContent"); await p.click('#pickW .play');
+    await p.click('#pickW .play'); await p.waitForTimeout(3100); r.word_walk = await p.evaluate("document.getElementById('stateTxt').textContent"); await p.click('#pickW .play');
     // one tap on the board builds your word; save gives a file and a command
     await p.locator('#board .tw').first().click(); r.after_one_tap = await p.evaluate(() => ({ mine: document.querySelectorAll('#board .tw[aria-pressed=true]').length, state: document.getElementById('stateTxt').textContent }));
     await p.locator('#board .tw').nth(3).click(); await p.click('#save'); await p.waitForTimeout(300);
