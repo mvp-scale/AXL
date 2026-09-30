@@ -12,10 +12,11 @@
   --bg:#f7f7f5;--panel:#ffffff;--ink:#131316;--muted:#5b5d66;--line:#dfe0e4;--soft:#eeeff1;
   --mine:#d1175e;--on-mine:#ffffff;--ok:#0b7a4b;
   --c1:#2a78d6;--c2:#eb6834;--c3:#1baf7a;--c4:#eda100;--c5:#008300;--c6:#4a3aa7;--c7:#e34948;--c8:#0e7c86;--c9:#8a5a2b;--c10:#3949ab;--c11:#5f8a00;--c12:#b0306a;--cx:#8b8e97;
+  --cl:.55;--on-c:#ffffff;
   --sans:"Inter Tight","Helvetica Neue",Arial,system-ui,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--c1:#3987e5;--c2:#d95926;--c3:#199e70;--c4:#c98500;--c5:#008300;--c6:#9085e9;--c7:#e66767;--c8:#2fb3bd;--c9:#c08a55;--c10:#7c8cf0;--c11:#8fc23a;--c12:#e0609a;--cx:#6b6e78;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--c1:#3987e5;--c2:#d95926;--c3:#199e70;--c4:#c98500;--c5:#008300;--c6:#9085e9;--c7:#e66767;--c8:#2fb3bd;--c9:#c08a55;--c10:#7c8cf0;--c11:#8fc23a;--c12:#e0609a;--cx:#6b6e78;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--cl:.74;--on-c:#101114;--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--c1:#3987e5;--c2:#d95926;--c3:#199e70;--c4:#c98500;--c5:#008300;--c6:#9085e9;--c7:#e66767;--c8:#2fb3bd;--c9:#c08a55;--c10:#7c8cf0;--c11:#8fc23a;--c12:#e0609a;--cx:#6b6e78;color-scheme:dark}}
+:root[data-theme="dark"]{--cl:.74;--on-c:#101114;--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--ok:#4cd694;--c1:#3987e5;--c2:#d95926;--c3:#199e70;--c4:#c98500;--c5:#008300;--c6:#9085e9;--c7:#e66767;--c8:#2fb3bd;--c9:#c08a55;--c10:#7c8cf0;--c11:#8fc23a;--c12:#e0609a;--cx:#6b6e78;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 var(--sans);-webkit-font-smoothing:antialiased}
 button,input{font:inherit;color:inherit}
@@ -53,6 +54,7 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 
 .tile{min-height:48px;text-align:left;padding:6px 10px;border-radius:10px;background:var(--soft);display:flex;gap:8px;align-items:center;border:2px solid transparent}
 .tile i{width:12px;height:12px;border-radius:50%;background:var(--c);flex:none;opacity:.35}
+#pickW .tile i,#pickW .pbtn b i{border-radius:3px}
 .tile b{font:600 .95rem var(--sans);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tile>span{min-width:0}.tile span span{font:.7rem var(--mono);color:var(--muted)}
 .tile[aria-pressed="true"]{border-color:var(--c);background:var(--panel)}.tile[aria-pressed="true"] i{opacity:1}
 
@@ -81,8 +83,8 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .stop{flex:none;min-height:34px;padding:0 12px 0 9px;border-radius:99px;display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:.86rem;background:var(--panel);box-shadow:0 0 0 1px var(--line);color:var(--muted);transition:background .3s,color .3s,box-shadow .3s,transform .3s}
 .stop i{width:10px;height:10px;border-radius:50%;background:var(--c)}
 .stop.done{opacity:.55}
-.stop.on{background:var(--c);color:#fff;box-shadow:0 6px 16px -6px var(--c);transform:scale(1.06)}
-.stop.on i{background:#fff}
+.stop.on{background:var(--c);color:var(--on-c);box-shadow:0 6px 16px -6px var(--c);transform:scale(1.06)}
+.stop.on i{background:var(--on-c)}
 @keyframes lit{0%{background:color-mix(in srgb,var(--cur,var(--ink)) 22%,transparent)}100%{background:transparent}}
 .tw.fresh{animation:lit 1.2s ease-out}
 .says{min-height:1.5em;margin:8px 2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.98rem;color:var(--muted)}
@@ -206,9 +208,11 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
   const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const T = Object.fromEntries(D.tweaks.map(t => [t.id, t]));
-  const PAL = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(i => `var(--c${i})`);
   const LIST = { w: D.words, s: D.sources };
-  const color = (axis, name) => PAL[LIST[axis].indexOf(name)] || 'var(--cx)';
+  // one colour system for any number of items: hues spread by the golden angle at a fixed lightness; commands are shifted so the two lists never share a hue order
+  const color = (axis, name) => { const i = Math.max(0, LIST[axis].indexOf(name)); return `oklch(var(--cl) .16 ${((i * 137.508) + (axis === 'w' ? 64 : 0)) % 360})`; };
+  const probe = document.createElement('canvas').getContext('2d');
+  const toRgb = c => { probe.fillStyle = '#000'; probe.fillStyle = c; probe.fillRect(0, 0, 1, 1); const d = probe.getImageData(0, 0, 1, 1).data; return [d[0], d[1], d[2]]; };
   const PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>', PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
   const st = { sel: { w: new Set(['polish']), s: new Set(D.sources) }, walk: null, idx: 0, mine: new Set(), peek: false, mineView: false, showMarks: true };
   let timer = null;
@@ -278,7 +282,7 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
     try {
       const d1 = pv.contentDocument, d0 = pv0.contentDocument; if (!d1 || !d0) return;
       let s = d1.getElementById('axl-marks'); if (!s) { s = d1.createElement('style'); s.id = 'axl-marks'; d1.head.appendChild(s); }
-      let col = getComputedStyle(frame).outlineColor || 'rgb(209, 23, 94)'; const m = col.match(/\d+/g); if (m) col = `rgba(${m[0]},${m[1]},${m[2]},.8)`;
+      const m = toRgb(getComputedStyle(frame).outlineColor || '#d1175e'); let col = `rgba(${m[0]},${m[1]},${m[2]},.8)`;
       s.textContent = st.showMarks ? `[data-axl-diff]{outline:1.5px solid ${col}!important;outline-offset:1px!important;background-image:linear-gradient(${col.replace(',.8)', ',.07)')},${col.replace(',.8)', ',.07)')})!important}` : '';
       const a = [...d1.querySelectorAll('body *')], b = [...d0.querySelectorAll('body *')], w1 = d1.defaultView, w0 = d0.defaultView, diffs = new Map();
       a.forEach(el => el.removeAttribute('data-axl-diff'));
@@ -343,7 +347,7 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
     renderPicks();
     // walk progress
     const items = st.walk ? walkItems(st.walk) : [], k = items.length ? st.idx % items.length : 0;
-    $('#steps').innerHTML = items.length ? items.map((n, i) => `<button class="stop${i === k ? ' on' : i < k ? ' done' : ''}" type="button" data-j="${i}" style="--c:${color(st.walk, n)}"><i></i>${esc(st.walk === 'w' ? n : n)}</button>`).join('')
+    $('#steps').innerHTML = items.length ? items.map((n, i) => `<button class="stop${i === k ? ' on' : i < k ? ' done' : ''}" type="button" data-j="${i}" style="--c:${color(st.walk, n)}"><i style="border-radius:${st.walk === 'w' ? '3px' : '50%'}"></i>${esc(n)}</button>`).join('')
       : `<span class="hint">Press ▶ on Commands or Sources to play through them.</span>`;
     const on = $('#steps .stop.on'); if (on) $('#steps').scrollLeft = on.offsetLeft - $('#steps').clientWidth / 2 + on.offsetWidth / 2;
     // numbers for the whole selection: the lack of a standard, counted
