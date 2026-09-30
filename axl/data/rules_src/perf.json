@@ -1,0 +1,2065 @@
+{
+ "class": "Performance",
+ "tweaks": {
+  "lazy-load-images": [
+   {
+    "rule": "page axl:lazy-loaded-lcp-element == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:f7d6d4",
+       "hallmark:944415",
+       "hallmark:e4882f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img axl:eager-below-fold-images == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:060e27",
+       "vercel:19da4e",
+       "vercel:2299e7",
+       "hallmark:944415"
+      ]
+     }
+    ]
+   }
+  ],
+  "priority-hint-lcp": [
+   {
+    "rule": "page axl:lazy-loaded-lcp-element == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:d7203b",
+       "hallmark:f7d6d4",
+       "hallmark:944415",
+       "hallmark:e4882f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:lcp-fetchpriority == high",
+    "values": [
+     {
+      "value": "high",
+      "qids": [
+       "hallmark:f7d6d4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:lcp-discovery-insight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:303e1d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:largest-contentful-paint <= 2.5s",
+    "values": [
+     {
+      "value": "2.5s",
+      "qids": [
+       "taste-skill:303e1d"
+      ]
+     }
+    ]
+   }
+  ],
+  "responsive-images": [
+   {
+    "rule": "aria:img lighthouse:image-size-responsive pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a4053c",
+       "lighthouse:c6c975",
+       "ui-craft:dc9a1e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:image-aspect-ratio pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ed3181",
+       "ui-craft:dc9a1e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:image-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ed3181"
+      ]
+     }
+    ]
+   }
+  ],
+  "modern-image-formats": [
+   {
+    "rule": "aria:img lighthouse:image-delivery-insight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:93bc43",
+       "ui-craft:060e27"
+      ]
+     }
+    ]
+   }
+  ],
+  "image-compression": [
+   {
+    "rule": "aria:img lighthouse:image-delivery-insight pass",
+    "values": []
+   }
+  ],
+  "image-dimensions": [
+   {
+    "rule": "aria:img lighthouse:unsized-images pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:2ac7c4",
+       "impeccable:a74e20",
+       "lighthouse:62c011",
+       "vercel:366ea0",
+       "vercel:5daa8c"
+      ]
+     }
+    ]
+   }
+  ],
+  "video-instead-of-gif": [
+   {
+    "rule": "aria:img axl:animated-gif-images == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "vercel:e26947",
+       "vercel:ae2c87"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:figure ask \"Does every looping video have a still or reduced-motion alternative?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:e26947",
+       "vercel:8122fe",
+       "vercel:ae2c87"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "aria:figure ask \"Does each short looping video offer a Safari-compatible H.264 MP4 source?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:8122fe"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "minify-css-js": [
+   {
+    "rule": "page lighthouse:unminified-css pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:f270da"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:unminified-javascript pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:a25bb7"
+      ]
+     }
+    ]
+   }
+  ],
+  "remove-unused-css": [
+   {
+    "rule": "page lighthouse:unused-css-rules pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:b3ee17",
+       "impeccable:902b24",
+       "lighthouse:c15110"
+      ]
+     }
+    ]
+   }
+  ],
+  "remove-unused-js": [
+   {
+    "rule": "page lighthouse:unused-javascript pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:4df4d8",
+       "lighthouse:db4a1d"
+      ]
+     }
+    ]
+   }
+  ],
+  "code-splitting": [
+   {
+    "rule": "process ask \"Are large components loaded with dynamic imports?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:366482"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "defer-render-blocking": [
+   {
+    "rule": "page lighthouse:render-blocking-insight pass",
+    "values": []
+   }
+  ],
+  "preconnect-origins": [
+   {
+    "rule": "page axl:cdn-origins-without-preconnect == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "vercel:7960fd",
+       "vercel:c83eb4",
+       "vercel:835b8e"
+      ]
+     }
+    ]
+   }
+  ],
+  "text-compression": [
+   {
+    "rule": "page lighthouse:document-latency-insight pass",
+    "values": []
+   }
+  ],
+  "http-cache-static": [
+   {
+    "rule": "page lighthouse:cache-insight pass",
+    "values": []
+   }
+  ],
+  "avoid-large-payload": [
+   {
+    "rule": "page lighthouse:total-byte-weight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:1b6894"
+      ]
+     }
+    ]
+   }
+  ],
+  "dom-size-small": [
+   {
+    "rule": "page lighthouse:dom-size-insight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:03ba35"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:max-dom-depth <= 8",
+    "values": [
+     {
+      "value": "8",
+      "qids": [
+       "claw-design:baa857",
+       "hallmark:e8a1dd"
+      ]
+     }
+    ]
+   }
+  ],
+  "layout-shift-zero": [
+   {
+    "rule": "page lighthouse:cumulative-layout-shift <= 0.1",
+    "values": [
+     {
+      "value": "0.1",
+      "qids": [
+       "taste-skill:f57d90"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c23bdd",
+       "lighthouse:c71809"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:non-composited-animations pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ec40b9",
+       "lighthouse:86c261"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:unsized-images pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:366ea0",
+       "vercel:5daa8c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:skeleton ask \"Does each loading skeleton match the final layout grid and box sizes?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5a8559",
+       "ui-craft:0ae78b",
+       "ui-craft:b75dc0",
+       "ui-craft:b71798",
+       "ui-craft:12cae6",
+       "vercel:f9b7a1",
+       "vercel:cdace4",
+       "deslop:e471a8"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "ui:skeleton axl:skeleton-show-delay >= 200ms",
+    "values": [
+     {
+      "value": "200ms",
+      "qids": [
+       "ui-craft:5a8559",
+       "ui-craft:0ae78b",
+       "ui-craft:b75dc0",
+       "ui-craft:b71798"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:busy ask \"Do long operations show progress?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:e471a8"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "reserve-space-embeds": [
+   {
+    "rule": "page lighthouse:cumulative-layout-shift <= 0.1",
+    "values": []
+   }
+  ],
+  "lcp-under-2-5s": [
+   {
+    "rule": "page lighthouse:largest-contentful-paint <= 2.5s",
+    "values": [
+     {
+      "value": "2.5s",
+      "qids": [
+       "taste-skill:303e1d",
+       "taste-skill:f57d90"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:lcp-discovery-insight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:303e1d"
+      ]
+     }
+    ]
+   }
+  ],
+  "inp-responsive": [
+   {
+    "rule": "page lighthouse:interaction-to-next-paint <= 200ms",
+    "values": [
+     {
+      "value": "200ms",
+      "qids": [
+       "taste-skill:f16fb8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:mainthread-work-breakdown pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f16fb8",
+       "impeccable:f1ac88"
+      ]
+     }
+    ]
+   }
+  ],
+  "long-tasks-split": [
+   {
+    "rule": "page lighthouse:long-tasks pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:cb0edd",
+       "impeccable:e2906b",
+       "impeccable:ac7261"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:bootup-time pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:711bc9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:mainthread-work-breakdown pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:56d335"
+      ]
+     }
+    ]
+   }
+  ],
+  "third-party-defer": [
+   {
+    "rule": "page lighthouse:third-parties-insight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:13509b"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-legacy-js": [
+   {
+    "rule": "page lighthouse:legacy-javascript-insight pass",
+    "values": []
+   }
+  ],
+  "font-loading-no-block": [
+   {
+    "rule": "page lighthouse:font-display-insight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:cd2a34"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:unused-font-files == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:cd2a34"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Does each web font have a metric-compatible fallback?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:cd2a34"
+      ]
+     }
+    ],
+    "class": "type"
+   }
+  ],
+  "no-redirect-chain": [
+   {
+    "rule": "page lighthouse:redirects pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:3d3aac"
+      ]
+     }
+    ]
+   }
+  ],
+  "server-response-fast": [
+   {
+    "rule": "page lighthouse:server-response-time pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:5c514d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:mutation-response-time <= 500ms",
+    "values": [
+     {
+      "value": "500ms",
+      "qids": [
+       "vercel:1c499c",
+       "vercel:4109ec"
+      ]
+     }
+    ]
+   }
+  ],
+  "passive-listeners": [
+   {
+    "rule": "process ask \"Are scroll handlers throttled with requestAnimationFrame?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4e0e58"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "http2": [
+   {
+    "rule": "page lighthouse:modern-http-insight pass",
+    "values": []
+   }
+  ],
+  "https-only": [
+   {
+    "rule": "page lighthouse:is-on-https pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:303d62"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:redirects-http pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:7d9b83"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:has-hsts pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:73e020"
+      ]
+     }
+    ]
+   }
+  ],
+  "bfcache": [
+   {
+    "rule": "page lighthouse:bf-cache pass",
+    "values": []
+   }
+  ],
+  "css-containment": [
+   {
+    "rule": "page ask \"Do independent page regions use CSS containment?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:0e65e5",
+       "impeccable:92fa01"
+      ]
+     }
+    ],
+    "class": "perf"
+   },
+   {
+    "rule": "aria:list ask \"Do long lists use content-visibility: auto?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:dd26e4"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "virtualize-long-lists": [
+   {
+    "rule": "aria:list axl:rendered-items <= 50",
+    "values": [
+     {
+      "value": "50",
+      "qids": [
+       "vercel:7de4f9"
+      ]
+     },
+     {
+      "value": "200",
+      "qids": [
+       "ui-craft:1f9ecc"
+      ]
+     },
+     {
+      "value": "100",
+      "qids": [
+       "ui-craft:99976c"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "impeccable:11f1c8",
+       "impeccable:72d89a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table axl:rendered-items <= 50",
+    "values": [
+     {
+      "value": "50",
+      "qids": [
+       "vercel:7de4f9"
+      ]
+     },
+     {
+      "value": "200",
+      "qids": [
+       "ui-craft:1f9ecc"
+      ]
+     },
+     {
+      "value": "100",
+      "qids": [
+       "ui-craft:99976c"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "impeccable:11f1c8",
+       "impeccable:72d89a"
+      ]
+     }
+    ]
+   }
+  ],
+  "debounce-input": [
+   {
+    "rule": "aria:textbox axl:request-debounce >= 250ms",
+    "values": [
+     {
+      "value": "250ms",
+      "qids": [
+       "hallmark:744f9f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Does the field show a subtle indicator while a debounced request is pending?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:744f9f"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "gsap-bundle-size": [
+   {
+    "rule": "process ask \"Are animation libraries imported by named plugin or code-split rather than in full?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b8bd0e",
+       "ui-craft:653873"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "service-worker": [
+   {
+    "rule": "page ask \"Does the page register a service worker?\"",
+    "values": [],
+    "class": "perf"
+   }
+  ],
+  "preload-hero": [
+   {
+    "rule": "aria:img axl:above-fold-images-without-preload == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "vercel:19da4e",
+       "vercel:2299e7"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-document-write": [
+   {
+    "rule": "page axl:document-write-calls == 0",
+    "values": []
+   }
+  ],
+  "error-free-console": [
+   {
+    "rule": "page lighthouse:errors-in-console pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:dd286b"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-deprecated-apis": [
+   {
+    "rule": "page lighthouse:deprecations pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:b0e0a4"
+      ]
+     }
+    ]
+   }
+  ],
+  "image-aspect-ratio": [
+   {
+    "rule": "aria:img lighthouse:image-aspect-ratio pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:ddb4c3"
+      ]
+     }
+    ]
+   }
+  ],
+  "correct-doctype": [
+   {
+    "rule": "page lighthouse:doctype pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:28fae4"
+      ]
+     }
+    ]
+   }
+  ],
+  "charset-declared": [
+   {
+    "rule": "page lighthouse:charset pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:85a27d"
+      ]
+     }
+    ]
+   }
+  ],
+  "meta-description": [
+   {
+    "rule": "page lighthouse:meta-description pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:eae0ca",
+       "taste-skill:cc5341"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:document-title pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:cc5341",
+       "ui-craft:c66c87"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:missing-social-meta-tags == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:cc5341"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:structured-data pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c66c87"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the redesign keep URLs, page set, heading semantics, title/meta, alt text and structured data intact?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c66c87"
+      ]
+     }
+    ],
+    "class": "seo"
+   }
+  ],
+  "crawlable-links": [
+   {
+    "rule": "aria:link lighthouse:crawlable-anchors pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:1d3cb6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:link lighthouse:link-text pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:d60f61"
+      ]
+     }
+    ]
+   }
+  ],
+  "robots-valid": [
+   {
+    "rule": "page lighthouse:canonical pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:c8aaf4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:hreflang pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:db8802"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:is-crawlable pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:2be695"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:robots-txt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:16bd07"
+      ]
+     }
+    ]
+   }
+  ],
+  "tap-targets-seo": [
+   {
+    "rule": "page lighthouse:target-size pass",
+    "values": []
+   }
+  ],
+  "legible-font-sizes": [
+   {
+    "rule": "text:body font-size >= 14px",
+    "values": [
+     {
+      "value": "14px",
+      "qids": [
+       "hallmark:f0d4a2",
+       "impeccable:a2b590"
+      ]
+     },
+     {
+      "value": "16px",
+      "qids": [
+       "impeccable:a2b590"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* font-size >= 10px",
+    "values": [
+     {
+      "value": "10px",
+      "qids": [
+       "hallmark:f0d4a2",
+       "impeccable:a67707"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:link font-size >= 11px",
+    "values": [
+     {
+      "value": "11px",
+      "qids": [
+       "impeccable:94963d",
+       "impeccable:bd1fc5",
+       "impeccable:a67707"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button font-size >= 11px",
+    "values": [
+     {
+      "value": "11px",
+      "qids": [
+       "impeccable:94963d",
+       "impeccable:bd1fc5",
+       "impeccable:a67707"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label font-size >= 11px",
+    "values": [
+     {
+      "value": "11px",
+      "qids": [
+       "impeccable:94963d",
+       "impeccable:bd1fc5",
+       "impeccable:a67707"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation font-size >= 11px",
+    "values": [
+     {
+      "value": "11px",
+      "qids": [
+       "impeccable:94963d",
+       "impeccable:bd1fc5",
+       "impeccable:a67707"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:contentinfo font-size >= 11px",
+    "values": [
+     {
+      "value": "11px",
+      "qids": [
+       "impeccable:94963d",
+       "impeccable:bd1fc5",
+       "impeccable:a67707"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* font-size >= 11pt",
+    "values": [
+     {
+      "value": "11pt",
+      "qids": [
+       "impeccable:a21b20"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body font-size == 17pt",
+    "values": [
+     {
+      "value": "17pt",
+      "qids": [
+       "impeccable:a21b20"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Is all text comfortably readable, never tiny?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:c67673",
+       "apple-hig:8ecf1e",
+       "taste-skill:f6a88b",
+       "taste-skill:d07350",
+       "taste-skill:b01509"
+      ]
+     }
+    ],
+    "class": "type"
+   }
+  ],
+  "no-vulnerable-libs": [
+   {
+    "rule": "page ask \"Does the page avoid front-end libraries with known vulnerabilities?\"",
+    "values": [],
+    "class": "process"
+   }
+  ],
+  "csp-headers": [
+   {
+    "rule": "page lighthouse:clickjacking-mitigation pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:de8652"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:csp-xss pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:1d3453"
+      ]
+     }
+    ]
+   }
+  ],
+  "external-link-noopener": [
+   {
+    "rule": "aria:link ask \"Do external links that open a new tab set rel=noopener?\"",
+    "values": [],
+    "class": "interaction"
+   }
+  ],
+  "geolocation-on-gesture": [
+   {
+    "rule": "page lighthouse:geolocation-on-start pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:c0e447"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:notification-on-start pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:5384f8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are device APIs (orientation, ambient light, geolocation) used sparingly and only with user permission?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:db6280"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "paste-not-blocked": [
+   {
+    "rule": "aria:textbox lighthouse:paste-preventing-inputs pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:98ef13",
+       "ui-craft:1b0b96",
+       "vercel:649e9f",
+       "vercel:84c121",
+       "vercel:b54bfe",
+       "lighthouse:3c1e85"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does the form work with password managers and allow pasting one-time codes?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:6a7730",
+       "vercel:008198"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "cap-3d-canvas-performance": [
+   {
+    "rule": "page axl:canvas-dpr-max <= 2",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:0bd7d4",
+       "ui-craft:ce7c5b",
+       "ui-craft:7424b0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does a mostly static hero canvas render on demand instead of every frame?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ce7c5b"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Are animation steps scaled by frame delta instead of fixed increments?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:222b0d",
+       "ui-craft:62a0b3"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Are draw calls and shadow resolution budgeted?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:dfad05"
+      ]
+     }
+    ],
+    "class": "perf"
+   },
+   {
+    "rule": "page ask \"Are 3D models cached and preloaded instead of loaded in the component body?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ce6af2"
+      ]
+     }
+    ],
+    "class": "perf"
+   },
+   {
+    "rule": "page ask \"Are repeated meshes drawn with instancing rather than individually?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ba2249"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "avoid-lottie-unless-character-motion": [
+   {
+    "rule": "page ask \"Is Lottie used only for genuinely articulated character motion?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:087870",
+       "hallmark:ca4897",
+       "hallmark:a381df",
+       "hallmark:be3173",
+       "hallmark:ac72a5"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Are spinning logos, checkmark draws, loading spinners and hover micro-interactions built in CSS or SVG instead of Lottie or JS?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a381df",
+       "hallmark:58228a",
+       "hallmark:d63979",
+       "hallmark:be3173"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "will-change-only-for-first-frame-stutter": [
+   {
+    "rule": "page ask \"Is will-change added only where first-frame stutter was observed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:bf3251",
+       "feel-better:a60514",
+       "feel-better:7133c4",
+       "feel-better:0b7c89"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page axl:persistent-will-change-elements == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "feel-better:fea369",
+       "hallmark:e42483"
+      ]
+     }
+    ]
+   }
+  ],
+  "will-change-only-during-animation": [
+   {
+    "rule": "page axl:persistent-will-change-elements == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:16a702",
+       "impeccable:60543f",
+       "ui-craft:e78a5b",
+       "ui-craft:105cca",
+       "ui-craft:8cb61c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is will-change used sparingly, only on elements that will animate?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:b3bbdc"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "keep-will-change-rare": [
+   {
+    "rule": "page ask \"Is will-change used sparingly, only on elements that will animate?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:793028",
+       "taste-skill:8c6901"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "use-scroll-timelines-not-js-for-scroll-linked-mo": [
+   {
+    "rule": "page axl:scroll-event-listeners == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:b21367",
+       "ui-craft:cd9b69",
+       "ui-craft:4ba267"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is scroll-linked motion driven by CSS scroll or view timelines rather than JS?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:040a0c",
+       "ui-craft:31e172",
+       "ui-craft:5c49cb"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "use-css-for-logo-spin-spinner-checkmark-hover-in": [
+   {
+    "rule": "page ask \"Are spinning logos, checkmark draws, loading spinners and hover micro-interactions built in CSS or SVG instead of Lottie or JS?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:28598b",
+       "hallmark:08faf4",
+       "hallmark:fa9279",
+       "hallmark:8c735f"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "apply-noise-only-on-fixed-non-interactive-layer": [
+   {
+    "rule": "page ask \"Are grain and noise overlays applied only to fixed, pointer-events-none pseudo-elements, never to scrolling containers?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:189a30",
+       "taste-skill:537570",
+       "taste-skill:5a5002"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "use-intersectionobserver-or-scroll-timeline-not-": [
+   {
+    "rule": "page axl:scroll-event-listeners == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:8032d7",
+       "taste-skill:e19aba",
+       "taste-skill:e50b1a"
+      ]
+     }
+    ]
+   }
+  ],
+  "limit-animated-blur-radius": [
+   {
+    "rule": "page axl:animated-blur-radius-max <= 8px",
+    "values": [
+     {
+      "value": "8px",
+      "qids": [
+       "ui-craft:878d2d",
+       "ui-craft:75d9fb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:static-blur-radius-max <= 20px",
+    "values": [
+     {
+      "value": "20px",
+      "qids": [
+       "ui-craft:878d2d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is blur kept off large surfaces?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8b343d",
+       "ui-craft:75d9fb"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "batch-layout-reads-and-writes": [
+   {
+    "rule": "page lighthouse:forced-reflow-insight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:0eec91",
+       "vercel:0ba3d2",
+       "vercel:960712"
+      ]
+     }
+    ]
+   }
+  ],
+  "prefer-uncontrolled-inputs": [
+   {
+    "rule": "aria:textbox ask \"Are inputs uncontrolled, or cheap per keystroke when controlled?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:171dcc",
+       "vercel:011bd7",
+       "vercel:e06b3c"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "video-needs-poster-to-prevent-layout-shift": [
+   {
+    "rule": "aria:figure axl:videos-without-poster == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:a34645",
+       "hallmark:ea2d94"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:lcp-fetchpriority == high",
+    "values": [
+     {
+      "value": "high",
+      "qids": [
+       "hallmark:ea2d94"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:lazy-loaded-lcp-element == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:ea2d94"
+      ]
+     }
+    ]
+   }
+  ],
+  "optimise-svg-exports": [
+   {
+    "rule": "aria:img ask \"Are SVG exports optimised, with no editor metadata or unused defs?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:8aaabc",
+       "hallmark:fa38c8"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "prefer-platform-features-over-js-animation": [
+   {
+    "rule": "page ask \"Is the platform used before JavaScript, except where it cannot express the orchestration?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:75817c"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "aria:img ask \"Do morphing paths have matching anchor counts, or use clip-path instead?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:379bfe"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-three-js-for-stationary-content": [
+   {
+    "rule": "page ask \"Is Three.js used only where the content is interactive?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:0ae033",
+       "hallmark:612cde"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "cancel-requestanimationframe-loops-on-unmount": [
+   {
+    "rule": "process ask \"Does every requestAnimationFrame loop or timeline have an owner that cancels it on unmount?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:353222",
+       "ui-craft:4f196d"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "reuse-a-single-audiocontext": [
+   {
+    "rule": "page axl:audio-contexts <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "ui-craft:5811a9",
+       "ui-craft:35d29e"
+      ]
+     }
+    ]
+   }
+  ],
+  "split-text-only-on-headlines": [
+   {
+    "rule": "text:body axl:split-text-elements == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:73b64c",
+       "ui-craft:cde94d"
+      ]
+     }
+    ]
+   }
+  ],
+  "reuse-tweens-in-frequent-handlers": [
+   {
+    "rule": "process ask \"Do frequent event handlers reuse one tween instead of creating a new one per event?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2331f7",
+       "ui-craft:4631a6"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "prefer-css-animation-over-js": [
+   {
+    "rule": "page ask \"Are animations built in CSS or the Web Animations API before JS libraries?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:efd424",
+       "vercel:3c2fb1"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "let-css-size-layout-not-js": [
+   {
+    "rule": "page ask \"Is layout done with flex, grid or intrinsic sizing rather than measured in JS?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:a0add5",
+       "vercel:f15d20"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "guard-date-rendering-against-hydration-mismatch": [
+   {
+    "rule": "page ask \"Is date and time rendering guarded against hydration mismatch?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:776d61",
+       "vercel:a11597"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "autoplay-video-needs-muted-loop-playsinline": [
+   {
+    "rule": "aria:figure axl:autoplay-video-missing-attrs == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:61ef28"
+      ]
+     }
+    ]
+   }
+  ],
+  "self-host-production-assets": [
+   {
+    "rule": "page axl:third-party-asset-urls == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:266c65"
+      ]
+     }
+    ]
+   }
+  ],
+  "never-inline-base64-placeholder-images": [
+   {
+    "rule": "page axl:inline-base64-images == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:2ba92f"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-css-gradients-before-svg-or-images": [
+   {
+    "rule": "page ask \"Are CSS gradients used before SVG or images when they can do the job?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:5e0c2f"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "respect-data-saver-for-autoplay-video": [
+   {
+    "rule": "aria:figure ask \"Does autoplay video fall back to its poster when data-saver is on?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:bbd45b"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "animate-transform-not-clip-path-recalculation-on": [
+   {
+    "rule": "page ask \"Is transform animated instead of recalculating clip-path on scroll?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c78210"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "tight-svg-viewbox": [
+   {
+    "rule": "aria:img ask \"Does each SVG viewBox match the design bounds with no padding?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:eb94e3"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "static-fallback-for-webgl-canvas": [
+   {
+    "rule": "page ask \"Does a failed WebGL canvas show a static poster image?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7eefa0"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-intersectionobserver-not-scroll-listeners": [
+   {
+    "rule": "page axl:scroll-event-listeners == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:6a9c4b"
+      ]
+     }
+    ]
+   }
+  ],
+  "paginate-instead-of-loading-everything": [
+   {
+    "rule": "aria:list ask \"Do long lists paginate instead of loading everything?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:8b02c2"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "server-side-auth-redirects-avoid-flash-of-wrong-": [
+   {
+    "rule": "process ask \"Are auth gate redirects done server-side before the client renders?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:89fe15"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "paint-response-shell-before-first-token": [
+   {
+    "rule": "page lighthouse:first-contentful-paint <= 400ms",
+    "values": [
+     {
+      "value": "400ms",
+      "qids": [
+       "ui-craft:397acd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are the message shell, thinking indicator and stop button painted before the first token?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:397acd"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "avoid-many-promoted-layers": [
+   {
+    "rule": "page ask \"Are promoted compositor layers few and small?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:d289e0"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "never-animate-inherited-css-variables": [
+   {
+    "rule": "page ask \"Are inherited CSS variables never animated?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b57710"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "minimize-re-renders": [
+   {
+    "rule": "process ask \"Are re-renders tracked and minimised?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:f48a28"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "profile-with-cpu-and-network-throttling": [
+   {
+    "rule": "process ask \"Is the page profiled with CPU and network throttling?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:ff454d"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "use-woff2-web-fonts": [
+   {
+    "rule": "text:* axl:non-woff2-fonts == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "webdev:5a40b8"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "new_measures": {
+  "axl:lazy-loaded-lcp-element": "Count (0 or 1) of the page's largest-contentful-paint element carrying loading=lazy, for img or video.",
+  "axl:eager-below-fold-images": "Count of img elements whose box starts below the initial viewport fold and lack loading=lazy.",
+  "axl:lcp-fetchpriority": "Value of the fetchpriority attribute on the page's LCP element (auto, high or low).",
+  "axl:animated-gif-images": "Count of img elements whose source is an animated GIF.",
+  "axl:cdn-origins-without-preconnect": "Count of distinct third-party asset/CDN origins the page loads from that lack a link rel=preconnect.",
+  "axl:max-dom-depth": "Maximum element nesting depth in the document, as a count of levels.",
+  "axl:skeleton-show-delay": "Milliseconds between a loading state starting and its skeleton placeholder becoming visible, per ui:skeleton.",
+  "axl:unused-font-files": "Count of web font files (family + weight) downloaded but never used by rendered text.",
+  "axl:mutation-response-time": "Milliseconds for POST, PATCH and DELETE requests to complete, worst case, measured in the page.",
+  "axl:rendered-items": "Count of item rows (li, tr or role listitem/row) present in the DOM within one list or table.",
+  "axl:request-debounce": "Milliseconds a text field waits after the last keystroke before it sends its request.",
+  "axl:above-fold-images-without-preload": "Count of img elements in the initial viewport that have no link rel=preload and are not the fetchpriority=high LCP element.",
+  "axl:document-write-calls": "Count of document.write calls executed while loading the page.",
+  "axl:missing-social-meta-tags": "Count of missing tags among og:image, og:title, og:description and twitter:card in the head.",
+  "axl:canvas-dpr-max": "Largest device-pixel-ratio a canvas renders at (canvas pixel width divided by CSS width).",
+  "axl:persistent-will-change-elements": "Count of elements whose computed will-change is not auto while no animation or transition is running on them.",
+  "axl:scroll-event-listeners": "Count of scroll event listeners registered on window, document or scrolling elements.",
+  "axl:animated-blur-radius-max": "Largest blur radius in px, in filter or backdrop-filter, on any element while it animates.",
+  "axl:static-blur-radius-max": "Largest blur radius in px, in filter or backdrop-filter, on any element at rest.",
+  "axl:videos-without-poster": "Count of video elements with no poster attribute.",
+  "axl:audio-contexts": "Count of AudioContext instances created by the page.",
+  "axl:split-text-elements": "Count of per-character or per-word wrapper spans generated inside the element (text splitting).",
+  "axl:autoplay-video-missing-attrs": "Count of video elements with autoplay that lack any of muted, loop or playsinline.",
+  "axl:third-party-asset-urls": "Count of image, logo, video, icon and font URLs that point to a different origin than the page.",
+  "axl:inline-base64-images": "Count of base64 data: image URIs in HTML or CSS.",
+  "axl:non-woff2-fonts": "Count of web font files whose format is not woff2."
+ },
+ "new_elements": {}
+}

@@ -1,0 +1,550 @@
+{
+ "class": "Agent workflow",
+ "tweaks": {
+  "scan-before-edit": [
+   {
+    "rule": "process ask \"Was the existing UI scanned before any edit was made?\"",
+    "class": "process",
+    "values": []
+   }
+  ],
+  "read-design-context": [
+   {
+    "rule": "process ask \"Were the existing design tokens, fonts, framework and design context read before designing?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:437803",
+       "deslop:1654cd",
+       "ui-craft:e23ca0",
+       "ui-craft:fc6ff7",
+       "anthropic:d1ccbc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "process ask \"Does new code match the naming and export conventions of neighboring components?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ac18d3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "process ask \"Was a real reference obtained from the user and matched?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "unslop:8c08bd"
+      ]
+     }
+    ]
+   }
+  ],
+  "measure-with-tools": [
+   {
+    "rule": "process ask \"Was the result verified with measurements rather than intuition?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:fc4b92"
+      ]
+     }
+    ]
+   }
+  ],
+  "screenshot-verify": [
+   {
+    "rule": "process ask \"Was the result verified with rendered evidence (screenshots or browser inspection) rather than assumed?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:6c740a",
+       "impeccable:32025d",
+       "impeccable:c17f79",
+       "impeccable:4f617f",
+       "deslop:ae3204",
+       "deslop:aa5fdd",
+       "ui-craft:9d7fdc",
+       "ui-craft:067a32",
+       "impeccable:a74f7b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "process ask \"Was the result checked at desktop, tablet and mobile viewports?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "oneredoak:eb32b4",
+       "oneredoak:81e923",
+       "oneredoak:5f3aeb",
+       "oneredoak:524863",
+       "ui-craft:c0826d",
+       "ui-craft:499e03"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-change-at-a-time": [
+   {
+    "rule": "process ask \"Are changes small, targeted and limited to the named target rather than rewrites?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:5e2493",
+       "taste-skill:746292",
+       "taste-skill:79478a",
+       "taste-skill:281855",
+       "taste-skill:d43e62"
+      ]
+     }
+    ]
+   }
+  ],
+  "generate-extraction-oriented-images-per-section": [
+   {
+    "rule": "process ask \"Is each section generated as its own large, readable image rather than crops of a larger image?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:250a14",
+       "taste-skill:42e864",
+       "taste-skill:6f49d4",
+       "taste-skill:6be849",
+       "taste-skill:53d5b6",
+       "taste-skill:bfef3d",
+       "taste-skill:4850f5",
+       "taste-skill:d3616c",
+       "taste-skill:f7f0af",
+       "taste-skill:6ef095",
+       "taste-skill:8175a4",
+       "taste-skill:fd5b4a",
+       "taste-skill:f3de8c",
+       "taste-skill:4d5491",
+       "taste-skill:4dce9b",
+       "taste-skill:9fb0a8",
+       "taste-skill:bd36f7",
+       "taste-skill:7102e0",
+       "taste-skill:cb8645",
+       "taste-skill:08ba0a",
+       "taste-skill:7e0f22",
+       "taste-skill:e1623d",
+       "taste-skill:e332d3",
+       "taste-skill:abf736",
+       "taste-skill:5794dc",
+       "taste-skill:bdb07a",
+       "taste-skill:37c23b"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-design-language-consistent-across-derived-i": [
+   {
+    "rule": "process ask \"Do all generated images and screens keep one design language (palette, typography, buttons, radius, image treatment)?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:032ab4",
+       "taste-skill:271654",
+       "taste-skill:c73c22",
+       "taste-skill:60065d",
+       "taste-skill:078af6",
+       "taste-skill:c2e036",
+       "taste-skill:90e619",
+       "taste-skill:9ee71a",
+       "taste-skill:b6d167",
+       "taste-skill:e73bc6",
+       "taste-skill:804d19",
+       "taste-skill:70ace1",
+       "taste-skill:051070",
+       "taste-skill:9751ce",
+       "taste-skill:293f1d",
+       "taste-skill:6c592e",
+       "taste-skill:2dd0df",
+       "taste-skill:afbc12",
+       "taste-skill:51ce1b",
+       "taste-skill:ae92eb"
+      ]
+     }
+    ]
+   }
+  ],
+  "analyze-reference-image-deeply-before-implementi": [
+   {
+    "rule": "process ask \"Was the reference image analyzed in depth (typography, text, buttons, components) before implementation?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:c5cc99",
+       "taste-skill:be7eff",
+       "taste-skill:0bdc6b",
+       "taste-skill:ce2e13",
+       "taste-skill:5f7e4d",
+       "taste-skill:5372cc",
+       "taste-skill:995b49",
+       "taste-skill:dd57d8",
+       "taste-skill:063eab",
+       "taste-skill:6923b0",
+       "taste-skill:f90d31",
+       "taste-skill:2c7d07",
+       "taste-skill:d1eb13",
+       "taste-skill:aa620a",
+       "taste-skill:b5b81a"
+      ]
+     }
+    ]
+   }
+  ],
+  "generate-one-image-per-section": [
+   {
+    "rule": "process ask \"Is there exactly one horizontal image per section, with the image count equal to the section count?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d5af45",
+       "taste-skill:c5d1f5",
+       "taste-skill:f89b2b",
+       "taste-skill:98d2b7",
+       "taste-skill:5aec03",
+       "taste-skill:4a0f80",
+       "taste-skill:096a4a",
+       "taste-skill:ede518",
+       "taste-skill:de119a",
+       "taste-skill:860065",
+       "taste-skill:a97337",
+       "taste-skill:a441e7",
+       "taste-skill:cd95f9",
+       "taste-skill:e04b1b",
+       "taste-skill:0fc3b7"
+      ]
+     }
+    ]
+   }
+  ],
+  "generate-reference-image-before-coding": [
+   {
+    "rule": "process ask \"Was a reference design image generated and analyzed before coding began?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ad1622",
+       "taste-skill:42116d",
+       "taste-skill:ed8f46",
+       "taste-skill:adb2f4",
+       "taste-skill:33d2e9",
+       "taste-skill:fe7f3d",
+       "taste-skill:45d127",
+       "taste-skill:6c2f59",
+       "taste-skill:04eb5b",
+       "taste-skill:694902",
+       "taste-skill:3097bb",
+       "taste-skill:d6e659",
+       "taste-skill:aadc6b",
+       "taste-skill:55e690"
+      ]
+     }
+    ]
+   }
+  ],
+  "preserve-reference-design-fidelity-in-code": [
+   {
+    "rule": "page ask \"Does the coded result keep the look, spacing and typography of the reference design rather than a generic layout?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:3262ca",
+       "taste-skill:b12087",
+       "taste-skill:bbf138",
+       "taste-skill:c88bd0",
+       "taste-skill:559cb8",
+       "taste-skill:a54b45",
+       "taste-skill:6c35d9",
+       "taste-skill:7ae904",
+       "taste-skill:b0505c",
+       "taste-skill:6b38c4",
+       "taste-skill:566c5b",
+       "taste-skill:3971bc",
+       "taste-skill:081ade",
+       "taste-skill:1a7e07"
+      ]
+     }
+    ]
+   }
+  ],
+  "force-divergence-by-mechanism-not-prompting": [
+   {
+    "rule": "process ask \"Was divergence from the default idea forced by a mechanism (such as picking a later candidate) rather than by asking to be original?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:52845b",
+       "deslop:87601d",
+       "deslop:8ba5c7",
+       "deslop:665ccd",
+       "deslop:5d07fb",
+       "deslop:6d97e9"
+      ]
+     }
+    ]
+   }
+  ],
+  "randomize-layout-choices-from-a-seed": [
+   {
+    "rule": "process ask \"Were layout choices selected by a deterministic seeded randomization rather than defaulting to the first option?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:3637b6",
+       "taste-skill:054b9b",
+       "taste-skill:bcfd9e"
+      ]
+     }
+    ]
+   }
+  ],
+  "write-design-plan-before-code": [
+   {
+    "rule": "process ask \"Was a design plan written and verified before any UI code?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:a64290",
+       "taste-skill:eb39bf",
+       "taste-skill:fe04a1"
+      ]
+     }
+    ]
+   }
+  ],
+  "refine-past-the-first-render": [
+   {
+    "rule": "process ask \"Was the design refined past the first render until it felt clean and consistent?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:47540c",
+       "taste-skill:0d5693",
+       "taste-skill:0f02a2"
+      ]
+     }
+    ]
+   }
+  ],
+  "state-inferred-audience-and-tone-assumptions": [
+   {
+    "rule": "process ask \"Were the inferred audience, use and tone stated at the top of the reply?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:3d84c5",
+       "hallmark:00a71e"
+      ]
+     }
+    ]
+   }
+  ],
+  "check-layout-skeleton-not-only-surface": [
+   {
+    "rule": "page ask \"Does the layout skeleton differ from the category default template, not only the surface styling?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:c77282",
+       "deslop:162bce"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-layout-and-aesthetic-between-generations": [
+   {
+    "rule": "process ask \"Does the layout and aesthetic differ from the previous generation?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:baca5b",
+       "taste-skill:5cd81e"
+      ]
+     }
+    ]
+   }
+  ],
+  "infer-design-direction-from-the-brief": [
+   {
+    "rule": "process ask \"Was the design direction inferred from the brief before code was touched?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:c41879",
+       "taste-skill:b44b2e"
+      ]
+     }
+    ]
+   }
+  ],
+  "generate-section-specific-imagery-assets": [
+   {
+    "rule": "process ask \"Were section-specific image assets generated with an available image tool rather than hand-rolled CSS?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:3d88a1",
+       "taste-skill:222829"
+      ]
+     }
+    ]
+   }
+  ],
+  "plan-layout-with-wireframes-and-alignment-before": [
+   {
+    "rule": "process ask \"Was the layout planned with wireframes and alignment guidance before building?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:cfb958"
+      ]
+     }
+    ]
+   }
+  ],
+  "skip-anti-gimmick-guards": [
+   {
+    "rule": "process ask \"Was the design made without an anti-gimmick guard that caps the work?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:09c436"
+      ]
+     }
+    ]
+   }
+  ],
+  "brief-with-commit-language-not-hedges": [
+   {
+    "rule": "process ask \"Is the brief written with commit language rather than hedges and caveats?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:b48f89"
+      ]
+     }
+    ]
+   }
+  ],
+  "widen-references-beyond-product-category": [
+   {
+    "rule": "process ask \"Were references widened beyond the product category when the brief was generic?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:e64de3"
+      ]
+     }
+    ]
+   }
+  ],
+  "break-default-layout-biases": [
+   {
+    "rule": "page ask \"Does the layout avoid default LLM biases (narrow wrapped headings, empty bento gaps, cheap meta-labels)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ae3973"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-unnecessary-follow-up-questions": [
+   {
+    "rule": "process ask \"Were follow-up questions avoided where a strong interpretation was possible?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:221119"
+      ]
+     }
+    ]
+   }
+  ],
+  "inspect-page-in-both-color-modes": [
+   {
+    "rule": "page ask \"Was the page inspected in both light and dark mode?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:1a299b"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "new_measures": {},
+ "new_elements": {}
+}

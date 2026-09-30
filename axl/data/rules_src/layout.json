@@ -1,0 +1,4100 @@
+{
+ "class": "Space & layout",
+ "tweaks": {
+  "spacing": [
+   {
+    "rule": "page axl:spacing-off-scale == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:59f92d",
+       "impeccable:4b2dac",
+       "openai:aae758"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is spacing tight within groups and generous between sections, so a rhythm is visible?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:bce1dd",
+       "claw-design:5c43b9",
+       "impeccable:6b3702",
+       "impeccable:018921",
+       "hallmark:bb7df9",
+       "taste-skill:8987e0",
+       "ui-craft:14cb50",
+       "claw-design:698d11"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body max-width <= 65ch",
+    "values": [
+     {
+      "value": "65ch",
+      "qids": [
+       "ui-craft:14cb50"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main padding >= 24px",
+    "values": [
+     {
+      "value": "24px",
+      "qids": [
+       "ui-craft:f1ccf0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main gap == 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "ui-craft:f1ccf0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form gap == 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "ui-craft:a7ce9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form margin-bottom == 48px",
+    "values": [
+     {
+      "value": "48px",
+      "qids": [
+       "ui-craft:a7ce9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label margin-bottom == 4px",
+    "values": [
+     {
+      "value": "4px",
+      "qids": [
+       "ui-craft:a7ce9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do adjacent nesting levels use different spacing values?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ab90a8",
+       "ui-craft:a7ce9c"
+      ]
+     }
+    ]
+   }
+  ],
+  "compact": [
+   {
+    "rule": "text:body font-size between 13px 14px",
+    "values": [
+     {
+      "value": "13px-14px",
+      "qids": [
+       "ui-craft:ca752c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card padding between 16px 20px",
+    "values": [
+     {
+      "value": "16px-20px",
+      "qids": [
+       "ui-craft:b07d6e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:row height between 32px 36px",
+    "values": [
+     {
+      "value": "32px-36px",
+      "qids": [
+       "ui-craft:b4a6f2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the density of each view chosen to fit its use frequency and content complexity?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:0b07e1",
+       "impeccable:d8744f",
+       "impeccable:94c06b",
+       "claw-design:555d73"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is one density used throughout the page, without mixing loose and tight rows?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:097171"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are repeated metrics chunked into scan-friendly groups?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:259e17"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Are metric cards kept compact rather than sprawling?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:d1ef3c",
+       "claw-design:700917",
+       "ui-craft:b07d6e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the first viewport show enough data to decide without scrolling?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e3fae6",
+       "ui-craft:abae16"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Are all numbers set in a monospace font?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:decd7a",
+       "taste-skill:5c9871"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "media:narrow ask \"Is space used sparingly on phones?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:45cb65"
+      ]
+     }
+    ]
+   }
+  ],
+  "airy": [
+   {
+    "rule": "page ask \"Does every major block have visible breathing room around it?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:bce1dd",
+       "claw-design:df22df",
+       "claw-design:19a087",
+       "impeccable:35d9ee",
+       "impeccable:12453f",
+       "oneredoak:f1aa42",
+       "deslop:47fb0f",
+       "deslop:915287",
+       "taste-skill:63a7b2",
+       "taste-skill:ac2886",
+       "taste-skill:c8ba1a",
+       "taste-skill:397272",
+       "taste-skill:54af7f",
+       "taste-skill:d1962b",
+       "taste-skill:d9badd",
+       "taste-skill:faf3f3",
+       "taste-skill:00fccf",
+       "taste-skill:41a308",
+       "taste-skill:803adf",
+       "taste-skill:1196b1",
+       "taste-skill:0868f6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the density of each view chosen to fit its use frequency and content complexity?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:0b07e1",
+       "impeccable:d8744f",
+       "impeccable:94c06b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is a card removed in favour of negative space where it adds nothing?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:e018e1"
+      ]
+     }
+    ]
+   }
+  ],
+  "divider": [
+   {
+    "rule": "page ask \"Are sections separated by more than equal whitespace, such as a rule or colour shift?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:40021e",
+       "hallmark:668197",
+       "taste-skill:cd3eea"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is one divider style used throughout the build?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:668197"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:row border-bottom-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "deslop:4010ad",
+       "deslop:578600"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body max-width between 65ch 75ch",
+    "values": [
+     {
+      "value": "65ch-75ch",
+      "qids": [
+       "deslop:c072b0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:separator width == 100%",
+    "values": [
+     {
+      "value": "100%",
+      "qids": [
+       "taste-skill:5dbd51"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card border-width between 1px 2px",
+    "values": [
+     {
+      "value": "1px-2px",
+      "qids": [
+       "taste-skill:5dbd51"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Are items grouped with borders, rules or spacing instead of container boxes?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:1ac88d",
+       "taste-skill:ba7104",
+       "taste-skill:ea3d67",
+       "deslop:c072b0"
+      ]
+     }
+    ]
+   }
+  ],
+  "split": [
+   {
+    "rule": "aria:main width == 66.67%",
+    "values": [
+     {
+      "value": "66.67%",
+      "qids": [
+       "govuk:68aa95",
+       "hallmark:c64c85"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the page include an off-grid or asymmetric moment rather than one centred column of equal blocks?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c64c85",
+       "ui-craft:618d07",
+       "ui-craft:ccd38a",
+       "ui-craft:d20dd7",
+       "ui-craft:627be4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the hero asymmetric, with content on one side and a real visual on the other?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "unslop:5e8b80",
+       "ui-craft:ccd38a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is the page free of a row of three equal cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:b7d30b"
+      ]
+     }
+    ]
+   }
+  ],
+  "stack": [
+   {
+    "rule": "aria:main column-count == 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "impeccable:711fd1",
+       "impeccable:401e80",
+       "taste-skill:78b8e2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main flex-direction == column",
+    "values": [
+     {
+      "value": "column",
+      "qids": [
+       "impeccable:4ff6e2",
+       "impeccable:401e80"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body max-width <= 65ch",
+    "values": [
+     {
+      "value": "65ch",
+      "qids": [
+       "taste-skill:4f8934"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the split-header pattern used only when the right column carries a visual or interactive element?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:e044c5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is a reading page structured for comprehension?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:17a1b2"
+      ]
+     }
+    ]
+   }
+  ],
+  "reflow": [
+   {
+    "rule": "page wcag:1.4.10 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e47347"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main grid-template-columns == 1fr @media:narrow",
+    "values": [
+     {
+      "value": "1fr",
+      "qids": [
+       "taste-skill:d8025c",
+       "taste-skill:72ba55",
+       "taste-skill:0e76ff",
+       "taste-skill:1d8719",
+       "taste-skill:fa1f9c",
+       "taste-skill:205817",
+       "deslop:01850d",
+       "deslop:0d6a36"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main padding-left >= 16px @media:narrow",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "taste-skill:0e76ff",
+       "taste-skill:72ba55",
+       "taste-skill:1d8719",
+       "taste-skill:fa1f9c",
+       "taste-skill:c31498"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does every multi-column layout declare its own collapse to a single column on small screens?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:9eb9d1",
+       "taste-skill:c31498",
+       "taste-skill:22c95b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the layout reduce columns when the font size increases?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:b7188d"
+      ]
+     }
+    ]
+   }
+  ],
+  "spacing-scale-4pt": [
+   {
+    "rule": "page axl:spacing-off-scale == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:b0cfe6",
+       "hallmark:a84d7a",
+       "oneredoak:600431",
+       "deslop:6e666b",
+       "ui-craft:8f8b4c"
+      ]
+     },
+     {
+      "value": "4px",
+      "qids": [
+       "impeccable:d6e52e",
+       "deslop:e194ad",
+       "ui-craft:cf2d9c"
+      ]
+     },
+     {
+      "value": "8px",
+      "qids": [
+       "oneredoak:450261",
+       "deslop:e194ad",
+       "ui-craft:8f8b4c"
+      ]
+     }
+    ]
+   }
+  ],
+  "spacing-tokens": [
+   {
+    "rule": "page axl:spacing-off-scale == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a84d7a",
+       "ui-craft:db407d",
+       "ui-craft:2ff4b2",
+       "unslop:c72076",
+       "openai:259865"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does all spacing come from named scale tokens rather than raw pixel values?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a84d7a",
+       "govuk:42c7cf",
+       "govuk:aee4f9",
+       "ui-craft:2ff4b2",
+       "unslop:c72076"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are reusable spacing and container roles named semantically?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:67e230"
+      ]
+     }
+    ]
+   }
+  ],
+  "section-padding-generous": [
+   {
+    "rule": "aria:region padding-top >= 96px",
+    "values": [
+     {
+      "value": "96px",
+      "qids": [
+       "taste-skill:8ea62e",
+       "taste-skill:2452c5",
+       "taste-skill:c92f8f"
+      ]
+     },
+     {
+      "value": "128px",
+      "qids": [
+       "taste-skill:c85b18"
+      ]
+     },
+     {
+      "value": "80px",
+      "qids": [
+       "ui-craft:a24b9b",
+       "ui-craft:e0b490"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card padding between 24px 40px",
+    "values": [
+     {
+      "value": "24px-40px",
+      "qids": [
+       "taste-skill:dc76b0"
+      ]
+     },
+     {
+      "value": "32px",
+      "qids": [
+       "taste-skill:ec5bd0"
+      ]
+     },
+     {
+      "value": "40px",
+      "qids": [
+       "taste-skill:ec5bd0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does every major block have visible breathing room around it?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:df22df",
+       "deslop:47fb0f",
+       "deslop:915287",
+       "taste-skill:c19a15",
+       "taste-skill:8987e0",
+       "taste-skill:c92f8f",
+       "taste-skill:c85b18"
+      ]
+     }
+    ]
+   }
+  ],
+  "group-proximity": [
+   {
+    "rule": "page ask \"Is spacing tighter within groups than between sections?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:6e666b",
+       "impeccable:f3bf2e",
+       "claw-design:decd57",
+       "impeccable:8e90c6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form gap == 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "ui-craft:a7ce9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form margin-bottom == 48px",
+    "values": [
+     {
+      "value": "48px",
+      "qids": [
+       "ui-craft:a7ce9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label margin-bottom == 4px",
+    "values": [
+     {
+      "value": "4px",
+      "qids": [
+       "ui-craft:a7ce9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are related metrics and comparison widgets kept together rather than split across distant sections?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:e5cc99",
+       "claw-design:7bb2e0",
+       "claw-design:1924c7",
+       "claw-design:259e17",
+       "claw-design:188b79"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is unrelated content kept visually distinct without every group becoming an isolated component?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:f33e0a",
+       "impeccable:f4c47b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is grouping made by spacing rather than default card grids?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:70b995",
+       "impeccable:f3bf2e"
+      ]
+     }
+    ]
+   }
+  ],
+  "gap-over-margin": [
+   {
+    "rule": "page ask \"Is sibling spacing done with gap rather than margins?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:9a99cd",
+       "hallmark:69ef46",
+       "impeccable:1136da",
+       "shadcn:efd168",
+       "shadcn:3f0222",
+       "ui-craft:57a624"
+      ]
+     }
+    ]
+   }
+  ],
+  "consistent-page-margins": [
+   {
+    "rule": "aria:main padding-left >= 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "impeccable:25f003"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the page inset the same on both sides, with content inside a max width and consistent gutters?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c37d80",
+       "hallmark:bc05ab",
+       "deslop:5510d7"
+      ]
+     }
+    ]
+   }
+  ],
+  "safe-area-insets": [
+   {
+    "rule": "page padding contains env(safe-area-inset-*)",
+    "values": [
+     {
+      "value": "env(safe-area-inset-*)",
+      "qids": [
+       "impeccable:9e8255",
+       "vercel:f0ea0d",
+       "ui-craft:2ee291"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is content kept clear of system UI such as the camera housing, status bar, navigation bar and keyboard?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:add817",
+       "apple-hig:16c83a",
+       "impeccable:021139",
+       "impeccable:aa6c08"
+      ]
+     }
+    ]
+   }
+  ],
+  "max-content-width": [
+   {
+    "rule": "aria:main max-width between 1200px 1440px",
+    "values": [
+     {
+      "value": "1200px-1440px",
+      "qids": [
+       "taste-skill:18e0f4"
+      ]
+     },
+     {
+      "value": "1400px",
+      "qids": [
+       "taste-skill:3a5eec",
+       "taste-skill:f30a28"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main margin-left == auto",
+    "values": [
+     {
+      "value": "auto",
+      "qids": [
+       "taste-skill:18e0f4",
+       "taste-skill:f30a28",
+       "taste-skill:c31498",
+       "apple-hig:ca52eb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body max-width <= 65ch",
+    "values": [
+     {
+      "value": "65ch",
+      "qids": [
+       "ui-craft:600bf3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the page content constrained to a maximum width so it does not stretch on wide screens?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:5098f1",
+       "ui-craft:bad774",
+       "deslop:5510d7",
+       "govuk:bf547b",
+       "taste-skill:2975da",
+       "ui-craft:44bafb"
+      ]
+     }
+    ]
+   }
+  ],
+  "grid-12-column": [
+   {
+    "rule": "aria:main display == grid",
+    "values": [
+     {
+      "value": "grid",
+      "qids": [
+       "govuk:8467f6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main grid-template-columns == repeat(12, 1fr)",
+    "values": [
+     {
+      "value": "repeat(12, 1fr)",
+      "qids": [
+       "ui-craft:f1ccf0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main gap == 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "ui-craft:f1ccf0"
+      ]
+     }
+    ]
+   }
+  ],
+  "align-to-grid": [
+   {
+    "rule": "page ask \"Do blocks share edges, columns or baselines on a stable grid?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:78037a",
+       "claw-design:5d2f31",
+       "claw-design:b3cb94",
+       "hallmark:5240c3",
+       "impeccable:2ba427",
+       "impeccable:878fa8",
+       "deslop:aaa17a",
+       "taste-skill:b75002",
+       "taste-skill:d6b840",
+       "unslop:1fb5ea",
+       "vercel:0e491a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are any misalignments intentional and explainable?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:85e793",
+       "claw-design:1b8093"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do shared elements in side-by-side cards or columns start at the same vertical position?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:3f6c3f",
+       "taste-skill:dd1aa0"
+      ]
+     }
+    ]
+   }
+  ],
+  "left-edge-alignment": [
+   {
+    "rule": "page ask \"Does every section's content align to the same left and right edges, including on tinted bands?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:27ea91",
+       "hallmark:a51363"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does each section use no more than one or two alignment types?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:d94b84",
+       "claw-design:4853c7",
+       "deslop:aaa17a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do blocks share edges, columns or baselines on a stable grid?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:78037a",
+       "claw-design:5d2f31",
+       "apple-hig:848212",
+       "deslop:aaa17a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body text-align == left",
+    "values": [
+     {
+      "value": "left",
+      "qids": [
+       "deslop:aaa17a"
+      ]
+     }
+    ]
+   }
+  ],
+  "optical-alignment": [
+   {
+    "rule": "ui:icon ask \"Are icons, play buttons and button text optically centred, with 1px nudges where geometric centring looks off?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:e65f80",
+       "impeccable:df7672",
+       "taste-skill:b85594",
+       "ui-craft:d45ff3",
+       "vercel:d1711b",
+       "impeccable:2ba427"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Is bottom padding slightly larger than top padding where that looks balanced?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:5caef9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Do icon-leading buttons use slightly less padding on the icon side?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "2px",
+      "qids": [
+       "ui-craft:e741fb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon ask \"Are round shapes drawn slightly larger than square ones so they read as the same size?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:080bbd"
+      ]
+     }
+    ]
+   }
+  ],
+  "centered-vertical-icon": [
+   {
+    "rule": "aria:navigation align-items == center",
+    "values": [
+     {
+      "value": "center",
+      "qids": [
+       "hallmark:3116de"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:toolbar align-items == center",
+    "values": [
+     {
+      "value": "center",
+      "qids": [
+       "hallmark:3116de"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon ask \"Are icon and text lockups balanced in weight, size, spacing and colour?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:85d8ff"
+      ]
+     }
+    ]
+   }
+  ],
+  "responsive-breakpoints": [
+   {
+    "rule": "page wcag:1.4.10 pass",
+    "values": [
+     {
+      "value": "320px",
+      "qids": [
+       "hallmark:cd26aa",
+       "hallmark:fa240e",
+       "hallmark:0daf77"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the page render without loss at 320, 375, 414 and 768px widths?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "320px",
+      "qids": [
+       "hallmark:cd26aa",
+       "hallmark:fa240e",
+       "hallmark:0daf77"
+      ]
+     },
+     {
+      "value": "375px",
+      "qids": [
+       "hallmark:cd26aa",
+       "hallmark:fa240e",
+       "hallmark:0daf77"
+      ]
+     },
+     {
+      "value": "414px",
+      "qids": [
+       "hallmark:cd26aa",
+       "hallmark:fa240e",
+       "hallmark:0daf77"
+      ]
+     },
+     {
+      "value": "768px",
+      "qids": [
+       "hallmark:cd26aa",
+       "hallmark:fa240e",
+       "hallmark:0daf77"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are breakpoints written in rem so they respect the user's font size?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "rem",
+      "qids": [
+       "hallmark:fe7701",
+       "hallmark:335182"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are breakpoints placed where the content breaks rather than at device widths?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:5d1983",
+       "impeccable:658ec8",
+       "impeccable:2f9689",
+       "ui-craft:ea55ce",
+       "deslop:97bb00",
+       "impeccable:a14c30"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do multi-column grids collapse to a single column below 60rem?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "60rem",
+      "qids": [
+       "hallmark:822b38",
+       "hallmark:452bc3",
+       "hallmark:b6841f",
+       "hallmark:e5fb2a",
+       "taste-skill:9eb9d1"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading ask \"Do display sizes shrink one step below 40rem?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": "40rem",
+      "qids": [
+       "hallmark:892023"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation ask \"Is the centre navigation hidden below about 900px, leaving the brand and a CTA or hamburger?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "900px",
+      "qids": [
+       "hallmark:d82077"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the layout verified at every supported viewport, including the user's actual viewport?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ee5ad7",
+       "impeccable:314102",
+       "taste-skill:b42ddf",
+       "oneredoak:4841af",
+       "impeccable:a14c30"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the interface adapt to size changes while keeping functionality and recognisable layout?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:eb0181",
+       "apple-hig:4f8888",
+       "apple-hig:a43748"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the page use the project's existing breakpoint system, with no magic widths?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a656c0",
+       "impeccable:2f9689"
+      ]
+     }
+    ]
+   }
+  ],
+  "mobile-first": [
+   {
+    "rule": "page ask \"Are base styles written for the smallest viewport, with min-width media queries layering complexity?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:01141b",
+       "hallmark:7b0b38",
+       "impeccable:218559",
+       "ui-craft:ac0fb8",
+       "impeccable:33a22f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the design adapt gracefully to smaller screens?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "oneredoak:77e13e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main grid-template-columns == 1fr @media:narrow",
+    "values": [
+     {
+      "value": "1fr",
+      "qids": [
+       "taste-skill:d8025c"
+      ]
+     }
+    ]
+   }
+  ],
+  "viewport-meta": [
+   {
+    "rule": "page lighthouse:meta-viewport pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:fc85af",
+       "axe:e285e6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:1.4.4 pass",
+    "values": [
+     {
+      "value": "200%",
+      "qids": [
+       "wcag22:9b00b6"
+      ]
+     },
+     {
+      "value": "500%",
+      "qids": [
+       "axe:e285e6"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-horizontal-scroll": [
+   {
+    "rule": "page wcag:1.4.10 pass",
+    "values": [
+     {
+      "value": "320px",
+      "qids": [
+       "ui-craft:e47347",
+       "ui-craft:171f32",
+       "hallmark:c22f82",
+       "hallmark:fa240e"
+      ]
+     },
+     {
+      "value": "1920px",
+      "qids": [
+       "hallmark:c22f82",
+       "hallmark:b72cf1"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page overflow-x == clip",
+    "values": [
+     {
+      "value": "clip",
+      "qids": [
+       "hallmark:bebfb8",
+       "hallmark:b10c45",
+       "hallmark:cd26aa",
+       "hallmark:1de83e",
+       "hallmark:1958ad"
+      ]
+     },
+     {
+      "value": "hidden",
+      "qids": [
+       "taste-skill:a0a22c",
+       "vercel:a26caa"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page width !contains 100vw",
+    "values": [
+     {
+      "value": "100vw",
+      "qids": [
+       "hallmark:d4f207"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main grid-template-columns == 1fr @media:narrow",
+    "values": [
+     {
+      "value": "1fr",
+      "qids": [
+       "taste-skill:1d8719",
+       "taste-skill:fa1f9c",
+       "taste-skill:22c95b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does content stay within its container, wrapping text instead of overflowing?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:e6ee39",
+       "ui-craft:547a42",
+       "vercel:b02d56"
+      ]
+     }
+    ]
+   }
+  ],
+  "orientation-support": [
+   {
+    "rule": "page wcag:1.3.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:2118ad",
+       "axe:952366"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do landscape layouts restructure (side-by-side panes, repositioned controls) without clipping or letterboxing?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:32c599",
+       "ui-craft:989c44",
+       "impeccable:6d4eca"
+      ]
+     }
+    ]
+   }
+  ],
+  "container-queries": [
+   {
+    "rule": "ui:card container-type == inline-size",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:fef407",
+       "ui-craft:0211df",
+       "ui-craft:446e28",
+       "ui-craft:f50368",
+       "ui-craft:7072fd",
+       "ui-craft:7c91f6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does each component respond to the space it occupies rather than the viewport?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:fef407",
+       "ui-craft:0211df",
+       "ui-craft:446e28",
+       "ui-craft:7072fd",
+       "ui-craft:3051ad",
+       "ui-craft:a656c0",
+       "deslop:721625"
+      ]
+     }
+    ]
+   }
+  ],
+  "fluid-spacing-clamp": [
+   {
+    "rule": "text:display font-size contains clamp(",
+    "values": [
+     {
+      "value": "clamp(",
+      "qids": [
+       "taste-skill:82c28d",
+       "taste-skill:b5ab7e",
+       "hallmark:25895f",
+       "deslop:cb8a8a",
+       "impeccable:8eb863",
+       "impeccable:c82166",
+       "taste-skill:f282ba"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:region padding-top contains clamp(",
+    "values": [
+     {
+      "value": "clamp(",
+      "qids": [
+       "taste-skill:bacd16",
+       "deslop:cb8a8a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body font-size >= 14px",
+    "values": [
+     {
+      "value": "14px",
+      "qids": [
+       "taste-skill:f282ba"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do continuously changing sizes use clamp() while discrete layout changes use media queries?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:eaf392",
+       "ui-craft:a3f150",
+       "deslop:97bb00",
+       "impeccable:9393b8"
+      ]
+     }
+    ]
+   }
+  ],
+  "dvh-units": [
+   {
+    "rule": "aria:region min-height contains 100dvh",
+    "values": [
+     {
+      "value": "100dvh",
+      "qids": [
+       "taste-skill:b95961",
+       "taste-skill:0e375b",
+       "taste-skill:da1f4c",
+       "taste-skill:0f28d1",
+       "taste-skill:2a80f2",
+       "taste-skill:76cdf2",
+       "ui-craft:0fd83f",
+       "taste-skill:0e76ff",
+       "hallmark:4e989a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:region height !contains 100vh",
+    "values": [
+     {
+      "value": "100vh",
+      "qids": [
+       "taste-skill:b95961",
+       "ui-craft:0fd83f",
+       "hallmark:322d5c"
+      ]
+     }
+    ]
+   }
+  ],
+  "min-height-not-height": [
+   {
+    "rule": "aria:region ask \"Do content containers use min-height rather than a fixed height?\"",
+    "class": "layout",
+    "values": []
+   }
+  ],
+  "aspect-ratio-reserve": [
+   {
+    "rule": "aria:img lighthouse:unsized-images pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:62c011",
+       "impeccable:ed3181",
+       "ui-craft:dc9a1e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:image-aspect-ratio pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ed3181",
+       "openai:2ebba0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:image-size-responsive pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:dc9a1e",
+       "impeccable:ed3181"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:image-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ed3181"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is the image aspect ratio identical across every card in a grid?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c845e6",
+       "openai:2ebba0"
+      ]
+     }
+    ]
+   }
+  ],
+  "touch-target-spacing": [
+   {
+    "rule": "aria:button wcag:2.5.8 pass",
+    "values": [
+     {
+      "value": "24px",
+      "qids": [
+       "wcag22:b70ab9",
+       "axe:a40d91"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button lighthouse:target-size pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:238ec5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-height >= 44px",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "impeccable:28616f"
+      ]
+     },
+     {
+      "value": "48px",
+      "qids": [
+       "impeccable:b44888"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button margin >= 8px",
+    "values": [
+     {
+      "value": "8px",
+      "qids": [
+       "impeccable:b44888"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Are touch targets spaced apart, with no overlapping hit areas?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "60",
+      "qids": [
+       "apple-hig:046207"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "feel-better:990d85",
+       "feel-better:3b0204",
+       "impeccable:aa1a11",
+       "impeccable:28616f",
+       "impeccable:42d808"
+      ]
+     }
+    ]
+   }
+  ],
+  "zoom-400-reflow": [
+   {
+    "rule": "page wcag:1.4.10 pass",
+    "values": [
+     {
+      "value": "400%",
+      "qids": [
+       "wcag22:2b2ca0"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-the-hero-clean-with-one-focal-point": [
+   {
+    "rule": "page ask \"Does the hero fit in the initial viewport, with the headline at most 2 lines and the CTAs visible without scrolling?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "taste-skill:0c5b5e"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7d1173"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the hero subtext at most 20 words and 3-4 lines, cutting copy or reducing font scale if too long?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": "20",
+      "qids": [
+       "taste-skill:0c5b5e"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7d7ab4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the hero hold at most 4 text elements, with no tagline below the CTAs and no trust strip?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "4",
+      "qids": [
+       "taste-skill:6e7699",
+       "taste-skill:7863b2"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:e89edf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the hero built around one primary focal point?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:991924",
+       "taste-skill:4ca98c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the hero clean, calm and readable rather than noisy or busy?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f04369",
+       "taste-skill:d5d1f6",
+       "taste-skill:f43f3c",
+       "taste-skill:3e6329",
+       "taste-skill:5e556c",
+       "taste-skill:5154c2",
+       "taste-skill:194374",
+       "taste-skill:b3aa1f",
+       "taste-skill:9be331",
+       "taste-skill:9139ff"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the first screen uncrowded and readable on a small laptop and a normal phone?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:39a962",
+       "taste-skill:53a8ee",
+       "taste-skill:130a48",
+       "taste-skill:c8a38a",
+       "taste-skill:67fcf9",
+       "taste-skill:2435da",
+       "taste-skill:15150c",
+       "taste-skill:aff730",
+       "taste-skill:f3b5cc",
+       "taste-skill:83070f",
+       "taste-skill:97985a",
+       "taste-skill:0a6b03"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-spacing-cadence-even-between-sections": [
+   {
+    "rule": "page ask \"Is spacing between major sections controlled and fairly even, without abrupt jumps?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:26d72f",
+       "taste-skill:883879",
+       "taste-skill:bbe0a8",
+       "taste-skill:4082bb",
+       "taste-skill:b702c1",
+       "taste-skill:e5006c",
+       "taste-skill:be7122",
+       "taste-skill:b15132",
+       "taste-skill:8c0f88",
+       "taste-skill:db5db8",
+       "taste-skill:b9dcbd"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-default-left-text-right-image-hero": [
+   {
+    "rule": "page ask \"Is the hero anchored by something other than the default left-text / right-image layout unless that is genuinely the strongest fit?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:bc437c",
+       "taste-skill:b09b64",
+       "taste-skill:2a6596",
+       "taste-skill:a3fd2f",
+       "taste-skill:0b6f37",
+       "taste-skill:848a2c",
+       "ui-craft:6f5e6b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is a left-third caption with right-two-thirds visual used sparingly and never twice in a row?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ccbfb9"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-composition-across-sections": [
+   {
+    "rule": "page ask \"Does the page use several different layout families across sections rather than one template?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "taste-skill:c6a593"
+      ]
+     },
+     {
+      "value": "4",
+      "qids": [
+       "taste-skill:88ab7c",
+       "taste-skill:b210c6"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:4a437d",
+       "taste-skill:f351fe"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does each layout family appear at most once on the page?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "taste-skill:416884"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b210c6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are no more than 2 sections in a row built as an image and text split?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "taste-skill:550336"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:11f710"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Do bento grids vary their composition rather than repeating one-sided rows?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:11f710"
+      ]
+     }
+    ]
+   }
+  ],
+  "never-let-primary-cta-or-nav-link-wrap": [
+   {
+    "rule": "aria:button text-wrap-mode == nowrap",
+    "values": [
+     {
+      "value": "nowrap",
+      "qids": [
+       "hallmark:2f7310",
+       "hallmark:d0799f",
+       "hallmark:f487db",
+       "hallmark:22e7aa",
+       "hallmark:5e3b5f",
+       "hallmark:7174de"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation text-wrap-mode == nowrap",
+    "values": [
+     {
+      "value": "nowrap",
+      "qids": [
+       "hallmark:2f7310",
+       "hallmark:d0799f",
+       "hallmark:f487db",
+       "hallmark:22e7aa",
+       "hallmark:5e3b5f",
+       "hallmark:7174de"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:contentinfo text-wrap-mode == nowrap",
+    "values": [
+     {
+      "value": "nowrap",
+      "qids": [
+       "hallmark:f487db",
+       "hallmark:5e3b5f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:tablist text-wrap-mode == nowrap",
+    "values": [
+     {
+      "value": "nowrap",
+      "qids": [
+       "hallmark:f487db",
+       "hallmark:5e3b5f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:breadcrumb text-wrap-mode == nowrap",
+    "values": [
+     {
+      "value": "nowrap",
+      "qids": [
+       "hallmark:f487db",
+       "hallmark:5e3b5f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Is the label shortened so it stays on one line at every viewport from 320 to 1920px?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:66f716",
+       "hallmark:f487db"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-default-hero-plus-three-cards-layout": [
+   {
+    "rule": "page ask \"Does the page include at least one intentional, brief-specific layout move rather than the default template?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:996555",
+       "deslop:1bf875",
+       "deslop:e37d48",
+       "taste-skill:794cf7",
+       "deslop:f7e586"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the page structured by more than a hero, three equal cards, testimonials and a CTA?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:ae16d5",
+       "deslop:e37d48"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is an identical same-sized card grid avoided as the only device for everything?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:4da673",
+       "deslop:996555"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is the page free of a row of three equal cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:996555",
+       "deslop:ae16d5"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-generic-centered-hero-layout": [
+   {
+    "rule": "page ask \"Is the page free of centred-everything, with at most two centred elements per stack?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "hallmark:7d6830"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "claw-design:285ff2",
+       "claw-design:4cf83d",
+       "hallmark:f5e6c8",
+       "hallmark:f2490b"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-dominant-focal-point-per-view": [
+   {
+    "rule": "page ask \"Is there one dominant focal point per page, frame or viewport?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:507cc5",
+       "claw-design:474a6f",
+       "claw-design:4a6374",
+       "claw-design:82b85d"
+      ]
+     }
+    ]
+   }
+  ],
+  "place-key-kpis-first-in-scan-path": [
+   {
+    "rule": "page ask \"Are the highest-priority KPIs and alerts at the start of the scan path, not buried below secondary charts?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:3ed7c1",
+       "claw-design:908d26",
+       "claw-design:c5f962",
+       "claw-design:b599ad"
+      ]
+     }
+    ]
+   }
+  ],
+  "stack-portrait-above-title-in-narrow-cards": [
+   {
+    "rule": "ui:card flex-direction == column",
+    "values": [
+     {
+      "value": "column",
+      "qids": [
+       "hallmark:81e6b3",
+       "hallmark:bef0dc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:avatar width == 4.5rem",
+    "values": [
+     {
+      "value": "4.5rem",
+      "qids": [
+       "hallmark:81e6b3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:avatar height == 4.5rem",
+    "values": [
+     {
+      "value": "4.5rem",
+      "qids": [
+       "hallmark:81e6b3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is side-by-side portrait and text used only where the content column has at least 250px?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "250px",
+      "qids": [
+       "hallmark:c892bd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is text kept clear of overlapping images, decorative layers and other text?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:671c6d",
+       "hallmark:bef0dc"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-uniform-three-column-icon-grids": [
+   {
+    "rule": "ui:card ask \"Is the page free of a row of three equal cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:851659",
+       "ui-craft:1ae6c9",
+       "unslop:cdb84d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are features shown as 2-3 asymmetric rows with real visuals, or as tabs and interactive demos?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "2-3",
+      "qids": [
+       "ui-craft:2342ef",
+       "ui-craft:1ae6c9"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:851659"
+      ]
+     }
+    ]
+   }
+  ],
+  "three-tier-visual-hierarchy": [
+   {
+    "rule": "page ask \"Does the layout make clear what the user should see first?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "unslop:2ff24e",
+       "unslop:049bc1"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does a secondary cluster of supporting information follow the primary one?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:078275"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation ask \"Is the page structure (navigation, footer, sidebar) lowest in perceived weight?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:44233b"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-centering-everything": [
+   {
+    "rule": "page ask \"Is the page free of centred-everything, with at most two centred elements per stack?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "hallmark:3c9d7f"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "claw-design:48feb7",
+       "claw-design:efb8e7"
+      ]
+     }
+    ]
+   }
+  ],
+  "inputs-match-button-height": [
+   {
+    "rule": "aria:textbox height == 44px",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "hallmark:368040",
+       "hallmark:b9a1a3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button height == 44px",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "hallmark:368040",
+       "hallmark:b9a1a3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Do a button and the input beside it share the same height, vertical padding and border width?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a47fad",
+       "hallmark:368040",
+       "hallmark:b9a1a3"
+      ]
+     }
+    ]
+   }
+  ],
+  "fill-bento-grids-with-dense-flow": [
+   {
+    "rule": "page grid-auto-flow contains dense",
+    "values": [
+     {
+      "value": "dense",
+      "qids": [
+       "taste-skill:2ff85d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Do the column and row spans of each bento grid interlock with no blank tile?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:75f206",
+       "taste-skill:93c80e"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-three-equal-feature-cards": [
+   {
+    "rule": "ui:card ask \"Is the page free of a row of three equal cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:a79747",
+       "taste-skill:f92914",
+       "taste-skill:464a79"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are features shown as a zig-zag, asymmetric grid, horizontal scroll or masonry rather than equal cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:a79747",
+       "taste-skill:f92914",
+       "taste-skill:464a79"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-css-grid-for-multi-column-layout": [
+   {
+    "rule": "aria:main display == grid",
+    "values": [
+     {
+      "value": "grid",
+      "qids": [
+       "taste-skill:1d48ea",
+       "taste-skill:66a083",
+       "taste-skill:2ac9a6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page width !contains calc(",
+    "values": [
+     {
+      "value": "calc(",
+      "qids": [
+       "taste-skill:66a083",
+       "taste-skill:2ac9a6",
+       "taste-skill:1d48ea"
+      ]
+     }
+    ]
+   }
+  ],
+  "restrict-z-index-to-systemic-layers": [
+   {
+    "rule": "page ask \"Is z-index reserved for systemic layers such as sticky navigation, modals and overlays?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:455907",
+       "taste-skill:aaea26",
+       "taste-skill:830a23"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is z-index drawn from a documented named scale rather than ad-hoc values?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:830a23"
+      ]
+     }
+    ]
+   }
+  ],
+  "cap-hero-top-padding": [
+   {
+    "rule": "page ask \"Is the hero top padding at most 6rem at desktop, with the hero content not floating halfway down the viewport?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "6rem",
+      "qids": [
+       "taste-skill:c0114d",
+       "taste-skill:32d8d2"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:9b75ab"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-uniform-equal-size-card-grids": [
+   {
+    "rule": "ui:card ask \"Is an identical same-sized card grid avoided as the only device for everything?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:6bcb9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is the page free of a row of three equal cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:01930d"
+      ]
+     }
+    ]
+   }
+  ],
+  "collapse-clipped-hero-art-to-stacked-on-mobile": [
+   {
+    "rule": "page ask \"Is clipped hero art dropped and stacked vertically below 60rem?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "60rem",
+      "qids": [
+       "hallmark:972435",
+       "hallmark:c6e26a"
+      ]
+     }
+    ]
+   }
+  ],
+  "bias-hero-art-to-one-side": [
+   {
+    "rule": "page ask \"Is layered hero art biased to one side rather than centred?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:ab65a1",
+       "hallmark:3a6421"
+      ]
+     }
+    ]
+   }
+  ],
+  "named-z-index-scale": [
+   {
+    "rule": "page ask \"Is z-index drawn from a documented named scale rather than ad-hoc values?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "6",
+      "qids": [
+       "hallmark:bfdde7"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "hallmark:5e7adb"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-minmax-0-1fr-for-image-grid-tracks": [
+   {
+    "rule": "page grid-template-columns contains minmax(0, 1fr)",
+    "values": [
+     {
+      "value": "minmax(0, 1fr)",
+      "qids": [
+       "hallmark:0f61a5",
+       "hallmark:0de4d4"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-logical-css-properties-for-rtl": [
+   {
+    "rule": "page axl:physical-direction-properties == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:baf4af",
+       "ui-craft:f5c38a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does setting right-to-left direction at the root flip the UI without additional CSS?\"",
+    "class": "locale",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f5c38a",
+       "hallmark:baf4af"
+      ]
+     }
+    ]
+   }
+  ],
+  "three-cell-stat-row": [
+   {
+    "rule": "page ask \"Does each stat row have exactly three cells?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:d608a8",
+       "hallmark:548957"
+      ]
+     }
+    ]
+   }
+  ],
+  "restructure-layout-per-size-class": [
+   {
+    "rule": "page ask \"Does the layout switch structure by size class on larger devices instead of stretching the phone UI?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:0eb5ba",
+       "impeccable:a6f72c"
+      ]
+     }
+    ]
+   }
+  ],
+  "text-never-overlapped-by-decorative-layers": [
+   {
+    "rule": "page ask \"Is text kept clear of overlapping images, decorative layers and other text?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:56814c",
+       "impeccable:0194d6"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-bento-grid-for-varied-content": [
+   {
+    "rule": "ui:card ask \"Is a bento grid used only where content genuinely varies in size and importance?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:bb5d3f",
+       "deslop:a2b8d8"
+      ]
+     }
+    ]
+   }
+  ],
+  "make-hero-feel-like-a-strong-opening-scene": [
+   {
+    "rule": "page ask \"Does the hero feel like a strong, clear and intentional opening scene?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:51652b",
+       "taste-skill:3432f5"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-asymmetry-with-control": [
+   {
+    "rule": "page ask \"Is asymmetry used only where it improves the page, with control?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ed9be3",
+       "taste-skill:f970e6"
+      ]
+     }
+    ]
+   }
+  ],
+  "never-overlap-text-with-images-or-text": [
+   {
+    "rule": "page ask \"Is text kept clear of overlapping images, decorative layers and other text?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:474e54",
+       "taste-skill:75376c"
+      ]
+     }
+    ]
+   }
+  ],
+  "place-logo-wall-under-hero-not-inside": [
+   {
+    "rule": "page ask \"Does the logo wall sit under the hero, not inside the hero or its copy row?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:6311a1",
+       "taste-skill:719c0a"
+      ]
+     }
+    ]
+   }
+  ],
+  "stable-scrollbar-gutter": [
+   {
+    "rule": "page scrollbar-gutter == stable",
+    "values": [
+     {
+      "value": "stable",
+      "qids": [
+       "ui-craft:35106e",
+       "ui-craft:063f51"
+      ]
+     }
+    ]
+   }
+  ],
+  "min-w-0-on-flex-children-for-truncation": [
+   {
+    "rule": "page ask \"Do flex children that may truncate have min-width 0?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:e1dc52",
+       "ui-craft:89e593"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-controls-at-bottom-of-window": [
+   {
+    "rule": "page ask \"Are controls and critical information kept off the bottom of the window?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:562a22"
+      ]
+     }
+    ]
+   }
+  ],
+  "min-max-window-sizes-must-not-block-resizing": [
+   {
+    "rule": "page ask \"Are minimum and maximum window sizes used to prevent overlap and unwieldy layouts, not to block resizing?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:d166ea"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-more-than-three-side-by-side-controls": [
+   {
+    "rule": "page ask \"Are no more than two or three controls placed side by side?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "apple-hig:ecdcf5"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-decorative-hero-on-dashboards": [
+   {
+    "rule": "page ask \"Is above-the-fold space free of decorative hero treatments?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:c39bec"
+      ]
+     }
+    ]
+   }
+  ],
+  "favor-ergonomic-layout-for-repeated-use": [
+   {
+    "rule": "page ask \"Do layout choices support repeated use rather than static presentation?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:7470e8"
+      ]
+     }
+    ]
+   }
+  ],
+  "less-padding-on-icon-side-of-buttons": [
+   {
+    "rule": "aria:button ask \"Do icon-leading buttons use slightly less padding on the icon side?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:6791b4"
+      ]
+     }
+    ]
+   }
+  ],
+  "typographic-rhythm-instead-of-cards": [
+   {
+    "rule": "page ask \"Is typographic rhythm used instead of cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1f0999"
+      ]
+     }
+    ]
+   }
+  ],
+  "mobile-caption-inline-below-image": [
+   {
+    "rule": "text:caption position !contains absolute @media:narrow",
+    "values": [
+     {
+      "value": "absolute",
+      "qids": [
+       "hallmark:4a4b00"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is text kept clear of overlapping images, decorative layers and other text?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4a4b00"
+      ]
+     }
+    ]
+   }
+  ],
+  "scale-illustration-to-40-percent-on-mobile": [
+   {
+    "rule": "aria:img width <= 40vw @media:narrow",
+    "values": [
+     {
+      "value": "40vw",
+      "qids": [
+       "hallmark:f5257a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main grid-template-columns == 1fr @media:narrow",
+    "values": [
+     {
+      "value": "1fr",
+      "qids": [
+       "hallmark:f5257a"
+      ]
+     }
+    ]
+   }
+  ],
+  "uniform-rhythm-in-product-grids": [
+   {
+    "rule": "ui:card ask \"Do product grids keep uniform tiles rather than irregular bento spans?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:be5f51"
+      ]
+     }
+    ]
+   }
+  ],
+  "offset-floating-nav-with-translatey-not-margin": [
+   {
+    "rule": "aria:navigation transform contains translateY",
+    "values": [
+     {
+      "value": "translateY",
+      "qids": [
+       "hallmark:5db7f3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation margin-top == 0px",
+    "values": [
+     {
+      "value": "0px",
+      "qids": [
+       "hallmark:5db7f3"
+      ]
+     }
+    ]
+   }
+  ],
+  "hero-takes-70-90-percent-of-first-viewport": [
+   {
+    "rule": "page ask \"Does the hero take 70-90% of the first viewport's height?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "70%-90%",
+      "qids": [
+       "hallmark:28d828"
+      ]
+     }
+    ]
+   }
+  ],
+  "hero-content-fits-above-the-fold": [
+   {
+    "rule": "page ask \"Are the hero eyebrow, headline, lede and primary CTA all visible without scrolling on a 13-inch laptop?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "800px",
+      "qids": [
+       "hallmark:f8eba9"
+      ]
+     }
+    ]
+   }
+  ],
+  "scale-hero-art-down-on-mobile": [
+   {
+    "rule": "page ask \"Does hero art scale down or shift so it avoids the headline at 320px?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "320px",
+      "qids": [
+       "hallmark:de3cf4"
+      ]
+     }
+    ]
+   }
+  ],
+  "break-the-grid-on-purpose-once": [
+   {
+    "rule": "page ask \"Does at least one element deliberately break the grid?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d50edf"
+      ]
+     }
+    ]
+   }
+  ],
+  "css-grid-for-page-layout-flexbox-for-components": [
+   {
+    "rule": "aria:main display == grid",
+    "values": [
+     {
+      "value": "grid",
+      "qids": [
+       "hallmark:4d5b6f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card display == flex",
+    "values": [
+     {
+      "value": "flex",
+      "qids": [
+       "hallmark:4d5b6f"
+      ]
+     }
+    ]
+   }
+  ],
+  "named-grid-areas-for-complex-layouts": [
+   {
+    "rule": "page ask \"Do complex layouts use named grid areas that are renamed at breakpoints?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7159b3"
+      ]
+     }
+    ]
+   }
+  ],
+  "wide-left-margin-for-labels": [
+   {
+    "rule": "page ask \"Does the layout keep a wide left margin as permanent negative space, with a narrow column of labels beside a wide column of content?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f56cd0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label ask \"Are labels kept from being section eyebrows or numbers paired with the heading?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f56cd0"
+      ]
+     }
+    ]
+   }
+  ],
+  "hanging-headers-only-when-asked": [
+   {
+    "rule": "page ask \"Are hanging headers used only when the user explicitly asked for an editorial layout?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:232d10"
+      ]
+     }
+    ]
+   }
+  ],
+  "uneven-section-padding-top-and-bottom": [
+   {
+    "rule": "page ask \"Do sections vary their top and bottom padding instead of being padded evenly?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:0bbba8"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-sub-rules-within-sections": [
+   {
+    "rule": "page ask \"Are sections free of sub-rules that subdivide them into rows?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:79542f"
+      ]
+     }
+    ]
+   }
+  ],
+  "consistent-gaps-without-rules-in-bento": [
+   {
+    "rule": "page gap between 12px 24px",
+    "values": [
+     {
+      "value": "12px-24px",
+      "qids": [
+       "hallmark:8682e7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Are bento tiles separated by gap alone, without rules?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:8682e7"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-pointer-and-hover-media-queries": [
+   {
+    "rule": "page ask \"Are pointer and hover media queries used instead of width to detect interaction capability?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:709b85"
+      ]
+     }
+    ]
+   }
+  ],
+  "running-text-spans-at-most-half-the-columns": [
+   {
+    "rule": "text:body width <= 50%",
+    "values": [
+     {
+      "value": "50%",
+      "qids": [
+       "hallmark:5373da"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do the remaining columns carry the section's object or stay empty as designed whitespace?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:5373da"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-footer-layout": [
+   {
+    "rule": "aria:contentinfo ask \"Is the footer layout varied rather than repeating the same giant statement and meta grid?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c90443"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-hero-layout": [
+   {
+    "rule": "page ask \"Is the hero layout rotated rather than repeating the same archetype?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:3b3641"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-three-feature-card-row": [
+   {
+    "rule": "ui:card ask \"Is the page free of a row of three equal cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:d0f85b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon ask \"Do feature cards use abstract shape characters rather than generic stock icons?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d0f85b"
+      ]
+     }
+    ]
+   }
+  ],
+  "small-bento-grid": [
+   {
+    "rule": "ui:card ask \"Does each bento grid have at most 8 tiles?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "8",
+      "qids": [
+       "hallmark:ba51a6"
+      ]
+     }
+    ]
+   }
+  ],
+  "full-width-components-on-mobile": [
+   {
+    "rule": "ui:card width == 100% @media:narrow",
+    "values": [
+     {
+      "value": "100%",
+      "qids": [
+       "impeccable:97fa99"
+      ]
+     }
+    ]
+   }
+  ],
+  "multi-column-layouts-on-wide-screens": [
+   {
+    "rule": "page ask \"Do multi-column layouts use the horizontal space on wide screens?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c5a640"
+      ]
+     }
+    ]
+   }
+  ],
+  "print-stylesheet-hides-nav-and-interactive-eleme": [
+   {
+    "rule": "aria:navigation display == none @media:print",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "impeccable:33013b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:contentinfo display == none @media:print",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "impeccable:33013b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button display == none @media:print",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "impeccable:33013b"
+      ]
+     }
+    ]
+   }
+  ],
+  "print-stylesheet-adds-page-numbers": [
+   {
+    "rule": "media:print ask \"Does the print stylesheet add page numbers, headers and footers?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:89ab20"
+      ]
+     }
+    ]
+   }
+  ],
+  "master-detail-split-view-on-tablets": [
+   {
+    "rule": "page ask \"Do tablets use the extra width for split view, master-detail, multi-column grids and popovers instead of phone sheets?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:fbc1f9"
+      ]
+     }
+    ]
+   }
+  ],
+  "drive-layout-from-size-classes": [
+   {
+    "rule": "page ask \"Is structure driven by size classes rather than device-model checks?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:eb51e6"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-section-rhythm-and-density": [
+   {
+    "rule": "page ask \"Does the target section read as a peak in the scroll, with its own rhythm and density?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:84d06d"
+      ]
+     }
+    ]
+   }
+  ],
+  "remove-sidebars": [
+   {
+    "rule": "page ask \"Is secondary content moved inline or hidden instead of placed in a sidebar?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:6bfbf1"
+      ]
+     }
+    ]
+   }
+  ],
+  "full-width-layout-over-complex-multi-column": [
+   {
+    "rule": "page ask \"Is available space used generously instead of complex multi-column layouts?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:69b57f"
+      ]
+     }
+    ]
+   }
+  ],
+  "layout-structure-matches-content-and-task": [
+   {
+    "rule": "page ask \"Does the layout topology match the content and task rather than a framework default?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ca51b5"
+      ]
+     }
+    ]
+   }
+  ],
+  "responsive-behavior-is-structural-reorder-or-col": [
+   {
+    "rule": "page ask \"Does responsive behaviour restructure (reorder, collapse, reflow or reveal) based on what stays important?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a56ad2"
+      ]
+     }
+    ]
+   }
+  ],
+  "repeat-patterns-for-recognition": [
+   {
+    "rule": "page ask \"Does repetition support recognition, broken only when content or priority changes?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:1f2a3e"
+      ]
+     }
+    ]
+   }
+  ],
+  "inner-padding-in-bordered-containers": [
+   {
+    "rule": "ui:card padding >= 8px",
+    "values": [
+     {
+      "value": "8px",
+      "qids": [
+       "impeccable:302110"
+      ]
+     },
+     {
+      "value": "12px",
+      "qids": [
+       "impeccable:302110"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-editorial-layouts-with-rules-and-pull-quotes": [
+   {
+    "rule": "page ask \"Does the editorial layout use real columns, pull quotes, rules and dividers instead of cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:43353e"
+      ]
+     }
+    ]
+   }
+  ],
+  "design-dense-tools-desktop-first": [
+   {
+    "rule": "aria:button wcag:2.5.8 pass",
+    "values": [
+     {
+      "value": "24px",
+      "qids": [
+       "deslop:9e370e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is a dense tool designed desktop-first, then decided what to drop or restack for mobile?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:9e370e"
+      ]
+     }
+    ]
+   }
+  ],
+  "match-gutters-on-scroller-edges": [
+   {
+    "rule": "ui:carousel ask \"Do scroller cards keep matching gutters on both edges, none flush against the container edge?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:e1111b"
+      ]
+     }
+    ]
+   }
+  ],
+  "pad-inside-every-container-at-least-8px": [
+   {
+    "rule": "ui:card padding >= 8px",
+    "values": [
+     {
+      "value": "8px",
+      "qids": [
+       "deslop:216a98"
+      ]
+     },
+     {
+      "value": "12px",
+      "qids": [
+       "deslop:216a98"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is body text kept off the viewport edge by container padding?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:216a98"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-a-clean-presentation-grid": [
+   {
+    "rule": "page ask \"Is a clean presentation grid used?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:99e65a"
+      ]
+     }
+    ]
+   }
+  ],
+  "build-real-mobile-hierarchy-not-fake-complexity": [
+   {
+    "rule": "media:narrow ask \"Does mobile have a real hierarchy rather than fake complexity?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ab00ce"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-empty-oversimplified-layouts": [
+   {
+    "rule": "page ask \"Is the layout free of overly simplistic composition that feels empty instead of elegant?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:5517e6"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-square-blocks-with-staggered-vertical-rhythm": [
+   {
+    "rule": "page ask \"Are square image or content blocks used with a strong staggered vertical rhythm?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:5ad332"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-intensity-across-sections-for-pacing": [
+   {
+    "rule": "page ask \"Does foreground and background intensity vary at least twice across the page so the scroll feels paced?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "taste-skill:630615"
+      ]
+     }
+    ]
+   }
+  ],
+  "allow-variable-card-heights": [
+   {
+    "rule": "ui:card ask \"Are card heights allowed to vary, or masonry used, where content varies in length?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:8c1ac7"
+      ]
+     }
+    ]
+   }
+  ],
+  "layer-elements-with-overlap-for-depth": [
+   {
+    "rule": "page ask \"Are elements layered with overlap, using negative margins, to create depth?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:838b36"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-relative-units-for-widths": [
+   {
+    "rule": "page width !contains px",
+    "values": [
+     {
+      "value": "px",
+      "qids": [
+       "taste-skill:71af37"
+      ]
+     }
+    ]
+   }
+  ],
+  "remove-rotations-and-overlaps-on-mobile": [
+   {
+    "rule": "page transform !contains rotate @media:narrow",
+    "values": [
+     {
+      "value": "rotate",
+      "qids": [
+       "taste-skill:14d9d6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page margin-top >= 0px @media:narrow",
+    "values": [
+     {
+      "value": "0px",
+      "qids": [
+       "taste-skill:14d9d6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main grid-template-columns == 1fr @media:narrow",
+    "values": [
+     {
+      "value": "1fr",
+      "qids": [
+       "taste-skill:14d9d6"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-offset-overlapping-blocks-with-varied-image-": [
+   {
+    "rule": "ui:card margin-top == -2rem",
+    "values": [
+     {
+      "value": "-2rem",
+      "qids": [
+       "taste-skill:d9ffa6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading text-align == left",
+    "values": [
+     {
+      "value": "left",
+      "qids": [
+       "taste-skill:d9ffa6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img ask \"Do image aspect ratios vary, for example 4:3 next to 16:9?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d9ffa6"
+      ]
+     }
+    ]
+   }
+  ],
+  "collapse-to-one-column-with-wider-spacing-on-mob": [
+   {
+    "rule": "aria:main grid-template-columns == 1fr @media:narrow",
+    "values": [
+     {
+      "value": "1fr",
+      "qids": [
+       "ui-craft:4b10bb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "media:narrow ask \"Does mobile use one column with wider spacing?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4b10bb"
+      ]
+     }
+    ]
+   }
+  ],
+  "clamp-variable-length-text-in-grids": [
+   {
+    "rule": "ui:card ask \"Is variable-length text clamped, or given a shared min-height per row, so grid rhythm holds?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:16786f"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-clear-focal-point-on-dashboards": [
+   {
+    "rule": "page ask \"Is there one dominant focal point per page, frame or viewport?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:eb01bc"
+      ]
+     }
+    ]
+   }
+  ],
+  "dashboard-3-6-column-grid-equal-row-heights": [
+   {
+    "rule": "page ask \"Does the dashboard grid use 3-6 columns?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "3-6",
+      "qids": [
+       "ui-craft:026d2d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are dashboard row heights kept equal?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:026d2d"
+      ]
+     }
+    ]
+   }
+  ],
+  "bento-cards-with-dominant-size": [
+   {
+    "rule": "ui:card ask \"Is a bento's dominant card about twice the size of the minor cards, never all equal?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "2:1",
+      "qids": [
+       "ui-craft:64e187"
+      ]
+     }
+    ]
+   }
+  ],
+  "put-critical-item-first-or-last-in-lists": [
+   {
+    "rule": "aria:list ask \"Is the critical item first or last in nav lists, onboarding steps and feature rows, never buried mid-sequence?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:06b811"
+      ]
+     }
+    ]
+   }
+  ],
+  "narrow-form-column-with-labels-above": [
+   {
+    "rule": "aria:form width between 360px 400px",
+    "values": [
+     {
+      "value": "360px-400px",
+      "qids": [
+       "ui-craft:8c0bdc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label ask \"Are form labels placed above their fields?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8c0bdc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Are required fields marked without asterisks?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8c0bdc"
+      ]
+     }
+    ]
+   }
+  ],
+  "three-content-types-above-fold": [
+   {
+    "rule": "page ask \"Are at least three content types visible above the fold at 1440x900?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "ui-craft:fda0d5"
+      ]
+     }
+    ]
+   }
+  ],
+  "constrain-hero-to-few-elements": [
+   {
+    "rule": "page ask \"Does the hero hold at most 4 text elements, with no tagline below the CTAs and no trust strip?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "4",
+      "qids": [
+       "ui-craft:2a1005"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the hero subtext at most 20 words and 3-4 lines, cutting copy or reducing font scale if too long?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": "20",
+      "qids": [
+       "ui-craft:2a1005"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the hero headline at most 2 lines on desktop?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:2a1005"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the hero have one primary CTA and at most one secondary CTA?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "ui-craft:2a1005"
+      ]
+     }
+    ]
+   }
+  ],
+  "hero-headline-starts-18-30-down-fold": [
+   {
+    "rule": "page ask \"Does the hero headline start 18-30% down the fold rather than at the top?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "18%-30%",
+      "qids": [
+       "ui-craft:ca7d9a"
+      ]
+     }
+    ]
+   }
+  ],
+  "limit-consecutive-image-text-zigzags": [
+   {
+    "rule": "page ask \"Are no more than 2 sections in a row built as an image and text split?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:0b4670"
+      ]
+     }
+    ]
+   }
+  ],
+  "feature-parity-on-mobile": [
+   {
+    "rule": "media:narrow ask \"Is all core functionality available on mobile rather than hidden?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:164b46"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-section-layouts": [
+   {
+    "rule": "page ask \"Does the page use several different layout families across sections rather than one template?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "unslop:867964"
+      ]
+     }
+    ]
+   }
+  ],
+  "scroll-margin-top-on-anchored-headings": [
+   {
+    "rule": "aria:heading ask \"Do anchored headings set scroll-margin-top so linked sections clear the header?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:fbb437"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "new_measures": {
+  "axl:physical-direction-properties": "Count of declarations in the page's stylesheets that use a physical direction property (margin-left, margin-right, padding-left, padding-right, border-left, border-right, left, right) where a logical equivalent exists. Computed on the whole page; unit is a count."
+ },
+ "new_elements": {
+  "aria:region": "Sections",
+  "aria:row": "Table rows",
+  "aria:separator": "Dividers",
+  "aria:toolbar": "Toolbars"
+ }
+}

@@ -1,0 +1,5163 @@
+{
+ "class": "Interaction & states",
+ "tweaks": {
+  "focus": [
+   {
+    "rule": "state:focus-visible wcag:2.4.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:dc47bf",
+       "taste-skill:879421",
+       "oneredoak:420018",
+       "deslop:49025d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible wcag:1.4.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:d7d79e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible ask \"Does the focus ring follow the element's border-radius?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:49025d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:combobox ask \"Does every click-opened dropdown also show a hover or focus affordance?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:043aae"
+      ]
+     }
+    ]
+   }
+  ],
+  "feedback": [
+   {
+    "rule": "text:caption min-height >= 1lh",
+    "values": [
+     {
+      "value": "1lh",
+      "qids": [
+       "hallmark:d9bd7e",
+       "hallmark:96119e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox padding-right >= 24px",
+    "values": [
+     {
+      "value": "24px",
+      "qids": [
+       "hallmark:13f105"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does the error replace the helper text in the same position and size, never showing both?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:431e40"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the interface give timely, appropriate feedback for every action and system state?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:26d769",
+       "nngroup:b02c84",
+       "nngroup:7bb558",
+       "oneredoak:34a895"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:status transition-duration == 150ms",
+    "values": [
+     {
+      "value": "150ms",
+      "qids": [
+       "ui-craft:c9694b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:status wcag:1.4.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4114a9",
+       "ui-craft:c8c81e"
+      ]
+     }
+    ]
+   }
+  ],
+  "labels": [
+   {
+    "rule": "aria:textbox lighthouse:label pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c47158",
+       "impeccable:c86664",
+       "deslop:7fd06c",
+       "ui-craft:158bca"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Is every field labelled by persistent visible text rather than placeholder only?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c47158",
+       "hallmark:b11a4e",
+       "impeccable:c86664",
+       "deslop:7fd06c",
+       "ui-craft:158bca"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label ask \"Is the label placed above its input?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c47158",
+       "hallmark:b11a4e",
+       "taste-skill:d6fccf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label margin-bottom between 4px 8px",
+    "values": [
+     {
+      "value": "4px 8px",
+      "qids": [
+       "hallmark:b11a4e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Are format and eligibility requirements shown before submission?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c86664"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:caption ask \"Does every field have helper text in its markup, with error text below the input?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d6fccf"
+      ]
+     }
+    ]
+   }
+  ],
+  "target": [
+   {
+    "rule": "aria:button lighthouse:target-size pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:59af63",
+       "deslop:bc4b5d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Are primary actions large and placed where the cursor or thumb already rests?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:bc4b5d"
+      ]
+     }
+    ]
+   }
+  ],
+  "primary": [
+   {
+    "rule": "aria:button ask \"Is there exactly one primary action per view section?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e67d29",
+       "ui-craft:4397e1",
+       "ui-craft:e86fe3",
+       "hallmark:d15e85",
+       "taste-skill:59ad17",
+       "taste-skill:420cbf",
+       "ui-craft:8b6cba",
+       "ui-craft:8363c4",
+       "impeccable:52b4ae",
+       "taste-skill:ad4b83"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Does each card have at most one primary and one secondary action?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:1b0d71",
+       "openai:06c554",
+       "openai:345cfe"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Do secondary actions look visibly weaker than the primary (outline or ghost)?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4dd61f",
+       "taste-skill:420cbf",
+       "taste-skill:de8e93",
+       "ui-craft:e67d29",
+       "ui-craft:e86fe3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button wcag:1.4.11 pass",
+    "values": [
+     {
+      "value": "3:1",
+      "qids": [
+       "ui-craft:e86fe3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button lighthouse:interactive-element-affordance pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:ca62e3",
+       "claw-design:d79958",
+       "claw-design:4a2832"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Are buttons ranked by importance rather than colored by meaning?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:ba7e05",
+       "deslop:f03fa4",
+       "deslop:aa1545"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:alertdialog ask \"Is the loud red destructive treatment used only when destruction is the primary action of that surface?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:4e97f2",
+       "ui-craft:e67d29"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:toolbar ask \"Are toolbar filter controls ghost buttons rather than solid primary buttons?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:92046a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation ask \"Is there one CTA in the nav, visually distinct from plain links and the page's primary CTA?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8ece42"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the primary action visible before scrolling and unmistakable?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:74e6c0",
+       "taste-skill:84661f",
+       "claw-design:2669f7",
+       "claw-design:bdef1d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Can a viewer identify the first thing to read and the primary goal within one second?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:4e2d8d",
+       "ui-craft:8b6cba",
+       "nngroup:996e1e",
+       "impeccable:399113"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are calls to action placed at natural decision points rather than repeated as filler?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:6a84bf",
+       "claw-design:c531ba"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the strongest color, weight or contrast reserved for the primary action, headline or KPI?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:51e026",
+       "claw-design:49fb14",
+       "impeccable:cf7c3f",
+       "claw-design:e3817e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do elements differ in visual weight by importance instead of all looking equally important?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:fb3075",
+       "impeccable:399113"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Does every CTA fill with an accent color?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6507dd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:menu ask \"Are long menus chunked with a recommended default highlighted?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:c3d097"
+      ]
+     }
+    ]
+   }
+  ],
+  "nav": [
+   {
+    "rule": "aria:navigation ask \"Is there one CTA in the nav, visually distinct from plain links and the page's primary CTA?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8ece42"
+      ]
+     }
+    ]
+   }
+  ],
+  "invalid": [
+   {
+    "rule": "state:invalid ask \"Does an invalid field carry aria-invalid=true and an aria-describedby link to its error?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:3a54f8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid wcag:1.4.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4763fe",
+       "ui-craft:fd718d",
+       "nngroup:e75b2c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does the error state use a distinct error color plus a non-color cue (icon, text or border)?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:d4e818",
+       "nngroup:df18e6",
+       "ui-craft:fd718d",
+       "hallmark:4763fe",
+       "nngroup:e75b2c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Is the error message shown inline directly below its field?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:8a5394",
+       "deslop:0e74eb",
+       "ui-craft:e7b766"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does the error text stand out from the rest of the form so the user notices it quickly?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:d4e818",
+       "nngroup:5de04b",
+       "nngroup:99c3aa"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does focus move to the offending field on error?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e7b766"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Are format errors validated on blur or submit, not on every keystroke?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:0e74eb",
+       "webdev:c4a5b5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does the form validate emails, required fields and formats on the client?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:97797c"
+      ]
+     }
+    ]
+   }
+  ],
+  "underline": [
+   {
+    "rule": "aria:link text-decoration-line contains underline",
+    "values": [
+     {
+      "value": "underline",
+      "qids": [
+       "ui-craft:29ece4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation ask \"Are nav links text-only with no pill backgrounds, the current item marked by accent underline or weight 500?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": "500",
+      "qids": [
+       "ui-craft:af4dc8"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:29ece4"
+      ]
+     }
+    ]
+   }
+  ],
+  "states-designed": [
+   {
+    "rule": "page ask \"Does every interactive component have designed default, hover, focus, active, disabled, loading and error states?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:95ccbe",
+       "deslop:1ba250",
+       "deslop:434997",
+       "deslop:aa1545",
+       "hallmark:381ce7",
+       "ui-craft:26a88b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "process ask \"Is each screen's state list (empty, loading, error, partial, conflict, offline) marked designed, missing or not applicable?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5b1f8c",
+       "ui-craft:b92f25",
+       "ui-craft:513834",
+       "ui-craft:784914",
+       "ui-craft:e3f4e5",
+       "ui-craft:71a438",
+       "ui-craft:8ebd3e",
+       "ui-craft:21fa52",
+       "ui-craft:c0c912",
+       "taste-skill:90d645",
+       "taste-skill:1805c1",
+       "taste-skill:acbd19",
+       "impeccable:25267c",
+       "impeccable:8f5a67"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:empty ask \"Does every view with no data show a designed empty state with a reason and a next action?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4e26fd",
+       "deslop:6b5cc1",
+       "impeccable:ab96ee",
+       "vercel:28608c",
+       "vercel:2c16dd",
+       "shadcn:265057",
+       "ui-craft:ae7af1",
+       "ui-craft:6aae3e",
+       "ui-craft:734f61"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:empty ask \"Does a first-use state show the value and offer a first action or template?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:90c53b",
+       "impeccable:331c13",
+       "impeccable:ab96ee",
+       "ui-craft:f790be"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:skeleton ask \"Does a loading skeleton match the final layout geometry?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5a8559",
+       "ui-craft:b75dc0",
+       "ui-craft:b71798",
+       "ui-craft:0ae78b",
+       "ui-craft:a52cf2",
+       "vercel:f9b7a1",
+       "vercel:cdace4",
+       "deslop:e471a8",
+       "taste-skill:4fc428",
+       "taste-skill:27c814",
+       "taste-skill:5b4ea1",
+       "shadcn:440373"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:skeleton lighthouse:cumulative-layout-shift pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5a8559",
+       "ui-craft:0ae78b",
+       "vercel:f9b7a1",
+       "vercel:cdace4",
+       "deslop:e471a8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:skeleton transition-delay == 200ms",
+    "values": [
+     {
+      "value": "200ms",
+      "qids": [
+       "ui-craft:5a8559",
+       "ui-craft:b75dc0",
+       "ui-craft:b71798",
+       "ui-craft:96bf62",
+       "ui-craft:0ae78b",
+       "ui-craft:a52cf2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:skeleton ask \"Does a skeleton show one pulse or shimmer signal with no spinner on top?\"",
+    "class": "motion",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:33d5eb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:skeleton ask \"Is a skeleton used instead of a generic centered spinner for content loading?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5a8559",
+       "ui-craft:b71798",
+       "taste-skill:5b4ea1",
+       "taste-skill:4fc428",
+       "taste-skill:27c814"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:skeleton ask \"Does a skeleton give up after at most 5s?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "5s",
+      "qids": [
+       "ui-craft:a52cf2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:progressbar ask \"Does a long wait show truthful progress rather than invented progress?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:9a6ecc",
+       "impeccable:46eea3",
+       "deslop:e471a8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:status ask \"Does loading text name the real operation?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:9a6ecc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:status ask \"Does a thinking indicator escalate to progress within 2s?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "2s",
+      "qids": [
+       "ui-craft:ae0e28"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does every error say what went wrong and how to fix it?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:c17b4d",
+       "ui-craft:dde962",
+       "ui-craft:e31bc7",
+       "ui-craft:9a5a1d",
+       "ui-craft:21fa52",
+       "taste-skill:b24049"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:toast ask \"Are toasts used only for transient messages?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b24049",
+       "ui-craft:e31bc7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:avatar ask \"Does every avatar have a fallback for when its image fails to load?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "shadcn:653c51"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:file ask \"Does upload state reflect the real upload status?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "shadcn:7ec57f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does a declined charge keep the cart and every entered field?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:11b4a5"
+      ]
+     }
+    ]
+   }
+  ],
+  "progressive-disclosure": [
+   {
+    "rule": "page ask \"Is complexity revealed progressively, showing only what is needed at each step?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:c41937",
+       "impeccable:df4815",
+       "impeccable:232b33",
+       "impeccable:b77e63",
+       "impeccable:45a099",
+       "impeccable:ed4148",
+       "impeccable:7f857e",
+       "deslop:6297b0",
+       "ui-craft:3ff566",
+       "impeccable:18ed70"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Are optional fields beyond two placed behind a More options toggle?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:9b264a"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:070b7a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:menu ask \"Are long menus chunked with a recommended default highlighted?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:c3d097",
+       "impeccable:e005dd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are long lists and forms chunked into groups or steps?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:95ea2d",
+       "impeccable:e005dd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-height >= 44px",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "deslop:6297b0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-width >= 44px",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "deslop:6297b0"
+      ]
+     }
+    ]
+   }
+  ],
+  "delight-moments": [
+   {
+    "rule": "process ask \"Is delight concentrated at meaningful moments (first use, completion, recovery, mastery) and not manufactured for ordinary clicks?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:b86638",
+       "impeccable:ba96d0",
+       "impeccable:d88747",
+       "impeccable:caf4d8",
+       "ui-craft:43b8f5",
+       "impeccable:71971a",
+       "impeccable:4397c1",
+       "taste-skill:fff1c4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the page have at most one character moment?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:a476fc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the page have one signature bet?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:1134e2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "process ask \"Is the intended user feeling stated in one sentence?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:b95de0"
+      ]
+     }
+    ]
+   }
+  ],
+  "match-patterns": [
+   {
+    "rule": "process ask \"Does the interface follow established platform and framework conventions instead of inventing custom patterns?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:f3283e",
+       "oneredoak:c54d63",
+       "hallmark:7a69ea",
+       "impeccable:50eaa7",
+       "impeccable:9ab767",
+       "impeccable:99e25d",
+       "impeccable:e4da5e",
+       "taste-skill:d1dfe1",
+       "taste-skill:31a5f6",
+       "impeccable:6bbf30",
+       "impeccable:a7c6e7",
+       "impeccable:0d25fc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the design use familiar system gestures rather than custom gestures people must learn?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:dcc5d9",
+       "apple-hig:209972"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the interface match neighboring mental models, terminology and save behaviour?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:960139"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon ask \"Do icons match cultural convention?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:efc4c7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Do form shortcuts match the platform (Cmd+Enter submits on macOS)?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:21b944"
+      ]
+     }
+    ]
+   }
+  ],
+  "field-labels": [
+   {
+    "rule": "aria:textbox lighthouse:label pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:21d841"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Is every field labelled by persistent visible text rather than placeholder only?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:21d841",
+       "ui-craft:158bca",
+       "ui-craft:eccbb4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label ask \"Does clicking the label focus its input (wrapped input or for/id)?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:21d841"
+      ]
+     }
+    ]
+   }
+  ],
+  "error-identified": [
+   {
+    "rule": "state:invalid wcag:3.3.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:c3bbac"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Is the error described in text and associated with its field, not shown by a red border alone?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:4dbf4d",
+       "wcag22:c3bbac",
+       "webdev:ec37e0",
+       "nngroup:d4e818"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does an invalid field carry aria-invalid=true and an aria-describedby link to its error?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:79dedf",
+       "ui-craft:ff144b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Is the error message shown inline directly below its field?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:1b6d3c",
+       "taste-skill:b24049",
+       "taste-skill:d6fccf",
+       "ui-craft:e7b766",
+       "vercel:afe6a8",
+       "ui-craft:1b0b96"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does focus move to the offending field on error?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e7b766",
+       "vercel:afe6a8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Is a validation summary never the only indication of an error?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:f322a9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does the error text stand out from the rest of the form so the user notices it quickly?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:d4e818"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does the form surface every rejected write instead of swallowing it?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:57e1f3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does the form validate the information the user gives?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "govuk:3e18ef"
+      ]
+     }
+    ]
+   }
+  ],
+  "error-suggestion": [
+   {
+    "rule": "state:invalid wcag:3.3.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:283cc3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does every error say what went wrong and how to fix it?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:410f2b",
+       "impeccable:8ff610",
+       "nngroup:a01a77",
+       "nngroup:07c8f8",
+       "nngroup:12c78e",
+       "nngroup:ee1ccd",
+       "ui-craft:d99568",
+       "ui-craft:49c11c",
+       "vercel:833993",
+       "wcag22:283cc3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Is the error message plain, polite and free of blame?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:410f2b",
+       "impeccable:8ff610",
+       "nngroup:07c8f8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Does the error offer a one-click fix where the correction is known?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:90151f",
+       "nngroup:dab665"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-drag-only": [
+   {
+    "rule": "page wcag:2.5.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:a43c3a",
+       "vercel:75c316"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does every drag, swipe, pinch or path gesture have a tap, click and keyboard alternative?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:75c316",
+       "deslop:a43c3a"
+      ]
+     }
+    ]
+   }
+  ],
+  "accessible-auth": [
+   {
+    "rule": "aria:form wcag:3.3.8 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:1f2c9d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox lighthouse:paste-preventing-inputs pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:1f2c9d",
+       "vercel:6a7730",
+       "vercel:008198"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does login work with password managers and 2FA codes that can be pasted?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:6a7730",
+       "vercel:008198",
+       "deslop:1f2c9d"
+      ]
+     }
+    ]
+   }
+  ],
+  "redundant-entry": [
+   {
+    "rule": "aria:form wcag:3.3.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:1f2c9d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does the interface avoid making users remember or re-enter information from earlier steps?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:90ba4e",
+       "deslop:1f2c9d"
+      ]
+     }
+    ]
+   }
+  ],
+  "clear-error-on-fix": [
+   {
+    "rule": "state:invalid ask \"Does the error stay visible until the user changes the field and stays visible while they correct it?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:cbc15c",
+       "nngroup:12c78e"
+      ]
+     }
+    ]
+   }
+  ],
+  "validate-late": [
+   {
+    "rule": "aria:form ask \"Are format errors validated on blur or submit, not on every keystroke?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:0d49c7",
+       "deslop:0e74eb",
+       "govuk:168328",
+       "nngroup:31e721",
+       "ui-craft:9864c1",
+       "webdev:c4a5b5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does validation wait until the user has interacted with the field at least once, never showing red on mount?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:45d60f",
+       "ui-craft:9f0569",
+       "nngroup:f8ecb1",
+       "nngroup:31e721"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Does a field accept free text and validate after rather than blocking typing?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:cc2fec",
+       "vercel:00f9fa"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Can an incomplete form be submitted so validation surfaces?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:7187df"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does the form validate emails, required fields and formats on the client?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:97797c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Is the error message shown inline directly below its field?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:0e74eb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does the interface avoid validating when the user moves away from a field?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "govuk:2eada2"
+      ]
+     }
+    ]
+   }
+  ],
+  "hover-state": [
+   {
+    "rule": "state:hover ask \"Does every interactive element have a visible hover state?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:8755a9",
+       "ui-craft:409fbd",
+       "ui-craft:0cd82e",
+       "deslop:a45bd9",
+       "impeccable:ce7770",
+       "impeccable:95ccbe",
+       "hallmark:948a7f",
+       "claw-design:ca62e3",
+       "deslop:6018dc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button lighthouse:interactive-element-affordance pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:ca62e3",
+       "deslop:6018dc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:hover transition-duration <= 200ms",
+    "values": [
+     {
+      "value": "200ms",
+      "qids": [
+       "taste-skill:e73d8d",
+       "ui-craft:ad3fca"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Do clickable cards and images react on hover with a subtle lift or shadow shift?\"",
+    "class": "motion",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ae894b",
+       "taste-skill:e73d8d",
+       "ui-craft:ad3fca",
+       "ui-craft:409fbd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card transition-duration == 200ms",
+    "values": [
+     {
+      "value": "200ms",
+      "qids": [
+       "taste-skill:e73d8d",
+       "ui-craft:ad3fca"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Does a button darken its background slightly on hover rather than swapping color?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b52fa2",
+       "taste-skill:7426c1",
+       "taste-skill:8755a9",
+       "ui-craft:409fbd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button transition-duration == 150ms",
+    "values": [
+     {
+      "value": "150ms",
+      "qids": [
+       "ui-craft:b52fa2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Does the primary table row lift subtly on hover, on the main table only?\"",
+    "class": "motion",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:814f0d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:hover ask \"Is hover gated to pointer devices that can hover?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7615b9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:hover ask \"Does hover do more than change the background color?\"",
+    "class": "motion",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7b010f",
+       "hallmark:7615b9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:combobox ask \"Does every click-opened dropdown also show a hover or focus affordance?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:043aae"
+      ]
+     }
+    ]
+   }
+  ],
+  "active-pressed-state": [
+   {
+    "rule": "state:active ask \"Does every interactive element have a visible pressed state?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:948a7f",
+       "deslop:a45bd9",
+       "ui-craft:0cd82e",
+       "taste-skill:1a77a4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:active transform contains scale(0.98)",
+    "values": [
+     {
+      "value": "scale(0.98)",
+      "qids": [
+       "taste-skill:1a77a4",
+       "taste-skill:330c7b",
+       "taste-skill:964dc0"
+      ]
+     },
+     {
+      "value": "scale(0.97)",
+      "qids": [
+       "deslop:a45bd9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:active transform contains translateY(-1px)",
+    "values": [
+     {
+      "value": "translateY(-1px)",
+      "qids": [
+       "taste-skill:330c7b",
+       "taste-skill:964dc0"
+      ]
+     },
+     {
+      "value": "translateY(1px)",
+      "qids": [
+       "taste-skill:1a77a4"
+      ]
+     }
+    ]
+   }
+  ],
+  "disabled-state-explained": [
+   {
+    "rule": "state:disabled ask \"Does every disabled control explain why it is disabled, inline or by helper text?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:156b85",
+       "ui-craft:4913c9",
+       "ui-craft:6d3f37",
+       "ui-craft:a7689d",
+       "deslop:e8eed9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:disabled wcag:1.4.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:279fe9",
+       "ui-craft:4913c9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Do buttons stay enabled and validate on press instead of being disabled?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a7689d",
+       "ui-craft:6d3f37",
+       "deslop:e8eed9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:tooltip ask \"Do disabled buttons avoid tooltips, explaining the reason elsewhere?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:e8eed9"
+      ]
+     }
+    ]
+   }
+  ],
+  "focus-visible-only": [
+   {
+    "rule": "state:focus-visible wcag:2.4.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8f0a30",
+       "vercel:e0692c",
+       "vercel:7e6a6b",
+       "hallmark:5d4280"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible wcag:1.4.11 pass",
+    "values": [
+     {
+      "value": "3:1",
+      "qids": [
+       "hallmark:681002",
+       "hallmark:5d4280"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible outline-width between 2px 3px",
+    "values": [
+     {
+      "value": "2px 3px",
+      "qids": [
+       "hallmark:5d4280"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible transition-duration == 0s",
+    "values": [
+     {
+      "value": "0s",
+      "qids": [
+       "hallmark:681002",
+       "hallmark:5d4280"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible wcag:2.4.11 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:e0692c",
+       "vercel:7e6a6b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Is the focus ring styled with :focus-visible rather than :focus so pointer clicks show none?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d08200",
+       "vercel:3b7d88",
+       "vercel:e0692c",
+       "webdev:4f9c95",
+       "hallmark:108aee"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are grouped controls styled with :focus-within?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:e0692c",
+       "vercel:7e6a6b"
+      ]
+     }
+    ]
+   }
+  ],
+  "focus-ring-offset": [
+   {
+    "rule": "state:focus-visible box-shadow contains 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:49025d",
+       "deslop:6c1aa5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible ask \"Does the focus ring follow the element's border-radius?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:49025d",
+       "deslop:6c1aa5"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-outline-none": [
+   {
+    "rule": "state:focus-visible wcag:2.4.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:983923",
+       "hallmark:f99500",
+       "deslop:1c9511",
+       "ui-craft:3c8ae5",
+       "ui-craft:672226"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible ask \"Is every removed outline replaced by a focus style at least as visible?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:983923",
+       "hallmark:f99500",
+       "deslop:1c9511",
+       "ui-craft:3c8ae5",
+       "ui-craft:672226"
+      ]
+     }
+    ]
+   }
+  ],
+  "focus-order-logical": [
+   {
+    "rule": "page lighthouse:logical-tab-order pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:250424"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:tabindex pass",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "axe:6f3a1a",
+       "ui-craft:40a671"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:2.4.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:5ae1f3",
+       "deslop:cb8a9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:visual-order-follows-dom pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:40a671",
+       "deslop:cb8a9c"
+      ]
+     }
+    ]
+   }
+  ],
+  "focus-trap-modal": [
+   {
+    "rule": "aria:dialog lighthouse:focus-traps pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8dea01",
+       "deslop:a30190",
+       "vercel:095382"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:dialog ask \"Does a modal trap focus while open and hide the page behind it with inert?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8dea01",
+       "hallmark:e909a7",
+       "hallmark:4fec4a",
+       "deslop:a30190",
+       "vercel:095382"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:dialog ask \"Does a modal close on Escape?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4fec4a"
+      ]
+     }
+    ]
+   }
+  ],
+  "focus-return": [
+   {
+    "rule": "aria:dialog lighthouse:managed-focus pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:a30190",
+       "vercel:095382"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:dialog ask \"Does focus return to the trigger when a dialog closes?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:a30190",
+       "vercel:095382"
+      ]
+     }
+    ]
+   }
+  ],
+  "focus-move-on-route": [
+   {
+    "rule": "page lighthouse:managed-focus pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:6d723c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is focus directed to new content added to the page or a new route?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:6d723c"
+      ]
+     }
+    ]
+   }
+  ],
+  "skip-link": [
+   {
+    "rule": "page lighthouse:skip-link pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:dbaa3d",
+       "axe:5ec88a",
+       "taste-skill:709151",
+       "vercel:69b6f5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:bypass pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:575a2b",
+       "lighthouse:910376"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:2.4.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:16a3ac"
+      ]
+     }
+    ]
+   }
+  ],
+  "keyboard-operable": [
+   {
+    "rule": "page wcag:2.1.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:40b2b2",
+       "apple-hig:10a375",
+       "deslop:cb8a9c",
+       "oneredoak:bfb8d8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:2.1.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:565824"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:focusable-controls pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:0cc08d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Are buttons, selects and forms real button, select and form elements rather than divs or spans with click handlers?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ff5191",
+       "ui-craft:f6bdb5",
+       "vercel:8c342d",
+       "impeccable:86dfc5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Can the entire primary flow be completed with the keyboard alone?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c6e898",
+       "apple-hig:10a375",
+       "oneredoak:420018"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does every hover affordance have a non-hover and keyboard equivalent?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:bfc512",
+       "ui-craft:0540fe"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the interface avoid overriding system-defined keyboard shortcuts?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:ab3f2f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:main ask \"Does every scrollable region have keyboard access?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:7630d5"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-keyboard-trap": [
+   {
+    "rule": "page wcag:2.1.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:187a62"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:focus-traps pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:1a9aa3",
+       "ui-craft:130531"
+      ]
+     }
+    ]
+   }
+  ],
+  "escape-closes": [
+   {
+    "rule": "aria:dialog ask \"Does a modal close on Escape?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4fec4a",
+       "ui-craft:130531"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:popup ask \"Does an open hover or click panel close on Escape, with one panel open at a time?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:68410c"
+      ]
+     }
+    ]
+   }
+  ],
+  "shortcut-single-key-remap": [
+   {
+    "rule": "page wcag:2.1.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:a50537"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the interface avoid overriding system-defined keyboard shortcuts?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:ab3f2f"
+      ]
+     }
+    ]
+   }
+  ],
+  "hover-content-dismissible": [
+   {
+    "rule": "aria:tooltip wcag:1.4.13 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:02f037",
+       "wcag22:688544"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:tooltip ask \"Is hover content hoverable, persistent and dismissible with Escape?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:02f037",
+       "wcag22:688544"
+      ]
+     }
+    ]
+   }
+  ],
+  "tooltip-on-focus": [
+   {
+    "rule": "aria:tooltip ask \"Is the tooltip shown on keyboard focus as well as on hover?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": []
+     }
+    ]
+   }
+  ],
+  "touch-target-44": [
+   {
+    "rule": "aria:button min-width >= 44px",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "feel-better:ca4dd3",
+       "hallmark:9bf0c6",
+       "impeccable:2766bf",
+       "impeccable:da8505",
+       "impeccable:986c1d",
+       "impeccable:28616f",
+       "taste-skill:448895",
+       "ui-craft:e537e0",
+       "ui-craft:d6803d",
+       "wcag22:efbc6b",
+       "deslop:7f2b82",
+       "deslop:6297b0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-height >= 44px",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "feel-better:ca4dd3",
+       "hallmark:9bf0c6",
+       "impeccable:2766bf",
+       "impeccable:da8505",
+       "impeccable:986c1d",
+       "impeccable:28616f",
+       "taste-skill:448895",
+       "ui-craft:e537e0",
+       "ui-craft:d6803d",
+       "wcag22:efbc6b",
+       "deslop:7f2b82",
+       "deslop:6297b0",
+       "deslop:2d0b77",
+       "hallmark:ac0d9a",
+       "hallmark:2f8f04"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button wcag:2.5.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:efbc6b",
+       "deslop:7f2b82"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:slider ask \"Does the slider thumb have a hit target of at least 44px even when visually smaller?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "hallmark:6ec49b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Is a small visual control expanded with padding or a pseudo-element to a 44px hit area?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "feel-better:831458",
+       "hallmark:d89630",
+       "ui-craft:d6803d",
+       "vercel:865212"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-height between 44px 48px @media:narrow",
+    "values": [
+     {
+      "value": "44px 48px",
+      "qids": [
+       "ui-craft:9de9a2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-height >= 40px",
+    "values": [
+     {
+      "value": "40px",
+      "qids": [
+       "feel-better:831458"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Is there breathing room between adjacent tappable controls?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:28616f",
+       "ui-craft:e537e0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button lighthouse:target-size pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:a40d91",
+       "vercel:865212",
+       "vercel:b7090f"
+      ]
+     }
+    ]
+   }
+  ],
+  "target-min-24": [
+   {
+    "rule": "aria:button wcag:2.5.8 pass",
+    "values": [
+     {
+      "value": "24px",
+      "qids": [
+       "wcag22:b70ab9",
+       "deslop:fa860b",
+       "deslop:427d0d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-height >= 24px",
+    "values": [
+     {
+      "value": "24px",
+      "qids": [
+       "deslop:fa860b",
+       "vercel:865212",
+       "vercel:b7090f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-width >= 24px",
+    "values": [
+     {
+      "value": "24px",
+      "qids": [
+       "deslop:fa860b",
+       "vercel:865212",
+       "vercel:b7090f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button lighthouse:target-size pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:238ec5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-height >= 48px @media:narrow",
+    "values": [
+     {
+      "value": "48px",
+      "qids": [
+       "impeccable:b44888"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button min-height >= 44px @media:narrow",
+    "values": [
+     {
+      "value": "44px",
+      "qids": [
+       "vercel:865212",
+       "vercel:b7090f"
+      ]
+     }
+    ]
+   }
+  ],
+  "pointer-cancel": [
+   {
+    "rule": "page wcag:2.5.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:30bed4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do drag states clear cleanly on cancel, lost capture, second pointer or blur?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:013320",
+       "impeccable:ac944b",
+       "impeccable:6cd8f8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page touch-action contains manipulation",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:013320"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-hover-only": [
+   {
+    "rule": "page ask \"Does every hover affordance have a non-hover and keyboard equivalent?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:bfc512",
+       "ui-craft:0540fe",
+       "hallmark:96151b",
+       "hallmark:c8780e",
+       "hallmark:5b48c2",
+       "impeccable:60b875",
+       "ui-craft:ed0030",
+       "ui-craft:4ce13a",
+       "ui-craft:b0eddf",
+       "impeccable:6b338d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:hover ask \"Is hover gated to pointer devices that can hover?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7615b9",
+       "hallmark:a663d0",
+       "ui-craft:ed0030",
+       "ui-craft:2b73b9",
+       "impeccable:6ce1c0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:tooltip ask \"Does every tooltip-only explanation have a touch equivalent?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b0eddf"
+      ]
+     }
+    ]
+   }
+  ],
+  "tap-highlight": [
+   {
+    "rule": "aria:button ask \"Does -webkit-tap-highlight-color match the design?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:5f878d",
+       "vercel:90dab7"
+      ]
+     }
+    ]
+   }
+  ],
+  "touch-action-manipulation": [
+   {
+    "rule": "aria:button touch-action == manipulation",
+    "values": [
+     {
+      "value": "manipulation",
+      "qids": [
+       "ui-craft:e537e0",
+       "vercel:da3542",
+       "vercel:232511"
+      ]
+     }
+    ]
+   }
+  ],
+  "cursor-pointer": [
+   {
+    "rule": "aria:button cursor == pointer",
+    "values": [
+     {
+      "value": "pointer",
+      "qids": [
+       "deslop:6018dc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button lighthouse:interactive-element-affordance pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:6018dc"
+      ]
+     }
+    ]
+   }
+  ],
+  "link-vs-button": [
+   {
+    "rule": "aria:link lighthouse:crawlable-anchors pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c91df8",
+       "vercel:835d09",
+       "vercel:5f9d7a",
+       "vercel:279f8b",
+       "vercel:fbed1f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:link ask \"Do navigation links use a real anchor element so Cmd/Ctrl-click and middle-click work?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:835d09",
+       "vercel:5f9d7a",
+       "vercel:279f8b",
+       "vercel:fbed1f",
+       "ui-craft:c91df8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Are buttons used for actions and never as a substitute for navigation links?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:835d09"
+      ]
+     }
+    ]
+   }
+  ],
+  "loading-state-button": [
+   {
+    "rule": "aria:button ask \"Does an async button show an inline spinner while keeping its original label?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:69fb08",
+       "ui-craft:1fb852",
+       "ui-craft:99c56a",
+       "vercel:59d825",
+       "vercel:77ecbe",
+       "ui-craft:45f45e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Does an async button disable on submit to prevent duplicate requests?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:82119d",
+       "ui-craft:45f45e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Does a field being validated stay editable with an inline spinner in its right-edge slot?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6e8f9c"
+      ]
+     }
+    ]
+   }
+  ],
+  "prevent-double-submit": [
+   {
+    "rule": "aria:button ask \"Does an async button disable on submit to prevent duplicate requests?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:82119d",
+       "ui-craft:45f45e",
+       "ui-craft:243c96",
+       "vercel:91fe8d",
+       "vercel:f3bef5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Is submit kept enabled until the request starts and never disabled on idle?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:8c90c2",
+       "ui-craft:45f45e",
+       "vercel:91fe8d",
+       "vercel:f3bef5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Does a disabled in-flight submit stay visible rather than hidden?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:9c3d10"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Does a submission carry an idempotency key?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:91fe8d"
+      ]
+     }
+    ]
+   }
+  ],
+  "optimistic-update": [
+   {
+    "rule": "page ask \"Does the UI update immediately for likely-successful low-risk writes and reconcile on the server response?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:056eb7",
+       "ui-craft:f59973",
+       "ui-craft:656c6d",
+       "vercel:7eb3e6",
+       "vercel:ad102e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does a failed optimistic update roll back visibly with an undo or retry prompt, never silently?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:056eb7",
+       "ui-craft:e5bd5b",
+       "vercel:7eb3e6",
+       "vercel:ad102e",
+       "hallmark:f68045"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:toast transition-duration == 200ms",
+    "values": [
+     {
+      "value": "200ms",
+      "qids": [
+       "hallmark:f68045"
+      ]
+     }
+    ]
+   }
+  ],
+  "undo-over-confirm": [
+   {
+    "rule": "page ask \"Is undo offered instead of a confirmation dialog for recoverable actions?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:ab6823",
+       "impeccable:b03540",
+       "ui-craft:29983f",
+       "ui-craft:a90f8a",
+       "ui-craft:882edd",
+       "nngroup:0c07d7",
+       "ui-craft:b4bf15"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is a destructive action confirmed or given a safe undo window, never immediate?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:d75d58",
+       "vercel:355017",
+       "vercel:dc40aa",
+       "apple-hig:d89be3",
+       "impeccable:b03540"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:alertdialog ask \"Does the confirmation name the object and consequence and use the action as the button label rather than Yes or No?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:b03540"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:toast ask \"Does every error toast offer retry or undo?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c7430b",
+       "hallmark:f68045",
+       "ui-craft:e5bd5b"
+      ]
+     }
+    ]
+   }
+  ],
+  "toast-time-and-persist": [
+   {
+    "rule": "ui:toast ask \"Are toasts brief and never the only copy of an error the user must act on?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:c26432",
+       "ui-craft:a385fe",
+       "hallmark:c7430b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:toast wcag:2.2.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:627827"
+      ]
+     }
+    ]
+   }
+  ],
+  "status-messages-live": [
+   {
+    "rule": "aria:status ask \"Are toasts and inline validation announced with aria-live polite?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:006c3e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:status ask \"Do loading states use aria-busy or status text?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8f542d"
+      ]
+     }
+    ]
+   }
+  ],
+  "input-type-correct": [
+   {
+    "rule": "aria:textbox lighthouse:autocomplete-valid pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:bef3d3",
+       "deslop:a592db",
+       "ui-craft:d76ed4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Does every field use the correct type and inputmode (email, tel, url, number)?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:15325e",
+       "deslop:a592db",
+       "ui-craft:d76ed4",
+       "ui-craft:10323b",
+       "vercel:754b9d",
+       "vercel:f88d87",
+       "vercel:0e0d64",
+       "oneredoak:ff35a3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Does every field have a meaningful name and autocomplete token?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:a592db",
+       "ui-craft:d76ed4",
+       "vercel:f88d87",
+       "ui-craft:10323b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Is native input type date used where the experience is tolerable?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e1add2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Is spellcheck disabled for emails, codes and usernames?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:15325e"
+      ]
+     }
+    ]
+   }
+  ],
+  "autocomplete-attributes": [
+   {
+    "rule": "aria:textbox lighthouse:autocomplete pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:f73ed7",
+       "axe:bef3d3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox lighthouse:autocomplete-valid pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:bef3d3",
+       "deslop:a592db"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox wcag:1.3.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:49eaac"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Does every field have a meaningful name and autocomplete token?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:d76ed4",
+       "vercel:e83376",
+       "vercel:f88d87",
+       "ui-craft:10323b",
+       "deslop:a592db",
+       "ui-craft:7cb610"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Do fields with a known set of answers offer autocomplete and smart defaults?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:65a01a",
+       "impeccable:6c25b1"
+      ]
+     }
+    ]
+   }
+  ],
+  "consistent-navigation": [
+   {
+    "rule": "aria:navigation wcag:3.2.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:3ef4e4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation ask \"Does navigation keep the same relative order on every page?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:3ef4e4",
+       "impeccable:2902c5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation ask \"Does navigation use the platform's standard model with no mixed metaphors?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:9ab767",
+       "taste-skill:a31002"
+      ]
+     }
+    ]
+   }
+  ],
+  "consistent-identification": [
+   {
+    "rule": "page wcag:3.2.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:883346"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are components with the same function named and labelled identically across pages?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:883346"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-context-change-on-focus": [
+   {
+    "rule": "page wcag:3.2.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:5ff6d6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:3.2.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:897a67"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:3.2.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:20c376"
+      ]
+     }
+    ]
+   }
+  ],
+  "consistent-help": [
+   {
+    "rule": "page wcag:3.2.6 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:ffd8e6"
+      ]
+     }
+    ]
+   }
+  ],
+  "timeout-warning": [
+   {
+    "rule": "page wcag:2.2.6 pass",
+    "values": [
+     {
+      "value": "20 hours",
+      "qids": [
+       "wcag22:1b28b6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are users warned of the duration of any inactivity that could cause data loss?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:1b28b6"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-time-limit": [
+   {
+    "rule": "page wcag:2.2.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:627827"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:2.2.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:2abb53"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:meta-refresh pass",
+    "values": [
+     {
+      "value": "20 hours",
+      "qids": [
+       "axe:8c5ba5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the interface minimize time-boxed elements?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:c11c5b"
+      ]
+     }
+    ]
+   }
+  ],
+  "multiple-ways-to-find": [
+   {
+    "rule": "page wcag:2.4.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:e4421c"
+      ]
+     }
+    ]
+   }
+  ],
+  "swipe-alternative": [
+   {
+    "rule": "page wcag:2.5.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:c58843"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does every drag, swipe, pinch or path gesture have a tap, click and keyboard alternative?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:75c316",
+       "vercel:0b69ec",
+       "apple-hig:3ded4d",
+       "apple-hig:72af38",
+       "wcag22:c58843"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are swipe gestures used only for reversible, spatially-implied actions?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:00fa0f"
+      ]
+     }
+    ]
+   }
+  ],
+  "motion-actuation-alternative": [
+   {
+    "rule": "page wcag:2.5.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:4ae4ba"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Can shake or tilt functionality be operated by a control and the motion response disabled?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:4ae4ba"
+      ]
+     }
+    ]
+   }
+  ],
+  "label-in-name": [
+   {
+    "rule": "aria:button wcag:2.5.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:008adc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button lighthouse:label-content-name-mismatch pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:70403c",
+       "axe:a04e53",
+       "wcag22:008adc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do screen-reader names match visible labels and outcomes?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:817a86",
+       "apple-hig:d8cbe9"
+      ]
+     }
+    ]
+   }
+  ],
+  "offline-state": [
+   {
+    "rule": "page ask \"Does the interface show a message when the user is offline?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": []
+     }
+    ]
+   }
+  ],
+  "focus-ring-appears-instantly-not-animated": [
+   {
+    "rule": "state:focus-visible transition-duration == 0s",
+    "values": [
+     {
+      "value": "0s",
+      "qids": [
+       "hallmark:465002",
+       "hallmark:c45d98",
+       "hallmark:4e145d",
+       "hallmark:cc8949"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible transition-property !contains outline",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:cc8949"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible transition-property !contains box-shadow",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:cc8949"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible transition-property !contains opacity",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4e145d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible transition-property !contains transform",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4e145d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible ask \"Does the focus ring appear instantly rather than fading in?\"",
+    "class": "motion",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:89bfae",
+       "hallmark:465002",
+       "hallmark:211aad",
+       "hallmark:c45d98"
+      ]
+     }
+    ]
+   }
+  ],
+  "minimal-signup-fields": [
+   {
+    "rule": "aria:form ask \"Does signup ask for the minimum (email and password, name only if needed on day one)?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:05a65b",
+       "ui-craft:af01c4",
+       "ui-craft:0c04bd",
+       "ui-craft:80aac4"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-dead-zones-on-controls": [
+   {
+    "rule": "aria:checkbox ask \"Do the label and control share a single generous hit target?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:53320e",
+       "vercel:d0a7db"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is everything that looks interactive actually interactive?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:08719a",
+       "vercel:f03560"
+      ]
+     }
+    ]
+   }
+  ],
+  "toasts-only-for-failures-and-needed-confirmation": [
+   {
+    "rule": "ui:toast ask \"Are toasts reserved for failures, hidden-effect actions and needed confirmations?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:9adf9e",
+       "hallmark:db45cf",
+       "hallmark:0c4c14"
+      ]
+     }
+    ]
+   }
+  ],
+  "smart-form-defaults": [
+   {
+    "rule": "aria:form ask \"Do forms make common choices automatic and ask only when necessary?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:d75cb0",
+       "impeccable:05234d",
+       "nngroup:da818d"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-scroll-jacking": [
+   {
+    "rule": "page ask \"Does the page leave native scroll alone, with no scroll-jacking or smooth-scroll libraries?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ebe504",
+       "ui-craft:fc3776"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are at most two hero sections pinned?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:6b8f42"
+      ]
+     }
+    ]
+   }
+  ],
+  "stable-toast-stack-positions": [
+   {
+    "rule": "ui:toast lighthouse:cumulative-layout-shift pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:8f952e",
+       "hallmark:02068e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:toast ask \"Do existing toasts stay in place when a new one arrives?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:02068e",
+       "hallmark:8f952e"
+      ]
+     }
+    ]
+   }
+  ],
+  "delay-spinner-and-enforce-minimum-visible-time": [
+   {
+    "rule": "aria:progressbar transition-delay == 150ms",
+    "values": [
+     {
+      "value": "150ms",
+      "qids": [
+       "hallmark:fe770a",
+       "hallmark:2bba21"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:progressbar ask \"Is a loading indicator kept visible for a minimum time once shown?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "300ms",
+      "qids": [
+       "hallmark:fe770a",
+       "hallmark:2bba21"
+      ]
+     }
+    ]
+   }
+  ],
+  "type-to-confirm-for-destructive-actions": [
+   {
+    "rule": "aria:alertdialog ask \"Must the user type the resource name or tick a checkbox before an irreversible destructive button activates?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:5a8ab5",
+       "ui-craft:61276e"
+      ]
+     }
+    ]
+   }
+  ],
+  "tooltip-delay-on-hover-but-instant-on-focus": [
+   {
+    "rule": "aria:tooltip transition-delay between 800ms 1000ms",
+    "values": [
+     {
+      "value": "800ms 1000ms",
+      "qids": [
+       "hallmark:2773bd",
+       "hallmark:793af6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:tooltip ask \"Is the tooltip shown on keyboard focus as well as on hover?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "0ms",
+      "qids": [
+       "hallmark:2773bd",
+       "hallmark:793af6"
+      ]
+     }
+    ]
+   }
+  ],
+  "labels-on-icon-only-navigation": [
+   {
+    "rule": "aria:navigation ask \"Do navigation icons carry visible text labels rather than being icon-only?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:0012f5",
+       "impeccable:4260c7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon lighthouse:button-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:0012f5",
+       "impeccable:4260c7"
+      ]
+     }
+    ]
+   }
+  ],
+  "don-t-block-product-with-onboarding": [
+   {
+    "rule": "process ask \"Can users reach the product without completing a long onboarding?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:9520b6",
+       "impeccable:a63e19"
+      ]
+     }
+    ]
+   }
+  ],
+  "skippable-onboarding": [
+   {
+    "rule": "process ask \"Does onboarding offer a findable Skip option?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:12e3e1",
+       "impeccable:f33993"
+      ]
+     }
+    ]
+   }
+  ],
+  "track-onboarding-completion-and-dismissals": [
+   {
+    "rule": "process ask \"Is onboarding completion tracked and dismissals respected so it never shows twice?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:5ac86c",
+       "impeccable:0f4a38"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-font-weight-change-between-states": [
+   {
+    "rule": "state:hover ask \"Do font-weight, font-size, letter-spacing, padding and border-width stay unchanged on interaction?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:f6a70c",
+       "deslop:43d18e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:cumulative-layout-shift pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:43d18e",
+       "deslop:f6a70c"
+      ]
+     }
+    ]
+   }
+  ],
+  "streaming-caret-indicator": [
+   {
+    "rule": "aria:status ask \"Is a caret or pulsing dot always visible while tokens stream in?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:05200b",
+       "ui-craft:751596"
+      ]
+     }
+    ]
+   }
+  ],
+  "stop-and-regenerate-controls-while-streaming": [
+   {
+    "rule": "aria:button ask \"Is there always a stop button while streaming and a regenerate button after stop?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f79cc3",
+       "ui-craft:5d77e7"
+      ]
+     }
+    ]
+   }
+  ],
+  "put-search-and-filter-state-in-the-url": [
+   {
+    "rule": "page ask \"Does the URL reflect search, filter, tab, pagination and expanded-panel state?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:216b41",
+       "vercel:c8cbba"
+      ]
+     }
+    ]
+   }
+  ],
+  "preserve-valid-fields-on-error": [
+   {
+    "rule": "aria:form ask \"Does the form keep the user's valid data and in-flight state when an error occurs?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:9e5de2",
+       "ui-craft:3e4871"
+      ]
+     }
+    ]
+   }
+  ],
+  "presets-resolve-to-editable-state": [
+   {
+    "rule": "process ask \"Do templates and presets resolve to editable state with Customize always available?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:37e14d",
+       "ui-craft:c79467"
+      ]
+     }
+    ]
+   }
+  ],
+  "handle-concurrent-edit-conflicts": [
+   {
+    "rule": "page ask \"Is a concurrent-edit conflict handled explicitly, never by silently overwriting?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b15a04",
+       "ui-craft:7f893a"
+      ]
+     }
+    ]
+   }
+  ],
+  "sound-toggle-in-settings": [
+   {
+    "rule": "page ask \"Is there an explicit toggle in settings to disable sounds?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:80091b",
+       "ui-craft:43caaf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "media:reduced-motion ask \"Does sound also respect prefers-reduced-motion as a default proxy?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:43caaf"
+      ]
+     }
+    ]
+   }
+  ],
+  "inputs-keep-focus-and-value-after-hydration": [
+   {
+    "rule": "aria:textbox ask \"Do inputs keep their focus and value after hydration?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:320703",
+       "vercel:0052fc"
+      ]
+     }
+    ]
+   }
+  ],
+  "contain-overscroll-in-modals-and-drawers": [
+   {
+    "rule": "aria:dialog ask \"Is overscroll-behavior set to contain in modals and drawers?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "contain",
+      "qids": [
+       "vercel:0c61db",
+       "vercel:ac525f"
+      ]
+     }
+    ]
+   }
+  ],
+  "enter-submits-forms": [
+   {
+    "rule": "aria:form ask \"Does Enter submit a focused single input (or the last control) and Cmd/Ctrl+Enter a textarea?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:ac2719",
+       "vercel:951bd0"
+      ]
+     }
+    ]
+   }
+  ],
+  "example-values-as-placeholders": [
+   {
+    "rule": "aria:textbox ask \"Does the placeholder show an example value or pattern ending with an ellipsis?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:b20094",
+       "vercel:b97db1"
+      ]
+     }
+    ]
+   }
+  ],
+  "trim-whitespace-from-input-values": [
+   {
+    "rule": "aria:textbox ask \"Is trailing whitespace trimmed from input values?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:991c9f",
+       "vercel:a4aa0e"
+      ]
+     }
+    ]
+   }
+  ],
+  "autofocus-primary-input-on-desktop-only": [
+   {
+    "rule": "aria:textbox ask \"Is autofocus used only on desktop, on a single primary input?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:394993",
+       "vercel:8c483f"
+      ]
+     }
+    ]
+   }
+  ],
+  "pair-audio-cues-with-haptics": [
+   {
+    "rule": "page ask \"Are haptics used in addition to audio cues?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:da56ab"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-simplest-gesture-for-frequent-actions": [
+   {
+    "rule": "page ask \"Do frequent actions use the simplest gesture, without custom multifinger or multihand gestures?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:c4ca83"
+      ]
+     }
+    ]
+   }
+  ],
+  "dismiss-views-with-explicit-action": [
+   {
+    "rule": "aria:dialog ask \"Are views dismissed with an explicit action?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:f57ee6"
+      ]
+     }
+    ]
+   }
+  ],
+  "do-not-use-validation-to-gate-eligibility": [
+   {
+    "rule": "aria:form ask \"Does the form avoid using validation to check eligibility or permission?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "govuk:a12a92"
+      ]
+     }
+    ]
+   }
+  ],
+  "validation-ignores-unwanted-characters": [
+   {
+    "rule": "aria:textbox ask \"Does validation ignore unwanted characters unless it would make the information too unclear?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "govuk:054121"
+      ]
+     }
+    ]
+   }
+  ],
+  "always-validate-on-the-server": [
+   {
+    "rule": "aria:form ask \"Is server-side validation always carried out even with client-side validation?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "govuk:58cc2e"
+      ]
+     }
+    ]
+   }
+  ],
+  "add-client-validation-only-for-a-user-need": [
+   {
+    "rule": "aria:form ask \"Is client-side validation added only where a user need for it was found?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "govuk:261cee"
+      ]
+     }
+    ]
+   }
+  ],
+  "do-not-add-required-to-inputs-mark-optional-inst": [
+   {
+    "rule": "aria:textbox ask \"Are optional fields marked instead of adding required to inputs?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "govuk:ee8c60"
+      ]
+     }
+    ]
+   }
+  ],
+  "loading-fields-stay-editable": [
+   {
+    "rule": "aria:textbox ask \"Does a loading field stay editable instead of being disabled?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:8128c9"
+      ]
+     }
+    ]
+   }
+  ],
+  "drag-and-drop-ghost-and-drop-indicator": [
+   {
+    "rule": "state:active cursor == grabbing",
+    "values": [
+     {
+      "value": "grabbing",
+      "qids": [
+       "hallmark:2b1b0b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:active opacity == 0.5",
+    "values": [
+     {
+      "value": "0.5",
+      "qids": [
+       "hallmark:2b1b0b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does a drag show a ghost element and a 1px accent drop indicator at the nearest valid target?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "hallmark:2b1b0b"
+      ]
+     }
+    ]
+   }
+  ],
+  "system-back-gesture-always-works": [
+   {
+    "rule": "page ask \"Does the system Back gesture and button always work without being trapped or hijacked?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:e4ab65"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-relevant-context-visible-across-steps": [
+   {
+    "rule": "page ask \"Is relevant context kept visible or repeated where it is needed across steps?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:bf1023"
+      ]
+     }
+    ]
+   }
+  ],
+  "make-options-visible-rather-than-memorized": [
+   {
+    "rule": "page ask \"Are objects, actions and options visible or easily retrievable rather than memorized?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a74948"
+      ]
+     }
+    ]
+   }
+  ],
+  "preserve-form-data-on-error": [
+   {
+    "rule": "aria:form ask \"Does the form keep the user's valid data and in-flight state when an error occurs?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a83073"
+      ]
+     }
+    ]
+   }
+  ],
+  "bottom-of-screen-thumb-reach-actions": [
+   {
+    "rule": "aria:button ask \"Are primary actions placed at the bottom of the screen within thumb reach?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:4d1e6b"
+      ]
+     }
+    ]
+   }
+  ],
+  "reduce-choices": [
+   {
+    "rule": "page ask \"Are choices reduced to fewer buttons and options with a clearer path forward?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:6f382c"
+      ]
+     }
+    ]
+   }
+  ],
+  "inline-editing-instead-of-modal-flows": [
+   {
+    "rule": "aria:dialog ask \"Is inline editing used instead of a modal flow where possible?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a02257"
+      ]
+     }
+    ]
+   }
+  ],
+  "remove-unnecessary-flow-steps": [
+   {
+    "rule": "process ask \"Can the flow lose a step?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:aa1feb"
+      ]
+     }
+    ]
+   }
+  ],
+  "preserve-edge-swipe-back-gesture": [
+   {
+    "rule": "page ask \"Does the left-edge back gesture stay alive, never disabled or overlaid?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:443acc"
+      ]
+     }
+    ]
+   }
+  ],
+  "interactive-onboarding": [
+   {
+    "rule": "process ask \"Is onboarding interactive where possible, letting users do rather than only read?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c64edd"
+      ]
+     }
+    ]
+   }
+  ],
+  "dismissable-hints-with-don-t-show-again": [
+   {
+    "rule": "process ask \"Are hints dismissable with a Don't show again option?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:811051"
+      ]
+     }
+    ]
+   }
+  ],
+  "short-tours-of-3-7-steps": [
+   {
+    "rule": "process ask \"Does each tour have at most 7 steps?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "3-7 steps",
+      "qids": [
+       "impeccable:8cfdd9"
+      ]
+     }
+    ]
+   }
+  ],
+  "help-entry-point-in-onboarding": [
+   {
+    "rule": "process ask \"Does onboarding offer a help entry point such as a short tutorial?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:163e29"
+      ]
+     }
+    ]
+   }
+  ],
+  "clearly-labeled-exits": [
+   {
+    "rule": "page ask \"Is every exit clearly labeled and discoverable?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:139c98"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-tooltips-for-error-messages": [
+   {
+    "rule": "aria:tooltip ask \"Are errors reported without using tooltips?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:af52ca"
+      ]
+     }
+    ]
+   }
+  ],
+  "restrained-success-indicators-in-forms": [
+   {
+    "rule": "aria:form ask \"Are success indicators shown only where the extra context helps complete the form faster or more accurately?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:4603cf"
+      ]
+     }
+    ]
+   }
+  ],
+  "sensible-defaults-for-settings": [
+   {
+    "rule": "page ask \"Does every setting have a default value?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "oneredoak:6a15c2"
+      ]
+     }
+    ]
+   }
+  ],
+  "wrap-fields-in-a-real-form-so-enter-submits": [
+   {
+    "rule": "aria:form ask \"Are fields wrapped in a real form element so Enter submits without rebuilding it in JS?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:bb934c"
+      ]
+     }
+    ]
+   }
+  ],
+  "autofocus-first-field-on-desktop-only": [
+   {
+    "rule": "aria:textbox ask \"Is autofocus used only on desktop, on a single primary input?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:8a269e"
+      ]
+     }
+    ]
+   }
+  ],
+  "submenu-prediction-cone": [
+   {
+    "rule": "aria:menu ask \"Do nested menus use a prediction cone so the pointer can travel diagonally without closing the submenu?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:e37761"
+      ]
+     }
+    ]
+   }
+  ],
+  "set-initial-focus-in-dialogs": [
+   {
+    "rule": "aria:dialog ask \"Does a dialog set initial focus inside itself?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5223c8"
+      ]
+     }
+    ]
+   }
+  ],
+  "render-streamed-markdown-progressively": [
+   {
+    "rule": "process ask \"Is streamed markdown rendered progressively as chunks arrive rather than buffered and rendered once?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:59a468"
+      ]
+     }
+    ]
+   }
+  ],
+  "streaming-pacing-matches-model-speed": [
+   {
+    "rule": "process ask \"Does streaming pace match the real model speed, with incremental progress and no long-sitting spinner?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0254fc"
+      ]
+     }
+    ]
+   }
+  ],
+  "pause-auto-scroll-when-user-scrolls-up": [
+   {
+    "rule": "page ask \"Does auto-scroll pause the moment the user scrolls up?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c315cf"
+      ]
+     }
+    ]
+   }
+  ],
+  "never-block-ui-on-feedback": [
+   {
+    "rule": "page ask \"Does the interface never block the UI on a feedback request?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:726510"
+      ]
+     }
+    ]
+   }
+  ],
+  "plain-text-fallback-for-failed-structured-render": [
+   {
+    "rule": "process ask \"Does a failed structured render fall back to plain text instead of a broken component?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0afa17"
+      ]
+     }
+    ]
+   }
+  ],
+  "loading-states-show-progress-and-cancel": [
+   {
+    "rule": "aria:progressbar ask \"Does a loading state set expectations, show progress and offer Cancel?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:782c06"
+      ]
+     }
+    ]
+   }
+  ],
+  "show-search-scope": [
+   {
+    "rule": "aria:search ask \"Is the search scope shown so users know what was searched?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:31c942"
+      ]
+     }
+    ]
+   }
+  ],
+  "self-serve-cancellation": [
+   {
+    "rule": "process ask \"Can a subscription be cancelled self-serve, not only through a support ticket?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:3a744d"
+      ]
+     }
+    ]
+   }
+  ],
+  "guest-checkout": [
+   {
+    "rule": "process ask \"Can a user check out as a guest without forced signup?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:9a139b"
+      ]
+     }
+    ]
+   }
+  ],
+  "resume-flow-where-user-stopped": [
+   {
+    "rule": "process ask \"Does a returning user resume the flow where they stopped rather than at step 1?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:90f773"
+      ]
+     }
+    ]
+   }
+  ],
+  "per-row-invite-failure-with-retry": [
+   {
+    "rule": "aria:list ask \"Does one failed invite fail only its own row, with a retry on that row?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:de45f5"
+      ]
+     }
+    ]
+   }
+  ],
+  "mark-required-or-optional-fields": [
+   {
+    "rule": "aria:form ask \"Are required or optional fields marked so users never guess?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:024d30"
+      ]
+     }
+    ]
+   }
+  ],
+  "disable-rather-than-hide-filled-conditional-fiel": [
+   {
+    "rule": "aria:form ask \"Is a filled conditional field disabled with a note rather than hidden?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:6db4fe"
+      ]
+     }
+    ]
+   }
+  ],
+  "back-button-preserves-form-state": [
+   {
+    "rule": "aria:form ask \"Does moving back preserve all form state without re-fetching or resetting?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2f8ca6"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-spinner-for-autosave": [
+   {
+    "rule": "aria:status ask \"Does autosave avoid a spinner, using a check mark or timestamp instead?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f622b4"
+      ]
+     }
+    ]
+   }
+  ],
+  "persist-tab-state-across-refresh": [
+   {
+    "rule": "aria:tablist ask \"Does the selected tab persist after a refresh?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e36249"
+      ]
+     }
+    ]
+   }
+  ],
+  "expand-hit-area-with-pseudo-element": [
+   {
+    "rule": "aria:button ask \"Is a small visual control expanded with padding or a pseudo-element to a 44px hit area?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8e1c17"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-layout-metric-changes-on-interaction": [
+   {
+    "rule": "state:hover ask \"Do font-weight, font-size, letter-spacing, padding and border-width stay unchanged on interaction?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:1dbc6a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:cumulative-layout-shift pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:1dbc6a"
+      ]
+     }
+    ]
+   }
+  ],
+  "mobile-friendly-auth-options": [
+   {
+    "rule": "aria:form ask \"Do email, Google and Apple auth all work on mobile?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:610fac"
+      ]
+     }
+    ]
+   }
+  ],
+  "make-keyboard-shortcuts-discoverable": [
+   {
+    "rule": "page ask \"Are keyboard shortcuts discoverable outside a hidden help page?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4df244"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-current-view-filter-scope-visible": [
+   {
+    "rule": "page ask \"Are the current view, filter and scope always in the viewport?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:6990e8"
+      ]
+     }
+    ]
+   }
+  ],
+  "blank-canvas-default-over-templates": [
+   {
+    "rule": "process ask \"Is the blank canvas the default, with templates visible but never the default?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e50d07"
+      ]
+     }
+    ]
+   }
+  ],
+  "onboarding-doesn-t-gate-empty-state": [
+   {
+    "rule": "state:empty ask \"Does onboarding avoid gating the empty state?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b275ba"
+      ]
+     }
+    ]
+   }
+  ],
+  "undo-stack-records-change-annotations": [
+   {
+    "rule": "process ask \"Does the undo stack record change annotations, not just abstract state?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b4b8a3"
+      ]
+     }
+    ]
+   }
+  ],
+  "undo-not-blocked-by-others-edits": [
+   {
+    "rule": "process ask \"Is undo never blocked because someone else has edited the same record?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:96e20f"
+      ]
+     }
+    ]
+   }
+  ],
+  "friction-proportional-to-commitment": [
+   {
+    "rule": "process ask \"Does friction increase only where the commitment justifies it?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:af3cfa"
+      ]
+     }
+    ]
+   }
+  ],
+  "validate-inline-not-only-on-submit": [
+   {
+    "rule": "aria:form ask \"Does the form validate inline rather than only on submit?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ba5fcf"
+      ]
+     }
+    ]
+   }
+  ],
+  "prefill-likely-answers": [
+   {
+    "rule": "aria:form ask \"Do prefilled values use the most likely answer?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:78a269"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-spinner-for-fast-chart-updates": [
+   {
+    "rule": "ui:chart transition-duration == 150ms",
+    "values": [
+     {
+      "value": "150ms",
+      "qids": [
+       "ui-craft:49bae5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:chart ask \"Does a chart re-render show an opacity transition rather than a spinner for operations under 400ms?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "400ms",
+      "qids": [
+       "ui-craft:49bae5"
+      ]
+     }
+    ]
+   }
+  ],
+  "design-pointer-agnostic": [
+   {
+    "rule": "page ask \"Is the design pointer-agnostic rather than assuming touch only on mobile?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:878c90"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-sound-on-high-frequency-interactions": [
+   {
+    "rule": "page ask \"Is sound never added to high-frequency interactions?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:39dc1e"
+      ]
+     }
+    ]
+   }
+  ],
+  "sound-informs-never-punishes": [
+   {
+    "rule": "page ask \"Does sound inform rather than punish, avoiding harsh sounds for mistakes?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ad6d44"
+      ]
+     }
+    ]
+   }
+  ],
+  "sound-weight-matches-action-importance": [
+   {
+    "rule": "page ask \"Does sound weight match action importance?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5e98ab"
+      ]
+     }
+    ]
+   }
+  ],
+  "sound-duration-matches-action-duration": [
+   {
+    "rule": "page ask \"Does sound duration match action duration?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b625d4"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-orbitcontrols-on-marketing-pages": [
+   {
+    "rule": "page ask \"Do marketing pages avoid OrbitControls, using autoRotate only or nothing?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:45a13b"
+      ]
+     }
+    ]
+   }
+  ],
+  "escalate-long-loads-to-progress-or-timeout": [
+   {
+    "rule": "aria:progressbar ask \"Does a load past 5s escalate to a progress indicator or a timeout message with retry?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "5s",
+      "qids": [
+       "ui-craft:c5ab6f"
+      ]
+     }
+    ]
+   }
+  ],
+  "error-summary-plus-inline-errors": [
+   {
+    "rule": "aria:form ask \"Is an error summary at the top shown in addition to inline errors, not instead of them?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:70743e"
+      ]
+     }
+    ]
+   }
+  ],
+  "minimum-visible-time-for-loading-indicators": [
+   {
+    "rule": "aria:progressbar transition-delay between 150ms 300ms",
+    "values": [
+     {
+      "value": "150ms 300ms",
+      "qids": [
+       "vercel:8c33ca"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:progressbar ask \"Is a loading indicator kept visible for a minimum time once shown?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": "300ms 500ms",
+      "qids": [
+       "vercel:8c33ca"
+      ]
+     }
+    ]
+   }
+  ],
+  "disable-spellcheck-on-emails-and-codes": [
+   {
+    "rule": "aria:textbox ask \"Is spellcheck disabled for emails, codes and usernames?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:767fb5"
+      ]
+     }
+    ]
+   }
+  ],
+  "warn-on-unsaved-changes-before-navigation": [
+   {
+    "rule": "aria:form ask \"Does the page warn on unsaved changes before navigation?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:35dde1"
+      ]
+     }
+    ]
+   }
+  ],
+  "restore-scroll-on-back-and-forward": [
+   {
+    "rule": "page ask \"Does Back and Forward restore the scroll position?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:ac4afc"
+      ]
+     }
+    ]
+   }
+  ],
+  "delay-first-tooltip-then-instant": [
+   {
+    "rule": "aria:tooltip ask \"Is the first tooltip delayed and subsequent peer tooltips instant?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:00cd8b"
+      ]
+     }
+    ]
+   }
+  ],
+  "disable-selection-during-drag": [
+   {
+    "rule": "page ask \"During drag, is text selection disabled and inert set on dragged elements?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:332ec8"
+      ]
+     }
+    ]
+   }
+  ],
+  "support-all-input-modalities": [
+   {
+    "rule": "page wcag:2.5.6 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:3d745e"
+      ]
+     }
+    ]
+   }
+  ],
+  "show-expected-input-format": [
+   {
+    "rule": "aria:textbox ask \"Are users made aware of the expected data format?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "webdev:d88996"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "new_measures": {},
+ "new_elements": {
+  "aria:toolbar": "Toolbars"
+ }
+}

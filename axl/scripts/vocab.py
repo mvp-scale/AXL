@@ -7,6 +7,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 D = f"{ROOT}/axl/data"
 V = json.load(open(f"{D}/vocab.json"))
 EL = {e["id"]: e for e in V["elements"]}
+_W = json.load(open(f"{D}/standards/wcag22_sc.json"))["criteria"]
 WCAG = {"1.1.1": "text alternatives", "1.3.1": "structure is marked up", "1.4.1": "color isn't the only signal", "1.4.3": "text contrast (AA)", "1.4.4": "text resizes to 200%",
         "1.4.6": "text contrast (AAA)", "1.4.10": "reflow at 320px", "1.4.11": "non-text contrast", "1.4.12": "text spacing", "2.1.1": "keyboard access", "2.3.3": "motion from interaction",
         "2.4.1": "skip links", "2.4.6": "headings and labels", "2.4.7": "visible focus", "2.4.11": "focus not hidden", "2.5.8": "target size", "3.1.1": "page language", "3.3.1": "errors identified",
@@ -29,7 +30,7 @@ def validate():
 
 def _prop(p):
     if p in V["properties"]: return V["properties"][p]["words"]
-    if p.startswith("wcag:"): return f"{WCAG.get(p[5:], 'WCAG ' + p[5:])} (WCAG {p[5:]})"
+    if p.startswith("wcag:"): return f"{_W.get(p[5:], {}).get('name', 'WCAG ' + p[5:]).lower()} (WCAG {p[5:]})"
     if p.startswith("lighthouse:"): return p[11:].replace("-", " ") + " (Lighthouse)"
     if p.startswith("axl:"): return p[4:].replace("-", " ")
     return p.replace("-", " ")
@@ -46,7 +47,7 @@ def render(rule):
     one = EL.get(el, {}).get("singular")
     agree = lambda x: re.sub(r"^\{el\} (use|come|have|meet|include|show|keep)\b", lambda m: "{el} " + ({"have": "has"}.get(m.group(1), m.group(1) + "s") if one else m.group(1)), x)
     if prop in P: s = agree(P[prop]).format(el=who, t=t, v=val)
-    elif prop.startswith("wcag:"): s = agree(P["wcag:pass"]).format(el=who, sc=prop[5:], what=WCAG.get(prop[5:], ""))
+    elif prop.startswith("wcag:"): s = agree(P["wcag:pass"]).format(el=who, sc=prop[5:], what=_W.get(prop[5:], {}).get("name", "").lower())
     elif op == "!contains": s = f"{who} {_prop(prop)} is never {val}"
     elif op == "contains": s = f"{who} {_prop(prop)} includes {val}"
     elif op == "==": s = f"{who} {_prop(prop)} is {val}"

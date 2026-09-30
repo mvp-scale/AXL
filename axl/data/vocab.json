@@ -472,6 +472,70 @@
    "standard": "none (AXL)",
    "find": "not on the page: team or agent process",
    "singular": true
+  },
+  {
+   "id": "aria:toolbar",
+   "name": "Toolbars",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=toolbar]",
+   "singular": false
+  },
+  {
+   "id": "aria:region",
+   "name": "Regions",
+   "family": "Landmarks & navigation",
+   "standard": "WAI-ARIA 1.2",
+   "find": "section[aria-label], [role=region]",
+   "singular": false
+  },
+  {
+   "id": "aria:row",
+   "name": "Table rows",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "tr, [role=row]",
+   "singular": false
+  },
+  {
+   "id": "aria:listitem",
+   "name": "List items",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "li, [role=listitem]",
+   "singular": false
+  },
+  {
+   "id": "aria:separator",
+   "name": "Separators",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "hr, [role=separator]",
+   "singular": false
+  },
+  {
+   "id": "aria:meter",
+   "name": "Meters",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "meter, [role=meter]",
+   "singular": false
+  },
+  {
+   "id": "aria:grid",
+   "name": "Grids",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=grid]",
+   "singular": false
+  },
+  {
+   "id": "aria:blockquote",
+   "name": "Blockquotes",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "blockquote, [role=blockquote]",
+   "singular": false
   }
  ],
  "classes": [
@@ -504,6 +568,11 @@
    "id": "motion",
    "name": "Motion",
    "standard": "CSS Transitions, CSS Animations"
+  },
+  {
+   "id": "interaction",
+   "name": "Interaction",
+   "standard": "WAI-ARIA Authoring Practices Guide (W3C), HTML behaviour"
   },
   {
    "id": "access",

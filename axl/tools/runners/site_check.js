@@ -14,7 +14,7 @@ const { CHROME } = require('./common');
     const s0 = await p.evaluate("document.getElementById('stateTxt').textContent"); await p.waitForTimeout(3100);
     const s1 = await p.evaluate("document.getElementById('stateTxt').textContent");
     r.walks_without_input = s0 !== s1;
-    r.lit_during_walk = await p.evaluate("document.querySelectorAll('#board .tw.lit').length");
+    r.lit_during_walk = await p.evaluate("document.querySelectorAll('#board .er.lit').length");
     r.preview_visible = await p.evaluate(() => { const f = document.getElementById('frame').getBoundingClientRect(); return f.top < innerHeight * 0.45 && f.height > 200; });
     r.words_above_preview = await p.evaluate(() => document.querySelector('.bar').innerText.trim().split(/\s+/).length);
     await p.keyboard.down('Shift'); r.peek = await p.evaluate("document.getElementById('frame').classList.contains('peeking') && document.getElementById('stateTxt').textContent === 'Original'"); await p.keyboard.up('Shift');
@@ -26,11 +26,11 @@ const { CHROME } = require('./common');
     await p.click('#pickS .pbtn'); r.source_tiles = await p.evaluate("document.querySelectorAll('#pickS .tile').length"); await p.click('#pickS .done');
     await p.click('#pickW .play'); await p.waitForTimeout(3100); r.word_walk = await p.evaluate("document.getElementById('stateTxt').textContent"); await p.click('#pickW .play');
     // one tap on the board builds your word; save gives a file and a command
-    await p.locator('#board .tw').first().click(); await p.locator('#board .more .add').click(); r.after_one_tap = await p.evaluate(() => ({ mine: document.querySelectorAll('#board .tw[aria-pressed=true]').length, state: document.getElementById('stateTxt').textContent }));
-    await p.locator('#board .tw').nth(3).click(); await p.locator('#board .more .add').click(); await p.click('#save'); await p.waitForTimeout(300);
+    await p.locator('#board .erh').first().click(); await p.locator('#board .er.open .tw').first().click(); await p.locator('#board .more .add').click(); r.after_one_tap = await p.evaluate(() => ({ mine: document.querySelectorAll('#board .tw[aria-pressed=true]').length, state: document.getElementById('stateTxt').textContent }));
+    await p.locator('#board .er.open .tw').nth(1).click(); await p.locator('#board .more .add').click(); await p.click('#save'); await p.waitForTimeout(300);
     const prompt = await p.evaluate("document.getElementById('out').textContent"); await p.click('.tabs button[data-t=script]'); const script = await p.evaluate("document.getElementById('out').textContent");
-    await p.click('.tabs button[data-t=file]'); const file = await p.evaluate("document.getElementById('out').textContent");
-    r.saved = (() => { try { const d = JSON.parse(file); return d.axl_verb === '0.1' && d.tweaks.length === 2 && /Who asks for it/.test(prompt) && /DevTools console/.test(script); } catch (e) { return false; } })();
+    // one kit: rules (plain words + code + quote IDs) and the definition block the CLI reads
+    r.saved = (() => { const m = prompt.match(/```axl\n([\s\S]*?)```/); return /## Rules/.test(prompt) && !!m && (m[1].match(/^  - /gm) || []).length === 2 && /DevTools console/.test(script); })();
     try { new Function(script); r.script_parses = true; } catch (e) { r.script_parses = String(e); }
     await p.keyboard.press('Escape'); r.sheet_closed = await p.evaluate("!document.getElementById('sheet').classList.contains('open')");
     r.chips = await p.evaluate("document.querySelectorAll('#board .tw').length");

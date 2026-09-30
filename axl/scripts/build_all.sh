@@ -10,6 +10,10 @@ python3 axl/scripts/apply_receipts.py
 python3 axl/scripts/build_definitions.py
 python3 axl/scripts/build_verbs.py
 python3 axl/scripts/validate_atlas.py
+python3 axl/scripts/assign_ids.py
 python3 axl/scripts/build_demo.py
 python3 axl/scripts/check_previews.py
-python3 axl/scripts/build_atlas.py
+python3 axl/scripts/build_atlas.py   # writes data/entries.json
+python3 axl/scripts/vocab.py >/dev/null
+python3 axl/scripts/build_rules.py
+python3 axl/scripts/build_atlas.py   # again, with the rules

@@ -111,10 +111,13 @@ for r in catalog:
     e = entries.setdefault(key, {"word": key[0], "src": key[1], "tweaks": [], "quote": None, "url": r.get("url") or "", "kind": "primary", "derives_from": None})
     for t_ in r["tweaks"]:
         if t_ in tweaks and t_ not in e["tweaks"]: e["tweaks"].append(t_)
+        if t_ in tweaks and r.get("qid"): e.setdefault("ev", {}).setdefault(t_, []).append(r["qid"])   # quote IDs behind this link
     if not e["quote"] and r["tweaks"]: e["quote"] = r["text"]
     for t_ in r["tweaks"]:
         if t_ in tweaks: tweaks[t_]["asks"].append({"src": key[1], "word": key[0], "text": r["text"], "verified": True, "url": r.get("url") or ""})
 entries = list(entries.values())
+# the command layer as data: every definition (command x source) with its linked tweaks and the quote IDs behind each link
+json.dump({"entries": entries}, open(f"{D}/entries.json", "w"), ensure_ascii=False, indent=0)
 srcs = sorted({e["src"] for e in entries}, key=lambda s: (-sum(e["src"] == s for e in entries), s))
 wl = sorted({e["word"] for e in entries if isverb(e["word"])}, key=lambda w: (-sum(e["word"] == w for e in entries), w))
 def prov(t):
@@ -128,8 +131,25 @@ def prov(t):
             out.append({"src": e["src"], "quote": e["quote"], "url": e["url"], "verified": True})
     if t.get("source_quote"): out.append({"src": "W3C WCAG 2.2" if "w3.org" in t["source_url"] else "Smashing Magazine", "quote": t["source_quote"], "url": t["source_url"], "verified": True})
     return out
+# the rule layer (Class › Element › Rules) and every quote ID it cites, so a source chip can show the exact statements
+RULES = json.load(open(f"{D}/rules.json"))["rules"] if os.path.exists(f"{D}/rules.json") else []
+VOC = json.load(open(f"{D}/vocab.json"))
+CATQ = {r["qid"]: r for r in catalog}; CLM = {c["id"]: c for c in json.load(open(f"{D}/claims.json"))["claims"]}
+SIDX = {s_["id"]: s_["name"] for s_ in json.load(open(f"{D}/sources_index.json"))["sources"]}
+quotes = {}
+for r in RULES:
+    for v in r["values"]:
+        for q in v["qids"]:
+            if q in CATQ: quotes[q] = [q.split(":")[0], " ".join(CATQ[q]["text"].split())[:260], CATQ[q].get("url") or ""]
+            elif q.startswith("claim:") and q[6:] in CLM: c = CLM[q[6:]]; quotes[q] = [c.get("source_id") or "", " ".join((c["quote"] if c["quote_verified"] else c["text"]).split())[:260], c["source_url"]]
+# only rules with at least one source statement or public claim are shown (the rest are listed in the build output, not guessed at)
+RULES = [r for r in RULES if r["values"]]
+rules_d = [{"id": r["id"], "class": r["class"], "element": r["element"], "kind": r["kind"], "code": r["code"], "label": r["label"], "sources": r["sources"],
+            "values": [{"v": v["value"], "q": v["qids"]} for v in r["values"]], "tweaks": r["tweaks"], "pv": r["preview"]} for r in RULES]
 data = {"frame": {"width": 980, "height": 760}, "before": open(f"{A}/demo/northstar.html", encoding="utf-8").read(),
   "categories": TW["categories"], "tweaks": [dict({k: t[k] for k in ("id", "name", "category", "check", "css", "patch", "view", "state", "kind", "why") if t.get(k) is not None}, asks=prov(t)) for t in tweaks.values()],
+  "rules": rules_d, "elements": {e["id"]: {"name": e["name"], "family": e["family"]} for e in VOC["elements"]}, "classes": [c for c in VOC["classes"] if not c.get("staged")],
+  "quotes": quotes, "srcnames": SIDX,
   "entries": entries, "words": wl, "sources": srcs, "vague": vague[:40],
   "stats": {"rules": len(catalog), "statements": len(claims) + len(catalog), "sources": len(srcs), "words": len(wl), "tweaks": len(tweaks), "vague": len(vague)}}
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")

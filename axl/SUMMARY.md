@@ -2,18 +2,17 @@
 
 Open `axl/site/index.html` (one file).
 
-## What the page does
-- **Two matching pickers:** Commands (44: polish, bolder, quieter… plus "checklist" for sources that publish a general checklist) × Sources (36). Both are multi-select, colour-coded, and ▶ walks through either one.
-- **The demo is a working app you can click through** (Northstar, nine views): Overview, Projects, New project, Settings, Reports, Assistant, and a public Home page, Help article and Sign in. Click, type, open menus and dialogs. Hold **Shift** (or the button) to see the original in the same state.
-- **All 1,325 tweaks are one list** next to the pinned page on wide screens (stacked on phones): search, All/Lit now/Tool-checked/Yours, and category chips. ↑/↓ walks the list, previewing each tweak.
-- **Every tweak can be tapped.** The page jumps to the view where that tweak applies and outlines what changed ("Back to the list ↓" returns you to the row). Tweaks that can't be seen on a page say why (behaviour, performance, process…).
-- **Build your own word** from any tweaks, then **Get my word**: an agent prompt with the exact change (CSS and/or text edit) and every source that asks for it, a console check script, and a definition file for `axl.py check`.
+## What the page does (plan v2: `PLAN_V2.md`, standard: `RULE_STANDARD.md`)
+- **Commands × Sources** pickers as before; ▶ walks either one; the Northstar demo is clickable (nine views) and Shift shows the original.
+- **The list is Class › Element › Rules.** 13 classes anchored to standards (CSS modules, WCAG, Lighthouse, ARIA Practices); element rows use ARIA / Open UI / type-scale names; each rule is `element property test` in standard vocabulary, shown as a plain sentence.
+- **Picking a command lights its rows** with "n of 13" = how many of the selected definitions ask for something there; a rule shows every value sources state (disagreements visible) and source chips that open the exact quote IDs.
+- **Get my word → one kit** (Markdown): rules in words + code + quote IDs, how to use them, and the `axl` definition block; an optional console check.
+- Numbers and method: `reports/phase3-rules.md`.
 
-## Demo coverage (this pass)
-- 830 of the 1,270 harvested tweaks have a preview that `scripts/check_previews.py` measures as a real on-screen change. Add the 55 curated tweaks and **885 of 1,325 are visible**. Of the 830: 710 use CSS, 191 edit text or markup (120 of them with no CSS), and 73 show in a specific state (dialog open, error shown, menu open…).
-- The other 440 carry a reason: behaviour 211 (keyboard, focus, timing), performance 72, judgment 61, process 35, agent instructions 34, content 27. Phone-width, print and dark-mode-comparison tweaks count as not visible because the stage renders one desktop width.
-- The previews were drafted by Sonnet agents in three passes (first CSS only, then CSS plus text edits, then a last look at "judgment" and "content"). The checker accepts a preview only if it changes something on screen. A preview is AXL's rendering of the tweak on this demo, not the source's own code. Some taste tweaks ("refine the logo", "base the visual system on meaning") are one reasonable reading, so spot-check them in `data/previews.json`.
-- `demo/northstar.html` is built from the legacy app plus `demo/src/northstar_views.html`. `before/after/polished.html` are unchanged, so the tool receipts still reproduce.
+## Not done yet
+- **Phase 4:** the 127 proposed `axl:` measures (and the CLI reading the kit) are not implemented; "measurable" means a check can be written, not that it exists. Existing checks (12 console checks, axe, Lighthouse) still run.
+- **Phase 7:** the command matrix view is deferred until its place is decided.
+- 25 rules without evidence are withheld; a LICENSE and deployment are still open.
 
 ## Checked by the gates (all pass)
 - Site: `scripts/gates/site_check.py` checks that the page changes on its own within 2 s, one tap builds your word, save gives a valid file with a command, there are no network requests and no overflow, and axe finds nothing serious at 390 and 1440 px in light and dark.

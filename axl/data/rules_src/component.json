@@ -1,0 +1,3195 @@
+{
+ "class": "Components",
+ "tweaks": {
+  "table-sort-filter": [
+   {
+    "rule": "aria:table ask \"Do sortable columns and the current sort show an indicator?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:761bd8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Are row actions visible, or shown on row hover with a keyboard-accessible fallback?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:761bd8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Are the applied filters shown as removable chips above the table?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:3cff4a"
+      ]
+     }
+    ]
+   }
+  ],
+  "table-empty-row": [
+   {
+    "rule": "aria:table ask \"Does the table have an empty state when it has no rows?\"",
+    "class": "content",
+    "values": []
+   }
+  ],
+  "table-density-toggle": [
+   {
+    "rule": "aria:table ask \"Does a view use one row density, without mixing loose and tight rows?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:097171"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Do dense layouts use surface color and dividers to make zones rather than more borders?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:097171"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Can users hide or show columns and set row density, remembered across sessions?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:36c79a"
+      ]
+     }
+    ]
+   }
+  ],
+  "table-row-actions": [
+   {
+    "rule": "aria:table ask \"Are row actions visible, or shown on row hover with a keyboard-accessible fallback?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:761bd8"
+      ]
+     }
+    ]
+   }
+  ],
+  "table-bulk-actions": [
+   {
+    "rule": "aria:table ask \"Does selecting rows reveal bulk actions?\"",
+    "class": "interaction",
+    "values": []
+   }
+  ],
+  "table-responsive": [
+   {
+    "rule": "aria:table overflow-x == auto",
+    "values": [
+     {
+      "value": "auto",
+      "qids": [
+       "ui-craft:ff6c24"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"On mobile, does the table transform to cards or a vertical key/value list with data-label attributes?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:96be5e",
+       "hallmark:52ef06",
+       "impeccable:97cba8"
+      ]
+     }
+    ]
+   }
+  ],
+  "table-tabular-numerals": [
+   {
+    "rule": "aria:table font-variant-numeric contains tabular-nums",
+    "values": [
+     {
+      "value": "tabular-nums",
+      "qids": [
+       "ui-craft:0e3cd8"
+      ]
+     }
+    ]
+   }
+  ],
+  "modal-close-affordance": [
+   {
+    "rule": "aria:dialog ask \"Does the modal have a clear close control?\"",
+    "class": "interaction",
+    "values": []
+   }
+  ],
+  "modal-scroll-lock": [
+   {
+    "rule": "aria:dialog ask \"Does opening a dialog leave the page behind from scrolling unexpectedly?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:debcd3"
+      ]
+     }
+    ]
+   }
+  ],
+  "drawer-side-panel": [
+   {
+    "rule": "aria:dialog ask \"Is record detail shown in a side panel?\"",
+    "class": "layout",
+    "values": []
+   }
+  ],
+  "popover-anchor-positioning": [
+   {
+    "rule": "ui:popup position-anchor !contains none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:959cb6",
+       "ui-craft:477752",
+       "ui-craft:38bcc8",
+       "ui-craft:802f29"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:popup position-try-fallbacks !contains none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:da3fd5",
+       "ui-craft:b99f68"
+      ]
+     }
+    ]
+   }
+  ],
+  "native-dialog": [
+   {
+    "rule": "aria:dialog ask \"Is the dialog a native dialog element opened with showModal()?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:363dc4",
+       "ui-craft:b38440",
+       "ui-craft:181021"
+      ]
+     }
+    ]
+   }
+  ],
+  "native-popover-api": [
+   {
+    "rule": "ui:popup ask \"Does the popover use the native popover attribute?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:03e87f",
+       "hallmark:f8bd37",
+       "ui-craft:33a52c",
+       "ui-craft:491de1"
+      ]
+     }
+    ]
+   }
+  ],
+  "details-summary-native": [
+   {
+    "rule": "ui:accordion ask \"Are disclosures built with native details and summary?\"",
+    "class": "access",
+    "values": []
+   }
+  ],
+  "accordion-single-open": [
+   {
+    "rule": "ui:accordion ask \"Does every accordion behave consistently about whether one or several sections can be open?\"",
+    "class": "interaction",
+    "values": []
+   }
+  ],
+  "tabs-pattern": [
+   {
+    "rule": "aria:tablist lighthouse:aria-required-children pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:64de4b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:tablist ask \"Does the tab set use role tablist, tab and tabpanel with aria-selected and aria-controls?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:64de4b"
+      ]
+     }
+    ]
+   }
+  ],
+  "tab-active-indicator": [
+   {
+    "rule": "aria:tablist ask \"Is the active tab clearly distinguished from the others?\"",
+    "class": "interaction",
+    "values": []
+   }
+  ],
+  "nav-active-state": [
+   {
+    "rule": "aria:navigation ask \"Is the current location obvious through an accent on the active item (accent underline) rather than pill backgrounds?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:e3a6a6",
+       "ui-craft:af4dc8"
+      ]
+     }
+    ]
+   }
+  ],
+  "hamburger-menu-a11y": [
+   {
+    "rule": "aria:navigation ask \"Does navigation collapse to a drawer, sheet, bottom tabs or hamburger on mobile and stay horizontal on desktop?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:97cba8",
+       "ui-craft:0b13ae",
+       "ui-craft:58b244",
+       "hallmark:a32c68"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation ask \"Is a hamburger avoided on desktop unless the nav has more than 7 top-level items?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0b13ae"
+      ]
+     }
+    ]
+   }
+  ],
+  "dropdown-keyboard": [
+   {
+    "rule": "aria:menu ask \"Does the menu open on hover, toggle on click, close on Esc, keep one panel open with aria-expanded following state?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:68410c"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-multi-segment-pie-charts": [
+   {
+    "rule": "ui:chart ask \"Are multi-segment pie charts avoided (only a two-segment donut with a centre label allowed)?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e5d809",
+       "ui-craft:e5c8a7",
+       "ui-craft:e5116f",
+       "ui-craft:bba530",
+       "ui-craft:1b6040",
+       "ui-craft:d46f67"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:chart ask \"Are 3D charts avoided?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e5c8a7"
+      ]
+     }
+    ]
+   }
+  ],
+  "narrow-subtle-sidebar": [
+   {
+    "rule": "aria:navigation width between 200px 240px",
+    "values": [
+     {
+      "value": "200-240px",
+      "qids": [
+       "ui-craft:423755"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation ask \"Is the sidebar tinted subtly rather than full dark?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:423755",
+       "ui-craft:59da00",
+       "ui-craft:a21bdf",
+       "ui-craft:931a85"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading text-transform == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:931a85"
+      ]
+     }
+    ]
+   }
+  ],
+  "match-chart-type-to-data-question": [
+   {
+    "rule": "ui:chart ask \"Does the chart type match the data shape and the analytical question it answers?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:3b929e",
+       "ui-craft:3e3c6a",
+       "ui-craft:2bb370",
+       "ui-craft:e1a790"
+      ]
+     }
+    ]
+   }
+  ],
+  "make-diagram-flow-and-grouping-visible": [
+   {
+    "rule": "ui:chart ask \"Are directional flow, grouping and containment visible before the labels are read?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:f22d14",
+       "claw-design:e5cc40"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:chart ask \"Can the viewer trace the main path without backtracking?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:5c5139"
+      ]
+     }
+    ]
+   }
+  ],
+  "pick-real-nav-archetype-not-minimal-nav": [
+   {
+    "rule": "aria:navigation ask \"Does the nav use a real product archetype rather than the minimal two-destination nav?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a79d85",
+       "hallmark:ef343d",
+       "hallmark:9aa82b"
+      ]
+     }
+    ]
+   }
+  ],
+  "footer-closes-the-page-not-a-sitemap-dump": [
+   {
+    "rule": "aria:contentinfo ask \"Does the footer close the page rather than dump a sitemap?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:257543",
+       "hallmark:540f6d",
+       "hallmark:52ea70"
+      ]
+     }
+    ]
+   }
+  ],
+  "nest-trailing-icon-in-circular-wrapper-inside-bu": [
+   {
+    "rule": "aria:button ask \"Does a trailing arrow icon sit inside its own circular wrapper flush with the button padding?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:9259f8",
+       "taste-skill:7d425a",
+       "taste-skill:dea40d"
+      ]
+     }
+    ]
+   }
+  ],
+  "citations-as-first-class-content": [
+   {
+    "rule": "page ask \"Does every derived answer attribute its sources as first-class content?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b04c3b",
+       "ui-craft:f43d1b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do citations appear during streaming, not only after completion?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:828860"
+      ]
+     }
+    ]
+   }
+  ],
+  "thumb-up-down-feedback-with-undo": [
+   {
+    "rule": "page ask \"Are thumbs up/down (or equivalent) present on every completed response?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0835f6",
+       "ui-craft:a8d700",
+       "ui-craft:db7770"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the feedback choice persisted and undoable?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0835f6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is feedback wording consistent, never mixing up/down with agree/disagree?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0835f6"
+      ]
+     }
+    ]
+   }
+  ],
+  "horizontal-only-subtle-chart-gridlines": [
+   {
+    "rule": "ui:chart ask \"Are chart gridlines horizontal only and very subtle?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5dda9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:chart ask \"Are gridlines sparse (every 2nd or 3rd tick, or baseline and target lines only)?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:df08c6",
+       "ui-craft:64a315"
+      ]
+     }
+    ]
+   }
+  ],
+  "numbered-pin-annotations-on-mockups": [
+   {
+    "rule": "page ask \"Are mockup annotations numbered pins with a callout legend or margin caption, never arrow-and-label callouts?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:77f4c0",
+       "hallmark:f5fef3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do mockup annotations label only the novel features?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:77f4c0"
+      ]
+     }
+    ]
+   }
+  ],
+  "newsletter-footer-only-when-subscribe-promised": [
+   {
+    "rule": "aria:contentinfo ask \"Does the footer offer a newsletter signup only when the page promised subscribing above the fold?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:23a971",
+       "hallmark:6aea0a"
+      ]
+     }
+    ]
+   }
+  ],
+  "blinking-cursor-only-in-terminal-nav": [
+   {
+    "rule": "page ask \"Is the blinking cursor used only at the end of the typed command line in the terminal nav?\"",
+    "class": "motion",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:5e3fca",
+       "hallmark:344c0f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "media:reduced-motion ask \"Does the cursor become a solid block without blinking?\"",
+    "class": "motion",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:344c0f"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-stacked-modals": [
+   {
+    "rule": "aria:dialog ask \"Do modals avoid opening another modal?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:7eba47",
+       "deslop:783bc4"
+      ]
+     }
+    ]
+   }
+  ],
+  "animate-floating-pill-navbar-and-morphing-hambur": [
+   {
+    "rule": "aria:navigation ask \"Is the closed navbar a floating glass pill detached from the top?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:8f89a6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon ask \"Does the hamburger icon morph into an X on click rather than just disappear?\"",
+    "class": "motion",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:c46408"
+      ]
+     }
+    ]
+   }
+  ],
+  "customize-component-library-defaults": [
+   {
+    "rule": "page ask \"Are component library defaults customized (radii, colors, shadows, typography) to the project aesthetic?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7184a3",
+       "taste-skill:e03dbe"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-button-labels-on-one-line": [
+   {
+    "rule": "aria:button ask \"Does button text fit on one line at desktop?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:a27370",
+       "taste-skill:d14b9a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Do primary CTA labels have at most 3 words?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d14b9a"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-desktop-navigation-on-one-line": [
+   {
+    "rule": "aria:navigation ask \"Does navigation render on a single line at desktop?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:6215f2",
+       "taste-skill:39b00d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation height <= 80px",
+    "values": [
+     {
+      "value": "80px",
+      "qids": [
+       "taste-skill:39b00d"
+      ]
+     }
+    ]
+   }
+  ],
+  "area-or-line-charts-for-time-series": [
+   {
+    "rule": "ui:chart ask \"Are time series drawn as area or line charts rather than vertical bars?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:3f170e",
+       "ui-craft:42bb5d"
+      ]
+     }
+    ]
+   }
+  ],
+  "show-tool-calls-by-default": [
+   {
+    "rule": "page ask \"Are tool calls shown by default rather than hidden behind a toggle that defaults to off?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:610a55",
+       "ui-craft:2e655d"
+      ]
+     }
+    ]
+   }
+  ],
+  "radios-instead-of-dropdown-for-five-or-fewer-opt": [
+   {
+    "rule": "aria:combobox ask \"Do choices of five or fewer options use radios or a segmented control instead of a dropdown?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c2ecc6",
+       "ui-craft:fca28e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:checkbox ask \"Are radio options stacked vertically rather than horizontally?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:fca28e"
+      ]
+     }
+    ]
+   }
+  ],
+  "direct-label-chart-lines-instead-of-legend": [
+   {
+    "rule": "ui:chart ask \"Are chart lines labelled directly instead of with a separate color legend?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a80886",
+       "ui-craft:a37b27"
+      ]
+     }
+    ]
+   }
+  ],
+  "tooltips-on-icon-only-buttons": [
+   {
+    "rule": "aria:button ask \"Do icon-only buttons have tooltips?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:903ddb",
+       "ui-craft:1fd512"
+      ]
+     }
+    ]
+   }
+  ],
+  "drill-down-path-from-aggregated-metrics": [
+   {
+    "rule": "page ask \"Do aggregated metrics have a view-raw or drill-down path?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:db18e7",
+       "ui-craft:95c2b9"
+      ]
+     }
+    ]
+   }
+  ],
+  "always-show-high-contrast-status-badges": [
+   {
+    "rule": "ui:badge wcag:1.4.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:3f221c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:badge ask \"Are status badges always shown, never hidden for healthy records?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:3f221c",
+       "ui-craft:108deb"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-identical-three-column-testimonial-cards": [
+   {
+    "rule": "ui:card ask \"Are testimonials avoided as three identical equal-width cards of avatar, quote and name?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:2cab6d"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-chart-labels-and-legends-legible-without-cr": [
+   {
+    "rule": "ui:chart ask \"Are chart labels, legends and axes legible without overwhelming the plotted data?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:818f45"
+      ]
+     }
+    ]
+   }
+  ],
+  "make-chart-main-insight-obvious": [
+   {
+    "rule": "ui:chart ask \"Is the chart main insight obvious before reading every label?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:ad864a"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-connectors-and-containers-in-diagrams": [
+   {
+    "rule": "ui:chart ask \"Do diagrams use connectors and containers to reduce ambiguity about relationships?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:3e9a79"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-crossing-diagram-connectors": [
+   {
+    "rule": "ui:chart ask \"Do diagram connectors avoid crossing where layout can avoid it?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:2a9a16"
+      ]
+     }
+    ]
+   }
+  ],
+  "distinguish-relationship-types-in-diagrams": [
+   {
+    "rule": "ui:chart ask \"Do diagrams visually distinguish different relationship types?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:add6b1"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-footer-archetype-between-runs": [
+   {
+    "rule": "process ask \"Does each run use a different footer archetype from the other runs in the session?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1a52c3"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-nav-between-builds": [
+   {
+    "rule": "process ask \"Does each build use a different nav from the other builds of the theme?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:312228"
+      ]
+     }
+    ]
+   }
+  ],
+  "price-as-description-in-product-cards": [
+   {
+    "rule": "ui:card ask \"Do product cards use the price as the description, without feature descriptions under the name?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4a10ae"
+      ]
+     }
+    ]
+   }
+  ],
+  "seamless-active-nav-indicator": [
+   {
+    "rule": "aria:navigation ask \"Does the active nav indicator feel seamless?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:ae6ce4"
+      ]
+     }
+    ]
+   }
+  ],
+  "mega-menu-limits-and-hover-close-grace": [
+   {
+    "rule": "aria:menu ask \"Does the mega menu have at most about 4 columns?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c9e83e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:menu height <= 60vh",
+    "values": [
+     {
+      "value": "60vh",
+      "qids": [
+       "hallmark:c9e83e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:menu ask \"Does a menu that opens on hover have a close-grace timer?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c9e83e"
+      ]
+     }
+    ]
+   }
+  ],
+  "mega-menu-items-carry-descriptions": [
+   {
+    "rule": "aria:menu ask \"Does every mega-menu item carry a one-line description?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:b541ba"
+      ]
+     }
+    ]
+   }
+  ],
+  "compact-banner-on-scroll-down": [
+   {
+    "rule": "aria:banner ask \"Does the banner compact past about 48px of scroll going down, restore going up, and always show near the top?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c1bd27"
+      ]
+     }
+    ]
+   }
+  ],
+  "banner-not-a-second-nav": [
+   {
+    "rule": "aria:banner ask \"Does the banner avoid a top tier of nav links that duplicates the nav?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:def3fc"
+      ]
+     }
+    ]
+   }
+  ],
+  "banner-one-line-one-link-one-dismiss": [
+   {
+    "rule": "aria:banner ask \"Is the banner one line with one link and one dismiss?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a8b73d"
+      ]
+     }
+    ]
+   }
+  ],
+  "search-pill-looks-like-search": [
+   {
+    "rule": "aria:search ask \"Does the search pill look like search (icon and placeholder), not a generic button?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:525c33"
+      ]
+     }
+    ]
+   }
+  ],
+  "nav-frosts-on-scroll": [
+   {
+    "rule": "aria:navigation ask \"Is the nav transparent at rest over the hero, and frosted (blur backdrop, hairline border, soft shadow) with height tightened about 8px past about 24px of scroll?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:fdcd2e"
+      ]
+     }
+    ]
+   }
+  ],
+  "nav-center-links-must-not-collide-with-brand-cta": [
+   {
+    "rule": "aria:navigation ask \"Does the centre link cluster sit with breathing room from the brand and CTA (otherwise 3 links)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:22dc36"
+      ]
+     }
+    ]
+   }
+  ],
+  "floating-pill-nav-content-sized": [
+   {
+    "rule": "aria:navigation ask \"Is the floating pill nav visibly detached and content-sized?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:758f26"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation width <= 720px",
+    "values": [
+     {
+      "value": "720px",
+      "qids": [
+       "hallmark:758f26"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-big-centered-quote-section": [
+   {
+    "rule": "page ask \"Is there one quote set big and centered, taking a whole section?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:0e386e"
+      ]
+     }
+    ]
+   }
+  ],
+  "textarea-vertical-resize-with-min-height": [
+   {
+    "rule": "aria:textbox resize == vertical",
+    "values": [
+     {
+      "value": "vertical",
+      "qids": [
+       "hallmark:a985ad"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox min-height >= 6rem",
+    "values": [
+     {
+      "value": "6rem",
+      "qids": [
+       "hallmark:a985ad"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-native-select-or-replicate-accessibility": [
+   {
+    "rule": "aria:combobox ask \"Is a custom-styled select used only when it replicates native keyboard and screen-reader accessibility?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:b34421"
+      ]
+     }
+    ]
+   }
+  ],
+  "style-file-input-via-label": [
+   {
+    "rule": "ui:file ask \"Is the file input wrapped in a styled label?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:8ba662"
+      ]
+     }
+    ]
+   }
+  ],
+  "combobox-listbox-keyboard-and-no-content-push": [
+   {
+    "rule": "aria:combobox ask \"Does the listbox sit below, with aria-expanded mirroring visibility, arrow keys cycling, Enter selecting and Escape closing?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1f5b2d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:combobox ask \"Does the listbox avoid pushing page content?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1f5b2d"
+      ]
+     }
+    ]
+   }
+  ],
+  "dialog-stays-centred-despite-custom-positioning": [
+   {
+    "rule": "aria:dialog ask \"Is the dialog explicitly centred when custom positioning (margin-top, top, transform) is added?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a0eab1"
+      ]
+     }
+    ]
+   }
+  ],
+  "dropdowns-must-not-clip-inside-overflow-hidden": [
+   {
+    "rule": "ui:popup ask \"Do dropdowns avoid being clipped by an overflow hidden container?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:782166"
+      ]
+     }
+    ]
+   }
+  ],
+  "pick-nav-and-footer-with-hero-macrostructure": [
+   {
+    "rule": "page ask \"Is a nav and footer chosen alongside the hero macrostructure?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:0c2e52"
+      ]
+     }
+    ]
+   }
+  ],
+  "testimonials-specific-to-a-use-case": [
+   {
+    "rule": "ui:card ask \"Are testimonials 2-4 quote cards with pull-quote, name, role and company?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1ce9c4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is each testimonial specific to a use case rather than generic we-use-it-every-day language?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1ce9c4"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-default-wordmark-left-nav-pattern": [
+   {
+    "rule": "aria:navigation ask \"Does the nav avoid the AI default (wordmark left, 4-5 inline links, button right, full width, 1px hairline border)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:387e04"
+      ]
+     }
+    ]
+   }
+  ],
+  "css-only-radio-tabs-must-not-scroll-jump": [
+   {
+    "rule": "aria:tablist ask \"Do CSS-only radio tabs avoid scroll-jumping when toggled?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:fbbe92"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-cta-style-coherent-with-theme-voice": [
+   {
+    "rule": "aria:button ask \"Does the CTA style share a voice with the theme, not an oversized solid button on a typographic page?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6e379b"
+      ]
+     }
+    ]
+   }
+  ],
+  "bottom-navigation-on-mobile": [
+   {
+    "rule": "aria:navigation ask \"On mobile, is bottom navigation used instead of top or side navigation?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:f8fc34"
+      ]
+     }
+    ]
+   }
+  ],
+  "bottom-sheets-instead-of-dropdowns-on-mobile": [
+   {
+    "rule": "ui:popup ask \"On mobile, are bottom sheets used instead of dropdowns?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:176f84"
+      ]
+     }
+    ]
+   }
+  ],
+  "navigation-rail-on-large-screens": [
+   {
+    "rule": "aria:navigation ask \"Is a bottom navigation bar (3-5 destinations) used on compact width and a rail or drawer on expanded width?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:340433"
+      ]
+     }
+    ]
+   }
+  ],
+  "top-app-bar-with-single-fab": [
+   {
+    "rule": "aria:banner ask \"Does the screen have a top app bar giving screen context?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:64b678"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Is a FAB paired with the top app bar when the screen has a single primary action?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:64b678"
+      ]
+     }
+    ]
+   }
+  ],
+  "single-floating-action-button": [
+   {
+    "rule": "aria:button ask \"Is there at most one FAB, used for the primary action and never stacked or spent on a secondary task?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:212aea"
+      ]
+     }
+    ]
+   }
+  ],
+  "snackbars-for-transient-feedback": [
+   {
+    "rule": "aria:status ask \"Is transient feedback a snackbar (actionable when useful) rather than a toast?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:33e7ed"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:dialog ask \"Are dialogs used only for decisions that must interrupt?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:33e7ed"
+      ]
+     }
+    ]
+   }
+  ],
+  "limit-component-variants": [
+   {
+    "rule": "page ask \"Do components have few variants (for example 3 covering 90% of cases)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ca500e"
+      ]
+     }
+    ]
+   }
+  ],
+  "labeled-moderation-action-buttons": [
+   {
+    "rule": "aria:button ask \"Are moderation actions clearly labeled buttons (Approve, Reject, Flag) with distinct styling?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "oneredoak:683210"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Do moderation buttons use icons for quick recognition?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "oneredoak:683210"
+      ]
+     }
+    ]
+   }
+  ],
+  "color-coded-status-badges": [
+   {
+    "rule": "ui:badge ask \"Are content statuses (Pending, Approved, Rejected) shown as color-coded badges?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "oneredoak:982916"
+      ]
+     }
+    ]
+   }
+  ],
+  "expand-control-for-rich-cards": [
+   {
+    "rule": "ui:card ask \"Does a card with rich media or interactivity offer an expand control to a fullscreen mode?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:ecd472"
+      ]
+     }
+    ]
+   }
+  ],
+  "show-more-control-for-lists": [
+   {
+    "rule": "aria:list ask \"Does a list of multiple results offer a show-more control to disclose additional items?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:8ed49d"
+      ]
+     }
+    ]
+   }
+  ],
+  "inline-editable-text-in-cards": [
+   {
+    "rule": "ui:card ask \"Does the card allow inline editable text for quick edits where appropriate?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:3977f9"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-deep-navigation-or-tabs-inside-cards": [
+   {
+    "rule": "ui:card ask \"Do cards avoid multiple drill-ins, tabs or deeper navigation?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:bdbacf"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-nested-scrolling-in-cards": [
+   {
+    "rule": "ui:card overflow-y == visible",
+    "values": [
+     {
+      "value": "visible",
+      "qids": [
+       "openai:9faa08"
+      ]
+     }
+    ]
+   }
+  ],
+  "carousel-items-include-image": [
+   {
+    "rule": "ui:carousel ask \"Does every carousel item include an image or visual?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:0b2a4a"
+      ]
+     }
+    ]
+   }
+  ],
+  "carousel-items-include-title": [
+   {
+    "rule": "ui:carousel ask \"Does every carousel item include a title?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:add738"
+      ]
+     }
+    ]
+   }
+  ],
+  "3-8-items-per-carousel": [
+   {
+    "rule": "ui:carousel ask \"Does a carousel have 3 to 8 items?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:b52b42"
+      ]
+     }
+    ]
+   }
+  ],
+  "sticky-table-header-and-pinned-first-column": [
+   {
+    "rule": "aria:table ask \"Is the table header sticky on vertical scroll?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:161b56"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Is the identifying first column pinned on horizontal scroll?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:161b56"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Do numeric tables have a totals or summary row?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:161b56"
+      ]
+     }
+    ]
+   }
+  ],
+  "lightest-overlay-that-fits": [
+   {
+    "rule": "ui:popup ask \"Is the lightest overlay that fits used: popover for a small choice, sheet or drawer for a focused subtask, modal only for a decision that must block the flow?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:328e99"
+      ]
+     }
+    ]
+   }
+  ],
+  "drawers-resist-accidental-dismissal": [
+   {
+    "rule": "aria:dialog ask \"Do drawers resist accidental dismissal (a short delay or velocity threshold before drag-to-dismiss)?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:ff1202"
+      ]
+     }
+    ]
+   }
+  ],
+  "label-chart-series-directly": [
+   {
+    "rule": "ui:chart ask \"Are chart lines labelled directly instead of with a separate color legend?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:28d70b"
+      ]
+     }
+    ]
+   }
+  ],
+  "let-overlay-components-manage-their-own-stacking": [
+   {
+    "rule": "ui:popup ask \"Do overlay components manage their own stacking without an added z-index such as z-50?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "shadcn:6310b9"
+      ]
+     }
+    ]
+   }
+  ],
+  "add-jump-to-latest-control-in-chat": [
+   {
+    "rule": "page ask \"Does the chat show a jump-to-latest control when the user scrolls away, scrolling back on click?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "shadcn:9e1199"
+      ]
+     }
+    ]
+   }
+  ],
+  "begin-page-with-distinctive-navigation-bar": [
+   {
+    "rule": "aria:navigation ask \"Does every page begin with a distinctive navigation bar (floating glass pill or minimal split nav)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:2cd89d"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-plus-and-minus-icon-for-accordion-toggle": [
+   {
+    "rule": "ui:accordion ask \"Does the accordion toggle use a clean plus and minus icon?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:6189e3"
+      ]
+     }
+    ]
+   }
+  ],
+  "render-shortcuts-as-kbd-key-caps": [
+   {
+    "rule": "text:code ask \"Are keyboard shortcuts rendered as kbd key caps?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:86acdf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:code border-width == 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "taste-skill:86acdf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:code border-color == #EAEAEA",
+    "values": [
+     {
+      "value": "#EAEAEA",
+      "qids": [
+       "taste-skill:86acdf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:code border-top-left-radius == 4px",
+    "values": [
+     {
+      "value": "4px",
+      "qids": [
+       "taste-skill:86acdf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:code background-color == #F7F6F3",
+    "values": [
+     {
+      "value": "#F7F6F3",
+      "qids": [
+       "taste-skill:86acdf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:code font-family contains monospace",
+    "values": [
+     {
+      "value": "monospace",
+      "qids": [
+       "taste-skill:86acdf"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-dashboard-navigation-beyond-left-sidebar": [
+   {
+    "rule": "aria:navigation ask \"Does the dashboard avoid always using a left sidebar (top navigation, floating command menu or collapsible panel as alternatives)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:c17adc"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-default-accordion-faq": [
+   {
+    "rule": "ui:accordion ask \"Are FAQ sections built as a side-by-side list, searchable help or inline progressive disclosure rather than an accordion?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:072be7"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-carousel-testimonials-with-dots": [
+   {
+    "rule": "ui:carousel ask \"Are testimonials shown as a masonry wall, embedded social posts or a single rotating quote rather than a 3-card carousel with dots?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f36ba0"
+      ]
+     }
+    ]
+   }
+  ],
+  "prefer-inline-editing-over-modals": [
+   {
+    "rule": "aria:dialog ask \"Are simple actions done with inline editing, slide-over panels or expandable sections instead of modals?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:61eb7f"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-default-sun-moon-theme-toggle": [
+   {
+    "rule": "aria:switch ask \"Is the light/dark control something other than a default sun/moon switch (dropdown, system preference detection, or in settings)?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:277444"
+      ]
+     }
+    ]
+   }
+  ],
+  "add-cookie-consent-banner-where-required": [
+   {
+    "rule": "page ask \"Where required by jurisdiction, is there a compliant cookie consent banner?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:dab49f"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-fully-rounded-pill-primary-buttons": [
+   {
+    "rule": "aria:button border-top-left-radius >= 9999px",
+    "values": [
+     {
+      "value": "rounded-full",
+      "qids": [
+       "taste-skill:7efd68"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button padding-left >= 24px",
+    "values": [
+     {
+      "value": "px-6",
+      "qids": [
+       "taste-skill:7efd68"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button padding-top >= 12px",
+    "values": [
+     {
+      "value": "py-3",
+      "qids": [
+       "taste-skill:7efd68"
+      ]
+     }
+    ]
+   }
+  ],
+  "add-eyebrow-tag-above-headings": [
+   {
+    "rule": "ui:badge ask \"Does each major H1 and H2 have a pill-shaped eyebrow badge above it?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:8e1d1b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:badge border-top-left-radius >= 9999px",
+    "values": [
+     {
+      "value": "rounded-full",
+      "qids": [
+       "taste-skill:8e1d1b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:badge font-size == 10px",
+    "values": [
+     {
+      "value": "10px",
+      "qids": [
+       "taste-skill:8e1d1b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:badge text-transform == uppercase",
+    "values": [
+     {
+      "value": "uppercase",
+      "qids": [
+       "taste-skill:8e1d1b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:badge letter-spacing == 0.2em",
+    "values": [
+     {
+      "value": "0.2em",
+      "qids": [
+       "taste-skill:8e1d1b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:badge font-weight == 500",
+    "values": [
+     {
+      "value": "font-medium",
+      "qids": [
+       "taste-skill:8e1d1b"
+      ]
+     }
+    ]
+   }
+  ],
+  "full-screen-glass-menu-overlay": [
+   {
+    "rule": "aria:menu ask \"Does the menu open as a screen-filling overlay?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ec7d3c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:menu backdrop-filter !contains none",
+    "values": [
+     {
+      "value": "backdrop-blur-3xl",
+      "qids": [
+       "taste-skill:ec7d3c"
+      ]
+     }
+    ]
+   }
+  ],
+  "place-card-titles-outside-below-cards": [
+   {
+    "rule": "ui:card ask \"Are card titles and descriptions placed outside and below the cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:868754"
+      ]
+     }
+    ]
+   }
+  ],
+  "infinite-carousel-data-stream": [
+   {
+    "rule": "ui:carousel ask \"Is the data-card carousel an infinite loop that is seamless and moves at an effortless speed?\"",
+    "class": "motion",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:6f4fe7"
+      ]
+     }
+    ]
+   }
+  ],
+  "cap-navigation-bar-height": [
+   {
+    "rule": "aria:navigation height <= 80px",
+    "values": [
+     {
+      "value": "80px",
+      "qids": [
+       "taste-skill:133a03"
+      ]
+     }
+    ]
+   }
+  ],
+  "show-comparisons-as-number-plus-small-icon-or-ba": [
+   {
+    "rule": "ui:chart ask \"Are X-out-of-Y comparisons shown as a number with a small icon or a tiny inline bar without a background track?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:aa0973"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-right-component-for-long-lists": [
+   {
+    "rule": "aria:list ask \"Do lists of more than 5 items use the right UI component rather than a default ul with dividers?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:25fb15"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-pill-backgrounds-on-nav-links": [
+   {
+    "rule": "aria:link ask \"Do nav links and buttons avoid pill backgrounds by default, using text and underline instead?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a6fba6"
+      ]
+     }
+    ]
+   }
+  ],
+  "carousels-only-for-ordered-narrative": [
+   {
+    "rule": "ui:carousel ask \"Is a carousel used only when order tells a story (steps, timeline)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:7fa746"
+      ]
+     }
+    ]
+   }
+  ],
+  "sparklines-on-metric-cards": [
+   {
+    "rule": "ui:card ask \"Do all metric cards carry a sparkline?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2fd4a3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Does only the primary metric card get an accent tint, with the others neutral?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2fd4a3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Do metric cards avoid identical colored top borders?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2fd4a3"
+      ]
+     }
+    ]
+   }
+  ],
+  "citation-chip-scrolls-to-quote": [
+   {
+    "rule": "page ask \"Does clicking a citation chip scroll to that quote?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:fb7102"
+      ]
+     }
+    ]
+   }
+  ],
+  "mark-broken-citations-unverified": [
+   {
+    "rule": "page ask \"Is a citation whose source fails at chip-render time marked unverified with a warning icon rather than silently dropped?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:835ad6"
+      ]
+     }
+    ]
+   }
+  ],
+  "clean-copy-button-for-responses": [
+   {
+    "rule": "page ask \"Does every response have a copy button that copies clean text (code without surrounding prose for code responses)?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:36615a"
+      ]
+     }
+    ]
+   }
+  ],
+  "share-link-for-responses": [
+   {
+    "rule": "page ask \"Can a response be shared as a read-only link?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:bea477"
+      ]
+     }
+    ]
+   }
+  ],
+  "copy-as-code-for-generated-ui": [
+   {
+    "rule": "page ask \"Can generated UI show and copy its underlying code or props?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c2f3fb"
+      ]
+     }
+    ]
+   }
+  ],
+  "pin-chat-input-to-viewport-bottom": [
+   {
+    "rule": "aria:textbox ask \"Is the chat input always visible, pinned to the viewport bottom on mobile and sticky on desktop when the thread scrolls past its height?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:618a80"
+      ]
+     }
+    ]
+   }
+  ],
+  "distinguish-user-and-assistant-messages": [
+   {
+    "rule": "page ask \"Do user and assistant messages have a subtle alternating visual treatment (alignment, tint or avatar)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:fcc23c"
+      ]
+     }
+    ]
+   }
+  ],
+  "button-padding-horizontal-twice-vertical": [
+   {
+    "rule": "aria:button padding-left >= 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "ui-craft:433316"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button padding-top >= 10px",
+    "values": [
+     {
+      "value": "10px",
+      "qids": [
+       "ui-craft:433316"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Is horizontal button padding about twice the vertical padding?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:433316"
+      ]
+     }
+    ]
+   }
+  ],
+  "leading-icon-on-action-buttons": [
+   {
+    "rule": "aria:button ask \"Do action buttons put the icon left of the label?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e1b80c"
+      ]
+     }
+    ]
+   }
+  ],
+  "scroll-affordance-on-long-lists": [
+   {
+    "rule": "aria:list ask \"Do long lists sit in a scroll container with a visible scrollbar and the last visible item partially cut or faded?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f48f7f"
+      ]
+     }
+    ]
+   }
+  ],
+  "modals-only-for-interrupting-decisions": [
+   {
+    "rule": "aria:dialog ask \"Are dialogs used only for decisions that must interrupt?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:85a6ee"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:alert ask \"Do minor errors and notices stay inline rather than in a modal?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:85a6ee"
+      ]
+     }
+    ]
+   }
+  ],
+  "type-ahead-search-with-recent-searches": [
+   {
+    "rule": "aria:search ask \"Does search offer type-ahead suggestions as the user types?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:21bce2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:search ask \"Does search offer recent searches with individual remove and clear-all on revisit-heavy products?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:21bce2"
+      ]
+     }
+    ]
+   }
+  ],
+  "solid-scrolled-state-for-transparent-nav": [
+   {
+    "rule": "aria:navigation wcag:1.4.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c9a7a4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation ask \"Does a transparent or blurred nav switch to a solid fill once scrolled past the hero?\"",
+    "class": "color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c9a7a4"
+      ]
+     }
+    ]
+   }
+  ],
+  "collapse-overflow-nav-links-into-more-menu": [
+   {
+    "rule": "aria:navigation ask \"Are overflowing low-priority nav links collapsed into a More menu or moved to the footer, never by shrinking the type?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:6940f8"
+      ]
+     }
+    ]
+   }
+  ],
+  "cta-labels-fit-one-line": [
+   {
+    "rule": "aria:button ask \"Does button text fit on one line at desktop?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:778535"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Do primary CTA labels have at most 3 words?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:778535"
+      ]
+     }
+    ]
+   }
+  ],
+  "cancel-is-primary-in-destructive-confirm": [
+   {
+    "rule": "aria:alertdialog ask \"Is the destructive action never primary-button-styled, with Cancel as the primary?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b0ee4a"
+      ]
+     }
+    ]
+   }
+  ],
+  "reset-to-default-per-settings-section": [
+   {
+    "rule": "aria:form ask \"Is reset-to-default available per settings section, shown only where something has changed?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:6e895f"
+      ]
+     }
+    ]
+   }
+  ],
+  "show-applied-filters-as-removable-chips": [
+   {
+    "rule": "page ask \"Are applied filters shown as removable chips?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:305bff"
+      ]
+     }
+    ]
+   }
+  ],
+  "show-change-history": [
+   {
+    "rule": "page ask \"Is change history shown (who changed what, when) at least for the fields that matter?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f53b7c"
+      ]
+     }
+    ]
+   }
+  ],
+  "illustration-or-icon-in-empty-state": [
+   {
+    "rule": "state:empty ask \"Does the empty state have an illustration or at minimum a subtle icon?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5e7477"
+      ]
+     }
+    ]
+   }
+  ],
+  "enterprise-contact-path-on-pricing": [
+   {
+    "rule": "page ask \"Does pricing offer an enterprise, custom or contact path for buyers the tiers do not fit?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:75b3d0"
+      ]
+     }
+    ]
+   }
+  ],
+  "support-deep-link-arrival-in-docs": [
+   {
+    "rule": "page ask \"Do docs pages work for readers who arrive by deep link mid-tree, not only through the index?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:478a9f"
+      ]
+     }
+    ]
+   }
+  ],
+  "docs-on-this-page-outline-from-headings": [
+   {
+    "rule": "page ask \"Is the on-this-page outline built from the document depth-2 headings rather than maintained by hand?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ae12f7"
+      ]
+     }
+    ]
+   }
+  ],
+  "copy-button-on-code-blocks": [
+   {
+    "rule": "text:code ask \"Does every code block have a copy button?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5028e5"
+      ]
+     }
+    ]
+   }
+  ],
+  "persistent-order-summary-in-checkout": [
+   {
+    "rule": "page ask \"Is a summary of what is being bought present at every checkout step?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:d653dd"
+      ]
+     }
+    ]
+   }
+  ],
+  "role-selection-when-inviting": [
+   {
+    "rule": "aria:form ask \"Does the invite form let the inviter select a role?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f4132e"
+      ]
+     }
+    ]
+   }
+  ],
+  "date-range-selector-on-time-series": [
+   {
+    "rule": "ui:chart ask \"Does every time-series surface include a date range selector?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b353b6"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-more-than-three-identical-metric-cards": [
+   {
+    "rule": "ui:card ask \"Are there at most 3 identical metric cards?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:7f4e77"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-3d-charts": [
+   {
+    "rule": "ui:chart ask \"Are 3D charts avoided?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:df2f12"
+      ]
+     }
+    ]
+   }
+  ],
+  "chart-labels-secondary-text-data-labels-on-hover": [
+   {
+    "rule": "ui:chart font-size between 11px 12px",
+    "values": [
+     {
+      "value": "11-12px",
+      "qids": [
+       "ui-craft:54d426"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:chart ask \"Are data point labels shown only on hover (tooltip), not permanently?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:54d426"
+      ]
+     }
+    ]
+   }
+  ],
+  "omit-single-series-legends": [
+   {
+    "rule": "ui:chart ask \"Is the legend omitted when a chart has only one series?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c1ae85"
+      ]
+     }
+    ]
+   }
+  ],
+  "row-context-avatars-and-status-dots-in-tables": [
+   {
+    "rule": "ui:avatar width == 24px",
+    "values": [
+     {
+      "value": "24px",
+      "qids": [
+       "ui-craft:4ef3b0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Do table rows show colored status dots (6px) rather than badges?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4ef3b0"
+      ]
+     }
+    ]
+   }
+  ],
+  "reset-filters-as-text-link-when-active": [
+   {
+    "rule": "page ask \"Does the Reset filters control appear only when filters are active, as a text link rather than a button?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f7f0a6"
+      ]
+     }
+    ]
+   }
+  ],
+  "chart-fills-its-container": [
+   {
+    "rule": "ui:chart ask \"Does the data fill the chart container with minimal whitespace around the chart area?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:62ae3c"
+      ]
+     }
+    ]
+   }
+  ],
+  "limit-supporting-metrics-to-two-to-four": [
+   {
+    "rule": "ui:card ask \"Are supporting metrics limited to 2 to 4 that make the hero metric actionable?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:081087"
+      ]
+     }
+    ]
+   }
+  ],
+  "line-charts-need-not-start-at-zero": [
+   {
+    "rule": "ui:chart ask \"Does a line chart axis range fit the signal rather than forcing a zero baseline?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:06c9a8"
+      ]
+     }
+    ]
+   }
+  ],
+  "consistent-chart-type-in-a-dashboard": [
+   {
+    "rule": "ui:chart ask \"Does a dashboard use one chart type throughout (all lines or all bars, never mixed)?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:80c690"
+      ]
+     }
+    ]
+   }
+  ],
+  "normalize-choropleths-per-capita": [
+   {
+    "rule": "ui:chart ask \"Are choropleths normalized per capita or as a rate rather than raw counts?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a16433"
+      ]
+     }
+    ]
+   }
+  ],
+  "checkbox-applies-on-submit-toggle-immediately": [
+   {
+    "rule": "aria:checkbox ask \"Does a checkbox apply on submit and a toggle apply immediately?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b12a3a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:checkbox ask \"Are checkboxes labelled positively (for example Allow automatic updates)?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b12a3a"
+      ]
+     }
+    ]
+   }
+  ],
+  "cap-fields-per-step-on-mobile-forms": [
+   {
+    "rule": "aria:form ask \"Do mobile multi-step forms have at most 5-7 fields per step?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f09d17"
+      ]
+     }
+    ]
+   }
+  ],
+  "locale-currency-input-with-prefix": [
+   {
+    "rule": "aria:textbox ask \"Is currency formatted per locale with the symbol rendered as a prefix the user never types?\"",
+    "class": "locale",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:fa4271"
+      ]
+     }
+    ]
+   }
+  ],
+  "separate-danger-zone-section": [
+   {
+    "rule": "page ask \"Is the destructive action in a visually distinct Danger zone section at the bottom?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:7d2d29"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:alertdialog ask \"Is the destructive action never primary-button-styled, with Cancel as the primary?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:7d2d29"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-reset-button-beside-submit": [
+   {
+    "rule": "aria:form ask \"Does the form avoid a reset button next to submit?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0ebdab"
+      ]
+     }
+    ]
+   }
+  ],
+  "crop-element-at-viewport-edge-to-signal-more": [
+   {
+    "rule": "page ask \"Is a partially visible element (such as a card cropped at the viewport edge) used to signal that more exists?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a1faed"
+      ]
+     }
+    ]
+   }
+  ],
+  "bias-modals-slightly-above-center": [
+   {
+    "rule": "aria:dialog ask \"Is the modal placed slightly above vertical center rather than exactly centered?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:99b0b3"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-big-metric-template-pattern": [
+   {
+    "rule": "ui:card ask \"Do metric cards avoid the templated big metric, small label, stat row and gradient pattern?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:114694"
+      ]
+     }
+    ]
+   }
+  ],
+  "show-result-count-on-data-tables": [
+   {
+    "rule": "aria:table ask \"Does every data table show a result count such as Showing 1-50 of 2,340?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c9e0bb"
+      ]
+     }
+    ]
+   }
+  ],
+  "provide-data-export": [
+   {
+    "rule": "page ask \"Does the product provide data export?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:aa1389"
+      ]
+     }
+    ]
+   }
+  ],
+  "period-over-period-change-on-primary-metrics": [
+   {
+    "rule": "ui:card ask \"Do primary metrics show period-over-period change (vs prior week, vs target)?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b062b6"
+      ]
+     }
+    ]
+   }
+  ],
+  "surface-outliers-automatically": [
+   {
+    "rule": "page ask \"Does the surface find outliers so the user does not have to look for them?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:856ae1"
+      ]
+     }
+    ]
+   }
+  ],
+  "show-active-collaborators": [
+   {
+    "rule": "page ask \"Are active collaborators always visible (avatars in nav, cursors in canvas, edits attributed inline)?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:bc2ec3"
+      ]
+     }
+    ]
+   }
+  ],
+  "progress-indicator-in-multi-step-forms": [
+   {
+    "rule": "aria:form ask \"Does a multi-step form show progress?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8c8c07"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Is the last step of a multi-step form labelled Submit or equivalent, never Next?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8c8c07"
+      ]
+     }
+    ]
+   }
+  ],
+  "password-show-hide-toggle": [
+   {
+    "rule": "aria:textbox ask \"Does the password field have a show/hide toggle with an aria-label?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8b5b0f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Does sign-up show a live strength hint and validate as you type, without a wall of must-contain rules before typing?\"",
+    "class": "interaction",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8b5b0f"
+      ]
+     }
+    ]
+   }
+  ],
+  "charts-only-as-sparklines-in-queue-dashboards": [
+   {
+    "rule": "ui:chart ask \"Are charts in queue dashboards only sparklines inside cards?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b60e80"
+      ]
+     }
+    ]
+   }
+  ],
+  "topbar-56px-with-hairline": [
+   {
+    "rule": "aria:banner height == 56px",
+    "values": [
+     {
+      "value": "56px",
+      "qids": [
+       "ui-craft:6c4c09"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:banner border-bottom-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "ui-craft:6c4c09"
+      ]
+     }
+    ]
+   }
+  ],
+  "headless-table-matching-token-system": [
+   {
+    "rule": "aria:table ask \"Is the table headless with its own markup rather than a themed datagrid that fights the token system?\"",
+    "class": "surface",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:7a883f"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-primary-metric-card-treatment": [
+   {
+    "rule": "ui:card ask \"When 3 or more metric cards share structure, is the primary differentiated (heavier weight, larger number, subtle tint, no thick colored borders)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5e5b4f"
+      ]
+     }
+    ]
+   }
+  ],
+  "prefer-2d-over-3d-data-viz": [
+   {
+    "rule": "ui:chart ask \"Are 3D charts avoided?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f0337c"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "new_measures": {},
+ "new_elements": {}
+}
