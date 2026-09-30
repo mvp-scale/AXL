@@ -11679,7 +11679,7 @@
     "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
    ],
    "status": "single-source",
-   "notes": "def:on-grid-spacing; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (principle and the 4-unit base); enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only, at the checked width",
+   "notes": "def:on-grid-spacing; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (principle and the 4-unit base); enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only, at the checked width; enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only, at the checked width",
    "legacy_id": null,
    "receipts": [
     "craft-layout-before",
@@ -11726,7 +11726,7 @@
     "src_w3-org-tr-wcag22"
    ],
    "status": "verified",
-   "notes": "def:reachable-targets; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (44x44px minimum; WCAG 2.5.5 (Enhanced, AAA)); enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only",
+   "notes": "def:reachable-targets; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (44x44px minimum; WCAG 2.5.5 (Enhanced, AAA)); enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only; enforced via receipts craft-layout-before, craft-layout-after, fix-loop-polish; coverage: visible panel only",
    "legacy_id": null,
    "receipts": [
     "craft-layout-before",
@@ -11767,7 +11767,7 @@
     "src_w3-org-tr-wcag22"
    ],
    "status": "single-source",
-   "notes": "def:line-length; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (WCAG 1.4.8 (AAA)); enforced via receipts craft-measure-before; coverage: estimated from box width and font size",
+   "notes": "def:line-length; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (WCAG 1.4.8 (AAA)); enforced via receipts craft-measure-before; coverage: estimated from box width and font size; enforced via receipts craft-measure-before; coverage: estimated from box width and font size",
    "legacy_id": null,
    "receipts": [
     "craft-measure-before"
@@ -11806,7 +11806,7 @@
     "src_w3-org-tr-wcag22"
    ],
    "status": "single-source",
-   "notes": "def:reflow; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (WCAG 1.4.10 Reflow); enforced via receipts craft-reflow-375-before, craft-reflow-320-polished; coverage: elements outside data-table scrolling regions are not exempted (WCAG allows two-dimensional content)",
+   "notes": "def:reflow; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (WCAG 1.4.10 Reflow); enforced via receipts craft-reflow-375-before, craft-reflow-320-polished; coverage: elements outside data-table scrolling regions are not exempted (WCAG allows two-dimensional content); enforced via receipts craft-reflow-375-before, craft-reflow-320-polished; coverage: elements outside data-table scrolling regions are not exempted (WCAG allows two-dimensional content)",
    "legacy_id": null,
    "receipts": [
     "craft-reflow-375-before",
@@ -11846,7 +11846,7 @@
     "src_w3-org-tr-wcag22"
    ],
    "status": "single-source",
-   "notes": "def:running-text-leading; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (WCAG 1.4.8 (AAA)); enforced via receipts craft-type-before, craft-type-after; coverage: paragraphs and .subcopy only",
+   "notes": "def:running-text-leading; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (WCAG 1.4.8 (AAA)); enforced via receipts craft-type-before, craft-type-after; coverage: paragraphs and .subcopy only; enforced via receipts craft-type-before, craft-type-after; coverage: paragraphs and .subcopy only",
    "legacy_id": null,
    "receipts": [
     "craft-type-before",
@@ -11886,7 +11886,7 @@
     "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
    ],
    "status": "single-source",
-   "notes": "def:text-size-floor; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (16px body, 14px floor); enforced via receipts craft-type-before, craft-type-after; coverage: the 16px body rule is not separately checked",
+   "notes": "def:text-size-floor; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (16px body, 14px floor); enforced via receipts craft-type-before, craft-type-after; coverage: the 16px body rule is not separately checked; enforced via receipts craft-type-before, craft-type-after; coverage: the 16px body rule is not separately checked",
    "legacy_id": null,
    "receipts": [
     "craft-type-before",
@@ -11931,7 +11931,7 @@
     "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
    ],
    "status": "single-source",
-   "notes": "def:motion-duration; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (upper band for layout / overlay change; longer only for an authored entrance); enforced via receipts craft-duration-unguarded; coverage: transitions only; animation-duration is not checked",
+   "notes": "def:motion-duration; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (upper band for layout / overlay change; longer only for an authored entrance); enforced via receipts craft-duration-unguarded; coverage: transitions only; animation-duration is not checked; enforced via receipts craft-duration-unguarded; coverage: transitions only; animation-duration is not checked",
    "legacy_id": null,
    "receipts": [
     "craft-duration-unguarded"
@@ -11976,7 +11976,7 @@
     "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
    ],
    "status": "verified",
-   "notes": "def:reduced-motion; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (what the setting means; a reduced alternative is required); enforced via receipts reducedmotion-unguarded, reducedmotion-guarded; coverage: checks that motion stops; it cannot check that state change is still communicated",
+   "notes": "def:reduced-motion; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (what the setting means; a reduced alternative is required); enforced via receipts reducedmotion-unguarded, reducedmotion-guarded; coverage: checks that motion stops; it cannot check that state change is still communicated; enforced via receipts reducedmotion-unguarded, reducedmotion-guarded; coverage: checks that motion stops; it cannot check that state change is still communicated",
    "legacy_id": null,
    "receipts": [
     "reducedmotion-unguarded",
@@ -12016,7 +12016,7 @@
     "src_github-com-dequelabs-axe-core"
    ],
    "status": "single-source",
-   "notes": "def:rules-engine-clean; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (how much automation covers); enforced via receipts axe-before-1440, axe-after-1440, axe-before-375, axe-after-375, lighthouse-before, lighthouse-after; coverage: axe states it finds about 57% of WCAG issues automatically; a clean run is not a full audit",
+   "notes": "def:rules-engine-clean; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (how much automation covers); enforced via receipts axe-before-1440, axe-after-1440, axe-before-375, axe-after-375, lighthouse-before, lighthouse-after; coverage: axe states it finds about 57% of WCAG issues automatically; a clean run is not a full audit; enforced via receipts axe-before-1440, axe-after-1440, axe-before-375, axe-after-375, lighthouse-before, lighthouse-after; coverage: axe states it finds about 57% of WCAG issues automatically; a clean run is not a full audit",
    "legacy_id": null,
    "receipts": [
     "axe-before-1440",
@@ -12051,7 +12051,7 @@
    },
    "enforcement": {
     "tool": "axl-tokens",
-    "command": "python3 axl/skills/axl-tokens/scripts/tokens.py check axl/demo/css/before-tokenised.css axl/demo/tokens.json --strict",
+    "command": "python3 axl/axl.py tokens axl/demo/css/before-tokenised.css axl/demo/tokens.json",
     "pass_criteria": "every hex colour in the stylesheet equals a token value and every padding/margin/gap is a multiple of the spacing unit"
    },
    "tool_candidate": "axl craft checks",
@@ -12066,7 +12066,7 @@
     "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
    ],
    "status": "verified",
-   "notes": "def:colour-tokens; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (hard-coded values that should be tokens; tokens are the source of truth); enforced via receipts tokens-before, tokens-after; coverage: hex colours and padding/margin/gap declarations only; snapping to the nearest token can change contrast, so re-run axl-evaluate after axl-tokens fix",
+   "notes": "def:colour-tokens; AXL definition: the claim text and threshold are written by AXL, the quoted sources support the cited principle/parameter (hard-coded values that should be tokens; tokens are the source of truth); enforced via receipts tokens-before, tokens-after; coverage: hex colours and padding/margin/gap declarations only; snapping to the nearest token can change contrast, so re-run axl-evaluate after axl-tokens fix; enforced via receipts tokens-before, tokens-after; coverage: hex colours and padding/margin/gap declarations only; snapping to the nearest token can change contrast, so re-run axl-evaluate after axl-tokens fix",
    "legacy_id": null,
    "receipts": [
     "tokens-before",

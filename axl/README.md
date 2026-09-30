@@ -1,18 +1,18 @@
 # AXL
 
-Open **`site/index.html`** in a browser. That is the whole product page: one file, no server, no network.
+Open **`site/index.html`**: one file, no server, no network. It shows that design words like "polish" mean different things to different sources, lays out every concrete tweak behind them, and lets you build your own version of a word as a file a tool can check.
 
-Everything else is what produced it, and can be ignored unless you want to rebuild or check it:
+Check a page against your word: `python3 axl.py check my-polish.axl.json yourpage.html`
 
 | Path | What it is |
 |---|---|
-| `site/index.html` | The story page (built; do not edit by hand) |
-| `scripts/story_template.html`, `scripts/build_story.py` | Source of the page and its builder |
-| `data/`, `receipts/runs/` | Claims, sources, verbs, and the saved tool runs the page reads |
+| `site/index.html` | The page (built; do not edit by hand) |
+| `axl.py` | The tool: `check`, `fix`, `tweaks`. Deterministic; no agent interprets anything |
+| `data/tweaks.json`, `data/tweak_map.json` | The 71 tweaks, and which source statement asks for which (model-assisted, reviewable) |
+| `data/claims.json`, `data/sources.json`, `receipts/` | The statements, their verbatim quotes, the fetched sources and the saved tool runs |
+| `scripts/atlas_template.html`, `scripts/build_atlas.py` | Source and builder of the page |
 | `tools/`, `demo/` | The pinned checkers and the demo app they run on |
-| `skills/` | Four agent skills that run the same checks on your own page |
-| `terms.json`, `CONTRIBUTING.md` | The stable term registry other tools can read, and how to add or challenge a word |
-| `SPEC.md`, `spec/` | The AXL language |
-| `SUMMARY.md` | What passed, what is open, what to run next |
+| `SPEC.md`, `spec/` | The AXL document format |
+| `CONTRIBUTING.md` | How to add or challenge a tweak or a mapping |
 
 Rebuild: `pip install jsonschema pyyaml && (cd tools && npm ci) && bash scripts/build_all.sh`

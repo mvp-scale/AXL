@@ -228,7 +228,7 @@
   {
    "id": "tokens-before",
    "tool": "axl-tokens",
-   "command": "python3 axl/skills/axl-tokens/scripts/tokens.py check axl/demo/css/before.css axl/demo/tokens.json --strict",
+   "command": "python3 axl/axl.py tokens axl/demo/css/before.css axl/demo/tokens.json",
    "inputs": [
     "axl/demo/css/before.css",
     "axl/demo/tokens.json"
@@ -238,7 +238,7 @@
   {
    "id": "tokens-after",
    "tool": "axl-tokens",
-   "command": "python3 axl/skills/axl-tokens/scripts/tokens.py check axl/demo/css/before-tokenised.css axl/demo/tokens.json --strict",
+   "command": "python3 axl/axl.py tokens axl/demo/css/before-tokenised.css axl/demo/tokens.json",
    "inputs": [
     "axl/demo/css/before-tokenised.css",
     "axl/demo/tokens.json"

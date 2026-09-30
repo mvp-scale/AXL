@@ -1,0 +1,1025 @@
+{
+"clm_0108": [
+"design-tokens"
+],
+"clm_0109": [
+"reuse-components"
+],
+"clm_0110": [
+"match-patterns"
+],
+"clm_0111": [],
+"clm_0112": [],
+"clm_0113": [],
+"clm_0114": [],
+"clm_0115": [
+"stress-test"
+],
+"clm_0116": [
+"match-patterns"
+],
+"clm_0117": [
+"primary"
+],
+"clm_0118": [
+"states-designed"
+],
+"clm_0119": [
+"spacing"
+],
+"clm_0120": [
+"spacing"
+],
+"clm_0121": [
+"type-scale",
+"stress-test"
+],
+"clm_0122": [
+"reflow"
+],
+"clm_0123": [
+"remove-clutter"
+],
+"clm_0124": [
+"accent",
+"type-scale"
+],
+"clm_0125": [
+"progressive-disclosure"
+],
+"clm_0126": [
+"remove-clutter",
+"surface"
+],
+"clm_0127": [
+"primary"
+],
+"clm_0128": [
+"remove-clutter"
+],
+"clm_0129": [],
+"clm_0130": [
+"remove-clutter"
+],
+"clm_0131": [
+"progressive-disclosure"
+],
+"clm_0132": [
+"remove-clutter"
+],
+"clm_0133": [
+"remove-clutter"
+],
+"clm_0134": [
+"progressive-disclosure"
+],
+"clm_0135": [
+"remove-clutter"
+],
+"clm_0136": [
+"primary"
+],
+"clm_0137": [
+"copy-specific"
+],
+"clm_0138": [],
+"clm_0139": [
+"delight-moments"
+],
+"clm_0140": [
+"delight-moments"
+],
+"clm_0141": [
+"delight-moments"
+],
+"clm_0142": [
+"states-designed",
+"delight-moments"
+],
+"clm_0143": [
+"states-designed"
+],
+"clm_0144": [
+"delight-moments"
+],
+"clm_0145": [
+"delight-moments"
+],
+"clm_0146": [
+"delight-moments"
+],
+"clm_0147": [
+"copy-specific"
+],
+"clm_0148": [
+"motion"
+],
+"clm_0149": [
+"delight-moments"
+],
+"clm_0150": [
+"delight-moments"
+],
+"clm_0151": [
+"delight-moments"
+],
+"clm_0152": [
+"delight-moments"
+],
+"clm_0153": [
+"preserve-brand"
+],
+"clm_0154": [
+"preserve-brand"
+],
+"clm_0155": [
+"primary",
+"quiet"
+],
+"clm_0156": [],
+"clm_0157": [
+"preserve-brand"
+],
+"clm_0158": [
+"preserve-brand"
+],
+"clm_0159": [
+"preserve-brand"
+],
+"clm_0160": [
+"preserve-brand"
+],
+"clm_0161": [
+"mute-color"
+],
+"clm_0162": [
+"mute-color"
+],
+"clm_0163": [
+"quiet"
+],
+"clm_0164": [
+"motion-duration"
+],
+"clm_0165": [
+"remove-clutter"
+],
+"clm_0166": [
+"type"
+],
+"clm_0167": [
+"mute-color"
+],
+"clm_0168": [
+"quiet",
+"primary"
+],
+"clm_0169": [
+"remove-clutter"
+],
+"clm_0170": [],
+"clm_0171": [
+"mute-color"
+],
+"clm_0172": [
+"mute-color"
+],
+"clm_0173": [
+"accent"
+],
+"clm_0174": [
+"accent"
+],
+"clm_0175": [
+"quiet"
+],
+"clm_0176": [
+"focal-motion"
+],
+"clm_0177": [
+"motion-duration"
+],
+"clm_0178": [],
+"clm_0179": [
+"focal-motion"
+],
+"clm_0180": [
+"motion"
+],
+"clm_0181": [
+"motion",
+"feedback"
+],
+"clm_0182": [
+"transform-only"
+],
+"clm_0183": [
+"motion"
+],
+"clm_0184": [],
+"clm_0185": [],
+"clm_0186": [],
+"clm_0187": [
+"motion",
+"feedback"
+],
+"clm_0188": [
+"tint"
+],
+"clm_0189": [
+"color-roles",
+"accent"
+],
+"clm_0190": [
+"preserve-brand"
+],
+"clm_0191": [
+"color-roles"
+],
+"clm_0192": [],
+"clm_0193": [
+"contrast-text"
+],
+"clm_0194": [
+"dark"
+],
+"clm_0195": [],
+"clm_0196": [
+"color-roles"
+],
+"clm_0197": [
+"color-roles",
+"quiet"
+],
+"clm_0198": [
+"color-roles",
+"focus"
+],
+"clm_0199": [
+"border",
+"divider"
+],
+"clm_0200": [
+"color-roles"
+],
+"clm_0201": [
+"color-roles"
+],
+"clm_0202": [
+"accent"
+],
+"clm_0203": [
+"copy-specific"
+],
+"clm_0204": [
+"copy-specific"
+],
+"clm_0205": [
+"copy-specific"
+],
+"clm_0206": [
+"states-designed"
+],
+"clm_0207": [
+"copy-specific"
+],
+"clm_0208": [
+"copy-specific"
+],
+"clm_0209": [
+"localize",
+"stress-test"
+],
+"clm_0210": [
+"copy-specific"
+],
+"clm_0211": [
+"localize"
+],
+"clm_0212": [
+"localize"
+],
+"clm_0213": [
+"localize"
+],
+"clm_0214": [
+"alt-text"
+],
+"clm_0215": [
+"aria-semantics"
+],
+"clm_0216": [],
+"clm_0217": [
+"copy-specific"
+],
+"clm_0218": [
+"stress-test"
+],
+"clm_0219": [
+"stress-test"
+],
+"clm_0220": [
+"localize",
+"stress-test"
+],
+"clm_0221": [
+"stress-test"
+],
+"clm_0222": [
+"stress-test"
+],
+"clm_0223": [
+"stress-test"
+],
+"clm_0224": [
+"stress-test"
+],
+"clm_0225": [
+"stress-test"
+],
+"clm_0226": [
+"stress-test",
+"states-designed"
+],
+"clm_0227": [
+"stress-test",
+"states-designed"
+],
+"clm_0228": [
+"real-devices"
+],
+"clm_0229": [
+"real-devices"
+],
+"clm_0230": [
+"reflow"
+],
+"clm_0231": [
+"perf"
+],
+"clm_0232": [],
+"clm_0233": [
+"match-patterns"
+],
+"clm_0234": [
+"reflow"
+],
+"clm_0235": [
+"reflow"
+],
+"clm_0236": [
+"reflow"
+],
+"clm_0237": [
+"reflow"
+],
+"clm_0238": [
+"reflow"
+],
+"clm_0239": [
+"real-devices"
+],
+"clm_0240": [
+"real-devices"
+],
+"clm_0241": [
+"real-devices"
+],
+"clm_0242": [
+"real-devices"
+],
+"clm_0243": [
+"perf"
+],
+"clm_0244": [
+"perf"
+],
+"clm_0245": [
+"perf"
+],
+"clm_0246": [
+"perf"
+],
+"clm_0247": [
+"perf"
+],
+"clm_0248": [
+"perf"
+],
+"clm_0249": [
+"perf"
+],
+"clm_0250": [
+"real-devices",
+"perf"
+],
+"clm_0251": [
+"perf"
+],
+"clm_0252": [],
+"clm_0253": [
+"perf"
+],
+"clm_0254": [
+"type",
+"tracking"
+],
+"clm_0255": [
+"type-scale"
+],
+"clm_0256": [],
+"clm_0257": [
+"type-scale"
+],
+"clm_0258": [
+"type",
+"type"
+],
+"clm_0259": [
+"type-scale"
+],
+"clm_0260": [
+"width",
+"leading"
+],
+"clm_0261": [
+"stress-test",
+"wrap"
+],
+"clm_0262": [
+"perf"
+],
+"clm_0263": [
+"type-scale"
+],
+"clm_0264": [
+"type"
+],
+"clm_0265": [
+"width"
+],
+"clm_0266": [],
+"clm_0267": [],
+"clm_0268": [
+"body-16"
+],
+"clm_0269": [
+"split"
+],
+"clm_0270": [
+"stack"
+],
+"clm_0271": [],
+"clm_0272": [
+"primary",
+"type"
+],
+"clm_0273": [
+"spacing",
+"flat"
+],
+"clm_0274": [
+"spacing"
+],
+"clm_0275": [
+"flat"
+],
+"clm_0276": [
+"compact",
+"airy"
+],
+"clm_0277": [
+"reflow"
+],
+"clm_0278": [
+"stress-test",
+"target"
+],
+"clm_0279": [
+"states-designed"
+],
+"clm_0280": [
+"states-designed"
+],
+"clm_0281": [
+"states-designed"
+],
+"clm_0282": [
+"states-designed"
+],
+"clm_0283": [
+"states-designed"
+],
+"clm_0284": [],
+"clm_0285": [],
+"clm_0286": [],
+"clm_0287": [],
+"clm_0288": [],
+"clm_0289": [],
+"clm_0290": [],
+"clm_0291": [],
+"clm_0292": [
+"remove-clutter"
+],
+"clm_0293": [
+"delight-moments"
+],
+"clm_0294": [],
+"clm_0295": [],
+"clm_0296": [],
+"clm_0297": [],
+"clm_0298": [],
+"clm_0299": [
+"remove-clutter"
+],
+"clm_0300": [
+"progressive-disclosure"
+],
+"clm_0301": [
+"progressive-disclosure"
+],
+"clm_0302": [
+"contrast-text"
+],
+"clm_0303": [
+"reduce"
+],
+"clm_0304": [
+"aria-semantics"
+],
+"clm_0305": [
+"focus"
+],
+"clm_0306": [
+"aria-semantics"
+],
+"clm_0307": [
+"alt-text"
+],
+"clm_0308": [
+"labels",
+"invalid"
+],
+"clm_0309": [
+"perf"
+],
+"clm_0310": [
+"transform-only"
+],
+"clm_0311": [
+"perf"
+],
+"clm_0312": [
+"perf"
+],
+"clm_0313": [
+"perf"
+],
+"clm_0314": [
+"perf"
+],
+"clm_0315": [
+"design-tokens"
+],
+"clm_0316": [
+"dark"
+],
+"clm_0317": [
+"reuse-components"
+],
+"clm_0318": [
+"design-tokens"
+],
+"clm_0319": [
+"reuse-components"
+],
+"clm_0320": [
+"reuse-components"
+],
+"clm_0321": [
+"type-scale"
+],
+"clm_0322": [
+"motion-duration"
+],
+"clm_0323": [
+"reuse-components"
+],
+"clm_0324": [
+"design-tokens"
+],
+"clm_0325": [
+"reuse-components"
+],
+"clm_0326": [
+"design-tokens"
+],
+"clm_0327": [
+"reuse-components"
+],
+"clm_0328": [
+"reuse-components",
+"aria-semantics"
+],
+"clm_0329": [
+"design-tokens"
+],
+"clm_0330": [
+"reuse-components"
+],
+"clm_0331": [
+"reuse-components"
+],
+"clm_0332": [
+"ask-first"
+],
+"clm_0333": [
+"ask-first"
+],
+"clm_0334": [
+"ask-first"
+],
+"clm_0335": [
+"ask-first"
+],
+"clm_0336": [
+"ask-first"
+],
+"clm_0337": [
+"ask-first"
+],
+"clm_0338": [
+"ask-first"
+],
+"clm_0339": [
+"ask-first",
+"copy-specific"
+],
+"clm_0340": [
+"ask-first"
+],
+"clm_0341": [
+"ask-first",
+"states-designed"
+],
+"clm_0342": [
+"ask-first"
+],
+"clm_0343": [
+"ask-first"
+],
+"clm_0344": [
+"ask-first"
+],
+"clm_0345": [
+"audit-first"
+],
+"clm_0346": [
+"audit-first"
+],
+"clm_0347": [
+"audit-first"
+],
+"clm_0348": [
+"audit-first"
+],
+"clm_0349": [
+"audit-first",
+"type"
+],
+"clm_0350": [
+"flat"
+],
+"clm_0351": [
+"spacing"
+],
+"clm_0352": [
+"audit-first",
+"banned-fonts"
+],
+"clm_0353": [
+"audit-first",
+"states-designed"
+],
+"clm_0354": [
+"audit-first"
+],
+"clm_0355": [],
+"clm_0356": [
+"type"
+],
+"clm_0357": [
+"type-scale"
+],
+"clm_0358": [
+"width"
+],
+"clm_0359": [
+"border",
+"divider"
+],
+"clm_0360": [
+"badge"
+],
+"clm_0361": [
+"flat"
+],
+"clm_0362": [
+"gradient"
+],
+"clm_0363": [
+"motion"
+],
+"clm_0364": [
+"focal-motion"
+],
+"clm_0365": [
+"copy-specific"
+],
+"clm_0366": [
+"preserve-brand"
+],
+"clm_0367": [
+"color-roles"
+],
+"clm_0368": [
+"reuse-components"
+],
+"clm_0369": [],
+"clm_0370": [],
+"clm_0371": [],
+"clm_0372": [
+"design-tokens"
+],
+"clm_0373": [
+"focus"
+],
+"clm_0374": [
+"labels"
+],
+"clm_0375": [
+"reuse-components"
+],
+"clm_0376": [],
+"clm_0377": [
+"preserve-brand"
+],
+"clm_0378": [
+"preserve-brand"
+],
+"clm_0379": [
+"audit-first"
+],
+"clm_0380": [
+"audit-first"
+],
+"clm_0381": [
+"audit-first"
+],
+"clm_0382": [
+"audit-first",
+"banned-fonts"
+],
+"clm_0383": [
+"audit-first"
+],
+"clm_0384": [
+"flat"
+],
+"clm_0385": [
+"audit-first",
+"primary"
+],
+"clm_0386": [
+"accent"
+],
+"clm_0387": [
+"audit-first",
+"states-designed"
+],
+"clm_0388": [
+"audit-first",
+"reflow"
+],
+"clm_0389": [
+"crisp"
+],
+"clm_0390": [
+"bouncy"
+],
+"clm_0391": [
+"weighty"
+],
+"clm_0392": [
+"delight-moments"
+],
+"clm_0393": [
+"delight-moments"
+],
+"clm_0394": [
+"focal-motion"
+],
+"clm_0395": [],
+"clm_0396": [
+"reduce"
+],
+"clm_0397": [
+"pause-motion"
+],
+"clm_0398": [
+"pause-motion"
+],
+"clm_0399": [
+"motion"
+],
+"clm_0400": [],
+"clm_0401": [
+"preserve-brand"
+],
+"clm_0402": [
+"preserve-brand"
+],
+"clm_0403": [
+"primary"
+],
+"clm_0404": [
+"states-designed"
+],
+"clm_0405": [
+"reflow"
+],
+"clm_0406": [],
+"clm_0407": [],
+"clm_0408": [
+"feedback"
+],
+"clm_0409": [],
+"clm_0410": [],
+"clm_0411": [
+"design-tokens"
+],
+"clm_0412": [
+"reuse-components"
+],
+"clm_0413": [
+"color-roles",
+"design-tokens"
+],
+"clm_0414": [
+"design-tokens",
+"spacing"
+],
+"clm_0415": [
+"type-scale",
+"design-tokens"
+],
+"clm_0416": [
+"design-tokens"
+],
+"clm_0417": [],
+"clm_0418": [
+"design-tokens"
+],
+"clm_0419": [
+"design-tokens"
+],
+"clm_0420": [
+"contrast-text"
+],
+"clm_0421": [
+"design-tokens"
+],
+"clm_0422": [
+"design-tokens"
+],
+"clm_0423": [
+"accent"
+],
+"clm_0424": [
+"split"
+],
+"clm_0425": [
+"flat"
+],
+"clm_0426": [
+"states-designed"
+],
+"clm_0427": [
+"invalid",
+"states-designed"
+],
+"clm_0428": [
+"motion"
+],
+"clm_0429": [
+"labels"
+],
+"clm_0430": [
+"shadow"
+],
+"clm_0431": [
+"icon-consistency"
+],
+"clm_0432": [
+"reflow"
+],
+"clm_0433": [
+"transform-only"
+],
+"clm_0434": [
+"compact"
+],
+"clm_0435": [],
+"clm_0436": [
+"primary"
+],
+"clm_0437": [],
+"clm_0438": [],
+"clm_0439": [],
+"clm_0440": [],
+"clm_0441": [
+"progressive-disclosure"
+],
+"clm_0442": [],
+"clm_0443": [
+"aria-semantics"
+],
+"clm_0444": [
+"design-tokens"
+],
+"clm_0445": [],
+"clm_0446": [
+"remove-clutter"
+],
+"clm_0447": [],
+"clm_0448": [
+"banned-fonts"
+],
+"clm_0449": [
+"gradient"
+],
+"clm_0450": [
+"flat"
+],
+"clm_0451": [
+"badge"
+],
+"clm_0452": [
+"type",
+"type"
+],
+"clm_0453": [
+"icon-consistency"
+],
+"clm_0454": [
+"motion"
+],
+"clm_0455": [
+"states-designed",
+"copy-specific"
+],
+"clm_0456": [
+"remove-clutter"
+],
+"clm_0457": [
+"spacing"
+],
+"clm_0458": [
+"preserve-brand"
+],
+"clm_0459": [
+"states-designed"
+],
+"clm_0460": [
+"reflow"
+],
+"clm_0461": [
+"reflow"
+],
+"clm_0462": [
+"type-scale"
+],
+"clm_0463": [
+"spacing"
+],
+"clm_0464": [
+"focus"
+],
+"clm_0465": [
+"contrast-text"
+],
+"clm_0466": [
+"invalid",
+"states-designed"
+],
+"clm_0467": [
+"stress-test"
+],
+"clm_0468": [
+"states-designed"
+],
+"clm_0469": [
+"perf"
+],
+"clm_0470": []
+}

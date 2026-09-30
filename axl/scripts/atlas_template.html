@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AXL Verb Studio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%278%27 y=%278%27 width=%2716%27 height=%2716%27 rx=%274%27 fill=%27%23d1175e%27/%3E%3C/svg%3E">
+<meta name="description" content="Design words have no shared meaning. See every tweak behind them, who asks for which, and build your own version a tool can check.">
+<style>
+/* Layout concept: a studio bench. Left: the page under the knife. Right: every tweak anyone asks for, as a board of chips.
+   Bottom: your word, being built. One screen does the whole job; the atlas below is for the curious. */
+:root{
+  --bg:#f7f7f5;--panel:#ffffff;--ink:#131316;--muted:#5b5d66;--line:#dfe0e4;--soft:#eeeff1;
+  --l1:#eeeff1;--l2:#d6d8dd;--l3:#4a4d56;--l4:#131316;--t3:#ffffff;--mine:#d1175e;--on-mine:#ffffff;--cur:#131316;--on-cur:#ffffff;--ok:#0b7a4b;
+  --sans:"Inter Tight","Helvetica Neue",Arial,system-ui,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--l1:#202228;--l2:#343741;--l3:#b9bcc6;--l4:#f1f1f3;--t3:#101114;--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--cur:#f1f1f3;--on-cur:#101114;--ok:#4cd694;color-scheme:dark}}
+:root[data-theme="dark"]{--l1:#202228;--l2:#343741;--l3:#b9bcc6;--l4:#f1f1f3;--t3:#101114;--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--cur:#f1f1f3;--on-cur:#101114;--ok:#4cd694;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 var(--sans);-webkit-font-smoothing:antialiased}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0;padding:0}
+:focus-visible{outline:3px solid var(--mine);outline-offset:2px;border-radius:6px}
+.app{min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr auto;padding-inline:clamp(12px,2vw,24px)}
+
+/* top: the word and the claim */
+.top{display:flex;align-items:center;gap:clamp(12px,2vw,28px);padding-block:14px 10px;flex-wrap:wrap}
+.word{display:flex;align-items:baseline;gap:8px;font-weight:800;letter-spacing:-.04em;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1}
+.word select{font:inherit;letter-spacing:inherit;border:0;background:transparent;appearance:none;padding:0 26px 0 0;cursor:pointer;
+  background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 12px) 58%,calc(100% - 4px) 58%;background-size:8px 8px;background-repeat:no-repeat}
+.claim{font-size:clamp(1.1rem,2vw,1.5rem);font-weight:700;letter-spacing:-.02em;color:var(--muted)}
+.claim b{color:var(--ink)}
+.stat{margin-left:auto;font:.8rem var(--mono);color:var(--muted);text-align:right}
+
+/* bench */
+.bench{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(12px,1.6vw,20px);min-height:0}
+.left{display:flex;flex-direction:column;gap:8px;min-width:0}
+.versions{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.ver{min-height:36px;padding:0 12px;border-radius:99px;border:1.5px solid var(--line);font-weight:600;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;position:relative;overflow:hidden}
+.ver[aria-pressed="true"]{background:var(--cur);color:var(--on-cur);border-color:var(--cur)}
+.ver.mine[aria-pressed="true"]{background:var(--mine);color:var(--on-mine);border-color:var(--mine)}
+.ver .bar{position:absolute;left:0;bottom:0;height:3px;background:var(--mine);width:0}
+.ver[aria-pressed="true"] .bar{animation:fill var(--dwell,1.8s) linear forwards}
+@keyframes fill{to{width:100%}}
+.frame{position:relative;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line),0 24px 60px -36px rgba(0,0,0,.45);aspect-ratio:980/760;width:100%;max-height:calc(100svh - 230px)}
+.frame iframe{position:absolute;left:0;top:0;width:980px;height:760px;border:0;transform-origin:0 0;pointer-events:none}
+.says{min-height:2.8em;font-size:.95rem;color:var(--muted)}
+.says q{color:var(--ink);font-weight:600}.says a{color:inherit;font:.78rem var(--mono)}
+
+/* board */
+.board{background:var(--panel);border-radius:14px;box-shadow:0 0 0 1px var(--line);padding:12px 12px 8px;overflow:auto;max-height:calc(100svh - 180px);min-width:0}
+.bhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:6px;font-size:.82rem;color:var(--muted)}
+.bhead b{color:var(--ink);font-size:.95rem}
+.key{display:flex;gap:10px;flex-wrap:wrap;font-size:.75rem;color:var(--muted);margin-bottom:8px}
+.key i{display:inline-block;width:10px;height:10px;border-radius:3px;vertical-align:-1px;margin-right:4px}
+.cat{margin:10px 0 4px;font:700 .7rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.tw{min-height:32px;padding:0 9px;border-radius:8px;font-size:.84rem;font-weight:550;display:inline-flex;align-items:center;gap:6px;
+  background:var(--l1);color:var(--ink);border:1.5px solid transparent;transition:background .25s,color .25s,border-color .25s,transform .15s}
+.tw.v0{background:transparent;border:1.5px dashed var(--line);color:var(--muted)}.tw.v2{background:var(--l2)}.tw.v3{background:var(--l3);color:var(--t3)}.tw.v4{background:var(--l4);color:var(--t3)}.tw.v3 .ck,.tw.v4 .ck{color:inherit}
+.tw .n{font:700 .7rem var(--mono);opacity:.75}
+.tw .ck{font-size:.75rem;color:var(--ok)}
+.tw.cur{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--mine)}
+.tw.mine{background:var(--mine);color:var(--on-mine);border-color:var(--mine)}
+.tw.mine .ck{color:inherit}
+.tw:hover{transform:translateY(-1px)}
+.tw.dim{opacity:.35}
+
+/* tray: your word */
+.tray{position:sticky;bottom:0;z-index:5;margin-top:10px;background:var(--panel);border-radius:14px 14px 0 0;box-shadow:0 -1px 0 var(--line),0 -16px 40px -30px rgba(0,0,0,.4);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.tray .name{display:flex;align-items:center;gap:6px;font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
+.tray input{width:9.5em;border:0;border-bottom:2px solid var(--mine);background:transparent;font-weight:800;letter-spacing:-.02em;padding:2px 0}
+.tray .facts{font-size:.9rem;color:var(--muted);flex:1;min-width:220px}
+.tray .facts b{color:var(--ink)}.tray .facts .m{color:var(--mine);font-weight:700}
+.btn{min-height:44px;padding:0 18px;border-radius:99px;font-weight:700;border:1.5px solid var(--line)}
+.btn.primary{background:var(--mine);color:var(--on-mine);border-color:var(--mine)}
+.btn:disabled{opacity:.4;cursor:default}
+.last{flex-basis:100%;font-size:.82rem;color:var(--muted);min-height:1.2em}
+.last b{color:var(--ink)}
+
+/* sheet */
+.sheet{position:fixed;inset:auto 0 0 0;margin:auto;z-index:20;width:min(680px,100%);background:var(--panel);border-radius:18px 18px 0 0;box-shadow:0 -20px 60px rgba(0,0,0,.35);padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));transform:translateY(105%);transition:transform .35s cubic-bezier(.2,.9,.25,1);max-height:88svh;overflow:auto}
+.sheet.open{transform:none}.sheet:not(.open){visibility:hidden;transition:transform .35s,visibility 0s .35s}
+.sheet h2{margin:0 0 4px;font-size:1.4rem;letter-spacing:-.02em}
+.sheet p{margin:0 0 10px;color:var(--muted)}
+pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overflow:auto;font:.8rem/1.45 var(--mono);max-height:260px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:19;opacity:0;pointer-events:none;transition:opacity .3s}.scrim.open{opacity:1;pointer-events:auto}
+
+/* atlas below the fold */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.atlas{grid-template-columns:minmax(0,1fr);max-width:1200px;margin:0 auto;padding:56px clamp(12px,2vw,24px) 80px;display:grid;gap:48px}
+.atlas h2{font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-.03em;margin:0 0 4px}
+.atlas .sub{color:var(--muted);margin:0 0 14px}
+.matrix{position:relative;overflow-x:auto;border-radius:12px;box-shadow:0 0 0 1px var(--line);background:var(--panel)}
+.matrix table{border-collapse:collapse;font-size:.8rem;min-width:760px;width:100%}
+.matrix th,.matrix td{padding:5px 6px;border-bottom:1px solid var(--soft);text-align:center}
+.matrix th[scope=row]{text-align:left;font-weight:600;white-space:nowrap}
+.matrix thead th{font:600 .68rem var(--mono);color:var(--muted);writing-mode:vertical-rl;transform:rotate(180deg);height:120px;vertical-align:bottom;padding:6px 2px}
+.matrix td i{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--ink)}
+.matrix td.c{font:700 .78rem var(--mono)}
+.vague{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.vague blockquote{margin:0;background:var(--panel);border-radius:12px;box-shadow:0 0 0 1px var(--line);padding:12px 14px;font-size:.92rem}
+.vague cite{display:block;margin-top:6px;font:.72rem var(--mono);color:var(--muted);font-style:normal}
+.foot{color:var(--muted);font:.8rem var(--mono);text-align:center;padding-bottom:40px}
+
+@media (max-width:900px){
+  .bench{grid-template-columns:1fr}.frame{max-height:none}.board{max-height:none}
+  .stat{display:none}
+  .tray{gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px))}.tray .name{font-size:1.05rem}.tray .facts{min-width:0;flex-basis:100%;order:3;font-size:.82rem}.tray .btn{min-height:40px;padding:0 14px}.last{display:none}
+  .versions{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}.ver{flex:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="word"><label class="sr" for="wordSel" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Word</label><select id="wordSel"></select></div>
+    <div class="claim" id="claim"></div>
+    <div class="stat" id="stat"></div>
+  </header>
+
+  <div class="bench">
+    <section class="left" aria-label="The page">
+      <div class="versions" id="versions" role="group" aria-label="Whose version"></div>
+      <div class="frame" id="frame"><iframe id="pv" title="Demo page with the selected version applied" tabindex="-1"></iframe></div>
+      <p class="says" id="says" aria-live="polite"></p>
+    </section>
+    <section class="board" id="board" aria-label="Every tweak sources ask for">
+      <div class="bhead"><span><b id="bcount"></b> tweaks behind the words</span><span>tap to add to yours</span></div>
+      <div class="key"><span><i style="background:var(--l4)"></i>asked by 5+ sources</span><span><i style="background:var(--l1);box-shadow:inset 0 0 0 1px var(--line)"></i>by one</span><span><i style="box-shadow:inset 0 0 0 1.5px var(--muted)"></i>by none</span><span><i style="box-shadow:0 0 0 2px var(--mine)"></i>in the version shown</span><span><i style="background:var(--mine)"></i>yours</span><span style="color:var(--ok)">✓ a tool checks it</span></div>
+      <div id="chips"></div>
+    </section>
+  </div>
+
+  <footer class="tray" aria-label="Your word">
+    <div class="name">my <input id="myName" aria-label="Name of your version" value="polish" maxlength="24"></div>
+    <div class="facts" id="facts"></div>
+    <button class="btn" id="clear" type="button">Clear</button>
+    <button class="btn primary" id="save" type="button">Save my word</button>
+    <div class="last" id="last" aria-live="polite"></div>
+  </footer>
+</div>
+
+<main class="atlas">
+  <section aria-labelledby="h-who">
+    <h2 id="h-who">Who asks for what</h2>
+    <p class="sub" id="whoSub"></p>
+    <div class="matrix" id="matrix" tabindex="0" role="region" aria-label="Tweaks by source"></div>
+  </section>
+  <section aria-labelledby="h-vague">
+    <h2 id="h-vague">The part no tool can check</h2>
+    <p class="sub" id="vagueSub"></p>
+    <div class="vague" id="vague"></div>
+  </section>
+  <p class="foot" id="foot"></p>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" inert>
+  <h2 id="sheetTitle"></h2>
+  <p>This file is the whole definition. A command runs the checks. No agent has to guess what the word means.</p>
+  <pre id="json" tabindex="0"></pre>
+  <pre id="cmd" tabindex="0"></pre>
+  <div class="row"><button class="btn primary" id="dl" type="button">Download</button><button class="btn" id="cp" type="button">Copy file</button><button class="btn" id="cpc" type="button">Copy command</button><button class="btn" id="close" type="button">Close</button></div>
+</aside>
+
+<script>
+const D = /*DATA*/null;
+(function () {
+  'use strict';
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const T = Object.fromEntries(D.tweaks.map(t => [t.id, t]));
+  const maxSrc = Math.max(...D.tweaks.map(t => t.srcs.length));
+  const st = { word: 'polish', v: 0, mine: new Set(), mode: 'theirs', auto: true };
+  let timer = null;
+
+  /* word picker */
+  $('#wordSel').innerHTML = D.words.map(w => `<option value="${esc(w.word)}">${esc(w.word)}</option>`).join('');
+  $('#stat').innerHTML = `${D.stats.statements} statements · ${D.stats.sources} sources<br>${D.stats.words} words · ${D.stats.tweaks} tweaks`;
+  const W = () => D.words.find(w => w.word === st.word);
+  const sizeSel = () => { const s = $('#wordSel'), m = document.createElement('span'); m.style.cssText = 'position:absolute;visibility:hidden;white-space:pre;font:inherit;letter-spacing:inherit'; m.textContent = s.value; s.parentNode.appendChild(m); s.style.width = (m.offsetWidth + 30) + 'px'; m.remove(); };
+
+  /* the page */
+  const pv = $('#pv'), frame = $('#frame');
+  pv.srcdoc = D.before;
+  const fit = () => { pv.style.transform = `scale(${frame.clientWidth / D.frame.width})`; };
+  new ResizeObserver(fit).observe(frame);
+  const cssOf = ids => [...ids].map(i => T[i] && T[i].css).filter(Boolean).join('\n');
+  const paint = css => { try { pv.contentWindow.postMessage({ type: 'lab-recipe', css, highlight: '' }, '*'); } catch (e) {} };
+  pv.addEventListener('load', () => { fit(); render(); });
+
+  /* versions row */
+  function renderVersions() {
+    const vs = W().versions;
+    $('#versions').innerHTML = vs.map((v, i) => `<button class="ver" type="button" data-i="${i}" aria-pressed="${st.mode === 'theirs' && st.v === i}">${esc(v.src)}<span class="bar"></span></button>`).join('')
+      + `<button class="ver mine" type="button" data-i="mine" aria-pressed="${st.mode === 'mine'}">yours</button>`
+      + `<button class="ver" type="button" data-i="orig" aria-pressed="${st.mode === 'orig'}">original</button>`;
+  }
+  $('#versions').addEventListener('click', e => { const b = e.target.closest('.ver'); if (!b) return; stopAuto();
+    if (b.dataset.i === 'mine') st.mode = 'mine'; else if (b.dataset.i === 'orig') st.mode = 'orig'; else { st.mode = 'theirs'; st.v = +b.dataset.i; } render(); });
+
+  /* board */
+  const cats = D.categories.map(c => ({ c, ts: D.tweaks.filter(t => t.category === c).sort((a, b) => b.srcs.length - a.srcs.length || a.name.localeCompare(b.name)) })).filter(x => x.ts.length);
+  $('#bcount').textContent = D.tweaks.length;
+  $('#chips').innerHTML = cats.map(x => `<div class="cat">${esc(x.c)}</div><div class="chips">${x.ts.map(t => {
+    const n = t.srcs.length, lv = n === 0 ? 0 : n === 1 ? 1 : n === 2 ? 2 : n <= 4 ? 3 : 4;
+    return `<button class="tw v${lv}" type="button" data-id="${esc(t.id)}" aria-pressed="false" title="${esc(n ? 'Asked for by ' + t.srcs.join(', ') : 'No source asks for this')}">${esc(t.name)}${n ? `<span class="n">${n}</span>` : ''}${t.check ? '<span class="ck" aria-label="tool checks it">✓</span>' : ''}</button>`; }).join('')}</div>`).join('');
+  $('#chips').addEventListener('click', e => { const b = e.target.closest('.tw'); if (!b) return; stopAuto(); const id = b.dataset.id;
+    st.mine.has(id) ? st.mine.delete(id) : st.mine.add(id); st.mode = 'mine'; lastTapped(id); render(); });
+
+  function lastTapped(id) { const t = T[id], on = st.mine.has(id);
+    $('#last').innerHTML = `${on ? 'Added' : 'Removed'} <b>${esc(t.name)}</b>. Asked for by ${t.srcs.length ? esc(t.srcs.join(', ')) : 'no source'}${t.check ? ` · checked by <b>${esc(t.check)}</b>` : ' · needs a person to judge'}${t.css ? '' : ' · not visible on this demo'}.`; }
+
+  /* similarity: how close is your word to everyone else's words */
+  const allVersions = D.words.flatMap(w => w.versions.map(v => ({ ...v, word: w.word }))).filter(v => v.tweaks.length);
+  const jac = (a, b) => { const B = new Set(b); let i = 0; a.forEach(x => { if (B.has(x)) i++; }); const u = new Set([...a, ...b]).size; return u ? i / u : 0; };
+  function facts() {
+    const n = st.mine.size, ck = [...st.mine].filter(i => T[i].check).length, name = $('#myName').value.trim() || 'word';
+    if (!n) { $('#facts').innerHTML = `Tap tweaks to build <b>your</b> ${esc(name)}. Or start from someone's: <button class="btn" id="startFrom" type="button" style="min-height:34px;padding:0 12px">copy ${esc(cur().src)}'s</button>`; return; }
+    const near = allVersions.map(v => ({ v, s: jac([...st.mine], v.tweaks) })).sort((a, b) => b.s - a.s).slice(0, 2).filter(x => x.s > 0);
+    $('#facts').innerHTML = `<b>${n}</b> tweak${n > 1 ? 's' : ''} · <b>${ck}</b> a tool can check · closest to ${near.length ? near.map(x => `<span class="m">${esc(x.v.word)}</span> (${esc(x.v.src)}) ${Math.round(x.s * 100)}%`).join(', ') : 'nothing anyone has named'}`;
+  }
+  $('#facts').addEventListener('click', e => { if (e.target.id === 'startFrom') { stopAuto(); cur().tweaks.forEach(i => st.mine.add(i)); st.mode = 'mine'; render(); } });
+  const cur = () => W().versions[Math.min(st.v, W().versions.length - 1)];
+
+  function render() {
+    const v = cur(), shown = st.mode === 'mine' ? st.mine : st.mode === 'orig' ? new Set() : new Set(v.tweaks);
+    paint(cssOf(shown));
+    renderVersions();
+    const nv = W().versions.length;
+    $('#claim').innerHTML = nv > 1 ? `<b>Same word.</b> ${nv} sources, ${nv} different pages.` : `<b>${esc(v.src)}</b> uses this word. Nobody else defines it.`;
+    $('#says').innerHTML = st.mode === 'mine' ? `Your ${esc($('#myName').value || 'word')}: ${st.mine.size} tweaks.` : st.mode === 'orig' ? 'The page with nothing applied.'
+      : `${esc(v.src)}: ${v.quote ? `<q>${esc(v.quote)}</q>` : `${v.tweaks.length} tweaks from ${v.n || ''} statements`} <a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">source</a>`;
+    const curSet = st.mode === 'theirs' ? new Set(v.tweaks) : new Set();
+    $$('.tw').forEach(b => { const id = b.dataset.id; b.classList.toggle('cur', curSet.has(id)); b.classList.toggle('mine', st.mine.has(id)); b.setAttribute('aria-pressed', st.mine.has(id)); });
+    $('#save').disabled = !st.mine.size;
+    facts();
+  }
+
+  /* the hook: cycle through everyone's version of the word, until the visitor touches anything */
+  function tick() { const n = W().versions.length; if (!st.auto || n < 2) return; st.v = (st.v + 1) % n; st.mode = 'theirs'; render(); timer = setTimeout(tick, 1800); }
+  function startAuto() { clearTimeout(timer); if (reduced || W().versions.length < 2) return; st.auto = true; timer = setTimeout(tick, 1800); }
+  function stopAuto() { st.auto = false; clearTimeout(timer); document.documentElement.style.setProperty('--dwell', '0s'); }
+  $('#wordSel').addEventListener('change', e => { st.word = e.target.value; st.v = 0; st.mode = 'theirs'; if (!st.mine.size) $('#myName').value = st.word; render(); });
+  $('#myName').addEventListener('input', facts);
+  $('#clear').addEventListener('click', () => { st.mine.clear(); st.mode = 'theirs'; render(); $('#last').textContent = ''; });
+
+  /* save: the definition file */
+  const sheet = $('#sheet'), scrim = $('#scrim');
+  const slug = s => (s || 'word').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'word';
+  function doc() { const name = $('#myName').value.trim() || st.word; return { axl_verb: '0.1', name, based_on: st.word,
+    tweaks: [...st.mine], checks: [...st.mine].filter(i => T[i].check).map(i => ({ tweak: i, check: T[i].check })),
+    judgment: [...st.mine].filter(i => !T[i].check).map(i => T[i].name), closest: allVersions.map(v => ({ word: v.word, source: v.src, overlap: +jac([...st.mine], v.tweaks).toFixed(2) })).sort((a, b) => b.overlap - a.overlap).slice(0, 3) }; }
+  $('#save').addEventListener('click', () => { const d = doc(), f = slug(d.name) + '.axl.json';
+    $('#sheetTitle').textContent = `my ${d.name}`; $('#json').textContent = JSON.stringify(d, null, 2); $('#cmd').textContent = `python3 axl/axl.py check ${f} yourpage.html`;
+    sheet.inert = false; sheet.classList.add('open'); scrim.classList.add('open'); $('#dl').focus(); });
+  const close = () => { sheet.classList.remove('open'); scrim.classList.remove('open'); sheet.inert = true; $('#save').focus(); };
+  $('#close').addEventListener('click', close); scrim.addEventListener('click', close); addEventListener('keydown', e => { if (e.key === 'Escape' && sheet.classList.contains('open')) close(); });
+  const copy = (t, b) => { const o = b.textContent, ok = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = o, 1200); }; try { navigator.clipboard.writeText(t).then(ok, ok); } catch (e) { ok(); } };
+  $('#cp').addEventListener('click', e => copy($('#json').textContent, e.currentTarget));
+  $('#cpc').addEventListener('click', e => copy($('#cmd').textContent, e.currentTarget));
+  $('#dl').addEventListener('click', () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([$('#json').textContent], { type: 'application/json' })); a.download = slug(doc().name) + '.axl.json'; document.body.appendChild(a); a.click(); a.remove(); });
+
+  /* atlas: who asks for what */
+  const srcs = D.sources, rows = D.tweaks.slice().sort((a, b) => b.srcs.length - a.srcs.length || a.name.localeCompare(b.name));
+  $('#whoSub').textContent = `${D.stats.sources} sources, ${D.stats.tweaks} tweaks. Only ${D.stats.shared3} are asked for by three or more sources.`;
+  $('#matrix').innerHTML = `<table><caption class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Which source asks for which tweak</caption><thead><tr><th scope="col" style="writing-mode:horizontal-tb;transform:none;text-align:left">Tweak</th><th scope="col">sources</th>${srcs.map(s => `<th scope="col">${esc(s)}</th>`).join('')}</tr></thead><tbody>${rows.map(t => `<tr><th scope="row">${esc(t.name)}${t.check ? ' <span style="color:var(--ok)">✓</span>' : ''}</th><td class="c">${t.srcs.length}</td>${srcs.map(s => `<td>${t.srcs.includes(s) ? '<i aria-hidden="true"></i><span class="sr">yes</span>' : ''}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+  $('#vagueSub').textContent = `${D.stats.vague} of ${D.stats.statements} statements name no concrete change at all. These are the words an agent has to guess.`;
+  $('#vague').innerHTML = D.vague.slice(0, 9).map(v => `<blockquote>${esc(v.text)}<cite>${esc(v.src)} · “${esc(v.word)}”${v.verified ? '' : ' · paraphrase, not verified'}</cite></blockquote>`).join('');
+  $('#foot').textContent = `Statements from ${D.stats.sources} public sources. Tweak groupings are model-assisted and open to challenge. Checks run with python3 axl/axl.py.`;
+
+  sizeSel(); $('#wordSel').addEventListener('change', sizeSel); render(); startAuto();
+  window.axlReady = true;
+})();
+</script>
+</body>
+</html>

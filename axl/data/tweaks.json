@@ -1,0 +1,582 @@
+{
+ "categories": [
+  "Type",
+  "Color",
+  "Space & layout",
+  "Surface",
+  "Motion",
+  "Interaction & states",
+  "Access",
+  "Content & process"
+ ],
+ "tweaks": [
+  {
+   "id": "type",
+   "name": "Strengthen heading contrast",
+   "category": "Type",
+   "effect": "type",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "leading",
+   "name": "Improve reading measure",
+   "category": "Type",
+   "effect": "leading",
+   "check": "leading-1.5",
+   "kind": "visual"
+  },
+  {
+   "id": "spacing",
+   "name": "Create spacing rhythm",
+   "category": "Space & layout",
+   "effect": "spacing",
+   "check": "spacing-4",
+   "kind": "visual"
+  },
+  {
+   "id": "gradient",
+   "name": "Remove decorative gradient",
+   "category": "Color",
+   "effect": "gradient",
+   "check": "no-gradient",
+   "kind": "visual"
+  },
+  {
+   "id": "surface",
+   "name": "Simplify card surfaces",
+   "category": "Surface",
+   "effect": "surface",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "accent",
+   "name": "Concentrate accent color",
+   "category": "Color",
+   "effect": "accent",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "focus",
+   "name": "Show keyboard focus",
+   "category": "Interaction & states",
+   "effect": "focus",
+   "check": "focus-visible",
+   "kind": "behavior"
+  },
+  {
+   "id": "feedback",
+   "name": "Reserve feedback space",
+   "category": "Interaction & states",
+   "effect": "feedback",
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "motion",
+   "name": "Respond to pointer actions",
+   "category": "Motion",
+   "effect": "motion",
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "badge",
+   "name": "Remove decorative badge",
+   "category": "Surface",
+   "effect": "badge",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "flat",
+   "name": "Remove card containers",
+   "category": "Surface",
+   "effect": "flat",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "serif",
+   "name": "Pair display and body faces",
+   "category": "Type",
+   "effect": "serif",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "tint",
+   "name": "Tint the background",
+   "category": "Color",
+   "effect": "tint",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "align",
+   "name": "Align to the left",
+   "category": "Type",
+   "effect": "align",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "labels",
+   "name": "Strengthen field labels",
+   "category": "Interaction & states",
+   "effect": "labels",
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "target",
+   "name": "Enlarge action targets",
+   "category": "Interaction & states",
+   "effect": "target",
+   "check": "target-44",
+   "kind": "behavior"
+  },
+  {
+   "id": "reduce",
+   "name": "Honor reduced motion",
+   "category": "Motion",
+   "effect": "reduce",
+   "check": "reduced-motion",
+   "kind": "behavior"
+  },
+  {
+   "id": "border",
+   "name": "Clarify field boundaries",
+   "category": "Surface",
+   "effect": "border",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "compact",
+   "name": "Compact content density",
+   "category": "Space & layout",
+   "effect": "compact",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "airy",
+   "name": "Open content density",
+   "category": "Space & layout",
+   "effect": "airy",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "crisp",
+   "name": "Sharpen geometry",
+   "category": "Surface",
+   "effect": "crisp",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "soft",
+   "name": "Soften geometry",
+   "category": "Surface",
+   "effect": "soft",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "weighty",
+   "name": "Use weighty timing",
+   "category": "Motion",
+   "effect": "weighty",
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "bouncy",
+   "name": "Use bouncy timing",
+   "category": "Motion",
+   "effect": "bouncy",
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "tabular",
+   "name": "Use tabular numerals",
+   "category": "Type",
+   "effect": "tabular",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "tracking",
+   "name": "Tune display tracking",
+   "category": "Type",
+   "effect": "tracking",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "wrap",
+   "name": "Balance heading wrapping",
+   "category": "Type",
+   "effect": "wrap",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "paragraph",
+   "name": "Separate paragraphs",
+   "category": "Type",
+   "effect": "paragraph",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "quiet",
+   "name": "Quiet secondary text",
+   "category": "Color",
+   "effect": "quiet",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "shadow",
+   "name": "Tint elevation shadows",
+   "category": "Surface",
+   "effect": "shadow",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "primary",
+   "name": "Emphasize the primary action",
+   "category": "Interaction & states",
+   "effect": "primary",
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "divider",
+   "name": "Use dividers for grouping",
+   "category": "Space & layout",
+   "effect": "divider",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "split",
+   "name": "Create asymmetric columns",
+   "category": "Space & layout",
+   "effect": "split",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "stack",
+   "name": "Use a linear reading flow",
+   "category": "Space & layout",
+   "effect": "stack",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "dark",
+   "name": "Inspect a dark surface",
+   "category": "Color",
+   "effect": "dark",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "nav",
+   "name": "Clarify navigation boundaries",
+   "category": "Interaction & states",
+   "effect": "nav",
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "placeholder",
+   "name": "Clarify placeholder contrast",
+   "category": "Access",
+   "effect": "placeholder",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "invalid",
+   "name": "Show invalid input",
+   "category": "Interaction & states",
+   "effect": "invalid",
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "underline",
+   "name": "Clarify text links",
+   "category": "Interaction & states",
+   "effect": "underline",
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "width",
+   "name": "Constrain content measure",
+   "category": "Type",
+   "effect": "width",
+   "check": "measure-80",
+   "kind": "visual"
+  },
+  {
+   "id": "headergap",
+   "name": "Separate heading and body",
+   "category": "Type",
+   "effect": "headergap",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "buttonweight",
+   "name": "Strengthen action typography",
+   "category": "Type",
+   "effect": "buttonweight",
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "contrast-text",
+   "name": "Raise text contrast to 4.5:1",
+   "category": "Access",
+   "effect": null,
+   "check": "contrast",
+   "kind": "visual"
+  },
+  {
+   "id": "body-16",
+   "name": "Set body text to 16px",
+   "category": "Type",
+   "effect": null,
+   "check": "body-16",
+   "kind": "visual"
+  },
+  {
+   "id": "reflow",
+   "name": "Reflow layout at 320px",
+   "category": "Space & layout",
+   "effect": null,
+   "check": "reflow-320",
+   "kind": "behavior"
+  },
+  {
+   "id": "motion-duration",
+   "name": "Keep transitions under 500ms",
+   "category": "Motion",
+   "effect": null,
+   "check": "duration-500",
+   "kind": "behavior"
+  },
+  {
+   "id": "banned-fonts",
+   "name": "Replace generic default fonts",
+   "category": "Type",
+   "effect": null,
+   "check": "banned-fonts",
+   "kind": "visual"
+  },
+  {
+   "id": "states-designed",
+   "name": "Design empty, error, loading states",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "copy-specific",
+   "name": "Write specific, plain copy",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "process"
+  },
+  {
+   "id": "localize",
+   "name": "Allow for text expansion",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "alt-text",
+   "name": "Write meaningful alt text",
+   "category": "Access",
+   "effect": null,
+   "check": "axe",
+   "kind": "behavior"
+  },
+  {
+   "id": "aria-semantics",
+   "name": "Add semantic roles and labels",
+   "category": "Access",
+   "effect": null,
+   "check": "axe",
+   "kind": "behavior"
+  },
+  {
+   "id": "design-tokens",
+   "name": "Replace hard-coded values with tokens",
+   "category": "Content & process",
+   "effect": null,
+   "check": "tokens",
+   "kind": "process"
+  },
+  {
+   "id": "reuse-components",
+   "name": "Extract repeated components",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "process"
+  },
+  {
+   "id": "type-scale",
+   "name": "Use one fixed type scale",
+   "category": "Type",
+   "effect": null,
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "remove-clutter",
+   "name": "Remove redundant elements",
+   "category": "Surface",
+   "effect": null,
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "progressive-disclosure",
+   "name": "Hide secondary detail until needed",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "mute-color",
+   "name": "Mute saturated colors",
+   "category": "Color",
+   "effect": null,
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "color-roles",
+   "name": "Assign colors to fixed roles",
+   "category": "Color",
+   "effect": null,
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "real-devices",
+   "name": "Test on real devices",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "process"
+  },
+  {
+   "id": "stress-test",
+   "name": "Test long, empty, RTL content",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "process"
+  },
+  {
+   "id": "perf",
+   "name": "Cut load and runtime cost",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "process"
+  },
+  {
+   "id": "ask-first",
+   "name": "Ask about audience and goal first",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "process"
+  },
+  {
+   "id": "delight-moments",
+   "name": "Add delight at key moments",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "audit-first",
+   "name": "Audit before editing",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "process"
+  },
+  {
+   "id": "preserve-brand",
+   "name": "Preserve existing brand and theme",
+   "category": "Content & process",
+   "effect": null,
+   "check": null,
+   "kind": "process"
+  },
+  {
+   "id": "icon-consistency",
+   "name": "Use one icon style",
+   "category": "Surface",
+   "effect": null,
+   "check": null,
+   "kind": "visual"
+  },
+  {
+   "id": "transform-only",
+   "name": "Animate transform and opacity only",
+   "category": "Motion",
+   "effect": null,
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "pause-motion",
+   "name": "Pause looping and offscreen motion",
+   "category": "Motion",
+   "effect": null,
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "focal-motion",
+   "name": "Use one choreographed sequence",
+   "category": "Motion",
+   "effect": null,
+   "check": null,
+   "kind": "behavior"
+  },
+  {
+   "id": "match-patterns",
+   "name": "Match familiar patterns and terms",
+   "category": "Interaction & states",
+   "effect": null,
+   "check": null,
+   "kind": "behavior"
+  }
+ ]
+}

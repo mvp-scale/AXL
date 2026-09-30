@@ -2,21 +2,21 @@
  "id": "tokens-before",
  "tool": "axl-tokens",
  "version": "axl-tokens tokens.py (python 3.11.15)",
- "command": "python3 axl/skills/axl-tokens/scripts/tokens.py check axl/demo/css/before.css axl/demo/tokens.json --strict",
+ "command": "python3 axl/axl.py tokens axl/demo/css/before.css axl/demo/tokens.json",
  "input_hash": "de37db43bb4fd6b6f663373f41d05d1481e52764fc41d6e64518ea9312f0cd74",
  "exit_code": 1,
- "stdout_excerpt": "{\"tool\": \"axl-tokens\", \"findings\": [{\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#233d60 is not a token value (1 use)\", \"location\": \"#233d60\"}, {\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#243751 is not a token value (1 use)\", \"location\": \"#243751\"}, {\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#25384e is not a token value (3 uses)\", \"location\": \"#25384e\"}, {\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#263e5c is not a token value (1 use)\", \"location\": \"#263e5c\"}, {\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#293342 is not a token val",
+ "stdout_excerpt": "{\"tool\": \"axl tokens\", \"findings\": [{\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#233d60 is not a token value (1 uses)\", \"location\": \"#233d60\"}, {\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#243751 is not a token value (1 uses)\", \"location\": \"#243751\"}, {\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#25384e is not a token value (3 uses)\", \"location\": \"#25384e\"}, {\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#263e5c is not a token value (1 uses)\", \"location\": \"#263e5c\"}, {\"rule_id\": \"raw-colour\", \"result\": \"fail\", \"evidence\": \"#293342 is not a token ",
  "findings": [
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#233d60 is not a token value (1 use)",
+   "evidence": "#233d60 is not a token value (1 uses)",
    "location": "#233d60"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#243751 is not a token value (1 use)",
+   "evidence": "#243751 is not a token value (1 uses)",
    "location": "#243751"
   },
   {
@@ -28,301 +28,301 @@
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#263e5c is not a token value (1 use)",
+   "evidence": "#263e5c is not a token value (1 uses)",
    "location": "#263e5c"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#293342 is not a token value (1 use)",
+   "evidence": "#293342 is not a token value (1 uses)",
    "location": "#293342"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#30455c is not a token value (1 use)",
+   "evidence": "#30455c is not a token value (1 uses)",
    "location": "#30455c"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#32654f is not a token value (1 use)",
+   "evidence": "#32654f is not a token value (1 uses)",
    "location": "#32654f"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#394b62 is not a token value (1 use)",
+   "evidence": "#394b62 is not a token value (1 uses)",
    "location": "#394b62"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#456485 is not a token value (1 use)",
+   "evidence": "#456485 is not a token value (1 uses)",
    "location": "#456485"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#586b83 is not a token value (1 use)",
+   "evidence": "#586b83 is not a token value (1 uses)",
    "location": "#586b83"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#617085 is not a token value (1 use)",
+   "evidence": "#617085 is not a token value (1 uses)",
    "location": "#617085"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#627488 is not a token value (1 use)",
+   "evidence": "#627488 is not a token value (1 uses)",
    "location": "#627488"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#657285 is not a token value (1 use)",
+   "evidence": "#657285 is not a token value (1 uses)",
    "location": "#657285"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#65758b is not a token value (1 use)",
+   "evidence": "#65758b is not a token value (1 uses)",
    "location": "#65758b"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#667488 is not a token value (1 use)",
+   "evidence": "#667488 is not a token value (1 uses)",
    "location": "#667488"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#67758b is not a token value (1 use)",
+   "evidence": "#67758b is not a token value (1 uses)",
    "location": "#67758b"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#677a8f is not a token value (1 use)",
+   "evidence": "#677a8f is not a token value (1 uses)",
    "location": "#677a8f"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#68788d is not a token value (1 use)",
+   "evidence": "#68788d is not a token value (1 uses)",
    "location": "#68788d"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#687c90 is not a token value (1 use)",
+   "evidence": "#687c90 is not a token value (1 uses)",
    "location": "#687c90"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#697689 is not a token value (1 use)",
+   "evidence": "#697689 is not a token value (1 uses)",
    "location": "#697689"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#697c92 is not a token value (1 use)",
+   "evidence": "#697c92 is not a token value (1 uses)",
    "location": "#697c92"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#6a788b is not a token value (1 use)",
+   "evidence": "#6a788b is not a token value (1 uses)",
    "location": "#6a788b"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#708099 is not a token value (1 use)",
+   "evidence": "#708099 is not a token value (1 uses)",
    "location": "#708099"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#718097 is not a token value (1 use)",
+   "evidence": "#718097 is not a token value (1 uses)",
    "location": "#718097"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#768599 is not a token value (1 use)",
+   "evidence": "#768599 is not a token value (1 uses)",
    "location": "#768599"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#77889b is not a token value (1 use)",
+   "evidence": "#77889b is not a token value (1 uses)",
    "location": "#77889b"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#78879a is not a token value (1 use)",
+   "evidence": "#78879a is not a token value (1 uses)",
    "location": "#78879a"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#78889a is not a token value (1 use)",
+   "evidence": "#78889a is not a token value (1 uses)",
    "location": "#78889a"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#7a8798 is not a token value (1 use)",
+   "evidence": "#7a8798 is not a token value (1 uses)",
    "location": "#7a8798"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#7a8799 is not a token value (1 use)",
+   "evidence": "#7a8799 is not a token value (1 uses)",
    "location": "#7a8799"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#7c899a is not a token value (1 use)",
+   "evidence": "#7c899a is not a token value (1 uses)",
    "location": "#7c899a"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#ac382d is not a token value (1 use)",
+   "evidence": "#ac382d is not a token value (1 uses)",
    "location": "#ac382d"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#becfcb is not a token value (1 use)",
+   "evidence": "#becfcb is not a token value (1 uses)",
    "location": "#becfcb"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#c2ccd8 is not a token value (1 use)",
+   "evidence": "#c2ccd8 is not a token value (1 uses)",
    "location": "#c2ccd8"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#c9d2de is not a token value (1 use)",
+   "evidence": "#c9d2de is not a token value (1 uses)",
    "location": "#c9d2de"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#cbd2db is not a token value (1 use)",
+   "evidence": "#cbd2db is not a token value (1 uses)",
    "location": "#cbd2db"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#d3ddea is not a token value (1 use)",
+   "evidence": "#d3ddea is not a token value (1 uses)",
    "location": "#d3ddea"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#d8e0e8 is not a token value (1 use)",
+   "evidence": "#d8e0e8 is not a token value (1 uses)",
    "location": "#d8e0e8"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#dfe6ef is not a token value (1 use)",
+   "evidence": "#dfe6ef is not a token value (1 uses)",
    "location": "#dfe6ef"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#e0e6ed is not a token value (1 use)",
+   "evidence": "#e0e6ed is not a token value (1 uses)",
    "location": "#e0e6ed"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#e3e8ef is not a token value (1 use)",
+   "evidence": "#e3e8ef is not a token value (1 uses)",
    "location": "#e3e8ef"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#e6eaf0 is not a token value (1 use)",
+   "evidence": "#e6eaf0 is not a token value (1 uses)",
    "location": "#e6eaf0"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#e6ebf2 is not a token value (1 use)",
+   "evidence": "#e6ebf2 is not a token value (1 uses)",
    "location": "#e6ebf2"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#e7ecf2 is not a token value (1 use)",
+   "evidence": "#e7ecf2 is not a token value (1 uses)",
    "location": "#e7ecf2"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#e8ecf1 is not a token value (1 use)",
+   "evidence": "#e8ecf1 is not a token value (1 uses)",
    "location": "#e8ecf1"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#e8f3ed is not a token value (1 use)",
+   "evidence": "#e8f3ed is not a token value (1 uses)",
    "location": "#e8f3ed"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#e9edf4 is not a token value (1 use)",
+   "evidence": "#e9edf4 is not a token value (1 uses)",
    "location": "#e9edf4"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#edf0f5 is not a token value (1 use)",
+   "evidence": "#edf0f5 is not a token value (1 uses)",
    "location": "#edf0f5"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#edf2f7 is not a token value (1 use)",
+   "evidence": "#edf2f7 is not a token value (1 uses)",
    "location": "#edf2f7"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#edf2f8 is not a token value (1 use)",
+   "evidence": "#edf2f8 is not a token value (1 uses)",
    "location": "#edf2f8"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#f0f2f7 is not a token value (1 use)",
+   "evidence": "#f0f2f7 is not a token value (1 uses)",
    "location": "#f0f2f7"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#f4f5f8 is not a token value (1 use)",
+   "evidence": "#f4f5f8 is not a token value (1 uses)",
    "location": "#f4f5f8"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#f5f6f8 is not a token value (1 use)",
+   "evidence": "#f5f6f8 is not a token value (1 uses)",
    "location": "#f5f6f8"
   },
   {
@@ -334,13 +334,13 @@
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#fff2dd is not a token value (1 use)",
+   "evidence": "#fff2dd is not a token value (1 uses)",
    "location": "#fff2dd"
   },
   {
    "rule_id": "raw-colour",
    "result": "fail",
-   "evidence": "#fff2f0 is not a token value (1 use)",
+   "evidence": "#fff2f0 is not a token value (1 uses)",
    "location": "#fff2f0"
   },
   {
@@ -483,5 +483,5 @@
   }
  ],
  "role": "before",
- "ran_at": "2026-09-30T01:36:37+00:00"
+ "ran_at": "2026-09-30T04:50:14+00:00"
 }

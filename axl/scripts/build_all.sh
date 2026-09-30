@@ -9,5 +9,5 @@ python3 axl/scripts/build_claims.py
 python3 axl/scripts/apply_receipts.py
 python3 axl/scripts/build_definitions.py
 python3 axl/scripts/build_verbs.py
-node axl/tools/runners/pins.js axl/demo/crops
-python3 axl/scripts/build_story.py
+python3 axl/scripts/validate_atlas.py
+python3 axl/scripts/build_atlas.py
