@@ -20,6 +20,7 @@ for x in out["runs"]:
     if not x["preview_visible"]: errs.append((t, "the demo is not on the first screen"))
     if x["words_above_preview"] > 24: errs.append((t, "too many words above the demo", x["words_above_preview"]))
     if not (x["peek"] and x["unpeek"]): errs.append((t, "hold Shift does not show the original"))
+    if x.get("pinned_views") not in (None, ["signin"]): errs.append((t, f"playing does not stay on the page the person picked: {x['pinned_views']}"))
     if x["word_tiles"] < 20 or x["source_tiles"] < 20: errs.append((t, "pickers too small", x["word_tiles"], x["source_tiles"]))
     if x["multi_words"] != "2 commands": errs.append((t, "multi-select words", x["multi_words"]))
     if not x["word_walk"].startswith("\u201c"): errs.append((t, "walking words", x["word_walk"]))

@@ -78,12 +78,15 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 .marks{border-left:1px solid rgba(255,255,255,.2);border-radius:0 99px 99px 0;margin-left:4px;padding-left:12px}
 .marks i{width:12px;height:12px;border-radius:3px;border:2px solid var(--cur,#fff);opacity:.5}.marks[aria-pressed="true"] i{opacity:1;background:var(--cur,#fff)}
 .marks #marks{font:500 .72rem var(--mono);opacity:.75}
+.pin{display:inline-flex;align-items:center;gap:2px;margin-right:2px;padding:0 4px 0 12px;min-height:32px;border-radius:99px;background:rgba(255,255,255,.14);color:#fff;font:600 .78rem var(--sans);white-space:nowrap}.pin[hidden]{display:none}
+.pin button{width:24px;height:24px;border-radius:50%;color:#fff;font-size:1rem;line-height:1}.pin button:hover{background:rgba(255,255,255,.2)}
+.nothing.soft{top:auto;bottom:16px;transform:translateX(-50%);font-size:.88rem;padding:10px 16px}.nothing.soft b{font-size:1rem}
 .marks[aria-pressed="false"]{color:rgba(255,255,255,.65)}
 .frame.peeking .tools{visibility:hidden}
 .hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);touch-action:none}
 .frame.dev-tablet iframe,.frame.dev-mobile iframe{border-radius:22px;box-shadow:0 0 0 8px #1b1b1f,0 20px 50px rgba(0,0,0,.35)}
 .frame.dev-tablet,.frame.dev-mobile{background:var(--soft)}
-@media (max-width:760px){.tools{top:8px;right:8px;padding:3px}.devs button,.marks{min-height:30px;padding:0 8px;font-size:.7rem}.marks #marks{display:none}}
+@media (max-width:760px){.pin{min-height:30px;padding:0 2px 0 8px;font-size:.7rem}.pin .pinW{display:none}.tools{top:8px;right:8px;padding:3px}.devs button,.marks{min-height:30px;padding:0 8px;font-size:.7rem}.marks #marks{display:none}}
 .whyScrim{position:fixed;inset:0;z-index:60;background:rgba(10,10,14,.55);backdrop-filter:blur(3px)}.whyScrim[hidden],.why[hidden]{display:none}
 .why{position:fixed;z-index:61;left:50%;top:50%;transform:translate(-50%,-50%);width:min(640px,calc(100vw - 32px));max-height:calc(100svh - 32px);overflow:auto;background:var(--panel);color:var(--ink);border-radius:20px;padding:clamp(22px,4vw,40px);box-shadow:0 30px 90px rgba(0,0,0,.45)}
 .whyX{position:absolute;right:14px;top:12px;width:40px;height:40px;border-radius:50%;font-size:1.6rem;line-height:1;color:var(--muted)}.whyX:hover{background:var(--soft);color:var(--ink)}
@@ -246,6 +249,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
       <span class="state" id="state"><span id="stateTxt"></span></span>
       <div class="nothing" id="nothing" hidden></div>
       <div class="tools" role="toolbar" aria-label="Preview">
+        <span class="pin" id="pin" hidden title="Play and picks stay on this page and viewport"><span><span class="pinW">Staying on </span><b id="pinName"></b></span><button type="button" id="unpin" aria-label="Stop staying on this page">×</button></span>
         <div class="devs" role="group" aria-label="Viewport"><button type="button" data-dev="desktop" aria-pressed="true" title="Desktop">Desktop</button><button type="button" data-dev="tablet" aria-pressed="false" title="Tablet 820×1180">Tablet</button><button type="button" data-dev="mobile" aria-pressed="false" title="Mobile 390×844">Mobile</button></div>
         <button class="marks" id="marksBtn" type="button" aria-pressed="true" title="Outline what changed"><i aria-hidden="true"></i>Highlight changes <span id="marks"></span></button>
       </div>
@@ -375,7 +379,8 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
   };
   const setDev = d => { if (d === dev) return; dev = d; frame.classList.toggle('dev-tablet', d === 'tablet'); frame.classList.toggle('dev-mobile', d === 'mobile');
     $$('.devs button').forEach(b => b.setAttribute('aria-pressed', b.dataset.dev === d)); fit(); clearTimeout(markT); markT = setTimeout(markChanges, 200); };
-  $$('.devs button').forEach(b => b.addEventListener('click', () => setDev(b.dataset.dev)));
+  let devPinned = false;   // once the person picks a viewport, nothing switches it for them
+  $$('.devs button').forEach(b => b.addEventListener('click', () => { devPinned = true; setDev(b.dataset.dev); showPin(); }));
   new ResizeObserver(fit).observe(frame);
   // content edits in words an agent can apply: "In <sel>: change the text to …" etc.
   const PATCH_TXT = ps => ps.map(o => `In ${o.sel}: ` + [o.text != null ? `set the text to "${o.text}"` : '', o.attr ? Object.entries(o.attr).map(([k, v]) => v == null ? `remove ${k}` : `set ${k}="${v}"`).join(', ') : '',
@@ -421,19 +426,31 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
   const sync = (state, both) => { [both ? pv : null, pv0].forEach(f => { try { f && f.contentWindow.postMessage({ type: 'lab-sync-state', state }, '*'); } catch (e) {} }); };
   // move the demo to where the selection shows, only when the selection changes: a repaint (e.g. letting go of Shift) keeps the view the person is on
   let lastSel = null;
+  // once the person picks a page in the demo, play and new picks stay on it (so one page can be compared across sources); only a single focused rule may show its own page
+  let pinned = null;
+  const reset = { modal: null, phase: 'ready', menu: false, drawer: false, siErr: '' };
+  function showPin() { const on = !!(pinned || devPinned); $('#pin').hidden = !on; $('#pinName').textContent = [pinned && VIEWN[pinned], devPinned && dev[0].toUpperCase() + dev.slice(1)].filter(Boolean).join(' · '); }
+  $('#unpin').addEventListener('click', () => { pinned = null; devPinned = false; showPin(); lastSel = null; render(false); });
   function goView(ids) {
-    const key = ids.join(','); if (key === lastSel) return; lastSel = key;
+    const key = ids.join(',') + '|' + (st.focus || ''); if (key === lastSel) return; lastSel = key;
     const n = {}; ids.forEach(i => { const v = shows(T[i]) && T[i].view; if (v) n[v] = (n[v] || 0) + 1; });
-    const vs = Object.keys(n); if (!vs.length) return;
-    const one = ids.length === 1 && T[ids[0]].state; if (vs.includes(appView) && !one && !stated) return; stated = !!one;
+    const vs = Object.keys(n);
+    const one = ids.length === 1 && T[ids[0]].state;
+    if (pinned && !st.focus) {
+      const s = one && vs.includes(pinned) ? one : null;
+      if (appView !== pinned || s || stated) sync(Object.assign({ view: pinned }, reset, s || {}), true);
+      appView = pinned; stated = !!s; return;
+    }
+    if (!vs.length) return; if (vs.includes(appView) && !one && !stated) return; stated = !!one;
     appView = vs.includes(appView) ? appView : vs.sort((a, b) => n[b] - n[a])[0];
-    sync(Object.assign({ view: appView, modal: null, phase: 'ready', menu: false, drawer: false, siErr: '' }, one || {}), true);
+    sync(Object.assign({ view: appView }, reset, one || {}), true);
   }
   addEventListener('message', e => {
     if (e.source !== pv.contentWindow || !e.data || e.data.type !== 'lab-app-state') return;
     appView = e.data.state.view; sync(e.data.state, false);
-    if (st.walk) { stopWalk(); renderPicks(); }
-    lastSel = current().tweaks.join(',');   // the person navigated the demo: keep their view until they pick something else
+    if (pinned !== appView) { pinned = appView; showPin(); }
+    if (st.walk) { stopWalk(); renderPicks(); }   // the person took over: pause; ▶ then plays on this page
+    lastSel = current().tweaks.join(',') + '|' + (st.focus || '');   // the person navigated the demo: keep their view until they pick something else
     clearTimeout(markT); markT = setTimeout(markChanges, 160);
   });
   function paint(cur) { goView(cur.tweaks); post(cssOf(cur.tweaks), patchOf(cur.tweaks)); clearTimeout(markT); markT = setTimeout(markChanges, 120); }
@@ -441,7 +458,7 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
     const w = pv.contentWindow; w.addEventListener('scroll', () => { try { pv0.contentWindow.scrollTo(0, w.scrollY); } catch (e) {} });
     w.addEventListener('keydown', e => { if (e.key === 'Shift' && !e.target.closest('input,textarea,select')) { stopWalk(); renderPicks(); peek(true); } });
     w.addEventListener('keyup', e => { if (e.key === 'Shift') peek(false); }); }); pv0.addEventListener('load', fit);
-  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (!on) { lastSel = current().tweaks.join(','); paint(current()); } };   // letting go of Shift never moves the demo
+  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (!on) { lastSel = current().tweaks.join(',') + '|' + (st.focus || ''); paint(current()); } };   // letting go of Shift never moves the demo
   addEventListener('keydown', e => {
     if (e.target.closest && e.target.closest('input')) return;
     if (e.key === 'Shift') { stopWalk(); renderPicks(); peek(true); }
@@ -489,7 +506,7 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
   addEventListener('scroll', () => { if ($('#back').hidden) return; const r = frame.getBoundingClientRect(), on = r.bottom > 0 && r.top < innerHeight; if (on && r.top > -40) arrived = true; else if (arrived && !on) { $('#back').hidden = true; arrived = false; } }, { passive: true });
   const VIEWN = { overview: 'Overview', projects: 'Projects list', editor: 'New project form', settings: 'Settings', reports: 'Reports', assistant: 'Assistant chat', site: 'Home page', docs: 'Help article', signin: 'Sign in page' };
   function showRule(id) {
-    stopWalk(); st.focus = id; if (/@media:narrow/.test(R[id].code)) setDev('mobile'); const b = $(`#board .tw[data-id="${id}"]`); if (b) openRow(b.closest('.er'), true); openMore(id); render(true);
+    stopWalk(); st.focus = id; if (/@media:narrow/.test(R[id].code) && !devPinned) setDev('mobile'); const b = $(`#board .tw[data-id="${id}"]`); if (b) openRow(b.closest('.er'), true); openMore(id); render(true);
   }
   const closeMore = () => { $$('#board .more').forEach(m => m.remove()); $$('#board .tw.on').forEach(x => x.classList.remove('on')); };
   const SRCN = D.srcnames || {};
@@ -554,10 +571,13 @@ const D = {"frame":{"width":980,"height":760},"before":"<!doctype html><html lan
     if (!st.peek && !st.blink) { paint(cur); }
     if (!st.peek) $('#stateTxt').textContent = cur.label;
     const vis = cur.tweaks.filter(i => shows(T[i])).length, inv = cur.tweaks.length - vis, nb = $('#nothing');
-    nb.hidden = st.peek || st.mineView || vis > 0;
+    const here = pinned && !st.focus ? cur.tweaks.filter(i => shows(T[i]) && T[i].view === pinned).length : null;
+    nb.hidden = st.peek || st.mineView || (vis > 0 && here !== 0); nb.classList.toggle('soft', vis > 0 && here === 0);
     const srcOnly = st.sel.s.size === 1 || st.walk === 's' ? (st.walk === 's' ? walkItems('s')[st.idx % Math.max(1, walkItems('s').length)] : [...st.sel.s][0]) : null;
     if (!nb.hidden && !cur.entries.length && srcOnly) { const ws = [...new Set(D.entries.filter(e => e.src === srcOnly).map(e => e.word))];
       nb.innerHTML = `<b>${esc(srcOnly)} doesn't use ${st.sel.w.size === 1 ? `“${esc([...st.sel.w][0])}”` : 'these commands'}</b>It uses: ${ws.map(esc).join(', ')}.<br><button class="btn small" id="useIts" type="button" style="margin-top:10px;background:#fff;color:#131316">Show ${esc(srcOnly)}'s commands</button>`; }
+    else if (!nb.hidden && vis > 0 && here === 0) { const by = {}; cur.tweaks.forEach(i => { if (shows(T[i])) by[T[i].view] = (by[T[i].view] || 0) + 1; });
+      nb.innerHTML = `<b>${esc(cur.label.replace(/[“”]/g, ''))} changes nothing on the ${esc(VIEWN[pinned] || 'page')}</b>Its changes are on: ${Object.entries(by).sort((a, b) => b[1] - a[1]).map(([v, c]) => `${esc(VIEWN[v] || v)} (${c})`).join(', ')}.`; }
     else if (!nb.hidden && cur.tweaks.length === 1 && T[cur.tweaks[0]].why) { const t = T[cur.tweaks[0]]; nb.innerHTML = `<b>Not something a page can show</b>${esc(t.kind ? t.kind[0].toUpperCase() + t.kind.slice(1) : '')}: ${esc(t.why)}`; }
     else if (!nb.hidden) nb.innerHTML = cur.tweaks.length ? `<b>Nothing to see</b>This definition asks for ${inv} change${inv > 1 ? 's' : ''} a page can't show: ${cur.tweaks.map(i => esc(T[i].name.toLowerCase())).join(', ')}.` : `<b>Nothing to see</b>This definition names no concrete change at all.`;
     renderPicks();

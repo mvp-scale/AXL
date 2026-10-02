@@ -22,6 +22,13 @@ const { CHROME } = require('./common');
     r.words_above_preview = await p.evaluate(() => document.querySelector('.bar').innerText.trim().split(/\s+/).length);
     await p.keyboard.down('Shift'); r.peek = await p.evaluate("document.getElementById('frame').classList.contains('peeking') && document.getElementById('stateTxt').textContent === 'Original'"); await p.keyboard.up('Shift');
     r.unpeek = await p.evaluate("!document.getElementById('frame').classList.contains('peeking')");
+    // pick a page in the demo, then play the sources: every step stays on that page (owner: "it should stay … on whatever page you picked")
+    const nav = p.frameLocator('#pv').locator('button[data-view="signin"]:visible');
+    if (await nav.count()) {
+      await nav.first().click(); await p.click('#pickS .play'); const vs = new Set();
+      for (let i = 0; i < 8; i++) { await p.waitForTimeout(700); vs.add(await p.evaluate(() => document.getElementById('pv').contentDocument.body.dataset.view)); }
+      await p.click('#pickS .play'); await p.click('#unpin'); r.pinned_views = [...vs];
+    } else r.pinned_views = null;
     // pickers: same component twice; multi-select works
     await p.click('#pickW .pbtn'); r.word_tiles = await p.evaluate("document.querySelectorAll('#pickW .tile').length");
     await p.locator('#pickW .tile', { hasText: 'bolder' }).first().click(); await p.click('#pickW .done');
