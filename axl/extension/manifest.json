@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "AXL Capture",
+  "version": "0.1.0",
+  "description": "Capture a few pages of a site you have permission to work on, so AXL can show sources and commands on it offline.",
+  "action": { "default_popup": "popup.html", "default_title": "AXL Capture", "default_icon": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png" } },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "permissions": ["activeTab", "scripting", "storage", "unlimitedStorage", "downloads", "tabs"],
+  "optional_host_permissions": ["https://*/*", "http://*/*"]
+}

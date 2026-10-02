@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AXL Capture · Review & export</title><link rel="stylesheet" href="ui.css">
+<style>
+main{max-width:980px;margin:0 auto;padding:28px clamp(14px,3vw,28px) 60px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px}
+h1{font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.03em;margin:.15em 0 .3em}
+.sum{display:flex;gap:28px;flex-wrap:wrap;margin:8px 0 18px}.sum b{display:block;font-size:1.6rem;letter-spacing:-.02em}
+.box{padding:14px 16px;border-radius:14px;background:var(--panel);box-shadow:0 0 0 1px var(--line);margin-bottom:16px}
+.box h2{font-size:1rem;margin:0 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{border-radius:14px;background:var(--panel);box-shadow:0 0 0 1px var(--line);overflow:hidden;display:flex;flex-direction:column}
+.card img,.card .ph{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;background:var(--soft);display:block}
+.card div{padding:10px 12px;flex:1}.card b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.card small{color:var(--muted);font:.74rem var(--mono);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card .n{font:700 .66rem var(--mono);color:var(--mine)}
+.card button{margin:0 12px 12px;align-self:flex-start;font-size:.82rem;color:var(--muted)}.card button:hover{color:var(--ink)}
+.act{display:flex;gap:10px;align-items:center;flex-wrap:wrap;position:sticky;bottom:0;background:var(--bg);padding:14px 0;border-top:1px solid var(--line);margin-top:18px}
+#msg{font-weight:600}
+ul{margin:6px 0 0;padding-left:18px}li{font:.78rem var(--mono);color:var(--muted);word-break:break-all}
+</style></head>
+<body><main>
+<header><span class="mark"><i></i>AXL Capture</span><span class="k">Review &amp; export</span></header>
+<h1 id="site">…</h1>
+<div class="sum" id="sum"></div>
+<div class="box" id="missing" hidden></div>
+<div class="grid" id="pages"></div>
+<div class="act"><button class="btn primary" id="export" type="button">Export zip</button><button class="btn" id="discard" type="button">Discard all</button><span id="msg" aria-live="polite"></span></div>
+<p class="note">The zip holds the pages as you saw them, every image, font and style sheet they use, and a manifest of pages and links. Open it in AXL, or unzip it and open index.html. Exporting clears the staged copy from this browser.</p>
+</main><script src="review.js" type="module"></script></body></html>

@@ -1,0 +1,22 @@
+/* the AXL look (same tokens as the AXL site) */
+:root{--bg:#f7f7f5;--panel:#fff;--ink:#131316;--muted:#5b5d66;--line:#dfe0e4;--soft:#eeeff1;--mine:#d1175e;--on-mine:#fff;--rec:#c62828;--ok:#0b7a4b;--warn:#a15c00;
+  --sans:"Inter Tight","Helvetica Neue",Arial,system-ui,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#101114;--panel:#17181c;--ink:#f1f1f3;--muted:#a3a6b0;--line:#2b2d34;--soft:#202228;--mine:#ff4f8f;--on-mine:#1a0610;--rec:#ff6b6b;--ok:#4cd694;--warn:#f0b35a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.4 var(--sans);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0;padding:0}
+:focus-visible{outline:3px solid var(--mine);outline-offset:2px;border-radius:6px}
+.mark{display:inline-flex;align-items:center;gap:8px;font-weight:800;letter-spacing:-.02em}.mark i{width:14px;height:14px;border-radius:4px;background:var(--mine)}
+.k{font:700 .66rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border-radius:99px;font-weight:700;background:var(--panel);box-shadow:0 0 0 1px var(--line)}
+.btn:hover{background:var(--soft)}
+.btn.primary{background:var(--ink);color:var(--bg);box-shadow:none}.btn.primary:hover{opacity:.9}
+.btn.rec{background:var(--rec);color:#fff;box-shadow:none}
+.btn[disabled]{opacity:.45;cursor:default}
+.seg{display:flex;padding:3px;border-radius:99px;background:var(--soft)}
+.seg button{flex:1;min-height:34px;border-radius:99px;font-weight:600;font-size:.86rem;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--panel);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--rec);flex:none;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{opacity:.35}}@media (prefers-reduced-motion:reduce){.dot{animation:none}}
+.note{color:var(--muted);font-size:.84rem}
+.warn{color:var(--warn)}
