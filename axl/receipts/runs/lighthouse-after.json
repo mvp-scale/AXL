@@ -1,0 +1,12 @@
+{
+ "id": "lighthouse-after",
+ "tool": "lighthouse",
+ "version": "lighthouse 13.5.0",
+ "command": "node axl/tools/runners/lighthouse.js axl/demo/after.html",
+ "input_hash": "fdeff315dfa1ae675d57ba43d2a00842e4e68cd4931b55b7541a634a5a2200e2",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\":\"lighthouse\",\"version\":\"13.5.0\",\"checked_audits\":22,\"findings\":[]}",
+ "findings": [],
+ "role": "after",
+ "ran_at": "2026-09-30T01:36:23+00:00"
+}

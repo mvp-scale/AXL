@@ -1,0 +1,10 @@
+/* contrast >= 4.5:1 (WCAG 1.4.3) */
+.topbar,.topbar span,#breadcrumb,.eyebrow{color:#4b596c}.activity small,li>small{color:#566579}th{color:#4f5d72}footer,footer span{color:#566579}
+/* visible focus (WCAG 2.4.7 / 2.4.13) */
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #087d70;outline-offset:2px}
+/* target size >= 44px */
+button,input,select{min-height:44px}
+/* reduced motion */
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* no decorative gradient */
+.hero{background:transparent}

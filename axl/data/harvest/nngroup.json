@@ -1,0 +1,413 @@
+{
+ "source": "Nielsen Norman Group",
+ "publisher": "Nielsen Norman Group",
+ "kind": "guide",
+ "urls": [
+  "https://www.nngroup.com/articles/ten-usability-heuristics/",
+  "https://www.nngroup.com/articles/errors-forms-design-guidelines/",
+  "https://www.nngroup.com/articles/error-message-guidelines/"
+ ],
+ "retrieved_at": "2026-09-30T06:32:04.777779Z",
+ "items": [
+  {
+   "text": "The design should always keep users informed about what is going on, through appropriate feedback within a reasonable amount of time.",
+   "file": "h_nngroup__1.txt",
+   "section": "1: Visibility of System Status",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Communicate clearly to users what the system’s state is — no action with consequences to users should be taken without informing them.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use words, phrases, and concepts familiar to the user, rather than internal jargon.",
+   "file": "h_nngroup__1.txt",
+   "section": "3-minute video about the Visibility Heuristic",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ensure that users can understand meaning without having to go look up a word’s definition.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never assume your understanding of words or concepts will match that of your users.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make sure the exit is clearly labeled and discoverable.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Users should not have to wonder whether different words, situations, or actions mean the same thing.",
+   "file": "h_nngroup__1.txt",
+   "section": "4: Consistency and Standards",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid slips by providing helpful constraints and good defaults.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The user should not have to remember information from one part of the interface to another.",
+   "file": "h_nngroup__1.txt",
+   "section": "6: Recognition Rather than Recall",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Interfaces should not contain information that is irrelevant or rarely needed.",
+   "file": "h_nngroup__1.txt",
+   "section": "8: Aesthetic and Minimalist Design",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ensure that the visual elements of the interface support the user's primary goals.",
+   "file": "h_nngroup__1.txt",
+   "section": "8: Aesthetic and Minimalist Design",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep the content and visual design of UI focused on the essentials.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don't let unnecessary elements distract users from the information they really need.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Error messages should be expressed in plain language (no error codes), precisely indicate the problem, and constructively suggest a solution.",
+   "file": "h_nngroup__1.txt",
+   "section": "3-minute video: Aesthetic and Minimalist Design",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use traditional error-message visuals, like bold, red text.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Tell users what went wrong in language they will understand — avoid technical jargon.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep it concise, and list concrete steps that need to be carried out.",
+   "file": "h_nngroup__1.txt",
+   "section": "10: Help and Documentation",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ensure that the help documentation is easy to search.",
+   "file": "h_nngroup__1.txt",
+   "section": "Tips",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Aim for Inline Validation Whenever Possible",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep Error Messages Next to Fields",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use Color to Differentiate Errors from Normal Field States",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use Modals or Confirmation Dialogs Sparingly",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don’t Validate Fields Before Input is Complete",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don’t Use Validation Summaries as the Only Indication of an Error",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don’t Use Tooltips to Report Errors",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "In these cases, make sure error messages are clear, actionable, and easy to locate when the form or page is reloaded.",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "However, don’t go overboard with success indicators.",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Success indicators shouldn’t distract users from filling out forms and should only be used when the additional context helps complete the form faster or more accurately.",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The message should follow error-message guidelines: it should be explicit, human-readable, polite, precise, and give constructive advice.",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make sure that the validation text stands out from the rest of the form so the user will notice it quickly.",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "However, don’t abuse animation: several animated icons can be overwhelming if there are multiple errors.",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "And don’t animate text — animated error messages are hard to read.",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "In most cases, avoid showing an error until the user has finished with the field and moved to the next field.",
+   "file": "h_nngroup__2.txt",
+   "section": "Principles of Designing Error-Correction Flows",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ensure that users can easily detect errors, understand how to fix them, and see the error message while correcting the corresponding error.",
+   "file": "h_nngroup__2.txt",
+   "section": "Conclusion",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Error messages must present themselves noticeably and recognizably to users.",
+   "file": "h_nngroup__3.txt",
+   "section": "Visibility Guidelines",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use noticeable, redundant, and accessible indicators.",
+   "file": "h_nngroup__3.txt",
+   "section": "Visibility Guidelines",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Remember accessibility guidelines to aid the roughly 350 million people worldwide with a color-vision deficiency, and never use exclusively color or animation to indicate errors.",
+   "file": "h_nngroup__3.txt",
+   "section": "Visibility Guidelines",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don't assume that exploratory interactions (like the user moving text focus from a text box without filling it in) are errors.",
+   "file": "h_nngroup__3.txt",
+   "section": "Visibility Guidelines",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "However, do consider inline, real-time errors for error-prone interactions where users are unlikely to enter the correct information on their first try.",
+   "file": "h_nngroup__3.txt",
+   "section": "Visibility Guidelines",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Error messages cannot rely on visuals alone.",
+   "file": "h_nngroup__3.txt",
+   "section": "Communication Guidelines",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "They must contain copy to elaborate and assist the user with recovering from the error.",
+   "file": "h_nngroup__3.txt",
+   "section": "Communication Guidelines",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Error messages should be plainspoken using legible and readable text (many writing apps can give you feedback on a message's readability).",
+   "file": "h_nngroup__3.txt",
+   "section": "Communication Guidelines",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid technical jargon and use language familiar to your users instead.",
+   "file": "h_nngroup__3.txt",
+   "section": "Communication Guidelines",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Hide or minimize the use of obscure error codes or abbreviations; show them for technical diagnostic purposes only.",
+   "file": "h_nngroup__3.txt",
+   "section": "Communication Guidelines",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Take a positive tone and don't blame the user.",
+   "file": "h_nngroup__3.txt",
+   "section": "Communication Guidelines",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don't use phrasing that blames users or implies they are doing something wrong, such as invalid, illegal, or incorrect.",
+   "file": "h_nngroup__3.txt",
+   "section": "Communication Guidelines",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid humor since it can become stale if users encounter the error frequently.",
+   "file": "h_nngroup__3.txt",
+   "section": "Communication Guidelines",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Offer accelerators to resolve the situation or share a bit of instruction to aid users' understanding and hopefully avoid the problem in the future.",
+   "file": "h_nngroup__3.txt",
+   "section": "Efficiency Guidelines",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For example, instead of just saying City and ZIP code don't match, let users click on a button for the city that matches the ZIP code they entered.",
+   "file": "h_nngroup__3.txt",
+   "section": "Efficiency Guidelines",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If additional information is required, use hypertext links to connect a concise error message to a page with supplementary material or an explanation of the problem.",
+   "file": "h_nngroup__3.txt",
+   "section": "Efficiency Guidelines",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

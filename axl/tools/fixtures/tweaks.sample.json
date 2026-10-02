@@ -1,0 +1,5 @@
+{"categories":["color","layout"],"tweaks":[
+{"id":"contrast-aa","name":"AA contrast","category":"color","effect":"text is readable","check":"contrast","kind":"measurable"},
+{"id":"grid-4","name":"4px grid","category":"layout","effect":"spacing on 4px scale","check":"spacing-4","kind":"measurable"},
+{"id":"targets-44","name":"44px targets","category":"layout","effect":"reachable targets","check":"target-44","kind":"measurable"},
+{"id":"tasteful","name":"Feels calm","category":"layout","effect":"subjective","check":null,"kind":"judgment"}]}

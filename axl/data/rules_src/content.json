@@ -1,0 +1,4823 @@
+{
+ "class": "Content & process",
+ "tweaks": {
+  "copy-specific": [
+   {
+    "rule": "text:* ask \"Is the copy specific and written in the product's own language, not generic or whimsical?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:0f5a96",
+       "deslop:58f733",
+       "taste-skill:736a1c",
+       "taste-skill:0516d5",
+       "ui-craft:8059ba"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* axl:em-dashes-per-paragraph == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "deslop:58f733"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Is the copy written in the active voice?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:34d464"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Is technical jargon translated into plain language?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:e63561"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:heading ask \"Do social-proof headings use natural wording such as Trusted by rather than Quietly trusted by?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:6e965f"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "ui:toast ask \"Do confirmation toasts name the thing that happened?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8059ba"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "state:empty ask \"Does every empty state explain why it is empty and offer the next action?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8059ba"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "localize": [
+   {
+    "rule": "page ask \"Are language-specific punctuation, dates and numbers formatted by locale rather than hard-coded?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:78f27d"
+      ]
+     }
+    ],
+    "class": "locale"
+   },
+   {
+    "rule": "page ask \"Are variables and numbers in strings structured so translators can reorder them?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:664162"
+      ]
+     }
+    ],
+    "class": "locale"
+   },
+   {
+    "rule": "text:* ask \"Is text allowed to expand instead of being abbreviated early?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:cc7d56"
+      ]
+     }
+    ],
+    "class": "locale"
+   },
+   {
+    "rule": "text:* axl:fixed-size-text-containers == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:055c3f",
+       "ui-craft:115f8b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:translation-space-budget between 30% 40%",
+    "values": [
+     {
+      "value": "30% 40%",
+      "qids": [
+       "impeccable:e61ba3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do layouts use flexbox or grid that adapts to content?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:d66c8e"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "design-tokens": [
+   {
+    "rule": "page axl:hardcoded-colors == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "apple-hig:013628",
+       "claw-design:d65a0c",
+       "claw-design:349c46",
+       "hallmark:4f55d3",
+       "hallmark:2840c9",
+       "impeccable:f31f80",
+       "impeccable:b37c58",
+       "impeccable:77bb43",
+       "impeccable:7b110b",
+       "deslop:03079a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:spacing-off-scale == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:7b110b",
+       "ui-craft:8f8b4c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:distinct-font-sizes <= 6",
+    "values": [
+     {
+      "value": "6",
+      "qids": [
+       "deslop:b3159c"
+      ]
+     },
+     {
+      "value": "5",
+      "qids": [
+       "ui-craft:8f8b4c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:distinct-font-weights <= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "ui-craft:8f8b4c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:oklch-color-share >= 100%",
+    "values": [
+     {
+      "value": "100%",
+      "qids": [
+       "hallmark:4cb76d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are design tokens declared once as named CSS custom properties at :root?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:a1a932",
+       "hallmark:4cb76d",
+       "hallmark:cb516e",
+       "hallmark:107394",
+       "hallmark:19f318",
+       "shadcn:6c0381"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Are existing tokens used before new ones are introduced?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:fb74c7",
+       "ui-craft:873c40",
+       "ui-craft:c47349",
+       "hallmark:6e8479",
+       "hallmark:437803",
+       "hallmark:3739d7"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Is a single styling system used, with no second one added?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:3b39bf",
+       "taste-skill:94cb5a",
+       "shadcn:e14f69",
+       "hallmark:802726"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Do tokens have semantic names rather than raw values?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:73f1bf",
+       "impeccable:2cdeda",
+       "ui-craft:ea8a63",
+       "deslop:963516"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Is a value promoted to a token only when it is reused, not for one-off exceptions?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:6f9765",
+       "ui-craft:86dcac",
+       "ui-craft:ac32c0"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "reuse-components": [
+   {
+    "rule": "page ask \"Are repeated components built once and shared rather than re-implemented?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f4a4bc",
+       "hallmark:4a9130",
+       "impeccable:8c16d5",
+       "impeccable:2ad43d",
+       "impeccable:aa3ded",
+       "ui-craft:8e3972",
+       "ui-craft:16e691"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Is a generic component extracted only when used 3 or more times with the same intent, otherwise kept inline?\"",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "impeccable:1a4656"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ef7f73"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Are existing components and built-in variants used before custom markup or styles?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "shadcn:2c3034",
+       "shadcn:9798bd",
+       "shadcn:522fbe",
+       "shadcn:a3b491",
+       "shadcn:d48f11",
+       "shadcn:1e0326",
+       "shadcn:9513d9",
+       "shadcn:265057",
+       "shadcn:aa8bcf",
+       "shadcn:440373",
+       "shadcn:2fdd5e",
+       "shadcn:c37f54",
+       "shadcn:7f0104",
+       "shadcn:d2cdc2",
+       "shadcn:00e262",
+       "shadcn:d4b69f",
+       "shadcn:fdeaf3",
+       "shadcn:c8a236",
+       "shadcn:9565a5",
+       "shadcn:c5cbeb",
+       "shadcn:39d21b",
+       "shadcn:05d991",
+       "shadcn:7ec57f",
+       "shadcn:17760a",
+       "shadcn:5f4aec",
+       "taste-skill:875313"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "real-devices": [
+   {
+    "rule": "process ask \"Was the work tested on real devices, at least one phone and one tablet where relevant?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:db128f",
+       "impeccable:f4beb0",
+       "impeccable:caee46",
+       "impeccable:58f045",
+       "impeccable:1bacbd",
+       "vercel:a12282",
+       "webdev:cd4037",
+       "impeccable:df4931"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Does the evidence say whether it came from an emulator or real hardware?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:58f045",
+       "impeccable:1bacbd"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Was the primary gesture tried with the target input method and completed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:caee46",
+       "impeccable:053bba"
+      ]
+     }
+    ],
+    "class": "interaction"
+   },
+   {
+    "rule": "process ask \"Were screenshots captured for every device class the app ships to?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:f175ea",
+       "impeccable:531fdb",
+       "impeccable:1dafe0"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Were no assumptions made about which devices people use?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "govuk:f3e5f2"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "stress-test": [
+   {
+    "rule": "page ask \"Does the layout survive very small (320px) and very large screens?\"",
+    "values": [
+     {
+      "value": "320px",
+      "qids": [
+       "impeccable:1ee491"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:d9a5db"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page wcag:1.4.10 pass @media:narrow",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:1ee491"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Do text containers handle long content with truncation, clamping or wrapping?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:c94a81",
+       "unslop:e5691d",
+       "impeccable:df0caa",
+       "impeccable:0e5fee"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Does the design hold up with short, average and very long user content and emoji?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:00010c",
+       "vercel:f37715"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Does the design hold up with empty states, localization, zoom and dynamic content?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:df0caa",
+       "ui-craft:71a438",
+       "impeccable:587fc2",
+       "impeccable:636c8a",
+       "impeccable:0e5fee"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "perf": [
+   {
+    "rule": "page lighthouse:total-byte-weight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:d09cef",
+       "impeccable:5df1a9",
+       "oneredoak:96d61c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:unused-css-rules pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "oneredoak:96d61c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:mainthread-work-breakdown pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:aa1358",
+       "impeccable:b9395b",
+       "impeccable:aa8105",
+       "impeccable:bd7d22",
+       "impeccable:5cfae1",
+       "taste-skill:125b5a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:font-display-insight pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:2b9811"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Was the actual bottleneck identified, fixed and measured, instead of optimizing what is not slow?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:695ed8"
+      ]
+     }
+    ],
+    "class": "perf"
+   },
+   {
+    "rule": "page ask \"Are dependencies added only when the existing stack cannot express the effect?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:03aa2d"
+      ]
+     }
+    ],
+    "class": "perf"
+   },
+   {
+    "rule": "page ask \"Are heavy resources lazy-initialized only when near the viewport?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:3260fc"
+      ]
+     }
+    ],
+    "class": "perf"
+   },
+   {
+    "rule": "page ask \"Do icons come from an SVG sprite?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:177c52"
+      ]
+     }
+    ],
+    "class": "perf"
+   }
+  ],
+  "ask-first": [
+   {
+    "rule": "process ask \"Does the work start by asking about audience and use case?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:522142",
+       "hallmark:df0f06",
+       "hallmark:6eaa90",
+       "hallmark:9fe80e",
+       "hallmark:7ed2ae",
+       "impeccable:4b3e8d",
+       "impeccable:bc09db",
+       "unslop:ce019c",
+       "unslop:b93f81",
+       "unslop:16f5c1",
+       "unslop:4c474c",
+       "impeccable:98045d"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Are only a few high-signal questions asked, in one round?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:e1032f",
+       "deslop:55eae4",
+       "taste-skill:328d41",
+       "ui-craft:5188b7",
+       "ui-craft:8900af",
+       "taste-skill:51a2af",
+       "claw-design:f18e48"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Are brand assets and references confirmed before design starts, with no default style assumed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:ceeee9",
+       "deslop:98929b",
+       "deslop:b87b63",
+       "ui-craft:e56089",
+       "ui-craft:07a9cb",
+       "ui-craft:3c6573",
+       "ui-craft:fee108",
+       "unslop:c7c819"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Are significant decisions left to the user and not guessed, such as the registry?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:f87199",
+       "shadcn:3a97b8",
+       "shadcn:14807d",
+       "deslop:6837ea"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Is nothing asked when the answer can be inferred from context?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:5e3ad5",
+       "hallmark:08fcc9",
+       "taste-skill:29d043"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "audit-first": [
+   {
+    "rule": "process ask \"Is the target audited and findings reported before any edits?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f7420a",
+       "impeccable:1c53d4",
+       "impeccable:0eb6e3",
+       "impeccable:e3ae02",
+       "ui-craft:3da1b7",
+       "impeccable:a98a37"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Are existing parts improved with targeted fixes rather than rewritten?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:746292"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Is the design plan checked for uniqueness before code is written?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:5a976e"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Does each finding name the violated principle?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:135dd3"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "preserve-brand": [
+   {
+    "rule": "text:* ask \"Does the work keep the product's existing type system?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:98b55b",
+       "feel-better:2b36be",
+       "impeccable:da6546",
+       "ui-craft:3c6573"
+      ]
+     }
+    ],
+    "class": "type"
+   },
+   {
+    "rule": "page ask \"Does the work keep the brand's existing palette and color logic?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:631852",
+       "taste-skill:520450",
+       "taste-skill:a63ade",
+       "ui-craft:e56089",
+       "impeccable:061c9c",
+       "ui-craft:e6b74e"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Does the work stay inside what the existing system already owns, adding no new colors, fonts, radii or shadows?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c2794e",
+       "impeccable:d8c747",
+       "impeccable:b4883e",
+       "impeccable:5b0547",
+       "impeccable:f60020",
+       "ui-craft:2fcbe4",
+       "ui-craft:13385b",
+       "deslop:1654cd",
+       "hallmark:4c3829",
+       "hallmark:391795"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Does the change keep the existing brand identity recognizable?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:8aba88",
+       "impeccable:21f283",
+       "impeccable:6c3d98",
+       "impeccable:1fa04c",
+       "taste-skill:51a2af",
+       "claw-design:794055",
+       "hallmark:aae68f",
+       "ui-craft:997bb0",
+       "anthropic:7be652"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Are existing files, routes and global stylesheets kept, with changes merged in rather than overwritten or deleted?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:b73df6",
+       "hallmark:a37dcf",
+       "hallmark:ead376",
+       "hallmark:ffd0f3",
+       "hallmark:52e047",
+       "ui-craft:e6b74e",
+       "ui-craft:13385b"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "process ask \"Does the work stay in the project's existing tech stack and styling approach?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:4e2fb9",
+       "ui-craft:3d24ca",
+       "ui-craft:6bb0cd",
+       "govuk:6f492f",
+       "hallmark:ffd0f3"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Are existing copy, claims and product names preserved unless the user supplies replacements?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:b89941",
+       "impeccable:06b9b5",
+       "ui-craft:f6bd26",
+       "ui-craft:e6b74e"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Are existing accessibility wins preserved, including focus states, alt text, keyboard navigation and contrast?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:1917bb"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "process ask \"Are existing analytics events and the names or IDs tracking depends on left unchanged?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:5e9e1e"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Do partner brand accents stay from overriding backgrounds and text colors?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:874eb8"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "link-purpose": [
+   {
+    "rule": "aria:link wcag:2.4.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d0a746",
+       "hallmark:7c3214",
+       "impeccable:1a944a",
+       "ui-craft:6ef1d0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:link lighthouse:link-text pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d0a746",
+       "hallmark:7c3214",
+       "ui-craft:6ef1d0"
+      ]
+     }
+    ]
+   }
+  ],
+  "voice-tone-consistent": [
+   {
+    "rule": "text:* ask \"Is the voice consistent across the product while the tone adapts to the moment?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:0a8fa1",
+       "ui-craft:be9c90"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Is one copy register used per page?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:478003"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:dialog ask \"Do paywall and limit messages inform rather than shame the user?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:7b51b7"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "no-ai-cliche-copy": [
+   {
+    "rule": "text:* axl:cliche-words == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:36eaad",
+       "hallmark:cb6174",
+       "hallmark:6644c5",
+       "hallmark:8a16ba",
+       "hallmark:b64bf8",
+       "taste-skill:5ecefe",
+       "taste-skill:7bf8e5",
+       "taste-skill:cf2cbc",
+       "taste-skill:db9da6",
+       "unslop:179423",
+       "unslop:f75fef"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:em-dashes-per-paragraph <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:fd4217"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "impeccable:e4fe26",
+       "impeccable:459367",
+       "deslop:58f733"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Is the copy free of forced cleverness, wordplay and poetic labels?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:724753",
+       "taste-skill:82427b",
+       "taste-skill:0516d5"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Is each vague claim replaced with specific evidence such as metrics with units or named customers?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:1d4502",
+       "deslop:58f733",
+       "taste-skill:5ecefe"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Does the design avoid generic, templated AI-looking output?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:cb07ca",
+       "anthropic:841820",
+       "anthropic:6df8c3",
+       "claw-design:014d47",
+       "hallmark:e7f21b",
+       "hallmark:a9418d",
+       "hallmark:53ca20",
+       "taste-skill:e46e5d",
+       "deslop:ef1608"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "no-lorem-ipsum": [
+   {
+    "rule": "text:* axl:placeholder-text == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "claw-design:a38212",
+       "taste-skill:c20b42",
+       "taste-skill:148b27"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img axl:empty-image-src == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:912f32"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Are names and sample data realistic and domain-specific rather than generic placeholders such as John Doe?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:2824f7",
+       "taste-skill:148b27"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:img ask \"Is every placeholder image marked with a TODO comment naming the real asset and target size?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:3493e0"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:img ask \"Does every placeholder read as an obvious slot rather than as final content?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6b8a99"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "text:* ask \"Are vague testimonials and long feature lists replaced by specific metrics or cut?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:432a25"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "no-fake-stats": [
+   {
+    "rule": "page ask \"Is every metric, stat and claim supplied by the user or labelled as sample data, never invented?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:fa4ee5",
+       "hallmark:a69d3d",
+       "hallmark:b10064",
+       "hallmark:cf50e8",
+       "hallmark:772f2f",
+       "hallmark:5e5b73",
+       "hallmark:27bd7b",
+       "hallmark:4ca18d",
+       "ui-craft:68cc56",
+       "ui-craft:5b55bc",
+       "hallmark:9762af",
+       "impeccable:13b159",
+       "impeccable:6e4d36"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Are names and sample data realistic and domain-specific rather than generic placeholders such as John Doe?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:148b27",
+       "taste-skill:e28baf",
+       "taste-skill:f39910",
+       "taste-skill:920ad6",
+       "taste-skill:77af3d"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Are sample numbers organic rather than fake-round values such as 99.99% or 50%?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:704bc3",
+       "taste-skill:66bfc1",
+       "taste-skill:76f205",
+       "ui-craft:68cc56"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:img ask \"Are customer logos real, with no template placeholder logos?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:bc7ccf"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:figure ask \"Does each testimonial attribute a name and role, with the company where known, never the name alone?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:313f67",
+       "ui-craft:ab65f5",
+       "ui-craft:64a041"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Are urgency and stock counters real or removed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:977d71",
+       "taste-skill:c9dda5"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Are labels free of pseudo-system text that adds no real value?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:0bf12c",
+       "taste-skill:a6057c"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Is each vague claim replaced with specific evidence such as metrics with units or named customers?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:bdf9bc",
+       "ui-craft:64a041"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "specific-headlines": [
+   {
+    "rule": "aria:heading axl:words-per-heading <= 8",
+    "values": [
+     {
+      "value": "8",
+      "qids": [
+       "taste-skill:221aba"
+      ]
+     },
+     {
+      "value": "7",
+      "qids": [
+       "hallmark:2c79a7"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:e81d88",
+       "taste-skill:224311"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading axl:characters-per-heading <= 50",
+    "values": [
+     {
+      "value": "50",
+      "qids": [
+       "hallmark:2c79a7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading ask \"Are headlines specific and task-specific rather than generic boilerplate?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:d5c839",
+       "claw-design:67868e",
+       "claw-design:0fbdb9",
+       "hallmark:7706b5",
+       "hallmark:bc7d7e"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Is each vague claim replaced with specific evidence such as metrics with units or named customers?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:bdf9bc",
+       "ui-craft:64a041",
+       "ui-craft:1d4502"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Are taglines short and specific?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:224311"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "plain-language": [
+   {
+    "rule": "text:* ask \"Is plain language used, with domain terms defined inline or on first use?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c1a8e1",
+       "impeccable:7e41df",
+       "impeccable:367c41",
+       "impeccable:0a8fa1",
+       "ui-craft:8c973c",
+       "nngroup:d0e700",
+       "nngroup:5cd495",
+       "nngroup:aadee9",
+       "ui-craft:a14ccf"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Is the copy written in the active voice?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:e0b017"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Does the copy use plain verbs and sentence case, with no filler?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:77043d"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Is the copy free of forced cleverness, wordplay and poetic labels?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:5f19db",
+       "ui-craft:724753",
+       "ui-craft:a14ccf"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "error-message-human": [
+   {
+    "rule": "state:invalid ask \"Does every error say what went wrong and how to fix it?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:8ff610",
+       "impeccable:410f2b",
+       "deslop:c17b4d",
+       "ui-craft:d99568",
+       "ui-craft:dde962",
+       "ui-craft:0ef62f",
+       "ui-craft:49c11c",
+       "anthropic:ee3b05",
+       "nngroup:07c8f8",
+       "nngroup:adf177"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "state:invalid ask \"Do errors avoid blaming the user or using words such as invalid, illegal or incorrect?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:933a85",
+       "nngroup:c6e236",
+       "nngroup:bf8237",
+       "ui-craft:76a4a4",
+       "ui-craft:341d62",
+       "impeccable:410f2b"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "state:invalid ask \"Are errors in plain language, with no internal codes or jargon as the primary message?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:adf177",
+       "nngroup:9275ca",
+       "nngroup:99ff06",
+       "impeccable:210927",
+       "ui-craft:394913",
+       "ui-craft:6e0fd3",
+       "nngroup:aadee9",
+       "impeccable:8ff610",
+       "ui-craft:e925d8"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "state:invalid ask \"Are errors free of jokes, apologies and Oops?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:ff0a53",
+       "hallmark:5ae742",
+       "anthropic:ee3b05",
+       "ui-craft:413189",
+       "impeccable:e4392a",
+       "hallmark:5f9182"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "state:invalid ask \"Does every error name the specific cause when it is known?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0eb15e",
+       "ui-craft:d99568",
+       "deslop:c17b4d",
+       "anthropic:ee3b05",
+       "ui-craft:dde962",
+       "ui-craft:e31bc7"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "state:invalid ask \"Does every error give a next step such as retry or contact support, and never dead-end?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:c17b4d",
+       "ui-craft:dde962",
+       "ui-craft:e31bc7",
+       "ui-craft:0ef62f",
+       "vercel:833993",
+       "vercel:0f1e6e"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:alert ask \"Are errors shown inline near the field rather than in a vanishing toast or modal?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:d99568",
+       "ui-craft:dde962",
+       "ui-craft:e31bc7",
+       "ui-craft:0ef62f",
+       "impeccable:410f2b",
+       "nngroup:3f6a2c"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "empty-copy-guides": [
+   {
+    "rule": "state:empty ask \"Does every empty state explain why it is empty and offer the next action?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4e26fd",
+       "hallmark:2cd968",
+       "impeccable:ab96ee",
+       "deslop:6b5cc1",
+       "ui-craft:01f776",
+       "ui-craft:6aae3e",
+       "ui-craft:65649d",
+       "ui-craft:8059ba"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "state:empty ask \"Do empty states distinguish first use, no results, filters, permissions and failure?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:cb7bc1"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "state:empty ask \"Does a filtered empty state offer a way to clear the filters?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ae7af1"
+      ]
+     }
+    ],
+    "class": "interaction"
+   },
+   {
+    "rule": "state:empty ask \"Does an empty state include a small illustration or icon?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4e26fd"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "button-copy-outcome": [
+   {
+    "rule": "aria:button axl:generic-labels == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:65f66f",
+       "ui-craft:958755",
+       "ui-craft:f17edd",
+       "hallmark:e993ef",
+       "ui-craft:8e2179"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Do button labels state the verb and object of the outcome?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:e993ef",
+       "impeccable:ffb5b0",
+       "ui-craft:958755",
+       "ui-craft:f17edd",
+       "vercel:2ad0a4",
+       "vercel:2fea07",
+       "ui-craft:8e2179"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:alertdialog ask \"Do confirmation buttons restate the consequence instead of Yes or No?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:fbb7d1",
+       "impeccable:b03540"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:button ask \"Is one label used for each intent?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ed2998"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "microcopy-hints": [
+   {
+    "rule": "aria:tooltip ask \"Is inline help used first, with tooltips only as a last resort?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:ecf63f",
+       "vercel:6b1c02",
+       "ui-craft:e35607"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:tooltip ask \"Are hints and tooltips placed at the point of use?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:fc751e"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:textbox ask \"Does helper text add value instead of repeating the label?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:1a944a",
+       "ui-craft:e35607",
+       "oneredoak:afbd2f"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:form ask \"Are the validation rules made clear to users?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "webdev:0e00be"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "consistent-terminology": [
+   {
+    "rule": "text:* ask \"Is one term used for each concept throughout?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f9eb36",
+       "impeccable:a3822c",
+       "impeccable:c10bf2",
+       "nngroup:df89e3",
+       "ui-craft:ca39be",
+       "ui-craft:274ea5",
+       "vercel:980a31",
+       "ui-craft:1db8f0",
+       "impeccable:ffb5b0"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:button ask \"Is one label used for each intent?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ed2998"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Do different actions such as delete, remove and archive keep distinct meanings without aliasing?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:cf04eb",
+       "ui-craft:274ea5"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Is either Sign in or Log in used everywhere, never mixed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f9eb36",
+       "ui-craft:1db8f0"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "no-jargon": [
+   {
+    "rule": "text:* ask \"Is technical jargon translated into plain language?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:7e41df",
+       "nngroup:d0e700",
+       "nngroup:9275ca",
+       "oneredoak:afbd2f"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Is the copy free of forced cleverness, wordplay and poetic labels?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:5f19db"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "no-exclamation-overuse": [
+   {
+    "rule": "ui:toast axl:exclamation-marks == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:420660"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:alert axl:exclamation-marks == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:694441"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-emoji-in-copy": [
+   {
+    "rule": "text:* axl:emoji-in-text == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:9cf67b",
+       "taste-skill:4faa6e",
+       "taste-skill:dd8229",
+       "taste-skill:d9e711"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading axl:emoji-in-text == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "unslop:a5b535",
+       "hallmark:a474be",
+       "taste-skill:4faa6e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon axl:emoji-as-icons == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "unslop:67cbfb",
+       "taste-skill:d9e711",
+       "taste-skill:dd8229"
+      ]
+     }
+    ]
+   }
+  ],
+  "concise-subtext": [
+   {
+    "rule": "text:* ask \"Is each idea said once, with no redundant or repeated copy?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:4c872f",
+       "impeccable:df3ac2",
+       "hallmark:715edd"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Are words cut to the minimum without losing clarity, with no marketing fluff or hedging?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:7de2dd",
+       "ui-craft:3b4475",
+       "vercel:27fd88",
+       "anthropic:77043d",
+       "impeccable:588571"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Does each section carry one focused message in short copy, a headline of 8 words or fewer plus a sub-paragraph of 25 words or fewer?\"",
+    "values": [
+     {
+      "value": "8",
+      "qids": [
+       "taste-skill:221aba"
+      ]
+     },
+     {
+      "value": "25",
+      "qids": [
+       "taste-skill:221aba"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:9e07bd",
+       "ui-craft:432a25"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "ui:toast ask \"Is routine success feedback brief?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:5635c2"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "ui:card ask \"Is item metadata limited to two or three lines?\"",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "openai:dbacae"
+      ]
+     },
+     {
+      "value": "3",
+      "qids": [
+       "openai:221693"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "aria:figure ask \"Is a quote body cut to 3 lines at most?\"",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "taste-skill:59dd48"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* ask \"Is a subhead kept to 1 or 2 lines?\"",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:27cf44"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "scannable-content": [
+   {
+    "rule": "text:* ask \"Are long sections split and information chunked, each focused on one idea?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:901726",
+       "deslop:95ea2d"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "inverted-pyramid": [
+   {
+    "rule": "text:* ask \"Does each section lead with its conclusion?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": []
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "lists-over-paragraphs": [
+   {
+    "rule": "aria:list ask \"Are parallel items set as bullets rather than paragraphs?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": []
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "vary-macrostructure-between-consecutive-designs": [
+   {
+    "rule": "process ask \"Is the macrostructure different from the previous outputs in the project?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a50501",
+       "hallmark:703667",
+       "hallmark:448aaa",
+       "hallmark:7c38f0",
+       "hallmark:bdc67b",
+       "hallmark:f09e36",
+       "hallmark:1a6404",
+       "hallmark:9e5f79",
+       "hallmark:7c6bec",
+       "hallmark:916658",
+       "hallmark:84bf61",
+       "hallmark:324802",
+       "hallmark:5725f0",
+       "hallmark:ae06ea",
+       "hallmark:c82039",
+       "hallmark:b44002",
+       "hallmark:591e04"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "process ask \"Does each new theme differ from the previous one on at least one of paper band, display style and accent hue?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:bd9b05",
+       "hallmark:55b87c",
+       "hallmark:894630",
+       "hallmark:0db8d1",
+       "hallmark:bc69ea",
+       "hallmark:2d8f35",
+       "hallmark:65d52c"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "process ask \"Do consecutive pages share no more than three of the six axes?\"",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:f8b976"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "process ask \"Is the enrichment archetype different from the last output?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:74fd34"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "process ask \"Is the nav different across builds of the same theme?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4cba9b"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "process ask \"Is the Specimen macrostructure avoided unless the brief explicitly asks for editorial or specimen?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:78f73b"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "process ask \"Is the new drop different from the last three entries?\"",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:c4c0df"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "plan-the-in-page-image-system": [
+   {
+    "rule": "page ask \"Is image use deliberate and matched to the site's complexity?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:5a6b2e",
+       "taste-skill:c138f6",
+       "taste-skill:4582cc",
+       "taste-skill:53763c",
+       "taste-skill:d2e690",
+       "taste-skill:9ccd3c",
+       "taste-skill:896f05",
+       "taste-skill:365a27",
+       "taste-skill:2f9318",
+       "taste-skill:582d78",
+       "taste-skill:061689"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Do several sections include imagery rather than relying on a single hero image?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ad9c5c",
+       "taste-skill:bf15de",
+       "taste-skill:924e22"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Do all images belong to one coherent design world?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:2ef49d",
+       "taste-skill:1c4042",
+       "taste-skill:428bf6"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Is imagery premium and curated rather than stock filler or lazy thumbnails?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:29b6de",
+       "taste-skill:e5461b",
+       "taste-skill:1c4042"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Does the hero contain a strong visual image, product visual or art-directed media element?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ba3e90"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Do multiple sections mix at least two distinct image crops?\"",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "taste-skill:3efa5d"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page axl:real-images >= 2",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "taste-skill:5c95ca"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the design go beyond text-only or card-only layouts unless the user asks for that?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:082f50",
+       "taste-skill:f16090",
+       "taste-skill:c1163f"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "keep-phone-mockup-framing-consistent-and-even": [
+   {
+    "rule": "page ask \"Is one device frame style and scale used across the whole set?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:8b0f0a",
+       "taste-skill:1deffd",
+       "taste-skill:091005",
+       "taste-skill:7af28b"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Are canvas margins around each device even, with the device centered or aligned and never touching the edges or awkwardly cropped?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:9d3306",
+       "taste-skill:2efdad",
+       "taste-skill:0c86de",
+       "taste-skill:56cc5e",
+       "taste-skill:310632",
+       "taste-skill:8c2ff5",
+       "taste-skill:49c297"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Is the gutter between devices equal, with no random overlap?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b6c05e",
+       "taste-skill:2a6e33",
+       "taste-skill:49c297"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Is the device frame visible, clean and premium?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:261f7d",
+       "taste-skill:a001bb",
+       "taste-skill:cb53f1",
+       "taste-skill:c0be5a"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "make-screen-sets-form-a-believable-app-flow": [
+   {
+    "rule": "page ask \"Does a requested set contain enough screens to make the flow feel real?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:56e2e7",
+       "taste-skill:17d6ea",
+       "taste-skill:b8abe7",
+       "taste-skill:b516fb",
+       "taste-skill:28aa85",
+       "taste-skill:f3bfd1",
+       "taste-skill:6f5fdd",
+       "taste-skill:6924b4"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Do the screens form a believable, ordered app flow rather than unrelated screens or one collage?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f1611f",
+       "taste-skill:478447",
+       "taste-skill:f2b066",
+       "taste-skill:e95e91",
+       "taste-skill:c2c0b8",
+       "taste-skill:4ecb02",
+       "taste-skill:f24fc6",
+       "taste-skill:2a8c7e"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "show-screens-in-a-subtle-phone-mockup": [
+   {
+    "rule": "page ask \"Are screens shown inside a visible phone frame by default?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d7588a",
+       "taste-skill:f6db48",
+       "taste-skill:0faf48",
+       "taste-skill:716d4c"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Does the phone frame stay subtle so the app content remains the focus?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:299a11",
+       "taste-skill:8faf27",
+       "taste-skill:2e5457",
+       "taste-skill:537f61",
+       "taste-skill:2d0b07"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-em-dashes-in-copy": [
+   {
+    "rule": "text:* axl:em-dashes-per-paragraph == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:54765f",
+       "taste-skill:eb7089",
+       "taste-skill:fa01d6",
+       "taste-skill:dbc108",
+       "taste-skill:c733d3",
+       "taste-skill:f35c98",
+       "taste-skill:49905d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:en-dash-separators == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:669731",
+       "taste-skill:f35c98",
+       "taste-skill:14f017"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-bold-but-controlled-creative-ambition": [
+   {
+    "rule": "page ask \"Does the design show real creative ambition beyond the first obvious layout?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7ae22c",
+       "taste-skill:1f4d03",
+       "taste-skill:3250af",
+       "taste-skill:8b1d9b",
+       "taste-skill:706512"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Are bold decisions controlled rather than chaotic, and never against the brief?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f7c3d4",
+       "taste-skill:7ae22c",
+       "taste-skill:706512"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Does the page feel designed rather than auto-generated?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:291e3c"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "choose-a-strong-combination-and-commit": [
+   {
+    "rule": "page ask \"Is one strong combination of choices picked and used consistently?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f9c9b5",
+       "taste-skill:9e5314",
+       "taste-skill:03ee02",
+       "ui-craft:9cc503"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Does the design avoid generic default UI and chaotic mixing?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:27e6d0",
+       "taste-skill:22b6b1"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "typography-only-pages-when-no-enrichment-fits": [
+   {
+    "rule": "page ask \"Is the hero typography-only when no enrichment clearly fits?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a24a98",
+       "hallmark:f214cd",
+       "hallmark:548a6b",
+       "hallmark:35dfd9",
+       "hallmark:046003"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "avoid-specimen-numbered-margin-default": [
+   {
+    "rule": "process ask \"Is the Specimen macrostructure avoided unless the brief explicitly asks for editorial or specimen?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:b8d817",
+       "hallmark:92bf1a",
+       "hallmark:978c1e",
+       "hallmark:3e6bb2",
+       "hallmark:7be77d"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "borrow-references-into-tokens-not-layout": [
+   {
+    "rule": "process ask \"Are references borrowed into tokens and quality, not copied as layout or content?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:694c0e",
+       "deslop:a67ee5",
+       "deslop:815f7d",
+       "taste-skill:5820f1",
+       "taste-skill:a2c390"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "post-process-generated-imagery": [
+   {
+    "rule": "aria:img ask \"Is generated imagery post-processed, never shipped as raw model output?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:95994d",
+       "hallmark:542a6c",
+       "hallmark:ff1e73"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:img ask \"Is generated imagery guided by reference images for brand consistency?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:95994d",
+       "hallmark:1c87b2"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "typography-only-hero-is-always-acceptable": [
+   {
+    "rule": "page ask \"Is the hero typography-only when no enrichment clearly fits?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:e03285",
+       "hallmark:c272e8",
+       "hallmark:2d270b",
+       "hallmark:da15de"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "real-screenshots-not-div-mockups": [
+   {
+    "rule": "aria:img ask \"Are product previews real screenshots or real mini components, never div mockups?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:bb2b33",
+       "ui-craft:d40455",
+       "ui-craft:f548d6",
+       "ui-craft:f37211"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "locale-aware-date-formatting": [
+   {
+    "rule": "page ask \"Are language-specific punctuation, dates and numbers formatted by locale rather than hard-coded?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:eee2c5",
+       "vercel:bf4058",
+       "vercel:9a5ad4",
+       "vercel:b5ccbc"
+      ]
+     }
+    ],
+    "class": "locale"
+   }
+  ],
+  "order-landing-sections-proof-explanation-action": [
+   {
+    "rule": "page ask \"Do sections progress in a persuasive order of proof, explanation and action?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:d7ed67"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Do pricing and proof appear early enough that the page does not feel evasive?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:d7f8ca"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Does each section answer the next obvious buyer question?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:1aa8c7"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "one-message-per-slide": [
+   {
+    "rule": "page ask \"Does each slide carry one message?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:8eb1e2",
+       "claw-design:0a8b42"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Can a presenter tell the key message of each slide immediately?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:b74d97"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "vary-slide-density-for-rhythm": [
+   {
+    "rule": "page ask \"Does the deck vary dense and sparse slides so it has rhythm?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:46d649",
+       "claw-design:2ad513",
+       "claw-design:51cc1b"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "vary-archetypes-between-pages": [
+   {
+    "rule": "process ask \"Does the next page pick different archetypes and change at least one variation knob?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:2dd0f2",
+       "hallmark:a815c8",
+       "hallmark:81530b"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "avoid-generic-logos-and-random-mockups": [
+   {
+    "rule": "aria:img ask \"Is the logo specific to the brand rather than generic?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:61396a"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Are mockups purposeful rather than random?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f3765b"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Are moodboards clean rather than messy?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:204583"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "refine-logo-through-research-and-reduction": [
+   {
+    "rule": "aria:img ask \"Is the logo professional and does it look reached through research and reduction?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:2a427f",
+       "taste-skill:da5fd5"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:img ask \"Does the logo use one motif or at most two combined?\"",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "taste-skill:2b730d"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "give-boards-rhythm-not-equal-loudness": [
+   {
+    "rule": "page ask \"Does the board read as a curated sequence with rhythm rather than equally loud panels?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:6dd957",
+       "taste-skill:acf931",
+       "taste-skill:e4f718"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "ban-meta-labels-like-section-01": [
+   {
+    "rule": "text:label axl:meta-labels == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:db06b8",
+       "taste-skill:7c0038",
+       "taste-skill:3b9568"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-forced-ultra-minimalism": [
+   {
+    "rule": "page ask \"Is richer imagery and art direction allowed instead of forcing ultra-minimalism?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:46b1ac",
+       "taste-skill:0b5071",
+       "taste-skill:fe14cc"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "design-real-app-screens-not-posters": [
+   {
+    "rule": "page ask \"Do mobile images look like real app screens rather than posters or phone-shaped websites?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f1c07b",
+       "taste-skill:4e3c8c",
+       "taste-skill:27f51d"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "logo-wall-contains-logos-only": [
+   {
+    "rule": "aria:list ask \"Does the logo wall contain logos only, with no industry or category labels?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:1af4e1",
+       "taste-skill:48dba5",
+       "taste-skill:2929eb"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-real-screenshots-or-component-previews": [
+   {
+    "rule": "aria:img ask \"Are product previews real screenshots or real mini components, never div mockups?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:143549",
+       "taste-skill:4c681e",
+       "taste-skill:c9b0cb"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "describe-design-intent-with-a-concrete-reference": [
+   {
+    "rule": "process ask \"Is the design direction anchored in a concrete reference or visual world rather than generic adjectives such as modern, clean, trustworthy, premium?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "google-designmd:b1b9a2",
+       "google-designmd:3a9c33"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "do-not-copy-source-photography": [
+   {
+    "rule": "aria:img ask \"Is source photography never copied, replaced by structurally equivalent placeholders or the user's own assets?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:661b7d",
+       "hallmark:a31f44"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-official-brand-logo-assets": [
+   {
+    "rule": "aria:img ask \"Are brand logos taken from official asset pages or checked-in files, never hotlinked?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f3dd89",
+       "hallmark:c09659"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "real-product-photos-where-subject-matters": [
+   {
+    "rule": "aria:img ask \"Does a subject that needs a real product photo use a photo or photographic placeholder instead of kit imagery?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:e82d49",
+       "hallmark:be5947"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "avoid-stock-illustration-poses": [
+   {
+    "rule": "aria:img ask \"Are giveaway stock illustration poses avoided?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:2bc4d2",
+       "hallmark:52f8ce"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "match-imagery-tone-to-brief": [
+   {
+    "rule": "aria:img ask \"Does the imagery tone match the brief and the page's tone?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:418271",
+       "hallmark:485396"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-two-sections-share-the-same-archetype": [
+   {
+    "rule": "page ask \"Does every section on a page use a different archetype?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f738de",
+       "hallmark:5ef037"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "do-not-name-external-sites-in-output": [
+   {
+    "rule": "text:* ask \"Are external sites left unnamed in the output?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:24dbf7",
+       "hallmark:b4c558"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "customise-library-illustrations-to-brand": [
+   {
+    "rule": "aria:img ask \"Are library illustrations customised to the brand and never shipped unmodified?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:ef0fce",
+       "hallmark:d4064f"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "instrument-panel-feel-over-marketing-template": [
+   {
+    "rule": "page ask \"Does the design read like an instrument panel rather than a marketing template?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:deac32",
+       "hallmark:c82024"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "every-section-carries-a-constructed-object": [
+   {
+    "rule": "page ask \"Does every section carry at least one constructed object, never prose only?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:5b1c34",
+       "hallmark:e9159e"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "keep-core-functionality-on-mobile": [
+   {
+    "rule": "media:narrow ask \"Does all core functionality still work on small screens rather than being hidden?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:bff335",
+       "impeccable:fc69ee"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "degrade-enhancements-gracefully": [
+   {
+    "rule": "page ask \"Does the experience without each enhancement still work, with a functional fallback?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:274e75",
+       "impeccable:2c2948"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "content-visible-by-default-not-gated-by-script": [
+   {
+    "rule": "page ask \"Is content visible by default, with JavaScript only enhancing its entrance?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:dd91bc",
+       "impeccable:82d2f7"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "state-what-to-avoid-in-the-direction": [
+   {
+    "rule": "process ask \"Does the direction state explicitly what to avoid?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:301173",
+       "taste-skill:a31242"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "base-visual-system-on-meaning": [
+   {
+    "rule": "page ask \"Is the visual system based on meaning, with no randomly picked symbols?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:192281",
+       "taste-skill:b8f0f8"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "match-art-direction-variance-to-brief-adjectives": [
+   {
+    "rule": "process ask \"Does the amount of art direction match the brief's adjectives?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:2f61f0",
+       "taste-skill:103a41"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "vary-onboarding-slides-not-repeated-templates": [
+   {
+    "rule": "page ask \"Do the screens in a flow differ rather than repeat one template?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b61a1b",
+       "taste-skill:5fe475"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "use-believable-avatar-placeholders": [
+   {
+    "rule": "ui:avatar ask \"Are avatar placeholders believable photos or styled, never generic icons, AI-generated people or solid circles?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b43851",
+       "taste-skill:91cf17"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "limit-eyebrow-labels": [
+   {
+    "rule": "page axl:eyebrows-per-section <= 0.33",
+    "values": [
+     {
+      "value": "0.33",
+      "qids": [
+       "taste-skill:62c617"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7edccc"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-real-svg-logos-in-social-proof": [
+   {
+    "rule": "aria:list ask \"Do logo walls use real SVG marks, with a simple monogram for invented brands, never plain text wordmarks?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:11315c",
+       "taste-skill:fd113d"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-version-labels-in-hero": [
+   {
+    "rule": "page axl:hero-version-labels == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:380e5a",
+       "taste-skill:839fb6"
+      ]
+     }
+    ]
+   }
+  ],
+  "caption-photos-plainly-credit-only-real-photogra": [
+   {
+    "rule": "aria:figure ask \"Is photo credit given only to a real photographer for a real photo, with otherwise no caption or a one-line functional caption?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ab315c",
+       "taste-skill:353930"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "avoid-decorative-live-status-dots": [
+   {
+    "rule": "page axl:decorative-status-dots == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:21690c",
+       "taste-skill:894a29"
+      ]
+     }
+    ]
+   }
+  ],
+  "em-dash-for-unknown-values": [
+   {
+    "rule": "text:* axl:null-literals == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:4dad95",
+       "ui-craft:fe26a8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Are unknown values shown as an em dash, never N/A, null or 0?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4dad95",
+       "ui-craft:fe26a8"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "real-svg-logos-not-text-wordmarks": [
+   {
+    "rule": "aria:list ask \"Do logo walls use real SVG marks, with a simple monogram for invented brands, never plain text wordmarks?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4971db",
+       "ui-craft:3e7cb3"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "numerals-not-spelled-numbers-grouped-thousands": [
+   {
+    "rule": "text:* axl:spelled-out-numbers == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:40f147",
+       "vercel:65172c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Are thousands grouped and very large numbers shortened?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:40f147"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "positive-encouraging-language": [
+   {
+    "rule": "text:* ask \"Is the language positive and encouraging, never blaming?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8d6801",
+       "vercel:559ba6"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "relative-or-absolute-time-by-context": [
+   {
+    "rule": "text:* ask \"Is relative time used where recency matters and absolute time where provenance matters?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2bdf3b"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "text:* axl:raw-timestamps == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:4a60c4"
+      ]
+     }
+    ]
+   }
+  ],
+  "stable-keys-for-dynamic-lists": [
+   {
+    "rule": "aria:list ask \"Do dynamic list items use stable unique keys rather than the index?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5f87cc",
+       "ui-craft:5abf3e"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "no-dark-pattern-default-opt-ins": [
+   {
+    "rule": "aria:checkbox ask \"Is a checkbox pre-selected only when the user would genuinely expect it?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2fbe60"
+      ]
+     }
+    ],
+    "class": "interaction"
+   },
+   {
+    "rule": "page ask \"Are defaults chosen for the user's benefit rather than to maximize conversion or revenue?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:da6eac",
+       "ui-craft:2fbe60"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "commit-to-a-named-design-direction": [
+   {
+    "rule": "process ask \"Is a named design direction chosen and committed to instead of modern and clean?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "unslop:c912b2",
+       "unslop:e111a7"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "make-distinctive-non-templated-design-choices": [
+   {
+    "rule": "page ask \"Are palette, type and layout choices deliberate and distinctive rather than templated?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:9846eb"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "numbered-markers-only-for-real-sequences": [
+   {
+    "rule": "text:label ask \"Are numbered markers used only for real sequences such as steps or a timeline?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:ed4777"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "no-generic-hand-drawn-faces-or-people-illustrati": [
+   {
+    "rule": "aria:img ask \"Are generic hand-drawn SVG faces and people illustrations avoided?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:1ff274"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-generic-ai-avatars-or-solid-placeholder-avata": [
+   {
+    "rule": "ui:avatar ask \"Are avatar placeholders believable photos or styled, never generic icons, AI-generated people or solid circles?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:7128cb"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "primary-layer-alone-conveys-the-point": [
+   {
+    "rule": "page ask \"Does the primary layer alone convey the point?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:60074b"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "establish-brand-signal-in-first-viewport": [
+   {
+    "rule": "page ask \"Does the first viewport establish a brand or product signal immediately?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:ce9c45"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "make-offer-clear-in-first-viewport": [
+   {
+    "rule": "page ask \"Is the offer obvious in the first viewport?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:4eef56"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "no-invented-stock-photos-as-final-design": [
+   {
+    "rule": "aria:img ask \"Are invented stock photos never shipped as if they were the final design?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:347440"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "prefer-typography-or-css-art-over-generated-imag": [
+   {
+    "rule": "page ask \"Does imagery follow the hierarchy typography, then CSS art, then hand-built SVG, then generated imagery?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:af1094"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "match-code-complexity-to-tone": [
+   {
+    "rule": "process ask \"Does the complexity of the code match the ambition of the tone?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6e4e7f"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "use-curated-placeholder-imagery": [
+   {
+    "rule": "aria:img ask \"Are placeholder photos requested with keywords, never random Unsplash?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:54497d"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "asymmetric-crop-for-generated-imagery": [
+   {
+    "rule": "aria:img ask \"Are generated images cropped asymmetrically rather than composed symmetrically?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f0b120"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "post-process-stock-photos": [
+   {
+    "rule": "aria:img ask \"Is each stock photo modified, never used unmodified?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7386fa"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-native-platform-features": [
+   {
+    "rule": "page ask \"Are native platform features used rather than fought?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:3e5ab9"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "avoid-generic-ai-character-illustrations": [
+   {
+    "rule": "aria:img ask \"Are smooth-mesh-blob faces and generic AI character illustrations avoided?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c138a2"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "design-system-pages-share-one-system": [
+   {
+    "rule": "page ask \"Do pages of a design system share one system rather than differ from each other?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:ca51e3"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "silhouette-placeholder-for-empty-photo-slots": [
+   {
+    "rule": "aria:img ask \"Do unfilled photo slots show a greyscale silhouette with a visible replace-with-real-photo hint for the developer?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:14da36"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "locale-correct-number-formatting": [
+   {
+    "rule": "page ask \"Are language-specific punctuation, dates and numbers formatted by locale rather than hard-coded?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:edb004"
+      ]
+     }
+    ],
+    "class": "locale"
+   }
+  ],
+  "use-feature-queries-not-ua-sniffing": [
+   {
+    "rule": "page ask \"Are feature queries used instead of UA string sniffing?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:181334"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "numerals-over-spelled-out-numbers": [
+   {
+    "rule": "text:* axl:spelled-out-numbers == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:664265"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-page-architecture-per-build": [
+   {
+    "rule": "process ask \"Is the page architecture different in each build?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:934e54"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "use-real-screenshots-not-redrawn-browser-chrome": [
+   {
+    "rule": "aria:img ask \"Are screenshots real, with browser chrome never redrawn?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:cec825"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "content-visible-without-scripts": [
+   {
+    "rule": "page ask \"Is content visible by default, with JavaScript only enhancing its entrance?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:0bbf2e"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "one-decisive-move-quiet-the-rest": [
+   {
+    "rule": "page ask \"Is there one decisive move, with everything around it quieted so it is legible?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:3074b0"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "one-reading-path-with-related-links-gathered-at-": [
+   {
+    "rule": "aria:main ask \"Do long-form articles keep one reading path, with related links gathered in one block at the end?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:7a9924"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "co-locate-information-needed-for-a-decision": [
+   {
+    "rule": "page ask \"Is the information needed for each decision placed together?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:dc0a86"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "flatten-component-trees": [
+   {
+    "rule": "process ask \"Are component trees flat, with nesting depth reduced?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:d1e4e3"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "preserve-visual-hierarchy-when-simplifying": [
+   {
+    "rule": "page ask \"Does something still stand out, so hierarchy is never eliminated?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:176733"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "first-viewport-demonstrates-the-product": [
+   {
+    "rule": "page ask \"Does the first viewport demonstrate the product's mechanism instead of a standard hero?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:63996b"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "author-real-content-instead-of-placeholder-chrom": [
+   {
+    "rule": "page ask \"Is content authored for real, never substituted with placeholder chrome?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a65187"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "use-real-verified-imagery": [
+   {
+    "rule": "aria:img ask \"Is imagery real and verified when the brief implies it?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:95dd42"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "first-time-visitor-understands-offer-within-seco": [
+   {
+    "rule": "page ask \"Does a first-time visitor know what this is, why it matters and what to do within seconds?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:bf6690"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "onboarding-gets-users-to-value-quickly": [
+   {
+    "rule": "page ask \"Does onboarding get users to value quickly instead of teaching everything?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:18e6ee"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "real-functionality-in-onboarding": [
+   {
+    "rule": "page ask \"Does onboarding use real functionality rather than a separate tutorial mode?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:077081"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "provide-sample-data-in-onboarding": [
+   {
+    "rule": "page ask \"Does onboarding provide sample data so actions work?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:3326ed"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "searchable-help-documentation": [
+   {
+    "rule": "page ask \"Is the help documentation easy to search?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:1b1aa5"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "link-error-message-to-explanatory-page": [
+   {
+    "rule": "state:invalid ask \"Does a concise error message link to a page with a fuller explanation when more is needed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "nngroup:8d1f8a"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "state-one-line-proposition-first": [
+   {
+    "rule": "process ask \"Is a single-minded one-line proposition stated before design starts?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:921356"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "tie-expressiveness-to-type-color-motion": [
+   {
+    "rule": "process ask \"Does added expressiveness come from a second typeface, more color and more motion?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:cbbb41"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "anchor-direction-in-a-concrete-visual-world": [
+   {
+    "rule": "process ask \"Is the design direction anchored in a concrete reference or visual world rather than generic adjectives such as modern, clean, trustworthy, premium?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:13e75c"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "test-borrowed-forms-for-clarity": [
+   {
+    "rule": "process ask \"Is a borrowed form recognized by the audience and does it make the product clearer, not just decorated?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:b780ed"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "define-imagery-direction-early": [
+   {
+    "rule": "process ask \"Is an imagery direction defined during the system phase, with reference images and do and don't pairs?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:7b7f7a"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "prefer-committed-choices-over-probable-defaults": [
+   {
+    "rule": "process ask \"Is each choice a committed one rather than the most probable default?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:33e7df"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "make-every-panel-feel-connected": [
+   {
+    "rule": "page ask \"Does every panel feel connected to the others?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:744a18"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "keep-mockups-minimal-and-believable": [
+   {
+    "rule": "page ask \"Are mockups minimal and believable?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ea1aaa"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "commit-to-one-visual-mode-per-project": [
+   {
+    "rule": "page ask \"Is one visual mode picked per project and never mixed with another?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:4dcee7"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "structure-page-with-aida": [
+   {
+    "rule": "page ask \"Does the page follow the AIDA framework of attention, interest, desire and action?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f62ee6"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "match-art-direction-to-app-category": [
+   {
+    "rule": "process ask \"Does the art direction match the app category, such as more trust, calm and structural clarity for fintech, health or productivity?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:cd39b4"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "decide-platform-mode-first": [
+   {
+    "rule": "process ask \"Is the platform mode decided first?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:2a7363"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "vary-screens-in-an-app-flow": [
+   {
+    "rule": "page ask \"Do the screens in a flow differ rather than repeat one template?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:1428ff"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "keep-hierarchy-clean-and-product-first": [
+   {
+    "rule": "page ask \"Is the hierarchy clean and product-first?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b8348a"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "use-charts-only-when-the-site-needs-them": [
+   {
+    "rule": "ui:chart ask \"Are charts, sparklines and graphs used only when the site type needs them?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:13aa32"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "match-palette-and-type-to-industry-or-region": [
+   {
+    "rule": "page ask \"Do palette and type match the industry or region named in the brief, rather than a default neutral look?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:00e29f"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "use-unique-avatars-per-person": [
+   {
+    "rule": "ui:avatar ask \"Does each distinct person have a unique avatar image?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:19228e"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "include-a-branded-favicon": [
+   {
+    "rule": "page ask \"Does the page include a branded favicon?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:cd4640"
+      ]
+     }
+    ],
+    "class": "seo"
+   }
+  ],
+  "use-real-team-photos-not-stock-diverse-photos": [
+   {
+    "rule": "aria:img ask \"Are team photos real or in one consistent illustration style, never stock diverse-team photos?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7d8e50"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "add-legal-links-in-footer": [
+   {
+    "rule": "aria:contentinfo ask \"Does the footer link to the privacy policy and terms of service?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ab7c19"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "make-hero-striking-never-generic": [
+   {
+    "rule": "page ask \"Is the hero creative and striking, never generic?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:258280"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "no-scroll-to-explore-filler-or-bouncing-chevrons": [
+   {
+    "rule": "page axl:scroll-cues == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:a86940"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-reliable-placeholder-image-sources": [
+   {
+    "rule": "aria:img ask \"Do placeholder images come from reliable sources such as picsum.photos or SVG, with no broken links?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:96f80b"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-official-design-system-packages": [
+   {
+    "rule": "process ask \"Are official design system packages used instead of inventing CSS for what they provide?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:a323a5"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "one-design-system-per-project": [
+   {
+    "rule": "process ask \"Is one design system or component library used per project, never mixed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:765dcc"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "keep-hero-subtext-under-20-words": [
+   {
+    "rule": "page ask \"Is hero subtext at most 20 words and 4 lines?\"",
+    "values": [
+     {
+      "value": "20",
+      "qids": [
+       "taste-skill:46669c"
+      ]
+     },
+     {
+      "value": "4",
+      "qids": [
+       "taste-skill:46669c"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "use-real-photography-when-no-generator": [
+   {
+    "rule": "aria:img ask \"When no image generator is available, are real photography sources used?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:a2fc15"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-data-dump-sections-on-marketing-pages": [
+   {
+    "rule": "page ask \"Do marketing pages avoid data-dump sections such as long tables, award lists and giant pricing matrices?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:8e4d99"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "attribute-quotes-with-name-and-role": [
+   {
+    "rule": "aria:figure ask \"Does each testimonial attribute a name and role, with the company where known, never the name alone?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:027225"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "avoid-decorative-timezone-clocks": [
+   {
+    "rule": "page ask \"Are timezone clocks used only for globally distributed, travel or physical-venue briefs?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:4c094d"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "keep-information-architecture-and-slugs-stable": [
+   {
+    "rule": "process ask \"Are information architecture, page slugs, anchor IDs and primary nav labels left unchanged unless asked?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:8ef5cd"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "domain-specific-component-names": [
+   {
+    "rule": "process ask \"Do component names describe the domain, such as MetricCard, rather than generic Card, Box or Item?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2dc13b"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "avoid-premature-component-abstraction": [
+   {
+    "rule": "page ask \"Is a generic component extracted only when used 3 or more times with the same intent, otherwise kept inline?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:3b949d"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "keep-every-existing-cta-and-form": [
+   {
+    "rule": "page ask \"Is every existing CTA and form kept, only relocated or restyled?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:05ce41"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "no-decorative-numbered-eyebrows": [
+   {
+    "rule": "text:label axl:meta-labels == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:25b15a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label ask \"Are numbered markers used only for real sequences such as steps or a timeline?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:25b15a"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "no-scroll-cue-labels": [
+   {
+    "rule": "page axl:scroll-cues == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:01d765"
+      ]
+     }
+    ]
+   }
+  ],
+  "locale-aware-plurals": [
+   {
+    "rule": "text:* ask \"Are plurals chosen with locale plural rules rather than a one-versus-many check?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2f2ca7"
+      ]
+     }
+    ],
+    "class": "locale"
+   }
+  ],
+  "store-utc-display-in-user-time-zone": [
+   {
+    "rule": "text:* ask \"Are times stored in UTC and displayed in the user's time zone?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:d843b0"
+      ]
+     }
+    ],
+    "class": "locale"
+   }
+  ],
+  "ration-separator-dots-and-em-dashes-in-ui-string": [
+   {
+    "rule": "text:caption axl:separator-dots-per-line <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "ui-craft:6d3fe2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:em-dashes-per-paragraph == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:6d3fe2"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-confirmshaming": [
+   {
+    "rule": "aria:button ask \"Do decline options use plain wording such as No thanks, never shaming the user?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:67a718"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "show-cost-before-billed-action": [
+   {
+    "rule": "aria:button ask \"Is the cost shown before a billed action?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:17d7b6"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "one-component-library-per-project": [
+   {
+    "rule": "process ask \"Is one design system or component library used per project, never mixed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:9358d2"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "locale-currency-negative-by-two-signals": [
+   {
+    "rule": "text:* ask \"Are negative values distinguished by at least two signals such as sign plus color, or sign plus parentheses?\"",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:a3c046"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Are language-specific punctuation, dates and numbers formatted by locale rather than hard-coded?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a3c046"
+      ]
+     }
+    ],
+    "class": "locale"
+   }
+  ],
+  "match-number-precision-to-decision": [
+   {
+    "rule": "text:* ask \"Does number precision match the decision the user needs to make?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:d0b84d"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "no-star-ratings-in-testimonials": [
+   {
+    "rule": "aria:figure ask \"Do testimonials use quote, name, role and company with no star ratings?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f9fe28"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "test-social-share-previews-on-deployed-link": [
+   {
+    "rule": "process ask \"Were social share previews tested by pasting a deployed link?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e63c4f"
+      ]
+     }
+    ],
+    "class": "seo"
+   }
+  ],
+  "pseudo-elements-for-decoration": [
+   {
+    "rule": "page ask \"Is decoration done with pseudo-elements rather than extra DOM nodes?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0fb833"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "show-attribution": [
+   {
+    "rule": "page ask \"Is attribution shown where it is required or builds trust?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:cd4551"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "marketing-pages-need-real-imagery": [
+   {
+    "rule": "page ask \"Does every marketing page include real imagery rather than being text-only?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:51aa5a"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "print-stylesheet-with-page-numbers-and-headers": [
+   {
+    "rule": "media:print ask \"Does the print view add page numbers, headers and the print date?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:3c0d3d"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "model-ui-states-as-discriminated-unions": [
+   {
+    "rule": "process ask \"Are UI states modelled as one discriminated union rather than disconnected booleans?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:9825aa"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "semantic-z-index-layers": [
+   {
+    "rule": "page ask \"Does z-index use semantic layers, never arbitrary numbers?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ff9e26"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "real-screenshots-not-stock-illustrations": [
+   {
+    "rule": "aria:img ask \"Are real screenshots or commissioned art used instead of stock illustrations and clipart?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "unslop:d41e59"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "detect-language-from-headers-not-ip": [
+   {
+    "rule": "page ask \"Is language detected from Accept-Language and navigator.languages, never from IP or GPS?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:e623c0"
+      ]
+     }
+    ],
+    "class": "locale"
+   }
+  ],
+  "write-in-second-person": [
+   {
+    "rule": "text:* ask \"Is the copy written in the second person, avoiding first person?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:afd41a"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "consistent-currency-decimals": [
+   {
+    "rule": "text:* ask \"Does currency show either 0 or 2 decimal places within a context, never both?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:c2c621"
+      ]
+     }
+    ],
+    "class": "locale"
+   }
+  ],
+  "translate-no-on-brand-names": [
+   {
+    "rule": "page ask \"Are brand names, code tokens and identifiers marked translate=no?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:a834d4"
+      ]
+     }
+    ],
+    "class": "locale"
+   }
+  ],
+  "locale-aware-number-formatting": [
+   {
+    "rule": "page ask \"Are language-specific punctuation, dates and numbers formatted by locale rather than hard-coded?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:502923"
+      ]
+     }
+    ],
+    "class": "locale"
+   }
+  ]
+ },
+ "new_measures": {
+  "axl:em-dashes-per-paragraph": "Maximum, over paragraphs of rendered text, of the count of em dash characters (U+2014 or --). Unit: count.",
+  "axl:en-dash-separators": "Count of en dash characters (U+2013) in rendered text used as a separator, including date and number ranges. Unit: count.",
+  "axl:fixed-size-text-containers": "Count of elements containing text whose width or height is fixed in px (or overflow hidden with a fixed size), so the text cannot grow when its content gets longer. Unit: count.",
+  "axl:translation-space-budget": "Smallest, over elements with text, of (available inline size of the container / inline size of the text as rendered) minus 1, as a percentage: the spare room left for longer translations.",
+  "axl:hardcoded-colors": "Count of colour values (hex, rgb(), hsl(), oklch() literals or named colours) written in author CSS or inline styles outside custom-property definitions, i.e. not referenced through var(). Unit: count.",
+  "axl:oklch-color-share": "Share of colour declarations in author CSS written with oklch(). Unit: percent.",
+  "axl:cliche-words": "Count of occurrences in rendered text of the words and phrases named by the source statements: elevate, seamless, unleash, next-gen, game-changer, delve, tapestry, leverage, synergy, robust, cutting-edge, revolutionary, revolutionize, unlock, supercharge, effortlessly, journey, ecosystem, platform, transform your. Unit: count.",
+  "axl:placeholder-text": "Count of occurrences in rendered text of placeholder copy: lorem ipsum or other placeholder Latin, and generic placeholder names such as John Doe, Jane Smith, Acme Corp. Unit: count.",
+  "axl:empty-image-src": "Count of img elements whose src is empty, missing or a placeholder value, so they render as a broken-image box. Unit: count.",
+  "axl:generic-labels": "Count of buttons whose visible label is one of: OK, Submit, Click here, Continue, Yes, No. Unit: count.",
+  "axl:words-per-heading": "Maximum, over heading elements, of the number of words in the heading text. Unit: words.",
+  "axl:characters-per-heading": "Maximum, over heading elements, of the number of characters in the heading text. Unit: characters.",
+  "axl:exclamation-marks": "Count of exclamation marks in the rendered text of the element. Unit: count.",
+  "axl:emoji-in-text": "Count of emoji characters in rendered text and alt text of the element (not counting emoji used as icons, which axl:emoji-as-icons measures). Unit: count.",
+  "axl:real-images": "Count of non-decorative img, picture and video elements that show real content (alt text present and not a placeholder). Unit: count.",
+  "axl:meta-labels": "Count of label or eyebrow texts of the form SECTION 01, QUESTION 05, 00 / INDEX, 01 / 4, 01 · About, 02 / Process, or ABOUT US used as a section label. Unit: count.",
+  "axl:eyebrows-per-section": "Number of eyebrow labels (short text above a heading) divided by the number of page sections, hero counted as a section. Unit: ratio.",
+  "axl:hero-version-labels": "Count of version or status labels such as V0.6, v2.0, BETA, ALPHA, EARLY ACCESS, INVITE-ONLY PREVIEW in the hero area. Unit: count.",
+  "axl:decorative-status-dots": "Count of live or status dots that are not bound to a real semantic state (an aria-live or status role region). Unit: count.",
+  "axl:null-literals": "Count of visible text values that are N/A, null, undefined or NaN. Unit: count.",
+  "axl:spelled-out-numbers": "Count of numbers written out as words (for example five, two hundred forty-five) in rendered text where a numeral would be used. Unit: count.",
+  "axl:raw-timestamps": "Count of visible text values that are raw machine timestamps (Unix epoch numbers, unformatted ISO strings). Unit: count.",
+  "axl:scroll-cues": "Count of scroll cue elements: text such as Scroll to explore or Swipe down, scroll arrow icons, and bouncing chevrons. Unit: count.",
+  "axl:separator-dots-per-line": "Maximum, over text lines, of the count of middle dot separator characters (U+00B7) in the line. Unit: count."
+ },
+ "new_elements": {}
+}

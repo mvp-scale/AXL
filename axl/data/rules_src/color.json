@@ -1,0 +1,1907 @@
+{
+ "class": "Color",
+ "tweaks": {
+  "gradient": [
+   {
+    "rule": "text:* background-clip !contains text",
+    "values": [
+     {
+      "value": "text",
+      "qids": [
+       "claw-design:dcdcb1",
+       "hallmark:cd9cb0",
+       "hallmark:268df7",
+       "impeccable:02314c",
+       "ui-craft:c37d4f",
+       "unslop:2f857e",
+       "ui-craft:bf14fa"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page background-image !contains gradient",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:abc94e",
+       "hallmark:b2e377",
+       "hallmark:cc1f47",
+       "hallmark:13ddf7",
+       "hallmark:ef6494",
+       "hallmark:297d2d",
+       "impeccable:4d300f",
+       "openai:cbc548",
+       "taste-skill:881453",
+       "ui-craft:b47d83",
+       "ui-craft:5292b5",
+       "unslop:e07a0e",
+       "ui-craft:62790c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:gradient-stops <= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:6bab6f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:gradient-count <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "unslop:681d59"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are any gradients subtle, tonal and palette-matched, supporting rather than competing with content?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:89c52c",
+       "taste-skill:c11c3f",
+       "taste-skill:de17fb",
+       "taste-skill:d3b9ff",
+       "taste-skill:730a2a",
+       "taste-skill:84002e",
+       "taste-skill:66eda6",
+       "ui-craft:edd409",
+       "unslop:681d59"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "accent": [
+   {
+    "rule": "page axl:accent-hues <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:418278",
+       "ui-craft:9a53b9",
+       "ui-craft:d3b647",
+       "ui-craft:e0e028",
+       "ui-craft:26763a",
+       "ui-craft:38fc44",
+       "ui-craft:8d54aa"
+      ]
+     },
+     {
+      "value": "2",
+      "qids": [
+       "hallmark:418278"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:accent-coverage <= 5%",
+    "values": [
+     {
+      "value": "5%",
+      "qids": [
+       "hallmark:cb8312"
+      ]
+     },
+     {
+      "value": "3%",
+      "qids": [
+       "hallmark:418278"
+      ]
+     },
+     {
+      "value": "10%",
+      "qids": [
+       "impeccable:dcd3c4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is accent colour used only for the primary action, current selection and state indicators, not decoration?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:51e026",
+       "claw-design:917239",
+       "hallmark:83c89a",
+       "hallmark:eb1e98",
+       "hallmark:e9429c",
+       "impeccable:f490af",
+       "impeccable:815b3c",
+       "openai:8745ff",
+       "ui-craft:216f74",
+       "ui-craft:a27eca",
+       "ui-craft:592ec2",
+       "ui-craft:effbf0",
+       "ui-craft:00de79",
+       "taste-skill:22e3a0"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "tint": [
+   {
+    "rule": "page axl:background-lightness between 95% 98%",
+    "values": [
+     {
+      "value": "95%-98%",
+      "qids": [
+       "hallmark:7d302d"
+      ]
+     },
+     {
+      "value": "97%",
+      "qids": [
+       "hallmark:f1d74e",
+       "hallmark:f6b463"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page background-color !contains #ffffff",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f6b463",
+       "hallmark:d7bb9d"
+      ]
+     }
+    ]
+   }
+  ],
+  "quiet": [
+   {
+    "rule": "text:caption ask \"Are low-priority labels and metadata visibly quieter than the headline and core message?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:5382f6",
+       "claw-design:bd9b4c",
+       "claw-design:729bad",
+       "claw-design:a55f9e",
+       "claw-design:05d8d3",
+       "claw-design:674bc6",
+       "impeccable:f4ac20",
+       "impeccable:8dcda7",
+       "deslop:b17576",
+       "ui-craft:4b5f21"
+      ]
+     }
+    ],
+    "class": "type"
+   },
+   {
+    "rule": "text:caption wcag:1.4.3 pass",
+    "values": [
+     {
+      "value": "4.5:1",
+      "qids": [
+       "impeccable:eb0cee"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:gray-on-colored-background == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:5091ac",
+       "impeccable:a2a3e9",
+       "deslop:da5281",
+       "impeccable:eb0cee"
+      ]
+     }
+    ]
+   }
+  ],
+  "dark": [
+   {
+    "rule": "page ask \"Is the page's default canvas a dark surface?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d17075",
+       "deslop:1373e6"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "mute-color": [
+   {
+    "rule": "page axl:color-saturation <= 80%",
+    "values": [
+     {
+      "value": "80%",
+      "qids": [
+       "taste-skill:d0ba74",
+       "taste-skill:b6d1c0",
+       "taste-skill:801767",
+       "taste-skill:756a49",
+       "taste-skill:cb3802"
+      ]
+     },
+     {
+      "value": "70-85%",
+      "qids": [
+       "impeccable:dfa23e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:accent-chroma <= 0.16",
+    "values": [
+     {
+      "value": "0.16",
+      "qids": [
+       "hallmark:2e0086"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6a31b1"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are accent colours muted and desaturated rather than a loud saturated pop?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6a31b1",
+       "hallmark:cd1e54",
+       "impeccable:d6faca",
+       "impeccable:8dcda7",
+       "impeccable:4ba15d",
+       "taste-skill:92eaef",
+       "taste-skill:9c7435",
+       "taste-skill:e4e710",
+       "taste-skill:f420e6",
+       "taste-skill:04e820",
+       "ui-craft:288dde",
+       "deslop:6f11cd"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "color-roles": [
+   {
+    "rule": "page ask \"Is each colour used only for its defined role and meaning?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:8ff955",
+       "apple-hig:349a46",
+       "apple-hig:03855f",
+       "apple-hig:5e7983",
+       "govuk:b596c1",
+       "govuk:3bbb05",
+       "govuk:b255f2",
+       "govuk:f8f0d5",
+       "impeccable:061c9c",
+       "impeccable:21f4b8",
+       "impeccable:9dc16c",
+       "openai:707c9c",
+       "taste-skill:b5358f",
+       "taste-skill:20c271",
+       "ui-craft:1e264a",
+       "ui-craft:effbf0"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "contrast-7": [
+   {
+    "rule": "text:* wcag:1.4.6 pass",
+    "values": [
+     {
+      "value": "7:1",
+      "qids": [
+       "impeccable:0a9d8d",
+       "ui-craft:9f5a91"
+      ]
+     }
+    ]
+   }
+  ],
+  "non-text-contrast": [
+   {
+    "rule": "aria:button wcag:1.4.11 pass",
+    "values": [
+     {
+      "value": "3:1",
+      "qids": [
+       "wcag22:0ce239",
+       "impeccable:a5e15b",
+       "ui-craft:e86fe3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox wcag:1.4.11 pass",
+    "values": [
+     {
+      "value": "3:1",
+      "qids": [
+       "wcag22:0ce239",
+       "impeccable:a5e15b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon wcag:1.4.11 pass",
+    "values": [
+     {
+      "value": "3:1",
+      "qids": [
+       "wcag22:0ce239",
+       "impeccable:a5e15b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do similar colours avoid overlapping between the content layer and controls?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:e4b45e"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "palette-limit": [
+   {
+    "rule": "page axl:distinct-hues <= 5",
+    "values": [
+     {
+      "value": "5",
+      "qids": [
+       "deslop:97cb1d"
+      ]
+     },
+     {
+      "value": "2",
+      "qids": [
+       "impeccable:a78d2e"
+      ]
+     },
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:4f55d3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:raw-color-values == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:a1a932",
+       "claw-design:71c9b4",
+       "hallmark:4f55d3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the colour palette clean and controlled, with no clashing or accidental combinations?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:a1a932",
+       "claw-design:6cb80b",
+       "govuk:71b867",
+       "impeccable:9156e8",
+       "deslop:647dd2",
+       "taste-skill:2e8f2c",
+       "taste-skill:1cf45d",
+       "taste-skill:b5358f",
+       "taste-skill:aa86b0",
+       "taste-skill:e4e710",
+       "taste-skill:56a5f3",
+       "taste-skill:2f3683",
+       "taste-skill:26b915",
+       "taste-skill:f420e6",
+       "impeccable:ae4446"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Is one palette used across the whole page, with no full theme swap per section?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:4edf4f",
+       "taste-skill:2684e2",
+       "taste-skill:456b74",
+       "taste-skill:2d2301"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "neutral-scale": [
+   {
+    "rule": "page ask \"Do all neutrals share one temperature, warm or cool, never mixed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:456b74",
+       "taste-skill:2d2301"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Do neutrals carry the page, with colour used only as the accent?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:dcd3c4",
+       "deslop:b608ae",
+       "taste-skill:9d74e8",
+       "ui-craft:c8d4c5"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "tinted-neutrals": [
+   {
+    "rule": "page axl:neutral-chroma >= 0.005",
+    "values": [
+     {
+      "value": "0.005",
+      "qids": [
+       "hallmark:0bed18",
+       "hallmark:75a0bb",
+       "hallmark:2c4761"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:neutral-chroma between 0.005 0.014",
+    "values": [
+     {
+      "value": "0.005-0.014",
+      "qids": [
+       "hallmark:823a45"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* color !contains #000000",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:2c4761",
+       "ui-craft:c842f2",
+       "hallmark:25dbc5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page background-color !contains #ffffff",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:2c4761",
+       "hallmark:25dbc5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are neutrals tinted toward the brand hue rather than pure gray?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:5f58e2",
+       "impeccable:d3bfd3",
+       "taste-skill:04e820",
+       "ui-craft:8892ec",
+       "ui-craft:1fc05f",
+       "vercel:9c2217",
+       "hallmark:25dbc5"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "no-pure-black": [
+   {
+    "rule": "text:* color !contains #000000",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:2c4761",
+       "hallmark:b61912",
+       "hallmark:25dbc5",
+       "hallmark:cc41ad",
+       "deslop:704fef",
+       "taste-skill:6cf995",
+       "taste-skill:c9407f",
+       "taste-skill:dfaf9c",
+       "ui-craft:c842f2",
+       "ui-craft:25b8bd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page background-color !contains #000000",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:b61912",
+       "taste-skill:7698e3",
+       "taste-skill:795cfe",
+       "taste-skill:c9407f",
+       "taste-skill:dfaf9c",
+       "ui-craft:40bd2c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page background-color !contains #ffffff",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:2c4761",
+       "hallmark:1912f9",
+       "hallmark:25dbc5",
+       "deslop:704fef",
+       "taste-skill:dfaf9c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body color !contains #ffffff @media:dark",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:27e658"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body line-height >= 1.6",
+    "values": [
+     {
+      "value": "1.6",
+      "qids": [
+       "taste-skill:6cf995"
+      ]
+     }
+    ]
+   }
+  ],
+  "semantic-color-tokens": [
+   {
+    "rule": "page axl:raw-color-values == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "shadcn:b88311",
+       "shadcn:219aca",
+       "shadcn:4d7aeb",
+       "shadcn:5ae823",
+       "shadcn:2bc660",
+       "impeccable:8c6e68"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are colour tokens named by role rather than by value?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:19cdeb",
+       "impeccable:c00b5b",
+       "deslop:f147e4",
+       "taste-skill:20c271",
+       "ui-craft:139a30",
+       "ui-craft:834a47"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Do theme changes remap semantic tokens only, leaving primitive values untouched?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:8c6e68",
+       "deslop:33bad5",
+       "ui-craft:5b92e0",
+       "ui-craft:6901e2"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Are system colours used where they already define the variants needed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:56955e"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "status-color-set": [
+   {
+    "rule": "aria:alert wcag:1.4.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:8be7f5",
+       "deslop:e994a4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are success, warning and error each a distinct semantic colour?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:aa7e3e",
+       "deslop:97cb1d",
+       "deslop:8be7f5",
+       "shadcn:4d7aeb",
+       "ui-craft:4af43b",
+       "ui-craft:22a708"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Are status indicators small coloured dots, 6-8px, beside a text label?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c4d0a2",
+       "ui-craft:c1a246",
+       "ui-craft:4af43b"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "accent-one-hue": [
+   {
+    "rule": "page axl:accent-hues <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:418278",
+       "hallmark:5cee5b",
+       "hallmark:d6b513",
+       "deslop:b608ae",
+       "taste-skill:e341b5",
+       "taste-skill:95e649",
+       "taste-skill:b6d1c0",
+       "taste-skill:801767",
+       "taste-skill:756a49",
+       "ui-craft:9a53b9",
+       "ui-craft:e0e028",
+       "ui-craft:665e7b",
+       "ui-craft:139a30",
+       "ui-craft:26763a"
+      ]
+     },
+     {
+      "value": "2",
+      "qids": [
+       "hallmark:418278",
+       "hallmark:21559f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does each block use only one accent, never two accents blended?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:33826c",
+       "hallmark:8989d0",
+       "hallmark:d6b513"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Is one hue used at different intensities for all colour roles?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:139a30",
+       "ui-craft:140cdd",
+       "ui-craft:9cd466",
+       "ui-craft:c95a0a"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "no-purple-blue-gradient": [
+   {
+    "rule": "page axl:purple-blue-gradients == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:be6c55",
+       "claw-design:f8b516",
+       "hallmark:4416d2",
+       "hallmark:8cdac6",
+       "taste-skill:89c52c",
+       "taste-skill:0e3d87",
+       "taste-skill:a5b5f7",
+       "taste-skill:0be53b",
+       "taste-skill:ddd0a0",
+       "ui-craft:bdbd8b",
+       "ui-craft:f86cf6",
+       "ui-craft:edd409"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:accent-in-violet-band == 0",
+    "values": [
+     {
+      "value": "250-320",
+      "qids": [
+       "deslop:d4e44c"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "deslop:041ec2",
+       "deslop:8ce027",
+       "taste-skill:8f2eba",
+       "unslop:5258a6",
+       "taste-skill:a5b5f7",
+       "taste-skill:0be53b",
+       "ui-craft:dd60de"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-neon-glow": [
+   {
+    "rule": "page axl:colored-glow-shadows == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:391316",
+       "impeccable:607856",
+       "impeccable:8efb33",
+       "impeccable:da32a5",
+       "taste-skill:a5b5f7",
+       "taste-skill:328cf8",
+       "taste-skill:0be53b",
+       "taste-skill:064bb7",
+       "ui-craft:f86cf6",
+       "ui-craft:f69e0b",
+       "unslop:bd4427",
+       "unslop:b09594"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the page free of glowing orb, sphere or ring decorations?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:181a8d",
+       "hallmark:e947c1",
+       "hallmark:7eda17"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Does the page avoid neon colours on a dark background?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:5c59e2",
+       "taste-skill:a5b5f7",
+       "unslop:586426"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "no-rainbow-decoration": [
+   {
+    "rule": "page ask \"Is decorative colour free of random rainbow or multi-hue use?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d48646",
+       "taste-skill:2a11c9",
+       "ui-craft:635c1c"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "oklch-color-space": [
+   {
+    "rule": "page axl:oklch-colors == 100%",
+    "values": [
+     {
+      "value": "100%",
+      "qids": [
+       "hallmark:4cb76d",
+       "hallmark:8fa0d0",
+       "deslop:0341ca",
+       "deslop:052efb"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "impeccable:187c95",
+       "ui-craft:cede1a",
+       "ui-craft:6bb0cd",
+       "ui-craft:10033a",
+       "ui-craft:c8d4c5",
+       "deslop:b4c3f3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does every OKLCH colour ship with a hex fallback?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:eceeb6",
+       "deslop:b45337"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "dark-mode-support": [
+   {
+    "rule": "page axl:dark-scheme-declared == 1",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:7b0876",
+       "vercel:d0d200",
+       "vercel:632b0e",
+       "ui-craft:4c6538",
+       "taste-skill:d3e5ec",
+       "taste-skill:3a6c8c",
+       "taste-skill:8cfe62",
+       "taste-skill:a70f50",
+       "ui-craft:be9d94",
+       "ui-craft:c07cba",
+       "apple-hig:cc15ca"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "media:dark wcag:1.4.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:9c8a8d",
+       "taste-skill:9deb18"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "media:dark ask \"Is dark mode designed as its own scheme with explicit surface elevation, not an inverted light theme?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:59b6d0",
+       "impeccable:293402",
+       "ui-craft:dd5332",
+       "ui-craft:40bd2c"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Is light or dark chosen from the physical use scene rather than by habit?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:5ad11c",
+       "impeccable:aed3b9"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Does every custom colour have light, dark and increased-contrast variants?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:ab7f63",
+       "apple-hig:cc15ca"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "contrast-large-text-3": [
+   {
+    "rule": "text:display wcag:1.4.3 pass",
+    "values": [
+     {
+      "value": "3:1",
+      "qids": [
+       "deslop:9275d1",
+       "taste-skill:a47ec2",
+       "wcag22:bc3bff"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:color-contrast pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:f80be2",
+       "wcag22:bc3bff"
+      ]
+     }
+    ]
+   }
+  ],
+  "contrast-focus-indicator": [
+   {
+    "rule": "state:focus-visible outline-width between 2px 3px",
+    "values": [
+     {
+      "value": "2px-3px",
+      "qids": [
+       "hallmark:ae0bb5",
+       "hallmark:5d4280"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible wcag:2.4.13 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:4c2506"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible wcag:1.4.11 pass",
+    "values": [
+     {
+      "value": "3:1",
+      "qids": [
+       "hallmark:681002",
+       "hallmark:ae0bb5",
+       "hallmark:5d4280",
+       "hallmark:d65697"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible transition-duration == 0s",
+    "values": [
+     {
+      "value": "0s",
+      "qids": [
+       "hallmark:681002",
+       "hallmark:5d4280"
+      ]
+     }
+    ]
+   }
+  ],
+  "link-color-distinct": [
+   {
+    "rule": "aria:link wcag:1.4.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:c476fd"
+      ]
+     }
+    ]
+   }
+  ],
+  "meta-theme-color": [
+   {
+    "rule": "page axl:theme-color-match == 1",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4c6538",
+       "vercel:d30978",
+       "vercel:2749f1"
+      ]
+     }
+    ]
+   }
+  ],
+  "color-blind-friendly-chart-palettes": [
+   {
+    "rule": "ui:chart ask \"Do charts use colour-blind-friendly palettes that never rely on hue alone?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:60c533",
+       "ui-craft:52b423",
+       "ui-craft:22bc78",
+       "vercel:e4fd5a",
+       "vercel:3d0c86"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "rotate-palette-families": [
+   {
+    "rule": "process ask \"Does each build rotate to a different accent palette family when the brief names no brand colour?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ffd2fb",
+       "ui-craft:5dedfb",
+       "ui-craft:ffe543",
+       "ui-craft:81511f"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "one-theme-per-page-no-inverted-sections": [
+   {
+    "rule": "page axl:substrate-modes == 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "taste-skill:b4a9a9",
+       "taste-skill:567e23"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the theme set once at the page root?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f3c7bd"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "increase-contrast-on-hover-active-focus": [
+   {
+    "rule": "state:hover axl:contrast-gain >= 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b45dde",
+       "vercel:0288ee",
+       "vercel:b451cb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:active axl:contrast-gain >= 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b45dde",
+       "vercel:0288ee",
+       "vercel:b451cb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible axl:contrast-gain >= 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b45dde",
+       "vercel:0288ee",
+       "vercel:b451cb"
+      ]
+     }
+    ]
+   }
+  ],
+  "recolor-illustrations-to-brand-hue": [
+   {
+    "rule": "aria:img ask \"Are illustration colours swapped to the brand anchor hue?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:08c18a",
+       "hallmark:0e87b0"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "gradient-only-on-hero-or-accent-card-never-page-": [
+   {
+    "rule": "aria:main background-image !contains gradient",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:afe0a6",
+       "hallmark:a4a08f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:gradient-stops <= 2",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "hallmark:a4a08f"
+      ]
+     }
+    ]
+   }
+  ],
+  "on-accent-text-picks-ink-or-paper-by-lightness": [
+   {
+    "rule": "page ask \"Is text on an accent fill ink when the accent lightness is above 50 and paper when it is 50 or below?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:386419",
+       "hallmark:635f85"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "multi-accent-surfaces": [
+   {
+    "rule": "page axl:accent-hues >= 2",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "hallmark:9effb2",
+       "hallmark:efc637"
+      ]
+     }
+    ]
+   }
+  ],
+  "commit-to-full-dark-mode-or-one-background-tone": [
+   {
+    "rule": "page axl:substrate-modes == 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "taste-skill:87aaa1"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are contrast sections a slightly darker shade of the same palette rather than a jump to another tone?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d18a1e"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "avoid-gradient-banding": [
+   {
+    "rule": "page ask \"Are dark colour fades free of visible banding, using a background image where needed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a3db71",
+       "vercel:71e3ed"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "prefer-apca-contrast": [
+   {
+    "rule": "text:body axl:apca-lc >= 75",
+    "values": [
+     {
+      "value": "75",
+      "qids": [
+       "ui-craft:49e3d4"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b5b0f4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:display axl:apca-lc >= 60",
+    "values": [
+     {
+      "value": "60",
+      "qids": [
+       "ui-craft:49e3d4"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b5b0f4"
+      ]
+     }
+    ]
+   }
+  ],
+  "set-select-colors-explicitly-for-dark-mode": [
+   {
+    "rule": "aria:combobox ask \"Do native select menus set background-color and color explicitly?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:585b74",
+       "vercel:691d8d"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "background-color-supports-content-only": [
+   {
+    "rule": "page ask \"Does background colour only support existing content or supply additional information?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:dcbca4"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "avoid-full-screen-background-color-in-long-lived": [
+   {
+    "rule": "page ask \"Is full-screen background colour avoided in views that stay onscreen for long periods?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:70a1c4"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "keep-anchor-hue-across-light-and-dark-modes": [
+   {
+    "rule": "page axl:anchor-hue-shift-between-modes == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:7db22f"
+      ]
+     }
+    ]
+   }
+  ],
+  "gradients-limited-to-two-stops": [
+   {
+    "rule": "page axl:gradient-stops <= 2",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "hallmark:3ad5b7"
+      ]
+     }
+    ]
+   }
+  ],
+  "gradients-limited-to-three-stops": [
+   {
+    "rule": "page axl:gradient-stops <= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:4b2caf"
+      ]
+     }
+    ]
+   }
+  ],
+  "derive-brand-hue-from-vibe": [
+   {
+    "rule": "page ask \"When no brand hue is given, is the hue derived from the vibe: warmth 30-60, technical 220-250, botanical 130-160, late-night 280-320, sun-drenched 60-80 degrees?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:396470"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page axl:accent-chroma between 0.12 0.16",
+    "values": [
+     {
+      "value": "0.12-0.16",
+      "qids": [
+       "hallmark:396470"
+      ]
+     }
+    ]
+   }
+  ],
+  "set-text-color-wherever-background-color-is-over": [
+   {
+    "rule": "page axl:bg-without-color == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:dfc833"
+      ]
+     }
+    ]
+   }
+  ],
+  "yellow-is-surface-only-never-type": [
+   {
+    "rule": "page ask \"Is signal yellow used only as a surface carrying ink, never as a text colour?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:9f6977"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "on-plate-text-color-follows-plate-color": [
+   {
+    "rule": "page ask \"Is text on red or ultramarine plates paper and text on yellow plates ink?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a6183b"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "high-contrast-only-where-it-matters": [
+   {
+    "rule": "page ask \"Is high contrast reserved for the elements that matter most?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ab2c7f"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "chart-series-desaturated-on-dark-with-luminance-": [
+   {
+    "rule": "ui:chart axl:series-luminance-gap >= 20% @media:dark",
+    "values": [
+     {
+      "value": "20%",
+      "qids": [
+       "deslop:766cf4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:chart ask \"Are chart series desaturated by about 15 percent on dark surfaces?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:766cf4"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "design-hierarchy-in-grayscale-first": [
+   {
+    "rule": "page ask \"Does the visual hierarchy read in grayscale before colour is added?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:fab244"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "choose-directions-outside-indigo-default": [
+   {
+    "rule": "page axl:accent-in-violet-band == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:9f1c5b"
+      ]
+     }
+    ]
+   }
+  ],
+  "commit-to-one-substrate-palette": [
+   {
+    "rule": "page axl:substrate-modes == 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "taste-skill:9b6cb3"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-charcoal-graphite-neutrals-with-restrained-g": [
+   {
+    "rule": "page ask \"Are neutrals charcoal, graphite or zinc, with glow only when justified?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:affb77"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "use-editorial-color-washes": [
+   {
+    "rule": "page ask \"Do colour washes match the brand mood?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:48c7ea"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "avoid-plain-white-surfaces-by-default": [
+   {
+    "rule": "page background-color !contains #ffffff",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:704ce4"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-primary-colored-large-backgrounds": [
+   {
+    "rule": "page ask \"Are large backgrounds and sections free of bright primary colours?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:df59b1"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "break-even-gradients-with-noise-or-radial": [
+   {
+    "rule": "page ask \"Are gradients broken up with radial shapes or noise rather than even linear fades?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:676153"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "no-gradient-text-on-large-headers": [
+   {
+    "rule": "text:display background-clip !contains text",
+    "values": [
+     {
+      "value": "text",
+      "qids": [
+       "taste-skill:e39d14"
+      ]
+     }
+    ]
+   }
+  ],
+  "rotate-palettes-between-projects": [
+   {
+    "rule": "process ask \"Does each build rotate to a different accent palette family when the brief names no brand colour?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:87d0f5"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "logos-render-in-light-and-dark-modes": [
+   {
+    "rule": "aria:img ask \"Do logos render in both light and dark modes?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:63504e"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "keep-hierarchy-parity-across-light-and-dark": [
+   {
+    "rule": "page ask \"Does a visual hierarchy that works in light also work in dark?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:46cd0f"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "keep-semantic-color-cut-decorative-color": [
+   {
+    "rule": "page ask \"Is semantic colour kept and decorative colour cut?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e2d440"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "default-to-light-theme": [
+   {
+    "rule": "page ask \"Is the default theme light unless the user asks for dark?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0f58b4"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "commit-fully-to-saturated-color": [
+   {
+    "rule": "page ask \"Is a saturated hero committed to fully rather than hedged with timid neutrals?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4c4a80"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "equalize-chroma-per-hue-in-palettes": [
+   {
+    "rule": "page ask \"Is chroma held as a percentage of each hue's own maximum across a multi-hue palette?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:42e6f3"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "richer-chroma-on-p3-displays": [
+   {
+    "rule": "page ask \"Does the sRGB-safe value ship as the default, with a richer chroma at the same hue and lightness on P3 displays?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5b2cfe"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "no-gray-text-on-colored-backgrounds": [
+   {
+    "rule": "text:* axl:gray-on-colored-background == 0",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4a4ea6"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-rainbow-palette-for-sequential-data": [
+   {
+    "rule": "ui:chart ask \"Do sequential data palettes avoid hue-only rainbow scales?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:90bf35"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "diverging-palettes-need-semantic-midpoint": [
+   {
+    "rule": "ui:chart ask \"Does a diverging palette have a semantic midpoint?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:87717c"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ]
+ },
+ "new_measures": {
+  "axl:gradient-stops": "Maximum number of colour stops in any single CSS gradient (linear, radial, conic) found in computed background-image on the page; count.",
+  "axl:gradient-count": "Number of elements on the page whose computed background-image contains a gradient; count.",
+  "axl:accent-hues": "Number of distinct accent hues on the page: hue of each non-neutral (OKLCH chroma >= 0.04) fill or text colour, clustered in 30-degree bins, excluding semantic status colours; count.",
+  "axl:accent-coverage": "Share of the viewport area (first screen, each viewport) painted with accent-coloured fills, as a percentage; accent = non-neutral colour from the primary accent hue.",
+  "axl:background-lightness": "OKLCH lightness of the page's computed background colour in light theme; percentage.",
+  "axl:gray-on-colored-background": "Number of text elements whose colour is a neutral gray (OKLCH chroma < 0.02) on a background of a chromatic colour (chroma >= 0.04); count.",
+  "axl:color-saturation": "Highest HSL saturation among chromatic (non-neutral) fill and accent colours on the page; percentage.",
+  "axl:accent-chroma": "Highest OKLCH chroma among accent colours on the page; unitless 0-0.4.",
+  "axl:raw-color-values": "Number of colour literals (hex, rgb, hsl, oklch) used in style rules outside custom-property (token) definitions; count.",
+  "axl:neutral-chroma": "Lowest OKLCH chroma among neutral colours (surface, border, ink) on the matched elements, where neutral means chroma < 0.04; unitless.",
+  "axl:oklch-colors": "Share of declared colour values written in oklch() (a hex fallback does not count against); percentage.",
+  "axl:purple-blue-gradients": "Number of gradients on the page whose stops span purple/indigo/violet (OKLCH hue 250-320) to blue, cyan, pink or magenta; count.",
+  "axl:accent-in-violet-band": "Number of accent colours on the page with OKLCH hue between 250 and 320 degrees; count.",
+  "axl:colored-glow-shadows": "Number of box-shadow or text-shadow values that are a zero-offset chromatic halo, or any coloured blurred shadow on a dark background; count.",
+  "axl:dark-scheme-declared": "1 when the root declares color-scheme including dark (or a prefers-color-scheme: dark stylesheet exists), else 0.",
+  "axl:theme-color-match": "1 when <meta name=theme-color> equals the page background colour (per colour scheme), else 0.",
+  "axl:substrate-modes": "Number of distinct light/dark background substrates used by top-level page sections (light if OKLCH L >= 60%, else dark); count.",
+  "axl:contrast-gain": "Contrast ratio of the matched state (hover, active, focus) minus contrast ratio of the same element at rest, text or boundary against its background; ratio points.",
+  "axl:apca-lc": "Lowest APCA lightness contrast (Lc, absolute) of text against its background across the matched elements; Lc.",
+  "axl:anchor-hue-shift-between-modes": "Largest OKLCH hue difference in degrees between the anchor (brand/accent) colour in light mode and in dark mode; degrees.",
+  "axl:bg-without-color": "Number of style rules that set background-color without also setting color; count.",
+  "axl:series-luminance-gap": "Smallest OKLCH lightness difference between adjacent series colours in a chart; percentage points."
+ },
+ "new_elements": {}
+}

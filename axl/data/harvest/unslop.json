@@ -1,0 +1,2004 @@
+{
+ "source": "Unslop UI",
+ "publisher": "JCarterJohnson",
+ "kind": "skill",
+ "urls": [
+  "https://www.claudecodehq.com/playbooks/unslop-ui",
+  "https://github.com/JCarterJohnson/vibecoded-design-tells"
+ ],
+ "retrieved_at": "2026-09-30T06:32:34.432998Z",
+ "items": [
+  {
+   "text": "This repo holds three Reddit-mined studies of what people flag as AI \"slop\", and a Claude skill built from each: one for websites and UI, one for writing, and one for code.",
+   "file": "h_unslop__1.txt",
+   "section": "What makes a site look \"vibe-coded\": the data",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The flagship study, written up in full below, ranked the visual \"tells\" people use to spot AI-built (vibe-coded) websites.",
+   "file": "h_unslop__1.txt",
+   "section": "What makes a site look \"vibe-coded\": the data",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "No API key, no auth.",
+   "file": "h_unslop__1.txt",
+   "section": "What makes a site look \"vibe-coded\": the data",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Pick the one for what you want to clean up.",
+   "file": "h_unslop__1.txt",
+   "section": "The three skills",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**3,033** comments harvested from **125 canonical threads** (\"why do AI sites all look the same\", \"dead giveaways for AI slop websites\", and similar). These comments are the cleanest signal because they are 100% on-topic.",
+   "file": "h_unslop__1.txt",
+   "section": "The numbers",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Every top tell was adversarially verified by an independent pass. 11 of 12 held up; one (\"mesh / blob / aurora backgrounds\") was rejected as a keyword artifact.",
+   "file": "h_unslop__1.txt",
+   "section": "The numbers",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The loudest complaint is not any single feature.",
+   "file": "h_unslop__1.txt",
+   "section": "Headline finding",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "\"They all look the same\" and \"screams AI / slop\" each show up in about 13% of on-topic posts.",
+   "file": "h_unslop__1.txt",
+   "section": "Headline finding",
+   "category": "Type",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "It does not impose a look.",
+   "file": "h_unslop__1.txt",
+   "section": "The skill",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "It removes the AI tells (including the newer cream-plus-serif-plus-sage \"tasteful default\" that just trading one default for another produces) and forces a deliberate, project-specific choice instead.",
+   "file": "h_unslop__1.txt",
+   "section": "The skill",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Share of posts or comments, not raw counts.",
+   "file": "h_unslop__1.txt",
+   "section": "Method and caveats",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A tell that recurs across many threads ranks above one that spikes in a single viral thread.",
+   "file": "h_unslop__1.txt",
+   "section": "Method and caveats",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "See `unslop-ai-ui/DATA_AND_GRAPHS.md` for the per-tell false-positive notes.",
+   "file": "h_unslop__1.txt",
+   "section": "Method and caveats",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A Claude skill that strips the cues that make a website read as AI-generated and forces a deliberate, project-specific choice instead of the model's default.",
+   "file": "h_unslop__2.txt",
+   "section": "unslop-ui",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "It does not impose a look or hand you taste.",
+   "file": "h_unslop__2.txt",
+   "section": "unslop-ui",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The point that the first version missed: replacing one default with another is not unslopping.",
+   "file": "h_unslop__2.txt",
+   "section": "unslop-ui",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The 2024 tell was the purple gradient.",
+   "file": "h_unslop__2.txt",
+   "section": "unslop-ui",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The 2026 tell is the cream background plus a serif display font plus sage green (the current Claude/Anthropic house look).",
+   "file": "h_unslop__2.txt",
+   "section": "unslop-ui",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This version flags that new \"tasteful default\" too, never prescribes a single look, and leans on a specification-first build mode plus an `unslop-ignore` escape hatch for choices you made on purpose.",
+   "file": "h_unslop__2.txt",
+   "section": "unslop-ui",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "See the [animated demo](../demo/demo.html): one prompt becomes four distinct deliberate designs, all of which pass the scanner.",
+   "file": "h_unslop__2.txt",
+   "section": "unslop-ui",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The exit code is the number of high-severity findings, so a CI step can fail on it:",
+   "file": "h_unslop__2.txt",
+   "section": "Run the scanner without installing anything",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**This skill does not give you a good design, and it does not have a preferred look.** It does two narrow things.",
+   "file": "h_unslop__3.txt",
+   "section": "unslop-ui",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "It removes the specific cues that make a site read as AI-generated, and it forces a deliberate, project-specific choice where the model would otherwise reach for its default.",
+   "file": "h_unslop__3.txt",
+   "section": "unslop-ui",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A guardrail is not a designer.",
+   "file": "h_unslop__3.txt",
+   "section": "unslop-ui",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The failure mode of every anti-slop effort is replacing one default look with another.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The 2024 tell was the purple-to-blue gradient on a dark hero.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The 2026 tell is a warm cream background with a serif display font (Instrument Serif, Fraunces) and a sage or forest green accent, which is the current Claude/Anthropic house style.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Swapping the first for the second is not unslopping.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "So this skill never prescribes a palette, a font, or a layout.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Prescribing one is how you become next year's slop.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "What it does instead: detect the defaults (old AND new), and require that any replacement be a specific choice the user or project actually made, not the model's next-most-likely guess.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The only universal rule here is \"make a deliberate choice and be able to say why,\" which is the one thing a default never is.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If the user genuinely wants purple, neon, a serif, or a cream background as a real brand decision, that is not slop and the skill leaves it alone.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A tell is an *unspecified default*, not a banned color.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Honor `unslop-ignore` (see Audit mode) for anything chosen on purpose.",
+   "file": "h_unslop__3.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "serif + green house look that this skill now flags as a tell. unslop-ui is complementary and adds three things that one does not:",
+   "file": "h_unslop__3.txt",
+   "section": "How this differs from the built-in frontend-design skill",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Most \"looks AI\" outcomes are a specification problem, not a styling problem.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Either pull it from the user, or if they have not given one, state the choices you are making and why, then proceed.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not silently fall back to defaults.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**A reference.** One real site, screenshot, brand, or product whose design language to follow. This single input does more than every other rule combined. If the user has one, anchor to it.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**A color decision.** A real brand color or a deliberately chosen one, stated. Not the framework default, and not the cream/sage default either.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**A type decision.** A specific typeface or pairing chosen for this project, with a reason. Avoid the top-50 defaults reached for on autopilot (Inter, Geist on the sans side; Instrument Serif, Fraunces, Playfair on the \"tasteful\" side) unless they are a real choice.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**A layout intent.** What the page is actually for and what the user should do first, which determines structure. This is how you avoid the hero + three-card skeleton: the structure follows the goal, not a template.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When the user gives no brief and wants you to just build, do not produce one median result.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Produce a deliberate one and say what you chose, or offer two or three genuinely distinct directions.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Then, while building, avoid the specific tells in [references/tells.md](references/tells.md). [references/choosing-a-look.md](references/choosing-a-look.md) is a process for making the color/type/layout choices deliberately, written as a method rather than a prescription, precisely so it does not become the next default.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 1: Build (the important one)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When reviewing or cleaning existing code, or when the user says \"does this look AI,\" \"de-slop this,\" \"make it not look vibe-coded,\" run the scanner first, then fix in priority order.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "It cannot see layout coherence, spacing consistency, or whether text overflows its container, and those are also what make a site read as AI, so after the scan, check those by eye against the catalog.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use it when a flagged value is a real decision, so the audit stays trustworthy and does not nag about a chosen brand color.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Fixing well.** Do not fix `bg-purple-600` by swapping in `bg-emerald-700`, which is just a different default.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Fix it by applying the project's actual color, or by asking what the color should be.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A fix that introduces a new unspecified default is not a fix.",
+   "file": "h_unslop__3.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Grounded in the data, not vibes.",
+   "file": "h_unslop__3.txt",
+   "section": "What this deliberately does not flag",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Dark mode itself is fine; only unprompted glow is a tell. shadcn and Tailwind themselves are fine; their untouched defaults are the tell.",
+   "file": "h_unslop__3.txt",
+   "section": "What this deliberately does not flag",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The goal is a site that looks like a person made a decision, which is the one thing the scanner cannot do for them.",
+   "file": "h_unslop__3.txt",
+   "section": "Reporting an audit",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Any specific recommendation, repeated, becomes the next default and the next tell.",
+   "file": "h_unslop__4.txt",
+   "section": "Choosing a look (a method, not a palette)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The first version of this skill recommended cream backgrounds, a forest-green accent, and Fraunces, which is exactly the look people now recognize as AI-tasteful on sight.",
+   "file": "h_unslop__4.txt",
+   "section": "Choosing a look (a method, not a palette)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "So this file gives you a way to decide, not a thing to copy.",
+   "file": "h_unslop__4.txt",
+   "section": "Choosing a look (a method, not a palette)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The goal is one outcome: a design where every major choice has a reason that is specific to this project.",
+   "file": "h_unslop__4.txt",
+   "section": "Choosing a look (a method, not a palette)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "That is the single property a default can never have, and it is what makes a site stop reading as machine-made.",
+   "file": "h_unslop__4.txt",
+   "section": "Choosing a look (a method, not a palette)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ask the user for one site, brand, or screenshot whose feel they want.",
+   "file": "h_unslop__4.txt",
+   "section": "Start from a reference, always",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If there is genuinely no reference and you must choose, pick a *named direction* and commit to it, rather than \"modern and clean.\" For example: dense and utilitarian (think trading terminal), editorial and text-forward (think a magazine), warm and consumer (think a friendly app), stark",
+   "file": "h_unslop__4.txt",
+   "section": "Start from a reference, always",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Decide a primary from the project, not the framework.",
+   "file": "h_unslop__4.txt",
+   "section": "Color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The test is not \"is this color nice,\" it is \"can I say why this project uses it.\" Avoid the current defaults on both ends: framework indigo/violet, and tasteful cream/sage.",
+   "file": "h_unslop__4.txt",
+   "section": "Color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Pick type for a reason and pair it.",
+   "file": "h_unslop__4.txt",
+   "section": "Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Pairing a display face with a separate body face almost always reads as more considered than one face everywhere.",
+   "file": "h_unslop__4.txt",
+   "section": "Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Steer away from the autopilot picks on both sides: Inter and Geist (the \"no choice\" defaults) and Instrument Serif, Fraunces, Playfair (the \"tasteful choice\" defaults).",
+   "file": "h_unslop__4.txt",
+   "section": "Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "They are not banned, they are overexposed, so use them only as a real decision, ideally not for the headline that sets the whole tone.",
+   "file": "h_unslop__4.txt",
+   "section": "Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Structure follows the goal, not a template.",
+   "file": "h_unslop__4.txt",
+   "section": "Layout",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Decide what the page is for and what the user should do first, and let that determine the sections.",
+   "file": "h_unslop__4.txt",
+   "section": "Layout",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This is how you avoid the centered hero plus three identical feature cards: that skeleton appears when structure is chosen by default instead of by purpose.",
+   "file": "h_unslop__4.txt",
+   "section": "Layout",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Show the real product (a true screenshot, real data, real numbers) over abstract icon cards.",
+   "file": "h_unslop__4.txt",
+   "section": "Layout",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Motion should communicate something and respect `prefers-reduced-motion`.",
+   "file": "h_unslop__4.txt",
+   "section": "Motion, radius, detail",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Radius should be a small intentional scale, not one value on everything.",
+   "file": "h_unslop__4.txt",
+   "section": "Motion, radius, detail",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Glow, gradients, and effects are decisions to justify, not defaults to accept.",
+   "file": "h_unslop__4.txt",
+   "section": "Motion, radius, detail",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you do only one thing, get a real reference from the user and match it.",
+   "file": "h_unslop__4.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The skill removes the tells; this method is how you replace them with something chosen rather than something defaulted.",
+   "file": "h_unslop__4.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ordered by priority (comment share in the on-topic data, which is the cleanest signal).",
+   "file": "h_unslop__5.txt",
+   "section": "The vibe-coded tells: full catalog",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The Reddit data was collected through mid-2026 and the loudest single tell in it is the *old* default (purple gradient, dark hero).",
+   "file": "h_unslop__5.txt",
+   "section": "The vibe-coded tells: full catalog",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The fastest-rising tell now is the \"tasteful default\" the previous generation of anti-slop advice created, so it leads this catalog even though its raw count in the historical data is still climbing.",
+   "file": "h_unslop__5.txt",
+   "section": "The vibe-coded tells: full catalog",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Treat tell 0 and tell 1 as co-top-priority.",
+   "file": "h_unslop__5.txt",
+   "section": "The vibe-coded tells: full catalog",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The new \"tasteful default\" (cream + serif + sage) — the 2026 tell",
+   "file": "h_unslop__5.txt",
+   "section": "Contents",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Default shadcn / Tailwind look",
+   "file": "h_unslop__5.txt",
+   "section": "Contents",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Cleared by the data (do not chase)",
+   "file": "h_unslop__5.txt",
+   "section": "Contents",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Why it leads:** this is the look the previous wave of anti-slop advice (including Claude's own frontend-design skill) converged on, so it is now the single most recognizable \"AI tried to be tasteful\" signal.",
+   "file": "h_unslop__5.txt",
+   "section": "0. The new \"tasteful default\" (cream + serif + sage)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The purple gradient at least looked like a default.",
+   "file": "h_unslop__5.txt",
+   "section": "0. The new \"tasteful default\" (cream + serif + sage)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This one looks like taste, so being told it is also a default lands harder.",
+   "file": "h_unslop__5.txt",
+   "section": "0. The new \"tasteful default\" (cream + serif + sage)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The combination of any two of those three is the strong signal.",
+   "file": "h_unslop__5.txt",
+   "section": "0. The new \"tasteful default\" (cream + serif + sage)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Fix:** the fix is not \"use a different nice palette,\" because that is how you got here.",
+   "file": "h_unslop__5.txt",
+   "section": "0. The new \"tasteful default\" (cream + serif + sage)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Anchor the look to the actual brand or a real reference, and if there is none, pick a direction that is specific and uncommon rather than the current tasteful average.",
+   "file": "h_unslop__5.txt",
+   "section": "0. The new \"tasteful default\" (cream + serif + sage)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The tell is reaching for it because it is what \"good\" auto- completes to.",
+   "file": "h_unslop__5.txt",
+   "section": "0. The new \"tasteful default\" (cream + serif + sage)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Evidence:** named in 2.5% of on-topic comments, the single most-cited concrete cause of the \"they all look the same\" reaction.",
+   "file": "h_unslop__5.txt",
+   "section": "1. Default shadcn / Tailwind look",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Also: \"It is because everyone use shadcn/ui.\"",
+   "file": "h_unslop__5.txt",
+   "section": "1. Default shadcn / Tailwind look",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The slate/zinc/gray neutral cards, the default ring/border, the uniform `p-6` padding rhythm, and the stock `rounded-lg` are a fingerprint. shadcn is not the problem; shipping it untouched is.",
+   "file": "h_unslop__5.txt",
+   "section": "1. Default shadcn / Tailwind look",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The trio `rounded-lg border bg-card text-card-foreground shadow-sm` (the stock Card) repeated many times with no theming.",
+   "file": "h_unslop__5.txt",
+   "section": "1. Default shadcn / Tailwind look",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Point people at theme generators (for example tweakcn) if they want a fast non-default token set.",
+   "file": "h_unslop__5.txt",
+   "section": "1. Default shadcn / Tailwind look",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The test: could someone tell your Card from the shadcn docs Card in a screenshot?",
+   "file": "h_unslop__5.txt",
+   "section": "1. Default shadcn / Tailwind look",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If not, you have not themed it.",
+   "file": "h_unslop__5.txt",
+   "section": "1. Default shadcn / Tailwind look",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Evidence:** named in 2.3% of comments, the top color tell, and it co-occurs with \"gradients\" more than any other pair (32 times).",
+   "file": "h_unslop__5.txt",
+   "section": "2. AI purple (violet / indigo primary)",
+   "category": "Color",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Commenters trace it directly to Tailwind's default indigo.",
+   "file": "h_unslop__5.txt",
+   "section": "2. AI purple (violet / indigo primary)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Why it reads as AI:** Tailwind's default-ish accent and a lot of starter templates land on indigo/violet (#6366f1, violet-500/600).",
+   "file": "h_unslop__5.txt",
+   "section": "2. AI purple (violet / indigo primary)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Models reach for it when no brand color is given, so purple-as-primary is a strong \"nobody chose this\" signal.",
+   "file": "h_unslop__5.txt",
+   "section": "2. AI purple (violet / indigo primary)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Tailwind: `indigo-*`, `violet-*`, `purple-*`, `fuchsia-*` used as the primary/CTA/link color (not just an accent dot).",
+   "file": "h_unslop__5.txt",
+   "section": "2. AI purple (violet / indigo primary)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Fix:** choose a brand color that is not in the violet/indigo/purple band, or if purple is genuinely the brand, make it a specific, off-default purple and pair it with a non-default neutral so it does not read as the Tailwind swatch.",
+   "file": "h_unslop__5.txt",
+   "section": "2. AI purple (violet / indigo primary)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The point is a chosen color, not the default one.",
+   "file": "h_unslop__5.txt",
+   "section": "2. AI purple (violet / indigo primary)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Why it reads as AI:** the purple-to-blue (or purple-to-pink) gradient on the hero, gradient-filled headings, and gradient buttons are a template default.",
+   "file": "h_unslop__5.txt",
+   "section": "3. Gradients everywhere / gradient text",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Gradient *body text* especially screams generated, because almost no deliberate brand does it on real copy.",
+   "file": "h_unslop__5.txt",
+   "section": "3. Gradients everywhere / gradient text",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Fix:** default to solid fills.",
+   "file": "h_unslop__5.txt",
+   "section": "3. Gradients everywhere / gradient text",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Allow at most one restrained gradient as an accent (and prefer analogous, low-contrast stops over the rainbow purple-to-blue).",
+   "file": "h_unslop__5.txt",
+   "section": "3. Gradients everywhere / gradient text",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never put a gradient on running headings or paragraph text.",
+   "file": "h_unslop__5.txt",
+   "section": "3. Gradients everywhere / gradient text",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A single solid, confident brand color beats a gradient almost every time.",
+   "file": "h_unslop__5.txt",
+   "section": "3. Gradients everywhere / gradient text",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Flagged as a real but **minor and noisier** signal (the keyword catches tool mentions and positive notes too), so weight it below the color and layout tells.",
+   "file": "h_unslop__5.txt",
+   "section": "4. Too many animations (fade-ins, hover-grow, parallax, scrolljacking)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Why it reads as AI:** generated sites tend to bolt fade-in-on-scroll onto every section and a scale-up on every card hover, because the starter components include it.",
+   "file": "h_unslop__5.txt",
+   "section": "4. Too many animations (fade-ins, hover-grow, parallax, scrolljacking)",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Tailwind/AOS: `data-aos=\"fade-up\"` everywhere, `animate-*` on most sections, `hover:scale-105` on every card.",
+   "file": "h_unslop__5.txt",
+   "section": "4. Too many animations (fade-ins, hover-grow, parallax, scrolljacking)",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Fix:** use motion only when it communicates state or guides attention, and make it the exception, not the wrapper around every element.",
+   "file": "h_unslop__5.txt",
+   "section": "4. Too many animations (fade-ins, hover-grow, parallax, scrolljacking)",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If every section animates the same way, none of it means anything; cut it.",
+   "file": "h_unslop__5.txt",
+   "section": "4. Too many animations (fade-ins, hover-grow, parallax, scrolljacking)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Why it reads as AI:** one large radius applied uniformly (cards, inputs, buttons, images, the whole page) plus fully-pill buttons is a default.",
+   "file": "h_unslop__5.txt",
+   "section": "5. Rounded corners and pill buttons on everything",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Pill buttons: `rounded-full` on every button.",
+   "file": "h_unslop__5.txt",
+   "section": "5. Rounded corners and pill buttons on everything",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Not everything needs to be maximally rounded.",
+   "file": "h_unslop__5.txt",
+   "section": "5. Rounded corners and pill buttons on everything",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Sharp or lightly-rounded corners often read as more deliberate.",
+   "file": "h_unslop__5.txt",
+   "section": "5. Rounded corners and pill buttons on everything",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Pill buttons are fine occasionally, not as the only button shape.",
+   "file": "h_unslop__5.txt",
+   "section": "5. Rounded corners and pill buttons on everything",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Why it reads as AI:** dark background plus neon `text-shadow`/`box-shadow` glow on headings, buttons, or borders, unprompted, is a generated-template default.",
+   "file": "h_unslop__5.txt",
+   "section": "6. Dark mode with neon glow (added unprompted)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Dark mode itself is fine; the unrequested glow is the tell.",
+   "file": "h_unslop__5.txt",
+   "section": "6. Dark mode with neon glow (added unprompted)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Glow shadows: `shadow-[0_0_*]`, large colored `box-shadow` / `text-shadow` with low blur spread and a saturated color, `drop-shadow-[0_0_*]`.",
+   "file": "h_unslop__5.txt",
+   "section": "6. Dark mode with neon glow (added unprompted)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Fix:** remove glow you did not deliberately design.",
+   "file": "h_unslop__5.txt",
+   "section": "6. Dark mode with neon glow (added unprompted)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If the brand is genuinely neon/cyberpunk, keep it sparing and intentional.",
+   "file": "h_unslop__5.txt",
+   "section": "6. Dark mode with neon glow (added unprompted)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Default dark mode should rely on contrast and spacing, not glow.",
+   "file": "h_unslop__5.txt",
+   "section": "6. Dark mode with neon glow (added unprompted)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Verified as real specifically as the \"emoji-as-icons\" pattern (the post-level count is inflated by emoji appearing in post bodies generally, so weight the *icon* usage, not emoji in copy broadly).",
+   "file": "h_unslop__5.txt",
+   "section": "7. Emoji used as icons or section bullets",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Why it reads as AI:** 🚀 ✨ ⚡ 🔒 used as feature-card icons or section bullets is a generated default (it needs no asset pipeline, so models reach for it).",
+   "file": "h_unslop__5.txt",
+   "section": "7. Emoji used as icons or section bullets",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Fix:** use a real icon set (Lucide, Phosphor, Heroicons rendered as SVG, or custom), or no icon at all.",
+   "file": "h_unslop__5.txt",
+   "section": "7. Emoji used as icons or section bullets",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep emoji out of headings and feature lists.",
+   "file": "h_unslop__5.txt",
+   "section": "7. Emoji used as icons or section bullets",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Emoji in genuine body copy where a person would actually use one is fine; emoji standing in for UI icons is not.",
+   "file": "h_unslop__5.txt",
+   "section": "7. Emoji used as icons or section bullets",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Inter font. 3 cards with thick border on left only\" (offered as a checklist of giveaways).",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Why it reads as AI:** Inter and Geist are the default sans for Tailwind/Next starters, so leaving them is \"nobody chose the type.\" Good type is one of the fastest ways to look deliberate.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "There are two default fonts now, not one.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Inter/Geist is the \"I didn't pick a font\" default.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Instrument Serif/Fraunces is the \"I tried to pick a tasteful font\" default (see tell 0).",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Reaching for either because it is what shows up first is the tell, not the font itself.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Sans defaults: `font-family: Inter` / `Geist` / `Roboto` / `system-ui` as the only face.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`next/font/google` importing one of the above with no real second face.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Tailwind `font-sans` left at default with no custom font config.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Fix:** choose a typeface with character for a reason, and pair it.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A distinctive display face over a clean body face breaks the default look, but only if the display face is a real choice and not the current default-tasteful serif.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The goal is a chosen type system you can justify, not the starter font and not the starter \"nice\" font.",
+   "file": "h_unslop__5.txt",
+   "section": "8. Generic sans fonts (Inter / Geist / Roboto / system default)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The structure itself is the tell, before any color.",
+   "file": "h_unslop__5.txt",
+   "section": "9. The centered hero + three feature cards + CTA skeleton",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use an asymmetric hero (content left, a real product screenshot or short video right).",
+   "file": "h_unslop__5.txt",
+   "section": "9. The centered hero + three feature cards + CTA skeleton",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Vary section layouts instead of stacking identical centered card grids.",
+   "file": "h_unslop__5.txt",
+   "section": "9. The centered hero + three feature cards + CTA skeleton",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Show the actual product over abstract icon-cards.",
+   "file": "h_unslop__5.txt",
+   "section": "9. The centered hero + three feature cards + CTA skeleton",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Real screenshots beat three icons-with-blurbs almost every time.",
+   "file": "h_unslop__5.txt",
+   "section": "9. The centered hero + three feature cards + CTA skeleton",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "These are not color or font choices, so the scanner mostly cannot see them, but they are a large part of why a generated page reads as AI.",
+   "file": "h_unslop__5.txt",
+   "section": "10. Layout-quality tells (overflow, spacing, alignment)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "They were the most specific technical complaints on the demo that prompted this rewrite (\"text going behind the container,\" \"heading needs an overflow,\" \"inconsistent paddings, misaligned elements, no logic behind the UI\").",
+   "file": "h_unslop__5.txt",
+   "section": "10. Layout-quality tells (overflow, spacing, alignment)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Check them by eye on every build.",
+   "file": "h_unslop__5.txt",
+   "section": "10. Layout-quality tells (overflow, spacing, alignment)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Text overflow and clipping.** A heading or label that runs past or behind its container, or a fixed-width card that does not handle long content. Generated layouts often place absolutely-positioned text near a card and never test a real string.",
+   "file": "h_unslop__5.txt",
+   "section": "10. Layout-quality tells (overflow, spacing, alignment)",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Inconsistent spacing.** A page that mixes many unrelated padding and gap values (`p-3` here, `p-7` there, arbitrary `mt-[37px]`) has no spacing system, and the eye reads that as machine-made. Use one spacing scale and apply it consistently.",
+   "file": "h_unslop__5.txt",
+   "section": "10. Layout-quality tells (overflow, spacing, alignment)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**Misalignment.** Elements that almost line up but do not (off-by-a-few-pixels edges, inconsistent column gutters). Align to a grid.",
+   "file": "h_unslop__5.txt",
+   "section": "10. Layout-quality tells (overflow, spacing, alignment)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**No information hierarchy.** Every section the same weight, nothing leading the eye. Decide what the user should see first and make the layout say so.",
+   "file": "h_unslop__5.txt",
+   "section": "10. Layout-quality tells (overflow, spacing, alignment)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Real but minor; fix if cheap, do not over-rotate.",
+   "file": "h_unslop__5.txt",
+   "section": "11. Lower-signal and copy tells",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Stock illustrations / clipart** (0.2%): undraw-style blobs and generic 3D. Use real screenshots or commissioned art.",
+   "file": "h_unslop__5.txt",
+   "section": "11. Lower-signal and copy tells",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**Gradient hero copy clichés**: \"Transform your X,\" \"Supercharge,\" \"Unleash,\" \"Effortlessly,\" \"Your X, reimagined.\" These pair with the gradient-text tell. Write specific copy about what the thing actually does.",
+   "file": "h_unslop__5.txt",
+   "section": "11. Lower-signal and copy tells",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Glassmorphism** (0.2%) and **bento grids** (0.1%): low signal and contested. Allowed.",
+   "file": "h_unslop__5.txt",
+   "section": "11. Lower-signal and copy tells",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**Mesh / blob / aurora backgrounds**: investigated and **rejected** as a keyword artifact (most matches were github \"/blob/\" URLs and metaphors). Not a real complaint.",
+   "file": "h_unslop__5.txt",
+   "section": "12. Cleared by the data (do not chase)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Bento grids**: dead last at 0.1%, and people actively defend them. Not a tell.",
+   "file": "h_unslop__5.txt",
+   "section": "12. Cleared by the data (do not chase)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**Dark mode itself**: only the unprompted *glow* is flagged, not dark mode.",
+   "file": "h_unslop__5.txt",
+   "section": "12. Cleared by the data (do not chase)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**shadcn / Tailwind themselves**: the *defaults* are the tell, not the tools. A themed shadcn site is invisible to this complaint.",
+   "file": "h_unslop__5.txt",
+   "section": "12. Cleared by the data (do not chase)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Flag what the data supports, at the weight it supports.",
+   "file": "h_unslop__5.txt",
+   "section": "12. Cleared by the data (do not chase)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Everything here is reproducible from the scripts in this folder against the Arctic Shift public Reddit archive (no API key).",
+   "file": "h_unslop__6.txt",
+   "section": "Vibe-coded site \"tells\": data and graphs",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**46,971** unique on-topic posts + **3,033** comments from **125** canonical \"why do AI sites all look the same / dead giveaways\" threads.",
+   "file": "h_unslop__6.txt",
+   "section": "Dataset",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Comment share** = share of the 3,033 on-topic comments naming the tell. This is the cleanest signal (100% on-topic) and the primary ranking.",
+   "file": "h_unslop__6.txt",
+   "section": "Method (reading rule)",
+   "category": "Color",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**Post share** = share of the 32,822 design-context posts mentioning the tell. Broader, noisier, used as a secondary check.",
+   "file": "h_unslop__6.txt",
+   "section": "Method (reading rule)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Each tell was then adversarially verified by an independent agent (is it real, is it visual, false-positive risk, best verbatim quote). 11 of 12 top tells confirmed; mesh/blob/aurora rejected as a keyword artifact.",
+   "file": "h_unslop__6.txt",
+   "section": "Method (reading rule)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "- | \"All looks the same\" / cookie-cutter (umbrella) | 6.1% | 13.1% (91% neg) | low | confirmed, top finding",
+   "file": "h_unslop__6.txt",
+   "section": "Ranked tells (master table)",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "1 | Default shadcn / Tailwind kit | 2.5% | 2.2% | medium | confirmed, top concrete cause",
+   "file": "h_unslop__6.txt",
+   "section": "Ranked tells (master table)",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "2 | Purple / violet (\"AI purple\") | 2.3% | 0.7% | low | confirmed, top color tell",
+   "file": "h_unslop__6.txt",
+   "section": "Ranked tells (master table)",
+   "category": "Color",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "- | Stock illustrations / clipart | 0.2% | 0.9% | - | not individually verified",
+   "file": "h_unslop__6.txt",
+   "section": "Ranked tells (master table)",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "What Reddit actually harps on is generic sameness, the default shadcn/Tailwind kit, and purple gradients.",
+   "file": "h_unslop__6.txt",
+   "section": "Ranked tells (master table)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`chart_post_vs_comment.png` — post vs comment signal per specific tell (shows the emoji and feature-card inflation at post level).",
+   "file": "h_unslop__6.txt",
+   "section": "Charts",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Scale and count graphs (numbers, not shares):",
+   "file": "h_unslop__6.txt",
+   "section": "Charts",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`chart_raw_counts_by_tell.png` — raw number of posts and comments matching each tell (the numerators), with the combined total per tell. Comment counts are the cleaner signal.",
+   "file": "h_unslop__6.txt",
+   "section": "Charts",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`chart_cooccurrence.png` — heatmap of how often two tells are named in the same comment; purple and gradients co-occur 32 times, the strongest pair.",
+   "file": "h_unslop__6.txt",
+   "section": "Charts",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`chart_sentiment_by_tell.png` — negative-sentiment share per tell (post-level, keyword-based).",
+   "file": "h_unslop__6.txt",
+   "section": "Charts",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`chart_top_threads.png` — the canonical threads behind the comment signal by upvotes; \"dead giveaways for AI slop websites\" leads at 2,445.",
+   "file": "h_unslop__6.txt",
+   "section": "Charts",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`analyze.py` / `analyze_comments.py` — tell tabulation (post-level / comment-level).",
+   "file": "h_unslop__6.txt",
+   "section": "File index",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Other people can: the indigo primary, the gradient headline, Inter left at default, three feature cards under a centered hero.",
+   "file": "h_unslop__8.txt",
+   "section": null,
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Who it's for: frontend developers, indie hackers shipping landing pages, agencies delivering client sites built with Claude Code, design engineers reviewing generated UI, teams adding a design check to CI Example \"Audit this Next.js app, does it look AI-generated?\" → A finding list with file:line",
+   "file": "h_unslop__8.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use this file whenever building, styling, reviewing, refactoring, or auditing any website, landing page, web app UI, dashboard, or front-end component.",
+   "file": "h_unslop__8.txt",
+   "section": "unslop-ui",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Honor `unslop-ignore` (see Mode 2: Audit) for anything chosen on purpose.",
+   "file": "h_unslop__8.txt",
+   "section": "The trap to avoid (this is the whole point)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When reviewing or cleaning existing code, or when the user says \"does this look AI,\" \"de-slop this,\" \"make it not look vibe-coded,\" scan first, then fix in priority order.",
+   "file": "h_unslop__8.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Walk them against the code signatures listed for each tell in Part 2 and report every finding with **file, line, the tell it matches, its severity, and the concrete fix**.",
+   "file": "h_unslop__8.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Full report** — every finding plus the vibe score.",
+   "file": "h_unslop__8.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**High severity only** — the strongest signals, for a fast pass.",
+   "file": "h_unslop__8.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Machine-readable** — a JSON list of findings for CI. Gate the build on the high-severity count. The upstream project ships a deterministic Python scanner (`scripts/devibe_scan.py`) that does exactly this and exits with the high-severity count so CI can fail the build.",
+   "file": "h_unslop__8.txt",
+   "section": "Mode 2: Audit (the guardrail)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The goal is a site that looks like a person made a decision, which is the one thing a scanner cannot do for them.",
+   "file": "h_unslop__8.txt",
+   "section": "Reporting an audit",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Also: \"It is because everyone use shadcn/ui.\" **Why it reads as AI:** shadcn/ui and Tailwind are excellent, but their *defaults* are the most common output a model produces.",
+   "file": "h_unslop__8.txt",
+   "section": "1. Default shadcn / Tailwind look",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "And it gives me a hint of the 'quality' of the backend.\" (r/ClaudeAI) **Why it reads as AI:** rocket/sparkle/lightning/lock emoji used as feature-card icons or section bullets is a generated default (it needs no asset pipeline, so models reach for it).",
+   "file": "h_unslop__8.txt",
+   "section": "7. Emoji used as icons or section bullets",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The usual suspects standing in for UI icons: rocket, sparkles, lightning bolt, fire, lightbulb, lock, check mark, target, star.",
+   "file": "h_unslop__8.txt",
+   "section": "7. Emoji used as icons or section bullets",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "These are not color or font choices, so a scan mostly cannot see them, but they are a large part of why a generated page reads as AI.",
+   "file": "h_unslop__8.txt",
+   "section": "10. Layout-quality tells (overflow, spacing, alignment)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**No information hierarchy.** Every section the same weight, nothing leading the eye. Decide what the user should see first and make the layout say so. Fixing color and font on an incoherent layout still leaves a site that reads as AI.",
+   "file": "h_unslop__8.txt",
+   "section": "10. Layout-quality tells (overflow, spacing, alignment)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**shadcn / Tailwind themselves**: the *defaults* are the tell, not the tools. A themed shadcn site is invisible to this complaint. Flag what the data supports, at the weight it supports. Over-flagging makes the audit noise.",
+   "file": "h_unslop__8.txt",
+   "section": "12. Cleared by the data (do not chase)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "So this gives you a way to decide, not a thing to copy.",
+   "file": "h_unslop__8.txt",
+   "section": "Part 3: Choosing a look (a method, not a palette)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This file removes the tells; this method is how you replace them with something chosen rather than something defaulted.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Get new playbooks like this one One email a week with new Claude Code workflows.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "README.md CollapseCopyDownload What This Does Gives Claude a ranked catalogue of the specific cues that make a website read as AI-generated, plus two ways to use it.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you give no brief, Claude states the choices it made and why instead of falling back to the median.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Most \"looks AI\" output is a specification problem, not a styling problem, and this is where it gets fixed.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Claude walks your .tsx, .jsx, .vue, .svelte, .astro, .css and .html files against the code signatures for each tell, reports every hit with file, line, severity and a concrete fix, then gives a vibe score.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The catalogue is not invented.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Each tell carries its comment share, so effort goes where people actually complain.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Tells the data cleared, like mesh backgrounds and bento grids, are explicitly listed as things not to chase.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The sharpest idea here: the skill refuses to prescribe a look.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "It flags the 2024 default (purple gradient on a dark hero) and the 2026 \"tasteful default\" that anti-slop advice created (cream background, Instrument Serif, sage green accent).",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Swapping one for the other resets the clock.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A tell is an unspecified default, not a banned color, so a purple you actually chose passes.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Quick Start Step 1: Create a Project Folder mkdir -p ~/Projects/my-site Or use an existing frontend repo.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For audit mode: \"Audit this codebase for AI design tells\" or \"does this look AI-generated?\" How Build Mode Works Claude establishes four things before writing CSS: A reference.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "One real site, brand, or screenshot to anchor to.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This single input does more than every other rule in the file.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "With none, Claude picks a named direction (editorial, brutalist, utilitarian-dense, warm-consumer, technical-mono) instead of \"modern and clean,\" which means nothing.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A real brand color or one sampled from something concrete.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Not the framework default and not cream-and-sage either.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Inter, Geist, Instrument Serif and Fraunces are allowed only as real choices, never as the autopilot pick.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "What the page is for and what the reader should do first.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Structure follows the goal, which is how you avoid the hero-plus-three-cards skeleton.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you say \"just build it,\" Claude produces one deliberate result and tells you what it chose, or offers two or three genuinely distinct directions.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "It will not hand you the median.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The Tells It Catches Thirteen entries, ordered by comment share in the data: The \"tasteful default\" (co-top priority) — cream page background (#faf8f5, bg-stone-50), a serif display face, a forest-green primary.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Any two of the three is a strong signal.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Gradients and gradient text (2.0%) — bg-clip-text text-transparent, from-purple-* to-blue-*, gradients on more than one surface.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Color",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Animation spam (1.1%) — whileHover={{ scale: 1.05 }} on every card, data-aos=\"fade-up\" on every section, scrolljacking.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Motion",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Uniform rounding (0.8%) — rounded-2xl/rounded-3xl everywhere, border-radius: 9999px on every button.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Dark mode itself is fine; the glow nobody asked for is the tell.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Default fonts (0.4%, flagged as understated) — Inter/Geist as the only face, or the \"tasteful\" serifs as the heading face with no second face.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Type",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Layout-quality tells — text overflowing its container, mixed padding values with no scale, near-misaligned edges, no hierarchy.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A scanner cannot see these, so check them by eye.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Copy clichés — \"Transform your X,\" \"Supercharge,\" \"Unleash,\" which pair with the gradient-text tell.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Pick by what you need: Unslop UI (this one) — rules derived from a real dataset of user complaints, with severity weights, and an audit pass for code that already exists.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use it when you want to check something, or when you want a guardrail that refuses to give you a house style.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use it when you want opinionated help making the thing look good.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Let a design skill build; let this one keep it honest.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The template says so explicitly: a guardrail is not a designer.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "One screenshot of a site you like beats every other input in the file, and it is the one thing a model cannot supply for you.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Flagged values you chose on purpose stop nagging, and the audit stays trustworthy.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Fix findings with the project's actual color, not another nice color.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Replacing bg-purple-600 with bg-emerald-700 is a new unspecified default, not a fix.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Limitations A scan reads code, not rendered pages.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Layout coherence, spacing rhythm, overflowing text and information hierarchy all need a human eye, and tell 10 exists precisely because those are a large share of why a page reads as generated.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Defaults move, which is the file's own core argument, so treat the ranking as current rather than permanent.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "It does not produce taste, a brand, or a layout, and the template opens by saying so.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A clean score means your code avoids the known tells, not that the design is good. $Related Playbooks Developer Tools Tunnel Doctor Diagnose and fix conflicts between Tailscale and proxy/VPN tools on macOS — route hijacking, proxy env vars, SSH double-tunneling, and the ~60s DNS",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "PlaybooksBlogAboutAdvertise PrivacyTermsLicensing ●Get weekly playbooks New workflows and tips delivered to your inbox every week.",
+   "file": "h_unslop__8.txt",
+   "section": "The one-line version",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

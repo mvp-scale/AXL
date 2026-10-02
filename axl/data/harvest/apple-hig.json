@@ -1,0 +1,638 @@
+{
+ "source": "Apple Human Interface Guidelines",
+ "publisher": "Apple",
+ "kind": "design-system",
+ "urls": [
+  "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+  "https://developer.apple.com/design/human-interface-guidelines/layout",
+  "https://developer.apple.com/design/human-interface-guidelines/typography",
+  "https://developer.apple.com/design/human-interface-guidelines/color"
+ ],
+ "retrieved_at": "2026-09-30T06:32:04.777779Z",
+ "items": [
+  {
+   "text": "Make sure people can adjust the size of your text or icons to make them more legible, visible, and comfortable to read.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Vision",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ideally, give people the option to enlarge text by at least 200 percent (or 140 percent in watchOS apps).",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Vision",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Use recommended defaults for custom type sizes.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Vision",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you’re using a custom font with a thin weight, aim for larger than the recommended sizes to increase legibility.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Vision",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use standard contrast calculators to ensure your UI meets acceptable levels.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Vision",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If your app doesn’t provide this minimum contrast by default, ensure it at least provides a higher contrast color scheme when the system setting Increase Contrast is turned on.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Vision",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If your app supports , make sure to check the minimum contrast in both light and dark appearances.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Vision",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use haptics in addition to audio cues.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Hearing",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If your interface conveys information through audio cues — such as a success chime, error sound, or game feedback — consider pairing that sound with matching haptics for people who can’t perceive the audio or have their audio turned off.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Hearing",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Strive to meet the recommended minimum control size for each platform to ensure controls and menus are comfortable for all when tapping and clicking.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Mobility",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Consider spacing between controls as important as size.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Mobility",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For interactions people do frequently in your app or game, use the simplest gesture possible — avoid custom multifinger and multihand gestures — so repetitive actions are both comfortable and easy to remember.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Mobility",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make sure your UI’s core functionality is accessible through more than one type of physical interaction.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Mobility",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For example, if you use a swipe gesture to dismiss a view, also make a button available so people can tap or use an assistive device.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Mobility",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "To ensure a smooth experience, label interface elements appropriately.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Mobility",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Let people use the keyboard alone to navigate and interact with your app.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Speech",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid overriding system-defined keyboard shortcuts and evaluate your app to ensure it works well with Full Keyboard Access.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Speech",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep actions simple and intuitive.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Cognitive",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Prefer system gestures and behaviors people are already familiar with over creating custom gestures people must learn and retain.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Cognitive",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Minimize use of time-boxed interface elements.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Cognitive",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Prefer dismissing views with an explicit action.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Cognitive",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid autoplaying audio and video content without also providing controls to start and stop it.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Cognitive",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When this setting is active, ensure your app or game responds by reducing automatic and repetitive animations, including zooming, scaling, and peripheral motion.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Cognitive",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Identify the core functionality of your app and consider removing noncritical workflows and UI elements.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Tracking animations directly with people’s gestures",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Always ask for confirmation twice whenever people perform an action that’s difficult to recover from, such a deleting a file.",
+   "file": "h_apple-hig__accessibility.txt",
+   "section": "Tracking animations directly with people’s gestures",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid using the same color to mean different things.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Best practices",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use color consistently throughout your interface, especially when you use it to help communicate information like status or interactivity.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Best practices",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make sure all your app’s colors work well in light, dark, and increased contrast contexts.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Best practices",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When possible, use system colors, which already define variants for all these contexts.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Best practices",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you define a custom color, make sure to supply light and dark variants, and an increased contrast option for each variant that provides a significantly higher amount of visual differentiation.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Best practices",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If your app lets people choose colors, prefer system-provided color controls where available.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Best practices",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid relying solely on color to differentiate between objects, indicate interactivity, or communicate essential information.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Inclusive color",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When you use color to convey information, be sure to provide the same information in alternative ways so people with color blindness or other visual disabilities can understand it.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Inclusive color",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For example, you can use text labels or glyph shapes to identify objects or states.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Inclusive color",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid using colors that make it hard to perceive content in your app.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Inclusive color",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid hard-coding system color values in your app.",
+   "file": "h_apple-hig__color.txt",
+   "section": "System colors",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid redefining the semantic meanings of dynamic system colors.",
+   "file": "h_apple-hig__color.txt",
+   "section": "System colors",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For example, don’t use the color as a text color, or color as a background color.",
+   "file": "h_apple-hig__color.txt",
+   "section": "System colors",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid using similar colors in control labels if your app has a colorful background.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Liquid Glass color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make sure your interface maintains sufficient contrast by avoiding overlap of similar colors in the content layer and controls when possible.",
+   "file": "h_apple-hig__color.txt",
+   "section": "Liquid Glass color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid using only color to indicate focus.",
+   "file": "h_apple-hig__color.txt",
+   "section": "tvOS",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use background color to support existing content or supply additional information.",
+   "file": "h_apple-hig__color.txt",
+   "section": "watchOS",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid using full-screen background color in views that are likely to remain onscreen for long periods of time, such as in a workout or audio-playing app.",
+   "file": "h_apple-hig__color.txt",
+   "section": "watchOS",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Align elements to make them easier to scan, and use indentation to convey hierarchy.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Visual hierarchy",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use progressive disclosure to make layouts cleaner and easier to interact with.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Visual hierarchy",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use SwiftUI or Auto Layout to ensure that your interface adapts to them.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Adaptability",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Even if your app is locked to a certain orientation, such as a landscape-only game, it’s still important to ensure your interface resizes well to provide the best experience across devices and window sizes.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Text-size changes",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "You can streamline the testing process by first testing versions of your experience that use the largest and the smallest layouts.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Text-size changes",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If this happens, don’t change the aspect ratio of the artwork; instead, scale it so that it fills the screen completely.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Text-size changes",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Consider all possible combinations of size classes.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Size classes",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep functionality the same as size classes change, and keep layout changes recognizable and familiar to the platform.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Size classes",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don’t change your app’s functionality based on the space it occupies.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Size classes",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Respecting the safe area is essential to make sure system UI and hardware features like the Dynamic Island don’t obstruct content and controls.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "Guides and safe areas",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid placing controls or critical information at the bottom of a window.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "macOS",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid displaying content behind the camera housing at the top edge of the window.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "macOS",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Consider how elements look when they’re focused, and make sure you don’t let them overlap important information.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "tvOS",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When you allow resizing, make sure your layout adapts well as it changes size, and prefer to keep content horizontally centered at very large sizes so people can easily view and interact with it.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "visionOS",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use these settings to keep elements from overlapping at small sizes, and to keep large layouts from becoming too unwieldy; but don’t use minimum and maximum sizes as a way to prevent resizing.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "visionOS",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For example, place buttons so their centers are at least 60 points apart.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "visionOS",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Avoid placing more than two or three controls side by side in your interface.",
+   "file": "h_apple-hig__layout.txt",
+   "section": "watchOS",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Use font sizes that most people can read easily.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Ensuring legibility",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Follow the recommended default and minimum text sizes for each platform — for both custom and system fonts — to ensure your text is legible on all devices.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Ensuring legibility",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you use a custom font with a thin weight, aim for larger than the recommended sizes to increase legibility.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Ensuring legibility",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "In general, avoid light font weights.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Ensuring legibility",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Minimize the number of typefaces you use, even in a highly customized interface.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Conveying hierarchy",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Consider using the built-in text styles.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Using system fonts",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you need to display three or more lines of text, avoid tight leading even in areas where height is limited.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Using system fonts",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "You can use the constants defined in to access all system fonts — don’t embed system fonts in your app or game.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Using system fonts",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make sure custom fonts are legible.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Using custom fonts",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make sure your app’s layout adapts to all font sizes.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Supporting Dynamic Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you use interface icons to communicate important information, make sure they’re easy to view at larger font sizes too.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Supporting Dynamic Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep text truncation to a minimum as font size increases.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Supporting Dynamic Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid truncating text in scrollable regions unless people can open a separate view to read the rest of the content.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Supporting Dynamic Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Consider adjusting your layout at large font sizes.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Supporting Dynamic Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "To improve readability, consider using a stacked layout where text appears above secondary items.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Supporting Dynamic Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Reduce the number of columns when the font size increases to avoid truncation and enhance readability.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "Supporting Dynamic Type",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "In general, prefer 2D text.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "visionOS",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "In this situation, you generally want to avoid adding shadows to increase text contrast.",
+   "file": "h_apple-hig__typography.txt",
+   "section": "visionOS",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

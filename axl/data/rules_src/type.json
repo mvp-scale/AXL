@@ -1,0 +1,2790 @@
+{
+ "class": "Type",
+ "tweaks": {
+  "type": [
+   {
+    "rule": "aria:heading axl:heading-body-weight-gap >= 300",
+    "values": [
+     {
+      "value": "300",
+      "qids": [
+       "hallmark:bf8097"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading axl:heading-body-size-ratio >= 1.25",
+    "values": [
+     {
+      "value": "1.25",
+      "qids": [
+       "impeccable:c77a42"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:hierarchy-step-ratio >= 1.5",
+    "values": [
+     {
+      "value": "1.5",
+      "qids": [
+       "ui-craft:b36822"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Can a viewer separate headline, evidence, and footnote layers at a glance?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:05d8d3",
+       "claw-design:decd57",
+       "claw-design:729bad",
+       "claw-design:1f1a14",
+       "ui-craft:4b5f21"
+      ]
+     }
+    ]
+   }
+  ],
+  "leading": [
+   {
+    "rule": "text:body axl:chars-per-line <= 65",
+    "values": [
+     {
+      "value": "65",
+      "qids": [
+       "taste-skill:c7a5db",
+       "taste-skill:4213f0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body ask \"Does body text have relaxed line-height?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:c7a5db",
+       "taste-skill:4213f0"
+      ]
+     }
+    ]
+   }
+  ],
+  "serif": [
+   {
+    "rule": "text:* axl:distinct-font-families between 2 3",
+    "values": [
+     {
+      "value": "2 3",
+      "qids": [
+       "deslop:7346e0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body axl:chars-per-line between 45 75",
+    "values": [
+     {
+      "value": "45 75",
+      "qids": [
+       "hallmark:31f7b5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* font-family !contains \"Times New Roman, Georgia, Garamond, Palatino\"",
+    "values": [
+     {
+      "value": "Times New Roman, Georgia, Garamond, Palatino",
+      "qids": [
+       "taste-skill:b2caa6",
+       "taste-skill:c2fdee"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body font-family !contains Inter",
+    "values": [
+     {
+      "value": "Inter",
+      "qids": [
+       "ui-craft:458e7f",
+       "taste-skill:ed5b24"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the page pair a distinctive display face with a separate body face?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:db7a27",
+       "hallmark:263508",
+       "hallmark:d2a963",
+       "deslop:7346e0",
+       "unslop:f2421b",
+       "unslop:114f83",
+       "unslop:6a0102"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:banner ask \"Does the wordmark use a different display face than the body?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:9a2390",
+       "hallmark:a6f68f",
+       "hallmark:d7bf65"
+      ]
+     }
+    ]
+   }
+  ],
+  "align": [
+   {
+    "rule": "text:body text-align == left",
+    "values": [
+     {
+      "value": "left",
+      "qids": [
+       "impeccable:98c011",
+       "oneredoak:b51701",
+       "deslop:798908",
+       "deslop:cf0256"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body axl:chars-per-line between 45 75",
+    "values": [
+     {
+      "value": "45 75",
+      "qids": [
+       "deslop:cf0256",
+       "deslop:7f37db"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Are numbers right-aligned and text left-aligned in table columns?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "oneredoak:b51701",
+       "deslop:798908"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading ask \"Does each section head align with the body it introduces?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:edde26"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:display ask \"Is the hero off-centre unless one element needs to be centred?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a6e51a"
+      ]
+     }
+    ]
+   }
+  ],
+  "tabular": [
+   {
+    "rule": "text:* font-variant-numeric contains tabular-nums",
+    "values": [
+     {
+      "value": "tabular-nums",
+      "qids": [
+       "feel-better:f011fe",
+       "feel-better:04dde9",
+       "deslop:28d758",
+       "ui-craft:ce2431",
+       "ui-craft:79ea78",
+       "vercel:0625ba",
+       "ui-craft:0e3cd8",
+       "taste-skill:0d6ae9"
+      ]
+     }
+    ]
+   }
+  ],
+  "tracking": [
+   {
+    "rule": "text:display letter-spacing between -0.04em -0.02em",
+    "values": [
+     {
+      "value": "-0.04em -0.02em",
+      "qids": [
+       "hallmark:867659",
+       "ui-craft:c0245b",
+       "impeccable:622b2e",
+       "deslop:280fe9",
+       "ui-craft:29d959"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:display line-height between 0.95 1.05",
+    "values": [
+     {
+      "value": "0.95 1.05",
+      "qids": [
+       "hallmark:867659"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:display font-size <= 6rem",
+    "values": [
+     {
+      "value": "6rem",
+      "qids": [
+       "impeccable:f57bc3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label letter-spacing between 0.05em 0.1em",
+    "values": [
+     {
+      "value": "0.05em 0.1em",
+      "qids": [
+       "ui-craft:0e764c",
+       "taste-skill:632f99",
+       "ui-craft:96ce1b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Is letter-spacing left unadjusted for CJK, Arabic, Devanagari and other non-Latin scripts?\"",
+    "class": "locale",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b286b1",
+       "ui-craft:366b21"
+      ]
+     }
+    ]
+   }
+  ],
+  "wrap": [
+   {
+    "rule": "aria:heading text-wrap == balance",
+    "values": [
+     {
+      "value": "balance",
+      "qids": [
+       "feel-better:8a265a",
+       "vercel:1c1518"
+      ]
+     }
+    ]
+   }
+  ],
+  "paragraph": [
+   {
+    "rule": "text:body ask \"Is every paragraph three sentences or fewer?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:712494",
+       "claw-design:3753ac"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body ask \"Are paragraphs separated by spacing or first-line indentation, but not both?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:5f8f0b"
+      ]
+     }
+    ]
+   }
+  ],
+  "width": [
+   {
+    "rule": "aria:main max-width <= 64rem",
+    "values": [
+     {
+      "value": "64rem",
+      "qids": [
+       "taste-skill:4ed7a3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body axl:chars-per-line <= 65",
+    "values": [
+     {
+      "value": "65",
+      "qids": [
+       "taste-skill:c7a5db"
+      ]
+     }
+    ]
+   }
+  ],
+  "headergap": [
+   {
+    "rule": "aria:heading axl:headings-crowded-above == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:81c946"
+      ]
+     }
+    ]
+   }
+  ],
+  "buttonweight": [
+   {
+    "rule": "aria:button ask \"Do buttons use stronger typography than surrounding body text?\"",
+    "class": "type",
+    "values": []
+   }
+  ],
+  "body-16": [
+   {
+    "rule": "text:body font-size >= 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "impeccable:b3b1d9",
+       "ui-craft:f24d64",
+       "impeccable:e6d3a0",
+       "impeccable:a2b590",
+       "deslop:f6b6cc"
+      ]
+     },
+     {
+      "value": "14px",
+      "qids": [
+       "hallmark:f0d4a2",
+       "taste-skill:f282ba",
+       "hallmark:38f635"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox font-size >= 16px @media:narrow",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "deslop:06f71f",
+       "impeccable:b3b1d9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* font-size >= 10px",
+    "values": [
+     {
+      "value": "10px",
+      "qids": [
+       "hallmark:f0d4a2"
+      ]
+     }
+    ]
+   }
+  ],
+  "banned-fonts": [
+   {
+    "rule": "text:* font-family !contains \"Inter, Roboto, Open Sans\"",
+    "values": [
+     {
+      "value": "Inter, Roboto, Open Sans",
+      "qids": [
+       "anthropic:d65725",
+       "hallmark:61a22e",
+       "taste-skill:e44ffc"
+      ]
+     },
+     {
+      "value": "Inter",
+      "qids": [
+       "taste-skill:9b813d",
+       "taste-skill:cb6237",
+       "taste-skill:b143dd",
+       "anthropic:82ff46",
+       "deslop:8ce027"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:display font-family !contains system-ui",
+    "values": [
+     {
+      "value": "system-ui",
+      "qids": [
+       "hallmark:a21279",
+       "deslop:aaa5f1",
+       "deslop:8ce027"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is each typeface chosen deliberately for this project, with a reason?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:189ff1",
+       "unslop:801fe3",
+       "impeccable:ff7c95",
+       "unslop:6a0102",
+       "unslop:f2277b",
+       "hallmark:4534ab",
+       "deslop:90186e",
+       "deslop:3a5f43"
+      ]
+     }
+    ]
+   }
+  ],
+  "type-scale": [
+   {
+    "rule": "text:* axl:distinct-font-sizes <= 6",
+    "values": [
+     {
+      "value": "6",
+      "qids": [
+       "ui-craft:4522a2",
+       "ui-craft:3db0ac",
+       "hallmark:f36af6"
+      ]
+     },
+     {
+      "value": "5",
+      "qids": [
+       "hallmark:40775f"
+      ]
+     },
+     {
+      "value": "8",
+      "qids": [
+       "deslop:3d2e5c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body font-size == 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "deslop:b4223e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading axl:heading-body-size-ratio >= 1.25",
+    "values": [
+     {
+      "value": "1.25",
+      "qids": [
+       "impeccable:c77a42"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do font sizes follow one stated modular ratio?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a7a2af",
+       "deslop:b4223e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Are font sizes set in rem/em or from scale variables?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:c709d2"
+      ]
+     }
+    ]
+   }
+  ],
+  "text-spacing": [
+   {
+    "rule": "text:* wcag:1.4.12 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:6719a4",
+       "axe:223aa1",
+       "impeccable:b86036"
+      ]
+     }
+    ]
+   }
+  ],
+  "line-height-scale": [
+   {
+    "rule": "text:label line-height between 1.3 1.4",
+    "values": [
+     {
+      "value": "1.3 1.4",
+      "qids": [
+       "ui-craft:ccb961"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body axl:chars-per-line between 45 75",
+    "values": [
+     {
+      "value": "45 75",
+      "qids": [
+       "impeccable:cae509"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:unitless-line-height == 100%",
+    "values": [
+     {
+      "value": "100%",
+      "qids": [
+       "webdev:d5f9ed"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body ask \"Do wider lines get proportionally more line-height?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:cae509",
+       "anthropic:eb8590",
+       "apple-hig:262b73"
+      ]
+     }
+    ]
+   }
+  ],
+  "body-line-height-1-5": [
+   {
+    "rule": "text:body line-height between 1.5 1.7",
+    "values": [
+     {
+      "value": "1.5 1.7",
+      "qids": [
+       "impeccable:701826",
+       "oneredoak:88d955",
+       "deslop:f6b6cc",
+       "ui-craft:a00c9c",
+       "taste-skill:6cf995"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body color !contains #000000",
+    "values": [
+     {
+      "value": "#000000",
+      "qids": [
+       "taste-skill:6cf995"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* wcag:1.4.12 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:af33bb"
+      ]
+     }
+    ]
+   }
+  ],
+  "heading-line-height-tight": [
+   {
+    "rule": "aria:heading line-height between 1.05 1.2",
+    "values": [
+     {
+      "value": "1.05 1.2",
+      "qids": [
+       "ui-craft:2b39b8",
+       "taste-skill:7a93ba"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:display line-height between 0.95 1.05",
+    "values": [
+     {
+      "value": "0.95 1.05",
+      "qids": [
+       "hallmark:867659",
+       "taste-skill:faf546"
+      ]
+     }
+    ]
+   }
+  ],
+  "max-line-length-65ch": [
+   {
+    "rule": "text:body axl:chars-per-line between 45 75",
+    "values": [
+     {
+      "value": "45 75",
+      "qids": [
+       "hallmark:38f635",
+       "hallmark:31f7b5",
+       "hallmark:2404b3",
+       "hallmark:e22fbe",
+       "hallmark:d8592a",
+       "impeccable:cae509",
+       "ui-craft:e982c2",
+       "deslop:7f37db",
+       "deslop:cf0256"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body max-width <= 65ch",
+    "values": [
+     {
+      "value": "65ch",
+      "qids": [
+       "hallmark:e22fbe",
+       "hallmark:d8592a",
+       "taste-skill:40053d",
+       "ui-craft:14cb50",
+       "ui-craft:600bf3",
+       "taste-skill:4f8934",
+       "ui-craft:e982c2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body ask \"Are line lengths set in rem or ch rather than px?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "webdev:8c73ed",
+       "webdev:838162"
+      ]
+     }
+    ]
+   }
+  ],
+  "font-weight-min-400": [
+   {
+    "rule": "text:* font-weight >= 400",
+    "values": [
+     {
+      "value": "400",
+      "qids": [
+       "apple-hig:eb77ad",
+       "ui-craft:5bd99c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body font-weight <= 500",
+    "values": [
+     {
+      "value": "500",
+      "qids": [
+       "ui-craft:5bd99c"
+      ]
+     }
+    ]
+   }
+  ],
+  "weight-scale-limited": [
+   {
+    "rule": "text:* axl:distinct-font-weights <= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "impeccable:c4ef3d",
+       "ui-craft:a4dfd3"
+      ]
+     },
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:880428"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body font-weight == 400",
+    "values": [
+     {
+      "value": "400",
+      "qids": [
+       "ui-craft:b9ca38",
+       "ui-craft:5bd99c",
+       "ui-craft:a4dfd3",
+       "hallmark:cad4ff"
+      ]
+     }
+    ]
+   }
+  ],
+  "font-family-count-max-2": [
+   {
+    "rule": "text:* axl:distinct-font-families <= 2",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:e8cd0b",
+       "ui-craft:49a164",
+       "ui-craft:dcea30",
+       "anthropic:1f9f6e"
+      ]
+     },
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:6bae6c",
+       "hallmark:97e2b5",
+       "ui-craft:35600d",
+       "deslop:7346e0",
+       "ui-craft:363ccb"
+      ]
+     }
+    ]
+   }
+  ],
+  "font-fallback-metrics": [
+   {
+    "rule": "text:* lighthouse:cumulative-layout-shift pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:eb700d",
+       "impeccable:bbd1aa"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Do fallback fonts match the web font metrics (size-adjust, ascent, descent, line-gap overrides)?\"",
+    "class": "perf",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:eb700d",
+       "impeccable:bbd1aa"
+      ]
+     }
+    ]
+   }
+  ],
+  "font-display-swap": [
+   {
+    "rule": "text:* lighthouse:font-display-insight pass",
+    "values": [
+     {
+      "value": "swap or optional",
+      "qids": [
+       "impeccable:1f3b76",
+       "deslop:3153dd",
+       "deslop:f793aa",
+       "taste-skill:2fb02e",
+       "webdev:76fe76"
+      ]
+     },
+     {
+      "value": "fallback",
+      "qids": [
+       "webdev:5bbb2e"
+      ]
+     }
+    ]
+   }
+  ],
+  "font-preload-critical": [
+   {
+    "rule": "text:* ask \"Are critical fonts preloaded?\"",
+    "class": "perf",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:d81586",
+       "vercel:163029"
+      ]
+     }
+    ]
+   }
+  ],
+  "font-subset": [
+   {
+    "rule": "text:* ask \"Are web fonts subset to only the characters and scripts used?\"",
+    "class": "perf",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:89da12",
+       "ui-craft:32c19c",
+       "vercel:718f47",
+       "impeccable:cd2a34"
+      ]
+     }
+    ]
+   }
+  ],
+  "variable-font": [
+   {
+    "rule": "page ask \"Are variable fonts used for new projects?\"",
+    "class": "perf",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:6558ba"
+      ]
+     }
+    ]
+   }
+  ],
+  "font-smoothing": [
+   {
+    "rule": "text:* ask \"Is font smoothing applied without overriding the chosen font family?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:57fd9e",
+       "feel-better:1f496e"
+      ]
+     }
+    ]
+   }
+  ],
+  "text-wrap-pretty": [
+   {
+    "rule": "text:body text-wrap == pretty",
+    "values": [
+     {
+      "value": "pretty",
+      "qids": [
+       "feel-better:509c8e",
+       "feel-better:c6692b",
+       "feel-better:b51605",
+       "vercel:3076a3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading text-wrap == balance",
+    "values": [
+     {
+      "value": "balance",
+      "qids": [
+       "vercel:1c1518",
+       "vercel:2b0eb0"
+      ]
+     }
+    ]
+   }
+  ],
+  "typographic-quotes": [
+   {
+    "rule": "text:* axl:quotes-typographic == 100%",
+    "values": [
+     {
+      "value": "100%",
+      "qids": [
+       "hallmark:11db15",
+       "hallmark:73594c",
+       "taste-skill:d67622",
+       "vercel:001124",
+       "vercel:2b0eb0"
+      ]
+     }
+    ]
+   }
+  ],
+  "real-ellipsis-dash": [
+   {
+    "rule": "text:* axl:ellipsis-three-dots == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:0451fc",
+       "hallmark:73594c",
+       "ui-craft:38e07e",
+       "vercel:1bd333",
+       "vercel:a60eff",
+       "vercel:0bd3c6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:dash-double-hyphen == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:135cd7",
+       "hallmark:73594c"
+      ]
+     }
+    ]
+   }
+  ],
+  "nonbreaking-spaces": [
+   {
+    "rule": "text:* axl:unglued-units == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:598ca5",
+       "vercel:d540c1",
+       "vercel:82c8e6",
+       "vercel:cdc631",
+       "vercel:c1900c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Are brand names and keyboard shortcuts kept together with non-breaking spaces?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c47079",
+       "vercel:d540c1",
+       "vercel:c1900c"
+      ]
+     }
+    ]
+   }
+  ],
+  "hyphenation": [
+   {
+    "rule": "text:body hyphens == auto",
+    "values": [
+     {
+      "value": "auto",
+      "qids": [
+       "impeccable:98c011"
+      ]
+     }
+    ]
+   }
+  ],
+  "dynamic-type": [
+   {
+    "rule": "text:* wcag:1.4.4 pass",
+    "values": [
+     {
+      "value": "200%",
+      "qids": [
+       "wcag22:9b00b6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Do text and icons scale with the user font-size setting, with layouts adapting to all sizes?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:183eed",
+       "apple-hig:d671a1",
+       "apple-hig:ed61d1",
+       "impeccable:6ce3b6",
+       "impeccable:91f178",
+       "impeccable:35567f"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-text-in-images": [
+   {
+    "rule": "aria:img wcag:1.4.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:9af613",
+       "impeccable:d7d3b5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img wcag:1.4.9 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:410037"
+      ]
+     }
+    ]
+   }
+  ],
+  "lang-attribute": [
+   {
+    "rule": "page lighthouse:html-has-lang pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:b9e158",
+       "lighthouse:3ab6f9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:html-lang-valid pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:41a6bf",
+       "axe:0ae4e1",
+       "lighthouse:e83749"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:3.1.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:5eb2ae"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:3.1.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:ef610f"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-hero-headline-to-2-3-lines": [
+   {
+    "rule": "aria:heading axl:h1-line-count <= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "taste-skill:3e6731",
+       "taste-skill:2642be",
+       "taste-skill:89ddca"
+      ]
+     },
+     {
+      "value": "2",
+      "qids": [
+       "taste-skill:a737c7",
+       "taste-skill:4b8c00"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading axl:h1-word-count between 5 10",
+    "values": [
+     {
+      "value": "5 10",
+      "qids": [
+       "taste-skill:0ed3eb"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-accent-colored-verb-in-headline": [
+   {
+    "rule": "aria:heading axl:accent-words-per-heading <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:299a85",
+       "hallmark:4addc8",
+       "hallmark:437ed5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading ask \"Is the accent-coloured word in a headline the verb, never a noun?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:15b591",
+       "hallmark:4cf45f"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-section-eyebrows-or-number-kickers-by-default": [
+   {
+    "rule": "aria:heading ask \"Do section heads appear without eyebrows, number kickers or section tags, unless numbering is asked for?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:95f8aa",
+       "hallmark:565853",
+       "hallmark:ab5d49",
+       "hallmark:94ac7b",
+       "hallmark:104b2a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading ask \"When an eyebrow is used, does the heading sit directly under it in the same column?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6383ab",
+       "hallmark:da8a69"
+      ]
+     }
+    ]
+   }
+  ],
+  "clipped-background-text-highlighter": [
+   {
+    "rule": "text:* box-decoration-break == clone",
+    "values": [
+     {
+      "value": "clone",
+      "qids": [
+       "hallmark:7f3c21",
+       "hallmark:a21e5e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* background-image contains gradient",
+    "values": [
+     {
+      "value": "gradient",
+      "qids": [
+       "hallmark:a21e5e",
+       "hallmark:7f3c21"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-dominant-message-on-posters": [
+   {
+    "rule": "page ask \"Does one message, date or event title dominate the composition?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:e0c213",
+       "claw-design:d19c06"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Can the core message be understood in three seconds?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:c9b376"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-italic-emphasis": [
+   {
+    "rule": "text:* font-style == normal",
+    "values": [
+     {
+      "value": "normal",
+      "qids": [
+       "hallmark:da34da",
+       "hallmark:37a8ff",
+       "impeccable:8813c4"
+      ]
+     }
+    ]
+   }
+  ],
+  "lowercase-display-headlines": [
+   {
+    "rule": "text:display ask \"Is all display text lowercase, apart from mono labels?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1a6a5c",
+       "hallmark:5939a9",
+       "hallmark:db6337"
+      ]
+     }
+    ]
+   }
+  ],
+  "inputs-16px-minimum-on-mobile": [
+   {
+    "rule": "aria:textbox font-size >= 16px @media:narrow",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "ui-craft:4562d9",
+       "vercel:6dd3d5",
+       "vercel:d633ea"
+      ]
+     }
+    ]
+   }
+  ],
+  "extreme-weight-and-size-contrast-in-type": [
+   {
+    "rule": "aria:heading axl:heading-body-weight-gap >= 600",
+    "values": [
+     {
+      "value": "600",
+      "qids": [
+       "anthropic:3e8b34"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading axl:heading-body-size-ratio >= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "anthropic:3e8b34"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-italic-headings": [
+   {
+    "rule": "aria:heading font-style == normal",
+    "values": [
+     {
+      "value": "normal",
+      "qids": [
+       "hallmark:12a118",
+       "hallmark:8598a5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:display font-style == normal",
+    "values": [
+     {
+      "value": "normal",
+      "qids": [
+       "hallmark:12a118",
+       "hallmark:8598a5"
+      ]
+     }
+    ]
+   }
+  ],
+  "numeric-hero-paired-with-worded-headline": [
+   {
+    "rule": "page ask \"Does the hero header pair the lead figure with a worded headline?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:9463f5",
+       "hallmark:bfcc65"
+      ]
+     }
+    ]
+   }
+  ],
+  "allow-long-words-in-headings-to-wrap": [
+   {
+    "rule": "aria:heading overflow-wrap == anywhere",
+    "values": [
+     {
+      "value": "anywhere",
+      "qids": [
+       "hallmark:c47f50",
+       "hallmark:facb63"
+      ]
+     }
+    ]
+   }
+  ],
+  "sparing-eyebrow-labels": [
+   {
+    "rule": "aria:heading ask \"Are eyebrow labels used sparingly, not over every section?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:5d671e",
+       "impeccable:faafe0"
+      ]
+     }
+    ]
+   }
+  ],
+  "cap-display-size-at-5-5rem": [
+   {
+    "rule": "text:display font-size <= 5.5rem",
+    "values": [
+     {
+      "value": "5.5rem",
+      "qids": [
+       "hallmark:5e54bb"
+      ]
+     },
+     {
+      "value": "6rem",
+      "qids": [
+       "hallmark:c87bb8"
+      ]
+     }
+    ]
+   }
+  ],
+  "loosen-tracking-on-small-caps-labels": [
+   {
+    "rule": "text:label letter-spacing between 0.08em 0.14em",
+    "values": [
+     {
+      "value": "0.08em 0.14em",
+      "qids": [
+       "hallmark:ddc721"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label text-transform == uppercase",
+    "values": [
+     {
+      "value": "uppercase",
+      "qids": [
+       "hallmark:ddc721"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body letter-spacing <= 0.05em",
+    "values": [
+     {
+      "value": "0.05em",
+      "qids": [
+       "impeccable:4529fc"
+      ]
+     }
+    ]
+   }
+  ],
+  "cap-hero-headline-size": [
+   {
+    "rule": "text:display ask \"Does the hero headline leave room for other content above the fold?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:39ef44",
+       "impeccable:5012b6"
+      ]
+     }
+    ]
+   }
+  ],
+  "sans-serif-pairings-only-for-dashboards": [
+   {
+    "rule": "page ask \"Do dashboards and software UIs use only sans-serif pairings, with no serif fonts?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:cedb37",
+       "taste-skill:30286a"
+      ]
+     }
+    ]
+   }
+  ],
+  "emphasize-headline-words-with-same-font-italic-o": [
+   {
+    "rule": "aria:heading ask \"Is emphasis inside a headline set as italic or bold of the same font?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ced193",
+       "taste-skill:1c2e96"
+      ]
+     }
+    ]
+   }
+  ],
+  "ration-middle-dot-separators": [
+   {
+    "rule": "text:* axl:middle-dots-per-line <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "taste-skill:356c34"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-all-caps-on-headings-nav-buttons": [
+   {
+    "rule": "aria:heading text-transform == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:9ebabc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation text-transform == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:9ebabc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button text-transform == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:9ebabc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table text-transform == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:9ebabc",
+       "ui-craft:aec5c6"
+      ]
+     }
+    ]
+   }
+  ],
+  "ration-eyebrow-labels": [
+   {
+    "rule": "page axl:eyebrow-share-of-sections <= 33%",
+    "values": [
+     {
+      "value": "1 per 3 sections",
+      "qids": [
+       "ui-craft:05d176",
+       "ui-craft:92f320"
+      ]
+     }
+    ]
+   }
+  ],
+  "truncate-overflowing-text-with-title-tooltip": [
+   {
+    "rule": "text:* ask \"Does every truncated text element carry a title tooltip and a set max-width?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c9f854"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Is truncation handled in dense UI, with flex children allowed to shrink (min-width 0)?\"",
+    "class": "layout",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:0d608e"
+      ]
+     }
+    ]
+   }
+  ],
+  "never-use-vw-alone-in-font-size": [
+   {
+    "rule": "text:* axl:font-size-vw-only == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "webdev:5d9564",
+       "webdev:61e395"
+      ]
+     }
+    ]
+   }
+  ],
+  "make-headline-type-an-active-design-element": [
+   {
+    "rule": "aria:heading ask \"Is headline type used as an active part of the design, not a neutral vehicle?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:5f0c61"
+      ]
+     }
+    ]
+   }
+  ],
+  "custom-fonts-must-stay-legible": [
+   {
+    "rule": "text:* ask \"Are custom fonts legible?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:84407a"
+      ]
+     }
+    ]
+   }
+  ],
+  "minimise-truncation-at-larger-text-sizes": [
+   {
+    "rule": "text:* ask \"Is text truncation kept to a minimum as font size increases?\"",
+    "class": "access",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:a8c026"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-truncating-text-in-scroll-regions": [
+   {
+    "rule": "text:* ask \"Is text in scrollable regions left untruncated, unless a separate view opens the rest?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:be82bc"
+      ]
+     }
+    ]
+   }
+  ],
+  "prefer-flat-2d-text": [
+   {
+    "rule": "text:* ask \"Is text set flat in 2D rather than in 3D?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:2031f5"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-shadows-on-text-for-contrast": [
+   {
+    "rule": "text:* text-shadow == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "apple-hig:40d33e"
+      ]
+     }
+    ]
+   }
+  ],
+  "skip-text-wrap-balance-and-pretty-on-long-text": [
+   {
+    "rule": "text:body ask \"Do text blocks of 10 or more lines skip text-wrap pretty and balance?\"",
+    "class": "perf",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:d40170"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-system-font-stack-for-native-feel": [
+   {
+    "rule": "text:body ask \"If the design calls for a system-native feel, does text use the system font stack?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:7be50c"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-practical-fallback-font-stack": [
+   {
+    "rule": "text:* ask \"Does a commercial typeface come with a practical fallback font stack?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:481c84"
+      ]
+     }
+    ]
+   }
+  ],
+  "italics-only-for-inline-body-emphasis": [
+   {
+    "rule": "aria:heading font-style == normal",
+    "values": [
+     {
+      "value": "normal",
+      "qids": [
+       "hallmark:33d593"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Is italic used only for emphasis inside running paragraphs?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:33d593"
+      ]
+     }
+    ]
+   }
+  ],
+  "verify-decorative-text-effects-position": [
+   {
+    "rule": "process ask \"Was the position and size of every decorative text effect visually confirmed?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:06ce88"
+      ]
+     }
+    ]
+   }
+  ],
+  "limit-outlier-typeface-to-two-slots": [
+   {
+    "rule": "page ask \"Is the outlier typeface used in no more than two slots on the page?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d31ddf"
+      ]
+     }
+    ]
+   }
+  ],
+  "all-caps-headlines": [
+   {
+    "rule": "aria:heading text-transform == uppercase",
+    "values": [
+     {
+      "value": "uppercase",
+      "qids": [
+       "hallmark:ff8ffc"
+      ]
+     }
+    ]
+   }
+  ],
+  "mono-uppercase-labels-for-meta": [
+   {
+    "rule": "text:label font-family contains \"JetBrains Mono\"",
+    "values": [
+     {
+      "value": "JetBrains Mono",
+      "qids": [
+       "hallmark:e53dff"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label text-transform == uppercase",
+    "values": [
+     {
+      "value": "uppercase",
+      "qids": [
+       "hallmark:e53dff"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label letter-spacing == 0.06em",
+    "values": [
+     {
+      "value": "0.06em",
+      "qids": [
+       "hallmark:e53dff"
+      ]
+     }
+    ]
+   }
+  ],
+  "giant-faded-numeral-index-behind-section-heads": [
+   {
+    "rule": "aria:heading ask \"Is a section index numeral set at display scale beside or behind the section head at low opacity?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:133beb"
+      ]
+     }
+    ]
+   }
+  ],
+  "lowercase-sans-display-no-serif": [
+   {
+    "rule": "text:display text-transform !contains uppercase",
+    "values": [
+     {
+      "value": "uppercase",
+      "qids": [
+       "hallmark:a19dc7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the page set in sans-serif, with no serif face and no monospace body?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a19dc7"
+      ]
+     }
+    ]
+   }
+  ],
+  "vary-headline-emphasis": [
+   {
+    "rule": "aria:heading ask \"Is headline emphasis varied (scale, underline, colour-blocking) rather than always one highlighted word?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1c34d1"
+      ]
+     }
+    ]
+   }
+  ],
+  "rounded-sans-only": [
+   {
+    "rule": "page ask \"Is every face a rounded sans-serif, with no serif anywhere?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7829a6"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-all-caps-or-justified-body-text": [
+   {
+    "rule": "text:body text-transform == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "hallmark:7c887c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body letter-spacing <= 0.05em",
+    "values": [
+     {
+      "value": "0.05em",
+      "qids": [
+       "hallmark:7c887c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body ask \"Is body text left unjustified unless it is hyphenated?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7c887c"
+      ]
+     }
+    ]
+   }
+  ],
+  "outlier-face-in-at-most-two-slots": [
+   {
+    "rule": "page ask \"Is the outlier typeface used in no more than two slots on the page?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:61fb8a"
+      ]
+     }
+    ]
+   }
+  ],
+  "hierarchy-through-weight-size-and-space-rather-t": [
+   {
+    "rule": "page ask \"Is hierarchy built from weight, size and space rather than colour and boldness?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a63af3"
+      ]
+     }
+    ]
+   }
+  ],
+  "responsive-display-type-for-marketing": [
+   {
+    "rule": "text:display ask \"Does display type carry the voice with decisive contrast and responsive scale?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:b39717"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-tiny-numbered-section-labels": [
+   {
+    "rule": "aria:heading ask \"Do section heads appear without eyebrows, number kickers or section tags, unless numbering is asked for?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:e52313"
+      ]
+     }
+    ]
+   }
+  ],
+  "emphasis-styling-only-in-content-areas": [
+   {
+    "rule": "page ask \"Are bold, italic and highlight styles used only inside content areas, not for structural UI?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:841c08"
+      ]
+     }
+    ]
+   }
+  ],
+  "order-emphasis-by-importance": [
+   {
+    "rule": "page ask \"Does the eye land on things in the order of their importance?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:3478de"
+      ]
+     }
+    ]
+   }
+  ],
+  "make-differences-decisive-not-timid": [
+   {
+    "rule": "page ask \"Are differences between unlike elements decisive rather than timid?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:f17059"
+      ]
+     }
+    ]
+   }
+  ],
+  "shrink-large-type-faster-on-mobile": [
+   {
+    "rule": "text:display ask \"Do large elements shrink faster than small ones on small screens?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:6521be"
+      ]
+     }
+    ]
+   }
+  ],
+  "front-load-headings-left-align-body-f-pattern": [
+   {
+    "rule": "text:body text-align == left",
+    "values": [
+     {
+      "value": "left",
+      "qids": [
+       "deslop:6210f5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading ask \"Do headings put the most important words at the start?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:6210f5"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-headlines-short-at-display-size": [
+   {
+    "rule": "text:display ask \"Is no full-sentence headline set at display size?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:5e9594"
+      ]
+     }
+    ]
+   }
+  ],
+  "test-font-pairs-in-real-mockups": [
+   {
+    "rule": "process ask \"Were font pairs tested in real mockups for web, mobile and print?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:f9c075"
+      ]
+     }
+    ]
+   }
+  ],
+  "match-type-class-to-brand-adjectives": [
+   {
+    "rule": "page ask \"Does the type class match the committed brand adjectives?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:53d8c9"
+      ]
+     }
+    ]
+   }
+  ],
+  "limit-display-faces-to-headlines": [
+   {
+    "rule": "text:display ask \"Are display or decorative faces used only for headlines, with limited accent?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:29e2ea"
+      ]
+     }
+    ]
+   }
+  ],
+  "pair-fonts-from-different-classes": [
+   {
+    "rule": "page ask \"Are paired faces from different classes, not same-class faces from different families?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:87c36d"
+      ]
+     }
+    ]
+   }
+  ],
+  "choose-faces-that-hold-across-media": [
+   {
+    "rule": "process ask \"Do chosen faces work across every medium (tested, licensed, documented per medium)?\"",
+    "class": "process",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:dd9a16"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-text-large-and-sparse": [
+   {
+    "rule": "text:* ask \"Is text large enough and sparse enough to render well?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d1dcd0"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-monolithic-heavy-sans-with-visible-grid-line": [
+   {
+    "rule": "page ask \"Is typography set in monolithic heavy sans-serif?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d9922b"
+      ]
+     }
+    ]
+   }
+  ],
+  "small-monospaced-labels-with-wide-tracking": [
+   {
+    "rule": "text:label font-size between 10px 14px",
+    "values": [
+     {
+      "value": "10px 14px",
+      "qids": [
+       "taste-skill:2bd2ea"
+      ]
+     }
+    ]
+   }
+  ],
+  "give-hero-headline-a-wide-container": [
+   {
+    "rule": "text:display max-width >= 64rem",
+    "values": [
+     {
+      "value": "64rem",
+      "qids": [
+       "taste-skill:7e8a0c"
+      ]
+     }
+    ]
+   }
+  ],
+  "embed-pill-images-inside-headings": [
+   {
+    "rule": "aria:heading ask \"Are small pill-shaped images embedded inside the largest headings?\"",
+    "class": "imagery",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f26bf5"
+      ]
+     }
+    ]
+   }
+  ],
+  "pick-one-hero-scale-decisively": [
+   {
+    "rule": "text:display ask \"Is one hero scale chosen decisively?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d7bdf2"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-medium-and-semibold-weights-for-subtle-hiera": [
+   {
+    "rule": "text:* ask \"Are Medium (500) and SemiBold (600) used for subtle hierarchy besides Regular and Bold?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:c0e6ca"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-sentence-case-for-headings": [
+   {
+    "rule": "aria:heading ask \"Are headings in sentence case rather than title case?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:791593"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-first-heading-restrained": [
+   {
+    "rule": "aria:heading ask \"Is the first heading restrained, with hierarchy from weight and colour rather than scale alone?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f50b1e"
+      ]
+     }
+    ]
+   }
+  ],
+  "serif-only-for-editorial-designs": [
+   {
+    "rule": "page ask \"Are serif fonts used only for creative or editorial designs, never on dashboards?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:25332a"
+      ]
+     }
+    ]
+   }
+  ],
+  "serif-only-when-explicitly-justified": [
+   {
+    "rule": "page ask \"Is serif used only where explicitly justified?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:19c912"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-br-broken-italic-headline-splits": [
+   {
+    "rule": "aria:heading ask \"Are headlines free of line-break and italic splits used as a default design move?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:e7330c"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-vertical-rotated-text": [
+   {
+    "rule": "text:* ask \"Is all text horizontal, with no vertical rotated text?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:154082"
+      ]
+     }
+    ]
+   }
+  ],
+  "reserve-line-height-for-italic-descenders": [
+   {
+    "rule": "text:* ask \"Do italic words with descenders have a line-height of at least 1.1 and bottom padding reserved?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:89d463"
+      ]
+     }
+    ]
+   }
+  ],
+  "drop-cap-on-first-paragraph": [
+   {
+    "rule": "text:body ask \"Does the first paragraph open with a drop cap?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:3df83f"
+      ]
+     }
+    ]
+   }
+  ],
+  "styled-pull-quotes": [
+   {
+    "rule": "text:body ask \"Are pull quotes set in a large serif (1.75 to 2.25em) with one accent colour and a short rule above?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:07c784"
+      ]
+     }
+    ]
+   }
+  ],
+  "accent-bordered-serif-blockquote": [
+   {
+    "rule": "aria:blockquote max-width <= 55ch",
+    "values": [
+     {
+      "value": "55ch",
+      "qids": [
+       "ui-craft:851737"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:blockquote font-style == italic",
+    "values": [
+     {
+      "value": "italic",
+      "qids": [
+       "ui-craft:851737"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:blockquote ask \"Does the blockquote have a left border in the accent colour and serif type?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:851737"
+      ]
+     }
+    ]
+   }
+  ],
+  "sentence-case-headlines": [
+   {
+    "rule": "aria:heading text-transform == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:ff6ed2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading ask \"Are headings in sentence case rather than title case?\"",
+    "class": "content",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ff6ed2"
+      ]
+     }
+    ]
+   }
+  ],
+  "neutral-sans-for-body-never-display-face": [
+   {
+    "rule": "text:body font-family contains \"Inter, Geist\"",
+    "values": [
+     {
+      "value": "Inter, Geist",
+      "qids": [
+       "ui-craft:f4239b"
+      ]
+     }
+    ]
+   }
+  ],
+  "button-label-size-centered-on-whole-pixels": [
+   {
+    "rule": "aria:button font-size between 14px 17px",
+    "values": [
+     {
+      "value": "14px 17px",
+      "qids": [
+       "ui-craft:f0ad32"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Do button height and label size pair so the label centres on whole pixels?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f0ad32"
+      ]
+     }
+    ]
+   }
+  ],
+  "enable-opentype-features": [
+   {
+    "rule": "text:* font-kerning == normal",
+    "values": [
+     {
+      "value": "normal",
+      "qids": [
+       "ui-craft:be17a5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button font-variant-ligatures contains no-discretionary-ligatures",
+    "values": [
+     {
+      "value": "no-discretionary-ligatures",
+      "qids": [
+       "ui-craft:be17a5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading ask \"Are contextual alternates on for serif headlines?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:be17a5"
+      ]
+     }
+    ]
+   }
+  ],
+  "align-mixed-text-sizes-on-shared-baseline": [
+   {
+    "rule": "text:* ask \"Do mixed text sizes on one line align to the shared baseline, not to vertical centres?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:291451"
+      ]
+     }
+    ]
+   }
+  ],
+  "number-first-hierarchy-in-metrics": [
+   {
+    "rule": "text:* ask \"Does each metric show its number first in the hierarchy?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:bbbc9e"
+      ]
+     }
+    ]
+   }
+  ],
+  "emphasize-in-headlines-with-same-family": [
+   {
+    "rule": "aria:heading ask \"Is emphasis inside a headline set as italic or bold of the same font?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:519df4"
+      ]
+     }
+    ]
+   }
+  ],
+  "long-form-body-text-18px": [
+   {
+    "rule": "text:body font-size >= 18px",
+    "values": [
+     {
+      "value": "18px",
+      "qids": [
+       "ui-craft:9b1f22"
+      ]
+     }
+    ]
+   }
+  ],
+  "display-step-2-5-4x-above-body-step": [
+   {
+    "rule": "text:display axl:display-step-ratio between 2.5 4",
+    "values": [
+     {
+      "value": "2.5 4",
+      "qids": [
+       "ui-craft:810208"
+      ]
+     }
+    ]
+   }
+  ],
+  "disable-font-synthesis": [
+   {
+    "rule": "text:* font-synthesis-weight == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:055b07"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* font-synthesis-style == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:055b07"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* font-synthesis-small-caps == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:055b07"
+      ]
+     }
+    ]
+   }
+  ],
+  "trim-text-box-half-leading-in-pills-and-buttons": [
+   {
+    "rule": "aria:button text-box-trim == trim-both",
+    "values": [
+     {
+      "value": "trim-both",
+      "qids": [
+       "ui-craft:361563"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button text-box-edge == \"cap alphabetic\"",
+    "values": [
+     {
+      "value": "cap alphabetic",
+      "qids": [
+       "ui-craft:361563"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:badge text-box-trim == trim-both",
+    "values": [
+     {
+      "value": "trim-both",
+      "qids": [
+       "ui-craft:361563"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:badge text-box-edge == \"cap alphabetic\"",
+    "values": [
+     {
+      "value": "cap alphabetic",
+      "qids": [
+       "ui-craft:361563"
+      ]
+     }
+    ]
+   }
+  ],
+  "underline-offset-and-thickness-from-font-metrics": [
+   {
+    "rule": "aria:link text-underline-position == from-font",
+    "values": [
+     {
+      "value": "from-font",
+      "qids": [
+       "ui-craft:4e96c7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:link ask \"Do underline thickness and offset come from the font metrics?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:4e96c7"
+      ]
+     }
+    ]
+   }
+  ],
+  "fluid-type-scale-across-viewports": [
+   {
+    "rule": "text:* ask \"Are smaller text sizes used on smaller screens and larger sizes on larger screens?\"",
+    "class": "type",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "webdev:eecd30"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "new_measures": {
+  "axl:heading-body-weight-gap": "Absolute difference between the computed font-weight of the dominant heading (most common h1-h6 weight) and of body text; unit: font-weight units (e.g. 300).",
+  "axl:heading-body-size-ratio": "Computed font-size of the dominant heading (h1-h6, largest level in use) divided by the computed font-size of body text; unit: ratio (x).",
+  "axl:hierarchy-step-ratio": "Smallest ratio between adjacent hierarchy levels (display, heading, body, caption) in their strongest signal (size, weight, contrast, surface area or position); unit: ratio (x).",
+  "axl:headings-crowded-above": "Count of headings (h1-h6) whose rendered space above (margin/padding plus gap to the previous block) does not exceed the rendered space below them; unit: count.",
+  "axl:unitless-line-height": "Share of text elements whose line-height is declared without a unit; unit: percent.",
+  "axl:quotes-typographic": "Share of quotation marks and apostrophes in rendered text that are typographic (curly) rather than straight ASCII; unit: percent.",
+  "axl:ellipsis-three-dots": "Count of \"...\" (three periods) sequences in rendered text that should be the ellipsis character U+2026; unit: count.",
+  "axl:dash-double-hyphen": "Count of \"--\" sequences in rendered text that should be an em dash or en dash; unit: count.",
+  "axl:unglued-units": "Count of number-plus-unit pairs (e.g. 10 MB, 5 min) in rendered text separated by an ordinary space instead of a non-breaking space U+00A0; unit: count.",
+  "axl:h1-line-count": "Greatest number of rendered lines taken by the page h1 across the tested viewport widths; unit: lines.",
+  "axl:h1-word-count": "Number of words in the page h1; unit: words.",
+  "axl:accent-words-per-heading": "Greatest number of words in any single heading coloured with the accent colour; unit: words.",
+  "axl:middle-dots-per-line": "Greatest number of middle-dot (U+00B7) separators in any single line of rendered text; unit: count.",
+  "axl:eyebrow-share-of-sections": "Number of uppercase tracked micro-labels (eyebrows) placed above section headings divided by the number of sections, the hero counting as one; unit: percent.",
+  "axl:font-size-vw-only": "Count of font-size declarations whose value is a bare vw length, with no rem/em/px term or clamp() bound; unit: count.",
+  "axl:display-step-ratio": "Computed font-size of display text divided by the next-largest font-size in use on the page; unit: ratio (x)."
+ },
+ "new_elements": {
+  "aria:blockquote": "Blockquote"
+ }
+}

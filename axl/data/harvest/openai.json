@@ -1,0 +1,555 @@
+{
+ "source": "OpenAI UI guidelines (Apps SDK / Plugins)",
+ "publisher": "OpenAI",
+ "kind": "design-system",
+ "urls": [
+  "https://developers.openai.com/plugins/concepts/ui-guidelines"
+ ],
+ "retrieved_at": "2026-09-30T06:35:16Z",
+ "items": [
+  {
+   "text": "The inline display mode appears directly in the flow of the conversation. Inline surfaces currently always appear before the generated model response. Every app initially appears inline.",
+   "file": "h_openai__1.txt",
+   "section": "Inline",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Icon & tool call**: A label with the app name and icon.",
+   "file": "h_openai__1.txt",
+   "section": "Inline",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Inline display**: A lightweight display with app content embedded above the model response.",
+   "file": "h_openai__1.txt",
+   "section": "Inline",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Follow-up**: A short, model-generated response shown after the widget to suggest edits, next steps, or related actions. Avoid content that is redundant with the card.",
+   "file": "h_openai__1.txt",
+   "section": "Inline",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A single action or decision (for example, confirm a booking).",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Small amounts of structured data (for example, a map, order summary, or quick status).",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A fully self-contained widget or tool (for example, an audio player or a score card).",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Title**: Include a title if your card is document-based or contains items with a parent element, like songs in a playlist.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Expand**: Use to open a fullscreen display mode if the card contains rich media or interactivity like a map or an interactive diagram.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Show more**: Use to disclose additional items if multiple results are presented in a list.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Edit controls**: Provide inline support for app responses without overwhelming the conversation.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Primary actions**: Limit to two actions, placed at bottom of card. Actions should perform either a conversation turn or a tool call.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**States**: Edits made are persisted.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Basic direct edits**: If appropriate, inline editable text allows users to make quick edits without needing to prompt the model.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Dynamic layout**: Card layout can expand its height to match its contents up to the height of the mobile display area.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Limit primary actions per card**: Support up to two actions maximum, with one primary CTA and one optional secondary CTA.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**No deep navigation or multiple views within a card.** Cards should not contain multiple drill-ins, tabs, or deeper navigation. Consider splitting these into separate cards or tool actions.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**No nested scrolling**. Cards should auto fit their content and prevent internal scrolling.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**No duplicate inputs**. Don’t replicate ChatGPT features in a card.",
+   "file": "h_openai__1.txt",
+   "section": "Inline card",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Presenting a small list of similar items (for example, restaurants, playlists, events).",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Items have more visual content and metadata than will fit in basic rows.",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Image**: Items should always include an image or visual.",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Title**: Carousel items should typically include a title to explain the content.",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Metadata**: Use metadata to show the most important and relevant information about the item in the context of the response. Avoid showing more than two lines of text.",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**Badge**: Use the badge to show supporting context where appropriate.",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Actions**: Provide a single clear CTA per item whenever possible.",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Keep to **3–8 items per carousel** for readability.",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Reduce metadata to the most relevant details, with three lines max.",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Each card may have a single, optional CTA (for example, “Book” or “Play”).",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Use consistent visual hierarchy across cards.",
+   "file": "h_openai__1.txt",
+   "section": "Inline carousel",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Rich tasks that cannot be reduced to a single card (for example, an interactive map with pins, a rich editing canvas, or an interactive diagram).",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Browsing detailed content (for example, real estate listings, menus).",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**System close**: Closes the sheet or view.",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**fullscreen view**: Content area.",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Composer**: ChatGPT’s native composer, allowing the user to follow up in the context of the fullscreen view.",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Chat sheet**: Maintain conversational context alongside the fullscreen surface.",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Thinking**: The composer input “shimmers” to show that a response is streaming.",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Response**: When the model completes its response, an ephemeral, truncated snippet displays above the composer. Tapping it opens the chat sheet.",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Design your UX to work with the system composer**. The composer is always present in fullscreen, so make sure your experience supports conversational prompts that can trigger tool calls and feel natural for users.",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use fullscreen for work that benefits from more space.** Existing editors and admin interfaces can be embedded when they meet the [iframe policy](https://developers.openai.com/plugins/plugin-guidelines#iframes-and-embedded-pages).",
+   "file": "h_openai__1.txt",
+   "section": "fullscreen",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Activities that run in parallel with conversation**, such as a game, live collaboration, quiz, or learning session.",
+   "file": "h_openai__1.txt",
+   "section": "Picture-in-picture (PiP)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Situations where the PiP widget can react to chat input**, for example continuing a game round or refreshing live data based on a user request.",
+   "file": "h_openai__1.txt",
+   "section": "Picture-in-picture (PiP)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Activated:** On scroll, the PiP window stays fixed to the top of the display area",
+   "file": "h_openai__1.txt",
+   "section": "Picture-in-picture (PiP)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Pinned:** The PiP remains fixed until the user dismisses it or the session ends.",
+   "file": "h_openai__1.txt",
+   "section": "Picture-in-picture (PiP)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Session ends:** The PiP returns to an inline position and scrolls away.",
+   "file": "h_openai__1.txt",
+   "section": "Picture-in-picture (PiP)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Ensure the PiP state can update or respond** when users interact through the system composer.",
+   "file": "h_openai__1.txt",
+   "section": "Picture-in-picture (PiP)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Close PiP automatically** when the session ends.",
+   "file": "h_openai__1.txt",
+   "section": "Picture-in-picture (PiP)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Do not overload PiP with controls or static content** better suited for inline or fullscreen.",
+   "file": "h_openai__1.txt",
+   "section": "Picture-in-picture (PiP)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use system colors for text, icons, and spatial elements like dividers.",
+   "file": "h_openai__1.txt",
+   "section": "Color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Partner brand accents such as logos or icons should not override backgrounds or text colors.",
+   "file": "h_openai__1.txt",
+   "section": "Color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid custom gradients or patterns that break ChatGPT’s minimal look.",
+   "file": "h_openai__1.txt",
+   "section": "Color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use brand accent colors on primary buttons inside app display modes.",
+   "file": "h_openai__1.txt",
+   "section": "Color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "_Use brand colors on accents and badges. Don't change text colors or other core component styles._",
+   "file": "h_openai__1.txt",
+   "section": "Color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "_Don't apply colors to backgrounds in text areas._",
+   "file": "h_openai__1.txt",
+   "section": "Color",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Always inherit the system font stack, respecting system sizing rules for headings, body text, and captions.",
+   "file": "h_openai__1.txt",
+   "section": "Typography",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use partner styling such as bold, italic, or highlights only within content areas, not for structural UI.",
+   "file": "h_openai__1.txt",
+   "section": "Typography",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Limit variation in font size as much as possible, preferring body and body-small sizes.",
+   "file": "h_openai__1.txt",
+   "section": "Typography",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "_Don't use custom fonts, even in full screen modes. Use system font variables wherever possible._",
+   "file": "h_openai__1.txt",
+   "section": "Typography",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use system grid spacing for cards, collections, and inspector panels.",
+   "file": "h_openai__1.txt",
+   "section": "Spacing & layout",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep padding consistent and avoid cramming or edge-to-edge text.",
+   "file": "h_openai__1.txt",
+   "section": "Spacing & layout",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Respect system specified corner rounds when possible to keep shapes consistent.",
+   "file": "h_openai__1.txt",
+   "section": "Spacing & layout",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Maintain visual hierarchy with headline, supporting text, and CTA in a clear order.",
+   "file": "h_openai__1.txt",
+   "section": "Spacing & layout",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use either system icons or custom iconography that fits within ChatGPT's visual world—monochromatic and outlined.",
+   "file": "h_openai__1.txt",
+   "section": "Icons & imagery",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not include your logo as part of the response. ChatGPT will always append your logo and app name before the widget is rendered.",
+   "file": "h_openai__1.txt",
+   "section": "Icons & imagery",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "All imagery must follow enforced aspect ratios to avoid distortion.",
+   "file": "h_openai__1.txt",
+   "section": "Icons & imagery",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Text and background must maintain a minimum contrast ratio (WCAG AA).",
+   "file": "h_openai__1.txt",
+   "section": "Accessibility",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Provide alt text for all images.",
+   "file": "h_openai__1.txt",
+   "section": "Accessibility",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Support text resizing without breaking layouts.",
+   "file": "h_openai__1.txt",
+   "section": "Accessibility",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

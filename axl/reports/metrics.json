@@ -1,0 +1,47 @@
+{
+ "claims_total": 485,
+ "public_claims": 378,
+ "private_kit_excluded": 107,
+ "by_tier_public": {
+  "enforced": 21,
+  "measurable": 1,
+  "process": 31,
+  "subjective": 325
+ },
+ "by_status_public": {
+  "single-source": 250,
+  "unverified": 125,
+  "verified": 3
+ },
+ "by_origin": {
+  "private-kit": 107,
+  "public": 378
+ },
+ "double_sourced_public": 3,
+ "double_sourced_share_public": 0.0079,
+ "enforced_public": 21,
+ "enforced_share_public": 0.0556,
+ "guidance_audited": {
+  "claims": 332,
+  "system_share": 0.0211,
+  "enforced_share": 0.0181,
+  "luck_share": 0.9789,
+  "by_tier": {
+   "enforced": 6,
+   "measurable": 1,
+   "subjective": 325
+  },
+  "definition": "system = tier enforced or measurable; luck = subjective (no measurable definition); process steps are not scored as UI"
+ },
+ "rebrand_clusters": 5,
+ "sources_in_largest_cluster": 23,
+ "sources_total": 90,
+ "sources_fetched": 52,
+ "verbs_total": 34,
+ "verbs_by_resolution": {
+  "tool-backed": 7,
+  "undefined": 27
+ },
+ "enforced_discriminating": 16,
+ "receipts": 27
+}

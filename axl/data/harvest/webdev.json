@@ -1,0 +1,205 @@
+{
+ "source": "web.dev Learn Design + Forms",
+ "publisher": "Google web.dev",
+ "kind": "guide",
+ "urls": [
+  "https://web.dev/learn/design/typography",
+  "https://web.dev/learn/forms/accessibility",
+  "https://web.dev/learn/forms/validation"
+ ],
+ "retrieved_at": "2026-09-30T06:32:04.777779Z",
+ "items": [
+  {
+   "text": "Every form control must have an associated <label> element.",
+   "file": "h_webdev__3.txt",
+   "section": "Stay organized with collections",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ensure users are aware of the expected data format",
+   "file": "h_webdev__3.txt",
+   "section": "non-semantic elements?",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "use the aria-describedby attribute on the form control,",
+   "file": "h_webdev__3.txt",
+   "section": "non-semantic elements?",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "you should never rely only on color.",
+   "file": "h_webdev__3.txt",
+   "section": "Ensure users recognize errors",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "In addition to color, use an icon, or prefix your error messages with the error type.",
+   "file": "h_webdev__3.txt",
+   "section": "For people with red-green color blindness,",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "always make sure the visual difference between the default state and the focus state is recognizable.",
+   "file": "h_webdev__3.txt",
+   "section": "Whatever styles you use inside :focus,",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Note: If you want to remove the default :focus styles but still show focus indicators for keyboard users, you can use the :focus-visible CSS pseudo-class.",
+   "file": "h_webdev__3.txt",
+   "section": "Whatever styles you use inside :focus,",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Always test your forms on different platforms,",
+   "file": "h_webdev__3.txt",
+   "section": "VoiceOver on Mac),",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "You must also make sure to validate data before storing or sharing it on your backend server: find out more.",
+   "file": "h_webdev__4.txt",
+   "section": "Stay organized with collections",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "You also need to specify which fields are mandatory.",
+   "file": "h_webdev__4.txt",
+   "section": "Why should you validate your forms?",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make sure all users understand your validation rules.",
+   "file": "h_webdev__4.txt",
+   "section": "<div id=\"password-minlength\">Enter at least eight characters",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "However, to communicate error or success you should never rely only on color.",
+   "file": "h_webdev__4.txt",
+   "section": "You can use the :invalid pseudo-class",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The :user-invalid pseudo-class solves this issue, as the styles are only applied after user interaction.",
+   "file": "h_webdev__4.txt",
+   "section": "You can use the :invalid pseudo-class",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use smaller text sizes for smaller screens and larger text sizes for larger screens.",
+   "file": "h_webdev__5.txt",
+   "section": "Text size",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "It's important that you don't use the vw by itself in a font-size declaration.",
+   "file": "h_webdev__5.txt",
+   "section": "Scaling text",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don't set your line-lengths with a fixed unit like px.",
+   "file": "h_webdev__5.txt",
+   "section": "Line length",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use a relative unit like rem or ch.",
+   "file": "h_webdev__5.txt",
+   "section": "Line length",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use unitless values for your line-height declarations.",
+   "file": "h_webdev__5.txt",
+   "section": "}",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use @font-face to tell browsers where to find your web font files.",
+   "file": "h_webdev__5.txt",
+   "section": "Web fonts",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use woff2 as your web font format.",
+   "file": "h_webdev__5.txt",
+   "section": "Web fonts",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use the CSS font-display property to tell the browser how to manage the switchover from a system font to a web font.",
+   "file": "h_webdev__5.txt",
+   "section": "rel=\"preload\" as=\"font\" crossorigin>",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use a font-display value of swap if you still want the web font to replace the system font whenever the web font finally loads.",
+   "file": "h_webdev__5.txt",
+   "section": "rel=\"preload\" as=\"font\" crossorigin>",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use a font-display value of fallback if you want to stick with the system font once text has been rendered.",
+   "file": "h_webdev__5.txt",
+   "section": "}",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "You probably don't want your text to shrink and grow to extremes.",
+   "file": "h_webdev__5.txt",
+   "section": null,
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

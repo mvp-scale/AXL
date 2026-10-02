@@ -1,0 +1,1435 @@
+{
+ "source": "make-interfaces-feel-better",
+ "publisher": "jakubkrehel",
+ "kind": "skill",
+ "urls": [
+  "https://github.com/jakubkrehel/make-interfaces-feel-better"
+ ],
+ "retrieved_at": "2026-09-30T06:32:34.702123Z",
+ "items": [
+  {
+   "text": "An agent skill focused on the small details that make interfaces feel better.",
+   "file": "h_feel-better__1.txt",
+   "section": null,
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The [skill](skills/make-interfaces-feel-better/SKILL.md) covers animations, typography, icons, hover states, optical alignment, concentric border radius, shadows, hit areas and more.",
+   "file": "h_feel-better__1.txt",
+   "section": null,
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never introduce a second styling system just to apply a polish fix.",
+   "file": "h_feel-better__2.txt",
+   "section": "Details that make interfaces feel better",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When reviewing, slow the interface down: replay motion at 10% speed in the browser's Animations panel and walk every state: hover, focus, active, loading, empty.",
+   "file": "h_feel-better__2.txt",
+   "section": "Details that make interfaces feel better",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "What feels off at 10% speed is what's subtly wrong at full speed.",
+   "file": "h_feel-better__2.txt",
+   "section": "Details that make interfaces feel better",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Category | When to Use",
+   "file": "h_feel-better__2.txt",
+   "section": "Quick Reference",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Mismatched radii on nested elements is the most common thing that makes interfaces feel off.",
+   "file": "h_feel-better__2.txt",
+   "section": "1. Concentric Border Radius",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When geometric centering looks off, align optically.",
+   "file": "h_feel-better__2.txt",
+   "section": "2. Optical Over Geometric Alignment",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For buttons, cards, and containers whose border exists only to create depth, prefer layered transparent `box-shadow` values.",
+   "file": "h_feel-better__2.txt",
+   "section": "3. Shadows for Elevation, Borders for Structure",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep borders that communicate structure or state: dividers, layout separators, and selected or focus states.",
+   "file": "h_feel-better__2.txt",
+   "section": "3. Shadows for Elevation, Borders for Structure",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use CSS transitions for interactive state changes — they can be interrupted mid-animation.",
+   "file": "h_feel-better__2.txt",
+   "section": "4. Interruptible Animations",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Reserve keyframes for staged sequences that run once.",
+   "file": "h_feel-better__2.txt",
+   "section": "4. Interruptible Animations",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For an infrequent staged entrance where sequence helps communicate hierarchy, break content into semantic chunks and stagger them by ~100ms instead of animating one container.",
+   "file": "h_feel-better__2.txt",
+   "section": "5. Split and Stagger Enter Animations",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Do not stagger routine, high-frequency interactions.",
+   "file": "h_feel-better__2.txt",
+   "section": "5. Split and Stagger Enter Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use a small fixed `translateY` instead of full height.",
+   "file": "h_feel-better__2.txt",
+   "section": "6. Subtle Exit Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Exits should be softer than enters.",
+   "file": "h_feel-better__2.txt",
+   "section": "6. Subtle Exit Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `ease-out` for both enter and exit transitions.",
+   "file": "h_feel-better__2.txt",
+   "section": "6. Subtle Exit Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Animate icons with `opacity`, `scale`, and `blur` instead of toggling visibility.",
+   "file": "h_feel-better__2.txt",
+   "section": "7. Contextual Icon Animations",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use exactly these values: scale from `0.25` to `1`, opacity from `0` to `1`, blur from `4px` to `0px`.",
+   "file": "h_feel-better__2.txt",
+   "section": "7. Contextual Icon Animations",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "If the project has `motion` or `framer-motion` in `package.json`, match that package's import path (or the established nearby imports when both exist) and use `transition: { type: \"spring\", duration: 0.3, bounce: 0 }` — bounce must always be `0`.",
+   "file": "h_feel-better__2.txt",
+   "section": "7. Contextual Icon Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `font-variant-numeric: tabular-nums` for any dynamically updating numbers to prevent layout shift.",
+   "file": "h_feel-better__2.txt",
+   "section": "9. Tabular Numbers",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `text-wrap: balance` on headings.",
+   "file": "h_feel-better__2.txt",
+   "section": "10. Text Wrapping",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `text-wrap: pretty` for body text to avoid orphans.",
+   "file": "h_feel-better__2.txt",
+   "section": "10. Text Wrapping",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Add a subtle `1px` outline with low opacity to images for consistent depth.",
+   "file": "h_feel-better__2.txt",
+   "section": "11. Image Outlines",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "The color must be pure black in light mode (`oklch(0 0 0 / 0.1)`) and pure white in dark mode (`oklch(1 0 0 / 0.1)`), never a near-black like slate, zinc, or any tinted neutral.",
+   "file": "h_feel-better__2.txt",
+   "section": "11. Image Outlines",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never use a value smaller than `0.95` — anything below feels exaggerated.",
+   "file": "h_feel-better__2.txt",
+   "section": "12. Scale on Press",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Add a `static` prop to disable it when motion would be distracting.",
+   "file": "h_feel-better__2.txt",
+   "section": "12. Scale on Press",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `initial={false}` on `AnimatePresence` to prevent enter animations on first render.",
+   "file": "h_feel-better__2.txt",
+   "section": "13. Skip Animation on Page Load",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Verify it doesn't break intentional entrance animations.",
+   "file": "h_feel-better__2.txt",
+   "section": "13. Skip Animation on Page Load",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Always specify exact properties: `transition-property: scale, opacity`.",
+   "file": "h_feel-better__2.txt",
+   "section": "14. Never Use transition: all",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Tailwind's `transition-transform` covers `transform, translate, scale, rotate`.",
+   "file": "h_feel-better__2.txt",
+   "section": "14. Never Use transition: all",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Only for `transform`, `opacity`, `filter` — properties the GPU can composite.",
+   "file": "h_feel-better__2.txt",
+   "section": "15. Use will-change Sparingly",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Only add when you notice first-frame stutter.",
+   "file": "h_feel-better__2.txt",
+   "section": "15. Use will-change Sparingly",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Interactive elements should prefer a 44×44px hit area for touch or mobile contexts.",
+   "file": "h_feel-better__2.txt",
+   "section": "16. Minimum Hit Area",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "In dense desktop interfaces, use at least 40×40px.",
+   "file": "h_feel-better__2.txt",
+   "section": "16. Minimum Hit Area",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Never let hit areas of two elements overlap.",
+   "file": "h_feel-better__2.txt",
+   "section": "16. Minimum Hit Area",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "One stroke weight per icon set; never mix libraries on one surface.",
+   "file": "h_feel-better__2.txt",
+   "section": "17. Match Icon Stroke to Text Weight",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Icons use `currentColor` and get their states (hover, selected, disabled) from CSS color and opacity, never from separate assets.",
+   "file": "h_feel-better__2.txt",
+   "section": "18. One SVG, Recolored per State",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Outline variant is the default; fill variant marks the active state.",
+   "file": "h_feel-better__2.txt",
+   "section": "18. One SVG, Recolored per State",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Motion is never the only feedback channel; every animated state change also needs a static cue such as color, icon, or label.",
+   "file": "h_feel-better__2.txt",
+   "section": "19. Motion Restraint",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Icons look off-center | Adjust optically with padding or fix SVG directly",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Border used only to fake elevation | Use layered `box-shadow` with transparency; keep structural and state borders",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Jarring staged entrance or contextual exit | Stagger infrequent entrances and keep context-preserving exits subtle",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Animation plays on page load | Add `initial={false}` to `AnimatePresence`",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`transition: all` on elements | Specify exact properties",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "First-frame animation stutter | Add `will-change: transform` (sparingly)",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Tiny hit areas on small controls | Extend with a pseudo-element to 44×44px for touch/mobile, or at least 40×40px in dense desktop UI",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Hairline icon beside bold text | Match the stroke width to the text weight",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Filled icons everywhere | Outline as default, fill only for the active state",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Entrance animation on every hover or keystroke | Instant feedback or ≤150ms opacity/color transition",
+   "file": "h_feel-better__2.txt",
+   "section": "Common Mistakes",
+   "category": "Motion",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Use `full` when no review mode is supplied.",
+   "file": "h_feel-better__2.txt",
+   "section": "Review Output Format",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`quick` | Primary user path and highest-traffic states; report only `HIGH` and `MEDIUM` issues | 5",
+   "file": "h_feel-better__2.txt",
+   "section": "Review Output Format",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Show what was actually inspected:",
+   "file": "h_feel-better__2.txt",
+   "section": "Scope and Coverage",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Typography | Files, components, states, or checks | Findings count, `Clear`, or `Not reviewed` with a reason",
+   "file": "h_feel-better__2.txt",
+   "section": "Scope and Coverage",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Include all five Quick Reference categories.",
+   "file": "h_feel-better__2.txt",
+   "section": "Scope and Coverage",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never imply an uninspected surface was reviewed.",
+   "file": "h_feel-better__2.txt",
+   "section": "Scope and Coverage",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use a markdown table with **Severity**, **Location**, **Before**, **After**, and **Why** columns.",
+   "file": "h_feel-better__2.txt",
+   "section": "Findings",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Include every change made or proposed, not a subset.",
+   "file": "h_feel-better__2.txt",
+   "section": "Findings",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never use separate \"Before:\" / \"After:\" lines.",
+   "file": "h_feel-better__2.txt",
+   "section": "Findings",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Severity**: `HIGH` makes an interaction inaccessible, misleading, unreadable, or repeatedly disruptive; `MEDIUM` creates a noticeable usability or consistency problem; `LOW` is isolated polish and appears only in `full` mode.",
+   "file": "h_feel-better__2.txt",
+   "section": "Findings",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Location**: cite `path/to/file:line`. If the artifact has no source files, cite the exact screen and component instead.",
+   "file": "h_feel-better__2.txt",
+   "section": "Findings",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Before / After**: show the current implementation and an actionable replacement.",
+   "file": "h_feel-better__2.txt",
+   "section": "Findings",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Consolidate a repeated systemic issue into one row and list every affected location.",
+   "file": "h_feel-better__2.txt",
+   "section": "Findings",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Omit principles with no findings and never pad the report to reach the cap.",
+   "file": "h_feel-better__2.txt",
+   "section": "Findings",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "LOW | `src/Card.tsx:28` | `rounded-xl` on card + `rounded-xl` on inner button (`p-2`) | `rounded-2xl` on card (`8 + 8 = 16`), `rounded-lg` on inner button | Nested corners should be concentric",
+   "file": "h_feel-better__2.txt",
+   "section": "Concentric border radius",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "LOW | `src/card.css:11` | `border-radius: 16px` on both nested surfaces | Outer `24px`, inner `16px` with `8px` padding | Equal nested radii make the inner surface look pinched",
+   "file": "h_feel-better__2.txt",
+   "section": "Concentric border radius",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "LOW | `src/timer.css:8` | Default numerals on a timer | Add `font-variant-numeric: tabular-nums` to the timer | Equal-width digits keep the timer stable",
+   "file": "h_feel-better__2.txt",
+   "section": "Tabular numbers",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "LOW | `src/Button.tsx:19` | `<button className=\"...\">` | Add `active:scale-[0.96] transition-transform` | Press feedback makes the control feel responsive",
+   "file": "h_feel-better__2.txt",
+   "section": "Scale on press",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "MEDIUM | `src/button.css:24` | `scale(0.9)` on press | Raise to `scale(0.96)` | Anything below `0.95` feels exaggerated",
+   "file": "h_feel-better__2.txt",
+   "section": "Scale on press",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Include 1–3 real candidates in `quick` mode and 2–5 in `full` mode:",
+   "file": "h_feel-better__2.txt",
+   "section": "Considered but Rejected",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`src/Card.tsx:28` | Increase the shadow | Existing depth matches the shared surface token; changing one card would reduce consistency",
+   "file": "h_feel-better__2.txt",
+   "section": "Considered but Rejected",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If the scope contains fewer borderline candidates, include the ones that exist and say so.",
+   "file": "h_feel-better__2.txt",
+   "section": "Considered but Rejected",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Verification**: list the exact commands or interactions run and their observed results. Walk every relevant state and inspect motion at 10% speed when animation is involved. If a check was not run, label it **Not verified** and state what remains.",
+   "file": "h_feel-better__2.txt",
+   "section": "Verification and Verdict",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**Verdict**: `Block` if any `HIGH` finding remains, `Needs changes` if only `MEDIUM` or `LOW` findings remain, and `Approve` only when no actionable findings remain. List every unverified check beside the verdict.",
+   "file": "h_feel-better__2.txt",
+   "section": "Verification and Verdict",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When there are no findings, omit the findings table, state \"No actionable interface-polish findings\", report verification and rejected candidates, and end with `Approve`.",
+   "file": "h_feel-better__2.txt",
+   "section": "Verification and Verdict",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If animations aren't interruptible, the interface feels broken.",
+   "file": "h_feel-better__3.txt",
+   "section": "Interruptible Animations",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use for** | Interactive state changes (hover, toggle, open/close) | Staged sequences that run once (enter animations, loading)",
+   "file": "h_feel-better__3.txt",
+   "section": "CSS Transitions vs. Keyframes",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Duration** | Fixed; retargets the value mid-flight, not the timeline | Fixed timeline, restarts from the beginning",
+   "file": "h_feel-better__3.txt",
+   "section": "CSS Transitions vs. Keyframes",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Rule:** Always prefer CSS transitions for interactive elements.",
+   "file": "h_feel-better__3.txt",
+   "section": "CSS Transitions vs. Keyframes",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Reserve keyframes for one-shot sequences.",
+   "file": "h_feel-better__3.txt",
+   "section": "CSS Transitions vs. Keyframes",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use this pattern for infrequent staged entrances where sequence helps communicate hierarchy, such as the first load of a page hero, success state, or empty state.",
+   "file": "h_feel-better__3.txt",
+   "section": "Enter Animations: Split and Stagger",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Break a large container into semantic chunks and animate each individually.",
+   "file": "h_feel-better__3.txt",
+   "section": "Enter Animations: Split and Stagger",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not stagger routine interactions such as row hovers, keystrokes, or repeated tab changes.",
+   "file": "h_feel-better__3.txt",
+   "section": "Enter Animations: Split and Stagger",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Exit animations should be softer and less attention-grabbing than enter animations.",
+   "file": "h_feel-better__3.txt",
+   "section": "Exit Animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The user's focus is moving to the next thing — don't fight for attention.",
+   "file": "h_feel-better__3.txt",
+   "section": "Exit Animations",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use a small fixed `translateY` (e.g., `-12px`) instead of the full container height",
+   "file": "h_feel-better__3.txt",
+   "section": "Good vs. Bad",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Keep some directional movement to indicate where the element went",
+   "file": "h_feel-better__3.txt",
+   "section": "Good vs. Bad",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Exit duration should be shorter than enter duration (150ms vs 300ms)",
+   "file": "h_feel-better__3.txt",
+   "section": "Good vs. Bad",
+   "category": "Motion",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Use a subtle exit when it preserves spatial context. Remove immediately when motion adds no information, the interaction repeats frequently, or reduced motion is requested.",
+   "file": "h_feel-better__3.txt",
+   "section": "Good vs. Bad",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When icons appear or disappear contextually (on hover, on state change), animate them with `opacity`, `scale`, and `blur` rather than just toggling visibility.",
+   "file": "h_feel-better__3.txt",
+   "section": "Contextual Icon Animations",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If the project doesn't use Motion (Framer Motion), keep both icons in the DOM and cross-fade them with CSS transitions.",
+   "file": "h_feel-better__3.txt",
+   "section": "CSS Transition Approach (No Motion)",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Because neither icon unmounts, both enter and exit animate smoothly.",
+   "file": "h_feel-better__3.txt",
+   "section": "CSS Transition Approach (No Motion)",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The trick: one icon is absolutely positioned on top of the other.",
+   "file": "h_feel-better__3.txt",
+   "section": "CSS Transition Approach (No Motion)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Exit animation** | Yes (via `AnimatePresence`) | Yes (cross-fade — icon never unmounts)",
+   "file": "h_feel-better__3.txt",
+   "section": "Choosing Between Motion and CSS",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Spring physics** | Yes | No — use `cubic-bezier(0.2, 0, 0, 1)` as approximation",
+   "file": "h_feel-better__3.txt",
+   "section": "Choosing Between Motion and CSS",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**When to use** | Project already uses `motion` or `framer-motion` | No motion dependency, or keeping bundle small",
+   "file": "h_feel-better__3.txt",
+   "section": "Choosing Between Motion and CSS",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Rule:** Check the project's `package.json`.",
+   "file": "h_feel-better__3.txt",
+   "section": "Choosing Between Motion and CSS",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If neither is present, use the CSS cross-fade pattern — don't add a dependency just for icon transitions.",
+   "file": "h_feel-better__3.txt",
+   "section": "Choosing Between Motion and CSS",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Icons in contextual toolbars | Icons that are always visible",
+   "file": "h_feel-better__3.txt",
+   "section": "When to Animate Icons",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Important:** Always use exactly these values for contextual icon animations — do not deviate:",
+   "file": "h_feel-better__3.txt",
+   "section": "When to Animate Icons",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`scale`: `0.25` → `1` (never use `0.5` or `0.6`)",
+   "file": "h_feel-better__3.txt",
+   "section": "When to Animate Icons",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`transition`: `{ type: \"spring\", duration: 0.3, bounce: 0 }` — **bounce must always be `0`**, never `0.1` or any other value",
+   "file": "h_feel-better__3.txt",
+   "section": "When to Animate Icons",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Not every button needs this.",
+   "file": "h_feel-better__3.txt",
+   "section": "Scale on Press",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Add a `static` prop to your button component that disables the scale effect when the motion would be distracting.",
+   "file": "h_feel-better__3.txt",
+   "section": "Scale on Press",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `initial={false}` on `AnimatePresence` to prevent enter animations from firing on first render.",
+   "file": "h_feel-better__3.txt",
+   "section": "Skip Animation on Page Load",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Elements that are already in their default state shouldn't animate in on page load — only on subsequent state changes.",
+   "file": "h_feel-better__3.txt",
+   "section": "Skip Animation on Page Load",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Works well for: icon swaps, toggles, tabs, segmented controls — anything that has a default state on page load.",
+   "file": "h_feel-better__3.txt",
+   "section": "When It Works",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don't use `initial={false}` when the component relies on its `initial` prop to set up a first-time enter animation, like a staggered page hero or a loading state.",
+   "file": "h_feel-better__3.txt",
+   "section": "When It Breaks",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Verify the component still looks right on a full page refresh before applying this.",
+   "file": "h_feel-better__3.txt",
+   "section": "When It Breaks",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Motion is a budget, not a garnish:",
+   "file": "h_feel-better__3.txt",
+   "section": "Motion Restraint",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**No custom animation on high-frequency interactions.** Repeated interactions get instant feedback or a minimal `opacity` or `background-color` transition at ≤150ms.",
+   "file": "h_feel-better__3.txt",
+   "section": "Motion Restraint",
+   "category": "Motion",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**Motion is never the only feedback channel.** Every animated state change also needs a static cue such as color, icon, or label.",
+   "file": "h_feel-better__3.txt",
+   "section": "Motion Restraint",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Brief and precise beats prominent.** If a shorter, smaller animation communicates the same thing, use it.",
+   "file": "h_feel-better__3.txt",
+   "section": "Motion Restraint",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Honor reduced-motion preferences.** Preserve the static cue and remove unnecessary movement.",
+   "file": "h_feel-better__3.txt",
+   "section": "Motion Restraint",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "An icon next to text should carry the same optical weight as the text.",
+   "file": "h_feel-better__4.txt",
+   "section": "Match Icon Stroke to Text Weight",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use one stroke weight per icon set on a surface.",
+   "file": "h_feel-better__4.txt",
+   "section": "Match Icon Stroke to Text Weight",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Size inline icons relative to the text's cap height, typically `1em`–`1.25em`.",
+   "file": "h_feel-better__4.txt",
+   "section": "Match Icon Stroke to Text Weight",
+   "category": "Type",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Use one SVG drawn with `currentColor`; let CSS drive hover, selected, and disabled states.",
+   "file": "h_feel-better__4.txt",
+   "section": "One SVG, Recolored per State",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Outline | Default state: toolbars, list rows, inline with text",
+   "file": "h_feel-better__4.txt",
+   "section": "Outline Default, Fill Active",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The swap between variants is a contextual icon animation; use the exact cross-fade values in [animations.md](animations.md).",
+   "file": "h_feel-better__4.txt",
+   "section": "Outline Default, Fill Active",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Test every icon at the smallest size it will render, often `16px`.",
+   "file": "h_feel-better__4.txt",
+   "section": "Design at Render Size",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Prefer simplified glyphs for small contexts over scaled-down detailed artwork.",
+   "file": "h_feel-better__4.txt",
+   "section": "Design at Render Size",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use the icon set's native grid sizes (`16`, `20`, `24`) rather than arbitrary fractional scales.",
+   "file": "h_feel-better__4.txt",
+   "section": "Design at Render Size",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use SVG rather than raster assets.",
+   "file": "h_feel-better__4.txt",
+   "section": "Design at Render Size",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Analyze composite icons part by part: an overlay may keep its position even when the base glyph flips.",
+   "file": "h_feel-better__4.txt",
+   "section": "Icons in RTL",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Give every icon-only control an accessible name and mark purely decorative icons hidden from assistive technology.",
+   "file": "h_feel-better__4.txt",
+   "section": "Icons in RTL",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Transition specificity and GPU compositing hints.",
+   "file": "h_feel-better__5.txt",
+   "section": "Performance",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never use `transition: all` or Tailwind's `transition-all`.",
+   "file": "h_feel-better__5.txt",
+   "section": "Transition Only What Changes",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Always specify the exact properties that change.",
+   "file": "h_feel-better__5.txt",
+   "section": "Transition Only What Changes",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Tailwind's bare `transition` maps to a curated default list of colors, opacity, shadow, and transforms, not to `all`; still prefer naming exactly what changes.",
+   "file": "h_feel-better__5.txt",
+   "section": "Transition Only What Changes",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`transition: all` forces the browser to watch every property for changes",
+   "file": "h_feel-better__5.txt",
+   "section": "Why",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Causes unexpected transitions on properties you didn't intend to animate (colors, padding, shadows)",
+   "file": "h_feel-better__5.txt",
+   "section": "Why",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`transition-transform` in Tailwind maps to `transition-property: transform, translate, scale, rotate` — it covers all transform-related properties, not just `transform`.",
+   "file": "h_feel-better__5.txt",
+   "section": "Tailwind transition-transform Note",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use this when you're only animating transforms.",
+   "file": "h_feel-better__5.txt",
+   "section": "Tailwind transition-transform Note",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For multiple non-transform properties, use the bracket syntax: `transition-[scale,opacity,filter]`.",
+   "file": "h_feel-better__5.txt",
+   "section": "Tailwind transition-transform Note",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Without it, the browser promotes the element only when the animation starts — that one-time layer promotion can cause a micro-stutter on the first frame.",
+   "file": "h_feel-better__5.txt",
+   "section": "Use will-change Sparingly",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`clip-path` | Newer Chromium only | Rarely; not reliable cross-browser",
+   "file": "h_feel-better__5.txt",
+   "section": "Useful Properties",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Only add `will-change` when you notice first-frame stutter — Safari in particular benefits from it.",
+   "file": "h_feel-better__5.txt",
+   "section": "When to Skip",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don't add it preemptively to every animated element; each extra compositing layer costs memory.",
+   "file": "h_feel-better__5.txt",
+   "section": "When to Skip",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When nesting rounded elements, the outer radius must equal the inner radius plus the padding between them:",
+   "file": "h_feel-better__6.txt",
+   "section": "Concentric Border Radius",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If padding is larger than `24px`, treat the layers as separate surfaces and choose each radius independently instead of forcing strict concentric math.",
+   "file": "h_feel-better__6.txt",
+   "section": "Concentric Border Radius",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Mismatched border radii on nested elements is one of the most common things that makes interfaces feel off.",
+   "file": "h_feel-better__6.txt",
+   "section": "Tailwind Example",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When geometric centering looks off, align optically instead.",
+   "file": "h_feel-better__6.txt",
+   "section": "Optical Alignment",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use slightly less padding on the icon side to make the button feel balanced.",
+   "file": "h_feel-better__6.txt",
+   "section": "Buttons with Text + Icon",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Play icons are triangular and their geometric center is not their visual center.",
+   "file": "h_feel-better__6.txt",
+   "section": "Play Button Triangles",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The best fix is adjusting the SVG directly so no extra margin/padding is needed in the component code.",
+   "file": "h_feel-better__6.txt",
+   "section": "Asymmetric Icons (Stars, Arrows, Carets)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For **buttons, cards, and containers** that use a border for depth or elevation, prefer replacing it with a subtle `box-shadow`.",
+   "file": "h_feel-better__6.txt",
+   "section": "Shadows Instead of Borders",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Shadows adapt to any background since they use transparency; solid borders don't.",
+   "file": "h_feel-better__6.txt",
+   "section": "Shadows Instead of Borders",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This also helps when using images or multiple colors as backgrounds — solid border colors don't work well on backgrounds other than the ones they were designed for.",
+   "file": "h_feel-better__6.txt",
+   "section": "Shadows Instead of Borders",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Do not apply this to dividers** (`border-b`, `border-t`, side borders) or any border whose purpose is layout separation rather than element depth.",
+   "file": "h_feel-better__6.txt",
+   "section": "Shadows Instead of Borders",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Those should stay as borders.",
+   "file": "h_feel-better__6.txt",
+   "section": "Shadows Instead of Borders",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Apply the variable and add `transition-[box-shadow]` for a smooth hover:",
+   "file": "h_feel-better__6.txt",
+   "section": "Usage with Hover Transition",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Add a subtle `1px` outline with low opacity to images.",
+   "file": "h_feel-better__6.txt",
+   "section": "Image Outlines",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "This creates consistent depth, especially in design systems where other elements use borders or shadows.",
+   "file": "h_feel-better__6.txt",
+   "section": "Image Outlines",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never use a near-black or near-white from the project palette (e.g. slate-900, zinc-900, `#0a0a0a`, `#111827`, `#f5f5f7`). Tinted outlines pick up the surrounding surface color and read as dirt on the image edge.",
+   "file": "h_feel-better__6.txt",
+   "section": "Color rules (non-negotiable)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never match the outline to the project's accent or ink color. The outline is a neutral separator, not a themed element.",
+   "file": "h_feel-better__6.txt",
+   "section": "Color rules (non-negotiable)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `outline-black/10` and `outline-white/10` specifically — not `outline-slate-*`, `outline-zinc-*`, `outline-neutral-*`, or any tinted scale.",
+   "file": "h_feel-better__6.txt",
+   "section": "Tailwind with Dark Mode",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Why outline instead of border?** `outline` doesn't affect layout (no added width/height), and `outline-offset: -1px` keeps it inset so images stay their intended size.",
+   "file": "h_feel-better__6.txt",
+   "section": "Tailwind with Dark Mode",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Two interactive elements should never have overlapping hit areas.",
+   "file": "h_feel-better__6.txt",
+   "section": "Collision Rule",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Typography rendering details that make interfaces feel better.",
+   "file": "h_feel-better__7.txt",
+   "section": "Typography",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Only works on blocks of 6 lines or fewer** (Chromium) or 10 lines or fewer (Firefox) — the balancing algorithm is computationally expensive, so browsers limit it to short text.",
+   "file": "h_feel-better__7.txt",
+   "section": "text-wrap: balance",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Works on text of any length with no line-count limit.",
+   "file": "h_feel-better__7.txt",
+   "section": "text-wrap: pretty",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This should be your **default for short-to-medium text** — paragraphs, descriptions, captions, list items, card text.",
+   "file": "h_feel-better__7.txt",
+   "section": "text-wrap: pretty",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For very long text (10+ lines), skip both `pretty` and `balance` — the browser's default wrapping is fine and you avoid unnecessary layout cost.",
+   "file": "h_feel-better__7.txt",
+   "section": "text-wrap: pretty",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Headings, titles where even distribution matters | `text-wrap: balance`",
+   "file": "h_feel-better__7.txt",
+   "section": "When to Use Which",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Short-to-medium text — paragraphs, descriptions, captions, UI text | `text-wrap: pretty`",
+   "file": "h_feel-better__7.txt",
+   "section": "When to Use Which",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Long text (10+ lines), code blocks, pre-formatted text | Neither — leave default",
+   "file": "h_feel-better__7.txt",
+   "section": "When to Use Which",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "On macOS, text renders heavier than intended by default.",
+   "file": "h_feel-better__7.txt",
+   "section": "Font Smoothing (macOS)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Note:** This only affects macOS rendering.",
+   "file": "h_feel-better__7.txt",
+   "section": "Good vs. Bad",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This skill does not require a specific font family.",
+   "file": "h_feel-better__7.txt",
+   "section": "Font Family Scope",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not introduce a paid or proprietary typeface just to satisfy the polish checklist.",
+   "file": "h_feel-better__7.txt",
+   "section": "Font Family Scope",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use the product's existing type system unless the task explicitly asks for a type change.",
+   "file": "h_feel-better__7.txt",
+   "section": "Font Family Scope",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If the design calls for a system-native macOS feel, use the system font stack.",
+   "file": "h_feel-better__7.txt",
+   "section": "Font Family Scope",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If the design calls for a commercial face such as Helvetica Now, treat it as an optional brand decision and keep a practical fallback stack.",
+   "file": "h_feel-better__7.txt",
+   "section": "Font Family Scope",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "They do not override the project's chosen font family.",
+   "file": "h_feel-better__7.txt",
+   "section": "Font Family Scope",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When numbers update dynamically (counters, prices, timers, table columns), use tabular-nums to make all digits equal width.",
+   "file": "h_feel-better__7.txt",
+   "section": "Tabular Numbers",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use tabular-nums | Don't use tabular-nums",
+   "file": "h_feel-better__7.txt",
+   "section": "When to Use",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This is expected behavior and usually desirable for alignment, but verify it looks right in your specific font.",
+   "file": "h_feel-better__7.txt",
+   "section": "Caveat",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

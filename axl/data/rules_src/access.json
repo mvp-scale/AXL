@@ -1,0 +1,2803 @@
+{
+ "class": "Access",
+ "tweaks": {
+  "placeholder": [
+   {
+    "rule": "aria:textbox ask \"Does every input have a visible label that is not just placeholder text?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c47158",
+       "impeccable:c86664",
+       "deslop:7fd06c",
+       "deslop:21d841"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "aria:textbox wcag:1.4.3 pass",
+    "values": [
+     {
+      "value": "4.5:1",
+      "qids": [
+       "taste-skill:fa41b9"
+      ]
+     }
+    ]
+   }
+  ],
+  "contrast-text": [
+   {
+    "rule": "text:* wcag:1.4.3 pass",
+    "values": [
+     {
+      "value": "4.5:1",
+      "qids": [
+       "govuk:2abc9c",
+       "impeccable:1f2256",
+       "impeccable:dc1528",
+       "impeccable:570161",
+       "deslop:16a21f",
+       "deslop:63f18e",
+       "oneredoak:55c45c",
+       "openai:8aef9c",
+       "ui-craft:9f5a91"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* lighthouse:color-contrast pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:0b114c",
+       "impeccable:0a9d8d",
+       "deslop:4024d9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button wcag:1.4.3 pass",
+    "values": [
+     {
+      "value": "4.5:1",
+      "qids": [
+       "taste-skill:f64166",
+       "taste-skill:a47ec2",
+       "taste-skill:3793ac"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "media:dark wcag:1.4.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:9c8a8d",
+       "apple-hig:cc15ca",
+       "taste-skill:9deb18"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "media:forced-colors ask \"Does the UI offer a higher-contrast colour scheme when the system Increase Contrast setting is on?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:02dbe1",
+       "apple-hig:cc15ca"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "text:* ask \"Is text placed over imagery kept readable with an overlay, scrim or backdrop?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:aa2dad",
+       "taste-skill:0c0457",
+       "taste-skill:2e074a",
+       "taste-skill:167905"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "alt-text": [
+   {
+    "rule": "aria:img lighthouse:image-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:f29dd2",
+       "openai:66552e",
+       "taste-skill:a63982"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:image-redundant-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:e47b9d",
+       "taste-skill:a63982"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img ask \"Does each image's alt text convey the information the image carries, with empty alt only for decoration?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:f29dd2",
+       "taste-skill:a63982",
+       "claw-design:c973f5"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "aria-semantics": [
+   {
+    "rule": "aria:button lighthouse:button-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:075b15",
+       "vercel:693df9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:dialog lighthouse:aria-dialog-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "shadcn:760565",
+       "shadcn:7cc668"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:accordion ask \"Do expandable controls use aria-expanded and aria-controls?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:1d3d89"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "ui:icon ask \"Are decorative icons hidden from assistive technology and icon-only controls given an accessible name?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:693df9"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "aria:textbox ask \"Is helper or error text linked to its form control with aria-describedby?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "webdev:540884"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "color-not-only": [
+   {
+    "rule": "page wcag:1.4.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:f8542b",
+       "apple-hig:544195",
+       "apple-hig:8cba58",
+       "deslop:6a482a",
+       "deslop:5b2bd6",
+       "deslop:77db79",
+       "ui-craft:0146b0",
+       "ui-craft:dcb137",
+       "webdev:fa2c70",
+       "nngroup:314dbf",
+       "impeccable:aeb9fd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Is an error or invalid state signalled by more than colour (icon, text or border change)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4763fe",
+       "deslop:4dbf4d",
+       "nngroup:df18e6",
+       "ui-craft:fd718d",
+       "webdev:ec37e0",
+       "webdev:cb170a",
+       "ui-craft:dcb137",
+       "ui-craft:a36093"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "ui:badge ask \"Does every status indicator pair its colour with an icon, label or shape?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:3d7522",
+       "deslop:e994a4",
+       "deslop:027483",
+       "ui-craft:3e5056",
+       "ui-craft:266758",
+       "ui-craft:7673ad",
+       "vercel:74a812",
+       "hallmark:75b88a",
+       "ui-craft:c8c81e"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "ui:chart ask \"Is colour never the only code in data displays (red-green pairs carry an icon, pattern or label)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4cec2d",
+       "ui-craft:2bb868",
+       "ui-craft:55bdff",
+       "impeccable:c346d6"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "state:focus-visible ask \"Is keyboard focus indicated by more than colour alone?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:d7d79e"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "state:disabled ask \"Do disabled states avoid relying on colour alone and explain why they are disabled?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:279fe9",
+       "ui-craft:4913c9"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "aria:textbox ask \"Are required fields marked with aria-required, not with colour alone?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1f3f9c"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "text-resize-200": [
+   {
+    "rule": "page wcag:1.4.4 pass",
+    "values": [
+     {
+      "value": "200%",
+      "qids": [
+       "apple-hig:e7b63a",
+       "deslop:be5d2d",
+       "impeccable:db3245"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* font-size contains rem",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:c04a43",
+       "deslop:be5d2d",
+       "webdev:838162"
+      ]
+     }
+    ]
+   }
+  ],
+  "semantic-structure": [
+   {
+    "rule": "aria:main lighthouse:landmark-one-main pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:325425",
+       "taste-skill:f785ee"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Are interactive controls built from native elements (button, a, input, label, table) rather than divs or spans with ARIA?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:325425"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "aria:form ask \"Are groups of related checkboxes, radios or switches wrapped in a fieldset with a legend?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "shadcn:71d362",
+       "shadcn:274d48"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "page ask \"Is the page built from semantic HTML elements (nav, main, article, aside, section) rather than div soup?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f785ee",
+       "impeccable:325425",
+       "ui-craft:c66c87"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "reading-order": [
+   {
+    "rule": "page lighthouse:visual-order-follows-dom pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:d03e95",
+       "wcag22:39da42"
+      ]
+     }
+    ]
+   }
+  ],
+  "headings-describe": [
+   {
+    "rule": "aria:heading lighthouse:empty-heading pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:ade479"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading ask \"Does each heading describe the topic or purpose of its section?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:bff64b"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "text-alternative": [
+   {
+    "rule": "page wcag:1.1.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:ed7053"
+      ]
+     }
+    ]
+   }
+  ],
+  "focus-not-obscured": [
+   {
+    "rule": "page wcag:2.4.11 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:6cf247",
+       "vercel:e0692c",
+       "vercel:7e6a6b",
+       "vercel:2ac038",
+       "apple-hig:64aa4d"
+      ]
+     }
+    ]
+   }
+  ],
+  "alt-decorative-empty": [
+   {
+    "rule": "aria:img lighthouse:image-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:413366",
+       "lighthouse:457f09",
+       "impeccable:f29dd2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:image-redundant-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:bdb106"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:svg-img-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:e3b398"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon ask \"Are decorative icons hidden from assistive technology and icon-only controls given an accessible name?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:02b0a2",
+       "deslop:6f1536",
+       "ui-craft:de6c32",
+       "vercel:693df9"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "alt-input-image": [
+   {
+    "rule": "aria:button lighthouse:input-image-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:7b07de",
+       "lighthouse:64402d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do active image-map area elements have alternative text?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:a2e771"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "svg-accessible-name": [
+   {
+    "rule": "aria:img lighthouse:svg-img-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:4708a9",
+       "lighthouse:c72ffc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img lighthouse:object-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:5a5d2f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:chart ask \"Does every visual-only svg, canvas or CSS-art illustration have an accessible name or an explicit aria-hidden?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:8d9e33",
+       "hallmark:ed8218",
+       "deslop:39c2eb"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "button-name": [
+   {
+    "rule": "aria:button lighthouse:button-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:ae97a7",
+       "lighthouse:16b35e",
+       "deslop:b0d7c6",
+       "deslop:e15331",
+       "deslop:fe35f4",
+       "deslop:075b15",
+       "ui-craft:8c1970",
+       "ui-craft:b4795e",
+       "vercel:dd8d69",
+       "vercel:cfc4dd",
+       "feel-better:02b0a2",
+       "deslop:39c2eb",
+       "ui-craft:de6c32"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button wcag:4.1.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:068b36",
+       "vercel:c390c6",
+       "apple-hig:d8cbe9"
+      ]
+     }
+    ]
+   }
+  ],
+  "link-name": [
+   {
+    "rule": "aria:link lighthouse:link-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:690b9b",
+       "lighthouse:7a14d3",
+       "lighthouse:c13a4f",
+       "ui-craft:068b36"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:link wcag:2.4.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:26a0a1",
+       "ui-craft:6ef1d0"
+      ]
+     }
+    ]
+   }
+  ],
+  "form-label-programmatic": [
+   {
+    "rule": "aria:textbox lighthouse:label pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:05bae1",
+       "lighthouse:67a5f6",
+       "webdev:421341",
+       "wcag22:9c9c83",
+       "wcag22:726c2f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:combobox lighthouse:select-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:56b4a1"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Are errors linked to their field with aria-describedby and the field marked aria-invalid?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:3a54f8"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "aria-valid-attrs": [
+   {
+    "rule": "page lighthouse:aria-valid-attr pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:21c705",
+       "lighthouse:7c47ee"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-valid-attr-value pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:abd5a5",
+       "lighthouse:d626a8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-allowed-attr pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:b90523",
+       "lighthouse:5c628c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid ask \"Are errors linked to their field with aria-describedby and the field marked aria-invalid?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:79dedf",
+       "ui-craft:ff144b"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "aria-valid-roles": [
+   {
+    "rule": "page lighthouse:aria-allowed-role pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:bc902d",
+       "lighthouse:0f289a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-deprecated-role pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:8b34f7",
+       "lighthouse:c21f8e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-roles pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:cc5228",
+       "lighthouse:03210b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:presentation-role-conflict pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:0fac96"
+      ]
+     }
+    ]
+   }
+  ],
+  "aria-required-parts": [
+   {
+    "rule": "page lighthouse:aria-required-attr pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:8cadbd",
+       "lighthouse:7f1cae",
+       "ui-craft:a3eb1c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-required-children pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:2ffb18",
+       "lighthouse:a3b5f7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-required-parent pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:db7435",
+       "lighthouse:f76e38"
+      ]
+     }
+    ]
+   }
+  ],
+  "aria-widget-names": [
+   {
+    "rule": "page lighthouse:aria-command-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:ee59a8",
+       "axe:04d42b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:dialog lighthouse:aria-dialog-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:dc0cdf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-input-field-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:dd3cfd",
+       "lighthouse:1ea45c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-meter-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:e763bf",
+       "lighthouse:29da9f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:progressbar lighthouse:aria-progressbar-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:b016d4",
+       "lighthouse:804bcf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-toggle-field-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:b16811",
+       "lighthouse:b3c51e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:tooltip lighthouse:aria-tooltip-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:3416d4",
+       "lighthouse:0939f7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-treeitem-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:421322",
+       "lighthouse:52078a"
+      ]
+     }
+    ]
+   }
+  ],
+  "aria-hidden-not-focusable": [
+   {
+    "rule": "page lighthouse:aria-hidden-body pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:b69247"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-hidden-focus pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:828730",
+       "lighthouse:20fb2b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:offscreen-content-hidden pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:2c5e96"
+      ]
+     }
+    ]
+   }
+  ],
+  "native-over-aria": [
+   {
+    "rule": "aria:button ask \"Are interactive controls built from native elements (button, a, input, label, table) rather than divs or spans with ARIA?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:e5c000",
+       "deslop:f2e60a",
+       "ui-craft:ff5191",
+       "ui-craft:7ff2a9",
+       "ui-craft:f6bdb5",
+       "vercel:94c2f7",
+       "vercel:c5d9d2",
+       "vercel:8c342d"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "landmarks": [
+   {
+    "rule": "aria:main lighthouse:landmark-one-main pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:0b55b0",
+       "lighthouse:f3ca93"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:use-landmarks pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:7cde07",
+       "lighthouse:910376",
+       "axe:1187ee",
+       "impeccable:325425",
+       "taste-skill:f785ee"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is each landmark role unique or distinguished by its accessible name, and are banner, main and contentinfo landmarks not nested inside other landmarks?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:ee6ed3",
+       "axe:521d9b",
+       "axe:bd15fc",
+       "axe:6440b7",
+       "axe:0249f9",
+       "axe:d546e0"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "heading-order": [
+   {
+    "rule": "aria:heading lighthouse:heading-order pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:dbdb9a",
+       "claw-design:74ca07",
+       "hallmark:11f73d",
+       "impeccable:31d126",
+       "lighthouse:9ab8d5",
+       "deslop:1b0685",
+       "ui-craft:7d2363",
+       "vercel:69b6f5",
+       "claw-design:523d36"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:heading lighthouse:empty-heading pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:e07b21"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the page contain a level-one heading?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:880a7d"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "aria:heading wcag:1.3.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:726c2f"
+      ]
+     }
+    ]
+   }
+  ],
+  "list-markup": [
+   {
+    "rule": "aria:list lighthouse:list pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:d0312d",
+       "lighthouse:f1b83c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:list lighthouse:listitem pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:707075",
+       "lighthouse:507249"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:list lighthouse:definition-list pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:9c606a",
+       "lighthouse:3d8962"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:list lighthouse:dlitem pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:5488ac",
+       "lighthouse:9cb549"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Are groups of related checkboxes, radios or switches wrapped in a fieldset with a legend?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "shadcn:71d362",
+       "shadcn:274d48"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "aria:list ask \"Are lists marked up as ul or ol with li items?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:9360d7"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "table-headers": [
+   {
+    "rule": "aria:table lighthouse:td-has-header pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:a43198",
+       "lighthouse:6c80ab"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table lighthouse:td-headers-attr pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:d85bae",
+       "lighthouse:676ceb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table lighthouse:th-has-data-cells pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:490ed6",
+       "lighthouse:9de8b2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Are table header cells marked up with th and scope used correctly?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:d6fc52",
+       "ui-craft:3f3ddf"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "table-caption": [
+   {
+    "rule": "aria:table lighthouse:table-duplicate-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:206100",
+       "lighthouse:64887c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table lighthouse:table-fake-caption pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:e223c3",
+       "lighthouse:8e0aa8"
+      ]
+     }
+    ]
+   }
+  ],
+  "page-title": [
+   {
+    "rule": "page lighthouse:document-title pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:7d5688",
+       "lighthouse:9da90d",
+       "taste-skill:cc5341"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:2.4.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:8e87d2",
+       "vercel:3031a5"
+      ]
+     }
+    ]
+   }
+  ],
+  "duplicate-ids": [
+   {
+    "rule": "page lighthouse:duplicate-id-aria pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:3c0480",
+       "lighthouse:b7727d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is every id attribute value unique in the document?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:be423a",
+       "axe:26e03a"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "iframe-title": [
+   {
+    "rule": "page lighthouse:frame-title pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:0f669d",
+       "axe:fe0d97",
+       "lighthouse:e3891b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do frames with focusable content avoid tabindex=-1?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:2c4d00"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "video-captions": [
+   {
+    "rule": "aria:figure lighthouse:video-caption pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:4ac159",
+       "hallmark:a567be",
+       "lighthouse:e90ab0",
+       "ui-craft:a2db1d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:figure wcag:1.2.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:8badad",
+       "vercel:0f936a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:figure wcag:1.2.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:0ccb75"
+      ]
+     }
+    ]
+   }
+  ],
+  "audio-transcript": [
+   {
+    "rule": "aria:figure wcag:1.2.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:c40e99",
+       "vercel:0f936a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:figure wcag:1.2.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:aab8a2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:figure ask \"Does every audio element have a captions track or transcript?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:180206",
+       "vercel:0f936a"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "audio-description": [
+   {
+    "rule": "aria:figure wcag:1.2.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:d3ed7d",
+       "wcag22:aab8a2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:figure wcag:1.2.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:7d2ccf"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-autoplay-audio": [
+   {
+    "rule": "aria:figure wcag:1.4.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:48b59d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:figure ask \"Does audio or video avoid autoplaying without controls to start and stop it?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:8df8c6",
+       "impeccable:76a92d"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "media-controls": [
+   {
+    "rule": "aria:figure ask \"Does audio or video avoid autoplaying without controls to start and stop it?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:8df8c6",
+       "axe:b4c313"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "aria:figure ask \"Do videos that users must control provide playback controls?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:721484"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "table-not-layout": [
+   {
+    "rule": "aria:table lighthouse:presentation-role-conflict pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:84e4b6"
+      ]
+     }
+    ]
+   }
+  ],
+  "select-name": [
+   {
+    "rule": "aria:combobox lighthouse:select-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:56b4a1",
+       "lighthouse:40237d"
+      ]
+     }
+    ]
+   }
+  ],
+  "meta-refresh-none": [
+   {
+    "rule": "page lighthouse:meta-refresh pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:641e76",
+       "axe:8c5ba5",
+       "lighthouse:af05d8"
+      ]
+     }
+    ]
+   }
+  ],
+  "tabindex-no-positive": [
+   {
+    "rule": "page lighthouse:tabindex pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:6f3a1a",
+       "lighthouse:da67ae",
+       "ui-craft:40a671"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:logical-tab-order pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:f80c48",
+       "ui-craft:40a671"
+      ]
+     }
+    ]
+   }
+  ],
+  "accesskey-unique": [
+   {
+    "rule": "page lighthouse:accesskeys pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:2013b2",
+       "lighthouse:45eebd"
+      ]
+     }
+    ]
+   }
+  ],
+  "scrollable-focusable": [
+   {
+    "rule": "page ask \"Can every scrollable region be reached and scrolled with the keyboard?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:7630d5"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "nested-interactive": [
+   {
+    "rule": "page ask \"Are interactive controls free of nested interactive controls?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:ed1228"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "identical-links-purpose": [
+   {
+    "rule": "aria:link lighthouse:identical-links-same-purpose pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:4fd350",
+       "lighthouse:5b51b0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:link wcag:2.4.9 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:24fac1"
+      ]
+     }
+    ]
+   }
+  ],
+  "link-in-text-distinct": [
+   {
+    "rule": "aria:link lighthouse:link-in-text-block pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:c476fd",
+       "lighthouse:e03fae"
+      ]
+     }
+    ]
+   }
+  ],
+  "dialog-role": [
+   {
+    "rule": "aria:dialog lighthouse:aria-dialog-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:dc0cdf",
+       "lighthouse:92e23d",
+       "shadcn:760565",
+       "shadcn:7cc668"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:dialog ask \"Is each modal marked with role dialog, aria-modal true and a labelled title?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:64de4b"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "live-region-usage": [
+   {
+    "rule": "aria:status ask \"Are result counts announced with aria-live polite after input settles, not per keystroke?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:109835"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "abbr-expansion": [
+   {
+    "rule": "page wcag:3.1.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:a641d8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Are abbreviations spelled out, or defined on first use and used consistently?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:52d36e",
+       "ui-craft:43073f"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "reading-level": [
+   {
+    "rule": "page wcag:3.1.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:61e7de"
+      ]
+     }
+    ]
+   }
+  ],
+  "unusual-words": [
+   {
+    "rule": "page wcag:3.1.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:465163"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:3.1.6 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:43f10a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* ask \"Is plain language used, with unavoidable domain terms defined inline or by tooltip?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c1a8e1",
+       "nngroup:db0872",
+       "ui-craft:43073f"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "sensory-instructions": [
+   {
+    "rule": "page wcag:1.3.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:9b987b"
+      ]
+     }
+    ]
+   }
+  ],
+  "orientation-not-locked": [
+   {
+    "rule": "page wcag:1.3.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:2118ad"
+      ]
+     }
+    ]
+   }
+  ],
+  "input-purpose": [
+   {
+    "rule": "aria:textbox wcag:1.3.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:49eaac"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:1.3.6 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:b21134"
+      ]
+     }
+    ]
+   }
+  ],
+  "focus-appearance": [
+   {
+    "rule": "state:focus-visible outline-width >= 2px",
+    "values": [
+     {
+      "value": "2px",
+      "qids": [
+       "hallmark:ae0bb5",
+       "deslop:6cf247"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible wcag:1.4.11 pass",
+    "values": [
+     {
+      "value": "3:1",
+      "qids": [
+       "hallmark:ae0bb5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible wcag:2.4.13 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:4c2506",
+       "deslop:6cf247"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:2.4.11 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:f3331d",
+       "deslop:6cf247"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:2.4.12 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:540bf5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:focus-visible ask \"Is the visual difference between the default state and the focus state recognisable?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "webdev:06f01f"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "section-headings": [
+   {
+    "rule": "page wcag:2.4.10 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:5b4d04"
+      ]
+     }
+    ]
+   }
+  ],
+  "location-in-site": [
+   {
+    "rule": "page wcag:2.4.8 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:e15e38"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:breadcrumb ask \"Does the page always show the user's current location (breadcrumbs, active states or progress indicators)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a46275",
+       "wcag22:e15e38"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "link-context": [
+   {
+    "rule": "aria:link wcag:2.4.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:26a0a1"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:link wcag:2.4.9 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:24fac1"
+      ]
+     }
+    ]
+   }
+  ],
+  "pointer-gestures-simple": [
+   {
+    "rule": "page wcag:2.5.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:c58843"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:2.5.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:ffba78"
+      ]
+     }
+    ]
+   }
+  ],
+  "dragging-alternative": [
+   {
+    "rule": "page wcag:2.5.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:ffba78",
+       "deslop:d6d01a",
+       "deslop:ba58f8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does every drag interaction clear its state on cancel, lost capture or blur and set touch-action on the drag surface?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:013320"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "error-prevention-legal": [
+   {
+    "rule": "page wcag:3.3.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:f64724",
+       "ui-craft:ba87a4",
+       "ui-craft:3a4eee"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:3.3.6 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:66d342"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:form ask \"Do payments and high-stakes writes wait for server confirmation before showing success?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ba87a4",
+       "ui-craft:3a4eee"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "help-mechanism": [
+   {
+    "rule": "page wcag:3.2.6 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:ffd8e6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:3.3.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:008a39"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is help easy to find, task-focused, concise and contextual rather than a separate site?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:e8fc92",
+       "ui-craft:648616"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "parsing-valid-html": [
+   {
+    "rule": "page lighthouse:agent-accessibility-tree pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:51593a"
+      ]
+     }
+    ]
+   }
+  ],
+  "name-role-value": [
+   {
+    "rule": "page wcag:4.1.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:9e97d7",
+       "lighthouse:a1db51",
+       "deslop:e5c000"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:custom-controls-labels pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:ae29b4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:custom-controls-roles pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:1c9fbb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:interactive-element-affordance pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:a1db51"
+      ]
+     }
+    ]
+   }
+  ],
+  "status-message-role": [
+   {
+    "rule": "aria:status ask \"Are status messages exposed with role status or an aria-live region?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": []
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "sign-language": [
+   {
+    "rule": "aria:figure wcag:1.2.6 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:619615"
+      ]
+     }
+    ]
+   }
+  ],
+  "extended-audio-description": [
+   {
+    "rule": "aria:figure wcag:1.2.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:06ab24"
+      ]
+     }
+    ]
+   }
+  ],
+  "live-captions": [
+   {
+    "rule": "aria:figure wcag:1.2.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:0ccb75"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:figure wcag:1.2.9 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:cb30ca"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-background-audio": [
+   {
+    "rule": "aria:figure wcag:1.4.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:97d0a6"
+      ]
+     }
+    ]
+   }
+  ],
+  "visual-presentation": [
+   {
+    "rule": "page wcag:1.4.8 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:e98628"
+      ]
+     }
+    ]
+   }
+  ],
+  "content-on-hover": [
+   {
+    "rule": "page wcag:1.4.13 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:688544",
+       "hallmark:02f037"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:tooltip ask \"Is tooltip content hoverable, persistent and dismissible with Escape?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:02f037"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "interruptions-minimal": [
+   {
+    "rule": "page wcag:2.2.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:b74b93"
+      ]
+     }
+    ]
+   }
+  ],
+  "re-authenticate-preserve": [
+   {
+    "rule": "page wcag:2.2.5 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:85c66c"
+      ]
+     }
+    ]
+   }
+  ],
+  "three-flashes-below": [
+   {
+    "rule": "page wcag:2.3.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:850123"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-cognitive-test-login": [
+   {
+    "rule": "page wcag:3.3.8 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:bbb1de"
+      ]
+     }
+    ]
+   }
+  ],
+  "redundant-entry-none": [
+   {
+    "rule": "page wcag:3.3.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:c9fcc1"
+      ]
+     }
+    ]
+   }
+  ],
+  "screen-reader-tested": [
+   {
+    "rule": "process ask \"Has a screen reader been run over the key flows?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:9e9765"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "keyboard-tested": [
+   {
+    "rule": "process ask \"Has the whole interface been tabbed through with the keyboard only, operating every control without a mouse?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:9e9765"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "focus-visible-wcag": [
+   {
+    "rule": "page wcag:2.4.7 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:9763b9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:focusable-controls pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:c81446"
+      ]
+     }
+    ]
+   }
+  ],
+  "aria-live-toasts": [
+   {
+    "rule": "ui:toast ask \"Are toasts and inline validation announced with aria-live polite?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:006c3e",
+       "ui-craft:e48865",
+       "vercel:b5e8ee"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "visually-hidden-utility": [
+   {
+    "rule": "aria:button ask \"Do icon-only controls and visually hidden labels stay available to screen readers (sr-only or aria-label)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "govuk:6ad30a",
+       "shadcn:adadaa",
+       "ui-craft:b4795e"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "autocomplete-off-misuse": [
+   {
+    "rule": "aria:textbox lighthouse:autocomplete-valid pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:bef3d3",
+       "lighthouse:8b8f0c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox ask \"Do non-auth fields avoid triggering password managers (autocomplete off or a specific token such as one-time-code)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:edfc99",
+       "vercel:22b375"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "lang-of-parts": [
+   {
+    "rule": "page lighthouse:valid-lang pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:5bf74a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:3.1.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:ef610f"
+      ]
+     }
+    ]
+   }
+  ],
+  "zoom-not-disabled": [
+   {
+    "rule": "page lighthouse:meta-viewport pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:fc85af",
+       "lighthouse:0e8568",
+       "vercel:515b9f",
+       "vercel:8eb430",
+       "vercel:d2d0e7"
+      ]
+     }
+    ]
+   }
+  ],
+  "css-content-text": [
+   {
+    "rule": "page ask \"Is meaningful content kept in the HTML rather than in CSS generated content?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": []
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "caption-track-language": [
+   {
+    "rule": "aria:figure ask \"Does every audio element have a captions track or transcript?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:180206"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "blink-marquee": [
+   {
+    "rule": "page ask \"Is the page free of deprecated blink and marquee elements?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:ce01fd",
+       "axe:ee62c2"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "object-embed-alt": [
+   {
+    "rule": "aria:figure lighthouse:object-alt pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:5a5d2f",
+       "lighthouse:27a87d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the page avoid server-side image maps?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:ff9e20"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "image-map-alt": [
+   {
+    "rule": "page ask \"Do active image-map area elements have alternative text?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:a2e771"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "summary-name": [
+   {
+    "rule": "ui:accordion ask \"Does every summary element have discernible text?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:136429"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "empty-table-header": [
+   {
+    "rule": "aria:table ask \"Are table header cells marked up with th and scope used correctly?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:b2b2a4"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "p-as-heading": [
+   {
+    "rule": "aria:heading ask \"Are headings real heading elements rather than styled paragraphs?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:a8bd9b"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "html-xml-lang-mismatch": [
+   {
+    "rule": "page lighthouse:html-xml-lang-mismatch pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:af5090",
+       "lighthouse:59bcc0"
+      ]
+     }
+    ]
+   }
+  ],
+  "form-field-multiple-labels": [
+   {
+    "rule": "aria:textbox lighthouse:form-field-multiple-labels pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:2f21fe",
+       "lighthouse:26c49a"
+      ]
+     }
+    ]
+   }
+  ],
+  "label-title-only": [
+   {
+    "rule": "aria:textbox ask \"Does every form element have a visible label rather than only a title attribute?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:15568d"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "input-button-name": [
+   {
+    "rule": "aria:button lighthouse:input-button-name pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "lighthouse:57c48c"
+      ]
+     }
+    ]
+   }
+  ],
+  "aria-braille": [
+   {
+    "rule": "page ask \"Does every aria-braille attribute have a non-braille equivalent?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:46bbfb"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "aria-roledescription-use": [
+   {
+    "rule": "page ask \"Is aria-roledescription used only on elements with a semantic role?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:03eaf0"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "aria-text-role": [
+   {
+    "rule": "page lighthouse:aria-text pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:c91d85",
+       "lighthouse:5132e7"
+      ]
+     }
+    ]
+   }
+  ],
+  "aria-conditional": [
+   {
+    "rule": "page lighthouse:aria-conditional-attr pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:6aaa82"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:aria-prohibited-attr pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:73eaf7"
+      ]
+     }
+    ]
+   }
+  ],
+  "contrast-enhanced-links": [
+   {
+    "rule": "text:* wcag:1.4.6 pass",
+    "values": [
+     {
+      "value": "7:1",
+      "qids": [
+       "axe:696eec"
+      ]
+     }
+    ]
+   }
+  ],
+  "avoid-fixed-orientation": [
+   {
+    "rule": "page wcag:1.3.4 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "axe:952366"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-dyslexia-friendly-typefaces": [
+   {
+    "rule": "text:body font-size >= 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "deslop:d9e5d8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body font-style == normal",
+    "values": [
+     {
+      "value": "normal",
+      "qids": [
+       "deslop:d9e5d8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:body ask \"Does body text use a readable typeface with simple sans shapes, distinct b/d and p/q, and generous letter and word spacing (for example Lexend, Atkinson Hyperlegible or Verdana)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:d9e5d8",
+       "deslop:5aea87"
+      ]
+     }
+    ],
+    "class": "type"
+   }
+  ],
+  "accessible-data-table-alongside-color-coded-char": [
+   {
+    "rule": "ui:chart ask \"Is the underlying data provided in an accessible table alongside any colour-coded chart?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:3c6523"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ],
+  "every-audio-cue-has-a-visual-equivalent": [
+   {
+    "rule": "page ask \"Does every audio cue have a visual equivalent?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:88cd7d"
+      ]
+     }
+    ],
+    "class": "access"
+   }
+  ]
+ },
+ "new_measures": {},
+ "new_elements": {}
+}

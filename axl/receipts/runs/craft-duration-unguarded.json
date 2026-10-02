@@ -1,0 +1,12 @@
+{
+ "id": "craft-duration-unguarded",
+ "tool": "axl craft checks",
+ "version": "axl craft.js on playwright 1.63.0",
+ "command": "node axl/tools/runners/craft.js axl/demo/fixture-motion-unguarded.html 1440 duration-500",
+ "input_hash": "141e1e1a6655d05f6be69a3d9fcd021f71de130121bdf24762c0ceeaf334987b",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\":\"axl craft checks (Playwright computed style)\",\"width\":1440,\"findings\":[]}",
+ "findings": [],
+ "role": "after",
+ "ran_at": "2026-09-30T01:36:32+00:00"
+}

@@ -1,0 +1,20 @@
+{
+ "id": "designmd-before",
+ "tool": "design.md lint",
+ "version": "@google/design.md 0.4.0",
+ "command": "node axl/tools/runners/designmd.js axl/demo/DESIGN.before.md",
+ "input_hash": "596c39f304fb37a664637a5ade3cd11e7d40575838f38475fb08a817cf76b35b",
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"design.md lint\",\"findings\":[{\"rule_id\":\"contrast-ratio\",\"result\":\"fail\",\"severity\":\"warning\",\"evidence\":\"textColor (#8a97a8) on backgroundColor (#f5f6f8) has contrast ratio 2.75:1, below WCAG AA minimum of 4.5:1.\",\"location\":\"components.footer-note\"}]}",
+ "findings": [
+  {
+   "rule_id": "contrast-ratio",
+   "result": "fail",
+   "severity": "warning",
+   "evidence": "textColor (#8a97a8) on backgroundColor (#f5f6f8) has contrast ratio 2.75:1, below WCAG AA minimum of 4.5:1.",
+   "location": "components.footer-note"
+  }
+ ],
+ "role": "before",
+ "ran_at": "2026-09-30T01:36:09+00:00"
+}

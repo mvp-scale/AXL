@@ -1,0 +1,1680 @@
+{
+ "sources": [
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_acdigest-substack-com-p-designmd-the-complete-guide",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "acdigest.substack.com",
+   "retrieved_at": null,
+   "url": "https://acdigest.substack.com/p/designmd-the-complete-guide"
+  },
+  {
+   "bytes": 21393,
+   "content_hash": "f04c63dc78e5d9d027f889bbd9f8302c7e2f7d901d7aa8e2c1a85ac69231e192",
+   "derives_from": [
+    "src_samber-frontend-design-deslop"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md",
+    "legacy/index.html"
+   ],
+   "id": "src_aiagentskills-net-skill-samber-cc-skills-frontend-design-des",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "Directory listing mirroring samber's skill; the skill repo itself was not fetched",
+   "publisher": "aiagentskills.net (samber skill listing)",
+   "retrieved_at": "2026-09-30T00:54:25+00:00",
+   "url": "https://aiagentskills.net/skill/samber-cc-skills-frontend-design-deslop"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_aiautomators-io-blog-shadcnlint-an-agent-first-linter-for-ta",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "aiautomators.io",
+   "retrieved_at": null,
+   "url": "https://aiautomators.io/blog/shadcnlint-an-agent-first-linter-for-tailwind-design-systems"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_betterstack-com-community-guides-ai-design-md-ai",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "betterstack.com",
+   "retrieved_at": null,
+   "url": "https://betterstack.com/community/guides/ai/design-md-ai/"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_blog-logrocket-com-headless-ui-alternatives",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "blog.logrocket.com",
+   "retrieved_at": null,
+   "url": "https://blog.logrocket.com/headless-ui-alternatives/"
+  },
+  {
+   "bytes": 24601,
+   "content_hash": "7f7520cda3ba39a689c06bfbf2334c0a5f728150f3037548cfa7914bd92df45b",
+   "derives_from": [
+    "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_claude-com-blog-improving-frontend-design-through-skills",
+   "kind": "primary",
+   "license": "unknown",
+   "lineage_note": "Anthropic blog describing the same guidance; treated as one root with the cookbook",
+   "publisher": "Anthropic",
+   "retrieved_at": "2026-09-30T04:48:21+00:00",
+   "url": "https://claude.com/blog/improving-frontend-design-through-skills"
+  },
+  {
+   "bytes": 4751,
+   "content_hash": "8ab04a8b91892f06c8fde42172fe0aab9e19263a942ce71ad0fd37aae724ced0",
+   "derives_from": [
+    "src_w3-org-tr-wcag22"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_dequeuniversity-com-rules-axe-4-8-target-size",
+   "kind": "primary",
+   "license": "unknown",
+   "lineage_note": "Deque rule page implements WCAG 2.2 SC 2.5.8 (page lists Guidelines: WCAG 2.2 (AA)); treated as derived from the W3C text",
+   "publisher": "Deque",
+   "retrieved_at": "2026-09-30T04:25:37+00:00",
+   "url": "https://dequeuniversity.com/rules/axe/4.8/target-size"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_dev-to-aws-builders-agentsmd-skillmd-designmd-how-ai-instruc",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "dev.to",
+   "retrieved_at": null,
+   "url": "https://dev.to/aws-builders/agentsmd-skillmd-designmd-how-ai-instructions-split-into-three-layers-d0g"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_dev-to-uianimation-duolingo-style-animation-in-mobile-apps-h",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "dev.to",
+   "retrieved_at": null,
+   "url": "https://dev.to/uianimation/duolingo-style-animation-in-mobile-apps-how-it-works-and-what-a-rive-animator-brings-to-developers-3n38"
+  },
+  {
+   "bytes": 28052,
+   "content_hash": "ea8da41f1e12a962228939d0943911483b2090ec60a6b5e4bf54ba9eb24eb416",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_developer-mozilla-org-en-us-docs-web-css-media-prefers-reduc",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "MDN",
+   "retrieved_at": "2026-09-30T04:48:22+00:00",
+   "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+  },
+  {
+   "bytes": 23999,
+   "content_hash": "d7aff075114a5f264a523a1ec145e78d2e486f89720d88ba2b70ce852917f1fe",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "legacy/ATTRIBUTION.md",
+    "legacy/index.html"
+   ],
+   "id": "src_developers-openai-com-plugins-concepts-ui-guidelines",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "OpenAI",
+   "retrieved_at": "2026-09-30T04:48:22+00:00",
+   "url": "https://developers.openai.com/plugins/concepts/ui-guidelines"
+  },
+  {
+   "bytes": 8112,
+   "content_hash": "c028e13ea05fdded633fd5d6939574f0023e4771d1adb4be85321ce5e5ade5be",
+   "derives_from": [
+    "src_github-com-oneredoak-claude-code-workflows"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md",
+    "legacy/index.html"
+   ],
+   "id": "src_dynamicworkflow-run-workflows-oneredoak-claude-code-workflow",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "Listing page links to github.com/oneredoak/claude-code-workflows",
+   "publisher": "dynamicworkflow.run (OneRedOak workflow listing)",
+   "retrieved_at": "2026-09-30T04:48:24+00:00",
+   "url": "https://dynamicworkflow.run/workflows/oneredoak-claude-code-workflows-design-review"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_evilmartians-com-chronicles-ai-makes-design-system-guardrail",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "evilmartians.com",
+   "retrieved_at": null,
+   "url": "https://evilmartians.com/chronicles/ai-makes-design-system-guardrails-mandatory-this-framework-delivers-them"
+  },
+  {
+   "bytes": 34742,
+   "content_hash": "ec791c4e9ece220c7b6e0fb849086a1c18db165ef8d035f78401a877dd48a607",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/GoogleChrome/lighthouse/main/readme.md",
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_github-com-googlechrome-lighthouse",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "publisher": "Google Chrome",
+   "retrieved_at": "2026-09-30T04:48:24+00:00",
+   "url": "https://github.com/GoogleChrome/lighthouse"
+  },
+  {
+   "bytes": 17280,
+   "content_hash": "4c645894712c4296953adf4c1c9277202b34aa41b648c274760b555e47ee54b6",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/README.md",
+   "found_in": [
+    "legacy/ATTRIBUTION.md"
+   ],
+   "id": "src_github-com-leonxlnx-taste-skill",
+   "kind": "primary",
+   "license": "MIT",
+   "publisher": "Leonxlnx",
+   "retrieved_at": "2026-09-30T04:48:24+00:00",
+   "url": "https://github.com/Leonxlnx/taste-skill"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_github-com-leonxlnx-taste-skill-blob-main-skills-taste-skill",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "github.com",
+   "retrieved_at": null,
+   "url": "https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill-v1/SKILL.md"
+  },
+  {
+   "bytes": 12181,
+   "content_hash": "8b895e3a208dc200c036fc7cd5429def337538417f474fa0fb268bd480ed5ad0",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/Myndex/SAPC-APCA/master/README.md",
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_github-com-myndex-sapc-apca",
+   "kind": "primary",
+   "license": "other (LICENSE file present, not auto-identified)",
+   "publisher": "Myndex",
+   "retrieved_at": "2026-09-30T04:48:25+00:00",
+   "url": "https://github.com/Myndex/SAPC-APCA"
+  },
+  {
+   "bytes": 2057,
+   "content_hash": "13369f2f81458b791a8fbdfd270c6ae4351b436f275ae18fd3c1eaab8cd4a79e",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/OneRedOak/claude-code-workflows/main/README.md",
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_github-com-oneredoak-claude-code-workflows",
+   "kind": "primary",
+   "license": "MIT",
+   "lineage_note": "",
+   "publisher": "OneRedOak",
+   "retrieved_at": "2026-09-30T04:48:25+00:00",
+   "url": "https://github.com/OneRedOak/claude-code-workflows"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_github-com-anthropics-skills-blob-main-skills-frontend-desig",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "github.com",
+   "retrieved_at": null,
+   "url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md"
+  },
+  {
+   "bytes": 9362,
+   "content_hash": "8552690e6db325687456bcdbea472595d6e8245fd1a95d55bbea7102431672be",
+   "derives_from": [
+    "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md",
+   "found_in": [
+    "legacy/ATTRIBUTION.md"
+   ],
+   "id": "src_github-com-anthropics-skills-tree-main-skills-frontend-desig",
+   "kind": "primary",
+   "license": "unknown",
+   "lineage_note": "Same Anthropic prompt (frontend_aesthetics) as the cookbook; direction of derivation unverified, treated as one root",
+   "publisher": "Anthropic",
+   "retrieved_at": "2026-09-30T04:48:25+00:00",
+   "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design"
+  },
+  {
+   "bytes": 10355,
+   "content_hash": "d4dcefe30e55b847fafa3e4d2efc6293a4a2d00966b2d2fd0122a94f1a703299",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/dequelabs/axe-core/develop/README.md",
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_github-com-dequelabs-axe-core",
+   "kind": "primary",
+   "license": "MPL-2.0",
+   "publisher": "Deque",
+   "retrieved_at": "2026-09-30T04:48:25+00:00",
+   "url": "https://github.com/dequelabs/axe-core"
+  },
+  {
+   "bytes": 50293,
+   "content_hash": "e8e8d7f036b601f1fda800a2375f4def482400ae42cff5c23dc54891042a1af6",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://cdn.jsdelivr.net/gh/educlopez/ui-craft@main/README.md",
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_github-com-educlopez-ui-craft",
+   "kind": "primary",
+   "license": "MIT",
+   "publisher": "educlopez",
+   "retrieved_at": "2026-09-30T04:48:25+00:00",
+   "url": "https://github.com/educlopez/ui-craft"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_github-com-egerrity-okchroma",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "github.com",
+   "retrieved_at": null,
+   "url": "https://github.com/egerrity/okchroma"
+  },
+  {
+   "bytes": 12915,
+   "content_hash": "f96e8ad263e1710846705b08f7fb162f21cc02f7b4133c2ae8b3a2c946368417",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/google-labs-code/design.md/main/README.md",
+   "found_in": [
+    "best-practices/SOURCES.md",
+    "legacy/ATTRIBUTION.md",
+    "legacy/index.html"
+   ],
+   "id": "src_github-com-google-labs-code-design-md",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "publisher": "Google Labs",
+   "retrieved_at": "2026-09-30T04:48:26+00:00",
+   "url": "https://github.com/google-labs-code/design.md"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_github-com-graemegeorge-oklch-palette",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "github.com",
+   "retrieved_at": null,
+   "url": "https://github.com/graemegeorge/oklch-palette"
+  },
+  {
+   "bytes": 6192,
+   "content_hash": "618b38fa8d799a5c1b506528b78d02ec6d239e3fd1fac65e3045ff134859c456",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/nutlope/hallmark/main/README.md",
+   "found_in": [
+    "best-practices/SOURCES.md",
+    "legacy/ATTRIBUTION.md",
+    "legacy/index.html"
+   ],
+   "id": "src_github-com-nutlope-hallmark",
+   "kind": "primary",
+   "license": "MIT",
+   "publisher": "Nutlope / Together AI",
+   "retrieved_at": "2026-09-30T04:48:26+00:00",
+   "url": "https://github.com/nutlope/hallmark"
+  },
+  {
+   "bytes": 26732,
+   "content_hash": "d928b397a384ae1862e0c8ec92546f3f2133a1ec7b1e57dd8cc8ec88504bd82f",
+   "derives_from": [
+    "src_github-com-anthropics-skills-tree-main-skills-frontend-desig"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/README.md",
+   "found_in": [
+    "legacy/ATTRIBUTION.md"
+   ],
+   "id": "src_github-com-pbakaus-impeccable",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Impeccable README: Anthropic's frontend-design 'was the first widely-used design skill for Claude. Impeccable started from there.'",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:26+00:00",
+   "url": "https://github.com/pbakaus/impeccable"
+  },
+  {
+   "bytes": 11182,
+   "content_hash": "7f6d7a2cc0ec3fc99c1967e31bb0110f6eddf19d9b34fc5159cc9d2c452b457c",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/adapt.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-adapt",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:26+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/adapt.md"
+  },
+  {
+   "bytes": 5222,
+   "content_hash": "57f75c6a2207e27604b7409ad2cd9c8af7eb7b4cda313d55ebd3e99b491a60f5",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/animate.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-animate",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:26+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/animate.md"
+  },
+  {
+   "bytes": 7813,
+   "content_hash": "0bc29f9cd18ba46eae1cac3aa65516c6f2082e4efac654056d43dba6930181fc",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/audit.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-audit",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:26+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md"
+  },
+  {
+   "bytes": 3443,
+   "content_hash": "83335e399d4e62939e9d7caf5d0b80cc46d3f24c78160fc11b011b3b364a87cb",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/bolder.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-bolder",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:27+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/bolder.md"
+  },
+  {
+   "bytes": 4571,
+   "content_hash": "4ac54526c00c7a8b46e45dc73b8ccdc31e59500d367ac54cae234f339e9bc6d4",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/clarify.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-clarify",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:27+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/clarify.md"
+  },
+  {
+   "bytes": 4525,
+   "content_hash": "d600bdb869c69cdfc2bb46deade9a3bd9fd514be18175b4322727466522a09f7",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/colorize.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-colorize",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:27+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/colorize.md"
+  },
+  {
+   "bytes": 44936,
+   "content_hash": "75c02ecfc6fd9471fc7bb4477784d809299007b8117a5fa473de429f6aad3242",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/critique.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-critique",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:27+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/critique.md"
+  },
+  {
+   "bytes": 3710,
+   "content_hash": "0270c74601cf310fd71d7233d1d5906cb43d2c172cf0ca9a665e818c3b574f66",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/delight.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-delight",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:27+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/delight.md"
+  },
+  {
+   "bytes": 5562,
+   "content_hash": "94ae5e3a56bcc7fe73b9a4711f2ef64ca83cbbd86fd7350e4af88eafd3786c9b",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/distill.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-distill",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:28+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/distill.md"
+  },
+  {
+   "bytes": 3285,
+   "content_hash": "1c93ba828ed7131fbae49a5a7be4358d9b2a3969470e8a64277294da67692de3",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/extract.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-extract",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:28+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/extract.md"
+  },
+  {
+   "bytes": 9331,
+   "content_hash": "ed5b5fda449c2589e50f34fbe234211ad3648dce993954934f4bbda3510381c2",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/harden.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-harden",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:28+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/harden.md"
+  },
+  {
+   "bytes": 5122,
+   "content_hash": "ef292a2ccb5a9fbf5a5308d03ae31a3f5837e1d2090ec8a1cc3b9e8c864b7015",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/layout.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-layout",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:28+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/layout.md"
+  },
+  {
+   "bytes": 7679,
+   "content_hash": "4e21907a544e162de42c5a354e73c67b1db99f4ba59cf8e3a8a9e1295ece0603",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/onboard.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-onboard",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:28+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/onboard.md"
+  },
+  {
+   "bytes": 7535,
+   "content_hash": "e8061e0fd4d5d93b5be492314657c0de0bafe29eece0c74409ec0bf93b16d758",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/optimize.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-optimize",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:28+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/optimize.md"
+  },
+  {
+   "bytes": 6575,
+   "content_hash": "055d836674a407046a8e8b08db1b9f08b0b331c66bb1c48508d262d2320f87fb",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/polish.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-polish",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:29+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/polish.md"
+  },
+  {
+   "bytes": 4797,
+   "content_hash": "e0aca06b9158891e01019c441e8bbf1b2841d1b21598d5098b05068bbeef8378",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/quieter.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-quieter",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:29+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/quieter.md"
+  },
+  {
+   "bytes": 3525,
+   "content_hash": "581dca89074cbc1d2c5bc19e3678c6c89c1b8205107ed6ed231dc8c5809aef2b",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/shape.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-shape",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:29+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/shape.md"
+  },
+  {
+   "bytes": 5219,
+   "content_hash": "0804814e9fbc5d0aa28e3ff932ecd24c8621f81a22eb36456bb4001be4e494af",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/typeset.md",
+   "found_in": [
+    "legacy/index.html"
+   ],
+   "id": "src_impeccable-typeset",
+   "kind": "primary",
+   "license": "Apache-2.0",
+   "lineage_note": "Command reference inside the Impeccable repo",
+   "publisher": "pbakaus/impeccable",
+   "retrieved_at": "2026-09-30T04:48:29+00:00",
+   "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/typeset.md"
+  },
+  {
+   "bytes": 13092,
+   "content_hash": "f300433610335427232dfd09733bf06265f0739300650b1ed6bd02d6e6819490",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/schoero/eslint-plugin-better-tailwindcss/main/README.md",
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_github-com-schoero-eslint-plugin-better-tailwindcss",
+   "kind": "primary",
+   "license": "MIT",
+   "publisher": "schoero",
+   "retrieved_at": "2026-09-30T04:48:29+00:00",
+   "url": "https://github.com/schoero/eslint-plugin-better-tailwindcss"
+  },
+  {
+   "bytes": 2686,
+   "content_hash": "3d25c89e26d387fcd5dae8c77061aa632676b96c6605de6e4ab648db8b18f3e4",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/schoero/eslint-plugin-better-tailwindcss/main/docs/rules/no-restricted-classes.md",
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_github-com-schoero-eslint-plugin-better-tailwindcss-blob-mai",
+   "kind": "primary",
+   "license": "MIT",
+   "publisher": "schoero",
+   "retrieved_at": "2026-09-30T04:48:30+00:00",
+   "url": "https://github.com/schoero/eslint-plugin-better-tailwindcss/blob/main/docs/rules/no-restricted-classes.md"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_github-com-shadcn-ui-ui-discussions-10269",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "github.com",
+   "retrieved_at": null,
+   "url": "https://github.com/shadcn-ui/ui/discussions/10269"
+  },
+  {
+   "bytes": 10082,
+   "content_hash": "4a0bc920e37f7b86069bd0ca26106ea484bd8ae93cd963334672aa16b1631a79",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": "https://raw.githubusercontent.com/yuchangxu1989-Openclaw/claw-design/main/README.md",
+   "found_in": [
+    "legacy/ATTRIBUTION.md",
+    "legacy/index.html"
+   ],
+   "id": "src_github-com-yuchangxu1989-openclaw-claw-design",
+   "kind": "primary",
+   "license": "MIT",
+   "publisher": "yuchangxu1989-Openclaw",
+   "retrieved_at": "2026-09-30T04:48:30+00:00",
+   "url": "https://github.com/yuchangxu1989-Openclaw/claw-design"
+  },
+  {
+   "bytes": 6876,
+   "content_hash": "af6a4713004698187e32983845bd68d66bf27bc6d7976145ebee6e54393cfdf3",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md",
+    "legacy/ATTRIBUTION.md",
+    "legacy/index.html"
+   ],
+   "id": "src_motion-dev-docs-react-accessibility",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "Motion",
+   "retrieved_at": "2026-09-30T04:48:30+00:00",
+   "url": "https://motion.dev/docs/react-accessibility"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_motion-dev-docs-react-animate-view",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "motion.dev",
+   "retrieved_at": null,
+   "url": "https://motion.dev/docs/react-animate-view"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_news-ycombinator-com-item-id-49058547",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "news.ycombinator.com",
+   "retrieved_at": null,
+   "url": "https://news.ycombinator.com/item?id=49058547"
+  },
+  {
+   "bytes": 15550,
+   "content_hash": "fb23163be89c0fd8ca8ab75850936c16f4f1bd85f5d433a17929a79dacb6ca1d",
+   "derives_from": [
+    "src_github-com-anthropics-skills-tree-main-skills-frontend-desig",
+    "src_github-com-pbakaus-impeccable",
+    "src_github-com-leonxlnx-taste-skill"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_novitckii-com-resources-claude-design-skills",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "Roundup listing frontend-design, Impeccable, Taste-Skill (names + install commands)",
+   "publisher": "novitckii.com",
+   "retrieved_at": "2026-09-30T04:48:31+00:00",
+   "url": "https://novitckii.com/resources/claude-design-skills/"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_paddo-dev-blog-tailwind-joins-shopify",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "paddo.dev",
+   "retrieved_at": null,
+   "url": "https://paddo.dev/blog/tailwind-joins-shopify"
+  },
+  {
+   "bytes": 10300,
+   "content_hash": "fce39d395cc030b1075cd22a75608a3928fe39b5eb39247cc1315bf9cc258561",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "Anthropic",
+   "retrieved_at": "2026-09-30T04:48:31+00:00",
+   "url": "https://platform.claude.com/cookbook/coding-prompting-for-frontend-aesthetics"
+  },
+  {
+   "bytes": 14399,
+   "content_hash": "3be9fc6869b2f8f0ab087b7e087b0f67d97dd3e76d7a849c5fffeb5287bc37c5",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_playwright-dev-docs-accessibility-testing",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "Microsoft Playwright",
+   "retrieved_at": "2026-09-30T04:48:31+00:00",
+   "url": "https://playwright.dev/docs/accessibility-testing"
+  },
+  {
+   "bytes": 6555,
+   "content_hash": "f7f15d90c7a13566432c4b6058c9c57c75a3a1772de822d1a809b4c9ad9a20a2",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_playwright-dev-docs-test-snapshots",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "Microsoft Playwright",
+   "retrieved_at": "2026-09-30T04:48:31+00:00",
+   "url": "https://playwright.dev/docs/test-snapshots"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_qaskills-sh-blog-claude-code-screenshot-frontend-verificatio",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "qaskills.sh",
+   "retrieved_at": null,
+   "url": "https://qaskills.sh/blog/claude-code-screenshot-frontend-verification-mcp"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_react-dev-reference-react-viewtransition",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "react.dev",
+   "retrieved_at": null,
+   "url": "https://react.dev/reference/react/ViewTransition"
+  },
+  {
+   "bytes": 3814,
+   "content_hash": "dbee47771e9956b504b828461fefd7c99ae065e14c713abfe4dad0779e779250",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_stylelint-io-user-guide-get-started",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "Stylelint",
+   "retrieved_at": "2026-09-30T04:48:32+00:00",
+   "url": "https://stylelint.io/user-guide/get-started"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_tailwindcss-com-docs-theme",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "tailwindcss.com",
+   "retrieved_at": null,
+   "url": "https://tailwindcss.com/docs/theme"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_themotiondesign-com-writing-motion-for-react-view-transition",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "themotiondesign.com",
+   "retrieved_at": null,
+   "url": "https://themotiondesign.com/writing/motion-for-react-view-transitions"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_tianpan-co-blog-2026-07-02-your-design-system-needs-to-be-a",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "tianpan.co",
+   "retrieved_at": null,
+   "url": "https://tianpan.co/blog/2026/07/02/your-design-system-needs-to-be-a-compiler"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_tomodahinata-com-en-blog-tailwind-css-v4-css-first-design-to",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "tomodahinata.com",
+   "retrieved_at": null,
+   "url": "https://tomodahinata.com/en/blog/tailwind-css-v4-css-first-design-tokens-production-guide"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_ui-shadcn-com-docs-changelog-2025-12-shadcn-create",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "ui.shadcn.com",
+   "retrieved_at": null,
+   "url": "https://ui.shadcn.com/docs/changelog/2025-12-shadcn-create"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_ui-shadcn-com-docs-changelog-2026-03-cli-v4",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "ui.shadcn.com",
+   "retrieved_at": null,
+   "url": "https://ui.shadcn.com/docs/changelog/2026-03-cli-v4"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_ui-shadcn-com-docs-changelog-2026-04-preset-commands",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "ui.shadcn.com",
+   "retrieved_at": null,
+   "url": "https://ui.shadcn.com/docs/changelog/2026-04-preset-commands"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_ui-shadcn-com-docs-registry",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "ui.shadcn.com",
+   "retrieved_at": null,
+   "url": "https://ui.shadcn.com/docs/registry"
+  },
+  {
+   "bytes": 4701,
+   "content_hash": "363523e066c4ec4e94bf3063e067501fc75506bc72e46050f3386bf65bce82e4",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md",
+    "legacy/ATTRIBUTION.md",
+    "legacy/index.html"
+   ],
+   "id": "src_ui-shadcn-com-docs-skills",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "shadcn/ui",
+   "retrieved_at": "2026-09-30T04:48:32+00:00",
+   "url": "https://ui.shadcn.com/docs/skills"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_buildmvpfast-com-blog-design-md-file-ai-coding-agents-brand",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "buildmvpfast.com",
+   "retrieved_at": null,
+   "url": "https://www.buildmvpfast.com/blog/design-md-file-ai-coding-agents-brand-consistency-2026"
+  },
+  {
+   "bytes": 13499,
+   "content_hash": "93362c22755cde0ba7aa162a4faaf33ecf4cd917a1801c70e1384c7a9497d9e2",
+   "derives_from": [
+    "src_github-com-pbakaus-impeccable"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_chaseai-io-blog-impeccable-4-claude-code-design-skill",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "Blog about Impeccable 4.0 (45 mentions of Impeccable)",
+   "publisher": "chaseai.io",
+   "retrieved_at": "2026-09-30T04:48:32+00:00",
+   "url": "https://www.chaseai.io/blog/impeccable-4-claude-code-design-skill"
+  },
+  {
+   "bytes": 41730,
+   "content_hash": "e7d38114a9e3538a6453e18a1eb7831b8b82c53eceb1670ec9a1952551abd045",
+   "derives_from": [
+    "src_jcarterjohnson-vibecoded-design-tells"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md",
+    "legacy/ATTRIBUTION.md",
+    "legacy/index.html"
+   ],
+   "id": "src_claudecodehq-com-playbooks-unslop-ui",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "Playbook cites github.com/JCarterJohnson/vibecoded-design-tells as the source repo for its automated check; partial lineage, repo not fetched",
+   "publisher": "claudecodehq.com",
+   "retrieved_at": "2026-09-30T04:48:32+00:00",
+   "url": "https://www.claudecodehq.com/playbooks/unslop-ui"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_maviklabs-com-blog-design-tokens-tailwind-v4-2026",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "maviklabs.com",
+   "retrieved_at": null,
+   "url": "https://www.maviklabs.com/blog/design-tokens-tailwind-v4-2026/"
+  },
+  {
+   "bytes": 16180,
+   "content_hash": "68ab6aa48039517169edb2a5ca697819a85334c8e514e63486537888192ee255",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_nngroup-com-articles-ten-usability-heuristics",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "Nielsen Norman Group",
+   "retrieved_at": "2026-09-30T04:48:33+00:00",
+   "url": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_pkgpulse-com-guides-shadcn-ui-vs-base-ui-vs-radix-components",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "pkgpulse.com",
+   "retrieved_at": null,
+   "url": "https://www.pkgpulse.com/guides/shadcn-ui-vs-base-ui-vs-radix-components-2026"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_radix-ui-com-colors-docs-overview-custom-palettes",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "radix-ui.com",
+   "retrieved_at": null,
+   "url": "https://www.radix-ui.com/colors/docs/overview/custom-palettes"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_radix-ui-com-colors-docs-palette-composition-understanding-t",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "radix-ui.com",
+   "retrieved_at": null,
+   "url": "https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_shadcnblocks-com-blog-shadcn-component-styles-vega-nova-maia",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "shadcnblocks.com",
+   "retrieved_at": null,
+   "url": "https://www.shadcnblocks.com/blog/shadcn-component-styles-vega-nova-maia-lyra-mira"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_shadcndeck-com-blog-radix-vs-base-ui",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "shadcndeck.com",
+   "retrieved_at": null,
+   "url": "https://www.shadcndeck.com/blog/radix-vs-base-ui"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_tailwind-variants-org-docs-comparison",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "tailwind-variants.org",
+   "retrieved_at": null,
+   "url": "https://www.tailwind-variants.org/docs/comparison"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_tailwind-variants-org-docs-typescript",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "tailwind-variants.org",
+   "retrieved_at": null,
+   "url": "https://www.tailwind-variants.org/docs/typescript"
+  },
+  {
+   "bytes": 18094,
+   "content_hash": "06c546baa00c425155aaa5e574d12520eb9c1ae2ff99cba87a2dde9a0f8e1d5d",
+   "derives_from": [
+    "src_platform-claude-com-cookbook-coding-prompting-for-frontend-a",
+    "src_github-com-google-labs-code-design-md"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_theadpharm-com-insights-claude-design-without-the-ai-slop-lo",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "Article discusses Anthropic's cookbook system prompt and DESIGN.md",
+   "publisher": "Adpharm",
+   "retrieved_at": "2026-09-30T04:48:33+00:00",
+   "url": "https://www.theadpharm.com/insights/claude-design-without-the-ai-slop-look"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_tipranks-com-news-press-releases-duolingo-doubles-down-on-de",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "tipranks.com",
+   "retrieved_at": null,
+   "url": "https://www.tipranks.com/news/press-releases/duolingo-doubles-down-on-design-and-animation-with-acquisition-of-hobbes"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: recon cap (~40 fetches per first pass)",
+   "fetch_url": null,
+   "found_in": [
+    "best-practices/SOURCES.md"
+   ],
+   "id": "src_untitledui-com-blog-tailwind-plus-alternatives",
+   "kind": "derivative",
+   "license": "unknown",
+   "lineage_note": "lineage unknown: page not fetched",
+   "publisher": "untitledui.com",
+   "retrieved_at": null,
+   "url": "https://www.untitledui.com/blog/tailwind-plus-alternatives"
+  },
+  {
+   "bytes": 156989,
+   "content_hash": "a1b76898dac32e3fb80a568458414e45745d2e39dbb5628f1b11567885fbfe52",
+   "derives_from": [],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_w3-org-tr-wcag22",
+   "kind": "primary",
+   "license": "unknown",
+   "publisher": "W3C",
+   "retrieved_at": "2026-09-30T04:48:34+00:00",
+   "url": "https://www.w3.org/TR/WCAG22/"
+  },
+  {
+   "bytes": 30987,
+   "content_hash": "f2dca8537475d5345e3f0ffcb3aed187183274e080022b7d4535a2e3b30b1b23",
+   "derives_from": [
+    "src_w3-org-tr-wcag22"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_w3-org-wai-wcag22-understanding-contrast-minimum-html",
+   "kind": "primary",
+   "license": "unknown",
+   "lineage_note": "Understanding document companion to the WCAG 2.2 Recommendation; same lineage",
+   "publisher": "W3C",
+   "retrieved_at": "2026-09-30T04:48:34+00:00",
+   "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+  },
+  {
+   "bytes": 45921,
+   "content_hash": "52d14cf83e9975fae401a08f79fdbe09e40c66b4af3e355bd721b195f4b71f5d",
+   "derives_from": [
+    "src_w3-org-tr-wcag22"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_w3-org-wai-wcag22-understanding-focus-appearance-html",
+   "kind": "primary",
+   "license": "unknown",
+   "lineage_note": "Understanding document companion to the WCAG 2.2 Recommendation; same lineage",
+   "publisher": "W3C",
+   "retrieved_at": "2026-09-30T04:48:34+00:00",
+   "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html"
+  },
+  {
+   "bytes": 26517,
+   "content_hash": "6fd5fb5ae79ba40c4ab156fca4e82fd945c3f17eba54ef61b21b9b3ab717f795",
+   "derives_from": [
+    "src_w3-org-tr-wcag22"
+   ],
+   "fetch": true,
+   "fetch_status": "ok",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_w3-org-wai-wcag22-understanding-target-size-minimum-html",
+   "kind": "primary",
+   "license": "unknown",
+   "lineage_note": "Understanding document companion to the WCAG 2.2 Recommendation; same lineage",
+   "publisher": "W3C",
+   "retrieved_at": "2026-09-30T04:48:34+00:00",
+   "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: not fetched (referenced by aiagentskills.net listing)",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_samber-frontend-design-deslop",
+   "kind": "primary",
+   "license": "unknown",
+   "lineage_note": "Placeholder root for the samber skill; never fetched, so no claim may be verified against it",
+   "publisher": "samber",
+   "retrieved_at": null,
+   "url": "https://github.com/samber/cc-skills"
+  },
+  {
+   "bytes": null,
+   "content_hash": null,
+   "derives_from": [],
+   "fetch": false,
+   "fetch_status": "skipped: not fetched (cited by the Unslop UI playbook)",
+   "fetch_url": null,
+   "found_in": [
+    "recon"
+   ],
+   "id": "src_jcarterjohnson-vibecoded-design-tells",
+   "kind": "primary",
+   "license": "unknown",
+   "lineage_note": "Placeholder root; never fetched",
+   "publisher": "JCarterJohnson",
+   "retrieved_at": null,
+   "url": "https://github.com/JCarterJohnson/vibecoded-design-tells"
+  }
+ ]
+}

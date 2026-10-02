@@ -1,0 +1,883 @@
+{
+ "version": "0.1",
+ "elements": [
+  {
+   "id": "aria:navigation",
+   "name": "Navigation",
+   "family": "Landmarks & navigation",
+   "standard": "WAI-ARIA 1.2",
+   "find": "nav, [role=navigation]",
+   "singular": true,
+   "css": "nav,[role=navigation]"
+  },
+  {
+   "id": "aria:banner",
+   "name": "Page header",
+   "family": "Landmarks & navigation",
+   "standard": "WAI-ARIA 1.2",
+   "find": "body > header, [role=banner]",
+   "singular": true,
+   "css": "body>header,[role=banner]"
+  },
+  {
+   "id": "aria:contentinfo",
+   "name": "Page footer",
+   "family": "Landmarks & navigation",
+   "standard": "WAI-ARIA 1.2",
+   "find": "body > footer, [role=contentinfo]",
+   "singular": true,
+   "css": "body>footer,[role=contentinfo]"
+  },
+  {
+   "id": "aria:main",
+   "name": "Main content",
+   "family": "Landmarks & navigation",
+   "standard": "WAI-ARIA 1.2",
+   "find": "main, [role=main]",
+   "singular": true,
+   "css": "main,[role=main]"
+  },
+  {
+   "id": "aria:search",
+   "name": "Search",
+   "family": "Landmarks & navigation",
+   "standard": "WAI-ARIA 1.2",
+   "find": "search, [role=search], input[type=search]",
+   "singular": true,
+   "css": "search,[role=search],input[type=search]"
+  },
+  {
+   "id": "ui:breadcrumb",
+   "name": "Breadcrumbs",
+   "family": "Landmarks & navigation",
+   "standard": "Open UI",
+   "find": "nav[aria-label*=readcrumb], .breadcrumb",
+   "singular": false,
+   "css": "nav[aria-label*=readcrumb],.breadcrumb,.crumbs"
+  },
+  {
+   "id": "aria:tablist",
+   "name": "Tabs",
+   "family": "Landmarks & navigation",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=tablist]",
+   "singular": false,
+   "css": "[role=tablist]"
+  },
+  {
+   "id": "aria:menu",
+   "name": "Menus",
+   "family": "Landmarks & navigation",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=menu], [role=menubar]",
+   "singular": false,
+   "css": "[role=menu],[role=menubar],.menu"
+  },
+  {
+   "id": "text:display",
+   "name": "Display text",
+   "family": "Document structure",
+   "standard": "Material 3 type scale",
+   "find": "text in the page's largest size band (hero headlines)",
+   "singular": true,
+   "css": "h1,[class*=hero] h1,[class*=hero] h2,.display"
+  },
+  {
+   "id": "aria:heading",
+   "name": "Headings",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "h1–h6, [role=heading]",
+   "singular": false,
+   "css": "h1,h2,h3,h4,h5,h6,[role=heading]"
+  },
+  {
+   "id": "text:body",
+   "name": "Body text",
+   "family": "Document structure",
+   "standard": "Material 3 type scale",
+   "find": "running text: p, li, td, dd in the page's most common size band",
+   "singular": true,
+   "css": "p,li,dd,blockquote,td"
+  },
+  {
+   "id": "text:label",
+   "name": "Labels",
+   "family": "Document structure",
+   "standard": "Material 3 type scale",
+   "find": "label, legend, th, small UI text",
+   "singular": false,
+   "css": "label,legend,th"
+  },
+  {
+   "id": "text:caption",
+   "name": "Captions & fine print",
+   "family": "Document structure",
+   "standard": "HTML figcaption/small (extends Material 3 type scale)",
+   "find": "figcaption, small, text below the body size band",
+   "singular": false,
+   "css": "figcaption,small,caption"
+  },
+  {
+   "id": "text:code",
+   "name": "Code",
+   "family": "Document structure",
+   "standard": "HTML code/pre",
+   "find": "code, pre, kbd",
+   "singular": true,
+   "css": "code,pre,kbd"
+  },
+  {
+   "id": "text:*",
+   "name": "All text",
+   "family": "Document structure",
+   "standard": "all rendered text",
+   "find": "every element with rendered text",
+   "singular": true,
+   "css": "body *"
+  },
+  {
+   "id": "aria:link",
+   "name": "Links",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "a[href], [role=link]",
+   "singular": false,
+   "css": "a[href],[role=link]"
+  },
+  {
+   "id": "aria:list",
+   "name": "Lists",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "ul, ol, [role=list]",
+   "singular": false,
+   "css": "ul,ol,[role=list]"
+  },
+  {
+   "id": "aria:table",
+   "name": "Tables",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "table, [role=table], [role=grid]",
+   "singular": false,
+   "css": "table,[role=table],[role=grid]"
+  },
+  {
+   "id": "aria:img",
+   "name": "Images",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "img, picture, svg[role=img], [role=img]",
+   "singular": false,
+   "css": "img,picture,svg[role=img],[role=img]"
+  },
+  {
+   "id": "ui:icon",
+   "name": "Icons",
+   "family": "Document structure",
+   "standard": "Open UI",
+   "find": "small svg/img/glyph beside text or alone in a control",
+   "singular": false,
+   "css": "svg:not([role=img]),.icon,[class*=icon] svg,i[class*=icon]"
+  },
+  {
+   "id": "aria:figure",
+   "name": "Figures & media",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "figure, video, audio, [role=figure]",
+   "singular": false,
+   "css": "figure,video,audio,[role=figure]"
+  },
+  {
+   "id": "ui:chart",
+   "name": "Charts",
+   "family": "Document structure",
+   "standard": "Open UI (not in research list; ARIA graphics module)",
+   "find": "svg charts, canvas, [role=graphics-document]",
+   "singular": false,
+   "css": "svg.chart,canvas,[role=graphics-document],.chart"
+  },
+  {
+   "id": "aria:button",
+   "name": "Buttons",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "button, [role=button], input[type=submit]",
+   "singular": false,
+   "css": "button,[role=button],input[type=submit],input[type=button]"
+  },
+  {
+   "id": "aria:textbox",
+   "name": "Text fields",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "input (text types), textarea, [role=textbox]",
+   "singular": false,
+   "css": "input:not([type]),input[type=text],input[type=email],input[type=search],input[type=password],input[type=tel],input[type=url],input[type=number],textarea,[role=textbox]"
+  },
+  {
+   "id": "aria:checkbox",
+   "name": "Checkboxes & radios",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "input[type=checkbox|radio], [role=checkbox|radio]",
+   "singular": false,
+   "css": "input[type=checkbox],input[type=radio],[role=checkbox],[role=radio]"
+  },
+  {
+   "id": "aria:combobox",
+   "name": "Select menus",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "select, [role=combobox], [role=listbox]",
+   "singular": false,
+   "css": "select,[role=combobox],[role=listbox]"
+  },
+  {
+   "id": "aria:switch",
+   "name": "Switches",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=switch]",
+   "singular": false,
+   "css": "[role=switch]"
+  },
+  {
+   "id": "aria:slider",
+   "name": "Sliders",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "input[type=range], [role=slider]",
+   "singular": false,
+   "css": "input[type=range],[role=slider]"
+  },
+  {
+   "id": "aria:form",
+   "name": "Forms",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "form, [role=form]",
+   "singular": false,
+   "css": "form,[role=form]"
+  },
+  {
+   "id": "ui:file",
+   "name": "File uploads",
+   "family": "Widgets & forms",
+   "standard": "Open UI",
+   "find": "input[type=file]",
+   "singular": false,
+   "css": "input[type=file]"
+  },
+  {
+   "id": "aria:alert",
+   "name": "Alerts & errors",
+   "family": "Live regions & feedback",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=alert], [aria-live=assertive]",
+   "singular": false,
+   "css": "[role=alert],[aria-live=assertive]"
+  },
+  {
+   "id": "aria:status",
+   "name": "Status messages",
+   "family": "Live regions & feedback",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=status], output, [aria-live=polite]",
+   "singular": false,
+   "css": "[role=status],output,[aria-live=polite]"
+  },
+  {
+   "id": "ui:toast",
+   "name": "Toasts",
+   "family": "Live regions & feedback",
+   "standard": "Open UI",
+   "find": "transient status popups",
+   "singular": false,
+   "css": ".toast,[class*=toast]"
+  },
+  {
+   "id": "aria:progressbar",
+   "name": "Progress",
+   "family": "Live regions & feedback",
+   "standard": "WAI-ARIA 1.2",
+   "find": "progress, [role=progressbar]",
+   "singular": false,
+   "css": "progress,[role=progressbar]"
+  },
+  {
+   "id": "ui:skeleton",
+   "name": "Loading placeholders",
+   "family": "Live regions & feedback",
+   "standard": "Open UI",
+   "find": ".skeleton, [aria-busy=true] placeholders",
+   "singular": false,
+   "css": ".skeleton,[class*=skeleton]"
+  },
+  {
+   "id": "aria:tooltip",
+   "name": "Tooltips",
+   "family": "Live regions & feedback",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=tooltip], [title]",
+   "singular": false,
+   "css": "[role=tooltip]"
+  },
+  {
+   "id": "aria:dialog",
+   "name": "Dialogs",
+   "family": "Windows",
+   "standard": "WAI-ARIA 1.2",
+   "find": "dialog, [role=dialog]",
+   "singular": false,
+   "css": "dialog,[role=dialog]"
+  },
+  {
+   "id": "aria:alertdialog",
+   "name": "Confirmations",
+   "family": "Windows",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=alertdialog]",
+   "singular": false,
+   "css": "[role=alertdialog]"
+  },
+  {
+   "id": "ui:card",
+   "name": "Cards",
+   "family": "Components",
+   "standard": "Open UI",
+   "find": "bordered/elevated boxes grouping one item",
+   "singular": false,
+   "css": ".card,[class*=card]"
+  },
+  {
+   "id": "ui:badge",
+   "name": "Badges & tags",
+   "family": "Components",
+   "standard": "Open UI",
+   "find": "small labelled pills",
+   "singular": false,
+   "css": ".badge,.tag,.chip,[class*=badge]"
+  },
+  {
+   "id": "ui:avatar",
+   "name": "Avatars",
+   "family": "Components",
+   "standard": "Open UI",
+   "find": "round person images or initials",
+   "singular": false,
+   "css": ".avatar,[class*=avatar]"
+  },
+  {
+   "id": "ui:carousel",
+   "name": "Carousels",
+   "family": "Components",
+   "standard": "Open UI",
+   "find": "horizontally scrolling item sets",
+   "singular": false,
+   "css": "[class*=carousel],[aria-roledescription=carousel]"
+  },
+  {
+   "id": "ui:accordion",
+   "name": "Accordions & disclosures",
+   "family": "Components",
+   "standard": "Open UI",
+   "find": "details/summary, [aria-expanded] sections",
+   "singular": false,
+   "css": "details,[aria-expanded]"
+  },
+  {
+   "id": "ui:popup",
+   "name": "Popovers & menus",
+   "family": "Components",
+   "standard": "Open UI",
+   "find": "[popover], floating panels",
+   "singular": false,
+   "css": "[popover],.popover,[class*=popover]"
+  },
+  {
+   "id": "state:hover",
+   "name": "Hover",
+   "family": "States",
+   "standard": "CSS Selectors 4 / ARIA states",
+   "find": ":hover",
+   "singular": true,
+   "css": "a,button,[role=button],[role=link]"
+  },
+  {
+   "id": "state:focus-visible",
+   "name": "Keyboard focus",
+   "family": "States",
+   "standard": "CSS Selectors 4 / ARIA states",
+   "find": ":focus-visible",
+   "singular": true,
+   "css": "a[href],button,input,select,textarea,[tabindex]"
+  },
+  {
+   "id": "state:active",
+   "name": "Pressed",
+   "family": "States",
+   "standard": "CSS Selectors 4 / ARIA states",
+   "find": ":active, [aria-pressed=true]",
+   "singular": true,
+   "css": "[aria-pressed=true]"
+  },
+  {
+   "id": "state:disabled",
+   "name": "Disabled",
+   "family": "States",
+   "standard": "CSS Selectors 4 / ARIA states",
+   "find": ":disabled, [aria-disabled=true]",
+   "singular": true,
+   "css": ":disabled,[aria-disabled=true]"
+  },
+  {
+   "id": "state:invalid",
+   "name": "Invalid input",
+   "family": "States",
+   "standard": "CSS Selectors 4 / ARIA states",
+   "find": ":invalid, [aria-invalid=true]",
+   "singular": true,
+   "css": "[aria-invalid=true],:invalid"
+  },
+  {
+   "id": "state:busy",
+   "name": "Loading",
+   "family": "States",
+   "standard": "CSS Selectors 4 / ARIA states",
+   "find": "[aria-busy=true]",
+   "singular": true,
+   "css": "[aria-busy=true]"
+  },
+  {
+   "id": "state:empty",
+   "name": "Empty states",
+   "family": "States",
+   "standard": "CSS Selectors 4 / ARIA states",
+   "find": "views with no items (list/table with zero rows)",
+   "singular": false,
+   "css": ".empty-state,[class*=empty]"
+  },
+  {
+   "id": "state:selected",
+   "name": "Selected",
+   "family": "States",
+   "standard": "CSS Selectors 4 / ARIA states",
+   "find": "[aria-selected=true], [aria-current]",
+   "singular": true,
+   "css": "[aria-selected=true],[aria-current]:not([aria-current=false])"
+  },
+  {
+   "id": "media:dark",
+   "name": "Dark mode",
+   "family": "Contexts",
+   "standard": "CSS Media Queries 5",
+   "find": "prefers-color-scheme: dark",
+   "singular": true,
+   "css": "html"
+  },
+  {
+   "id": "media:narrow",
+   "name": "Phones",
+   "family": "Contexts",
+   "standard": "CSS Media Queries 5",
+   "find": "width <= 390px",
+   "singular": false,
+   "css": "html"
+  },
+  {
+   "id": "media:reduced-motion",
+   "name": "Reduced motion",
+   "family": "Contexts",
+   "standard": "CSS Media Queries 5",
+   "find": "prefers-reduced-motion: reduce",
+   "singular": true,
+   "css": "html"
+  },
+  {
+   "id": "media:forced-colors",
+   "name": "High contrast mode",
+   "family": "Contexts",
+   "standard": "CSS Media Queries 5",
+   "find": "forced-colors: active",
+   "singular": true,
+   "css": "html"
+  },
+  {
+   "id": "media:print",
+   "name": "Print",
+   "family": "Contexts",
+   "standard": "CSS Media Queries 5",
+   "find": "print",
+   "singular": true,
+   "css": "html"
+  },
+  {
+   "id": "page",
+   "name": "Whole page",
+   "family": "Whole page",
+   "standard": "HTML document",
+   "find": "the document",
+   "singular": true,
+   "css": "html"
+  },
+  {
+   "id": "process",
+   "name": "How the work is done",
+   "family": "Off the page",
+   "standard": "none (AXL)",
+   "find": "not on the page: team or agent process",
+   "singular": true,
+   "css": ""
+  },
+  {
+   "id": "aria:toolbar",
+   "name": "Toolbars",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=toolbar]",
+   "singular": false,
+   "css": "[role=toolbar]"
+  },
+  {
+   "id": "aria:region",
+   "name": "Regions",
+   "family": "Landmarks & navigation",
+   "standard": "WAI-ARIA 1.2",
+   "find": "section[aria-label], [role=region]",
+   "singular": false,
+   "css": "section[aria-label],section[aria-labelledby],[role=region]"
+  },
+  {
+   "id": "aria:row",
+   "name": "Table rows",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "tr, [role=row]",
+   "singular": false,
+   "css": "tr,[role=row]"
+  },
+  {
+   "id": "aria:listitem",
+   "name": "List items",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "li, [role=listitem]",
+   "singular": false,
+   "css": "li,[role=listitem]"
+  },
+  {
+   "id": "aria:separator",
+   "name": "Separators",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "hr, [role=separator]",
+   "singular": false,
+   "css": "hr,[role=separator]"
+  },
+  {
+   "id": "aria:meter",
+   "name": "Meters",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "meter, [role=meter]",
+   "singular": false,
+   "css": "meter,[role=meter]"
+  },
+  {
+   "id": "aria:grid",
+   "name": "Grids",
+   "family": "Widgets & forms",
+   "standard": "WAI-ARIA 1.2",
+   "find": "[role=grid]",
+   "singular": false,
+   "css": "[role=grid]"
+  },
+  {
+   "id": "aria:blockquote",
+   "name": "Blockquotes",
+   "family": "Document structure",
+   "standard": "WAI-ARIA 1.2",
+   "find": "blockquote, [role=blockquote]",
+   "singular": false,
+   "css": "blockquote"
+  }
+ ],
+ "classes": [
+  {
+   "id": "type",
+   "name": "Type",
+   "standard": "CSS Fonts 4, CSS Text 3"
+  },
+  {
+   "id": "color",
+   "name": "Color & theming",
+   "standard": "CSS Color 4/5, prefers-color-scheme"
+  },
+  {
+   "id": "layout",
+   "name": "Space & layout",
+   "standard": "CSS Box Model, Sizing, Flexbox, Grid"
+  },
+  {
+   "id": "surface",
+   "name": "Surface",
+   "standard": "CSS Backgrounds & Borders 3"
+  },
+  {
+   "id": "imagery",
+   "name": "Imagery",
+   "standard": "CSS Images, Filter Effects"
+  },
+  {
+   "id": "motion",
+   "name": "Motion",
+   "standard": "CSS Transitions, CSS Animations"
+  },
+  {
+   "id": "interaction",
+   "name": "Interaction",
+   "standard": "WAI-ARIA Authoring Practices Guide (W3C), HTML behaviour"
+  },
+  {
+   "id": "access",
+   "name": "Access",
+   "standard": "WCAG 2.2"
+  },
+  {
+   "id": "perf",
+   "name": "Performance",
+   "standard": "Lighthouse performance, Core Web Vitals"
+  },
+  {
+   "id": "seo",
+   "name": "Search & metadata",
+   "standard": "Lighthouse SEO"
+  },
+  {
+   "id": "locale",
+   "name": "Locale",
+   "standard": "CSS Writing Modes, Logical Properties"
+  },
+  {
+   "id": "content",
+   "name": "Content",
+   "standard": null
+  },
+  {
+   "id": "process",
+   "name": "Process",
+   "standard": null
+  },
+  {
+   "id": "sound",
+   "name": "Sound & haptics",
+   "standard": "Web Audio, Vibration API",
+   "staged": true
+  }
+ ],
+ "properties": {
+  "font-size": {
+   "class": "type",
+   "words": "size"
+  },
+  "line-height": {
+   "class": "type",
+   "words": "line height"
+  },
+  "font-weight": {
+   "class": "type",
+   "words": "weight"
+  },
+  "letter-spacing": {
+   "class": "type",
+   "words": "letter spacing"
+  },
+  "font-family": {
+   "class": "type",
+   "words": "typeface"
+  },
+  "font-style": {
+   "class": "type",
+   "words": "style"
+  },
+  "text-transform": {
+   "class": "type",
+   "words": "capitalization"
+  },
+  "text-align": {
+   "class": "type",
+   "words": "alignment"
+  },
+  "text-wrap": {
+   "class": "type",
+   "words": "line wrapping"
+  },
+  "font-variant-numeric": {
+   "class": "type",
+   "words": "number style"
+  },
+  "hyphens": {
+   "class": "type",
+   "words": "hyphenation"
+  },
+  "text-decoration-line": {
+   "class": "type",
+   "words": "underline"
+  },
+  "max-width": {
+   "class": "layout",
+   "words": "width"
+  },
+  "gap": {
+   "class": "layout",
+   "words": "gap"
+  },
+  "padding": {
+   "class": "layout",
+   "words": "padding"
+  },
+  "margin": {
+   "class": "layout",
+   "words": "margin"
+  },
+  "min-height": {
+   "class": "layout",
+   "words": "height"
+  },
+  "min-width": {
+   "class": "layout",
+   "words": "width"
+  },
+  "z-index": {
+   "class": "layout",
+   "words": "stacking"
+  },
+  "overflow": {
+   "class": "layout",
+   "words": "overflow"
+  },
+  "color": {
+   "class": "color",
+   "words": "color"
+  },
+  "background-color": {
+   "class": "color",
+   "words": "background"
+  },
+  "accent-color": {
+   "class": "color",
+   "words": "accent color"
+  },
+  "color-scheme": {
+   "class": "color",
+   "words": "color scheme"
+  },
+  "border-radius": {
+   "class": "surface",
+   "words": "corner radius"
+  },
+  "box-shadow": {
+   "class": "surface",
+   "words": "shadow"
+  },
+  "border-width": {
+   "class": "surface",
+   "words": "border"
+  },
+  "border-color": {
+   "class": "surface",
+   "words": "border color"
+  },
+  "background-image": {
+   "class": "surface",
+   "words": "background image"
+  },
+  "backdrop-filter": {
+   "class": "surface",
+   "words": "background blur"
+  },
+  "outline-width": {
+   "class": "surface",
+   "words": "outline"
+  },
+  "outline-offset": {
+   "class": "surface",
+   "words": "outline offset"
+  },
+  "object-fit": {
+   "class": "imagery",
+   "words": "image fit"
+  },
+  "aspect-ratio": {
+   "class": "imagery",
+   "words": "aspect ratio"
+  },
+  "filter": {
+   "class": "imagery",
+   "words": "filter"
+  },
+  "transition-duration": {
+   "class": "motion",
+   "words": "transition time"
+  },
+  "transition-timing-function": {
+   "class": "motion",
+   "words": "easing"
+  },
+  "animation-duration": {
+   "class": "motion",
+   "words": "animation time"
+  },
+  "animation-iteration-count": {
+   "class": "motion",
+   "words": "repeats"
+  },
+  "transform": {
+   "class": "motion",
+   "words": "movement"
+  },
+  "direction": {
+   "class": "locale",
+   "words": "text direction"
+  },
+  "writing-mode": {
+   "class": "locale",
+   "words": "writing mode"
+  }
+ },
+ "tests": {
+  ">=": "at least",
+  "<=": "at most",
+  "==": "exactly",
+  "between": "between",
+  "contains": "includes",
+  "!contains": "has no",
+  "pass": "passes"
+ },
+ "prefix_classes": {
+  "wcag:": "access",
+  "lighthouse:": "perf",
+  "lighthouse-seo:": "seo",
+  "ask": "by element (content/process for page/process)"
+ },
+ "notes": "Element names are the plain names shown on screen; ids are the standard terms. axl: measures are listed in axl/measures.md (phase 4).",
+ "phrases": {
+  "axl:distinct-font-sizes": "{el} use {t} {v} font sizes",
+  "axl:distinct-font-families": "{el} use {t} {v} typefaces",
+  "axl:distinct-font-weights": "{el} use {t} {v} font weights",
+  "axl:distinct-hues": "{el} use {t} {v} hues",
+  "axl:icon-sets": "{el} come from {t} {v} icon set(s)",
+  "axl:emoji-as-icons": "{el} include no emoji used as icons",
+  "axl:spacing-off-scale": "{el}: all spacing sits on the scale",
+  "axl:chars-per-line": "{el} lines are {t} {v} characters",
+  "lighthouse:unsized-images": "{el} have an explicit width and height",
+  "lighthouse:cls": "{el} doesn't shift while loading (CLS)",
+  "lighthouse:lcp": "{el} shows its main content fast (LCP)",
+  "lighthouse:font-display": "{el} keeps text visible while fonts load",
+  "wcag:pass": "{el} meet WCAG {sc}: {what}",
+  "css": "{el} {p} is {t} {v}"
+ }
+}

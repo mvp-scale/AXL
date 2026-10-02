@@ -1,0 +1,25 @@
+{
+ "id": "lighthouse-before",
+ "tool": "lighthouse",
+ "version": "lighthouse 13.5.0",
+ "command": "node axl/tools/runners/lighthouse.js axl/demo/before.html",
+ "input_hash": "9ee3fbb8883ae6d20b3adf1b38addc503209437cfacd469c50879a2a69e77866",
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"lighthouse\",\"version\":\"13.5.0\",\"checked_audits\":22,\"findings\":[{\"rule_id\":\"color-contrast\",\"result\":\"fail\",\"evidence\":\"Background and foreground colors do not have a sufficient contrast ratio.\",\"location\":\"\"},{\"rule_id\":\"document-title\",\"result\":\"fail\",\"evidence\":\"Document doesn't have a `<title>` element\",\"location\":\"\"}]}",
+ "findings": [
+  {
+   "rule_id": "color-contrast",
+   "result": "fail",
+   "evidence": "Background and foreground colors do not have a sufficient contrast ratio.",
+   "location": ""
+  },
+  {
+   "rule_id": "document-title",
+   "result": "fail",
+   "evidence": "Document doesn't have a `<title>` element",
+   "location": ""
+  }
+ ],
+ "role": "before",
+ "ran_at": "2026-09-30T01:36:09+00:00"
+}

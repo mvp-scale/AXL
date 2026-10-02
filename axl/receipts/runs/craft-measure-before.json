@@ -1,0 +1,12 @@
+{
+ "id": "craft-measure-before",
+ "tool": "axl craft checks",
+ "version": "axl craft.js on playwright 1.63.0",
+ "command": "node axl/tools/runners/craft.js axl/demo/before.html 1440 measure-80",
+ "input_hash": "9ee3fbb8883ae6d20b3adf1b38addc503209437cfacd469c50879a2a69e77866",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\":\"axl craft checks (Playwright computed style)\",\"width\":1440,\"findings\":[]}",
+ "findings": [],
+ "role": "before",
+ "ran_at": "2026-09-30T01:36:37+00:00"
+}

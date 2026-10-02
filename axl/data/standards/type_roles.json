@@ -1,0 +1,19 @@
+{
+ "standard": "Material 3 type scale roles (Material Web design tokens md.sys.typescale.*)",
+ "url": "https://github.com/material-components/material-web/blob/main/tokens/versions/v0_192/_md-sys-typescale.scss",
+ "license": "Apache-2.0",
+ "fetched": "2026-09-30",
+ "roles": [
+  "display",
+  "headline",
+  "title",
+  "body",
+  "label"
+ ],
+ "sizes": [
+  "large",
+  "medium",
+  "small"
+ ],
+ "also_cited_by": "impeccable:e6cc70"
+}

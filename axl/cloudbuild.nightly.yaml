@@ -1,0 +1,15 @@
+# Nightly source re-check: re-fetch every source, flag changed or dead pages, lint skills. Fails the build (and so alerts) on any flag.
+# Triggered by Cloud Scheduler (see axl/DEPLOY.md).
+options:
+  logging: CLOUD_LOGGING_ONLY
+timeout: 900s
+steps:
+  - id: recheck
+    name: python:3.12
+    entrypoint: bash
+    args: ["-c", "pip install --quiet jsonschema && python3 axl/scripts/refetch_sources.py --init && python3 axl/scripts/refetch_sources.py | tee /workspace/refetch.txt && ! grep -q '^FLAG' /workspace/refetch.txt"]
+  - id: lint-skills
+    name: python:3.12
+    entrypoint: bash
+    waitFor: ["recheck"]
+    args: ["-c", "pip install --quiet jsonschema && python3 axl/scripts/lint_skills.py"]

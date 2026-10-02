@@ -1,0 +1,12 @@
+{
+ "id": "craft-type-after",
+ "tool": "axl craft checks",
+ "version": "axl craft.js on playwright 1.63.0",
+ "command": "node axl/tools/runners/craft.js axl/demo/fixture-typeset.html 1440 body-16,leading-1.5",
+ "input_hash": "f9d582be9f0c2634e1dec0cf76ac96f2eb6d38fe797707fd343ebc8cb9ceeabf",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\":\"axl craft checks (Playwright computed style)\",\"width\":1440,\"findings\":[]}",
+ "findings": [],
+ "role": "after",
+ "ran_at": "2026-09-30T01:36:30+00:00"
+}

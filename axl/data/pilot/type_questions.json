@@ -1,0 +1,568 @@
+{
+ "aria:heading": [
+  {
+   "question": "Are headings clearly stronger than body text (bigger or heavier)?",
+   "from": [
+    "aria:heading ask \"Are headings clearly stronger than body text?\""
+   ]
+  },
+  {
+   "question": "Does each section heading's alignment match the body it introduces?",
+   "from": [
+    "aria:heading ask \"Does each section heading's alignment match the body it introduces?\""
+   ]
+  },
+  {
+   "question": "Is the one accent-coloured word in the headline a verb (never a noun), with the rest of the display text in ink colour?",
+   "from": [
+    "aria:heading ask \"Is the accent-coloured word the verb, never a noun?\"",
+    "text:display ask \"Is display text ink-coloured apart from the single accent-coloured verb?\""
+   ]
+  },
+  {
+   "question": "Is the verb underline drawn once and never animated again?",
+   "from": [
+    "aria:heading ask \"Is the verb underline drawn once and never animated again?\""
+   ]
+  },
+  {
+   "question": "When an eyebrow is used, does the heading sit directly under it in the same column?",
+   "from": [
+    "aria:heading ask \"When an eyebrow is used, does the heading sit directly under it in the same column?\""
+   ]
+  },
+  {
+   "question": "Is an emphasised headline word set in italic or bold of the same font rather than a different face?",
+   "from": [
+    "aria:heading ask \"Is an emphasised headline word set in italic or bold of the same font rather than a different face?\""
+   ]
+  },
+  {
+   "question": "Is headline emphasis varied (scale, drawn underline, colour-blocked line) rather than always one highlighted word?",
+   "from": [
+    "aria:heading ask \"Is headline emphasis varied (scale, drawn underline, colour-blocked line) rather than always one highlighted word?\""
+   ]
+  },
+  {
+   "question": "Are section headings free of tiny numbered index labels?",
+   "from": [
+    "aria:heading ask \"Are section headings free of tiny numbered index labels?\""
+   ]
+  },
+  {
+   "question": "Do headings put the most important words at the start?",
+   "from": [
+    "aria:heading ask \"Do headings put the most important words at the start?\""
+   ]
+  },
+  {
+   "question": "Are headings in sentence case rather than title case?",
+   "from": [
+    "aria:heading ask \"Are headings in sentence case rather than title case?\""
+   ]
+  },
+  {
+   "question": "Is the first heading restrained, with hierarchy from weight and color rather than massive scale?",
+   "from": [
+    "aria:heading ask \"Is the first heading restrained, with hierarchy from weight and color rather than massive scale?\""
+   ]
+  },
+  {
+   "question": "Do headlines read naturally, without br-broken italicised splits used as a default design move?",
+   "from": [
+    "aria:heading ask \"Do headlines read naturally, without br-broken italicised splits used as a default design move?\""
+   ]
+  }
+ ],
+ "page": [
+  {
+   "question": "Does the eye land first on the headline, then the evidence, then the footnote, so the three layers can be told apart at a glance?",
+   "from": [
+    "page ask \"Can a viewer separate headline, evidence, and footnote layers at a glance?\"",
+    "page ask \"Does the reader's eye land on things in the order of their importance?\""
+   ]
+  },
+  {
+   "question": "Does one message, date or event title dominate the composition, so the core message is understood within three seconds?",
+   "from": [
+    "page ask \"Does one message, date or event title dominate the composition?\"",
+    "page ask \"Can the core message be understood in three seconds?\""
+   ]
+  },
+  {
+   "question": "Does the page pair a distinctive display face with a separate body face from a different class (e.g. serif with sans, not two sans)?",
+   "from": [
+    "page ask \"Does the page pair a distinctive display face with a separate body face?\"",
+    "page ask \"Are paired faces from different classes rather than from the same class but different families?\""
+   ]
+  },
+  {
+   "question": "Is each typeface chosen deliberately, with a stated reason, rather than as an autopilot default?",
+   "from": [
+    "page ask \"Is each typeface chosen deliberately, with a stated reason, rather than as an autopilot default?\""
+   ]
+  },
+  {
+   "question": "Are uppercase tracked eyebrow labels and number kickers absent or rationed (at most one per 3 sections), unless numbering was explicitly requested?",
+   "from": [
+    "page ask \"Is the page free of section eyebrows and number kickers unless numbering was explicitly requested?\"",
+    "page ask \"Are eyebrow labels used sparingly rather than over every section?\"",
+    "page ask \"Is there at most one uppercase tracked eyebrow label per 3 sections?\""
+   ]
+  },
+  {
+   "question": "Is serif used only where it is explicitly justified (creative or editorial designs), and never on dashboards or software UIs?",
+   "from": [
+    "page ask \"Do dashboards and software UIs use only sans-serif pairings, with no serif fonts?\"",
+    "page ask \"Is serif used only in creative or editorial designs and never on clean dashboards?\"",
+    "page ask \"Is any serif use explicitly justified?\""
+   ]
+  },
+  {
+   "question": "Is the outlier typeface used in at most two slots on the page?",
+   "from": [
+    "page ask \"Is the outlier typeface used in at most two slots on the page?\""
+   ]
+  }
+ ],
+ "text:body": [
+  {
+   "question": "Does body text of three or more lines have relaxed leading, more for wider lines and for serif than for sans-serif, even where height is limited?",
+   "from": [
+    "text:body ask \"Does body text have relaxed leading?\"",
+    "text:body ask \"Do wider lines get proportionally more leading?\"",
+    "text:body ask \"Does serif body text have slightly more line-height than sans-serif body text?\"",
+    "text:body ask \"Is leading kept open on text of three or more lines, even where height is limited?\""
+   ]
+  },
+  {
+   "question": "Are paragraphs longer than 3 sentences split into separate blocks?",
+   "from": [
+    "text:body ask \"Are paragraphs longer than 3 sentences split into separate blocks?\""
+   ]
+  },
+  {
+   "question": "Is paragraph rhythm set by either paragraph spacing or first-line indentation, not both?",
+   "from": [
+    "text:body ask \"Is paragraph rhythm set by either paragraph spacing or first-line indentation, not both?\""
+   ]
+  },
+  {
+   "question": "Are line lengths set in relative units (rem or ch) rather than fixed px?",
+   "from": [
+    "text:body ask \"Are line lengths set in relative units (rem or ch) rather than fixed px?\""
+   ]
+  },
+  {
+   "question": "Is text of 10 or more lines left on the browser's default wrapping, without pretty or balance?",
+   "from": [
+    "text:body ask \"Is text of 10 or more lines left on the browser's default wrapping, without pretty or balance?\""
+   ]
+  },
+  {
+   "question": "Is italic used only for inline emphasis inside running body paragraphs?",
+   "from": [
+    "text:body ask \"Is italic used only for inline emphasis inside running body paragraphs?\""
+   ]
+  },
+  {
+   "question": "Is body text free of justification unless hyphenation is enabled?",
+   "from": [
+    "text:body ask \"Is body text free of justification unless hyphenation is enabled?\""
+   ]
+  },
+  {
+   "question": "Does the first paragraph open with a drop cap (floated first letter, 4.5em, line-height 0.85, in the display face)?",
+   "from": [
+    "text:body ask \"Does the first paragraph open with a drop cap (floated first letter, 4.5em, line-height 0.85, in the display face)?\""
+   ]
+  },
+  {
+   "question": "Is body set in a neutral sans (Inter or Geist) and never in a display font?",
+   "from": [
+    "text:body ask \"Is body set in a neutral sans (Inter or Geist) and never in a display font?\""
+   ]
+  }
+ ],
+ "aria:banner": [
+  {
+   "question": "Does the wordmark use a display face distinct from the body face?",
+   "from": [
+    "aria:banner ask \"Does the wordmark use a display face distinct from the body face?\""
+   ]
+  }
+ ],
+ "aria:table": [
+  {
+   "question": "Are numbers right-aligned so decimals and magnitudes line up?",
+   "from": [
+    "aria:table ask \"Are numbers right-aligned so decimals and magnitudes line up?\""
+   ]
+  }
+ ],
+ "text:display": [
+  {
+   "question": "Is the hero layout off-centre rather than a dead-centre stack?",
+   "from": [
+    "text:display ask \"Is the hero layout off-centre rather than a dead-centre stack?\""
+   ]
+  },
+  {
+   "question": "Is the hero headline short (2-3 lines, words cut rather than lines added) and, when it is a long full sentence or sits beside a large hero asset with over 6 words, set below text-7xl rather than at display size?",
+   "from": [
+    "text:display ask \"When the headline gets long, are words cut rather than adding lines?\"",
+    "text:display ask \"Does the H1 read like a premium statement, not long, weak or overly wrapped?\"",
+    "text:display ask \"With a large hero asset and a headline over 6 words, is the headline kept below text-7xl?\"",
+    "text:display ask \"Is a full-sentence hero headline set smaller than display size so it does not dominate the viewport?\"",
+    "text:display ask \"Is a long full-sentence headline set smaller or tightened rather than blown up to display size?\""
+   ]
+  },
+  {
+   "question": "Is the hero's large numeric figure paired with a worded headline, never standing alone?",
+   "from": [
+    "text:display ask \"Is the hero's large numeric figure paired with a worded headline, never standing alone?\""
+   ]
+  },
+  {
+   "question": "Do display headers wrap inside long words (overflow-wrap: anywhere, min-width: 0)?",
+   "from": [
+    "text:display ask \"Do display headers wrap inside long words (overflow-wrap: anywhere, min-width: 0)?\""
+   ]
+  },
+  {
+   "question": "Is the headline type treatment an active part of the design rather than a neutral vehicle for the content?",
+   "from": [
+    "text:display ask \"Is the headline type treatment an active part of the design rather than a neutral vehicle for the content?\""
+   ]
+  },
+  {
+   "question": "Is a giant section-index numeral set beside or behind the heading at 6-10% opacity ink or in the signal ink?",
+   "from": [
+    "text:display ask \"Is a giant section-index numeral set beside or behind the heading at 6-10% opacity ink or in the signal ink?\""
+   ]
+  },
+  {
+   "question": "Does display type carry the voice with decisive contrast, and shrink faster than small type on small screens (e.g. 72px desktop hero to 36px mobile while 16px body stays 16px)?",
+   "from": [
+    "text:display ask \"Does display type carry the voice with decisive contrast and responsive scale where the composition benefits?\"",
+    "text:display ask \"Does large type shrink faster than small type on small screens (e.g. 72px desktop hero to 36px mobile while 16px body stays 16px)?\""
+   ]
+  },
+  {
+   "question": "Is the display or decorative face limited to headlines and limited accents?",
+   "from": [
+    "text:display ask \"Is the display or decorative face limited to headlines and limited accents?\""
+   ]
+  },
+  {
+   "question": "Do massive headings embed small pill-shaped images inline?",
+   "from": [
+    "text:display ask \"Do massive headings embed small pill-shaped images inline?\""
+   ]
+  },
+  {
+   "question": "Is one hero scale chosen decisively rather than splitting the difference?",
+   "from": [
+    "text:display ask \"Is one hero scale chosen decisively rather than splitting the difference?\""
+   ]
+  }
+ ],
+ "text:*": [
+  {
+   "question": "Is letter-spacing left unadjusted on CJK, Arabic, Devanagari and other non-Latin scripts?",
+   "from": [
+    "text:* ask \"Is letter-spacing left unadjusted on CJK, Arabic, Devanagari and other non-Latin scripts?\""
+   ]
+  },
+  {
+   "question": "Is all text, including custom fonts, large and sparse enough to read comfortably at normal viewing size without zoom?",
+   "from": [
+    "text:* ask \"Is all text comfortably readable at normal viewing size without zoom?\"",
+    "text:* ask \"Are custom fonts legible?\"",
+    "text:* ask \"Is text large enough and sparse enough to render well?\""
+   ]
+  },
+  {
+   "question": "Are font sizes set as rem/em values or scale tokens, each piece of text mapping to a named type role, rather than ad-hoc pixels?",
+   "from": [
+    "text:* ask \"Are font sizes set as rem/em values or scale tokens rather than ad-hoc pixels?\"",
+    "text:* ask \"Does every piece of text map to a named type role rather than a hand-picked size?\""
+   ]
+  },
+  {
+   "question": "Is typography for the same role consistent across screens and states?",
+   "from": [
+    "text:* ask \"Is typography for the same role consistent across screens and states?\""
+   ]
+  },
+  {
+   "question": "Are line-height declarations unitless?",
+   "from": [
+    "text:* ask \"Are line-height declarations unitless?\""
+   ]
+  },
+  {
+   "question": "Are thin weights paired with sizes larger than the recommended minimum?",
+   "from": [
+    "text:* ask \"Are thin weights paired with sizes larger than the recommended minimum?\""
+   ]
+  },
+  {
+   "question": "Does weight contrast between titles and body carry the hierarchy, using a limited set of weights with the heaviest (900, 700) stepped down one or two?",
+   "from": [
+    "text:* ask \"Are the heaviest weights (900, 700) reduced by one or two steps?\"",
+    "text:* ask \"Does weight contrast between titles and body carry the hierarchy, with a limited set of weights?\""
+   ]
+  },
+  {
+   "question": "Does every additional typeface have a role that only it can perform?",
+   "from": [
+    "text:* ask \"Does every additional typeface have a role that only it can perform?\""
+   ]
+  },
+  {
+   "question": "Does text show in a fallback font with matched metrics, from a practical fallback stack, until the web font is ready, so it is never invisible and does not reflow?",
+   "from": [
+    "text:* ask \"Are only used font assets loaded, with fallback metrics matched so text is never invisible and does not reflow?\"",
+    "text:* ask \"Does text show in a fallback font until the web font is ready?\"",
+    "text:* ask \"Does a commercial brand face keep a practical fallback font stack?\""
+   ]
+  },
+  {
+   "question": "Are critical fonts preloaded?",
+   "from": [
+    "text:* ask \"Are critical fonts preloaded?\""
+   ]
+  },
+  {
+   "question": "Are only the code points, scripts and weights in use shipped?",
+   "from": [
+    "text:* ask \"Are only the code points, scripts and weights in use shipped?\""
+   ]
+  },
+  {
+   "question": "Is a variable font used?",
+   "from": [
+    "text:* ask \"Is a variable font used?\""
+   ]
+  },
+  {
+   "question": "Is antialiased font smoothing enabled without overriding the project's chosen font family?",
+   "from": [
+    "text:* ask \"Is antialiased font smoothing enabled without overriding the project's chosen font family?\""
+   ]
+  },
+  {
+   "question": "Does text use typographic (curly) quotes and apostrophes instead of straight ASCII ones?",
+   "from": [
+    "text:* ask \"Does text use typographic (curly) quotes and apostrophes instead of straight ASCII ones?\""
+   ]
+  },
+  {
+   "question": "Does text use the ellipsis character and true em and en dashes instead of ... and --?",
+   "from": [
+    "text:* ask \"Does text use the ellipsis character and true em and en dashes instead of ... and --?\""
+   ]
+  },
+  {
+   "question": "Are units, shortcuts and brand names kept together with non-breaking spaces?",
+   "from": [
+    "text:* ask \"Are units, shortcuts and brand names kept together with non-breaking spaces?\""
+   ]
+  },
+  {
+   "question": "Do text and layout follow the user's font-size setting, with no hard-coded fixed sizes and no font-size set with vw alone?",
+   "from": [
+    "text:* ask \"Do text and layout follow the user's font-size setting, with no hard-coded fixed sizes?\"",
+    "text:* ask \"Is font-size never set with vw alone?\""
+   ]
+  },
+  {
+   "question": "Is core UI text live text rather than rasterized?",
+   "from": [
+    "text:* ask \"Is core UI text live text rather than rasterized?\""
+   ]
+  },
+  {
+   "question": "Is the highlighter painted on the text itself with box-decoration-break: clone, and does every decorative text effect (highlighter band, accent stroke, underline) sit in the right position and size?",
+   "from": [
+    "text:* ask \"Is the highlighter painted on the text itself with box-decoration-break: clone, not an absolutely-positioned ::after bar?\"",
+    "text:* ask \"Does every decorative text effect (highlighter band, accent stroke, underline) sit in the right position and size?\""
+   ]
+  },
+  {
+   "question": "Are headlines, body, buttons, nav and captions all lowercase, with only mono labels uppercase?",
+   "from": [
+    "text:* ask \"Are headlines, body, buttons, nav and captions all lowercase, with only mono labels uppercase?\""
+   ]
+  },
+  {
+   "question": "Is the middle dot limited to one per metadata line and used only when it conveys semantic state?",
+   "from": [
+    "text:* ask \"Is the middle dot limited to one per metadata line and used only when it conveys semantic state?\""
+   ]
+  },
+  {
+   "question": "Does every truncated text container carry a title tooltip and a set max-width, with min-width 0 on flex children holding it?",
+   "from": [
+    "text:* ask \"Does every truncated text container carry a title tooltip and a set max-width?\"",
+    "text:* ask \"Do flex children holding truncated text have min-width 0?\""
+   ]
+  },
+  {
+   "question": "Is truncation kept to a minimum at larger font sizes, and absent in scrollable regions unless people can open a separate view to read the rest?",
+   "from": [
+    "text:* ask \"Is text truncation kept to a minimum as font size increases?\"",
+    "text:* ask \"Is text in scrollable regions left untruncated unless people can open a separate view to read the rest?\""
+   ]
+  },
+  {
+   "question": "Is text flat 2D rather than 3D-transformed?",
+   "from": [
+    "text:* ask \"Is text flat 2D rather than 3D-transformed?\""
+   ]
+  },
+  {
+   "question": "Is text contrast achieved without adding shadows to the text?",
+   "from": [
+    "text:* ask \"Is text contrast achieved without adding shadows to the text?\""
+   ]
+  },
+  {
+   "question": "Is all text set in sans-serif (rounded where specified), with no serif display faces and no mono body text?",
+   "from": [
+    "text:* ask \"Is the page free of serif display faces and mono body text?\"",
+    "text:* ask \"Is all text (display, body, captions) set in a rounded sans with no serif?\""
+   ]
+  },
+  {
+   "question": "Is hierarchy built through weight, size and space rather than colour and boldness?",
+   "from": [
+    "text:* ask \"Is hierarchy built through weight, size and space rather than colour and boldness?\""
+   ]
+  },
+  {
+   "question": "Are bold, italic and highlight styling used only within content areas, not for structural UI?",
+   "from": [
+    "text:* ask \"Are bold, italic and highlight styling used only within content areas, not for structural UI?\""
+   ]
+  },
+  {
+   "question": "Do differing elements differ decisively rather than timidly (not 16px vs 18px, not gray vs slightly-grayer)?",
+   "from": [
+    "text:* ask \"Do differing elements differ decisively rather than timidly (not 16px vs 18px, not gray vs slightly-grayer)?\""
+   ]
+  },
+  {
+   "question": "Is typography a monolithic heavy sans-serif on a high-contrast light ground, with structural grids outlined by visible dividing lines?",
+   "from": [
+    "text:* ask \"Is typography a monolithic heavy sans-serif on a high-contrast light ground, with structural grids outlined by visible dividing lines?\""
+   ]
+  },
+  {
+   "question": "Are Medium (500) and SemiBold (600) weights used for subtle hierarchy beyond Regular (400) and Bold (700)?",
+   "from": [
+    "text:* ask \"Are Medium (500) and SemiBold (600) weights used for subtle hierarchy beyond Regular (400) and Bold (700)?\""
+   ]
+  },
+  {
+   "question": "Does every italic word with descenders have line-height of at least 1.1 and a bottom-padding reserve?",
+   "from": [
+    "text:* ask \"Does every italic word with descenders have line-height of at least 1.1 and a bottom-padding reserve?\""
+   ]
+  },
+  {
+   "question": "Are pull quotes serif, large (1.75-2.25em), in one accent color with a short rule above?",
+   "from": [
+    "text:* ask \"Are pull quotes serif, large (1.75-2.25em), in one accent color with a short rule above?\""
+   ]
+  },
+  {
+   "question": "Is the blockquote set with an accent left border, serif italic and a max-width of 55ch?",
+   "from": [
+    "text:* ask \"Is the blockquote set with an accent left border, serif italic and a max-width of 55ch?\""
+   ]
+  },
+  {
+   "question": "Are OpenType features active where supported: discretionary ligatures off in UI, contextual alternates on for serif headlines, kerning always on?",
+   "from": [
+    "text:* ask \"Are OpenType features active where supported: discretionary ligatures off in UI, contextual alternates on for serif headlines, kerning always on?\""
+   ]
+  },
+  {
+   "question": "Do mixed text sizes on one line align to the shared baseline rather than to vertical centers?",
+   "from": [
+    "text:* ask \"Do mixed text sizes on one line align to the shared baseline rather than to vertical centers?\""
+   ]
+  },
+  {
+   "question": "Do metrics lead with the number in the hierarchy?",
+   "from": [
+    "text:* ask \"Do metrics lead with the number in the hierarchy?\""
+   ]
+  },
+  {
+   "question": "Is font-synthesis set to none so a missing weight or style fails visibly instead of rendering fake glyphs?",
+   "from": [
+    "text:* ask \"Is font-synthesis set to none so a missing weight or style fails visibly instead of rendering fake glyphs?\""
+   ]
+  },
+  {
+   "question": "Are text sizes smaller on smaller screens and larger on larger screens?",
+   "from": [
+    "text:* ask \"Are text sizes smaller on smaller screens and larger on larger screens?\""
+   ]
+  }
+ ],
+ "aria:button": [
+  {
+   "question": "Is button label typography clearly stronger than surrounding body text?",
+   "from": [
+    "aria:button ask \"Is button label typography clearly stronger than surrounding body text?\""
+   ]
+  },
+  {
+   "question": "Is the label visually centered in single-line buttons, pills and chips (height minus font size even, half-leading trimmed with text-box: trim-both cap alphabetic)?",
+   "from": [
+    "aria:button ask \"Does the button height and label font size pair center the label on whole pixels (height minus font size even)?\"",
+    "aria:button ask \"Is the half-leading trimmed (text-box: trim-both cap alphabetic) so single-line labels in pills, chips and buttons look centered?\""
+   ]
+  }
+ ],
+ "ui:icon": [
+  {
+   "question": "Are informative icons still easy to view at larger font sizes?",
+   "from": [
+    "ui:icon ask \"Are informative icons still easy to view at larger font sizes?\""
+   ]
+  }
+ ],
+ "process": [
+  {
+   "question": "Have font pairs been tested in mockups for real use cases (web, mobile, print)?",
+   "from": [
+    "process ask \"Have font pairs been tested in mockups for real use cases (web, mobile, print)?\""
+   ]
+  },
+  {
+   "question": "Does the chosen type class match the committed brand adjectives?",
+   "from": [
+    "process ask \"Does the chosen type class match the committed brand adjectives?\""
+   ]
+  },
+  {
+   "question": "For cross-channel work, are faces chosen and tested for all media, with licensing covering all uses and per-medium size adjustments documented?",
+   "from": [
+    "process ask \"For cross-channel work, are faces chosen and tested for all media, with licensing covering all uses and per-medium size adjustments documented?\""
+   ]
+  }
+ ],
+ "aria:link": [
+  {
+   "question": "Do underlines take their offset and thickness from the font's metrics (from-font)?",
+   "from": [
+    "aria:link ask \"Do underlines take their offset and thickness from the font's metrics (from-font)?\""
+   ]
+  }
+ ]
+}

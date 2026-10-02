@@ -1,0 +1,27 @@
+{
+ "id": "axe-before-375",
+ "tool": "axe-core",
+ "version": "axe-core 4.13.0 via @axe-core/playwright 4.13.0",
+ "command": "node axl/tools/runners/axe.js axl/demo/before.html 375",
+ "input_hash": "9ee3fbb8883ae6d20b3adf1b38addc503209437cfacd469c50879a2a69e77866",
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"axe-core\",\"engine\":\"4.13.0\",\"width\":375,\"violations\":2,\"findings\":[{\"rule_id\":\"color-contrast\",\"result\":\"fail\",\"impact\":\"serious\",\"nodes\":9,\"location\":\".topbar > span\"},{\"rule_id\":\"document-title\",\"result\":\"fail\",\"impact\":\"serious\",\"nodes\":1,\"location\":\"html\"}],\"passed_rules\":24,\"passed_ids\":[\"aria-allowed-attr\",\"aria-conditional-attr\",\"aria-deprecated-role\",\"aria-hidden-body\",\"aria-prohibited-attr\",\"aria-required-attr\",\"aria-roles\",\"aria-valid-attr\",\"aria-valid-attr-value\",\"avoid-inline-spacing\",\"button-name\",\"bypass\",\"color-contrast\",\"duplicate-id-aria\",\"html-has-lang\",\"html-lang-va",
+ "findings": [
+  {
+   "rule_id": "color-contrast",
+   "result": "fail",
+   "impact": "serious",
+   "nodes": 9,
+   "location": ".topbar > span"
+  },
+  {
+   "rule_id": "document-title",
+   "result": "fail",
+   "impact": "serious",
+   "nodes": 1,
+   "location": "html"
+  }
+ ],
+ "role": "before",
+ "ran_at": "2026-09-30T01:35:58+00:00"
+}

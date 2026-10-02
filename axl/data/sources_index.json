@@ -1,0 +1,355 @@
+{
+ "sources": [
+  {
+   "id": "anthropic",
+   "name": "Anthropic frontend-design",
+   "urls": [
+    "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md"
+   ],
+   "statements": 43
+  },
+  {
+   "id": "apple-hig",
+   "name": "Apple Human Interface Guidelines",
+   "urls": [
+    "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+   ],
+   "statements": 68
+  },
+  {
+   "id": "axe",
+   "name": "axe-core",
+   "urls": [
+    "https://dequeuniversity.com/rules/axe/4.13/accesskeys",
+    "https://dequeuniversity.com/rules/axe/4.13/area-alt",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-braille-equivalent",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-command-name",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-conditional-attr",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-deprecated-role",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-hidden-body",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-input-field-name",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-meter-name",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-progressbar-name",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-required-attr",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-required-children",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-required-parent",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-roledescription",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-roles",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-tab-name",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-text",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-toggle-field-name",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-tooltip-name",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-treeitem-name",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-valid-attr",
+    "https://dequeuniversity.com/rules/axe/4.13/aria-valid-attr-value",
+    "https://dequeuniversity.com/rules/axe/4.13/audio-caption",
+    "https://dequeuniversity.com/rules/axe/4.13/autocomplete-valid",
+    "https://dequeuniversity.com/rules/axe/4.13/avoid-inline-spacing",
+    "https://dequeuniversity.com/rules/axe/4.13/blink",
+    "https://dequeuniversity.com/rules/axe/4.13/button-name",
+    "https://dequeuniversity.com/rules/axe/4.13/bypass",
+    "https://dequeuniversity.com/rules/axe/4.13/color-contrast",
+    "https://dequeuniversity.com/rules/axe/4.13/color-contrast-enhanced",
+    "https://dequeuniversity.com/rules/axe/4.13/css-orientation-lock",
+    "https://dequeuniversity.com/rules/axe/4.13/definition-list",
+    "https://dequeuniversity.com/rules/axe/4.13/dlitem",
+    "https://dequeuniversity.com/rules/axe/4.13/document-title",
+    "https://dequeuniversity.com/rules/axe/4.13/duplicate-id",
+    "https://dequeuniversity.com/rules/axe/4.13/duplicate-id-active",
+    "https://dequeuniversity.com/rules/axe/4.13/duplicate-id-aria",
+    "https://dequeuniversity.com/rules/axe/4.13/empty-heading",
+    "https://dequeuniversity.com/rules/axe/4.13/empty-table-header",
+    "https://dequeuniversity.com/rules/axe/4.13/focus-order-semantics",
+    "https://dequeuniversity.com/rules/axe/4.13/form-field-multiple-labels",
+    "https://dequeuniversity.com/rules/axe/4.13/frame-focusable-content",
+    "https://dequeuniversity.com/rules/axe/4.13/frame-tested",
+    "https://dequeuniversity.com/rules/axe/4.13/frame-title",
+    "https://dequeuniversity.com/rules/axe/4.13/frame-title-unique",
+    "https://dequeuniversity.com/rules/axe/4.13/heading-order",
+    "https://dequeuniversity.com/rules/axe/4.13/hidden-content",
+    "https://dequeuniversity.com/rules/axe/4.13/html-has-lang",
+    "https://dequeuniversity.com/rules/axe/4.13/html-lang-valid",
+    "https://dequeuniversity.com/rules/axe/4.13/html-xml-lang-mismatch",
+    "https://dequeuniversity.com/rules/axe/4.13/identical-links-same-purpose",
+    "https://dequeuniversity.com/rules/axe/4.13/image-alt",
+    "https://dequeuniversity.com/rules/axe/4.13/image-redundant-alt",
+    "https://dequeuniversity.com/rules/axe/4.13/input-image-alt",
+    "https://dequeuniversity.com/rules/axe/4.13/label",
+    "https://dequeuniversity.com/rules/axe/4.13/label-content-name-mismatch",
+    "https://dequeuniversity.com/rules/axe/4.13/label-title-only",
+    "https://dequeuniversity.com/rules/axe/4.13/landmark-banner-is-top-level",
+    "https://dequeuniversity.com/rules/axe/4.13/landmark-complementary-is-top-level",
+    "https://dequeuniversity.com/rules/axe/4.13/landmark-contentinfo-is-top-level",
+    "https://dequeuniversity.com/rules/axe/4.13/landmark-main-is-top-level",
+    "https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner",
+    "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main",
+    "https://dequeuniversity.com/rules/axe/4.13/landmark-unique",
+    "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block",
+    "https://dequeuniversity.com/rules/axe/4.13/link-name",
+    "https://dequeuniversity.com/rules/axe/4.13/list",
+    "https://dequeuniversity.com/rules/axe/4.13/listitem",
+    "https://dequeuniversity.com/rules/axe/4.13/marquee",
+    "https://dequeuniversity.com/rules/axe/4.13/meta-refresh",
+    "https://dequeuniversity.com/rules/axe/4.13/meta-refresh-no-exceptions",
+    "https://dequeuniversity.com/rules/axe/4.13/meta-viewport",
+    "https://dequeuniversity.com/rules/axe/4.13/meta-viewport-large",
+    "https://dequeuniversity.com/rules/axe/4.13/nested-interactive",
+    "https://dequeuniversity.com/rules/axe/4.13/no-autoplay-audio",
+    "https://dequeuniversity.com/rules/axe/4.13/object-alt",
+    "https://dequeuniversity.com/rules/axe/4.13/p-as-heading",
+    "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one",
+    "https://dequeuniversity.com/rules/axe/4.13/presentation-role-conflict",
+    "https://dequeuniversity.com/rules/axe/4.13/region",
+    "https://dequeuniversity.com/rules/axe/4.13/role-img-alt",
+    "https://dequeuniversity.com/rules/axe/4.13/scope-attr-valid",
+    "https://dequeuniversity.com/rules/axe/4.13/scrollable-region-focusable",
+    "https://dequeuniversity.com/rules/axe/4.13/select-name",
+    "https://dequeuniversity.com/rules/axe/4.13/server-side-image-map",
+    "https://dequeuniversity.com/rules/axe/4.13/skip-link",
+    "https://dequeuniversity.com/rules/axe/4.13/summary-name",
+    "https://dequeuniversity.com/rules/axe/4.13/svg-img-alt",
+    "https://dequeuniversity.com/rules/axe/4.13/tabindex",
+    "https://dequeuniversity.com/rules/axe/4.13/table-duplicate-name",
+    "https://dequeuniversity.com/rules/axe/4.13/table-fake-caption",
+    "https://dequeuniversity.com/rules/axe/4.13/target-size",
+    "https://dequeuniversity.com/rules/axe/4.13/td-has-header",
+    "https://dequeuniversity.com/rules/axe/4.13/td-headers-attr",
+    "https://dequeuniversity.com/rules/axe/4.13/th-has-data-cells",
+    "https://dequeuniversity.com/rules/axe/4.13/valid-lang",
+    "https://dequeuniversity.com/rules/axe/4.13/video-caption"
+   ],
+   "statements": 102
+  },
+  {
+   "id": "claw-design",
+   "name": "Claw Design",
+   "urls": [
+    "https://github.com/yuchangxu1989-Openclaw/claw-design"
+   ],
+   "statements": 136
+  },
+  {
+   "id": "feel-better",
+   "name": "make-interfaces-feel-better",
+   "urls": [
+    "https://github.com/jakubkrehel/make-interfaces-feel-better"
+   ],
+   "statements": 125
+  },
+  {
+   "id": "google-designmd",
+   "name": "Google DESIGN.md",
+   "urls": [
+    "https://github.com/google-labs-code/design.md"
+   ],
+   "statements": 86
+  },
+  {
+   "id": "govuk",
+   "name": "GOV.UK Design System",
+   "urls": [
+    "https://design-system.service.gov.uk/styles/"
+   ],
+   "statements": 25
+  },
+  {
+   "id": "hallmark",
+   "name": "Hallmark",
+   "urls": [
+    "https://github.com/nutlope/hallmark"
+   ],
+   "statements": 1080
+  },
+  {
+   "id": "impeccable",
+   "name": "Impeccable",
+   "urls": [
+    "https://github.com/pbakaus/impeccable"
+   ],
+   "statements": 984
+  },
+  {
+   "id": "lighthouse",
+   "name": "Lighthouse",
+   "urls": [
+    null
+   ],
+   "statements": 136
+  },
+  {
+   "id": "nngroup",
+   "name": "Nielsen Norman Group",
+   "urls": [
+    "https://www.nngroup.com/articles/ten-usability-heuristics/"
+   ],
+   "statements": 42
+  },
+  {
+   "id": "oneredoak",
+   "name": "OneRedOak design review",
+   "urls": [
+    "https://github.com/OneRedOak/claude-code-workflows/tree/main/design-review"
+   ],
+   "statements": 44
+  },
+  {
+   "id": "openai",
+   "name": "OpenAI UI guidelines (Apps SDK / Plugins)",
+   "urls": [
+    "https://developers.openai.com/plugins/concepts/ui-guidelines"
+   ],
+   "statements": 39
+  },
+  {
+   "id": "deslop",
+   "name": "frontend-design-deslop",
+   "urls": [
+    "https://github.com/samber/cc-skills"
+   ],
+   "statements": 326
+  },
+  {
+   "id": "shadcn",
+   "name": "shadcn/ui skills",
+   "urls": [
+    "https://ui.shadcn.com/docs/skills"
+   ],
+   "statements": 88
+  },
+  {
+   "id": "taste-skill",
+   "name": "Taste-Skill",
+   "urls": [
+    "https://github.com/Leonxlnx/taste-skill"
+   ],
+   "statements": 1044
+  },
+  {
+   "id": "ui-craft",
+   "name": "UI Craft",
+   "urls": [
+    "https://github.com/educlopez/ui-craft"
+   ],
+   "statements": 1180
+  },
+  {
+   "id": "unslop",
+   "name": "Unslop UI",
+   "urls": [
+    "https://www.claudecodehq.com/playbooks/unslop-ui"
+   ],
+   "statements": 75
+  },
+  {
+   "id": "vercel",
+   "name": "Vercel Web Interface Guidelines",
+   "urls": [
+    "https://vercel.com/design/guidelines"
+   ],
+   "statements": 195
+  },
+  {
+   "id": "wcag22",
+   "name": "W3C WCAG 2.2",
+   "urls": [
+    "https://www.w3.org/TR/WCAG22/#abbreviations",
+    "https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum",
+    "https://www.w3.org/TR/WCAG22/#animation-from-interactions",
+    "https://www.w3.org/TR/WCAG22/#audio-control",
+    "https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#audio-description-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#audio-only-live",
+    "https://www.w3.org/TR/WCAG22/#bypass-blocks",
+    "https://www.w3.org/TR/WCAG22/#captions-live",
+    "https://www.w3.org/TR/WCAG22/#captions-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#change-on-request",
+    "https://www.w3.org/TR/WCAG22/#character-key-shortcuts",
+    "https://www.w3.org/TR/WCAG22/#concurrent-input-mechanisms",
+    "https://www.w3.org/TR/WCAG22/#consistent-help",
+    "https://www.w3.org/TR/WCAG22/#consistent-identification",
+    "https://www.w3.org/TR/WCAG22/#consistent-navigation",
+    "https://www.w3.org/TR/WCAG22/#content-on-hover-or-focus",
+    "https://www.w3.org/TR/WCAG22/#contrast-minimum",
+    "https://www.w3.org/TR/WCAG22/#dragging-movements",
+    "https://www.w3.org/TR/WCAG22/#error-identification",
+    "https://www.w3.org/TR/WCAG22/#error-prevention-all",
+    "https://www.w3.org/TR/WCAG22/#error-prevention-legal-financial-data",
+    "https://www.w3.org/TR/WCAG22/#error-suggestion",
+    "https://www.w3.org/TR/WCAG22/#extended-audio-description-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#focus-appearance",
+    "https://www.w3.org/TR/WCAG22/#focus-not-obscured-enhanced",
+    "https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum",
+    "https://www.w3.org/TR/WCAG22/#focus-order",
+    "https://www.w3.org/TR/WCAG22/#focus-visible",
+    "https://www.w3.org/TR/WCAG22/#headings-and-labels",
+    "https://www.w3.org/TR/WCAG22/#help",
+    "https://www.w3.org/TR/WCAG22/#identify-input-purpose",
+    "https://www.w3.org/TR/WCAG22/#identify-purpose",
+    "https://www.w3.org/TR/WCAG22/#images-of-text",
+    "https://www.w3.org/TR/WCAG22/#images-of-text-no-exception",
+    "https://www.w3.org/TR/WCAG22/#info-and-relationships",
+    "https://www.w3.org/TR/WCAG22/#interruptions",
+    "https://www.w3.org/TR/WCAG22/#keyboard",
+    "https://www.w3.org/TR/WCAG22/#keyboard-no-exception",
+    "https://www.w3.org/TR/WCAG22/#label-in-name",
+    "https://www.w3.org/TR/WCAG22/#labels-or-instructions",
+    "https://www.w3.org/TR/WCAG22/#language-of-page",
+    "https://www.w3.org/TR/WCAG22/#language-of-parts",
+    "https://www.w3.org/TR/WCAG22/#link-purpose-in-context",
+    "https://www.w3.org/TR/WCAG22/#link-purpose-link-only",
+    "https://www.w3.org/TR/WCAG22/#location",
+    "https://www.w3.org/TR/WCAG22/#low-or-no-background-audio",
+    "https://www.w3.org/TR/WCAG22/#meaningful-sequence",
+    "https://www.w3.org/TR/WCAG22/#media-alternative-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#motion-actuation",
+    "https://www.w3.org/TR/WCAG22/#multiple-ways",
+    "https://www.w3.org/TR/WCAG22/#name-role-value",
+    "https://www.w3.org/TR/WCAG22/#no-keyboard-trap",
+    "https://www.w3.org/TR/WCAG22/#no-timing",
+    "https://www.w3.org/TR/WCAG22/#non-text-content",
+    "https://www.w3.org/TR/WCAG22/#non-text-contrast",
+    "https://www.w3.org/TR/WCAG22/#on-focus",
+    "https://www.w3.org/TR/WCAG22/#on-input",
+    "https://www.w3.org/TR/WCAG22/#orientation",
+    "https://www.w3.org/TR/WCAG22/#page-titled",
+    "https://www.w3.org/TR/WCAG22/#pause-stop-hide",
+    "https://www.w3.org/TR/WCAG22/#pointer-cancellation",
+    "https://www.w3.org/TR/WCAG22/#pointer-gestures",
+    "https://www.w3.org/TR/WCAG22/#pronunciation",
+    "https://www.w3.org/TR/WCAG22/#re-authenticating",
+    "https://www.w3.org/TR/WCAG22/#reading-level",
+    "https://www.w3.org/TR/WCAG22/#redundant-entry",
+    "https://www.w3.org/TR/WCAG22/#reflow",
+    "https://www.w3.org/TR/WCAG22/#resize-text",
+    "https://www.w3.org/TR/WCAG22/#section-headings",
+    "https://www.w3.org/TR/WCAG22/#sensory-characteristics",
+    "https://www.w3.org/TR/WCAG22/#sign-language-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#target-size-enhanced",
+    "https://www.w3.org/TR/WCAG22/#target-size-minimum",
+    "https://www.w3.org/TR/WCAG22/#text-spacing",
+    "https://www.w3.org/TR/WCAG22/#three-flashes",
+    "https://www.w3.org/TR/WCAG22/#three-flashes-or-below-threshold",
+    "https://www.w3.org/TR/WCAG22/#timeouts",
+    "https://www.w3.org/TR/WCAG22/#timing-adjustable",
+    "https://www.w3.org/TR/WCAG22/#unusual-words",
+    "https://www.w3.org/TR/WCAG22/#use-of-color",
+    "https://www.w3.org/TR/WCAG22/#visual-presentation"
+   ],
+   "statements": 83
+  },
+  {
+   "id": "webdev",
+   "name": "web.dev Learn Design + Forms",
+   "urls": [
+    "https://web.dev/learn/design/typography"
+   ],
+   "statements": 23
+  }
+ ]
+}

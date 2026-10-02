@@ -1,0 +1,232 @@
+{
+ "source": "GOV.UK Design System",
+ "publisher": "UK Government Digital Service",
+ "kind": "design-system",
+ "urls": [
+  "https://design-system.service.gov.uk/styles/",
+  "https://design-system.service.gov.uk/styles/typography/",
+  "https://design-system.service.gov.uk/styles/colour/",
+  "https://design-system.service.gov.uk/styles/spacing/",
+  "https://design-system.service.gov.uk/styles/layout/",
+  "https://design-system.service.gov.uk/patterns/validation/"
+ ],
+ "retrieved_at": "2026-09-30T06:32:04.777779Z",
+ "items": [
+  {
+   "text": "If you need to apply styles manually, you should still follow existing GOV.UK conventions.",
+   "file": "h_govuk__1.txt",
+   "section": "Styles",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For example, do not assign new meanings to colours, do not change the style of buttons or adjust the thickness of borders on form inputs.",
+   "file": "h_govuk__1.txt",
+   "section": "Styles",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Always use the GOV.UK colour palette.",
+   "file": "h_govuk__3.txt",
+   "section": "Colour",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "You must make sure that the contrast ratio of text and interactive elements in your service meets Web Content Accessibility Guidelines (WCAG 2.2) success criterion 1.4.3 Contrast (minimum) level AA.",
+   "file": "h_govuk__3.txt",
+   "section": "Colour contrast",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Do not copy the specific hexadecimal (hex) colour values.",
+   "file": "h_govuk__3.txt",
+   "section": "Assign colours using govuk-functional-colour",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Only use the variables in the context they’re designed for.",
+   "file": "h_govuk__3.txt",
+   "section": "Assign colours using govuk-functional-colour",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use this colour for text on dark backgrounds",
+   "file": "h_govuk__3.txt",
+   "section": "ffffff",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Only use this colour to indicate which element is focused on.",
+   "file": "h_govuk__3.txt",
+   "section": "ffdd00",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you want to reference the spacing scale in your CSS, use the spacing helpers.",
+   "file": "h_govuk__4.txt",
+   "section": "Applying spacing in your own CSS",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For the static spacing scale, use the govuk-spacing function.",
+   "file": "h_govuk__4.txt",
+   "section": "Using the static spacing helper",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Occasionally, you might need to make minor adjustments like adding or removing spacing to elements of your design.",
+   "file": "h_govuk__4.txt",
+   "section": "Overriding spacing",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For most types of page, we recommend using either a ‘two-thirds’ or a ‘two-thirds and one-third’ layout.",
+   "file": "h_govuk__5.txt",
+   "section": "Screen size",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never make assumptions about what devices people are using.",
+   "file": "h_govuk__5.txt",
+   "section": "Screen size",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The first should have the class govuk-width-container, which sets the maximum width of the content but does not add any vertical margin or padding.",
+   "file": "h_govuk__5.txt",
+   "section": "Limiting width of content",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Within govuk-width-container you should add the govuk-main-wrapper class to your <main> element.",
+   "file": "h_govuk__5.txt",
+   "section": "Add vertical space",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use the grid system to lay out the content on your service’s pages.",
+   "file": "h_govuk__5.txt",
+   "section": "Using the grid system",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Your main content should always be in a two-thirds column even if you’re not using a corresponding one-third column for secondary content.",
+   "file": "h_govuk__5.txt",
+   "section": "Using the grid system",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "You can stop elements from being displayed on the page and keep their contents available to screen readers using govuk-visually-hidden.",
+   "file": "h_govuk__5.txt",
+   "section": "govuk-!-display-inline to display inline",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Check the information the user gives you to make sure it’s valid.",
+   "file": "h_govuk__6.txt",
+   "section": "Recover from validation errors",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not use validation to check whether the user is eligible to use the service or has permission to do something.",
+   "file": "h_govuk__6.txt",
+   "section": "When not to use this pattern",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use validation to ignore unwanted characters, unless it would make the information too unclear for you to use.",
+   "file": "h_govuk__6.txt",
+   "section": "information that cannot be correct",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not validate when the user moves away from a field.",
+   "file": "h_govuk__6.txt",
+   "section": "avoid re-entering information",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Wait until they try to move to the next part of the service - usually by clicking the ‘continue’ or ‘submit’ button at the bottom of the page.",
+   "file": "h_govuk__6.txt",
+   "section": "avoid re-entering information",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Generally speaking, avoid validating the information in a field before the user has finished entering it.",
+   "file": "h_govuk__6.txt",
+   "section": "avoid re-entering information",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "You’ll always need to carry out server side validation, even if you use client side validation.",
+   "file": "h_govuk__6.txt",
+   "section": "server side validation",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Only add client side validation if you find a user need for it.",
+   "file": "h_govuk__6.txt",
+   "section": "server side validation",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not add ‘required’ to your input fields.",
+   "file": "h_govuk__6.txt",
+   "section": "Turn off HTML5 validation",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

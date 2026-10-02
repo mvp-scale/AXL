@@ -1,0 +1,1428 @@
+{
+ "source": "shadcn/ui skills",
+ "publisher": "shadcn (Vercel)",
+ "kind": "skill",
+ "urls": [
+  "https://ui.shadcn.com/docs/skills",
+  "https://github.com/shadcn-ui/ui/tree/main/skills/shadcn"
+ ],
+ "retrieved_at": "2026-09-30T06:35:17Z",
+ "items": [
+  {
+   "text": "Context injection — It runs shadcn info --json to read your project configuration and injects the result into the assistant's context. Pattern enforcement — The assistant follows shadcn/ui composition rules: using FieldGroup for forms, ToggleGroup for option sets, semantic colors, and correct base-specific APIs.",
+   "file": "h_shadcn__1.txt",
+   "section": null,
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Component discovery — The assistant uses shadcn docs, shadcn search, or MCP tools to find components and their documentation before generating code.",
+   "file": "h_shadcn__1.txt",
+   "section": null,
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use existing components first.** Use `npx shadcn@latest search` to check registries before writing custom UI. Check community registries too.",
+   "file": "h_shadcn__2.txt",
+   "section": "Principles",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Compose, don't reinvent.** Settings page = Tabs + Card + form controls. Dashboard = Sidebar + Card + Chart + Table.",
+   "file": "h_shadcn__2.txt",
+   "section": "Principles",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use built-in variants before custom styles.** `variant=\"outline\"`, `size=\"sm\"`, etc.",
+   "file": "h_shadcn__2.txt",
+   "section": "Principles",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use semantic colors.** `bg-primary`, `text-muted-foreground` — never raw values like `bg-blue-500`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Principles",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`className` for layout, not styling.** Never override component colors or typography.",
+   "file": "h_shadcn__2.txt",
+   "section": "Styling & Tailwind → [styling.md](./rules/styling.md)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**No `space-x-*` or `space-y-*`.** Use `flex` with `gap-*`. For vertical stacks, `flex flex-col gap-*`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Styling & Tailwind → [styling.md](./rules/styling.md)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use `size-*` when width and height are equal.** `size-10` not `w-10 h-10`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Styling & Tailwind → [styling.md](./rules/styling.md)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use `truncate` shorthand.** Not `overflow-hidden text-ellipsis whitespace-nowrap`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Styling & Tailwind → [styling.md](./rules/styling.md)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**No manual `dark:` color overrides.** Use semantic tokens (`bg-background`, `text-muted-foreground`).",
+   "file": "h_shadcn__2.txt",
+   "section": "Styling & Tailwind → [styling.md](./rules/styling.md)",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use `cn()` for conditional classes.** Don't write manual template literal ternaries.",
+   "file": "h_shadcn__2.txt",
+   "section": "Styling & Tailwind → [styling.md](./rules/styling.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**No manual `z-index` on overlay components.** Dialog, Sheet, Popover, etc. handle their own stacking.",
+   "file": "h_shadcn__2.txt",
+   "section": "Styling & Tailwind → [styling.md](./rules/styling.md)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Forms use `FieldGroup` + `Field`.** Never use raw `div` with `space-y-*` or `grid gap-*` for form layout.",
+   "file": "h_shadcn__2.txt",
+   "section": "Forms & Inputs → [forms.md](./rules/forms.md)",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`InputGroup` uses `InputGroupInput`/`InputGroupTextarea`.** Never raw `Input`/`Textarea` inside `InputGroup`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Forms & Inputs → [forms.md](./rules/forms.md)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Buttons inside inputs use `InputGroup` + `InputGroupAddon`.**",
+   "file": "h_shadcn__2.txt",
+   "section": "Forms & Inputs → [forms.md](./rules/forms.md)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Option sets (2–7 choices) use `ToggleGroup`.** Don't loop `Button` with manual active state.",
+   "file": "h_shadcn__2.txt",
+   "section": "Forms & Inputs → [forms.md](./rules/forms.md)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**`FieldSet` + `FieldLegend` for grouping related checkboxes/radios.** Don't use a `div` with a heading.",
+   "file": "h_shadcn__2.txt",
+   "section": "Forms & Inputs → [forms.md](./rules/forms.md)",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Field validation uses `data-invalid` + `aria-invalid`.** `data-invalid` on `Field`, `aria-invalid` on the control. For disabled: `data-disabled` on `Field`, `disabled` on the control.",
+   "file": "h_shadcn__2.txt",
+   "section": "Forms & Inputs → [forms.md](./rules/forms.md)",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Items always inside their Group.** `SelectItem` → `SelectGroup`. `DropdownMenuItem` → `DropdownMenuGroup`. `CommandItem` → `CommandGroup`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Structure → [composition.md](./rules/composition.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use `asChild` (radix) or `render` (base) for custom triggers.** Check `base` field from `npx shadcn@latest info`. → [base-vs-radix.md](./rules/base-vs-radix.md)",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Structure → [composition.md](./rules/composition.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Dialog, Sheet, and Drawer always need a Title.** `DialogTitle`, `SheetTitle`, `DrawerTitle` required for accessibility. Use `className=\"sr-only\"` if visually hidden.",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Structure → [composition.md](./rules/composition.md)",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use full Card composition.** `CardHeader`/`CardTitle`/`CardDescription`/`CardContent`/`CardFooter`. Don't dump everything in `CardContent`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Structure → [composition.md](./rules/composition.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Button has no `isPending`/`isLoading`.** Compose with `Spinner` + `data-icon` + `disabled`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Structure → [composition.md](./rules/composition.md)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`TabsTrigger` must be inside `TabsList`.** Never render triggers directly in `Tabs`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Structure → [composition.md](./rules/composition.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`Avatar` always needs `AvatarFallback`.** For when the image fails to load.",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Structure → [composition.md](./rules/composition.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use existing components before custom markup.** Check if a component exists before writing a styled `div`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Use Components, Not Custom Markup → [composition.md](./rules/composition.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Callouts use `Alert`.** Don't build custom styled divs.",
+   "file": "h_shadcn__2.txt",
+   "section": "Use Components, Not Custom Markup → [composition.md](./rules/composition.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Empty states use `Empty`.** Don't build custom empty state markup.",
+   "file": "h_shadcn__2.txt",
+   "section": "Use Components, Not Custom Markup → [composition.md](./rules/composition.md)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Toast follows the project base.** Use `toast` from the `toast` component for Base UI projects. Use `toast()` from `sonner` for Radix and React Aria projects.",
+   "file": "h_shadcn__2.txt",
+   "section": "Use Components, Not Custom Markup → [composition.md](./rules/composition.md)",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use `Separator`** instead of `<hr>` or `<div className=\"border-t\">`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Use Components, Not Custom Markup → [composition.md](./rules/composition.md)",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use `Skeleton`** for loading placeholders. No custom `animate-pulse` divs.",
+   "file": "h_shadcn__2.txt",
+   "section": "Use Components, Not Custom Markup → [composition.md](./rules/composition.md)",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use `Badge`** instead of custom styled spans.",
+   "file": "h_shadcn__2.txt",
+   "section": "Use Components, Not Custom Markup → [composition.md](./rules/composition.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Icons in `Button` use `data-icon`.** `data-icon=\"inline-start\"` or `data-icon=\"inline-end\"` on the icon.",
+   "file": "h_shadcn__2.txt",
+   "section": "Icons → [icons.md](./rules/icons.md)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**No sizing classes on icons inside components.** Components handle icon sizing via CSS. No `size-4` or `w-4 h-4`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Icons → [icons.md](./rules/icons.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Pass icons as objects, not string keys.** `icon={CheckIcon}`, not a string lookup.",
+   "file": "h_shadcn__2.txt",
+   "section": "Icons → [icons.md](./rules/icons.md)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Chat UI composes the chat primitives.** Conversations use `MessageScroller`, rows use `Message`, surfaces use `Bubble`. Never hand-rolled bubble `div`s or a raw scroll container.",
+   "file": "h_shadcn__2.txt",
+   "section": "Chat & Messaging → [chat.md](./rules/chat.md)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`MessageScroller` owns scroll behavior.** Streaming follow, anchoring, and jump-to-latest (`MessageScrollerButton`) are built in. Don't write a `useStickToBottom`/`ResizeObserver` hook.",
+   "file": "h_shadcn__2.txt",
+   "section": "Chat & Messaging → [chat.md](./rules/chat.md)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Attachments use `Attachment`; system notes and dividers use `Marker`.** Not `Item` cards or `Separator` + a label.",
+   "file": "h_shadcn__2.txt",
+   "section": "Chat & Messaging → [chat.md](./rules/chat.md)",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Button/action | `Button` with appropriate variant |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Form inputs | `Input`, `Select`, `Combobox`, `Switch`, `Checkbox`, `RadioGroup`, `Textarea`, `InputOTP`, `Slider` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Toggle between 2–5 options | `ToggleGroup` + `ToggleGroupItem` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "| Data display | `Table`, `Card`, `Badge`, `Avatar` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Navigation | `Sidebar`, `NavigationMenu`, `Breadcrumb`, `Tabs`, `Pagination` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Overlays | `Dialog` (modal), `Sheet` (side panel), `Drawer` (bottom sheet), `AlertDialog` (confirmation) |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Feedback | `toast` (Base UI), `sonner` (Radix/Aria), `Alert`, `Progress`, `Skeleton`, `Spinner` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Command palette | `Command` inside `Dialog` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Charts | `Chart` (wraps Recharts) |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Layout | `Card`, `Separator`, `Resizable`, `ScrollArea`, `Accordion`, `Collapsible` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Empty states | `Empty` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Menus | `DropdownMenu`, `ContextMenu`, `Menubar` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Tooltips/info | `Tooltip`, `HoverCard`, `Popover` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Chat / conversation UI | `MessageScroller`, `Message`, `Bubble`, `Attachment`, `Marker` |",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Selection",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Run `npx shadcn@latest docs <component>` to get the URLs for a component's documentation, examples, and API reference. Fetch these URLs to get the actual content.",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Docs, Examples, and Usage",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**When creating, fixing, debugging, or using a component, always run `npx shadcn@latest docs` and fetch the URLs first.** This ensures you're working with the correct API and usage patterns rather than guessing.",
+   "file": "h_shadcn__2.txt",
+   "section": "Component Docs, Examples, and Usage",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "> **IMPORTANT:** Run all CLI commands using the project's package runner: `npx shadcn@latest`, `pnpm dlx shadcn@latest`, or `bunx --bun shadcn@latest` — based on the project's `packageManager`. Examples below use `npx shadcn@latest` but substitute the correct runner for the project.",
+   "file": "h_shadcn__2.txt",
+   "section": "shadcn/ui",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The JSON above contains the project config and installed components. Use `npx shadcn@latest docs <component>` to get documentation and example URLs for any component.",
+   "file": "h_shadcn__2.txt",
+   "section": "Current Project Context",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`aliases`** → use the actual alias prefix for imports (e.g. `@/`, `~/`), never hardcode.",
+   "file": "h_shadcn__2.txt",
+   "section": "Key Fields",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`isRSC`** → when `true`, components using `useState`, `useEffect`, event handlers, or browser APIs need `\"use client\"` at the top of the file. Always reference this field when advising on the directive.",
+   "file": "h_shadcn__2.txt",
+   "section": "Key Fields",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`tailwindVersion`** → `\"v4\"` uses `@theme inline` blocks; `\"v3\"` uses `tailwind.config.js`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Key Fields",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`tailwindCssFile`** → the global CSS file where custom CSS variables are defined. Always edit this file, never create a new one.",
+   "file": "h_shadcn__2.txt",
+   "section": "Key Fields",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "**`iconLibrary`** → determines icon imports. Use `lucide-react` for `lucide`, `@tabler/icons-react` for `tabler`, etc. Never assume `lucide-react`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Key Fields",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`packageManager`** → use this for any non-shadcn dependency installs (e.g. `pnpm add date-fns` vs `npm install date-fns`).",
+   "file": "h_shadcn__2.txt",
+   "section": "Key Fields",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**`preset`** → resolved preset code and values for the current project. Use `npx shadcn@latest preset resolve --json` when you only need preset information.",
+   "file": "h_shadcn__2.txt",
+   "section": "Key Fields",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Get project context** — already injected above. Run `npx shadcn@latest info` again if you need to refresh.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Check installed components first** — before running `add`, always check the `components` list from project context or list the `resolvedPaths.ui` directory. Don't import components that haven't been added, and don't re-add ones already installed.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Get docs and examples** — run `npx shadcn@latest docs <component>` to get URLs, then fetch them. Use `npx shadcn@latest view` to browse registry items you haven't installed. To preview changes to installed components, use `npx shadcn@latest add --diff`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Install or update** — `npx shadcn@latest add`. When updating existing components, use `--dry-run` and `--diff` to preview changes first (see [Updating Components](#updating-components) below).",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Fix imports in third-party components** — After adding components from community registries (e.g. `@bundui`, `@magicui`), check the added non-UI files for hardcoded import paths like `@/components/ui/...`. These won't match the project's actual aliases. Use `npx shadcn@latest info` to get the correct `ui` alias (e.g.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`@workspace/ui/components`) and rewrite the imports accordingly. The CLI rewrites imports for its own UI files, but third-party registry components may use default paths that don't match the project.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Review added components** — After adding a component or block from any registry, **always read the added files and verify they are correct**. Check for missing sub-components (e.g. `SelectItem` without `SelectGroup`), missing imports, incorrect composition, or violations of the [Critical Rules](#critical-rules).",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Also replace any icon imports with the project's `iconLibrary` from the project context (e.g. if the registry item uses `lucide-react` but the project uses `hugeicons`, swap the imports and icon names accordingly). Fix all issues before moving on.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Registry must be explicit** — When the user asks to add a block or component, **do not guess the registry**. If no registry is specified (e.g. user says \"add a login block\" without specifying `@shadcn`, `@tailark`, `owner/repo`, etc.), ask which registry to use.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never default to a registry on behalf of the user.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Switching presets** — Ask the user first: **overwrite**, **partial**, **merge**, or **skip**?",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Inspect current preset**: `npx shadcn@latest preset resolve`. Use `--json` when you need structured values.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Inspect incoming preset**: `npx shadcn@latest preset decode <code>`. Use `preset url <code>` or `preset open <code>` to share or open the preset builder.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Overwrite**: `npx shadcn@latest apply <code>`. Overwrites detected components, fonts, and CSS variables.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Partial**: `npx shadcn@latest apply <code> --only theme,font`. Updates only the selected preset parts without reinstalling UI components. Supported values are `theme` and `font`; comma-separated combinations are allowed. `icon` is intentionally not supported, because icon changes may require full component reinstall and transforms.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Merge**: `npx shadcn@latest init --preset <code> --force --no-reinstall`, then run `npx shadcn@latest info` to list installed components, then for each installed component use `--dry-run` and `--diff` to [smart merge](#updating-components) it individually.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Skip**: `npx shadcn@latest init --preset <code> --force --no-reinstall`. Only updates config and CSS, leaves components as-is.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Important**: Always run preset commands inside the user's project directory. `apply` only works in an existing project with a `components.json` file. The CLI automatically preserves the current base (`base` vs `radix`) from `components.json`.",
+   "file": "h_shadcn__2.txt",
+   "section": "Workflow",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When the user asks to update a component from upstream while keeping their local changes, use `--dry-run` and `--diff` to intelligently merge. **NEVER fetch raw files from GitHub manually — always use the CLI.**",
+   "file": "h_shadcn__2.txt",
+   "section": "Updating Components",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Run `npx shadcn@latest add <component> --dry-run` to see all files that would be affected.",
+   "file": "h_shadcn__2.txt",
+   "section": "Updating Components",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For each file, run `npx shadcn@latest add <component> --diff <file>` to see what changed upstream vs local.",
+   "file": "h_shadcn__2.txt",
+   "section": "Updating Components",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "No local changes → safe to overwrite.",
+   "file": "h_shadcn__2.txt",
+   "section": "Updating Components",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Has local changes → read the local file, analyze the diff, and apply upstream updates while preserving local modifications.",
+   "file": "h_shadcn__2.txt",
+   "section": "Updating Components",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "User says \"just update everything\" → use `--overwrite`, but confirm first.",
+   "file": "h_shadcn__2.txt",
+   "section": "Updating Components",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Never use `--overwrite` without the user's explicit approval.**",
+   "file": "h_shadcn__2.txt",
+   "section": "Updating Components",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never render items directly inside the content container.",
+   "file": "h_shadcn__3.txt",
+   "section": "Items always inside their Group component",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "| Focused task that requires input | `Dialog` |",
+   "file": "h_shadcn__3.txt",
+   "section": "Choosing between overlay components",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`DialogTitle`, `SheetTitle`, `DrawerTitle` are required for accessibility. Use `className=\"sr-only\"` if visually hidden.",
+   "file": "h_shadcn__3.txt",
+   "section": "Dialog, Sheet, and Drawer always need a Title",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `Field orientation=\"horizontal\"` for settings pages. Use `FieldLabel className=\"sr-only\"` for visually hidden labels.",
+   "file": "h_shadcn__4.txt",
+   "section": "Forms use FieldGroup + Field",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Native HTML select (no JS) → `native-select`",
+   "file": "h_shadcn__4.txt",
+   "section": "Forms use FieldGroup + Field",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never use raw `Input` or `Textarea` inside an `InputGroup`.",
+   "file": "h_shadcn__4.txt",
+   "section": "InputGroup requires InputGroupInput/InputGroupTextarea",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Never place a `Button` directly inside or adjacent to an `Input` with custom positioning.",
+   "file": "h_shadcn__4.txt",
+   "section": "Buttons inside inputs use InputGroup + InputGroupAddon",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Don't manually loop `Button` components with active state.",
+   "file": "h_shadcn__4.txt",
+   "section": "Option sets (2–7 choices) use ToggleGroup",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `FieldSet` + `FieldLegend` for related checkboxes, radios, or switches — not `div` with a heading:",
+   "file": "h_shadcn__4.txt",
+   "section": "FieldSet + FieldLegend for grouping related fields",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Works for all controls: `Input`, `Textarea`, `Select`, `Checkbox`, `RadioGroupItem`, `Switch`, `Slider`, `NativeSelect`, `InputOTP`.",
+   "file": "h_shadcn__4.txt",
+   "section": "Field validation and disabled states",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For positive, negative, or status indicators, use Badge variants, semantic tokens like `text-destructive`, or define custom CSS variables — don't reach for raw Tailwind colors.",
+   "file": "h_shadcn__5.txt",
+   "section": "No raw color values for status/state indicators",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If you need a success/positive color that doesn't exist as a semantic token, use a Badge variant or ask the user about adding a custom CSS variable to the theme (see [customization.md](../customization.md)).",
+   "file": "h_shadcn__5.txt",
+   "section": "No raw color values for status/state indicators",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `className` for layout (e.g. `max-w-md`, `mx-auto`, `mt-4`), **not** for overriding component colors or typography. To change colors, use semantic tokens, built-in variants, or CSS variables.",
+   "file": "h_shadcn__5.txt",
+   "section": "className for layout only",
+   "category": "Type",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Use `gap-*` instead. `space-y-4` → `flex flex-col gap-4`. `space-x-2` → `flex gap-2`.",
+   "file": "h_shadcn__5.txt",
+   "section": "No space-x-* / space-y-*",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`size-10` not `w-10 h-10`. Applies to icons, avatars, skeletons, etc.",
+   "file": "h_shadcn__5.txt",
+   "section": "Prefer size-* over w-* h-* when equal",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`truncate` not `overflow-hidden text-ellipsis whitespace-nowrap`.",
+   "file": "h_shadcn__5.txt",
+   "section": "Prefer truncate shorthand",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use semantic tokens — they handle light/dark via CSS variables. `bg-background text-foreground` not `bg-white dark:bg-gray-950`.",
+   "file": "h_shadcn__5.txt",
+   "section": "No manual dark: color overrides",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use the `cn()` utility from the project for conditional or merged class names. Don't write manual ternaries in className strings.",
+   "file": "h_shadcn__5.txt",
+   "section": "Use cn() for conditional classes",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`Dialog`, `Sheet`, `Drawer`, `AlertDialog`, `DropdownMenu`, `Popover`, `Tooltip`, `HoverCard` handle their own stacking. Never add `z-50` or `z-[999]`.",
+   "file": "h_shadcn__5.txt",
+   "section": "No manual z-index on overlay components",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For a live \"thinking…\" or loading-text shimmer, apply the `shimmer` utility. Don't author a custom `@keyframes` or a `bg-clip-text` gradient sweep.",
+   "file": "h_shadcn__5.txt",
+   "section": "Use shimmer / scroll-fade utilities, not custom animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For scroll-aware edge fading on a scroll container, use `scroll-fade` (and the axis variants `scroll-fade-x` / `scroll-fade-b`). Don't hand-roll mask gradients. The chat components already apply these internally: `Attachment` shimmers its title during upload, and `MessageScrollerViewport` fades its edges.",
+   "file": "h_shadcn__5.txt",
+   "section": "Use shimmer / scroll-fade utilities, not custom animations",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Always use the project's configured `iconLibrary` for imports.** Check the `iconLibrary` field from project context: `lucide` → `lucide-react`, `tabler` → `@tabler/icons-react`, etc. Never assume `lucide-react`.",
+   "file": "h_shadcn__6.txt",
+   "section": "Icons",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Add `data-icon=\"inline-start\"` (prefix) or `data-icon=\"inline-end\"` (suffix) to the icon. No sizing classes on the icon.",
+   "file": "h_shadcn__6.txt",
+   "section": "Icons in Button use data-icon attribute",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Components handle icon sizing via CSS. Don't add `size-4`, `w-4 h-4`, or other sizing classes to icons inside `Button`, `DropdownMenuItem`, `Alert`, `Sidebar*`, or other shadcn components. Unless the user explicitly asks for custom icon sizes.",
+   "file": "h_shadcn__6.txt",
+   "section": "No sizing classes on icons inside components",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `icon={CheckIcon}`, not a string key to a lookup map.",
+   "file": "h_shadcn__6.txt",
+   "section": "Pass icons as component objects, not string keys",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "API differences between `base` and `radix`. Check the `base` field from `npx shadcn@latest info`.",
+   "file": "h_shadcn__7.txt",
+   "section": "Base vs Radix",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Radix uses `asChild` to replace the default element. Base uses `render`. Don't wrap triggers in extra elements.",
+   "file": "h_shadcn__7.txt",
+   "section": "Composition: asChild (radix) vs render (base)",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "This applies to all trigger and close components: `DialogTrigger`, `SheetTrigger`, `AlertDialogTrigger`, `DropdownMenuTrigger`, `PopoverTrigger`, `TooltipTrigger`, `CollapsibleTrigger`, `DialogClose`, `SheetClose`, `NavigationMenuLink`, `BreadcrumbLink`, `SidebarMenuButton`, `Badge`, `Item`.",
+   "file": "h_shadcn__7.txt",
+   "section": "Composition: asChild (radix) vs render (base)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When `render` changes an element to a non-button (`<a>`, `<span>`), add `nativeButton={false}`.",
+   "file": "h_shadcn__7.txt",
+   "section": "Button / trigger as non-button element (base only)",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**items prop (base only).** Base requires an `items` prop on the root. Radix uses inline JSX only.",
+   "file": "h_shadcn__7.txt",
+   "section": "Select",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Placeholder.** Base uses a `{ value: null }` item in the items array. Radix uses `<SelectValue placeholder=\"...\">`.",
+   "file": "h_shadcn__7.txt",
+   "section": "Select",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Content positioning.** Base uses `alignItemWithTrigger`. Radix uses `position`.",
+   "file": "h_shadcn__7.txt",
+   "section": "Select",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Base supports `multiple`, render-function children on `SelectValue`, and object values with `itemToStringValue`. Radix is single-select with string values only.",
+   "file": "h_shadcn__7.txt",
+   "section": "Select — multiple selection and object values (base only)",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Base uses a `multiple` boolean prop. Radix uses `type=\"single\"` or `type=\"multiple\"`.",
+   "file": "h_shadcn__7.txt",
+   "section": "ToggleGroup",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Base accepts a plain number for a single thumb. Radix always requires an array.",
+   "file": "h_shadcn__7.txt",
+   "section": "Slider",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Both use arrays for range sliders. Controlled `onValueChange` in base may need a cast:",
+   "file": "h_shadcn__7.txt",
+   "section": "Slider",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Radix requires `type=\"single\"` or `type=\"multiple\"` and supports `collapsible`. `defaultValue` is a string. Base uses no `type` prop, uses `multiple` boolean, and `defaultValue` is always an array.",
+   "file": "h_shadcn__7.txt",
+   "section": "Accordion",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Components for conversation and chat UI. Compose these instead of hand-rolling bubbles, scroll containers, dividers, or attachment cards.",
+   "file": "h_shadcn__8.txt",
+   "section": "Chat & Messaging",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "A conversation that scrolls, follows new messages, restores position, or jumps to a message uses `MessageScroller`. Don't build a raw overflow container with manual scroll wiring, and don't reach for `ScrollArea`.",
+   "file": "h_shadcn__8.txt",
+   "section": "Scrollable threads use MessageScroller",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The parts nest in a fixed order. Every direct child of the content is wrapped in a `MessageScrollerItem` so the scroller can measure, anchor, preserve position, track visibility, and jump to it. `MessageScrollerButton` sits inside `MessageScroller`, after the viewport.",
+   "file": "h_shadcn__8.txt",
+   "section": "Scrollable threads use MessageScroller",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`Message` lays out a single row: avatar, header, content, footer, with alignment. Group consecutive rows from one sender with `MessageGroup`. Don't rebuild the row from flex divs.",
+   "file": "h_shadcn__8.txt",
+   "section": "Message rows use Message",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "`align=\"end\"` is the current user's side; `align=\"start\"` is everyone else.",
+   "file": "h_shadcn__8.txt",
+   "section": "Message rows use Message",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The colored message surface is `Bubble` + `BubbleContent`, never a styled `div` with `bg-muted` / `bg-primary` and hand-managed corners.",
+   "file": "h_shadcn__8.txt",
+   "section": "Message surfaces use Bubble",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`align`: `start` or `end` (matches the `Message` side).",
+   "file": "h_shadcn__8.txt",
+   "section": "Message surfaces use Bubble",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`BubbleReactions` renders the reaction cluster. `side` (`top` | `bottom`) and `align` (`start` | `end`) position it against the bubble. Don't lay reactions out with absolutely-positioned `Badge`s.",
+   "file": "h_shadcn__8.txt",
+   "section": "Message surfaces use Bubble",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "File and image attachments use `Attachment`, not `Item` or a custom card. It carries upload state, so wire `state` to the real status rather than rendering a separate spinner.",
+   "file": "h_shadcn__8.txt",
+   "section": "Attachments use Attachment",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`state`: `idle`, `uploading`, `processing`, `error`, `done`. `uploading` and `processing` apply the `shimmer` animation to the title automatically.",
+   "file": "h_shadcn__8.txt",
+   "section": "Attachments use Attachment",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use `AttachmentGroup` to lay out several attachments in a scrolling row.",
+   "file": "h_shadcn__8.txt",
+   "section": "Attachments use Attachment",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For an image, use `<AttachmentMedia variant=\"image\">` with an `img` child.",
+   "file": "h_shadcn__8.txt",
+   "section": "Attachments use Attachment",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Status lines (\"Sarah joined the conversation\"), date dividers (\"Today\"), and labeled separators are `Marker`, not a `Separator` plus a centered span.",
+   "file": "h_shadcn__8.txt",
+   "section": "System notes and dividers use Marker",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`variant`: `default` (plain row), `separator` (centered label with rules on each side), `border` (bottom-bordered row).",
+   "file": "h_shadcn__8.txt",
+   "section": "System notes and dividers use Marker",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`MessageScroller` handles the behavior that chat UIs usually reinvent. Don't write a `useStickToBottom` hook, a `ResizeObserver`, or manual `scrollTop` math.",
+   "file": "h_shadcn__8.txt",
+   "section": "Streaming, anchoring, and jump-to-latest are built in",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Follow the live edge while streaming.** `MessageScrollerProvider` with `autoScroll` keeps the view pinned to new content and yields the moment the user scrolls up. Streaming token updates that grow the last message are followed automatically.",
+   "file": "h_shadcn__8.txt",
+   "section": "Streaming, anchoring, and jump-to-latest are built in",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Jump to latest.** `MessageScrollerButton` appears when the user scrolls away and scrolls back on click. `direction=\"end\"` (default) or `direction=\"start\"`. It is a self-managing control, so don't gate it behind your own scroll-position state.",
+   "file": "h_shadcn__8.txt",
+   "section": "Streaming, anchoring, and jump-to-latest are built in",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Open a saved transcript without a flash.** `defaultScrollPosition` applies after mount. When it is `\"end\"` or `\"last-anchor\"`, the viewport has `data-pending-scroll` until that position is applied. The styled viewport hides.",
+   "file": "h_shadcn__8.txt",
+   "section": "Streaming, anchoring, and jump-to-latest are built in",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For `\"end\"` on first paint when messages are in the server HTML, copy this script into the page, not into the primitive. Skip it for `\"last-anchor\"` and for client-fetched messages. Keep `suppressHydrationWarning` on the viewport. Pass a `nonce` if you use a Content Security Policy.",
+   "file": "h_shadcn__8.txt",
+   "section": "Streaming, anchoring, and jump-to-latest are built in",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For a \"thinking…\" indicator while the model generates, apply the `shimmer` utility to text. Don't author a custom keyframe animation. See [styling.md](./styling.md).",
+   "file": "h_shadcn__8.txt",
+   "section": "Streaming, anchoring, and jump-to-latest are built in",
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Components reference semantic CSS variable tokens. Change the variables to change every component.",
+   "file": "h_shadcn__9.txt",
+   "section": "Customization & Theming",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Components use these utilities — changing a variable changes all components that reference it.",
+   "file": "h_shadcn__9.txt",
+   "section": "How It Works",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Every color follows the `name` / `name-foreground` convention. The base variable is for backgrounds, `-foreground` is for text/icons on that background.",
+   "file": "h_shadcn__9.txt",
+   "section": "Color Variables",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Colors use OKLCH: `--primary: oklch(0.205 0 0)` where values are lightness (0–1), chroma (0 = gray), and hue (0–360).",
+   "file": "h_shadcn__9.txt",
+   "section": "Color Variables",
+   "category": "Color",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Add variables to the file at `tailwindCssFile` from `npx shadcn@latest info` (typically `globals.css`). Never create a new CSS file for this.",
+   "file": "h_shadcn__9.txt",
+   "section": "Adding Custom Colors",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "> **IMPORTANT:** Always run commands using the project's package runner: `npx shadcn@latest`, `pnpm dlx shadcn@latest`, or `bunx --bun shadcn@latest`. Check `packageManager` from project context to choose the right one. Examples below use `npx shadcn@latest` but substitute the correct runner for the project.",
+   "file": "h_shadcn__10.txt",
+   "section": "shadcn CLI Reference",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "> **IMPORTANT:** Only use the flags documented below. Do not invent or guess flags — if a flag isn't listed here, it doesn't exist. The CLI auto-detects the package manager from the project's lockfile; there is no `--package-manager` flag.",
+   "file": "h_shadcn__10.txt",
+   "section": "shadcn CLI Reference",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`[preset]` is a shorthand for `--preset <preset>`. If both are provided, they must match. If no preset is provided, the CLI offers to open the custom preset builder on `ui.shadcn.com/create`.",
+   "file": "h_shadcn__10.txt",
+   "section": "`apply` — Apply a preset to an existing project",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "> **IMPORTANT:** To compare local components against upstream or to preview changes, ALWAYS use `npx shadcn@latest add <component> --dry-run`, `--diff`, or `--view`. NEVER fetch raw files from GitHub or other sources manually. The CLI handles registry resolution, file paths, and CSS diffing automatically.",
+   "file": "h_shadcn__10.txt",
+   "section": "`add` — Add components",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When checking what CSS changes would be made to `globals.css` — use `--diff globals.css`.",
+   "file": "h_shadcn__10.txt",
+   "section": "Dry-Run Mode",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "> **`npx shadcn@latest add --dry-run` vs `npx shadcn@latest view`:** Prefer `npx shadcn@latest add --dry-run/--diff/--view` over `npx shadcn@latest view` when the user wants to preview changes to their project. `npx shadcn@latest view` only shows raw registry metadata.",
+   "file": "h_shadcn__10.txt",
+   "section": "Dry-Run Mode",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not use this command. Use `npx shadcn@latest add --diff` instead.",
+   "file": "h_shadcn__10.txt",
+   "section": "`diff` — Check for updates",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The `info` output includes a **Links** section with templated URLs for component docs, source, and examples. For resolved URLs, use `npx shadcn@latest docs <component>` instead.",
+   "file": "h_shadcn__10.txt",
+   "section": "`info` — Project information",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ask the user first: **overwrite**, **merge**, or **skip** existing components?",
+   "file": "h_shadcn__10.txt",
+   "section": "Switching Presets",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Always run preset commands inside the user's project directory. `apply` only works in an existing project with a `components.json` file. The CLI automatically preserves the current base (`base` vs `radix`) from `components.json`.",
+   "file": "h_shadcn__10.txt",
+   "section": "Switching Presets",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The root registry file should define registry metadata and either `items` or `include`.",
+   "file": "h_shadcn__11.txt",
+   "section": "Root `registry.json`",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Root `registry.json` must include `name` and `homepage`.",
+   "file": "h_shadcn__11.txt",
+   "section": "Root `registry.json`",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Include paths must explicitly point to a `registry.json` file.",
+   "file": "h_shadcn__11.txt",
+   "section": "Include",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not use remote URLs, absolute paths, or parent traversal (`..`).",
+   "file": "h_shadcn__11.txt",
+   "section": "Include",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`registryDependencies`: other registry items required by this item.",
+   "file": "h_shadcn__11.txt",
+   "section": "Item Definitions",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not use remote file URLs in source registry file paths.",
+   "file": "h_shadcn__11.txt",
+   "section": "Item Definitions",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Bare names never mean same-registry or same-repository items.",
+   "file": "h_shadcn__11.txt",
+   "section": "Registry Dependencies",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not use relative dependencies such as `\"./bar\"`.",
+   "file": "h_shadcn__11.txt",
+   "section": "Registry Dependencies",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The source entrypoint is always root `registry.json`.",
+   "file": "h_shadcn__11.txt",
+   "section": "GitHub Registries",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "GitHub registries are source registries consumed directly by the CLI. They do not require `shadcn build` or generated item JSON files.",
+   "file": "h_shadcn__11.txt",
+   "section": "GitHub Registries",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "When implementing GitHub registry fetching, resolve refs to a commit SHA before reading source files. Do not read moving refs directly from `raw.githubusercontent.com`, because branch-like refs can be cached for several minutes.",
+   "file": "h_shadcn__11.txt",
+   "section": "GitHub Registries",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not add side effects to validators.",
+   "file": "h_shadcn__11.txt",
+   "section": "Build and Verify",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Prefer small source-reader abstractions over a plugin system until there are multiple real providers.",
+   "file": "h_shadcn__11.txt",
+   "section": "Build and Verify",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Namespaced and authenticated registries are set in `components.json`. The `@shadcn` registry is always built-in. Public GitHub registries can also be used directly as `owner/repo` registry sources when the repository has a root `registry.json`; they do not need `components.json` configuration.",
+   "file": "h_shadcn__12.txt",
+   "section": "Configuring Registries",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Names must start with `@`.",
+   "file": "h_shadcn__12.txt",
+   "section": "Configuring Registries",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "URLs must contain `{name}`.",
+   "file": "h_shadcn__12.txt",
+   "section": "Configuring Registries",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

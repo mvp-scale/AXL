@@ -1,0 +1,1107 @@
+{
+ "source": "Claw Design",
+ "publisher": "yuchangxu1989-Openclaw",
+ "kind": "tool",
+ "urls": [
+  "https://github.com/yuchangxu1989-Openclaw/claw-design"
+ ],
+ "retrieved_at": "2026-09-30T06:35:17Z",
+ "items": [
+  {
+   "text": "**一句话触发完整链路** 意图识别 → 必要时追问 → 上下文收束 → 设计生成 → 质量门禁 → 导出交付。你只管说要什么，链路自动跑完。",
+   "file": "h_claw-design__1.txt",
+   "section": "核心能力",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**不确定时会追问你** 需求太模糊时，Claw Design 会先问清楚，不会硬猜。比如你只说“做个发布会页面”，它可能会追问受众、主视觉、转化目标。最多追问 2 轮；能继续推进的缺口，会用默认骨架先跑。",
+   "file": "h_claw-design__1.txt",
+   "section": "核心能力",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**生成完还能继续改** 不满意不用重来。直接说“把标题换个颜色”“第二页改得更像高管汇报”“图表换成桑基图”，Claw Design 会基于上一次结果做增量修订，保留已有结构，只改你点名的地方。",
+   "file": "h_claw-design__1.txt",
+   "section": "核心能力",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**品牌风格能管住** Theme Pack / Brand Kit 会把颜色、字体、标识、间距、版式规则收成一套可复用的品牌上下文。企业团队做客户方案、月报、落地页时，不用每次重新解释品牌规范，也不用担心一会儿蓝、一会儿紫、一会儿毛玻璃。",
+   "file": "h_claw-design__1.txt",
+   "section": "核心能力",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "市面上 AI 设计工具的通病：生成的东西一眼就能看出是 AI 做的。紫蓝渐变背景、emoji 当图标、所有按钮都是药丸形、千篇一律的三列推荐语卡片、到处都是毛玻璃效果……",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`generic-purple-gradient` — 紫蓝渐变大面积背景",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`emoji-as-icon` — 用 emoji 代替专业图标",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`glassmorphism-overuse` — 毛玻璃效果滥用",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`all-pill-buttons` — 所有按钮都是药丸形",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`uniform-card-grid` — 千篇一律的等尺寸卡片网格",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`generic-hero-layout` — “大标题 + 副标题 + CTA 居中”的万能首屏",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`dark-neon-combo` — 深色背景配霓虹色的赛博朋克审美",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`centered-everything` — 全页面居中对齐，毫无层级变化",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "severity=block 的规则命中后，系统自动重新生成（最多 3 次），并在 prompt 中注入规避指导。你也可以在 OpenClaw 里查看、添加、禁用规则，或者调整严重级别。",
+   "file": "h_claw-design__1.txt",
+   "section": "Slop 黑名单：干掉 AI 味",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`generate` 的意图识别走文本 LLM 语义理解，不做关键词匹配降级。CLI 本身不内置 LLM：",
+   "file": "h_claw-design__1.txt",
+   "section": "关于意图识别（重要）",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "在已配置文本 LLM 的 **OpenClaw** 里使用时，宿主会注入 LLM，`generate` 正常工作。",
+   "file": "h_claw-design__1.txt",
+   "section": "关于意图识别（重要）",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "直接 `npm` 装的裸 CLI 没有注入 LLM 时，`generate` 不会瞎猜意图，而是报错并提示你去 OpenClaw 使用，或在程序内通过 `createPipeline(theme, { classifierProvider })` 注入文本 LLM classifier。",
+   "file": "h_claw-design__1.txt",
+   "section": "关于意图识别（重要）",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "`slop-list`、`--help`、`--version` 不依赖 LLM，任何环境都能直接用。",
+   "file": "h_claw-design__1.txt",
+   "section": "关于意图识别（重要）",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "紫蓝渐变背景（purple-to-blue / purple-to-pink linear-gradient 作为大面积背景）。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: generic-purple-gradient",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "用通用 emoji 字符代替专业 SVG/icon-font 图标。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: emoji-as-icon",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Inter 字体用作标题或展示字体（Inter 只适合 body text）。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: inter-as-display",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "手绘风格 SVG 真人脸或通用人物插画。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: hand-drawn-faces",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "在 img alt 或注释中使用通用 stock photo 风格描述。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: stock-photo-description",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "残留 Lorem ipsum、placeholder text 或明显占位文本。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: lorem-ipsum",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "同一页面超过 3 个元素使用 drop-shadow 且参数相同。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: excessive-drop-shadow",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "页面中所有按钮都是全圆角药丸形（border-radius ≥ 999px 或 50%）。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: all-pill-buttons",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "超过 2 个容器同时使用 backdrop-filter: blur + 半透明背景。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: glassmorphism-overuse",
+   "category": "Surface",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "所有容器元素统一使用 ≥ 16px 大圆角，无圆角层级区分。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: excessive-border-radius",
+   "category": "Surface",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "hero section 采用\"大标题 + 副标题 + 单个 CTA 按钮垂直居中\"的千篇一律布局。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: generic-hero-layout",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "超过 2 处文字使用 background-clip: text + 渐变色效果。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: gradient-text-overuse",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "三列等宽推荐语卡片（头像 + 引言 + 姓名），无设计差异化。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: generic-testimonial-cards",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "使用 AI 生成的通用人物头像或圆形纯色占位头像。",
+   "file": "h_claw-design__3.txt",
+   "section": "Slop rule: ai-avatar-placeholder",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "颜色应使用 CSS 变量而非硬编码值",
+   "file": "h_claw-design__4.txt",
+   "section": "no-inline-style-color",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "字号应使用 rem/em 或字阶变量",
+   "file": "h_claw-design__4.txt",
+   "section": "no-fixed-font-size",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "HTML 嵌套不超过 8 层",
+   "file": "h_claw-design__4.txt",
+   "section": "max-nesting-depth",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Dense text blocks reduce readability and presentation rhythm.",
+   "file": "h_claw-design__5.txt",
+   "section": "anti-pattern-text-density",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Split long sections into more pages and keep each section focused on one idea.",
+   "file": "h_claw-design__5.txt",
+   "section": "anti-pattern-text-density",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Too many hard-coded colors weaken brand cohesion and contrast control.",
+   "file": "h_claw-design__5.txt",
+   "section": "anti-pattern-color-conflict",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Reduce the palette to theme variables and keep accent colors within the approved brand range.",
+   "file": "h_claw-design__5.txt",
+   "section": "anti-pattern-color-conflict",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Heading levels should reflect a stable information hierarchy.",
+   "file": "h_claw-design__5.txt",
+   "section": "anti-pattern-hierarchy-chaos",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Restore heading order so sections open with h1/h2 before deeper levels.",
+   "file": "h_claw-design__5.txt",
+   "section": "anti-pattern-hierarchy-chaos",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Repeated generic headings create a templated, low-signal result.",
+   "file": "h_claw-design__5.txt",
+   "section": "anti-pattern-template-trace",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Replace boilerplate section names with task-specific headlines and conclusions.",
+   "file": "h_claw-design__5.txt",
+   "section": "anti-pattern-template-trace",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep density, but preserve repeatable spacing intervals and visible breathing room around major blocks.",
+   "file": "h_claw-design__6.txt",
+   "section": null,
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Reserve the strongest color, weight, or surface contrast for the primary headline, KPI, or action.",
+   "file": "h_claw-design__6.txt",
+   "section": null,
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use a stable grid, shared edges, or repeated baselines unless the exception is explicit and intentional.",
+   "file": "h_claw-design__6.txt",
+   "section": null,
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make the primary layer readable first, then separate supporting evidence and metadata through scale, spacing, and grouping.",
+   "file": "h_claw-design__6.txt",
+   "section": null,
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use consistent spacing intervals so adjacent modules read as part of the same system.",
+   "file": "h_claw-design__6.txt",
+   "section": "Whitespace Rhythm",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Leave enough empty area around titles, charts, and calls to action for them to breathe.",
+   "file": "h_claw-design__6.txt",
+   "section": "Whitespace Rhythm",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not compress unrelated content blocks until they visually merge.",
+   "file": "h_claw-design__6.txt",
+   "section": "Whitespace Rhythm",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not fill every empty area with decoration or secondary copy.",
+   "file": "h_claw-design__6.txt",
+   "section": "Whitespace Rhythm",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Can the eye detect a repeatable spacing rhythm between sections and within sections?",
+   "file": "h_claw-design__6.txt",
+   "section": "Whitespace Rhythm",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Does every major block have visible breathing room on at least one side?",
+   "file": "h_claw-design__6.txt",
+   "section": "Whitespace Rhythm",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Create clear contrast between primary content, supporting content, and background surfaces.",
+   "file": "h_claw-design__6.txt",
+   "section": "Contrast Hierarchy",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Reserve the strongest contrast for the single most important action, number, or headline.",
+   "file": "h_claw-design__6.txt",
+   "section": "Contrast Hierarchy",
+   "category": "Access",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Do not let all text sit at the same visual weight.",
+   "file": "h_claw-design__6.txt",
+   "section": "Contrast Hierarchy",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not use accent color on too many competing elements.",
+   "file": "h_claw-design__6.txt",
+   "section": "Contrast Hierarchy",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Can a viewer identify the first thing to read within one second?",
+   "file": "h_claw-design__6.txt",
+   "section": "Contrast Hierarchy",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Are low-priority labels visibly quieter than core messages?",
+   "file": "h_claw-design__6.txt",
+   "section": "Contrast Hierarchy",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Match density to the artifact type: dense views must still scan cleanly, sparse views must still feel intentional.",
+   "file": "h_claw-design__6.txt",
+   "section": "Information Density",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Group related facts so each block answers one question instead of many.",
+   "file": "h_claw-design__6.txt",
+   "section": "Information Density",
+   "category": "Components",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Do not add decorative sections that dilute the core message.",
+   "file": "h_claw-design__6.txt",
+   "section": "Information Density",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not stack too many unrelated ideas inside one frame or card.",
+   "file": "h_claw-design__6.txt",
+   "section": "Information Density",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Does each section have one primary job?",
+   "file": "h_claw-design__6.txt",
+   "section": "Information Density",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Would removing a block improve clarity more than it hurts completeness?",
+   "file": "h_claw-design__6.txt",
+   "section": "Information Density",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Establish one dominant focal point per page, frame, or viewport.",
+   "file": "h_claw-design__6.txt",
+   "section": "Visual Focus",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Use scale, position, and contrast to pull attention toward the business-critical content.",
+   "file": "h_claw-design__6.txt",
+   "section": "Visual Focus",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not create multiple equally loud focal points in the same viewport.",
+   "file": "h_claw-design__6.txt",
+   "section": "Visual Focus",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not center everything if the artifact needs directional reading.",
+   "file": "h_claw-design__6.txt",
+   "section": "Visual Focus",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Is the visual center obvious without reading all text?",
+   "file": "h_claw-design__6.txt",
+   "section": "Visual Focus",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Does the focal point support the task goal rather than decoration?",
+   "file": "h_claw-design__6.txt",
+   "section": "Visual Focus",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use a stable alignment system so blocks share edges, columns, or baselines.",
+   "file": "h_claw-design__6.txt",
+   "section": "Alignment Order",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Let repeated elements follow the same geometry and spacing rules.",
+   "file": "h_claw-design__6.txt",
+   "section": "Alignment Order",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not offset elements arbitrarily to fake energy.",
+   "file": "h_claw-design__6.txt",
+   "section": "Alignment Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not mix unrelated alignment modes inside the same section without a clear reason.",
+   "file": "h_claw-design__6.txt",
+   "section": "Alignment Order",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do repeated components snap to a shared grid or axis?",
+   "file": "h_claw-design__6.txt",
+   "section": "Alignment Order",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Are misalignments intentional and explainable?",
+   "file": "h_claw-design__6.txt",
+   "section": "Alignment Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make the primary message readable first and the supporting details readable second.",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use typography, spacing, and grouping to show what is core versus optional.",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not give metadata the same emphasis as the headline or KPI.",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not hide critical next steps under the visual treatment of minor details.",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Can a viewer separate headline, evidence, and footnote layers at a glance?",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "If someone reads only the primary layer, do they still understand the point?",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Support high information density, but keep repeated metrics chunked into scan-friendly groups.",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Favor compact comparison modules over oversized decorative wrappers.",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not waste above-the-fold space on decorative hero treatments.",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not let KPI cards sprawl so widely that comparisons become hard.",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Can a user compare KPIs in a left-to-right or top-to-bottom sweep?",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Is density serving monitoring rather than clutter?",
+   "file": "h_claw-design__6.txt",
+   "section": "Primary vs Secondary Order",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Place the highest-priority KPIs and alerts at the start of the natural scan path.",
+   "file": "h_claw-design__6.txt",
+   "section": "Dashboard Scan Path",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep comparison widgets visually adjacent so trend reading is fast.",
+   "file": "h_claw-design__6.txt",
+   "section": "Dashboard Scan Path",
+   "category": "Performance",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not bury urgent metrics below secondary charts.",
+   "file": "h_claw-design__6.txt",
+   "section": "Dashboard Scan Path",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not split tightly related metrics across distant sections.",
+   "file": "h_claw-design__6.txt",
+   "section": "Dashboard Scan Path",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Can an operator find the most important KPI within one sweep?",
+   "file": "h_claw-design__6.txt",
+   "section": "Dashboard Scan Path",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Are alert states and trend states visually distinct?",
+   "file": "h_claw-design__6.txt",
+   "section": "Dashboard Scan Path",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use visual emphasis to support the data story, not to decorate the chart shell.",
+   "file": "h_claw-design__6.txt",
+   "section": "Data-Ink Discipline",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep labels, legends, and axes legible without overwhelming the plotted data.",
+   "file": "h_claw-design__6.txt",
+   "section": "Data-Ink Discipline",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not add ornamental gradients, shadows, or frames that compete with the marks.",
+   "file": "h_claw-design__6.txt",
+   "section": "Data-Ink Discipline",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not use more highlight colors than needed to tell the comparison story.",
+   "file": "h_claw-design__6.txt",
+   "section": "Data-Ink Discipline",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Is the main insight obvious before reading every label?",
+   "file": "h_claw-design__6.txt",
+   "section": "Data-Ink Discipline",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Would removing a decorative effect improve data clarity?",
+   "file": "h_claw-design__6.txt",
+   "section": "Data-Ink Discipline",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make directional flow, grouping, and containment visible before the viewer reads every label.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use connectors and containers to reduce ambiguity about relationships.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not cross connectors gratuitously when layout can avoid it.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not mix multiple relationship semantics without visual distinction.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Can the viewer trace the main path without backtracking?",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Are groups, boundaries, and dependencies visually unambiguous?",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use the first viewport to establish a brand or product signal immediately.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Ensure the primary offer and action are unmistakable before scrolling.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not let decorative imagery overpower the offer.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not create a hero with no visible next-step action.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Is the offer obvious in the first viewport?",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Does the primary call to action stand out more than supporting links?",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Arrange sections so proof, explanation, and action progress in a persuasive order.",
+   "file": "h_claw-design__6.txt",
+   "section": "Conversion Flow",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Keep calls to action visible at natural decision points.",
+   "file": "h_claw-design__6.txt",
+   "section": "Conversion Flow",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not interrupt the page with unrelated visual tangents.",
+   "file": "h_claw-design__6.txt",
+   "section": "Conversion Flow",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not place pricing or proof so late that the page feels evasive.",
+   "file": "h_claw-design__6.txt",
+   "section": "Conversion Flow",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Does each section answer the next obvious buyer question?",
+   "file": "h_claw-design__6.txt",
+   "section": "Conversion Flow",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Are CTA placements aligned with user intent rather than filler repetition?",
+   "file": "h_claw-design__6.txt",
+   "section": "Conversion Flow",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Interactive elements should look interactive through position, contrast, and shape consistency.",
+   "file": "h_claw-design__6.txt",
+   "section": "Affordance Clarity",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Tool surfaces should prioritize ergonomic grouping over ornamental composition.",
+   "file": "h_claw-design__6.txt",
+   "section": "Affordance Clarity",
+   "category": "Components",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not style primary controls like passive labels.",
+   "file": "h_claw-design__6.txt",
+   "section": "Affordance Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not hide dense workflows inside decorative card stacks.",
+   "file": "h_claw-design__6.txt",
+   "section": "Affordance Clarity",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Can a first-time user identify primary controls without explanation?",
+   "file": "h_claw-design__6.txt",
+   "section": "Affordance Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do layout choices support repeated use rather than static presentation?",
+   "file": "h_claw-design__6.txt",
+   "section": "Affordance Clarity",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Make one message, date, or event title dominate the composition.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Use scale and contrast to read clearly from a distance.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not split attention equally across headline, body, and decoration.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not let long copy overpower the headline block.",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Can the core message be understood in three seconds?",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Is the supporting information subordinate to the hero message?",
+   "file": "h_claw-design__6.txt",
+   "section": "Diagram Flow Clarity",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Treat each slide as one beat in a sequence, with one message per slide.",
+   "file": "h_claw-design__6.txt",
+   "section": "Slide Pacing",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Vary dense and sparse slides intentionally so the deck has rhythm.",
+   "file": "h_claw-design__6.txt",
+   "section": "Slide Pacing",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not let every slide share the same visual weight and density.",
+   "file": "h_claw-design__6.txt",
+   "section": "Slide Pacing",
+   "category": "Space & layout",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Do not pack multiple arguments into one frame when pagination can clarify them.",
+   "file": "h_claw-design__6.txt",
+   "section": "Slide Pacing",
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Would a presenter know the key message of this slide immediately?",
+   "file": "h_claw-design__6.txt",
+   "section": "Slide Pacing",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Does the sequence feel paced rather than monotonous?",
+   "file": "h_claw-design__6.txt",
+   "section": "Slide Pacing",
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

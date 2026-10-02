@@ -1,0 +1,2755 @@
+{
+ "class": "Motion",
+ "tweaks": {
+  "motion": [
+   {
+    "rule": "state:hover transition-property contains opacity",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:8a62d7",
+       "feel-better:0bcbf6",
+       "oneredoak:9620ce",
+       "oneredoak:922c83"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do interactive elements use CSS transitions for state changes?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:8a62d7",
+       "feel-better:0bcbf6",
+       "oneredoak:922c83"
+      ]
+     }
+    ],
+    "class": "interaction"
+   },
+   {
+    "rule": "page ask \"Does every clickable card and image react on hover with more than a background colour change?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ae894b",
+       "taste-skill:7b010f"
+      ]
+     }
+    ],
+    "class": "interaction"
+   },
+   {
+    "rule": "page ask \"Does every animation communicate a state, hierarchy or relationship?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:fa0456",
+       "oneredoak:9620ce",
+       "taste-skill:4d2bec"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "reduce": [
+   {
+    "rule": "page ask \"Does every animation have a prefers-reduced-motion alternative that keeps the state change?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:9bddb0",
+       "feel-better:5eafec",
+       "hallmark:409ffe",
+       "hallmark:5016d8",
+       "hallmark:b0deb2",
+       "hallmark:893b90",
+       "impeccable:3d0ccf",
+       "taste-skill:e4a43e",
+       "ui-craft:e79197",
+       "ui-craft:cd212d",
+       "vercel:970f9f",
+       "vercel:ae05b0",
+       "deslop:679f94",
+       "deslop:85db24"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page animation-iteration-count <= 1 @media:reduced-motion",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "taste-skill:d96789",
+       "vercel:cda8e9",
+       "hallmark:750830"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-duration <= 150ms @media:reduced-motion",
+    "values": [
+     {
+      "value": "150ms",
+      "qids": [
+       "hallmark:2acabd",
+       "hallmark:563526"
+      ]
+     },
+     {
+      "value": "80ms",
+      "qids": [
+       "ui-craft:389719"
+      ]
+     },
+     {
+      "value": "0.01s",
+      "qids": [
+       "hallmark:380d9d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page scroll-behavior == auto @media:reduced-motion",
+    "values": [
+     {
+      "value": "auto",
+      "qids": [
+       "hallmark:ef0d52"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page wcag:2.3.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "apple-hig:9bddb0",
+       "impeccable:3d0ccf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does the page stay usable and complete with reduced motion on?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f9fb64",
+       "ui-craft:7a28c4",
+       "ui-craft:2ffee6",
+       "ui-craft:389719"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "weighty": [
+   {
+    "rule": "page ask \"Does motion use custom cubic-bezier curves rather than browser default transitions?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:db4bca"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page transition-timing-function contains cubic-bezier",
+    "values": [
+     {
+      "value": "cubic-bezier",
+      "qids": [
+       "taste-skill:db4bca"
+      ]
+     }
+    ]
+   }
+  ],
+  "bouncy": [
+   {
+    "rule": "page ask \"Is bounce or elastic easing avoided on functional UI?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a6f0f1",
+       "impeccable:a2a04a",
+       "hallmark:8ec61f"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Is spring easing reserved for primary actions?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:8ec61f"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "motion-duration": [
+   {
+    "rule": "page transition-duration <= 300ms",
+    "values": [
+     {
+      "value": "300ms",
+      "qids": [
+       "deslop:7bd291",
+       "deslop:faf4f0",
+       "ui-craft:e28714",
+       "ui-craft:f61046",
+       "ui-craft:b7c9f6"
+      ]
+     },
+     {
+      "value": "500ms",
+      "qids": [
+       "impeccable:c17d05"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page animation-duration <= 400ms",
+    "values": [
+     {
+      "value": "400ms",
+      "qids": [
+       "ui-craft:5bcd94",
+       "ui-craft:bbe5b0",
+       "ui-craft:7eb931"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-duration between 100ms 400ms",
+    "values": [
+     {
+      "value": "100ms 400ms",
+      "qids": [
+       "ui-craft:85a12e"
+      ]
+     }
+    ]
+   }
+  ],
+  "transform-only": [
+   {
+    "rule": "page transition-property !contains width",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:86bdd5",
+       "hallmark:7a9a30",
+       "deslop:fcea90",
+       "taste-skill:cbaadd",
+       "ui-craft:f821fe",
+       "vercel:63f746"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-property !contains height",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7a9a30",
+       "hallmark:b28eaa",
+       "impeccable:da1e7b",
+       "vercel:63f746"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-property !contains top",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7a9a30",
+       "deslop:fcea90",
+       "taste-skill:cbaadd",
+       "vercel:63f746"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-property !contains left",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7a9a30",
+       "deslop:fcea90",
+       "taste-skill:cbaadd",
+       "vercel:63f746"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-property !contains margin",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7a9a30",
+       "impeccable:ab2f4f",
+       "impeccable:f779f6",
+       "impeccable:da1e7b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-property !contains padding",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7a9a30",
+       "impeccable:da1e7b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page lighthouse:non-composited-animations pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:389f22",
+       "feel-better:120641",
+       "ui-craft:5bc502",
+       "vercel:c7d2b3",
+       "vercel:e26034"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page will-change contains transform",
+    "values": [
+     {
+      "value": "transform",
+      "qids": [
+       "taste-skill:8e4ee7",
+       "taste-skill:16cc4a"
+      ]
+     }
+    ]
+   }
+  ],
+  "pause-motion": [
+   {
+    "rule": "page ask \"Can auto-advancing or looping motion be paused, stopped or hidden?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:65230e",
+       "hallmark:a2c86b",
+       "hallmark:021918",
+       "impeccable:9975bf"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page wcag:2.2.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a2c86b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page animation-iteration-count <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:33441a",
+       "hallmark:a90e6b",
+       "hallmark:6418bd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do nonessential loops stop when offscreen or hidden?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:9975bf",
+       "ui-craft:7af57b",
+       "ui-craft:809129"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "focal-motion": [
+   {
+    "rule": "page ask \"Does the page use one orchestrated entrance instead of motion on every section?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:5eef76",
+       "hallmark:d464f5",
+       "impeccable:e232a9",
+       "impeccable:624c9f",
+       "hallmark:d7099f",
+       "hallmark:8ec61f"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Does every animation communicate a state, hierarchy or relationship?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:548637",
+       "impeccable:0c9106",
+       "deslop:fec7dc",
+       "impeccable:af2893"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Would removing this animation lose the user no information?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:942a74",
+       "oneredoak:bb5095"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page axl:cta-wobbles <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:bf9ab7",
+       "hallmark:8ec61f"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-auto-play-motion": [
+   {
+    "rule": "page ask \"Can auto-advancing or looping motion be paused, stopped or hidden?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:65230e",
+       "hallmark:a2c86b",
+       "deslop:f09b02"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page wcag:2.2.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a2c86b",
+       "deslop:f09b02"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:carousel ask \"Does every auto-rotating carousel have a pause control?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a2c86b",
+       "deslop:f09b02"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "duration-tokens": [
+   {
+    "rule": "page ask \"Are durations taken from one duration scale with no invented values?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:dcf47d",
+       "hallmark:754989",
+       "ui-craft:dd03c3",
+       "ui-craft:e7cc6c",
+       "ui-craft:3910d0",
+       "deslop:695975"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "state:hover transition-duration between 150ms 300ms",
+    "values": [
+     {
+      "value": "150ms 300ms",
+      "qids": [
+       "impeccable:bc1e33"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-duration between 100ms 400ms",
+    "values": [
+     {
+      "value": "100ms 400ms",
+      "qids": [
+       "ui-craft:85a12e"
+      ]
+     }
+    ]
+   }
+  ],
+  "easing-tokens": [
+   {
+    "rule": "page ask \"Are easings taken from one named set with no freestyle curves?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:754989",
+       "deslop:adb387",
+       "vercel:497180"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Does motion use custom cubic-bezier curves rather than linear or ease-in-out keywords?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:153b5e",
+       "deslop:6ccd09",
+       "taste-skill:db4bca",
+       "taste-skill:be97af"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Is ease-in used only for elements leaving the screen?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:73f770"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page transition-timing-function !contains linear",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:153b5e",
+       "deslop:6ccd09"
+      ]
+     }
+    ]
+   }
+  ],
+  "ease-out-entrances": [
+   {
+    "rule": "page ask \"Do entrances use ease-out or a custom deceleration curve?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:c19c51",
+       "impeccable:9a17f9",
+       "impeccable:a6f0f1",
+       "deslop:faf4f0",
+       "deslop:f7ea19",
+       "ui-craft:3a5110",
+       "impeccable:a2a04a"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page transition-timing-function !contains ease-in",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2ad7ae",
+       "ui-craft:be84bc"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is bounce or elastic easing avoided on functional UI?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:9a17f9",
+       "impeccable:a6f0f1",
+       "impeccable:a2a04a"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "no-linear-ui-motion": [
+   {
+    "rule": "page transition-timing-function !contains linear",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:eda437",
+       "hallmark:e34963",
+       "deslop:6ccd09",
+       "taste-skill:153b5e",
+       "ui-craft:29ec69"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is linear easing limited to opacity fades, loops, loaders and scroll-linked progress?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:6ccd09",
+       "ui-craft:29ec69"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "exit-faster-than-enter": [
+   {
+    "rule": "page ask \"Are exit animations shorter and softer than entrance animations?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:9ff5ec",
+       "feel-better:aef17c",
+       "feel-better:751840",
+       "hallmark:db895d",
+       "impeccable:9a17f9"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page axl:exit-to-enter-duration-ratio <= 0.75",
+    "values": [
+     {
+      "value": "0.75",
+      "qids": [
+       "hallmark:db895d"
+      ]
+     },
+     {
+      "value": "0.5",
+      "qids": [
+       "feel-better:751840"
+      ]
+     }
+    ]
+   }
+  ],
+  "micro-interaction-100-200": [
+   {
+    "rule": "page transition-duration <= 250ms",
+    "values": [
+     {
+      "value": "250ms",
+      "qids": [
+       "impeccable:55004a",
+       "ui-craft:46628b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:hover transition-duration <= 150ms",
+    "values": [
+     {
+      "value": "150ms",
+      "qids": [
+       "impeccable:6cff1c",
+       "ui-craft:b37f05",
+       "ui-craft:86f46d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-duration between 100ms 250ms",
+    "values": [
+     {
+      "value": "100ms 250ms",
+      "qids": [
+       "ui-craft:46628b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does frequent feedback stay brief and small?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:2b74e4",
+       "ui-craft:f5358a",
+       "ui-craft:cfb0aa",
+       "ui-craft:86f46d"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Are entrance animations left off dashboards and tables?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:425f5d",
+       "ui-craft:aa54bc",
+       "ui-craft:ab611a"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "press-scale-feedback": [
+   {
+    "rule": "state:active scale >= 0.95",
+    "values": [
+     {
+      "value": "0.95",
+      "qids": [
+       "feel-better:6bf1d7"
+      ]
+     },
+     {
+      "value": "0.96",
+      "qids": [
+       "feel-better:8e33be"
+      ]
+     },
+     {
+      "value": "0.98",
+      "qids": [
+       "taste-skill:1a77a4",
+       "taste-skill:330c7b",
+       "taste-skill:964dc0",
+       "taste-skill:e73d8d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do buttons give visible pressed feedback?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:8e33be",
+       "taste-skill:1a77a4",
+       "taste-skill:330c7b",
+       "taste-skill:964dc0",
+       "impeccable:373c2a"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "state:active transition-property contains transform",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:8e33be",
+       "taste-skill:1a77a4"
+      ]
+     }
+    ]
+   }
+  ],
+  "hover-transition-short": [
+   {
+    "rule": "state:hover transition-duration <= 150ms",
+    "values": [
+     {
+      "value": "150ms",
+      "qids": [
+       "feel-better:9c5b06",
+       "ui-craft:b52fa2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:hover transition-duration between 200ms 300ms",
+    "values": [
+     {
+      "value": "200ms 300ms",
+      "qids": [
+       "taste-skill:909065",
+       "ui-craft:ad3fca"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:hover transition-property contains background-color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:9c5b06",
+       "ui-craft:b52fa2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does hover change only one or two properties rather than all at once?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:14e5e1"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "stagger-limited": [
+   {
+    "rule": "page axl:stagger-delay between 30ms 80ms",
+    "values": [
+     {
+      "value": "30ms 80ms",
+      "qids": [
+       "ui-craft:ba4f89"
+      ]
+     },
+     {
+      "value": "50ms 80ms",
+      "qids": [
+       "ui-craft:df5c1e"
+      ]
+     },
+     {
+      "value": "100ms",
+      "qids": [
+       "feel-better:400eb4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:stagger-total-duration <= 500ms",
+    "values": [
+     {
+      "value": "500ms",
+      "qids": [
+       "hallmark:4936ef"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is stagger used only for infrequent entrances, never for routine interactions?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:a444bb",
+       "feel-better:6c049e",
+       "feel-better:026440",
+       "hallmark:bbcc1b",
+       "feel-better:1a1a8f"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page axl:staggered-entrances-per-section <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "ui-craft:48db74",
+       "ui-craft:df5c1e"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-entrance-every-render": [
+   {
+    "rule": "page ask \"Is entrance animation avoided for repeated interactions and every render?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:d2bda0",
+       "feel-better:9c5b06",
+       "ui-craft:a98a77",
+       "ui-craft:425f5d",
+       "impeccable:5db418"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Does motion that is not triggered by the user stay sparing and deliberate?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:c1ae60",
+       "hallmark:d464f5"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "state:hover transition-duration <= 150ms",
+    "values": [
+     {
+      "value": "150ms",
+      "qids": [
+       "feel-better:d2bda0",
+       "feel-better:9c5b06"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do elements already in their default state skip the enter animation on first paint?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:8ab083"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "initial-false-first-render": [
+   {
+    "rule": "page ask \"Do elements already in their default state skip the enter animation on first paint?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:70ea0a",
+       "feel-better:69eea0",
+       "feel-better:facd75",
+       "ui-craft:8ab083"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "animate-presence-exit": [
+   {
+    "rule": "page ask \"Does an exit animation run only where it preserves spatial context?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:cdfcf7",
+       "ui-craft:5fd343"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "no-flashing-3hz": [
+   {
+    "rule": "page wcag:2.3.1 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:441102",
+       "wcag22:f24e33"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:flashes-per-second <= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "deslop:441102",
+       "wcag22:f24e33"
+      ]
+     }
+    ]
+   }
+  ],
+  "animation-under-5s-or-pause": [
+   {
+    "rule": "page wcag:2.2.2 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:c4e733",
+       "vercel:550c24"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:blink-marquee-elements == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "axe:ce01fd",
+       "axe:ee62c2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do autoplaying motions over 5 seconds have a pause, stop or hide control?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:550c24",
+       "wcag22:c4e733"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "no-motion-triggered-only": [
+   {
+    "rule": "page wcag:2.3.3 pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "wcag22:f0f6d2"
+      ]
+     }
+    ]
+   }
+  ],
+  "never-use-transition-all": [
+   {
+    "rule": "page transition-property !contains all",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:81762a",
+       "feel-better:c375b9",
+       "hallmark:3df8ba",
+       "hallmark:e5ac04"
+      ]
+     }
+    ]
+   }
+  ],
+  "view-transitions-for-navigation-level-changes": [
+   {
+    "rule": "page ask \"Are View Transitions used only for navigation-level changes?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:47b314",
+       "ui-craft:91595f",
+       "ui-craft:c63566",
+       "ui-craft:eb733f"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "animate-icon-swaps-with-opacity-scale-blur": [
+   {
+    "rule": "ui:icon scale >= 0.25",
+    "values": [
+     {
+      "value": "0.25",
+      "qids": [
+       "feel-better:fef839",
+       "feel-better:67806b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon filter contains blur(4px)",
+    "values": [
+     {
+      "value": "4px",
+      "qids": [
+       "feel-better:fef839"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon transition-property contains opacity",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:53412d",
+       "feel-better:fef839"
+      ]
+     }
+    ]
+   }
+  ],
+  "fade-in-on-scroll-with-intersectionobserver": [
+   {
+    "rule": "page ask \"Do scroll reveals use IntersectionObserver rather than a scroll event listener?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:35fdec",
+       "taste-skill:3c9b3b",
+       "taste-skill:f814c7"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page animation-duration <= 600ms",
+    "values": [
+     {
+      "value": "600ms",
+      "qids": [
+       "taste-skill:f814c7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page animation-timing-function contains cubic-bezier(0.16, 1, 0.3, 1)",
+    "values": [
+     {
+      "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "qids": [
+       "taste-skill:f814c7"
+      ]
+     }
+    ]
+   }
+  ],
+  "give-active-components-perpetual-micro-interacti": [
+   {
+    "rule": "page ask \"Do active components loop a perpetual micro-interaction?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f797e8",
+       "taste-skill:a19c5d",
+       "taste-skill:50ddc8",
+       "taste-skill:01abcd"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "ui:card animation-iteration-count == infinite",
+    "values": [
+     {
+      "value": "infinite",
+      "qids": [
+       "taste-skill:50ddc8",
+       "taste-skill:f797e8",
+       "taste-skill:a19c5d"
+      ]
+     }
+    ]
+   }
+  ],
+  "never-transition-all-properties": [
+   {
+    "rule": "page transition-property !contains all",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:93c6c0",
+       "ui-craft:d2d43e",
+       "vercel:47e906",
+       "vercel:5a37b9"
+      ]
+     }
+    ]
+   }
+  ],
+  "every-animation-must-communicate": [
+   {
+    "rule": "page ask \"Does every animation communicate a state, hierarchy or relationship?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:685698",
+       "ui-craft:fa9d20",
+       "unslop:47eae8",
+       "vercel:47d101"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "animate-to-intrinsic-sizes-with-interpolate-size": [
+   {
+    "rule": "page interpolate-size == allow-keywords",
+    "values": [
+     {
+      "value": "allow-keywords",
+      "qids": [
+       "ui-craft:16f9c8",
+       "ui-craft:f62b47"
+      ]
+     }
+    ]
+   }
+  ],
+  "stagger-entry-with-translate-and-fade": [
+   {
+    "rule": "page ask \"Do lists and grids enter with staggered delays rather than all mounting at once?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f14ff5",
+       "taste-skill:8aa6ee",
+       "taste-skill:b762b0"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "animate-layout-changes-with-shared-element-trans": [
+   {
+    "rule": "page ask \"Do visible state changes such as re-ordering and shared elements animate with layout transitions?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ad8b16",
+       "taste-skill:92ca8a",
+       "taste-skill:ca55e8"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "small-fixed-translatey-for-entrances": [
+   {
+    "rule": "page translate <= 12px",
+    "values": [
+     {
+      "value": "12px",
+      "qids": [
+       "feel-better:f4edfb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Do entrances use a small fixed translateY instead of the full container height?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:a31797",
+       "feel-better:f4edfb"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "static-prop-to-disable-press-scale": [
+   {
+    "rule": "aria:button ask \"Can the press-scale effect be disabled where motion would be distracting?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:3f94df",
+       "feel-better:3dda94"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "cross-fade-icons-in-css-when-no-motion-library": [
+   {
+    "rule": "ui:icon ask \"Are icon swaps cross-faded with CSS transitions when no motion library is used?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:f7405d",
+       "feel-better:2b10fc"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "transition-backdrop-blur-via-blur-0-not-none": [
+   {
+    "rule": "page backdrop-filter !contains none",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:687fe9",
+       "hallmark:263d26"
+      ]
+     }
+    ]
+   }
+  ],
+  "limit-default-animation-primitives-to-three": [
+   {
+    "rule": "page axl:animation-primitives <= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "hallmark:21649a",
+       "hallmark:bfb7ae"
+      ]
+     }
+    ]
+   }
+  ],
+  "scroll-driven-motion-only-when-meaningful": [
+   {
+    "rule": "page ask \"Is scroll-driven motion used only where the scroll relationship carries meaning?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:4a5e2f",
+       "impeccable:787e88"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "no-hover-animation-on-images": [
+   {
+    "rule": "aria:img transition-property !contains transform",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:6e6910",
+       "impeccable:bbd4fa"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img transform == none @state:hover",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "impeccable:6e6910",
+       "impeccable:bbd4fa"
+      ]
+     }
+    ]
+   }
+  ],
+  "webgl-for-effects-css-can-t-express": [
+   {
+    "rule": "page ask \"Is WebGL used only for effects CSS cannot express?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ff948f",
+       "impeccable:a67e34"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "add-scroll-driven-motion-with-gsap": [
+   {
+    "rule": "page ask \"Does the page include scroll-driven motion built with GSAP and ScrollTrigger?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:1f74f8",
+       "taste-skill:f55905"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "use-spring-physics-for-interactive-motion": [
+   {
+    "rule": "page ask \"Does motion on interactive elements use spring physics rather than linear easing?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f0952a",
+       "taste-skill:3c18a5"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page transition-timing-function !contains linear",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f0952a",
+       "taste-skill:3c18a5"
+      ]
+     }
+    ]
+   }
+  ],
+  "magnetic-buttons-pulled-toward-cursor": [
+   {
+    "rule": "aria:button ask \"Do buttons pull toward the cursor, implemented without React state?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7a37be",
+       "taste-skill:c9c80f"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "static-tier-hover-and-active-states-only": [
+   {
+    "rule": "page animation-name == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "taste-skill:d33e7e",
+       "taste-skill:9269b7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are hover and active states the only motion at this tier?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d33e7e",
+       "taste-skill:9269b7"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "ship-the-motion-the-dial-claims": [
+   {
+    "rule": "page ask \"If the motion dial is above 4, does the page show entry transitions, scroll reveals and hover physics?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:312635"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Is all motion complete, with no cut-off triggers, jumpy enters or missing cleanups?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:a4b7e8"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "limit-marquees-to-one-per-page": [
+   {
+    "rule": "page axl:marquees <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "taste-skill:9663e4",
+       "taste-skill:3594ae"
+      ]
+     }
+    ]
+   }
+  ],
+  "build-real-sticky-stack-for-card-stacks": [
+   {
+    "rule": "page ask \"Does a card stack on scroll pin at the viewport top as a real sticky stack?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:c4bfee",
+       "taste-skill:22d1b7"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "use-lightweight-whileinview-for-enter-on-scroll": [
+   {
+    "rule": "page ask \"Do simple enter-on-scroll items use a lightweight in-view trigger instead of a scroll library?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:c5d363",
+       "taste-skill:8f86f1"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "no-bounce-in-functional-ui": [
+   {
+    "rule": "page ask \"Is bounce or elastic easing avoided on functional UI?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:79a9ea",
+       "ui-craft:e56ae9"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "cap-hover-scale-at-1-02-1-05": [
+   {
+    "rule": "ui:card scale <= 1.05 @state:hover",
+    "values": [
+     {
+      "value": "1.05",
+      "qids": [
+       "ui-craft:ea0910",
+       "ui-craft:b95a26"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button scale <= 1.02 @state:hover",
+    "values": [
+     {
+      "value": "1.02",
+      "qids": [
+       "ui-craft:ea0910",
+       "ui-craft:b95a26"
+      ]
+     }
+    ]
+   }
+  ],
+  "exponential-decay-for-sound-envelopes": [
+   {
+    "rule": "page ask \"Do sound envelopes use exponential decay?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f099f5",
+       "ui-craft:c13e3f"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "smooth-scrub-value-in-scroll-animation": [
+   {
+    "rule": "page ask \"Is the scroll scrub value smoothed (1 or higher) rather than true?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:6eef62",
+       "ui-craft:3792f2"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "cross-browser-svg-transform-box": [
+   {
+    "rule": "aria:img transform-origin == center",
+    "values": [
+     {
+      "value": "center",
+      "qids": [
+       "vercel:a19fb5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are SVG transforms applied to a g wrapper with transform-box fill-box?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:a19fb5",
+       "vercel:cbe5c7"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "exit-keeps-a-little-directional-movement": [
+   {
+    "rule": "page ask \"Does an exit keep some directional movement to show where the element went?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:0a55e1"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "no-bounce-on-icon-swap-springs": [
+   {
+    "rule": "ui:icon ask \"Do icon swap springs use a bounce of 0?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:566901"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "image-hover-scale-1-02-max": [
+   {
+    "rule": "aria:img scale <= 1.02 @state:hover",
+    "values": [
+     {
+      "value": "1.02",
+      "qids": [
+       "hallmark:d69739"
+      ]
+     }
+    ]
+   }
+  ],
+  "animate-banner-via-translate-not-height": [
+   {
+    "rule": "aria:banner transition-property !contains height",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:10aac0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:banner transition-property contains transform",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:10aac0"
+      ]
+     }
+    ]
+   }
+  ],
+  "slight-asymmetry-for-hand-drawn-feel": [
+   {
+    "rule": "page ask \"Do decorative elements use slight asymmetric rotation for a hand-drawn feel?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:705851"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "exponential-ease-out-at-about-520ms-for-nav-morp": [
+   {
+    "rule": "aria:navigation transition-timing-function contains cubic-bezier(0.16, 1, 0.3, 1)",
+    "values": [
+     {
+      "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "qids": [
+       "hallmark:96b2b4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:navigation transition-duration == 520ms",
+    "values": [
+     {
+      "value": "520ms",
+      "qids": [
+       "hallmark:96b2b4"
+      ]
+     }
+    ]
+   }
+  ],
+  "scroll-threshold-at-least-60px-for-nav-morph": [
+   {
+    "rule": "aria:navigation ask \"Does the nav morph fire only after at least 60px of scroll?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:24ec18"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "atmospheric-theme-uses-fade-in-only": [
+   {
+    "rule": "page ask \"Is motion fade-in only, with no slide or bounce?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:b104e8"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "marquee-footer-must-honour-reduced-motion": [
+   {
+    "rule": "aria:contentinfo ask \"Does every animation have a prefers-reduced-motion alternative that keeps the state change?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:343ada"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "aria:contentinfo animation-play-state == paused @media:reduced-motion",
+    "values": [
+     {
+      "value": "paused",
+      "qids": [
+       "hallmark:343ada"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-entrance-animation-per-element-under-220ms": [
+   {
+    "rule": "page animation-duration <= 220ms",
+    "values": [
+     {
+      "value": "220ms",
+      "qids": [
+       "hallmark:1485e8"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Does each element use only one entrance animation: fade, sweep or none?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1485e8"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page animation-name == none @media:reduced-motion",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "hallmark:1485e8"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-mouse-follow-gradients-on-saas-pages": [
+   {
+    "rule": "page ask \"Is a mouse-follow gradient absent from SaaS landing pages?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:fe0393"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "no-border-width-or-height-transitions-on-state-c": [
+   {
+    "rule": "page transition-property !contains border-width",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d4c8fb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-property !contains padding",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d4c8fb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-property !contains height",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d4c8fb"
+      ]
+     }
+    ]
+   }
+  ],
+  "count-up-on-hero-figure": [
+   {
+    "rule": "page axl:count-up-duration == 500ms",
+    "values": [
+     {
+      "value": "500ms",
+      "qids": [
+       "hallmark:2213d7"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-shot-pulse-on-recommended-pricing-tier": [
+   {
+    "rule": "ui:card animation-iteration-count == 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:58d420"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card animation-duration == 2s",
+    "values": [
+     {
+      "value": "2s",
+      "qids": [
+       "hallmark:58d420"
+      ]
+     }
+    ]
+   }
+  ],
+  "crossfade-tab-content-no-sliding": [
+   {
+    "rule": "aria:tablist ask \"Does tab content crossfade without sliding sideways?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:85b968"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "no-animation-on-focus-keyboard-nav-error-appeara": [
+   {
+    "rule": "state:focus-visible transition-duration == 0ms",
+    "values": [
+     {
+      "value": "0ms",
+      "qids": [
+       "hallmark:a0cfbb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:invalid transition-duration == 0ms",
+    "values": [
+     {
+      "value": "0ms",
+      "qids": [
+       "hallmark:a0cfbb"
+      ]
+     }
+    ]
+   }
+  ],
+  "animate-grid-template-rows-not-tab-height": [
+   {
+    "rule": "aria:tablist transition-property contains grid-template-rows",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c350c9"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:tablist transition-property !contains height",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c350c9"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-universal-hover-scale-on-cards": [
+   {
+    "rule": "ui:card ask \"Does a card hover effect have a purpose, a shadow change and a specified easing instead of a universal scale?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:540050"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "no-parallax-or-scroll-scrubbed-animation": [
+   {
+    "rule": "page animation-timeline == auto",
+    "values": [
+     {
+      "value": "auto",
+      "qids": [
+       "hallmark:1a978b"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-bouncy-easing-on-ui-state-changes": [
+   {
+    "rule": "page transition-timing-function !contains cubic-bezier(0.34, 1.56",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7e609c"
+      ]
+     }
+    ]
+   }
+  ],
+  "marquee-content-repeats-to-loop-seamlessly": [
+   {
+    "rule": "page ask \"Does the marquee repeat its content at least twice so the loop has no gap?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:b3e955"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "snapped-geometric-hover-transforms": [
+   {
+    "rule": "state:hover ask \"Does hover answer with a snapped geometric transform?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:ad3eb3"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "one-pausable-ticker-band-per-page": [
+   {
+    "rule": "page axl:marquees <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:03358a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is the ticker band pausable and slow?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:03358a"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "count-up-numerals-on-view": [
+   {
+    "rule": "page axl:count-up-duration == 1200ms",
+    "values": [
+     {
+      "value": "1200ms",
+      "qids": [
+       "hallmark:59ff12"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page animation-timing-function contains cubic-bezier(0.22, 1, 0.36, 1)",
+    "values": [
+     {
+      "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "qids": [
+       "hallmark:59ff12"
+      ]
+     }
+    ]
+   }
+  ],
+  "material-motion-patterns": [
+   {
+    "rule": "page ask \"Does motion follow Material patterns (container transform, shared axis, fade-through) with standard easing and durations?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:9565b6"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "page ask \"Does every animation have a prefers-reduced-motion alternative that keeps the state change?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:9565b6"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "view-transitions-for-state-continuity": [
+   {
+    "rule": "page ask \"Are View Transitions or shared-element techniques used where continuity across states is the point?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:a19874"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "use-starting-style-for-entry-animation": [
+   {
+    "rule": "page ask \"Do entry animations from display none use @starting-style?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:938a1e"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "spring-physics-motion": [
+   {
+    "rule": "page ask \"Does motion use spring physics where natural motion is wanted?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:2edb51"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "shorter-animation-travel-distances": [
+   {
+    "rule": "page translate <= 20px",
+    "values": [
+     {
+      "value": "20px",
+      "qids": [
+       "impeccable:1c554a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page translate >= 10px",
+    "values": [
+     {
+      "value": "10px",
+      "qids": [
+       "impeccable:1c554a"
+      ]
+     }
+    ]
+   }
+  ],
+  "suppress-transitions-during-theme-switch": [
+   {
+    "rule": "page ask \"Are transitions suppressed during a theme switch?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:3ed819"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "animate-only-meaningful-low-frequency-transition": [
+   {
+    "rule": "page ask \"Are only meaningful, low-frequency transitions animated?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:ed19ef"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "use-springs-for-direct-manipulation": [
+   {
+    "rule": "page ask \"Do drag and sheet surfaces use springs while discrete state changes use eased durations?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:35ff49"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "never-animate-from-scale-0": [
+   {
+    "rule": "page scale >= 0.9",
+    "values": [
+     {
+      "value": "0.9",
+      "qids": [
+       "deslop:c352a7"
+      ]
+     }
+    ]
+   }
+  ],
+  "blur-to-mask-crossfades": [
+   {
+    "rule": "page ask \"Does a crossfade between misaligned states use a small blur to hide the seam?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:8e859c"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "use-transitions-for-reversible-state": [
+   {
+    "rule": "page ask \"Are CSS transitions used for reversible state and keyframes for one-shot sequences?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:015adc"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "animate-status-only-when-data-changes": [
+   {
+    "rule": "aria:status ask \"Does a status pulse run only when the underlying data changes?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:71d775"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "keep-content-visible-without-scripts": [
+   {
+    "rule": "page ask \"Is content visible by default, with entrance animation added as enhancement?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:4ef545"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "scale-and-fade-images-on-scroll": [
+   {
+    "rule": "aria:img scale >= 0.8",
+    "values": [
+     {
+      "value": "0.8",
+      "qids": [
+       "taste-skill:8622c1"
+      ]
+     }
+    ]
+   }
+  ],
+  "optional-slow-ambient-gradient-drift-on-fixed-la": [
+   {
+    "rule": "page animation-duration >= 20s",
+    "values": [
+     {
+      "value": "20s",
+      "qids": [
+       "taste-skill:c73281"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page opacity <= 0.04",
+    "values": [
+     {
+      "value": "0.04",
+      "qids": [
+       "taste-skill:c73281"
+      ]
+     }
+    ]
+   }
+  ],
+  "smooth-scroll-for-anchor-links": [
+   {
+    "rule": "page scroll-behavior == smooth",
+    "values": [
+     {
+      "value": "smooth",
+      "qids": [
+       "taste-skill:5ba11f"
+      ]
+     }
+    ]
+   }
+  ],
+  "stagger-nav-links-with-mask-reveal": [
+   {
+    "rule": "aria:navigation ask \"Do navigation links reveal with a staggered mask fade and slide-up?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:3c680a"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "animate-nested-icon-circle-on-button-hover": [
+   {
+    "rule": "aria:button scale <= 1.05 @state:hover",
+    "values": [
+     {
+      "value": "1.05",
+      "qids": [
+       "taste-skill:a8286d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button ask \"Does the nested icon circle translate diagonally and scale up slightly on button hover?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:a8286d"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "fade-up-with-blur-on-scroll-entry": [
+   {
+    "rule": "page ask \"Do elements fade up with blur as they enter the viewport?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:17729b"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "every-animation-must-communicate-something": [
+   {
+    "rule": "page ask \"Does every animation communicate a state, hierarchy or relationship?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f2163c"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "one-scroll-reveal-max-per-section": [
+   {
+    "rule": "page axl:scroll-reveals-per-section <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "ui-craft:c10041"
+      ]
+     }
+    ]
+   }
+  ],
+  "add-one-purposeful-entrance-on-focal-element": [
+   {
+    "rule": "page ask \"Does the focal element have one purposeful entrance?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2ff8c9"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "reading-pages-use-fades-only": [
+   {
+    "rule": "page ask \"Do reading pages use fades only?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2a93e7"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "hover-moves-transform-color-shadow-together": [
+   {
+    "rule": "state:hover transition-property contains transform",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f3894c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:hover transition-property contains color",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f3894c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "state:hover transition-property contains box-shadow",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f3894c"
+      ]
+     }
+    ]
+   }
+  ],
+  "never-block-input-during-stagger": [
+   {
+    "rule": "page ask \"Is input never blocked while a stagger plays?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:995cbd"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "shared-element-layout-animations": [
+   {
+    "rule": "page ask \"Are shared elements animated with layoutId, View Transitions or FLIP?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:877b62"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "avoid-sequential-wait-modes-for-enter-and-exit": [
+   {
+    "rule": "page ask \"Are enter and exit durations shortened when they are sequenced?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:969d27"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "icon-swap-grows-from-small-scale": [
+   {
+    "rule": "ui:icon scale between 0.25 0.35",
+    "values": [
+     {
+      "value": "0.25 0.35",
+      "qids": [
+       "ui-craft:918e44"
+      ]
+     }
+    ]
+   }
+  ],
+  "keep-loading-indicators-animating-under-reduced-": [
+   {
+    "rule": "aria:progressbar ask \"Do loading indicators keep animating under reduced motion?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:d95ce0"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "onboarding-animation-doesn-t-repeat": [
+   {
+    "rule": "page ask \"Do onboarding animations stop repeating after the first session?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:43bce9"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "one-animation-library-per-property": [
+   {
+    "rule": "page ask \"Does one animation library animate each property?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:02f896"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "animate-wrapper-not-text-node": [
+   {
+    "rule": "text:* ask \"Is the wrapper animated instead of the text node?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:5233ef"
+      ]
+     }
+    ],
+    "class": "type"
+   }
+  ],
+  "animations-interruptible-and-input-driven": [
+   {
+    "rule": "page ask \"Are animations interruptible and input-driven?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:484bf8"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "correct-transform-origin": [
+   {
+    "rule": "page ask \"Does motion start from the transform-origin where it physically should?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "vercel:ef4899"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ]
+ },
+ "new_measures": {
+  "axl:cta-wobbles": "Count of call-to-action buttons with a wobble animation; page-wide; count.",
+  "axl:stagger-delay": "Delay between consecutive sibling animation-delay values in a staggered sequence; ms.",
+  "axl:stagger-total-duration": "Sum of staggered delays across one sequence; page-wide; ms.",
+  "axl:staggered-entrances-per-section": "Count of staggered entrance sequences within each section; count.",
+  "axl:exit-to-enter-duration-ratio": "Exit animation duration divided by the enter duration of the same element; ratio.",
+  "axl:flashes-per-second": "Maximum number of luminance flashes in any one second of rendered animation; count per second.",
+  "axl:blink-marquee-elements": "Count of blink and marquee elements in the document; count.",
+  "axl:animation-primitives": "Count of distinct animation types (counter, hover-lift, marquee, etc.) running on the page; count.",
+  "axl:marquees": "Count of horizontally scrolling looping text strips on the page; count.",
+  "axl:count-up-duration": "Duration of number count-up animations on the page; ms.",
+  "axl:scroll-reveals-per-section": "Count of scroll-triggered reveal animations within each section; count."
+ },
+ "new_elements": {}
+}

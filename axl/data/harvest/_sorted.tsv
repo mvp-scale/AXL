@@ -1,0 +1,5580 @@
+0	-
+1	NEW:make distinctive, non-templated design choices|Content & process
+2	read-design-context
+3	remove-clutter
+4	font-family-count-max-2
+5	type-scale,banned-fonts
+6	NEW:make headline type an active design element|Type
+7	max-line-length-65ch,line-height-scale
+8	-
+9	NEW:numbered markers only for real sequences|Content & process
+10	no-entrance-every-render
+11	no-ai-cliche-copy
+12	preserve-brand
+13	-
+14	NEW:plan layout with wireframes and alignment before coding|Agent workflow
+15	audit-first
+16	remove-clutter
+17	remove-clutter
+18	-
+19	concise-subtext
+20	specific-headlines
+21	plain-language
+22	error-message-human
+23	plain-language,concise-subtext
+24	banned-fonts
+25	no-ai-cliche-copy
+26	banned-fonts
+27	palette-limit,design-tokens
+28	focal-motion
+29	NEW:layered atmospheric backgrounds instead of solid color|Surface
+30	no-ai-cliche-copy
+31	-
+32	-
+33	-
+34	-
+35	-
+36	-
+37	banned-fonts
+38	banned-fonts
+39	NEW:extreme weight and size contrast in type|Type
+40	font-family-count-max-2
+41	-
+42	-
+43	dynamic-type,text-resize-200
+44	text-resize-200
+45	type-scale
+46	font-weight-min-400
+47	contrast-text
+48	contrast-text
+49	dark-mode-support,contrast-text
+50	NEW:pair audio cues with haptics|Interaction & states
+51	touch-target-44
+52	NEW:use simplest gesture for frequent actions|Interaction & states
+53	swipe-alternative
+54	swipe-alternative
+55	button-name,label-in-name
+56	keyboard-operable
+57	shortcut-single-key-remap,keyboard-operable
+58	match-patterns
+59	match-patterns
+60	no-time-limit
+61	NEW:dismiss views with explicit action|Interaction & states
+62	no-autoplay-audio,media-controls
+63	reduce
+64	undo-over-confirm
+65	color-roles
+66	color-roles
+67	dark-mode-support,contrast-text
+68	semantic-color-tokens
+69	dark-mode-support
+70	-
+71	color-not-only
+72	color-not-only
+73	color-not-only
+74	contrast-text
+75	design-tokens
+76	color-roles
+77	color-roles
+78	contrast-text
+79	non-text-contrast,contrast-text
+80	color-not-only,focus
+81	NEW:background color supports content only|Color
+82	NEW:avoid full-screen background color in long-lived views|Color
+83	left-edge-alignment,group-proximity
+84	progressive-disclosure
+85	responsive-breakpoints
+86	responsive-breakpoints
+87	stress-test
+88	responsive-breakpoints
+89	safe-area-insets
+90	NEW:no controls at bottom of window|Space & layout
+91	safe-area-insets
+92	focus-not-obscured
+93	max-content-width
+94	NEW:min/max window sizes must not block resizing|Space & layout
+95	touch-target-spacing
+96	NEW:no more than three side-by-side controls|Space & layout
+97	body-16,legible-font-sizes
+98	body-16,legible-font-sizes
+99	font-weight-min-400
+100	font-family-count-max-2
+101	line-height-scale
+102	-
+103	NEW:custom fonts must stay legible|Type
+104	dynamic-type
+105	dynamic-type
+106	NEW:minimise truncation at larger text sizes|Type
+107	NEW:avoid truncating text in scroll regions|Type
+108	reflow
+109	NEW:prefer flat 2D text|Type
+110	NEW:no shadows on text for contrast|Type
+140	text-spacing
+158	-
+162	-
+213	ask-first
+214	ask-first
+215	preserve-brand
+216	no-ai-cliche-copy
+217	no-purple-blue-gradient
+218	no-emoji-icons
+219	no-glassmorphism-default
+220	NEW:vary button shape, not all pills|Surface
+221	NEW:avoid uniform equal-size card grids|Space & layout
+222	NEW:avoid generic centered hero layout|Space & layout
+223	no-neon-glow
+224	NEW:avoid centering everything|Space & layout
+225	-
+226	-
+227	-
+228	-
+229	-
+230	no-purple-blue-gradient
+231	no-emoji-icons
+232	banned-fonts
+233	NEW:no generic hand-drawn faces or people illustrations|Content & process
+234	alt-text
+235	no-lorem-ipsum
+236	no-heavy-drop-shadow
+237	NEW:vary button shape, not all pills|Surface
+238	backdrop-blur-restraint
+239	radius-scale
+240	NEW:avoid generic centered hero layout|Space & layout
+241	gradient
+242	NEW:avoid identical three-column testimonial cards|Components
+243	NEW:no generic AI avatars or solid placeholder avatars|Content & process
+244	design-tokens
+245	type-scale
+246	dom-size-small
+247	paragraph
+248	scannable-content
+249	design-tokens
+250	palette-limit
+251	heading-order
+252	heading-order
+253	specific-headlines
+254	specific-headlines
+255	spacing,airy
+256	primary,accent
+257	align-to-grid,left-edge-alignment
+258	type,group-proximity
+259	spacing
+260	airy,section-padding-generous
+261	group-proximity
+262	remove-clutter
+263	spacing
+264	airy
+265	surface,type
+266	primary
+267	type
+268	accent
+269	primary
+270	quiet
+271	compact,airy
+272	group-proximity
+273	remove-clutter
+274	no-card-in-card
+275	remove-clutter
+276	remove-clutter
+277	NEW:one dominant focal point per view|Space & layout
+278	NEW:one dominant focal point per view|Space & layout
+279	NEW:one dominant focal point per view|Space & layout
+280	NEW:avoid centering everything|Space & layout
+281	NEW:one dominant focal point per view|Space & layout
+282	remove-clutter
+283	align-to-grid,left-edge-alignment
+284	spacing
+285	align-to-grid
+286	left-edge-alignment
+287	align-to-grid
+288	align-to-grid
+289	type,quiet
+290	type,quiet
+291	quiet
+292	primary
+293	type,quiet
+294	NEW:primary layer alone conveys the point|Content & process
+295	compact,group-proximity
+296	compact
+297	NEW:no decorative hero on dashboards|Space & layout
+298	compact
+299	NEW:place key KPIs first in scan path|Space & layout
+300	compact
+301	NEW:place key KPIs first in scan path|Space & layout
+302	group-proximity
+303	NEW:place key KPIs first in scan path|Space & layout
+304	group-proximity
+305	NEW:place key KPIs first in scan path|Space & layout
+306	status-color-set
+307	remove-clutter
+308	NEW:keep chart labels and legends legible without crowding data|Components
+309	remove-clutter,gradient
+310	palette-limit
+311	NEW:make chart main insight obvious|Components
+312	remove-clutter
+313	NEW:make diagram flow and grouping visible|Components
+314	NEW:use connectors and containers in diagrams|Components
+315	NEW:avoid crossing diagram connectors|Components
+316	NEW:distinguish relationship types in diagrams|Components
+317	NEW:make diagram flow and grouping visible|Components
+318	NEW:make diagram flow and grouping visible|Components
+319	NEW:establish brand signal in first viewport|Content & process
+320	primary
+321	remove-clutter
+322	primary
+323	NEW:make offer clear in first viewport|Content & process
+324	primary
+325	NEW:order landing sections proof, explanation, action|Content & process
+326	primary
+327	remove-clutter
+328	NEW:order landing sections proof, explanation, action|Content & process
+329	NEW:order landing sections proof, explanation, action|Content & process
+330	primary
+331	hover-state,primary
+332	group-proximity
+333	primary
+334	flat
+335	primary
+336	NEW:favor ergonomic layout for repeated use|Space & layout
+337	NEW:one dominant message on posters|Type
+338	type
+339	NEW:one dominant message on posters|Type
+340	type
+341	NEW:one dominant message on posters|Type
+342	quiet
+343	NEW:one message per slide|Content & process
+344	NEW:vary slide density for rhythm|Content & process
+345	NEW:vary slide density for rhythm|Content & process
+346	NEW:one message per slide|Content & process
+347	NEW:one message per slide|Content & process
+348	NEW:vary slide density for rhythm|Content & process
+349	-
+350	design-tokens
+351	-
+352	optical-alignment
+353	border-or-shadow-not-both,shadow-layered
+354	border
+355	motion
+356	stagger-limited
+357	stagger-limited
+358	NEW:small fixed translateY for entrances|Motion
+359	exit-faster-than-enter
+360	ease-out-entrances
+361	NEW:animate icon swaps with opacity, scale, blur|Motion
+362	NEW:animate icon swaps with opacity, scale, blur|Motion
+363	tabular
+364	wrap
+365	text-wrap-pretty
+366	NEW:1px low-opacity outline on images|Surface
+367	NEW:1px low-opacity outline on images|Surface
+368	press-scale-feedback
+369	NEW:static prop to disable press scale|Motion
+370	initial-false-first-render
+371	transform-only
+372	transform-only
+373	NEW:will-change only for first-frame stutter|Performance
+374	touch-target-44
+375	target-min-24
+376	touch-target-spacing
+377	icon-consistency
+378	NEW:icons use currentColor for states|Surface
+379	color-not-only
+380	border-or-shadow-not-both,shadow-layered
+381	stagger-limited
+382	initial-false-first-render
+383	NEW:will-change only for first-frame stutter|Performance
+384	touch-target-44
+385	NEW:match icon stroke weight to text weight|Surface
+386	NEW:outline icons by default, fill for active|Surface
+387	no-entrance-every-render
+388	-
+389	-
+390	-
+391	-
+392	-
+393	-
+394	-
+395	radius-nested-concentric
+396	radius-nested-concentric
+397	tabular
+398	press-scale-feedback
+399	-
+400	-
+401	-
+402	motion
+403	stagger-limited
+404	stagger-limited
+405	exit-faster-than-enter
+406	exit-faster-than-enter
+407	NEW:small fixed translateY for entrances|Motion
+408	NEW:exit keeps a little directional movement|Motion
+409	exit-faster-than-enter
+410	animate-presence-exit
+411	NEW:cross-fade icons in CSS when no motion library|Motion
+412	-
+413	-
+414	-
+415	NEW:cross-fade icons in CSS when no motion library|Motion
+416	-
+417	NEW:animate icon swaps with opacity, scale, blur|Motion
+418	NEW:animate icon swaps with opacity, scale, blur|Motion
+419	NEW:no bounce on icon swap springs|Motion
+420	NEW:static prop to disable press scale|Motion
+421	initial-false-first-render
+422	-
+423	no-entrance-every-render,hover-transition-short
+424	micro-interaction-100-200
+425	reduce
+426	NEW:match icon stroke weight to text weight|Surface
+427	icon-consistency
+428	NEW:size inline icons relative to text|Surface
+429	NEW:icons use currentColor for states|Surface
+430	NEW:test icons at smallest size|Surface
+431	NEW:simplified glyphs for small icons|Surface
+432	NEW:use icon set native grid sizes|Surface
+433	NEW:use SVG for icons, not raster|Surface
+434	-
+435	button-name,alt-decorative-empty
+436	NEW:never use transition: all|Motion
+437	NEW:never use transition: all|Motion
+438	NEW:never use transition: all|Motion
+439	transform-only
+440	NEW:never use transition: all|Motion
+441	NEW:will-change only for first-frame stutter|Performance
+442	-
+443	NEW:will-change only for first-frame stutter|Performance
+444	NEW:will-change only for first-frame stutter|Performance
+445	radius-nested-concentric
+446	radius-nested-concentric
+447	NEW:less padding on icon side of buttons|Space & layout
+448	border-or-shadow-not-both,shadow-neutral-alpha
+449	shadow-neutral-alpha
+450	border-transparent-alpha
+451	border
+452	border
+453	hover-transition-short
+454	NEW:1px low-opacity outline on images|Surface
+455	NEW:1px low-opacity outline on images|Surface
+456	NEW:1px low-opacity outline on images|Surface
+457	NEW:1px low-opacity outline on images|Surface
+458	NEW:1px low-opacity outline on images|Surface
+459	NEW:1px low-opacity outline on images|Surface
+460	touch-target-spacing
+461	-
+462	wrap
+463	text-wrap-pretty
+464	text-wrap-pretty
+465	NEW:skip text-wrap balance and pretty on long text|Type
+466	font-smoothing
+467	preserve-brand
+468	preserve-brand
+469	NEW:use system font stack for native feel|Type
+470	NEW:keep practical fallback font stack|Type
+471	font-smoothing
+472	tabular
+473	tabular
+474	-
+475	-
+476	-
+477	-
+478	-
+479	-
+480	-
+481	-
+482	-
+483	-
+484	-
+485	-
+486	-
+487	-
+488	-
+489	-
+490	-
+491	-
+492	-
+493	-
+494	-
+495	-
+496	-
+497	-
+498	-
+499	-
+500	-
+501	-
+502	-
+503	-
+504	-
+505	-
+506	-
+507	-
+508	-
+509	-
+510	-
+511	-
+512	-
+513	-
+514	-
+515	-
+516	-
+517	-
+518	-
+519	-
+520	-
+521	-
+522	-
+523	-
+524	-
+525	-
+526	-
+527	-
+528	-
+529	-
+530	-
+531	-
+532	-
+533	-
+534	-
+535	-
+536	-
+537	-
+538	-
+539	-
+540	-
+541	-
+542	-
+543	-
+544	-
+545	-
+546	-
+547	-
+548	NEW:describe design intent with a concrete reference not adjectives|Content & process
+549	-
+550	NEW:describe design intent with a concrete reference not adjectives|Content & process
+551	-
+552	-
+553	-
+554	-
+555	-
+556	-
+557	-
+558	-
+559	-
+560	preserve-brand
+561	color-roles
+562	palette-limit
+563	contrast-text
+564	design-tokens
+565	color-roles
+566	color-roles
+567	color-roles
+568	spacing-tokens
+569	spacing-tokens
+570	spacing-scale-4pt
+571	real-devices
+572	max-content-width
+573	-
+574	grid-12-column
+575	split
+576	visually-hidden-utility
+577	error-identified
+578	NEW:do not use validation to gate eligibility|Interaction & states
+579	NEW:validation ignores unwanted characters|Interaction & states
+580	validate-late
+581	validate-late
+582	NEW:always validate on the server|Interaction & states
+583	NEW:add client validation only for a user need|Interaction & states
+584	NEW:do not add required to inputs, mark optional instead|Interaction & states
+585	-
+586	-
+587	-
+588	-
+589	-
+590	-
+591	-
+592	NEW:vary macrostructure between consecutive designs|Content & process
+593	NEW:vary macrostructure between consecutive designs|Content & process
+594	NEW:typography-only pages when no enrichment fits|Content & process
+595	NEW:typography-only pages when no enrichment fits|Content & process
+596	NEW:vary macrostructure between consecutive designs|Content & process
+597	-
+598	NEW:vary macrostructure between consecutive designs|Content & process
+599	NEW:vary macrostructure between consecutive designs|Content & process
+600	responsive-breakpoints
+601	svg-accessible-name
+602	-
+603	-
+604	no-horizontal-scroll
+605	-
+606	-
+607	no-ai-cliche-copy
+608	NEW:vary macrostructure between consecutive designs|Content & process
+609	NEW:vary macrostructure between consecutive designs|Content & process
+610	audit-first
+611	ask-first
+612	preserve-brand
+613	preserve-brand
+614	-
+615	-
+616	-
+617	no-fake-stats
+618	NEW:no fake browser or phone chrome|Surface
+619	no-horizontal-scroll,responsive-breakpoints
+620	NEW:no italic headings|Type
+621	-
+622	-
+623	read-design-context,design-tokens
+624	preserve-brand
+625	-
+626	-
+627	-
+628	states-designed
+629	-
+630	-
+631	-
+632	ask-first
+633	ask-first
+634	ask-first
+635	ask-first
+636	ask-first
+637	ask-first
+638	ask-first
+639	-
+640	-
+641	-
+642	-
+643	-
+644	-
+645	-
+646	-
+647	-
+648	NEW:state inferred audience and tone assumptions|Agent workflow
+649	NEW:state inferred audience and tone assumptions|Agent workflow
+650	NEW:vary macrostructure between consecutive designs|Content & process
+651	NEW:vary macrostructure between consecutive designs|Content & process
+652	NEW:vary macrostructure between consecutive designs|Content & process
+653	NEW:vary macrostructure between consecutive designs|Content & process
+654	NEW:vary macrostructure between consecutive designs|Content & process
+655	NEW:vary macrostructure between consecutive designs|Content & process
+656	-
+657	-
+658	NEW:pick real nav archetype, not minimal nav|Components
+659	-
+660	NEW:vary macrostructure between consecutive designs|Content & process
+661	-
+662	NEW:vary macrostructure between consecutive designs|Content & process
+663	NEW:vary macrostructure between consecutive designs|Content & process
+664	NEW:vary macrostructure between consecutive designs|Content & process
+665	NEW:vary macrostructure between consecutive designs|Content & process
+666	-
+667	-
+668	-
+669	NEW:vary macrostructure between consecutive designs|Content & process
+670	-
+671	-
+672	-
+673	-
+674	NEW:no invented stock photos as final design|Content & process
+675	-
+676	NEW:prefer typography or CSS art over generated imagery|Content & process
+677	-
+678	-
+679	-
+680	NEW:match code complexity to tone|Content & process
+681	NEW:no section eyebrows or number kickers by default|Type
+682	oklch-color-space,design-tokens
+683	serif
+684	transform-only
+685	focus-visible-only,contrast-focus-indicator
+686	remove-clutter,focal-motion
+687	-
+688	preserve-brand
+689	-
+690	-
+691	measure-with-tools
+692	-
+693	-
+694	-
+695	NEW:do not copy source photography|Content & process
+696	-
+697	serif
+698	remove-clutter,airy
+699	NEW:typographic rhythm instead of cards|Space & layout
+700	gradient
+701	gradient
+702	no-side-stripe-border
+703	no-side-stripe-border
+704	no-side-stripe-border
+705	NEW:avoid generic centered hero layout|Space & layout
+706	NEW:vary macrostructure between consecutive designs|Content & process
+707	NEW:vary macrostructure between consecutive designs|Content & process
+708	NEW:vary macrostructure between consecutive designs|Content & process
+709	NEW:avoid Specimen numbered-margin default|Content & process
+710	NEW:avoid Specimen numbered-margin default|Content & process
+711	NEW:pick real nav archetype, not minimal nav|Components
+712	NEW:footer closes the page, not a sitemap dump|Components
+713	NEW:footer closes the page, not a sitemap dump|Components
+714	no-ai-cliche-copy
+715	NEW:autoplay video needs muted loop playsinline|Performance
+716	priority-hint-lcp
+717	NEW:italics only for inline body emphasis|Type
+718	NEW:no section eyebrows or number kickers by default|Type
+719	NEW:no section eyebrows or number kickers by default|Type
+720	NEW:no section eyebrows or number kickers by default|Type
+721	NEW:no section eyebrows or number kickers by default|Type
+722	-
+723	-
+724	NEW:dark-mode elevation via lighter surfaces|Surface
+725	shadow
+726	tabular
+727	icon-consistency
+728	icon-consistency
+729	NEW:post-process generated imagery|Content & process
+730	no-fake-stats
+731	no-fake-stats
+732	NEW:omit icons on feature lists when unneeded|Surface
+733	NEW:no fake browser or phone chrome|Surface
+734	NEW:no fake browser or phone chrome|Surface
+735	NEW:no fake browser or phone chrome|Surface
+736	NEW:no fake browser or phone chrome|Surface
+737	design-tokens
+738	design-tokens,palette-limit
+739	design-tokens
+740	NEW:never let primary CTA or nav link wrap|Space & layout
+741	NEW:never let primary CTA or nav link wrap|Space & layout
+742	NEW:avoid Lottie unless character motion|Performance
+743	NEW:avoid Lottie unless character motion|Performance
+744	NEW:never use transition: all|Motion
+745	hover-transition-short
+746	pause-motion,no-auto-play-motion
+747	NEW:toasts only for failures and needed confirmations|Interaction & states
+748	NEW:focus ring appears instantly, not animated|Interaction & states
+749	NEW:focus ring appears instantly, not animated|Interaction & states
+750	NEW:stable toast stack positions|Interaction & states
+751	NEW:delay spinner and enforce minimum visible time|Interaction & states
+752	no-lorem-ipsum
+753	type-scale
+754	-
+755	no-lorem-ipsum
+756	NEW:self-host production assets|Performance
+757	third-party-defer
+758	NEW:use official brand logo assets|Content & process
+759	NEW:never inline base64 placeholder images|Performance
+760	NEW:use curated placeholder imagery|Content & process
+761	no-lorem-ipsum
+762	NEW:real product photos where subject matters|Content & process
+763	icon-consistency
+764	NEW:use icon set native grid sizes|Surface
+765	NEW:default icon stroke 2px|Surface
+766	NEW:icons use currentColor for states|Surface
+767	no-emoji-icons
+768	icon-consistency
+769	NEW:use official brand logo assets|Content & process
+770	NEW:monochrome logo walls|Surface
+771	NEW:height-align logos|Surface
+772	NEW:preserve logo aspect ratio|Surface
+773	no-fake-stats
+774	NEW:post-process generated imagery|Content & process
+775	NEW:post-process generated imagery|Content & process
+776	NEW:asymmetric crop for generated imagery|Content & process
+777	NEW:recolor illustrations to brand hue|Color
+778	NEW:avoid stock illustration poses|Content & process
+779	NEW:browser frame for web app mockups|Surface
+780	NEW:limit device frames to one hero mockup|Surface
+781	NEW:numbered-pin annotations on mockups|Components
+782	NEW:no glossy device bezels|Surface
+783	NEW:preserve mockup aspect ratio|Surface
+784	NEW:video needs poster to prevent layout shift|Performance
+785	priority-hint-lcp,lazy-load-images
+786	NEW:post-process stock photos|Content & process
+787	NEW:match imagery tone to brief|Content & process
+788	gradient
+789	NEW:use CSS gradients before SVG or images|Performance
+790	NEW:gradient only on hero or accent card, never page-wide|Color
+791	NEW:avoid Lottie unless character motion|Performance
+792	NEW:avoid Lottie unless character motion|Performance
+793	NEW:avoid Lottie unless character motion|Performance
+794	oklch-color-space
+795	accent-one-hue,accent
+796	no-pure-black,tinted-neutrals
+798	contrast-text
+799	NEW:dark-mode elevation via lighter surfaces|Surface
+800	NEW:keep anchor hue across light and dark modes|Color
+801	no-pure-black
+802	no-pure-black
+803	tinted-neutrals
+804	no-purple-blue-gradient
+805	contrast-text
+806	color-not-only
+807	NEW:gradients limited to two stops|Color
+808	accent
+809	accent
+810	gradient
+811	accent
+812	NEW:no two sections share the same archetype|Content & process
+813	-
+814	NEW:vary archetypes between pages|Content & process
+815	-
+816	NEW:vary archetypes between pages|Content & process
+817	-
+818	-
+819	-
+820	-
+821	-
+822	-
+823	-
+824	-
+825	-
+826	-
+827	NEW:vary archetypes between pages|Content & process
+828	NEW:vary footer archetype between runs|Components
+829	NEW:footer closes the page, not a sitemap dump|Components
+830	-
+831	NEW:vary nav between builds|Components
+832	NEW:pick real nav archetype, not minimal nav|Components
+833	-
+834	NEW:no two sections share the same archetype|Content & process
+835	-
+836	responsive-breakpoints
+837	responsive-breakpoints
+838	responsive-breakpoints
+839	compact
+840	-
+841	NEW:mobile caption inline below image|Space & layout
+842	NEW:scale illustration to 40 percent on mobile|Space & layout
+843	table-responsive
+844	touch-target-44
+845	touch-target-44
+846	touch-target-44
+847	hamburger-menu-a11y
+848	hamburger-menu-a11y
+849	touch-target-44
+850	touch-target-44
+851	lazy-load-images,priority-hint-lcp
+852	NEW:respect data-saver for autoplay video|Performance
+853	-
+854	-
+855	NEW:uniform rhythm in product grids|Space & layout
+856	NEW:price as description in product cards|Components
+857	NEW:image hover scale 1.02 max|Motion
+858	no-card-in-card,remove-clutter
+859	NEW:newsletter footer only when subscribe promised|Components
+860	NEW:newsletter footer only when subscribe promised|Components
+861	reduce
+862	NEW:seamless active nav indicator|Components
+863	dropdown-keyboard,escape-closes
+864	-
+865	NEW:mega-menu limits and hover close grace|Components
+866	NEW:mega-menu items carry descriptions|Components
+867	NEW:compact banner on scroll down|Components
+868	NEW:banner not a second nav|Components
+869	NEW:banner one line, one link, one dismiss|Components
+870	NEW:animate banner via translate not height|Motion
+871	focus-trap-modal,escape-closes
+872	NEW:search pill looks like search|Components
+873	-
+874	NEW:nav frosts on scroll|Components
+875	passive-listeners
+876	NEW:nav center links must not collide with brand/CTA|Components
+877	hover-state,focus
+878	responsive-breakpoints
+879	NEW:floating pill nav content-sized|Components
+880	-
+881	NEW:blinking cursor only in terminal nav|Components
+882	-
+883	NEW:one big centered quote section|Components
+884	design-tokens
+885	match-patterns
+886	preserve-brand
+887	-
+888	preserve-brand
+889	-
+890	consistent-terminology
+891	button-copy-outcome
+892	button-copy-outcome
+893	error-message-human
+894	error-message-human
+895	error-message-human
+896	link-purpose
+897	concise-subtext
+898	real-ellipsis-dash
+899	real-ellipsis-dash
+900	typographic-quotes
+901	nonbreaking-spaces
+902	no-ai-cliche-copy
+903	-
+904	NEW:use native platform features|Content & process
+905	-
+906	NEW:animate transform, not clip-path recalculation on scroll|Performance
+907	dom-size-small
+908	reduce
+909	NEW:gradients limited to three stops|Color
+910	-
+911	-
+912	-
+913	-
+914	transform-only
+915	-
+916	-
+917	NEW:optimise SVG exports|Performance
+918	NEW:tight SVG viewBox|Performance
+919	no-linear-ui-motion
+920	NEW:prefer platform features over JS animation|Performance
+921	NEW:prefer platform features over JS animation|Performance
+922	-
+923	transform-only
+924	no-entrance-every-render,focal-motion
+925	reduce
+926	NEW:static fallback for WebGL canvas|Performance
+927	NEW:no Three.js for stationary content|Performance
+928	NEW:one restrained post-process effect only|Surface
+929	-
+930	NEW:avoid generic AI character illustrations|Content & process
+931	-
+932	NEW:recolor illustrations to brand hue|Color
+933	NEW:avoid stock illustration poses|Content & process
+934	NEW:use CSS for logo spin, spinner, checkmark, hover instead of Lottie|Performance
+935	NEW:use CSS for logo spin, spinner, checkmark, hover instead of Lottie|Performance
+936	NEW:use CSS for logo spin, spinner, checkmark, hover instead of Lottie|Performance
+937	NEW:use CSS for logo spin, spinner, checkmark, hover instead of Lottie|Performance
+938	-
+939	-
+940	-
+941	-
+942	-
+943	-
+944	-
+945	-
+946	-
+947	-
+948	-
+949	-
+950	-
+951	-
+952	-
+953	NEW:slight asymmetry for hand-drawn feel|Motion
+954	-
+955	transform-only
+956	NEW:no Three.js for stationary content|Performance
+957	NEW:optimise SVG exports|Performance
+958	no-linear-ui-motion
+959	-
+960	-
+961	-
+962	-
+963	-
+964	-
+965	-
+966	-
+967	-
+968	-
+969	-
+970	-
+971	-
+972	-
+973	-
+974	NEW:derive brand hue from vibe|Color
+975	tint
+976	tinted-neutrals
+977	NEW:on-accent text picks ink or paper by lightness|Color
+978	NEW:on-accent text picks ink or paper by lightness|Color
+979	accent
+980	body-16,max-line-length-65ch
+981	-
+982	-
+983	-
+984	-
+985	-
+986	-
+987	-
+988	-
+989	-
+990	-
+991	accent-one-hue
+992	-
+993	-
+994	-
+995	-
+996	NEW:design system pages share one system|Content & process
+997	-
+998	-
+999	design-tokens
+1000	design-tokens
+1001	semantic-color-tokens
+1002	design-tokens
+1003	-
+1004	design-tokens
+1005	-
+1006	design-tokens
+1007	preserve-brand
+1008	NEW:offset floating nav with translateY not margin|Space & layout
+1009	-
+1010	NEW:exponential ease-out at about 520ms for nav morph|Motion
+1011	NEW:transition backdrop blur via blur(0) not none|Motion
+1012	NEW:transition backdrop blur via blur(0) not none|Motion
+1013	NEW:scroll threshold at least 60px for nav morph|Motion
+1014	-
+1015	-
+1016	tracking
+1017	accent
+1018	NEW:atmospheric theme uses fade-in only|Motion
+1019	dark
+1020	NEW:no italic headings|Type
+1021	surface
+1022	accent-one-hue
+1023	-
+1024	-
+1025	NEW:extreme weight and size contrast in type|Type
+1026	max-line-length-65ch,serif
+1027	specific-headlines
+1028	no-glassmorphism-default
+1029	-
+1030	accent
+1031	specific-headlines
+1032	NEW:vary button shape, not all pills|Surface
+1033	tracking,type
+1034	border-hairline
+1035	-
+1036	NEW:do not name external sites in output|Content & process
+1037	-
+1038	-
+1039	-
+1040	tracking
+1041	mute-color
+1042	soft,radius-scale
+1043	no-emoji-in-copy
+1044	shadow
+1045	mute-color
+1046	mute-color
+1047	no-emoji-icons
+1048	-
+1049	NEW:marquee footer must honour reduced motion|Motion
+1050	-
+1051	-
+1052	NEW:typography-only hero is always acceptable|Content & process
+1053	NEW:typography-only hero is always acceptable|Content & process
+1054	-
+1055	NEW:typography-only pages when no enrichment fits|Content & process
+1056	ask-first
+1057	no-fake-stats
+1058	NEW:typography-only pages when no enrichment fits|Content & process
+1059	NEW:post-process generated imagery|Content & process
+1060	NEW:customise library illustrations to brand|Content & process
+1061	NEW:avoid Lottie unless character motion|Performance
+1062	-
+1063	-
+1064	-
+1065	NEW:typography-only hero is always acceptable|Content & process
+1066	-
+1067	NEW:collapse clipped hero art to stacked on mobile|Space & layout
+1068	lazy-load-images,priority-hint-lcp
+1069	video-captions
+1070	-
+1071	pause-motion
+1072	-
+1073	NEW:numbered-pin annotations on mockups|Components
+1074	-
+1075	-
+1076	-
+1077	reduce
+1078	-
+1079	-
+1080	-
+1081	NEW:gradient only on hero or accent card, never page-wide|Color
+1082	NEW:one hero polish pattern at most|Surface
+1083	NEW:one hero polish pattern at most|Surface
+1084	-
+1085	-
+1086	-
+1087	no-horizontal-scroll
+1088	-
+1089	NEW:cursor spotlight stays beneath text|Surface
+1090	NEW:cursor spotlight stays beneath text|Surface
+1091	reduce
+1092	-
+1093	-
+1094	-
+1095	NEW:hero takes 70-90 percent of first viewport|Space & layout
+1096	NEW:hero content fits above the fold|Space & layout
+1097	NEW:avoid centering everything|Space & layout
+1098	NEW:one entrance animation per element, under 220ms|Motion
+1099	tracking,heading-line-height-tight
+1100	NEW:one hero polish pattern at most|Surface
+1101	NEW:no mouse-follow gradients on SaaS pages|Motion
+1102	reduce
+1103	-
+1104	NEW:typography-only hero is always acceptable|Content & process
+1105	NEW:match imagery tone to brief|Content & process
+1106	-
+1107	NEW:typography-only pages when no enrichment fits|Content & process
+1108	NEW:no grain background everywhere|Surface
+1109	NEW:customise library illustrations to brand|Content & process
+1110	NEW:collapse clipped hero art to stacked on mobile|Space & layout
+1111	-
+1112	NEW:oversized decorative art feels intentional|Surface
+1113	NEW:bias hero art to one side|Space & layout
+1114	NEW:scale hero art down on mobile|Space & layout
+1115	-
+1116	NEW:silhouette placeholder for empty photo slots|Content & process
+1117	NEW:real product photos where subject matters|Content & process
+1118	NEW:limit decorative kit imagery per page|Surface
+1119	NEW:limit decorative kit imagery per page|Surface
+1120	-
+1121	NEW:bias hero art to one side|Space & layout
+1122	NEW:test blend modes on the active surface|Surface
+1123	hover-state,no-hover-only
+1124	focus
+1125	focus
+1126	contrast-focus-indicator,focus-appearance
+1127	focus-visible-only
+1128	no-outline-none
+1129	touch-target-44
+1130	labels,placeholder
+1131	invalid,form-label-programmatic
+1132	color-not-only
+1133	prevent-double-submit
+1134	-
+1135	NEW:constant field border width across states|Surface
+1136	NEW:constant field border width across states|Surface
+1137	-
+1138	-
+1139	loading-state-button
+1140	NEW:inputs match button height|Space & layout
+1141	feedback
+1142	labels
+1143	feedback
+1144	feedback
+1145	NEW:no border-width or height transitions on state change|Motion
+1146	NEW:focus ring appears instantly, not animated|Interaction & states
+1147	no-hover-only
+1148	NEW:loading fields stay editable|Interaction & states
+1149	-
+1150	no-outline-none
+1151	NEW:textarea vertical resize with min-height|Components
+1152	NEW:keep native select or replicate accessibility|Components
+1153	touch-target-44
+1154	NEW:style file input via label|Components
+1155	NEW:combobox listbox keyboard and no content push|Components
+1156	native-dialog
+1157	NEW:dialog stays centred despite custom positioning|Components
+1158	focus-trap-modal
+1159	native-popover-api
+1160	NEW:dropdowns must not clip inside overflow hidden|Components
+1161	NEW:type-to-confirm for destructive actions|Interaction & states
+1162	loading-state-button
+1163	states-designed,empty-copy-guides
+1164	empty-copy-guides
+1165	no-hover-only
+1166	-
+1167	contrast-text
+1168	contrast-text
+1169	NEW:set text color wherever background color is overridden|Color
+1170	spacing-scale-4pt,spacing-tokens
+1171	spacing
+1172	NEW:break the grid on purpose once|Space & layout
+1173	gap-over-margin
+1174	gap-over-margin
+1175	NEW:CSS grid for page layout, flexbox for components|Space & layout
+1176	NEW:avoid uniform equal-size card grids|Space & layout
+1177	NEW:named grid areas for complex layouts|Space & layout
+1178	NEW:wide left margin for labels|Space & layout
+1179	NEW:hanging headers only when asked|Space & layout
+1180	NEW:uneven section padding top and bottom|Space & layout
+1181	align
+1182	shadow-scale
+1183	shadow-layered,no-neon-glow
+1184	NEW:named z-index scale|Space & layout
+1185	NEW:avoid generic centered hero layout|Space & layout
+1186	NEW:named z-index scale|Space & layout
+1187	no-horizontal-scroll
+1188	no-horizontal-scroll
+1189	-
+1190	remove-clutter
+1191	NEW:avoid Specimen numbered-margin default|Content & process
+1192	NEW:vary macrostructure between consecutive designs|Content & process
+1193	NEW:one hero polish pattern at most|Surface
+1194	NEW:pick nav and footer with hero macrostructure|Components
+1195	-
+1196	NEW:testimonials specific to a use case|Components
+1197	NEW:no sub-rules within sections|Space & layout
+1198	no-fake-stats
+1199	-
+1200	NEW:vary macrostructure between consecutive designs|Content & process
+1201	NEW:consistent gaps without rules in bento|Space & layout
+1202	-
+1203	-
+1204	-
+1205	-
+1206	-
+1207	NEW:numeric hero paired with worded headline|Type
+1208	NEW:count-up on hero figure|Motion
+1209	-
+1210	NEW:numeric hero paired with worded headline|Type
+1211	-
+1212	-
+1213	-
+1214	-
+1215	-
+1216	-
+1217	-
+1218	-
+1219	-
+1220	-
+1221	NEW:avoid Specimen numbered-margin default|Content & process
+1222	-
+1223	-
+1224	-
+1225	-
+1226	-
+1227	-
+1228	-
+1229	-
+1230	-
+1231	-
+1232	-
+1233	-
+1234	remove-clutter,focal-motion
+1235	NEW:toasts only for failures and needed confirmations|Interaction & states
+1236	reduce
+1237	no-hover-only,keyboard-operable
+1238	NEW:limit default animation primitives to three|Motion
+1239	NEW:one-shot pulse on recommended pricing tier|Motion
+1240	NEW:blinking cursor only in terminal nav|Components
+1241	reduce
+1242	NEW:limit default animation primitives to three|Motion
+1243	remove-clutter
+1244	NEW:crossfade tab content, no sliding|Motion
+1245	-
+1246	duration-tokens
+1247	NEW:no animation on focus, keyboard nav, error appearance|Motion
+1248	duration-tokens,easing-tokens
+1249	NEW:focus ring appears instantly, not animated|Interaction & states
+1250	-
+1251	focus-visible-only,reduce
+1252	validate-late
+1253	NEW:toasts only for failures and needed confirmations|Interaction & states
+1254	toast-time-and-persist,undo-over-confirm
+1255	reduce
+1256	native-popover-api
+1257	hover-content-dismissible,content-on-hover
+1258	NEW:animate grid-template-rows, not tab height|Motion
+1259	NEW:locale-correct number formatting|Content & process
+1260	NEW:drag and drop ghost and drop indicator|Interaction & states
+1261	optimistic-update,undo-over-confirm
+1262	debounce-input
+1263	live-region-usage
+1264	stagger-limited
+1265	NEW:use IntersectionObserver not scroll listeners|Performance
+1266	NEW:never use transition: all|Motion
+1267	NEW:no universal hover scale on cards|Motion
+1268	pause-motion,no-auto-play-motion
+1269	undo-over-confirm
+1270	NEW:delay spinner and enforce minimum visible time|Interaction & states
+1271	NEW:tooltip delay on hover but instant on focus|Interaction & states
+1272	NEW:focus ring appears instantly, not animated|Interaction & states
+1273	color-not-only,invalid
+1274	NEW:stable toast stack positions|Interaction & states
+1275	no-hover-only
+1276	reduce
+1277	focus-visible-only,contrast-focus-indicator
+1278	color-not-only
+1279	remove-clutter
+1280	-
+1281	exit-faster-than-enter
+1282	stagger-limited
+1283	NEW:no parallax or scroll-scrubbed animation|Motion
+1284	NEW:will-change only for first-frame stutter|Performance
+1285	pause-motion
+1286	responsive-breakpoints,no-horizontal-scroll
+1287	NEW:use minmax(0,1fr) for image grid tracks|Space & layout
+1288	no-horizontal-scroll
+1289	NEW:allow long words in headings to wrap|Type
+1290	-
+1291	mobile-first
+1292	responsive-breakpoints
+1293	NEW:use pointer and hover media queries|Space & layout
+1294	responsive-breakpoints
+1295	fluid-spacing-clamp
+1296	no-hover-only
+1297	NEW:never let primary CTA or nav link wrap|Space & layout
+1298	NEW:never let primary CTA or nav link wrap|Space & layout
+1299	NEW:never let primary CTA or nav link wrap|Space & layout
+1300	-
+1301	dvh-units
+1302	no-horizontal-scroll
+1303	table-responsive
+1304	image-dimensions
+1305	NEW:use logical CSS properties for RTL|Space & layout
+1306	localize
+1307	mobile-first
+1308	dvh-units
+1309	NEW:use feature queries, not UA sniffing|Content & process
+1310	responsive-breakpoints
+1311	-
+1312	NEW:vary macrostructure between consecutive designs|Content & process
+1313	-
+1314	no-purple-blue-gradient
+1315	NEW:avoid generic centered hero layout|Space & layout
+1316	divider
+1317	NEW:no bouncy easing on UI state changes|Motion
+1318	NEW:focus ring appears instantly, not animated|Interaction & states
+1319	NEW:tooltip delay on hover but instant on focus|Interaction & states
+1320	-
+1321	NEW:avoid Specimen numbered-margin default|Content & process
+1322	tinted-neutrals
+1323	max-line-length-65ch
+1324	hover-state,active-pressed-state
+1325	reduce
+1326	NEW:video needs poster to prevent layout shift|Performance
+1327	icon-consistency,no-emoji-icons
+1328	NEW:avoid Lottie unless character motion|Performance
+1329	svg-accessible-name
+1330	-
+1331	no-horizontal-scroll
+1332	NEW:verify decorative text effects position|Type
+1333	centered-vertical-icon
+1334	NEW:limit outlier typeface to two slots|Type
+1335	NEW:constant field border width across states|Surface
+1336	NEW:inputs match button height|Space & layout
+1337	feedback
+1338	contrast-text
+1339	contrast-text
+1340	contrast-text,contrast-focus-indicator
+1341	-
+1342	NEW:avoid default wordmark-left nav pattern|Components
+1343	NEW:no decorative elements without semantic purpose|Surface
+1344	-
+1345	no-fake-stats
+1346	NEW:no fake browser or phone chrome|Surface
+1347	design-tokens
+1348	NEW:never let primary CTA or nav link wrap|Space & layout
+1349	NEW:never let primary CTA or nav link wrap|Space & layout
+1350	-
+1351	-
+1352	responsive-breakpoints
+1353	NEW:use minmax(0,1fr) for image grid tracks|Space & layout
+1354	NEW:allow long words in headings to wrap|Type
+1355	responsive-breakpoints
+1356	NEW:CSS-only radio tabs must not scroll-jump|Components
+1357	NEW:vary macrostructure between consecutive designs|Content & process
+1358	NEW:no section eyebrows or number kickers by default|Type
+1359	NEW:no section eyebrows or number kickers by default|Type
+1360	border-hairline
+1361	-
+1362	NEW:no decorative scanlines or detached cursors|Surface
+1363	-
+1364	-
+1365	NEW:keep CTA style coherent with theme voice|Components
+1366	NEW:vary macrostructure between consecutive designs|Content & process
+1367	-
+1368	-
+1369	-
+1370	-
+1371	-
+1372	-
+1373	-
+1374	-
+1375	-
+1376	NEW:vary macrostructure between consecutive designs|Content & process
+1377	-
+1378	-
+1379	-
+1380	-
+1381	-
+1382	-
+1383	-
+1384	-
+1385	-
+1386	-
+1387	-
+1388	-
+1389	-
+1390	-
+1391	-
+1392	-
+1393	-
+1394	-
+1395	-
+1396	-
+1397	-
+1398	-
+1399	-
+1400	-
+1401	-
+1402	-
+1403	-
+1404	-
+1405	-
+1406	-
+1407	-
+1408	-
+1409	-
+1410	NEW:do not copy source photography|Content & process
+1411	-
+1412	-
+1413	-
+1414	-
+1415	-
+1416	-
+1417	-
+1418	-
+1419	-
+1420	-
+1421	-
+1422	-
+1423	-
+1424	-
+1425	-
+1426	-
+1427	-
+1428	-
+1429	NEW:vary macrostructure between consecutive designs|Content & process
+1430	-
+1431	mute-color
+1432	remove-clutter
+1433	-
+1434	NEW:decorative glyph ornaments as dividers|Surface
+1435	NEW:colour blocks bleeding off page edge|Surface
+1436	tracking
+1437	NEW:stack portrait above title in narrow cards|Space & layout
+1438	NEW:stack portrait above title in narrow cards|Space & layout
+1439	NEW:stack portrait above title in narrow cards|Space & layout
+1440	NEW:stack portrait above title in narrow cards|Space & layout
+1441	NEW:leave room for hard-offset shadows at page edge|Surface
+1442	accent-one-hue
+1443	NEW:marquee content repeats to loop seamlessly|Motion
+1444	-
+1445	NEW:inputs match button height|Space & layout
+1446	-
+1447	-
+1448	NEW:numerals over spelled-out numbers|Content & process
+1449	no-ai-cliche-copy
+1450	NEW:hard-offset shadows only|Surface
+1451	accent-one-hue
+1452	NEW:all-caps headlines|Type
+1453	quiet
+1454	paragraph
+1455	primary
+1456	NEW:2px solid rules|Surface
+1457	-
+1458	-
+1459	-
+1460	accent
+1461	NEW:do not name external sites in output|Content & process
+1462	NEW:instrument-panel feel over marketing template|Content & process
+1463	no-pure-black,tinted-neutrals
+1464	radius-consistent
+1465	NEW:mono uppercase labels for meta|Type
+1466	NEW:vary button shape, not all pills|Surface
+1467	no-ai-cliche-copy
+1468	link-purpose
+1469	-
+1470	NEW:yellow is surface-only, never type|Color
+1471	-
+1472	-
+1473	NEW:instrument-panel feel over marketing template|Content & process
+1474	font-family-count-max-2
+1475	NEW:giant faded numeral index behind section heads|Type
+1476	NEW:period square glyph accent|Surface
+1477	NEW:signal rule above heads at column width|Surface
+1478	NEW:registration mark folio device|Surface
+1479	NEW:diagonal rule accent|Surface
+1480	NEW:one flooded poster band per page|Surface
+1481	NEW:on-plate text color follows plate color|Color
+1482	NEW:every section carries a constructed object|Content & process
+1483	NEW:running text spans at most half the columns|Space & layout
+1484	-
+1485	NEW:snapped geometric hover transforms|Motion
+1486	NEW:one pausable ticker band per page|Motion
+1487	reduce
+1488	NEW:keep grid rails visible|Surface
+1489	NEW:every section carries a constructed object|Content & process
+1490	NEW:lowercase sans display, no serif|Type
+1491	accent-one-hue
+1492	NEW:one flooded poster band per page|Surface
+1493	gradient
+1494	flat,crisp
+1496	align-to-grid
+1497	no-ai-cliche-copy
+1498	-
+1499	-
+1500	-
+1501	-
+1502	tint
+1503	-
+1504	tint,soft
+1505	NEW:multi-accent surfaces|Color
+1506	gradient
+1507	accent
+1508	tracking
+1509	-
+1510	-
+1511	-
+1512	split
+1513	reuse-components
+1514	primary
+1515	accent
+1516	NEW:count-up numerals on view|Motion
+1517	shadow,soft
+1518	soft
+1519	soft
+1520	pause-motion
+1521	press-scale-feedback,hover-state
+1522	reduce
+1523	reduce
+1524	-
+1525	-
+1526	-
+1527	-
+1528	left-edge-alignment
+1529	consistent-page-margins
+1530	left-edge-alignment
+1531	-
+1532	NEW:clipped background text highlighter|Type
+1533	NEW:clipped background text highlighter|Type
+1534	NEW:clipped background text highlighter|Type
+1535	NEW:clipped background text highlighter|Type
+1536	reuse-components,design-tokens
+1537	NEW:vary page architecture per build|Content & process
+1538	-
+1539	align
+1540	badge
+1541	NEW:vary card physics per build|Surface
+1542	NEW:sparing eyebrow labels|Type
+1543	gradient
+1544	NEW:vary footer layout|Space & layout
+1545	NEW:vary hero layout|Space & layout
+1546	NEW:vary headline emphasis|Type
+1547	divider
+1548	focal-motion
+1549	split
+1550	no-ai-cliche-copy
+1551	no-ai-cliche-copy
+1552	delight-moments
+1553	NEW:rounded sans only|Type
+1554	tint
+1555	no-pure-black
+1556	soft
+1557	NEW:multi-accent surfaces|Color
+1558	gradient
+1559	focal-motion,bouncy
+1560	NEW:no italic emphasis|Type
+1561	no-fake-stats
+1562	no-rainbow-decoration
+1563	NEW:no three-feature-card row|Space & layout
+1564	NEW:small bento grid|Space & layout
+1565	-
+1566	-
+1567	-
+1568	-
+1569	focal-motion
+1570	delight-moments
+1571	NEW:one precision SVG object|Surface
+1572	NEW:lowercase display headlines|Type
+1573	-
+1574	-
+1575	-
+1576	shadow
+1577	-
+1578	-
+1579	no-neon-glow
+1580	NEW:construct graphics in CSS/SVG|Surface
+1581	NEW:one precision SVG object|Surface
+1582	NEW:one precision SVG object|Surface
+1583	pause-motion
+1584	-
+1585	NEW:one accent-colored verb in headline|Type
+1586	NEW:one accent-colored verb in headline|Type
+1587	NEW:one accent-colored verb in headline|Type
+1588	no-fake-stats
+1589	NEW:procedurally varied meter|Surface
+1590	no-heavy-drop-shadow
+1591	NEW:three-cell stat row|Space & layout
+1592	pause-motion
+1593	NEW:one accent-colored verb in headline|Type
+1594	-
+1595	no-fake-stats
+1596	NEW:lowercase display headlines|Type
+1597	no-ai-cliche-copy
+1598	no-neon-glow
+1599	NEW:construct graphics in CSS/SVG|Surface
+1600	NEW:lowercase display headlines|Type
+1601	NEW:no italic emphasis|Type
+1602	NEW:one accent-colored verb in headline|Type
+1603	NEW:one accent-colored verb in headline|Type
+1604	no-fake-stats
+1605	NEW:use real screenshots not redrawn browser chrome|Content & process
+1606	banned-fonts
+1607	pause-motion
+1608	NEW:one accent-colored verb in headline|Type
+1609	no-emoji-icons
+1610	NEW:three-cell stat row|Space & layout
+1611	no-neon-glow
+1612	no-fake-stats
+1613	-
+1614	-
+1615	-
+1616	NEW:one precision SVG object|Surface
+1617	NEW:one accent-colored verb in headline|Type
+1618	pause-motion
+1619	serif,font-family-count-max-2
+1620	type-scale
+1621	max-line-length-65ch
+1622	font-family-count-max-2
+1623	font-family-count-max-2
+1624	font-family-count-max-2
+1625	banned-fonts
+1626	banned-fonts
+1627	banned-fonts
+1628	banned-fonts
+1629	-
+1630	-
+1631	-
+1632	-
+1633	serif
+1634	serif
+1635	-
+1636	-
+1637	serif
+1638	NEW:cap display size at 5.5rem|Type
+1639	NEW:cap display size at 5.5rem|Type
+1640	fluid-spacing-clamp,type-scale
+1641	specific-headlines
+1642	type-scale
+1643	type
+1644	weight-scale-limited
+1645	type
+1646	font-fallback-metrics
+1647	typographic-quotes,real-ellipsis-dash
+1648	max-line-length-65ch
+1649	NEW:no all-caps or justified body text|Type
+1650	NEW:loosen tracking on small caps labels|Type
+1651	heading-order
+1652	banned-fonts
+1653	legible-font-sizes,body-16
+1654	font-family-count-max-2
+1655	NEW:outlier face in at most two slots|Type
+1656	-
+1657	-
+1658	-
+1659	preserve-brand
+1660	preserve-brand
+1661	-
+1662	-
+1663	preserve-brand
+1664	-
+1665	-
+1666	-
+1667	-
+1668	-
+1669	screenshot-verify
+1670	-
+1671	-
+1672	stack
+1673	-
+1674	-
+1675	audit-first
+1676	-
+1677	stack
+1678	stack
+1679	NEW:full-width components on mobile|Space & layout
+1680	NEW:bottom navigation on mobile|Components
+1681	touch-target-44
+1682	NEW:bottom sheets instead of dropdowns on mobile|Components
+1683	progressive-disclosure
+1684	NEW:multi-column layouts on wide screens|Space & layout
+1685	max-content-width
+1686	NEW:print stylesheet hides nav and interactive elements|Space & layout
+1687	NEW:print stylesheet adds page numbers|Space & layout
+1688	fluid-spacing-clamp
+1689	touch-target-44
+1690	touch-target-spacing
+1691	press-scale-feedback
+1692	perf
+1693	NEW:keep core functionality on mobile|Content & process
+1694	consistent-navigation
+1695	responsive-breakpoints
+1696	stress-test
+1697	real-devices
+1698	real-devices
+1699	mobile-first
+1700	responsive-breakpoints
+1701	no-hover-only
+1702	no-hover-only
+1703	safe-area-insets
+1704	table-responsive,hamburger-menu-a11y
+1705	real-devices
+1706	mobile-first
+1707	-
+1708	-
+1709	NEW:restructure layout per size class|Space & layout
+1710	NEW:master-detail split view on tablets|Space & layout
+1711	orientation-support
+1712	match-patterns
+1713	match-patterns,dynamic-type
+1714	NEW:drive layout from size classes|Space & layout
+1715	real-devices
+1716	NEW:keep core functionality on mobile|Content & process
+1717	safe-area-insets,reduce
+1718	match-patterns
+1719	NEW:navigation rail on large screens|Components
+1720	NEW:system Back gesture always works|Interaction & states
+1721	safe-area-insets
+1722	NEW:top app bar with single FAB|Components
+1723	target-min-24,touch-target-spacing
+1724	type-scale
+1725	dynamic-type
+1726	dark-mode-support
+1727	match-patterns
+1728	NEW:single floating action button|Components
+1729	NEW:snackbars for transient feedback|Components
+1730	NEW:material motion patterns|Motion
+1731	real-devices
+1732	real-devices
+1733	focal-motion
+1734	focal-motion
+1735	motion-duration
+1736	audit-first
+1737	motion
+1738	-
+1739	focal-motion
+1740	focal-motion
+1741	stagger-limited
+1742	duration-tokens
+1743	micro-interaction-100-200
+1744	duration-tokens
+1745	duration-tokens
+1746	duration-tokens
+1747	exit-faster-than-enter,ease-out-entrances
+1748	-
+1749	-
+1750	NEW:view transitions for state continuity|Motion
+1751	NEW:scroll-driven motion only when meaningful|Motion
+1752	perf
+1753	NEW:content visible without scripts|Content & process
+1754	transform-only
+1755	NEW:will-change only during animation|Performance
+1756	pause-motion
+1757	reduce
+1758	-
+1759	-
+1760	contrast-text,contrast-7
+1761	reduce,no-flashing-3hz
+1762	semantic-structure,landmarks
+1763	dark-mode-support
+1764	pointer-cancel,dragging-alternative
+1765	-
+1766	audit-first
+1767	-
+1768	design-tokens
+1769	touch-target-44
+1770	-
+1771	-
+1772	-
+1773	-
+1774	dynamic-type
+1775	touch-target-44
+1776	reduce
+1777	-
+1778	design-tokens
+1779	icon-consistency
+1780	NEW:restructure layout per size class|Space & layout
+1781	-
+1782	design-tokens
+1783	touch-target-44
+1784	ask-first
+1785	preserve-brand
+1786	one-change-at-a-time
+1787	preserve-brand
+1788	preserve-brand
+1789	preserve-brand
+1790	preserve-brand
+1791	NEW:one decisive move, quiet the rest|Content & process
+1792	NEW:vary section rhythm and density|Space & layout
+1793	-
+1794	preserve-brand
+1795	concise-subtext
+1796	button-copy-outcome,consistent-terminology
+1797	undo-over-confirm,button-copy-outcome
+1798	labels,placeholder
+1799	error-suggestion,error-message-human
+1800	error-message-human
+1801	states-designed
+1802	empty-copy-guides
+1803	concise-subtext
+1804	microcopy-hints,link-purpose
+1805	voice-tone-consistent,plain-language
+1806	localize
+1807	localize
+1808	alt-text,alt-decorative-empty
+1809	label-in-name
+1810	color-not-only
+1811	consistent-terminology
+1812	color-roles,preserve-brand
+1813	contrast-text,color-not-only
+1814	palette-limit
+1815	oklch-color-space
+1816	accent
+1817	primary
+1818	tinted-neutrals
+1819	color-roles
+1820	color-not-only
+1821	dark-mode-support
+1822	semantic-color-tokens
+1823	contrast-text
+1824	non-text-contrast
+1825	color-not-only
+1826	oklch-color-space
+1827	-
+1828	-
+1829	-
+1830	-
+1831	-
+1832	-
+1833	-
+1834	-
+1835	-
+1836	-
+1837	-
+1838	contrast-text,quiet
+1839	max-line-length-65ch,tracking
+1840	no-card-in-card,card-only-when-grouping
+1841	no-side-stripe-border
+1842	no-heavy-drop-shadow
+1843	dark-mode-support
+1844	tracking
+1845	border-or-shadow-not-both,radius-consistent
+1846	-
+1847	NEW:no decorative stripe or grid background textures|Surface
+1848	NEW:no hover animation on images|Motion
+1849	-
+1850	-
+1851	-
+1852	-
+1853	-
+1854	-
+1855	-
+1856	-
+1857	-
+1858	-
+1859	-
+1860	-
+1861	-
+1862	-
+1863	-
+1864	-
+1865	-
+1866	-
+1867	-
+1868	-
+1869	-
+1870	-
+1871	-
+1872	-
+1873	-
+1874	-
+1875	-
+1876	-
+1877	-
+1878	-
+1879	-
+1880	-
+1881	-
+1882	-
+1883	-
+1884	-
+1885	-
+1886	-
+1887	-
+1888	-
+1889	-
+1890	-
+1891	-
+1892	-
+1893	-
+1894	-
+1895	-
+1896	-
+1897	-
+1898	-
+1899	-
+1900	-
+1901	-
+1902	-
+1903	-
+1904	-
+1905	-
+1906	-
+1907	-
+1908	-
+1909	-
+1910	-
+1911	-
+1912	-
+1913	-
+1914	-
+1915	-
+1916	-
+1917	-
+1918	-
+1919	-
+1920	-
+1921	-
+1922	-
+1923	-
+1924	progressive-disclosure
+1925	-
+1926	NEW:one reading path with related links gathered at end|Content & process
+1927	progressive-disclosure
+1928	-
+1929	NEW:keep relevant context visible across steps|Interaction & states
+1930	-
+1931	location-in-site
+1932	plain-language,unusual-words
+1933	-
+1934	NEW:co-locate information needed for a decision|Content & process
+1935	feedback
+1936	-
+1937	-
+1938	-
+1939	-
+1940	-
+1941	NEW:smart form defaults|Interaction & states
+1942	-
+1943	NEW:make options visible rather than memorized|Interaction & states
+1944	NEW:labels on icon-only navigation|Interaction & states
+1945	-
+1946	-
+1947	progressive-disclosure
+1948	remove-clutter
+1949	progressive-disclosure
+1950	color-roles
+1951	error-message-human,error-suggestion
+1952	NEW:preserve form data on error|Interaction & states
+1953	help-mechanism
+1954	-
+1955	-
+1956	-
+1957	-
+1958	-
+1959	-
+1960	NEW:labels on icon-only navigation|Interaction & states
+1961	-
+1962	no-hover-only
+1963	contrast-text
+1964	text-resize-200
+1965	keyboard-operable
+1966	contrast-text
+1967	keyboard-operable
+1968	NEW:bottom-of-screen thumb-reach actions|Interaction & states
+1969	autocomplete-attributes
+1970	touch-target-44
+1971	-
+1972	delight-moments
+1973	delight-moments
+1974	states-designed
+1975	delight-moments
+1976	delight-moments
+1977	delight-moments
+1978	states-designed
+1979	states-designed,empty-copy-guides
+1980	error-message-human
+1981	delight-moments
+1982	copy-specific
+1983	-
+1984	-
+1985	remove-clutter
+1986	primary
+1987	-
+1988	remove-clutter
+1989	-
+1990	-
+1991	-
+1992	remove-clutter
+1993	remove-clutter
+1994	palette-limit
+1995	font-family-count-max-2,weight-scale-limited
+1996	remove-clutter,flat
+1997	no-card-in-card,flat
+1998	flat,card-only-when-grouping
+1999	spacing-scale-4pt
+2000	stack
+2001	NEW:remove sidebars|Space & layout
+2002	NEW:full-width layout over complex multi-column|Space & layout
+2003	airy
+2004	NEW:reduce choices|Interaction & states
+2005	NEW:smart form defaults|Interaction & states
+2006	NEW:inline editing instead of modal flows|Interaction & states
+2007	NEW:remove unnecessary flow steps|Interaction & states
+2008	no-jargon,plain-language
+2009	concise-subtext
+2010	concise-subtext
+2011	remove-unused-css
+2012	NEW:flatten component trees|Content & process
+2013	design-tokens
+2014	NEW:limit component variants|Components
+2015	remove-clutter
+2016	-
+2017	-
+2018	NEW:preserve visual hierarchy when simplifying|Content & process
+2019	remove-clutter
+2020	-
+2021	-
+2022	-
+2023	-
+2024	-
+2025	-
+2026	-
+2027	-
+2028	-
+2029	-
+2030	-
+2031	-
+2032	-
+2033	NEW:inline SVG icons|Surface
+2034	hover-state,focus-visible-only,active-pressed-state
+2035	-
+2036	-
+2037	-
+2038	-
+2039	-
+2040	-
+2041	-
+2042	-
+2043	-
+2044	-
+2045	-
+2046	-
+2047	-
+2048	-
+2049	-
+2050	-
+2051	-
+2052	-
+2053	-
+2054	-
+2055	-
+2056	-
+2057	-
+2058	-
+2059	-
+2060	-
+2061	-
+2062	design-tokens
+2063	reuse-components
+2064	-
+2065	reuse-components
+2066	design-tokens
+2067	-
+2068	-
+2069	reuse-components
+2070	-
+2071	-
+2072	-
+2073	design-tokens
+2074	reuse-components
+2075	-
+2076	-
+2077	-
+2078	-
+2079	-
+2080	-
+2081	-
+2082	-
+2083	-
+2084	-
+2085	-
+2086	-
+2087	-
+2088	stress-test
+2089	stress-test
+2090	fluid-spacing-clamp
+2091	body-16
+2092	localize
+2093	localize
+2094	localize
+2095	text-spacing
+2096	error-message-human
+2097	virtualize-long-lists
+2098	pointer-cancel
+2099	color-not-only
+2100	-
+2101	text-spacing
+2102	stress-test
+2103	pointer-cancel
+2104	states-designed
+2105	match-patterns
+2106	match-patterns,consistent-navigation
+2107	NEW:preserve edge-swipe back gesture|Interaction & states
+2108	touch-target-44,touch-target-spacing
+2109	dynamic-type
+2110	legible-font-sizes,body-16
+2111	icon-consistency
+2112	reduce
+2113	real-devices
+2114	real-devices
+2115	real-devices
+2116	NEW:layout structure matches content and task|Space & layout
+2117	compact,airy
+2118	audit-first
+2119	group-proximity
+2120	spacing-tokens
+2121	group-proximity
+2122	spacing-scale-4pt
+2123	group-proximity
+2124	NEW:responsive behavior is structural reorder or collapse|Space & layout
+2125	container-queries
+2126	gap-over-margin
+2127	touch-target-spacing
+2128	no-heavy-drop-shadow
+2129	optical-alignment
+2130	NEW:repeat patterns for recognition|Space & layout
+2131	spacing
+2132	compact,airy
+2133	stress-test
+2134	screenshot-verify
+2135	-
+2136	-
+2137	preserve-brand
+2138	-
+2139	-
+2140	-
+2141	-
+2142	-
+2143	-
+2144	-
+2145	-
+2146	-
+2147	-
+2148	-
+2149	-
+2150	-
+2151	-
+2152	-
+2153	-
+2154	-
+2155	-
+2156	-
+2157	-
+2158	-
+2159	-
+2160	-
+2161	-
+2162	-
+2163	-
+2164	no-fake-stats
+2165	-
+2166	-
+2167	dark-mode-support
+2168	banned-fonts
+2169	serif
+2170	-
+2171	-
+2172	-
+2173	-
+2174	-
+2175	-
+2176	-
+2177	-
+2178	-
+2179	-
+2180	-
+2181	-
+2182	-
+2183	-
+2184	-
+2185	-
+2186	-
+2187	-
+2188	-
+2189	-
+2190	-
+2191	preserve-brand
+2192	responsive-breakpoints
+2194	NEW:first viewport demonstrates the product|Content & process
+2195	no-fake-stats
+2196	NEW:author real content instead of placeholder chrome|Content & process
+2197	NEW:use real verified imagery|Content & process
+2198	focal-motion
+2199	responsive-breakpoints
+2200	screenshot-verify
+2201	NEW:first-time visitor understands offer within seconds|Content & process
+2202	-
+2203	-
+2204	-
+2205	-
+2206	-
+2207	-
+2208	-
+2209	-
+2210	-
+2211	-
+2212	-
+2213	progressive-disclosure
+2214	NEW:onboarding gets users to value quickly|Content & process
+2215	NEW:real functionality in onboarding|Content & process
+2216	progressive-disclosure
+2217	NEW:don't block product with onboarding|Interaction & states
+2218	NEW:skippable onboarding|Interaction & states
+2219	microcopy-hints
+2220	plain-language
+2221	NEW:interactive onboarding|Interaction & states
+2222	delight-moments
+2223	states-designed
+2224	NEW:dismissable hints with don't show again|Interaction & states
+2225	progressive-disclosure
+2226	NEW:short tours of 3-7 steps|Interaction & states
+2227	NEW:provide sample data in onboarding|Content & process
+2228	NEW:help entry point in onboarding|Interaction & states
+2229	states-designed
+2230	NEW:track onboarding completion and dismissals|Interaction & states
+2231	NEW:don't block product with onboarding|Interaction & states
+2232	NEW:skippable onboarding|Interaction & states
+2233	NEW:track onboarding completion and dismissals|Interaction & states
+2234	-
+2235	match-patterns
+2236	match-patterns,remove-clutter
+2237	font-family-count-max-2
+2238	type-scale
+2239	max-line-length-65ch
+2240	accent
+2241	states-designed,hover-state,focus,active-pressed-state,disabled-state-explained
+2242	micro-interaction-100-200
+2243	no-entrance-every-render
+2244	perf
+2245	-
+2246	modern-image-formats
+2247	responsive-images
+2248	perf
+2249	remove-unused-js
+2250	code-splitting
+2251	css-containment
+2252	font-display-swap
+2253	font-subset
+2254	perf
+2255	css-containment
+2256	dom-size-small
+2257	css-containment
+2258	transform-only
+2259	transform-only
+2260	NEW:will-change only during animation|Performance
+2261	perf
+2262	perf
+2263	perf
+2264	long-tasks-split
+2265	perf
+2266	perf
+2267	perf
+2268	NEW:paginate instead of loading everything|Performance
+2269	perf
+2270	long-tasks-split
+2271	image-dimensions
+2272	layout-shift-zero
+2273	layout-shift-zero
+2274	NEW:will-change only during animation|Performance
+2275	-
+2276	-
+2277	-
+2278	screenshot-verify
+2279	screenshot-verify
+2280	-
+2281	inp-responsive
+2282	NEW:use @starting-style for entry animation|Motion
+2283	NEW:spring physics motion|Motion
+2284	NEW:scroll-driven motion only when meaningful|Motion
+2285	NEW:WebGL for effects CSS can't express|Motion
+2286	NEW:WebGL for effects CSS can't express|Motion
+2287	virtualize-long-lists
+2288	geolocation-on-gesture
+2289	NEW:degrade enhancements gracefully|Content & process
+2290	perf
+2291	-
+2292	NEW:degrade enhancements gracefully|Content & process
+2293	no-autoplay-audio
+2294	-
+2295	preserve-brand
+2296	preserve-brand
+2297	reuse-components
+2298	real-devices
+2299	-
+2300	-
+2301	match-patterns
+2302	primary
+2303	states-designed
+2304	align-to-grid,optical-alignment
+2305	type-scale,stress-test
+2306	responsive-breakpoints
+2307	semantic-color-tokens
+2308	icon-consistency
+2309	aspect-ratio-reserve,responsive-images,alt-text
+2310	focal-motion,perf
+2311	consistent-terminology
+2312	remove-unused-css
+2313	reuse-components
+2314	design-tokens
+2315	-
+2316	-
+2317	-
+2318	-
+2319	-
+2320	quiet,mute-color
+2321	remove-clutter,mute-color,flat
+2322	preserve-brand
+2323	-
+2324	quiet
+2325	-
+2326	mute-color
+2327	mute-color
+2328	palette-limit
+2329	neutral-scale,accent
+2330	NEW:high contrast only where it matters|Color
+2331	tinted-neutrals
+2332	quiet
+2333	weight-scale-limited
+2334	NEW:hierarchy through weight, size and space rather than color|Type
+2335	airy
+2336	border-hairline,remove-clutter
+2337	remove-clutter,gradient
+2338	soft,crisp
+2339	flat
+2340	no-neon-glow,no-heavy-drop-shadow
+2341	NEW:shorter animation travel distances|Motion
+2342	remove-clutter
+2343	press-scale-feedback
+2344	ease-out-entrances,bouncy
+2345	remove-clutter
+2346	type-scale
+2347	align-to-grid
+2348	spacing
+2349	type
+2350	mute-color
+2351	type
+2352	-
+2353	-
+2354	-
+2355	-
+2356	-
+2357	-
+2358	-
+2359	-
+2360	-
+2361	-
+2362	-
+2363	ask-first
+2364	-
+2365	ask-first
+2366	ask-first
+2367	ask-first
+2368	-
+2369	ask-first
+2370	states-designed
+2371	ask-first
+2372	-
+2373	ask-first
+2374	-
+2375	-
+2376	preserve-brand
+2377	NEW:responsive display type for marketing|Type
+2378	-
+2379	font-fallback-metrics,font-display-swap
+2380	type-scale,design-tokens
+2381	body-16
+2382	max-line-length-65ch,line-height-scale
+2383	type-scale
+2384	tabular
+2385	font-subset,font-loading-no-block
+2386	fluid-spacing-clamp
+2387	paragraph
+2388	font-family-count-max-2
+2389	-
+2390	-
+2391	-
+2392	-
+2393	-
+2394	-
+2395	-
+2396	-
+2397	-
+2398	-
+2399	-
+2400	-
+2401	-
+2402	-
+2403	-
+2404	-
+2405	-
+2406	no-text-in-images
+2407	-
+2408	-
+2409	-
+2410	-
+2411	-
+2412	-
+2413	-
+2414	-
+2415	orientation-support
+2416	-
+2417	-
+2418	-
+2419	-
+2420	-
+2421	-
+2422	-
+2423	-
+2424	-
+2425	-
+2426	-
+2427	-
+2428	-
+2429	-
+2430	-
+2431	-
+2432	-
+2433	-
+2434	-
+2435	-
+2436	-
+2437	-
+2438	-
+2439	-
+2440	-
+2441	-
+2442	-
+2443	-
+2444	-
+2445	-
+2446	-
+2447	-
+2448	-
+2449	-
+2450	-
+2451	-
+2452	-
+2453	-
+2454	-
+2455	-
+2456	-
+2457	-
+2458	-
+2459	-
+2460	-
+2461	-
+2462	-
+2463	-
+2464	-
+2465	-
+2466	-
+2467	-
+2468	-
+2469	-
+2470	-
+2471	-
+2472	-
+2473	-
+2474	-
+2475	-
+2476	-
+2477	-
+2478	-
+2479	-
+2480	no-side-stripe-border
+2481	no-side-stripe-border
+2482	type-scale,type
+2483	gradient
+2484	no-card-in-card
+2485	spacing
+2486	bouncy,ease-out-entrances
+2487	-
+2488	NEW:decorative raster must be visible not buried under wash|Surface
+2489	NEW:decorative raster must be visible not buried under wash|Surface
+2490	no-neon-glow
+2491	no-neon-glow
+2492	NEW:no italic emphasis|Type
+2493	NEW:sparing eyebrow labels|Type
+2494	NEW:no tiny numbered section labels|Type
+2495	no-ai-cliche-copy
+2496	no-ai-cliche-copy
+2497	NEW:cap hero headline size|Type
+2498	NEW:cap hero headline size|Type
+2499	tracking
+2500	no-lorem-ipsum,alt-text
+2501	NEW:content visible by default not gated by script|Content & process
+2502	NEW:content visible by default not gated by script|Content & process
+2503	consistent-page-margins
+2504	NEW:text never overlapped by decorative layers|Space & layout
+2505	NEW:text never overlapped by decorative layers|Space & layout
+2506	quiet,contrast-text
+2507	contrast-text
+2508	transform-only
+2509	max-line-length-65ch
+2510	NEW:inner padding in bordered containers|Space & layout
+2511	consistent-page-margins
+2512	body-line-height-1-5
+2513	heading-order
+2514	headergap
+2515	align,hyphenation
+2516	body-16,legible-font-sizes
+2517	legible-font-sizes
+2518	legible-font-sizes
+2519	legible-font-sizes
+2520	-
+2521	NEW:loosen tracking on small caps labels|Type
+2522	no-horizontal-scroll
+2523	NEW:no decorative stripe or grid background textures|Surface
+2524	NEW:no hover animation on images|Motion
+2526	aria-valid-attrs
+2528	button-name,link-name
+2529	aria-valid-roles
+2530	dialog-role
+2532	aria-widget-names
+2533	aria-widget-names
+2534	aria-widget-names
+2535	aria-required-parts
+2536	aria-required-parts
+2537	aria-required-parts
+2538	aria-valid-roles
+2539	aria-text-role
+2540	aria-widget-names
+2541	aria-widget-names
+2542	aria-widget-names
+2543	aria-valid-attrs
+2545	autocomplete-off-misuse
+2547	skip-link,landmarks
+2548	contrast-text
+2549	list-markup
+2550	list-markup
+2553	headings-describe
+2557	lang-attribute
+2558	lang-attribute
+2559	html-xml-lang-mismatch
+2560	identical-links-purpose
+2562	alt-text
+2565	label-in-name
+2567	landmarks
+2572	name-role-value
+2573	name-role-value
+2574	no-keyboard-trap
+2575	keyboard-operable
+2576	name-role-value
+2577	focus-order-logical
+2578	focus-move-on-route
+2579	aria-hidden-not-focusable
+2580	landmarks
+2581	reading-order
+2583	zoom-not-disabled
+2584	object-embed-alt
+2585	aria-valid-roles
+2587	skip-link
+2588	svg-accessible-name
+2590	table-caption
+2591	table-caption
+2592	touch-target-spacing,target-min-24
+2593	table-headers
+2596	lang-of-parts
+2598	parsing-valid-html
+2599	-
+2600	-
+2601	autocomplete-attributes
+2602	-
+2609	csp-headers
+2612	-
+2616	-
+2617	-
+2619	paste-not-blocked
+2621	-
+2622	https-only
+2624	responsive-images
+2626	layout-shift-zero
+2628	-
+2630	-
+2631	-
+2632	-
+2633	-
+2635	-
+2636	-
+2637	-
+2638	https-only
+2640	-
+2641	-
+2642	-
+2646	-
+2649	-
+2653	-
+2654	-
+2656	-
+2657	-
+2658	-
+2659	-
+2660	-
+2661	feedback
+2662	feedback
+2663	no-jargon,plain-language
+2664	unusual-words
+2665	plain-language
+2666	NEW:clearly labeled exits|Interaction & states
+2667	consistent-terminology
+2668	NEW:smart form defaults|Interaction & states
+2669	redundant-entry
+2670	remove-clutter
+2671	primary
+2672	remove-clutter
+2673	remove-clutter
+2674	invalid,error-identified
+2675	error-message-human
+2676	error-suggestion
+2677	NEW:searchable help documentation|Content & process
+2678	invalid
+2679	invalid,color-not-only
+2680	undo-over-confirm
+2681	error-identified
+2682	NEW:no tooltips for error messages|Interaction & states
+2683	error-message-human
+2684	NEW:restrained success indicators in forms|Interaction & states
+2685	error-message-human,error-suggestion
+2686	invalid
+2687	validate-late
+2688	clear-error-on-fix,error-suggestion
+2689	invalid
+2690	invalid,color-not-only
+2691	color-not-only
+2692	validate-late
+2693	error-suggestion
+2694	plain-language,error-message-human
+2695	no-jargon,error-message-human
+2696	error-message-human
+2697	error-message-human
+2698	error-message-human
+2699	error-message-human
+2700	error-suggestion
+2701	error-suggestion
+2702	NEW:link error message to explanatory page|Content & process
+2703	-
+2704	remove-clutter,labels
+2705	contrast-text,keyboard-operable
+2706	contrast-text
+2707	type-scale
+2708	weight-scale-limited
+2709	body-line-height-1-5
+2710	spacing-scale-4pt
+2711	spacing-scale-4pt
+2712	radius-scale
+2713	airy
+2714	mobile-first
+2715	motion
+2716	feedback
+2717	motion-duration
+2718	motion
+2719	focal-motion
+2720	keyboard-operable,focus
+2721	NEW:labeled moderation action buttons|Components
+2722	NEW:color-coded status badges|Components
+2723	align,tabular
+2724	no-jargon,microcopy-hints
+2725	input-type-correct
+2726	NEW:sensible defaults for settings|Interaction & states
+2727	design-tokens
+2728	design-tokens
+2729	-
+2730	perf
+2731	responsive-breakpoints
+2732	-
+2733	-
+2734	screenshot-verify
+2735	screenshot-verify
+2736	screenshot-verify,touch-target-44
+2737	type
+2738	contrast-text
+2739	match-patterns
+2740	-
+2741	-
+2742	-
+2743	-
+2744	-
+2745	-
+2746	screenshot-verify
+2747	-
+2748	-
+2749	NEW:expand control for rich cards|Components
+2750	NEW:show more control for lists|Components
+2751	-
+2752	primary
+2753	NEW:inline editable text in cards|Components
+2754	-
+2755	primary
+2756	NEW:no deep navigation or tabs inside cards|Components
+2757	NEW:no nested scrolling in cards|Components
+2758	NEW:carousel items include image|Components
+2759	NEW:carousel items include title|Components
+2760	concise-subtext
+2761	badge
+2762	primary
+2763	NEW:3-8 items per carousel|Components
+2764	concise-subtext
+2765	NEW:consistent hierarchy across cards|Surface
+2766	-
+2767	-
+2768	remove-clutter
+2769	color-roles
+2770	preserve-brand
+2771	gradient
+2772	accent
+2773	accent
+2774	banned-fonts
+2775	NEW:emphasis styling only in content areas|Type
+2776	weight-scale-limited
+2777	font-family-count-max-2
+2778	spacing-tokens
+2779	spacing
+2780	radius-consistent
+2781	icon-consistency
+2782	-
+2783	aspect-ratio-reserve
+2784	contrast-text
+2785	alt-text
+2786	-
+2787	-
+2788	-
+2789	-
+2790	-
+2791	-
+2792	-
+2793	-
+2794	no-purple-blue-gradient
+2795	design-tokens
+2796	spacing-scale-4pt,group-proximity
+2797	-
+2798	oklch-color-space,accent
+2799	font-family-count-max-2,serif
+2800	-
+2801	banned-fonts,no-purple-blue-gradient
+2802	focal-motion
+2803	states-designed,primary
+2804	-
+2805	-
+2806	contrast-text
+2807	color-not-only
+2808	NEW:accessible data table alongside color-coded chart|Access
+2809	focus,focus-ring-offset
+2810	focus-not-obscured,focus-appearance
+2811	no-outline-none
+2812	keyboard-operable,focus-order-logical
+2813	tabindex-no-positive
+2814	native-over-aria,name-role-value
+2815	target-min-24
+2816	touch-target-44
+2817	dragging-alternative
+2818	error-identified,color-not-only,error-suggestion
+2819	input-type-correct,autocomplete-attributes
+2820	accessible-auth,redundant-entry
+2821	native-over-aria
+2822	button-name,svg-accessible-name
+2823	dialog-role,tabs-pattern
+2824	reduce
+2825	no-flashing-3hz
+2826	no-auto-play-motion
+2827	-
+2828	-
+2829	keyboard-tested,screen-reader-tested
+2830	placeholder,labels
+2831	button-name
+2832	contrast-text
+2833	target-min-24
+2834	dragging-alternative
+2835	focus-trap-modal,focus-return
+2836	-
+2837	divider,max-line-length-65ch
+2838	-
+2839	-
+2840	-
+2841	-
+2842	-
+2843	-
+2844	-
+2845	-
+2846	-
+2847	-
+2848	-
+2849	-
+2850	-
+2851	-
+2852	-
+2853	-
+2854	-
+2855	-
+2856	-
+2857	-
+2858	touch-target-44,progressive-disclosure
+2859	-
+2860	-
+2861	-
+2862	-
+2863	-
+2864	-
+2865	-
+2866	-
+2867	-
+2868	container-queries
+2869	-
+2870	-
+2871	-
+2872	-
+2873	-
+2874	-
+2875	-
+2876	-
+2877	-
+2878	-
+2879	no-purple-blue-gradient
+2880	-
+2881	oklch-color-space
+2882	-
+2883	-
+2884	palette-limit
+2885	mute-color
+2886	palette-limit,status-color-set
+2887	status-color-set,color-not-only
+2888	oklch-color-space
+2889	no-pure-black
+2890	quiet
+2891	-
+2892	color-not-only
+2893	-
+2894	contrast-text
+2895	status-color-set,color-not-only
+2896	states-designed
+2897	NEW:no font weight change between states|Interaction & states
+2898	focus-ring-offset
+2899	primary
+2900	primary
+2901	hover-state,active-pressed-state,focus,disabled-state-explained
+2902	loading-state-button,prevent-double-submit
+2903	touch-target-44
+2904	field-labels,placeholder
+2905	NEW:wrap fields in a real form so Enter submits|Interaction & states
+2906	input-type-correct
+2907	body-16
+2908	NEW:autofocus first field on desktop only|Interaction & states
+2909	validate-late,invalid
+2910	align,tabular
+2911	tabular
+2912	divider,border-hairline
+2913	NEW:sticky table header and pinned first column|Components
+2914	table-density-toggle,compact
+2915	table-sort-filter,table-row-actions
+2916	nav-active-state
+2917	NEW:submenu prediction cone|Interaction & states
+2918	NEW:lightest overlay that fits|Components
+2919	NEW:drawers resist accidental dismissal|Components
+2920	NEW:no stacked modals|Components
+2921	toast-time-and-persist
+2922	optimistic-update
+2923	NEW:server-side auth redirects avoid flash of wrong screen|Performance
+2924	empty-copy-guides,states-designed
+2925	states-designed,layout-shift-zero
+2926	error-message-human,states-designed
+2927	disabled-state-explained
+2928	states-designed
+2929	primary
+2930	NEW:no stacked modals|Components
+2931	NEW:no font weight change between states|Interaction & states
+2932	semantic-color-tokens,dark-mode-support
+2933	semantic-color-tokens
+2934	dark-mode-support
+2935	shadow
+2936	no-pure-black
+2937	NEW:icons use currentColor|Surface
+2938	NEW:chart series desaturated on dark with luminance gap|Color
+2939	NEW:suppress transitions during theme switch|Motion
+2940	shadow
+2941	design-tokens
+2942	preserve-brand,read-design-context
+2943	oklch-color-space
+2944	copy-specific,no-ai-cliche-copy
+2945	oklch-color-space
+2946	NEW:Order emphasis by importance|Type
+2947	quiet
+2948	NEW:Design hierarchy in grayscale first|Color
+2949	remove-clutter
+2950	surface,border-hairline
+2951	NEW:Make differences decisive, not timid|Type
+2952	left-edge-alignment,align-to-grid
+2953	divider,border-hairline
+2954	NEW:Label chart series directly|Components
+2955	hover-state,cursor-pointer
+2956	target,primary
+2957	progressive-disclosure,primary
+2958	scannable-content,progressive-disclosure
+2959	audit-first
+2960	ask-first
+2961	ask-first
+2962	ask-first
+2963	ask-first
+2964	NEW:State one-line proposition first|Content & process
+2965	ask-first
+2966	ask-first,preserve-brand
+2967	design-tokens
+2968	NEW:Tie expressiveness to type, color, motion|Content & process
+2969	ask-first
+2970	no-ai-cliche-copy
+2971	NEW:Borrow references into tokens, not layout|Content & process
+2972	NEW:Force divergence by mechanism not prompting|Agent workflow
+2973	NEW:Force divergence by mechanism not prompting|Agent workflow
+2974	NEW:Force divergence by mechanism not prompting|Agent workflow
+2975	NEW:Force divergence by mechanism not prompting|Agent workflow
+2976	NEW:Force divergence by mechanism not prompting|Agent workflow
+2977	NEW:Force divergence by mechanism not prompting|Agent workflow
+2978	NEW:Anchor direction in a concrete visual world|Content & process
+2979	NEW:Test borrowed forms for clarity|Content & process
+2980	NEW:Skip anti-gimmick guards|Agent workflow
+2981	NEW:Brief with commit language not hedges|Agent workflow
+2982	NEW:Check layout skeleton, not only surface|Agent workflow
+2983	NEW:Check layout skeleton, not only surface|Agent workflow
+2984	screenshot-verify
+2985	NEW:Widen references beyond product category|Agent workflow
+2986	icon-consistency
+2987	icon-consistency
+2988	-
+2989	icon-consistency
+2990	icon-consistency
+2991	icon-consistency
+2992	icon-consistency
+2993	icon-consistency
+2994	icon-consistency,radius-consistent
+2995	optical-alignment,icon-consistency
+2996	icon-consistency
+2997	icon-consistency
+2998	NEW:Redraw icons per size band|Surface
+2999	icon-consistency
+3000	icon-consistency
+3001	icon-consistency
+3002	icon-consistency,radius-consistent
+3003	NEW:Draw only brand-critical icons custom|Surface
+3004	button-name,aria-semantics
+3005	alt-decorative-empty
+3006	color-not-only
+3007	icon-consistency
+3008	icon-consistency
+3009	icon-consistency,radius-consistent
+3010	button-name
+3011	icon-consistency
+3012	NEW:Borrow references into tokens, not layout|Content & process
+3013	NEW:Define imagery direction early|Content & process
+3014	NEW:Keep photography consistent across shoots|Surface
+3015	NEW:Regrade stock photos to brand palette|Surface
+3016	contrast-text
+3017	NEW:Use background grid or dots sparingly|Surface
+3018	NEW:State what to avoid in the direction|Content & process
+3019	NEW:Add grain or texture for depth|Surface
+3020	dark
+3021	-
+3022	NEW:Avoid default hero plus three cards layout|Space & layout
+3023	NEW:Borrow references into tokens, not layout|Content & process
+3024	spacing-scale-4pt
+3025	airy,section-padding-generous
+3026	fluid-spacing-clamp
+3027	text-resize-200
+3028	NEW:Shrink large type faster on mobile|Type
+3029	max-content-width,consistent-page-margins
+3030	NEW:Use bento grid for varied content|Space & layout
+3031	NEW:Use bento grid for varied content|Space & layout
+3032	NEW:Use editorial layouts with rules and pull quotes|Space & layout
+3033	NEW:Avoid default hero plus three cards layout|Space & layout
+3034	section-padding-generous,airy
+3035	NEW:Front-load headings, left-align body (F-pattern)|Type
+3036	NEW:Design dense tools desktop-first|Space & layout
+3037	responsive-breakpoints,fluid-spacing-clamp
+3038	reflow
+3039	NEW:Avoid default hero plus three cards layout|Space & layout
+3040	NEW:Avoid default hero plus three cards layout|Space & layout
+3041	NEW:Avoid default hero plus three cards layout|Space & layout
+3042	reflow
+3043	-
+3044	NEW:Animate only meaningful low-frequency transitions|Motion
+3045	motion-duration
+3046	micro-interaction-100-200
+3047	duration-tokens,micro-interaction-100-200
+3048	easing-tokens,exit-faster-than-enter
+3049	no-linear-ui-motion,easing-tokens
+3050	NEW:Use springs for direct manipulation|Motion
+3051	NEW:Never animate from scale(0)|Motion
+3052	NEW:Blur to mask crossfades|Motion
+3053	transform-only
+3054	NEW:Use transitions for reversible state|Motion
+3055	NEW:Keep will-change rare|Performance
+3056	focal-motion,stagger-limited
+3057	reduce
+3058	reduce
+3059	transform-only
+3060	NEW:Animate status only when data changes|Motion
+3061	micro-interaction-100-200
+3062	ease-out-entrances,easing-tokens
+3063	NEW:Prefer committed choices over probable defaults|Content & process
+3064	banned-fonts
+3065	NEW:Keep headlines short at display size|Type
+3066	tracking
+3067	NEW:Avoid default hero plus three cards layout|Space & layout
+3068	screenshot-verify
+3069	NEW:Match gutters on scroller edges|Space & layout
+3070	radius-consistent,radius-scale
+3071	radius-consistent
+3072	motion-duration,ease-out-entrances
+3073	transform-only
+3074	icon-consistency
+3075	icon-consistency
+3076	button-name
+3077	keyboard-operable,no-drag-only
+3078	color-not-only
+3079	body-16,body-line-height-1-5
+3080	max-line-length-65ch,align
+3081	shadow-neutral-alpha,shadow-scale
+3082	contrast-text,heading-order
+3083	NEW:Keep content visible without scripts|Motion
+3084	NEW:Pad inside every container at least 8px|Space & layout
+3085	NEW:Choose directions outside indigo default|Color
+3086	NEW:Use hard offset shadow, no blur|Surface
+3087	accent-one-hue,neutral-scale
+3088	-
+3089	easing-tokens,transform-only
+3090	-
+3091	NEW:Test font pairs in real mockups|Type
+3092	NEW:Match type class to brand adjectives|Type
+3093	NEW:Limit display faces to headlines|Type
+3094	type-scale,body-16
+3095	type-scale
+3096	NEW:Pair fonts from different classes|Type
+3097	font-family-count-max-2
+3098	serif,weight-scale-limited
+3099	font-family-count-max-2
+3100	max-line-length-65ch,align
+3101	font-display-swap
+3102	font-display-swap
+3103	contrast-text,contrast-large-text-3
+3104	text-resize-200
+3105	text-spacing
+3106	NEW:Use dyslexia-friendly typefaces|Access
+3107	NEW:Choose faces that hold across media|Type
+3108	banned-fonts
+3109	banned-fonts
+3110	NEW:Use dyslexia-friendly typefaces|Access
+3111	variable-font
+3112	reuse-components
+3113	reuse-components
+3114	semantic-color-tokens
+3115	design-tokens
+3116	gap-over-margin
+3117	-
+3118	-
+3119	dark-mode-support,semantic-color-tokens
+3120	-
+3121	form-label-programmatic,reuse-components
+3122	-
+3123	-
+3124	reuse-components
+3125	list-markup,semantic-structure
+3126	-
+3127	dialog-role,aria-semantics
+3128	reuse-components
+3129	-
+3130	states-designed
+3131	reuse-components
+3132	reuse-components
+3133	states-designed,reuse-components
+3134	-
+3135	reuse-components
+3136	states-designed,reuse-components
+3137	reuse-components
+3138	-
+3139	reuse-components
+3140	reuse-components
+3141	reuse-components
+3142	-
+3143	-
+3144	-
+3145	-
+3146	-
+3147	-
+3148	ask-first
+3149	ask-first
+3150	-
+3151	dialog-role,aria-semantics
+3152	visually-hidden-utility,form-label-programmatic
+3153	-
+3154	-
+3155	reuse-components
+3156	list-markup,semantic-structure
+3157	semantic-color-tokens,status-color-set
+3158	design-tokens,semantic-color-tokens
+3159	gap-over-margin
+3160	semantic-color-tokens,dark-mode-support
+3161	-
+3162	NEW:Let overlay components manage their own stacking|Components
+3163	reuse-components
+3164	reuse-components
+3165	-
+3166	-
+3167	-
+3168	-
+3169	-
+3170	-
+3171	-
+3172	-
+3173	-
+3174	-
+3175	-
+3176	reuse-components
+3177	reuse-components
+3178	reuse-components
+3179	-
+3180	reuse-components
+3181	-
+3182	reuse-components
+3183	reuse-components,states-designed
+3184	reuse-components
+3185	-
+3186	reuse-components
+3187	NEW:Add jump-to-latest control in chat|Components
+3188	-
+3189	design-tokens
+3190	-
+3191	-
+3192	-
+3193	-
+3194	-
+3195	-
+3196	-
+3197	-
+3198	-
+3199	-
+3200	NEW:Avoid generic logos and random mockups|Content & process
+3201	NEW:Avoid generic logos and random mockups|Content & process
+3202	NEW:Avoid generic logos and random mockups|Content & process
+3203	-
+3204	NEW:Use a clean presentation grid|Space & layout
+3205	NEW:Make every panel feel connected|Content & process
+3206	NEW:Borrow references into tokens, not layout|Content & process
+3207	NEW:State what to avoid in the direction|Content & process
+3208	NEW:Base visual system on meaning|Content & process
+3209	NEW:Base visual system on meaning|Content & process
+3210	NEW:Refine logo through research and reduction|Content & process
+3211	NEW:Refine logo through research and reduction|Content & process
+3212	NEW:Refine logo through research and reduction|Content & process
+3213	NEW:Use negative space in logo marks|Surface
+3214	NEW:Use negative space in logo marks|Surface
+3215	NEW:Use negative space in logo marks|Surface
+3216	NEW:Use negative space in logo marks|Surface
+3217	NEW:Use negative space in logo marks|Surface
+3218	NEW:Use negative space in logo marks|Surface
+3219	NEW:Give boards rhythm, not equal loudness|Content & process
+3220	NEW:Give boards rhythm, not equal loudness|Content & process
+3221	NEW:Give boards rhythm, not equal loudness|Content & process
+3222	-
+3223	-
+3224	-
+3225	NEW:Add detail that rewards close looking|Surface
+3226	NEW:Keep text large and sparse|Type
+3227	specific-headlines
+3228	NEW:Match imagery to palette and metaphor|Surface
+3229	NEW:Keep mockups minimal and believable|Content & process
+3230	accent
+3231	remove-clutter
+3232	NEW:Borrow references into tokens, not layout|Content & process
+3233	-
+3234	-
+3235	NEW:Commit to one visual mode per project|Content & process
+3236	NEW:Use monolithic heavy sans with visible grid lines|Type
+3237	fluid-spacing-clamp,tracking
+3238	tracking
+3239	NEW:Small monospaced labels with wide tracking|Type
+3240	tracking
+3241	NEW:Degrade imagery with halftone or dithering|Surface
+3242	NEW:Commit to one substrate palette|Color
+3243	accent-one-hue,accent
+3244	no-pure-black
+3245	accent
+3246	NEW:Show visible compartmentalization with borders|Surface
+3247	align-to-grid
+3248	divider,border-hairline
+3249	crisp
+3250	NEW:Add CRT scanline texture|Surface
+3251	NEW:Draw grid lines with 1px gap over contrasting background|Surface
+3252	fluid-spacing-clamp
+3253	NEW:Break default layout biases|Agent workflow
+3254	NEW:Add scroll-driven motion with GSAP|Motion
+3255	no-emoji-in-copy
+3256	NEW:Randomize layout choices from a seed|Agent workflow
+3257	NEW:Randomize layout choices from a seed|Agent workflow
+3258	banned-fonts
+3259	NEW:Randomize layout choices from a seed|Agent workflow
+3260	NEW:Begin page with distinctive navigation bar|Components
+3261	NEW:Structure page with AIDA|Content & process
+3262	section-padding-generous
+3263	NEW:Keep hero headline to 2-3 lines|Type
+3264	NEW:Give hero headline a wide container|Type
+3265	NEW:Keep hero headline to 2-3 lines|Type
+3266	contrast-text
+3267	badge,remove-clutter
+3268	NEW:Fill bento grids with dense flow|Space & layout
+3269	NEW:Fill bento grids with dense flow|Space & layout
+3270	NEW:Use few intentional cards|Surface
+3271	NEW:Add scroll-driven motion with GSAP|Motion
+3272	motion,hover-state
+3273	NEW:Scale and fade images on scroll|Motion
+3274	NEW:Embed pill images inside headings|Type
+3275	NEW:Ban meta-labels like SECTION 01|Content & process
+3276	NEW:Add ambient mesh or grain backgrounds|Surface
+3277	no-horizontal-scroll
+3278	NEW:Write design plan before code|Agent workflow
+3279	NEW:Write design plan before code|Agent workflow
+3280	NEW:Write design plan before code|Agent workflow
+3281	NEW:Generate reference image before coding|Agent workflow
+3282	NEW:Generate reference image before coding|Agent workflow
+3283	NEW:Generate reference image before coding|Agent workflow
+3284	NEW:Generate reference image before coding|Agent workflow
+3285	NEW:Generate reference image before coding|Agent workflow
+3286	NEW:Generate reference image before coding|Agent workflow
+3287	-
+3288	-
+3289	-
+3290	remove-clutter,airy
+3291	NEW:Match art-direction variance to brief adjectives|Content & process
+3292	NEW:Match art-direction variance to brief adjectives|Content & process
+3293	NEW:Generate extraction-oriented images per section|Agent workflow
+3294	NEW:Generate extraction-oriented images per section|Agent workflow
+3295	NEW:Generate reference image before coding|Agent workflow
+3296	NEW:Generate reference image before coding|Agent workflow
+3297	NEW:Generate reference image before coding|Agent workflow
+3298	NEW:Generate extraction-oriented images per section|Agent workflow
+3299	NEW:Generate extraction-oriented images per section|Agent workflow
+3300	NEW:Generate extraction-oriented images per section|Agent workflow
+3301	NEW:Generate extraction-oriented images per section|Agent workflow
+3302	NEW:Generate extraction-oriented images per section|Agent workflow
+3303	NEW:Generate extraction-oriented images per section|Agent workflow
+3304	NEW:Keep design language consistent across derived images|Agent workflow
+3305	NEW:Keep design language consistent across derived images|Agent workflow
+3306	NEW:Keep design language consistent across derived images|Agent workflow
+3307	NEW:Keep design language consistent across derived images|Agent workflow
+3308	NEW:Keep design language consistent across derived images|Agent workflow
+3309	NEW:Keep design language consistent across derived images|Agent workflow
+3310	NEW:Keep design language consistent across derived images|Agent workflow
+3311	NEW:Generate extraction-oriented images per section|Agent workflow
+3312	NEW:Generate extraction-oriented images per section|Agent workflow
+3313	NEW:Generate extraction-oriented images per section|Agent workflow
+3314	NEW:Generate extraction-oriented images per section|Agent workflow
+3315	NEW:Generate extraction-oriented images per section|Agent workflow
+3316	-
+3317	NEW:Generate extraction-oriented images per section|Agent workflow
+3318	NEW:Analyze reference image deeply before implementing|Agent workflow
+3319	NEW:Analyze reference image deeply before implementing|Agent workflow
+3320	NEW:Analyze reference image deeply before implementing|Agent workflow
+3321	NEW:Analyze reference image deeply before implementing|Agent workflow
+3322	NEW:Analyze reference image deeply before implementing|Agent workflow
+3323	NEW:Preserve reference design fidelity in code|Agent workflow
+3324	NEW:Generate reference image before coding|Agent workflow
+3325	NEW:Generate reference image before coding|Agent workflow
+3326	-
+3327	NEW:Choose a strong combination and commit|Content & process
+3328	NEW:Choose a strong combination and commit|Content & process
+3329	-
+3330	NEW:Analyze reference image deeply before implementing|Agent workflow
+3331	NEW:Analyze reference image deeply before implementing|Agent workflow
+3332	-
+3333	NEW:Generate reference image before coding|Agent workflow
+3334	NEW:Make hero feel like a strong opening scene|Space & layout
+3335	NEW:Make hero feel like a strong opening scene|Space & layout
+3336	NEW:Keep the hero clean with one focal point|Space & layout
+3337	NEW:Keep the hero clean with one focal point|Space & layout
+3338	specific-headlines
+3339	NEW:Keep hero headline to 2-3 lines|Type
+3340	NEW:Keep hero headline to 2-3 lines|Type
+3341	NEW:Keep hero headline to 2-3 lines|Type
+3342	badge,remove-clutter
+3343	remove-clutter
+3344	NEW:Keep the hero clean with one focal point|Space & layout
+3345	NEW:Keep the hero clean with one focal point|Space & layout
+3346	NEW:Keep the hero clean with one focal point|Space & layout
+3347	NEW:Keep the hero clean with one focal point|Space & layout
+3348	NEW:Keep the hero clean with one focal point|Space & layout
+3349	NEW:Keep the hero clean with one focal point|Space & layout
+3350	NEW:Keep the hero clean with one focal point|Space & layout
+3351	remove-clutter,no-fake-stats
+3352	NEW:Keep hero headline to 2-3 lines|Type
+3353	NEW:Keep the hero clean with one focal point|Space & layout
+3354	NEW:Keep the hero clean with one focal point|Space & layout
+3355	NEW:Keep the hero clean with one focal point|Space & layout
+3356	no-card-in-card,remove-clutter
+3357	NEW:Keep the hero clean with one focal point|Space & layout
+3358	NEW:Keep the hero clean with one focal point|Space & layout
+3359	NEW:Keep the hero clean with one focal point|Space & layout
+3360	-
+3361	no-card-in-card,card-only-when-grouping
+3362	card-only-when-grouping
+3363	remove-clutter,spacing
+3364	no-card-in-card,card-only-when-grouping
+3365	remove-clutter
+3366	remove-clutter
+3367	-
+3368	remove-clutter
+3369	type,remove-clutter
+3370	-
+3371	NEW:Plan the in-page image system|Content & process
+3372	NEW:Plan the in-page image system|Content & process
+3373	NEW:Plan the in-page image system|Content & process
+3374	NEW:Plan the in-page image system|Content & process
+3375	NEW:Plan the in-page image system|Content & process
+3376	NEW:Plan the in-page image system|Content & process
+3377	NEW:Frame images in controlled frames|Surface
+3378	NEW:Analyze reference image deeply before implementing|Agent workflow
+3379	NEW:Analyze reference image deeply before implementing|Agent workflow
+3380	NEW:Analyze reference image deeply before implementing|Agent workflow
+3381	NEW:Analyze reference image deeply before implementing|Agent workflow
+3382	NEW:Analyze reference image deeply before implementing|Agent workflow
+3383	NEW:Analyze reference image deeply before implementing|Agent workflow
+3384	NEW:Preserve reference design fidelity in code|Agent workflow
+3385	NEW:Analyze reference image deeply before implementing|Agent workflow
+3386	preserve-brand
+3387	preserve-brand
+3388	NEW:Preserve reference design fidelity in code|Agent workflow
+3389	NEW:Preserve reference design fidelity in code|Agent workflow
+3390	NEW:Preserve reference design fidelity in code|Agent workflow
+3391	NEW:Preserve reference design fidelity in code|Agent workflow
+3392	NEW:Preserve reference design fidelity in code|Agent workflow
+3393	NEW:Preserve reference design fidelity in code|Agent workflow
+3394	NEW:Preserve reference design fidelity in code|Agent workflow
+3395	NEW:Preserve reference design fidelity in code|Agent workflow
+3396	NEW:Preserve reference design fidelity in code|Agent workflow
+3397	NEW:Preserve reference design fidelity in code|Agent workflow
+3398	-
+3399	NEW:Preserve reference design fidelity in code|Agent workflow
+3400	-
+3401	-
+3402	NEW:Generate extraction-oriented images per section|Agent workflow
+3403	airy,remove-clutter
+3404	spacing
+3405	spacing
+3406	spacing
+3407	airy,spacing
+3408	remove-clutter
+3409	-
+3410	NEW:Generate extraction-oriented images per section|Agent workflow
+3411	NEW:Keep design language consistent across derived images|Agent workflow
+3412	NEW:Generate extraction-oriented images per section|Agent workflow
+3413	NEW:Generate extraction-oriented images per section|Agent workflow
+3414	NEW:Generate extraction-oriented images per section|Agent workflow
+3415	badge,remove-clutter
+3416	no-card-in-card,card-only-when-grouping
+3417	NEW:Keep the hero clean with one focal point|Space & layout
+3418	airy,spacing
+3419	NEW:Analyze reference image deeply before implementing|Agent workflow
+3420	NEW:Avoid unnecessary follow-up questions|Agent workflow
+3421	NEW:Generate reference image before coding|Agent workflow
+3422	NEW:Generate extraction-oriented images per section|Agent workflow
+3423	NEW:Generate extraction-oriented images per section|Agent workflow
+3424	-
+3425	NEW:Generate extraction-oriented images per section|Agent workflow
+3426	NEW:Keep the hero clean with one focal point|Space & layout
+3427	remove-clutter,no-card-in-card
+3428	NEW:Generate extraction-oriented images per section|Agent workflow
+3429	no-card-in-card,card-only-when-grouping
+3430	-
+3431	NEW:Generate extraction-oriented images per section|Agent workflow
+3432	badge,remove-clutter
+3433	NEW:Generate reference image before coding|Agent workflow
+3434	NEW:Generate extraction-oriented images per section|Agent workflow
+3435	NEW:Generate extraction-oriented images per section|Agent workflow
+3436	no-card-in-card,card-only-when-grouping
+3437	badge,remove-clutter
+3438	NEW:Keep the hero clean with one focal point|Space & layout
+3439	NEW:Preserve reference design fidelity in code|Agent workflow
+3440	NEW:Show screens in a subtle phone mockup|Content & process
+3441	NEW:Build real mobile hierarchy, not fake complexity|Space & layout
+3442	NEW:Avoid empty oversimplified layouts|Space & layout
+3443	-
+3444	-
+3445	-
+3446	-
+3447	-
+3448	-
+3449	-
+3450	-
+3451	-
+3452	-
+3453	NEW:Match art direction to app category|Content & process
+3454	NEW:Make screen sets form a believable app flow|Content & process
+3455	NEW:Make screen sets form a believable app flow|Content & process
+3456	NEW:Make screen sets form a believable app flow|Content & process
+3457	NEW:Use texture and imagery deliberately|Surface
+3458	palette-limit
+3459	NEW:Avoid forced ultra-minimalism|Content & process
+3460	body-16
+3461	NEW:Keep design language consistent across derived images|Agent workflow
+3462	NEW:Keep phone mockup framing consistent and even|Content & process
+3463	NEW:Show screens in a subtle phone mockup|Content & process
+3464	NEW:Decide platform mode first|Content & process
+3465	match-patterns
+3466	-
+3467	NEW:Make screen sets form a believable app flow|Content & process
+3468	NEW:Make screen sets form a believable app flow|Content & process
+3469	NEW:Make screen sets form a believable app flow|Content & process
+3470	NEW:Make screen sets form a believable app flow|Content & process
+3471	NEW:Generate extraction-oriented images per section|Agent workflow
+3472	NEW:Keep design language consistent across derived images|Agent workflow
+3473	NEW:Keep design language consistent across derived images|Agent workflow
+3474	NEW:Keep design language consistent across derived images|Agent workflow
+3475	NEW:Keep design language consistent across derived images|Agent workflow
+3476	NEW:Make screen sets form a believable app flow|Content & process
+3477	NEW:Make screen sets form a believable app flow|Content & process
+3478	NEW:Make screen sets form a believable app flow|Content & process
+3479	NEW:Make screen sets form a believable app flow|Content & process
+3480	NEW:Make screen sets form a believable app flow|Content & process
+3481	NEW:Show screens in a subtle phone mockup|Content & process
+3482	-
+3483	-
+3484	-
+3485	NEW:Keep phone mockup framing consistent and even|Content & process
+3486	NEW:Keep phone mockup framing consistent and even|Content & process
+3487	NEW:Keep phone mockup framing consistent and even|Content & process
+3488	NEW:Keep phone mockup framing consistent and even|Content & process
+3489	NEW:Keep phone mockup framing consistent and even|Content & process
+3490	NEW:Keep phone mockup framing consistent and even|Content & process
+3491	NEW:Keep phone mockup framing consistent and even|Content & process
+3492	NEW:Keep phone mockup framing consistent and even|Content & process
+3493	NEW:Keep phone mockup framing consistent and even|Content & process
+3494	shadow
+3495	NEW:Keep phone mockup framing consistent and even|Content & process
+3496	NEW:Keep phone mockup framing consistent and even|Content & process
+3497	NEW:Show screens in a subtle phone mockup|Content & process
+3498	NEW:Show screens in a subtle phone mockup|Content & process
+3499	NEW:Keep phone mockup framing consistent and even|Content & process
+3500	NEW:Keep phone mockup framing consistent and even|Content & process
+3501	NEW:Keep phone mockup framing consistent and even|Content & process
+3502	NEW:Vary onboarding slides, not repeated templates|Content & process
+3503	NEW:Keep the hero clean with one focal point|Space & layout
+3504	NEW:Vary onboarding slides, not repeated templates|Content & process
+3505	NEW:Keep the hero clean with one focal point|Space & layout
+3506	NEW:Keep the hero clean with one focal point|Space & layout
+3507	NEW:Keep the hero clean with one focal point|Space & layout
+3508	badge,remove-clutter
+3509	primary
+3510	NEW:Keep the hero clean with one focal point|Space & layout
+3511	-
+3512	NEW:Design real app screens, not posters|Content & process
+3513	NEW:Design real app screens, not posters|Content & process
+3514	consistent-navigation
+3515	match-patterns
+3516	primary
+3517	NEW:Make screen sets form a believable app flow|Content & process
+3518	no-card-in-card,card-only-when-grouping
+3519	no-card-in-card,card-only-when-grouping
+3520	NEW:Plan the in-page image system|Content & process
+3521	NEW:Plan the in-page image system|Content & process
+3522	NEW:Plan the in-page image system|Content & process
+3523	NEW:Plan the in-page image system|Content & process
+3524	-
+3525	NEW:Add grain or texture for depth|Surface
+3526	-
+3527	NEW:Keep texture from overwhelming text|Surface
+3528	NEW:Keep texture from overwhelming text|Surface
+3529	NEW:Keep texture from overwhelming text|Surface
+3530	NEW:Fade or mask images behind text|Surface
+3531	NEW:Fade or mask images behind text|Surface
+3532	NEW:Fade or mask images behind text|Surface
+3533	NEW:Fade or mask images behind text|Surface
+3534	NEW:Use texture and imagery deliberately|Surface
+3535	NEW:Avoid childish doodles|Surface
+3536	icon-consistency
+3537	icon-consistency
+3538	icon-consistency
+3539	NEW:Design real app screens, not posters|Content & process
+3540	NEW:Choose a strong combination and commit|Content & process
+3541	palette-limit
+3542	palette-limit,color-roles
+3543	palette-limit
+3544	gradient,no-purple-blue-gradient
+3545	no-purple-blue-gradient
+3546	no-rainbow-decoration
+3547	palette-limit,mute-color
+3548	mute-color
+3549	-
+3550	-
+3551	-
+3552	-
+3553	NEW:Avoid forced ultra-minimalism|Content & process
+3554	NEW:Avoid forced ultra-minimalism|Content & process
+3555	NEW:Plan the in-page image system|Content & process
+3556	NEW:Plan the in-page image system|Content & process
+3557	NEW:Plan the in-page image system|Content & process
+3558	NEW:Use controlled proportions for repeated images|Surface
+3559	NEW:Plan the in-page image system|Content & process
+3560	NEW:Plan the in-page image system|Content & process
+3561	NEW:Plan the in-page image system|Content & process
+3562	NEW:Keep hero headline to 2-3 lines|Type
+3563	legible-font-sizes,body-16
+3564	weight-scale-limited
+3565	font-family-count-max-2
+3566	type
+3567	type
+3568	airy,remove-clutter
+3569	spacing,airy
+3570	spacing
+3571	airy
+3572	-
+3573	NEW:Vary screens in an app flow|Content & process
+3574	NEW:Keep design language consistent across derived images|Agent workflow
+3575	NEW:Keep design language consistent across derived images|Agent workflow
+3576	NEW:Keep design language consistent across derived images|Agent workflow
+3577	NEW:Refine past the first render|Agent workflow
+3578	NEW:Refine past the first render|Agent workflow
+3579	NEW:Use texture and imagery deliberately|Surface
+3580	airy,spacing
+3581	palette-limit
+3582	NEW:Show screens in a subtle phone mockup|Content & process
+3583	NEW:Show screens in a subtle phone mockup|Content & process
+3584	NEW:Keep design language consistent across derived images|Agent workflow
+3585	NEW:Keep phone mockup framing consistent and even|Content & process
+3586	NEW:Refine past the first render|Agent workflow
+3587	-
+3588	-
+3589	NEW:Make screen sets form a believable app flow|Content & process
+3590	-
+3591	spacing
+3592	NEW:Use texture and imagery deliberately|Surface
+3593	palette-limit
+3594	NEW:Keep design language consistent across derived images|Agent workflow
+3595	legible-font-sizes
+3596	NEW:Fade or mask images behind text|Surface
+3597	NEW:Keep hierarchy clean and product-first|Content & process
+3598	NEW:Keep phone mockup framing consistent and even|Content & process
+3599	icon-consistency
+3600	NEW:Show screens in a subtle phone mockup|Content & process
+3601	-
+3602	NEW:Keep the hero clean with one focal point|Space & layout
+3603	palette-limit
+3604	NEW:Make screen sets form a believable app flow|Content & process
+3605	legible-font-sizes
+3606	-
+3607	-
+3608	NEW:Make screen sets form a believable app flow|Content & process
+3609	NEW:Show screens in a subtle phone mockup|Content & process
+3610	-
+3611	NEW:Generate one image per section|Agent workflow
+3612	-
+3613	NEW:Generate one image per section|Agent workflow
+3614	-
+3615	-
+3616	NEW:Generate one image per section|Agent workflow
+3617	NEW:Generate one image per section|Agent workflow
+3618	NEW:Avoid default left-text right-image hero|Space & layout
+3619	NEW:Avoid default left-text right-image hero|Space & layout
+3620	-
+3621	-
+3622	-
+3623	ask-first
+3624	NEW:Use bold but controlled creative ambition|Content & process
+3625	NEW:Use full-bleed imagery backgrounds|Surface
+3626	NEW:Vary composition across sections|Space & layout
+3627	airy,remove-clutter
+3628	section-padding-generous
+3629	-
+3630	gradient
+3631	-
+3632	gradient
+3633	gradient
+3634	gradient
+3635	-
+3636	NEW:Pick one hero scale decisively|Type
+3637	-
+3638	NEW:Choose a strong combination and commit|Content & process
+3639	NEW:Use charcoal graphite neutrals with restrained glow|Color
+3640	banned-fonts
+3641	NEW:Avoid default left-text right-image hero|Space & layout
+3642	NEW:Vary composition across sections|Space & layout
+3643	NEW:Avoid default left-text right-image hero|Space & layout
+3644	NEW:Vary background mode across sections|Surface
+3645	primary
+3646	-
+3647	delight-moments
+3648	-
+3649	NEW:Avoid default left-text right-image hero|Space & layout
+3650	NEW:Avoid default left-text right-image hero|Space & layout
+3651	NEW:Avoid default left-text right-image hero|Space & layout
+3652	NEW:Keep hero headline to 2-3 lines|Type
+3653	NEW:Keep hero headline to 2-3 lines|Type
+3654	NEW:Keep hero headline to 2-3 lines|Type
+3655	NEW:Generate one image per section|Agent workflow
+3656	NEW:Generate one image per section|Agent workflow
+3657	NEW:Generate one image per section|Agent workflow
+3658	NEW:Generate one image per section|Agent workflow
+3659	-
+3660	-
+3661	-
+3662	-
+3663	NEW:Generate one image per section|Agent workflow
+3664	-
+3665	NEW:Generate one image per section|Agent workflow
+3666	NEW:Keep design language consistent across derived images|Agent workflow
+3667	NEW:Use bold but controlled creative ambition|Content & process
+3668	NEW:Use bold but controlled creative ambition|Content & process
+3669	NEW:Use bold but controlled creative ambition|Content & process
+3670	NEW:Use bold but controlled creative ambition|Content & process
+3671	NEW:Use bold but controlled creative ambition|Content & process
+3672	NEW:Use asymmetry with control|Space & layout
+3673	NEW:Use bold but controlled creative ambition|Content & process
+3674	NEW:Avoid default hero plus three cards layout|Space & layout
+3675	remove-clutter
+3676	-
+3677	NEW:Plan the in-page image system|Content & process
+3678	NEW:Plan the in-page image system|Content & process
+3679	NEW:Plan the in-page image system|Content & process
+3680	NEW:Plan the in-page image system|Content & process
+3681	NEW:Prefer real visual variety over fake UI panels|Surface
+3682	copy-specific
+3683	NEW:Vary composition across sections|Space & layout
+3684	NEW:Keep spacing cadence even between sections|Space & layout
+3685	NEW:Keep spacing cadence even between sections|Space & layout
+3686	NEW:Keep spacing cadence even between sections|Space & layout
+3687	NEW:Keep spacing cadence even between sections|Space & layout
+3688	NEW:Keep spacing cadence even between sections|Space & layout
+3689	NEW:Use square blocks with staggered vertical rhythm|Space & layout
+3690	-
+3691	-
+3692	-
+3693	NEW:Use asymmetry with control|Space & layout
+3694	-
+3695	divider,spacing
+3696	remove-clutter
+3697	airy,remove-clutter
+3698	NEW:Keep spacing cadence even between sections|Space & layout
+3699	NEW:Keep spacing cadence even between sections|Space & layout
+3700	NEW:Keep spacing cadence even between sections|Space & layout
+3701	remove-clutter,spacing
+3702	airy,spacing
+3703	-
+3704	NEW:Keep spacing cadence even between sections|Space & layout
+3705	NEW:Keep spacing cadence even between sections|Space & layout
+3706	NEW:Keep spacing cadence even between sections|Space & layout
+3707	palette-limit
+3708	palette-limit
+3709	NEW:Match image tone to palette|Surface
+3710	contrast-text
+3711	NEW:Use editorial color washes|Color
+3712	gradient
+3713	NEW:Avoid plain white surfaces by default|Color
+3714	accent
+3715	gradient
+3716	-
+3717	NEW:Plan the in-page image system|Content & process
+3718	NEW:Keep design language consistent across derived images|Agent workflow
+3719	NEW:Generate one image per section|Agent workflow
+3720	NEW:Generate one image per section|Agent workflow
+3721	NEW:Generate one image per section|Agent workflow
+3722	NEW:Vary intensity across sections for pacing|Space & layout
+3723	primary
+3724	NEW:Plan the in-page image system|Content & process
+3725	NEW:Use charts only when the site needs them|Content & process
+3726	NEW:Match palette and type to industry or region|Content & process
+3727	touch-target-44,stack
+3728	-
+3729	-
+3730	-
+3731	-
+3732	NEW:Include one full-bleed background section|Surface
+3733	-
+3734	NEW:Generate one image per section|Agent workflow
+3735	airy,spacing
+3736	no-fake-stats,no-ai-cliche-copy
+3737	NEW:Generate one image per section|Agent workflow
+3738	-
+3739	-
+3740	-
+3741	-
+3742	-
+3743	banned-fonts
+3744	icon-consistency
+3745	no-heavy-drop-shadow
+3746	NEW:No primary-colored large backgrounds|Color
+3747	gradient,no-glassmorphism-default
+3748	radius-consistent
+3749	no-emoji-icons,no-emoji-in-copy
+3750	no-lorem-ipsum,no-fake-stats
+3751	no-ai-cliche-copy
+3752	type,serif
+3753	serif
+3754	tracking,heading-line-height-tight
+3755	no-pure-black,body-line-height-1-5
+3756	accent
+3757	mute-color
+3758	border-hairline
+3759	radius-scale,crisp
+3760	section-padding-generous
+3761	radius-consistent,no-heavy-drop-shadow
+3762	hover-state,press-scale-feedback
+3763	badge
+3764	mute-color
+3765	flat,divider
+3766	NEW:Use plus and minus icon for accordion toggle|Components
+3767	NEW:Render shortcuts as kbd key caps|Components
+3768	icon-consistency
+3769	NEW:Add subtle background imagery or ambient depth|Surface
+3770	motion
+3771	NEW:Fade in on scroll with IntersectionObserver|Motion
+3772	hover-state,press-scale-feedback
+3773	NEW:Optional slow ambient gradient drift on fixed layer|Motion
+3774	transform-only
+3775	section-padding-generous
+3776	width
+3777	border-hairline
+3778	NEW:Fade in on scroll with IntersectionObserver|Motion
+3779	NEW:Add subtle background imagery or ambient depth|Surface
+3780	-
+3781	-
+3782	-
+3783	-
+3784	-
+3785	-
+3786	-
+3787	-
+3788	-
+3789	-
+3790	-
+3791	audit-first,one-change-at-a-time
+3792	banned-fonts,serif
+3793	type,tracking
+3794	width,leading
+3795	NEW:Use medium and semibold weights for subtle hierarchy|Type
+3796	tabular
+3797	tracking
+3798	no-pure-black
+3799	mute-color
+3800	accent-one-hue
+3801	no-purple-blue-gradient
+3802	shadow
+3803	NEW:Add grain or texture for depth|Surface
+3804	NEW:Break even gradients with noise or radial|Color
+3805	NEW:Keep a single consistent light direction|Surface
+3806	NEW:Commit to full dark mode or one background tone|Color
+3807	NEW:Commit to full dark mode or one background tone|Color
+3808	NEW:Add subtle background imagery or ambient depth|Surface
+3809	NEW:Avoid three equal feature cards|Space & layout
+3810	dvh-units
+3811	NEW:Use CSS grid for multi-column layout|Space & layout
+3812	max-content-width
+3813	NEW:Allow variable card heights|Space & layout
+3814	NEW:Layer elements with overlap for depth|Space & layout
+3815	optical-alignment
+3816	NEW:Vary dashboard navigation beyond left sidebar|Components
+3817	align-to-grid
+3818	align-to-grid
+3819	optical-alignment
+3820	hover-state
+3821	active-pressed-state,press-scale-feedback
+3822	hover-transition-short
+3823	focus
+3824	states-designed
+3825	error-identified,states-designed
+3826	NEW:Smooth scroll for anchor links|Motion
+3827	no-fake-stats
+3828	no-fake-stats
+3829	no-ai-cliche-copy
+3830	no-exclamation-overuse
+3831	copy-specific
+3832	NEW:Use unique avatars per person|Content & process
+3833	no-lorem-ipsum
+3834	NEW:Use sentence case for headings|Type
+3835	surface,card-only-when-grouping
+3836	primary,remove-clutter
+3837	NEW:Avoid default accordion FAQ|Components
+3838	NEW:Avoid carousel testimonials with dots|Components
+3839	NEW:Prefer inline editing over modals|Components
+3840	NEW:Avoid default sun-moon theme toggle|Components
+3841	icon-consistency
+3842	NEW:Avoid cliche icon metaphors|Surface
+3843	NEW:Include a branded favicon|Content & process
+3844	NEW:Use real team photos, not stock diverse photos|Content & process
+3845	semantic-structure,landmarks
+3846	NEW:Use relative units for widths|Space & layout
+3847	alt-text
+3848	-
+3849	meta-description,page-title
+3850	NEW:Add legal links in footer|Content & process
+3851	validate-late,invalid
+3852	skip-link
+3853	NEW:Add cookie consent banner where required|Components
+3854	-
+3855	airy
+3856	NEW:Stagger entry with translate and fade|Motion
+3857	NEW:Use spring physics for interactive motion|Motion
+3858	NEW:Simulate edge refraction on glass surfaces|Surface
+3859	-
+3860	mute-color,palette-limit
+3861	spacing,max-content-width
+3862	reuse-components
+3863	states-designed
+3864	preserve-brand
+3865	one-change-at-a-time
+3866	-
+3867	one-change-at-a-time
+3868	-
+3869	-
+3870	NEW:Vary layout and aesthetic between generations|Agent workflow
+3871	icon-consistency
+3872	no-heavy-drop-shadow,border-hairline
+3873	NEW:Vary layout and aesthetic between generations|Agent workflow
+3874	NEW:Remove rotations and overlaps on mobile|Space & layout
+3875	reflow,dvh-units
+3876	NEW:Use nested double-bezel card shells|Surface
+3877	NEW:Use nested double-bezel card shells|Surface
+3878	radius-nested-concentric,surface
+3879	NEW:Use fully rounded pill primary buttons|Components
+3880	NEW:Nest trailing icon in circular wrapper inside button|Components
+3881	NEW:Nest trailing icon in circular wrapper inside button|Components
+3882	section-padding-generous
+3883	NEW:Add eyebrow tag above headings|Components
+3884	easing-tokens,weighty
+3885	NEW:Animate floating pill navbar and morphing hamburger|Components
+3886	NEW:Animate floating pill navbar and morphing hamburger|Components
+3887	NEW:Full-screen glass menu overlay|Components
+3888	NEW:Stagger nav links with mask reveal|Motion
+3889	hover-state,motion
+3890	NEW:Animate nested icon circle on button hover|Motion
+3891	NEW:Fade-up with blur on scroll entry|Motion
+3892	NEW:Fade in on scroll with IntersectionObserver|Motion
+3893	transform-only
+3894	backdrop-blur-restraint
+3895	NEW:Apply noise only on fixed non-interactive layer|Performance
+3896	NEW:Restrict z-index to systemic layers|Space & layout
+3897	-
+3898	NEW:Use nested double-bezel card shells|Surface
+3899	-
+3900	NEW:Use nested double-bezel card shells|Surface
+3901	NEW:Nest trailing icon in circular wrapper inside button|Components
+3902	section-padding-generous
+3903	easing-tokens,no-linear-ui-motion
+3904	reflow
+3905	transform-only
+3906	backdrop-blur-restraint
+3907	-
+3908	semantic-color-tokens,color-roles
+3909	accent-one-hue,mute-color
+3910	neutral-scale,accent
+3911	no-pure-black
+3912	max-line-length-65ch,leading
+3913	banned-fonts,serif
+3914	NEW:Sans-serif pairings only for dashboards|Type
+3915	tabular
+3916	NEW:Make hero striking, never generic|Content & process
+3917	NEW:Never overlap text with images or text|Space & layout
+3918	NEW:No scroll-to-explore filler or bouncing chevrons|Content & process
+3919	primary
+3920	card-only-when-grouping,shadow
+3921	NEW:Avoid three equal feature cards|Space & layout
+3922	NEW:Use CSS grid for multi-column layout|Space & layout
+3923	max-content-width
+3924	dvh-units
+3925	responsive-breakpoints
+3926	reflow,mobile-first
+3927	fluid-spacing-clamp,body-16
+3928	touch-target-44
+3929	fluid-spacing-clamp
+3930	NEW:Give active components perpetual micro-interactions|Motion
+3931	NEW:Stagger entry with translate and fade|Motion
+3932	transform-only
+3933	banned-fonts,serif
+3934	NEW:Never overlap text with images or text|Space & layout
+3935	NEW:Use reliable placeholder image sources|Content & process
+3936	copy-specific
+3937	-
+3938	-
+3939	-
+3940	-
+3941	-
+3942	-
+3943	-
+3944	-
+3945	-
+3946	-
+3947	-
+3948	-
+3949	no-emoji-icons,no-emoji-in-copy
+3950	max-content-width
+3951	dvh-units
+3952	NEW:Use CSS grid for multi-column layout|Space & layout
+3953	tracking,heading-line-height-tight
+3954	NEW:Sans-serif pairings only for dashboards|Type
+3955	body-line-height-1-5,max-line-length-65ch
+3956	accent-one-hue,mute-color
+3957	no-purple-blue-gradient,no-neon-glow
+3958	palette-limit,neutral-scale
+3959	card-only-when-grouping,divider
+3960	card-only-when-grouping,shadow
+3961	states-designed
+3962	states-designed
+3963	press-scale-feedback,active-pressed-state
+3964	labels,error-identified
+3965	NEW:Simulate edge refraction on glass surfaces|Surface
+3966	NEW:Magnetic buttons pulled toward cursor|Motion
+3967	NEW:Animate layout changes with shared element transitions|Motion
+3968	NEW:Stagger entry with translate and fade|Motion
+3969	-
+3970	NEW:Apply noise only on fixed non-interactive layer|Performance
+3971	transform-only
+3972	NEW:Restrict z-index to systemic layers|Space & layout
+3973	NEW:Use offset overlapping blocks with varied image ratios|Space & layout
+3974	reflow,no-horizontal-scroll
+3975	NEW:Static tier: hover and active states only|Motion
+3976	transform-only,easing-tokens
+3977	NEW:Fade in on scroll with IntersectionObserver|Motion
+3978	compact,tabular
+3979	-
+3980	no-neon-glow
+3981	NEW:No gradient text on large headers|Color
+3982	banned-fonts
+3983	NEW:Keep first heading restrained|Type
+3984	NEW:Serif only for editorial designs|Type
+3985	align-to-grid,spacing
+3986	NEW:Avoid three equal feature cards|Space & layout
+3987	no-fake-stats
+3988	NEW:Use believable avatar placeholders|Content & process
+3989	no-fake-stats
+3990	no-ai-cliche-copy
+3991	NEW:Customize component library defaults|Components
+3992	-
+3993	NEW:Choose a strong combination and commit|Content & process
+3994	-
+3995	-
+3996	-
+3997	-
+3998	NEW:Fade background image into background color|Surface
+3999	-
+4000	border-hairline,surface
+4001	radius-consistent,shadow-layered
+4002	tracking
+4003	NEW:Place card titles outside below cards|Components
+4004	section-padding-generous
+4005	NEW:Give active components perpetual micro-interactions|Motion
+4006	NEW:Use spring physics for interactive motion|Motion
+4007	NEW:Animate layout changes with shared element transitions|Motion
+4008	NEW:Give active components perpetual micro-interactions|Motion
+4009	animate-presence-exit,perf
+4010	NEW:Infinite carousel data stream|Components
+4011	-
+4012	reflow,max-content-width
+4013	dvh-units
+4014	-
+4015	NEW:Infer design direction from the brief|Agent workflow
+4016	NEW:Infer design direction from the brief|Agent workflow
+4017	ask-first
+4018	ask-first
+4019	no-purple-blue-gradient,no-glassmorphism-default
+4020	-
+4021	-
+4022	-
+4023	-
+4024	-
+4025	-
+4026	-
+4027	NEW:Use official design system packages|Content & process
+4028	NEW:One design system per project|Content & process
+4029	no-glassmorphism-default,backdrop-blur-restraint
+4030	no-glassmorphism-default
+4031	-
+4032	-
+4033	-
+4034	font-display-swap
+4035	-
+4036	-
+4037	icon-consistency
+4038	icon-consistency
+4039	no-emoji-icons,no-emoji-in-copy
+4040	dvh-units
+4041	-
+4042	NEW:Serif only when explicitly justified|Type
+4043	NEW:Emphasize headline words with same-font italic or bold|Type
+4044	NEW:Emphasize headline words with same-font italic or bold|Type
+4045	heading-line-height-tight
+4046	accent-one-hue,mute-color
+4047	no-purple-blue-gradient,no-neon-glow
+4048	palette-limit,neutral-scale
+4049	-
+4050	NEW:Rotate palettes between projects|Color
+4051	preserve-brand
+4052	card-only-when-grouping,divider
+4053	radius-consistent
+4054	radius-consistent
+4055	radius-consistent
+4056	states-designed
+4057	states-designed
+4058	error-identified,states-designed
+4059	press-scale-feedback,active-pressed-state
+4060	contrast-text,contrast-large-text-3
+4061	contrast-text
+4062	NEW:Keep button labels on one line|Components
+4063	NEW:Keep button labels on one line|Components
+4064	consistent-terminology,button-copy-outcome
+4065	placeholder,contrast-text
+4066	NEW:Keep the hero clean with one focal point|Space & layout
+4067	NEW:Keep the hero clean with one focal point|Space & layout
+4068	NEW:Keep the hero clean with one focal point|Space & layout
+4069	NEW:Keep hero headline to 2-3 lines|Type
+4070	NEW:Keep hero headline to 2-3 lines|Type
+4071	NEW:Keep hero headline to 2-3 lines|Type
+4072	NEW:Cap hero top padding|Space & layout
+4073	NEW:Cap hero top padding|Space & layout
+4074	NEW:Keep the hero clean with one focal point|Space & layout
+4075	NEW:Keep hero headline to 2-3 lines|Type
+4076	NEW:Keep hero subtext under 20 words|Content & process
+4077	primary
+4078	NEW:Keep the hero clean with one focal point|Space & layout
+4079	NEW:Place logo wall under hero, not inside|Space & layout
+4080	NEW:Place logo wall under hero, not inside|Space & layout
+4081	NEW:Keep desktop navigation on one line|Components
+4082	NEW:Cap navigation bar height|Components
+4083	NEW:Vary composition across sections|Space & layout
+4084	NEW:Fill bento grids with dense flow|Space & layout
+4085	NEW:Vary composition across sections|Space & layout
+4086	NEW:Vary composition across sections|Space & layout
+4087	NEW:Vary composition across sections|Space & layout
+4088	-
+4089	NEW:Limit eyebrow labels|Content & process
+4090	NEW:Limit eyebrow labels|Content & process
+4091	concise-subtext
+4092	stack,max-line-length-65ch
+4093	stack
+4094	NEW:Add visual variation to grid cells|Surface
+4095	NEW:Add visual variation to grid cells|Surface
+4096	reflow,responsive-breakpoints
+4097	NEW:Plan the in-page image system|Content & process
+4098	NEW:Generate section-specific imagery assets|Agent workflow
+4099	NEW:Generate section-specific imagery assets|Agent workflow
+4100	NEW:Use real photography when no generator|Content & process
+4101	-
+4102	NEW:Plan the in-page image system|Content & process
+4103	NEW:Plan the in-page image system|Content & process
+4104	NEW:Use real SVG logos in social proof|Content & process
+4105	NEW:Use real SVG logos in social proof|Content & process
+4106	NEW:Logos render in light and dark modes|Color
+4107	NEW:Logo wall contains logos only|Content & process
+4108	NEW:Logo wall contains logos only|Content & process
+4109	NEW:Avoid hand-rolled decorative SVGs|Surface
+4110	NEW:Use real screenshots or component previews|Content & process
+4111	NEW:Use real screenshots or component previews|Content & process
+4112	NEW:Use real screenshots or component previews|Content & process
+4113	concise-subtext,specific-headlines
+4114	NEW:No data-dump sections on marketing pages|Content & process
+4115	no-ai-cliche-copy
+4116	no-ai-cliche-copy,copy-specific
+4117	no-fake-stats
+4118	voice-tone-consistent
+4119	concise-subtext
+4120	NEW:Attribute quotes with name and role|Content & process
+4121	typographic-quotes
+4122	NEW:One theme per page, no inverted sections|Color
+4123	NEW:One theme per page, no inverted sections|Color
+4124	NEW:One theme per page, no inverted sections|Color
+4125	-
+4126	no-glassmorphism-default
+4127	no-glassmorphism-default
+4128	NEW:Magnetic buttons pulled toward cursor|Motion
+4129	NEW:Give active components perpetual micro-interactions|Motion
+4130	NEW:Ship the motion the dial claims|Motion
+4131	NEW:Ship the motion the dial claims|Motion
+4132	NEW:Every animation must communicate something|Motion
+4133	NEW:Limit marquees to one per page|Motion
+4134	NEW:Build real sticky-stack for card stacks|Motion
+4135	NEW:Build real sticky-stack for card stacks|Motion
+4136	NEW:Use lightweight whileInView for enter-on-scroll|Motion
+4137	NEW:Use lightweight whileInView for enter-on-scroll|Motion
+4138	NEW:Use IntersectionObserver or scroll-timeline, not scroll listener|Performance
+4139	-
+4140	NEW:Animate layout changes with shared element transitions|Motion
+4141	transform-only
+4142	NEW:Keep will-change rare|Performance
+4143	reduce
+4144	reduce
+4145	reduce,pause-motion
+4146	dark-mode-support
+4147	design-tokens
+4148	contrast-text,dark-mode-support
+4149	dark-mode-support
+4150	lcp-under-2-5s,priority-hint-lcp
+4151	inp-responsive
+4152	NEW:Apply noise only on fixed non-interactive layer|Performance
+4153	NEW:Restrict z-index to systemic layers|Space & layout
+4154	reflow,no-horizontal-scroll
+4155	NEW:Static tier: hover and active states only|Motion
+4156	NEW:Use IntersectionObserver or scroll-timeline, not scroll listener|Performance
+4157	compact,tabular
+4158	dark-mode-support
+4159	contrast-text
+4160	NEW:Keep hierarchy parity across light and dark|Color
+4161	preserve-brand
+4162	no-pure-black
+4163	dark-mode-support
+4164	NEW:Inspect page in both color modes|Agent workflow
+4165	-
+4166	no-neon-glow
+4167	banned-fonts
+4168	no-fake-stats
+4169	NEW:Use believable avatar placeholders|Content & process
+4170	no-fake-stats
+4171	no-ai-cliche-copy
+4172	icon-consistency
+4173	NEW:No div-built fake product UI|Surface
+4174	NEW:Customize component library defaults|Components
+4175	NEW:No version labels in hero|Content & process
+4176	NEW:Ban meta-labels like SECTION 01|Content & process
+4177	NEW:Ban meta-labels like SECTION 01|Content & process
+4178	NEW:Ration middle-dot separators|Type
+4179	NEW:Ration middle-dot separators|Type
+4180	NEW:No em dashes in copy|Content & process
+4181	NEW:Avoid br-broken italic headline splits|Type
+4182	NEW:Avoid vertical rotated text|Type
+4183	NEW:No decorative crosshair or hairline grid lines|Surface
+4184	NEW:No div-built fake product UI|Surface
+4185	copy-specific
+4186	plain-language,no-jargon
+4187	NEW:No pills or tags overlaid on images|Surface
+4188	NEW:Caption photos plainly, credit only real photographers|Content & process
+4189	NEW:Caption photos plainly, credit only real photographers|Content & process
+4190	no-fake-stats
+4191	NEW:Avoid decorative info strips|Surface
+4192	NEW:Avoid borders on both sides of every list row|Surface
+4193	NEW:Show comparisons as number plus small icon or bar|Components
+4194	NEW:Avoid decorative timezone clocks|Content & process
+4195	NEW:Avoid decorative live status dots|Content & process
+4196	NEW:No em dashes in copy|Content & process
+4197	NEW:No em dashes in copy|Content & process
+4198	NEW:No em dashes in copy|Content & process
+4199	NEW:No em dashes in copy|Content & process
+4200	NEW:No em dashes in copy|Content & process
+4201	NEW:No em dashes in copy|Content & process
+4202	NEW:No em dashes in copy|Content & process
+4203	NEW:No em dashes in copy|Content & process
+4204	-
+4205	-
+4206	preserve-brand,ask-first
+4207	NEW:Keep information architecture and slugs stable|Content & process
+4208	preserve-brand
+4209	preserve-brand
+4210	spacing,section-padding-generous
+4211	mute-color,tinted-neutrals
+4212	motion
+4213	one-change-at-a-time
+4214	-
+4215	-
+4216	reflow
+4217	-
+4218	-
+4219	-
+4220	-
+4221	-
+4222	-
+4223	contrast-text
+4224	NEW:Reserve line height for italic descenders|Type
+4225	NEW:Cap hero top padding|Space & layout
+4226	NEW:Keep the hero clean with one focal point|Space & layout
+4227	NEW:Logo wall contains logos only|Content & process
+4228	NEW:Add visual variation to grid cells|Surface
+4229	NEW:Limit marquees to one per page|Motion
+4230	NEW:Keep desktop navigation on one line|Components
+4231	NEW:Vary composition across sections|Space & layout
+4232	NEW:Use right component for long lists|Components
+4233	NEW:No version labels in hero|Content & process
+4234	NEW:Avoid decorative live status dots|Content & process
+4235	NEW:Use IntersectionObserver or scroll-timeline, not scroll listener|Performance
+4236	reflow,no-horizontal-scroll
+4237	dvh-units
+4238	icon-consistency
+4239	-
+4240	no-purple-blue-gradient,no-fake-stats
+4241	lcp-under-2-5s,layout-shift-zero
+4242	no-glassmorphism-default
+4243	backdrop-blur-restraint,contrast-text
+4244	-
+4245	-
+4246	-
+4247	-
+4248	-
+4249	-
+4250	-
+4251	-
+4252	ask-first,banned-fonts
+4253	-
+4254	-
+4255	-
+4256	-
+4257	-
+4258	-
+4259	-
+4260	-
+4261	-
+4262	-
+4263	-
+4264	-
+4265	-
+4266	-
+4267	-
+4268	-
+4269	-
+4270	-
+4271	-
+4272	-
+4273	-
+4274	-
+4275	-
+4276	-
+4277	-
+4278	-
+4279	-
+4280	-
+4281	-
+4282	-
+4283	-
+4284	-
+4285	mobile-first
+4286	responsive-breakpoints,container-queries
+4287	touch-target-44,touch-action-manipulation
+4288	no-horizontal-scroll,reflow
+4289	container-queries
+4290	no-hover-only
+4291	touch-target-44,no-hover-only
+4292	NEW:Collapse to one column with wider spacing on mobile|Space & layout
+4293	aspect-ratio-reserve,responsive-images
+4294	hamburger-menu-a11y
+4295	-
+4296	NEW:One scroll reveal max per section|Motion
+4297	-
+4298	screenshot-verify
+4299	screenshot-verify
+4300	-
+4301	screenshot-verify
+4302	screenshot-verify
+4303	-
+4304	color-not-only
+4305	transform-only
+4306	no-horizontal-scroll
+4307	-
+4308	-
+4309	NEW:Add one purposeful entrance on focal element|Motion
+4310	type,tracking
+4311	accent,accent-one-hue
+4312	delight-moments
+4313	no-purple-blue-gradient,no-glassmorphism-default
+4314	-
+4315	read-design-context
+4316	read-design-context
+4317	ask-first
+4318	ask-first
+4319	-
+4320	-
+4321	-
+4322	-
+4323	-
+4324	button-copy-outcome
+4325	error-message-human,error-suggestion
+4326	preserve-brand,ask-first
+4327	status-color-set
+4328	accent
+4329	NEW:Keep semantic color, cut decorative color|Color
+4330	-
+4331	-
+4332	NEW:Choose a strong combination and commit|Content & process
+4333	NEW:Avoid default left-text right-image hero|Space & layout
+4334	-
+4335	-
+4336	-
+4337	-
+4338	-
+4339	-
+4340	copy-specific,empty-copy-guides
+4341	-
+4342	-
+4343	-
+4344	concise-subtext,no-lorem-ipsum
+4345	gradient,remove-clutter
+4346	type,tracking
+4347	-
+4348	-
+4349	-
+4350	-
+4351	-
+4352	read-design-context
+4353	NEW:Domain-specific component names|Content & process
+4354	NEW:Avoid premature component abstraction|Content & process
+4355	-
+4356	-
+4357	-
+4358	-
+4359	-
+4360	-
+4361	-
+4362	-
+4363	-
+4364	-
+4365	states-designed,layout-shift-zero
+4366	error-message-human,states-designed
+4367	NEW:Em dash for unknown values|Content & process
+4368	disabled-state-explained
+4369	-
+4370	-
+4371	-
+4372	-
+4373	-
+4374	-
+4375	-
+4376	-
+4377	-
+4378	NEW:Add one memorable signature detail|Surface
+4379	-
+4380	-
+4381	no-heavy-drop-shadow,type
+4382	accent,no-rainbow-decoration
+4383	-
+4384	preserve-brand
+4385	audit-first
+4386	semantic-structure,meta-description
+4387	preserve-brand
+4388	NEW:Keep every existing CTA and form|Content & process
+4389	-
+4390	-
+4391	-
+4392	preserve-brand
+4393	-
+4394	-
+4395	-
+4396	-
+4397	-
+4398	-
+4399	-
+4400	-
+4401	-
+4402	-
+4403	-
+4404	split
+4405	states-designed
+4406	ask-first
+4407	-
+4408	-
+4409	-
+4410	-
+4411	-
+4412	-
+4413	-
+4414	-
+4415	-
+4416	-
+4417	-
+4418	-
+4419	-
+4420	-
+4421	-
+4422	-
+4423	-
+4424	dark-mode-support
+4425	oklch-color-space
+4426	-
+4427	preserve-brand
+4428	preserve-brand,oklch-color-space
+4429	-
+4430	banned-fonts,font-family-count-max-2
+4431	tracking
+4432	NEW:No all-caps on headings, nav, buttons|Type
+4433	weight-scale-limited
+4434	tabular
+4435	-
+4436	NEW:Add one memorable signature detail|Surface
+4437	-
+4438	-
+4439	-
+4440	-
+4441	states-designed
+4442	states-designed
+4443	states-designed
+4444	error-identified
+4445	states-designed
+4446	-
+4447	states-designed,layout-shift-zero
+4448	micro-interaction-100-200
+4449	-
+4450	-
+4451	micro-interaction-100-200
+4452	compact
+4453	mute-color
+4454	status-color-set
+4455	spacing-scale-4pt
+4456	NEW:Narrow subtle sidebar|Components
+4457	micro-interaction-100-200,feedback
+4458	tabular,table-tabular-numerals
+4459	NEW:Area or line charts for time series|Components
+4460	NEW:Narrow subtle sidebar|Components
+4461	-
+4462	serif
+4463	max-line-length-65ch,spacing
+4464	NEW:Reading pages use fades only|Motion
+4465	serif,banned-fonts
+4466	font-family-count-max-2
+4467	NEW:Drop cap on first paragraph|Type
+4468	NEW:Styled pull quotes|Type
+4469	accent
+4470	max-line-length-65ch,max-content-width
+4471	ease-out-entrances
+4472	NEW:Accent-bordered serif blockquote|Type
+4473	font-family-count-max-2
+4474	card-only-when-grouping
+4475	NEW:Sentence case headlines|Type
+4476	underline
+4477	-
+4478	hover-transition-short
+4479	NEW:Neutral sans for body, never display face|Type
+4480	font-weight-min-400,weight-scale-limited
+4481	tracking
+4482	max-content-width
+4483	accent
+4484	border-hairline,border-or-shadow-not-both
+4485	NEW:Elevation only for floating UI|Surface
+4486	radius-scale
+4487	reduce
+4488	nav-active-state,underline
+4489	-
+4490	NEW:No pill backgrounds on nav links|Components
+4491	-
+4492	-
+4493	-
+4494	-
+4495	hover-transition-short
+4496	ask-first
+4497	accent,accent-one-hue
+4498	icon-consistency,no-emoji-icons
+4499	font-family-count-max-2
+4500	design-tokens
+4501	-
+4502	-
+4503	-
+4504	-
+4505	-
+4506	-
+4507	-
+4508	-
+4509	-
+4510	-
+4511	-
+4512	no-purple-blue-gradient,no-neon-glow
+4513	ask-first,preserve-brand
+4514	-
+4515	-
+4516	-
+4517	NEW:Default to light theme|Color
+4518	-
+4519	-
+4520	badge
+4521	no-side-stripe-border
+4522	NEW:Area or line charts for time series|Components
+4523	NEW:Ration eyebrow labels|Type
+4524	NEW:No decorative numbered eyebrows|Content & process
+4525	NEW:No scroll cue labels|Content & process
+4526	NEW:Real screenshots not div mockups|Content & process
+4527	NEW:Real SVG logos not text wordmarks|Content & process
+4528	NEW:Carousels only for ordered narrative|Components
+4529	no-card-in-card,card-only-when-grouping
+4530	-
+4531	accent
+4532	color-roles
+4533	split
+4534	NEW:No uniform three-column icon grids|Space & layout
+4535	no-fake-stats,specific-headlines
+4536	NEW:Sparklines on metric cards|Components
+4537	tracking
+4538	accent-one-hue
+4539	NEW:Avoid multi-segment pie charts|Components
+4540	gradient
+4541	font-family-count-max-2
+4542	-
+4543	-
+4544	-
+4545	-
+4546	-
+4547	motion-duration,transform-only
+4548	meta-theme-color,dark-mode-support
+4549	-
+4550	NEW:Never transition all properties|Motion
+4551	micro-interaction-100-200
+4552	-
+4553	-
+4554	button-name,link-name
+4555	button-name
+4556	link-purpose,link-name
+4557	keyboard-operable,native-over-aria
+4558	focus-trap-modal
+4559	NEW:Set initial focus in dialogs|Interaction & states
+4560	modal-scroll-lock
+4561	no-outline-none
+4562	native-over-aria
+4563	aria-required-parts
+4564	list-markup
+4565	heading-order
+4566	table-headers
+4567	aria-live-toasts,status-messages-live
+4568	status-messages-live
+4569	toast-time-and-persist
+4570	aria-semantics
+4571	no-hover-only,keyboard-operable
+4572	color-not-only,disabled-state-explained
+4573	no-outline-none
+4574	video-captions
+4575	color-not-only
+4576	NEW:Color-blind-friendly chart palettes|Color
+4577	-
+4578	reduce
+4579	button-name,alt-decorative-empty
+4580	color-not-only
+4581	touch-target-44
+4582	error-identified,aria-valid-attrs
+4583	paste-not-blocked
+4584	prevent-double-submit,loading-state-button
+4585	validate-late
+4586	autocomplete-attributes,input-type-correct
+4587	-
+4588	-
+4589	-
+4590	-
+4591	-
+4592	NEW:Paint response shell before first token|Performance
+4593	NEW:Streaming caret indicator|Interaction & states
+4594	NEW:Render streamed markdown progressively|Interaction & states
+4595	NEW:Streaming pacing matches model speed|Interaction & states
+4596	NEW:Stop and regenerate controls while streaming|Interaction & states
+4597	NEW:Pause auto-scroll when user scrolls up|Interaction & states
+4598	states-designed
+4599	states-designed
+4600	states-designed
+4601	error-message-human,states-designed
+4602	NEW:Show tool calls by default|Components
+4603	NEW:Citations as first-class content|Components
+4604	NEW:Citation chip scrolls to quote|Components
+4605	NEW:Mark broken citations unverified|Components
+4606	-
+4607	NEW:Thumb up/down feedback with undo|Components
+4608	NEW:Never block UI on feedback|Interaction & states
+4609	NEW:Clean copy button for responses|Components
+4610	NEW:Share link for responses|Components
+4611	NEW:Plain-text fallback for failed structured render|Interaction & states
+4612	native-over-aria,keyboard-operable
+4613	NEW:Copy as code for generated UI|Components
+4614	NEW:Pin chat input to viewport bottom|Components
+4615	max-line-length-65ch
+4616	NEW:Distinguish user and assistant messages|Components
+4617	virtualize-long-lists
+4618	-
+4619	-
+4620	-
+4621	-
+4622	-
+4623	-
+4624	-
+4625	-
+4626	-
+4627	-
+4628	-
+4629	-
+4630	-
+4631	-
+4632	-
+4633	-
+4634	-
+4635	-
+4636	-
+4637	NEW:Commit fully to saturated color|Color
+4638	-
+4639	NEW:Equalize chroma per hue in palettes|Color
+4640	NEW:Richer chroma on P3 displays|Color
+4641	semantic-color-tokens,accent-one-hue
+4642	accent-one-hue
+4643	accent-one-hue
+4644	tinted-neutrals
+4645	tinted-neutrals
+4646	NEW:No gray text on colored backgrounds|Color
+4647	NEW:Raised surfaces as white at stepped opacity|Surface
+4648	NEW:Avoid gradient banding|Color
+4649	reuse-components
+4650	NEW:Prefer APCA contrast|Color
+4651	contrast-text,contrast-7
+4652	NEW:Increase contrast on hover, active, focus|Color
+4653	color-not-only
+4654	NEW:Neutral image outline never tinted|Surface
+4655	NEW:Inset outline on images instead of border|Surface
+4656	accent-one-hue,accent
+4657	design-tokens
+4658	gradient
+4659	no-neon-glow
+4660	NEW:Button padding horizontal twice vertical|Components
+4661	touch-target-44
+4662	NEW:Button label size centered on whole pixels|Type
+4663	NEW:Leading icon on action buttons|Components
+4664	remove-clutter
+4665	primary,non-text-contrast
+4666	disabled-state-explained
+4667	NEW:Type-to-confirm for destructive actions|Interaction & states
+4668	NEW:Radios instead of dropdown for five or fewer options|Components
+4669	NEW:Scroll affordance on long lists|Components
+4670	border-hairline,shadow
+4671	NEW:Modals only for interrupting decisions|Components
+4672	button-copy-outcome
+4673	NEW:Type-ahead search with recent searches|Components
+4674	NEW:Clamp variable-length text in grids|Space & layout
+4675	aspect-ratio-reserve
+4676	primary,nav
+4677	backdrop-blur-restraint,border-hairline
+4678	NEW:Solid scrolled state for transparent nav|Components
+4679	NEW:Collapse overflow nav links into More menu|Components
+4680	-
+4681	plain-language
+4682	voice-tone-consistent
+4683	no-exclamation-overuse
+4684	abbr-expansion
+4685	consistent-terminology
+4686	consistent-terminology
+4687	-
+4688	-
+4689	NEW:Locale-aware date formatting|Content & process
+4690	NEW:Locale-aware plurals|Content & process
+4691	localize
+4692	NEW:Use logical CSS properties for RTL|Space & layout
+4693	NEW:Store UTC, display in user time zone|Content & process
+4694	concise-subtext
+4695	consistent-terminology
+4696	button-copy-outcome
+4697	disabled-state-explained,color-not-only
+4698	NEW:CTA labels fit one line|Components
+4699	NEW:Numerals not spelled numbers, grouped thousands|Content & process
+4700	no-fake-stats
+4701	no-ai-cliche-copy,plain-language
+4702	NEW:Ration separator dots and em dashes in UI strings|Content & process
+4703	plain-language
+4704	error-message-human
+4705	error-message-human
+4706	empty-copy-guides
+4707	NEW:Loading states show progress and cancel|Interaction & states
+4708	field-labels,labels
+4709	microcopy-hints
+4710	real-ellipsis-dash
+4711	NEW:Positive encouraging language|Content & process
+4712	states-designed,stress-test
+4713	states-designed
+4714	NEW:No confirmshaming|Content & process
+4715	no-fake-stats
+4716	error-message-human
+4717	-
+4718	-
+4719	-
+4720	-
+4721	table-sort-filter
+4722	table-density-toggle
+4723	NEW:Cancel is primary in destructive confirm|Components
+4724	NEW:Reset-to-default per settings section|Components
+4725	states-designed
+4726	NEW:Show applied filters as removable chips|Components
+4727	NEW:Put search and filter state in the URL|Interaction & states
+4728	NEW:Show search scope|Interaction & states
+4729	NEW:Show change history|Components
+4730	-
+4731	empty-copy-guides,states-designed
+4732	NEW:Illustration or icon in empty state|Components
+4733	states-designed
+4734	states-designed
+4735	NEW:Show cost before billed action|Content & process
+4736	NEW:Self-serve cancellation|Interaction & states
+4737	NEW:Enterprise contact path on pricing|Components
+4738	NEW:Support deep-link arrival in docs|Components
+4739	NEW:Docs on-this-page outline from headings|Components
+4740	NEW:Copy button on code blocks|Components
+4741	states-designed
+4742	NEW:Persistent order summary in checkout|Components
+4743	NEW:Guest checkout|Interaction & states
+4744	error-prevention-legal
+4745	NEW:Resume flow where user stopped|Interaction & states
+4746	states-designed
+4747	-
+4748	undo-over-confirm
+4749	undo-over-confirm
+4750	-
+4751	NEW:Role selection when inviting|Components
+4752	NEW:Per-row invite failure with retry|Interaction & states
+4753	ask-first
+4754	no-purple-blue-gradient
+4755	-
+4756	split
+4757	-
+4758	hover-state
+4759	NEW:Subtle domain SVG motif on panels|Surface
+4760	status-color-set
+4761	stagger-limited
+4762	no-glassmorphism-default
+4763	NEW:One component library per project|Content & process
+4764	stagger-limited
+4765	NEW:Every animation must communicate|Motion
+4766	-
+4767	NEW:Rotate palette families|Color
+4768	NEW:Narrow subtle sidebar|Components
+4769	NEW:Date range selector on time-series|Components
+4770	NEW:No more than three identical metric cards|Components
+4771	-
+4772	NEW:Avoid multi-segment pie charts|Components
+4773	NEW:Avoid multi-segment pie charts|Components
+4774	NEW:Avoid multi-segment pie charts|Components
+4775	NEW:No 3D charts|Components
+4776	NEW:Avoid multi-segment pie charts|Components
+4777	NEW:Chart labels secondary text, data labels on hover|Components
+4778	NEW:Horizontal-only subtle chart gridlines|Components
+4779	NEW:Omit single-series legends|Components
+4780	remove-clutter
+4781	NEW:Row context avatars and status dots in tables|Components
+4782	badge,status-color-set
+4783	NEW:No all-caps on headings, nav, buttons|Type
+4784	table-responsive
+4785	virtualize-long-lists
+4786	NEW:Stable scrollbar gutter|Space & layout
+4787	primary
+4788	NEW:Reset filters as text link when active|Components
+4789	compact
+4790	NEW:Chart fills its container|Components
+4791	compact
+4792	compact
+4793	accent
+4794	NEW:One clear focal point on dashboards|Space & layout
+4795	NEW:Limit supporting metrics to two to four|Components
+4796	NEW:Avoid multi-segment pie charts|Components
+4797	NEW:Match chart type to data question|Components
+4798	-
+4799	NEW:Match chart type to data question|Components
+4800	NEW:Match chart type to data question|Components
+4801	NEW:No rainbow palette for sequential data|Color
+4802	NEW:Color-blind-friendly chart palettes|Color
+4803	NEW:Diverging palettes need semantic midpoint|Color
+4804	NEW:Avoid multi-segment pie charts|Components
+4805	color-not-only
+4806	NEW:Color-blind-friendly chart palettes|Color
+4807	NEW:Horizontal-only subtle chart gridlines|Components
+4808	remove-clutter
+4809	NEW:Direct-label chart lines instead of legend|Components
+4810	NEW:Line charts need not start at zero|Components
+4811	NEW:Direct-label chart lines instead of legend|Components
+4812	NEW:Consistent chart type in a dashboard|Components
+4813	NEW:Dashboard 3-6 column grid equal row heights|Space & layout
+4814	no-entrance-every-render
+4815	color-not-only
+4816	NEW:Horizontal-only subtle chart gridlines|Components
+4817	NEW:Normalize choropleths per capita|Components
+4818	-
+4819	type
+4820	-
+4821	NEW:Enable OpenType features|Type
+4822	tracking
+4823	shadow-scale
+4824	no-pure-black,dark-mode-support
+4825	NEW:Border tints replace shadows in dark mode|Surface
+4826	dark-mode-support
+4827	spacing,group-proximity
+4828	spacing
+4829	NEW:Match icon stroke to text weight|Surface
+4830	icon-consistency
+4831	-
+4832	states-designed
+4833	states-designed,layout-shift-zero
+4834	empty-copy-guides
+4835	error-message-human
+4836	NEW:Em dash for unknown values|Content & process
+4837	-
+4838	motion-duration
+4839	motion-duration,duration-tokens
+4840	reduce
+4841	voice-tone-consistent
+4842	-
+4843	shadow-layered
+4844	NEW:Truncate overflowing text with title tooltip|Type
+4845	NEW:Icon containers use squircles|Surface
+4846	NEW:Relative or absolute time by context|Content & process
+4847	NEW:Locale currency, negative by two signals|Content & process
+4848	NEW:Match number precision to decision|Content & process
+4849	-
+4850	spacing-tokens
+4851	-
+4852	-
+4853	-
+4854	NEW:Inputs 16px minimum on mobile|Type
+4855	validate-late
+4856	validate-late
+4857	invalid,color-not-only
+4858	NEW:Radios instead of dropdown for five or fewer options|Components
+4859	NEW:Checkbox applies on submit, toggle immediately|Components
+4860	clear-error-on-fix
+4861	progressive-disclosure
+4862	progressive-disclosure
+4863	NEW:Mark required or optional fields|Interaction & states
+4864	NEW:Inputs on solid surfaces|Surface
+4865	NEW:Cap fields per step on mobile forms|Components
+4866	NEW:Disable rather than hide filled conditional fields|Interaction & states
+4867	NEW:Back button preserves form state|Interaction & states
+4868	disabled-state-explained
+4869	NEW:No spinner for autosave|Interaction & states
+4870	-
+4871	optimistic-update
+4872	optimistic-update
+4873	optimistic-update,undo-over-confirm
+4874	prevent-double-submit
+4875	error-prevention-legal
+4876	focus-order-logical,tabindex-no-positive
+4877	input-type-correct
+4878	NEW:Locale currency input with prefix|Components
+4879	NEW:Separate danger zone section|Components
+4880	field-labels
+4881	validate-late
+4882	NEW:Preserve valid fields on error|Interaction & states
+4883	NEW:No reset button beside submit|Components
+4884	-
+4885	match-patterns
+4886	button-copy-outcome
+4887	error-message-human
+4888	NEW:Relative or absolute time by context|Content & process
+4889	consistent-terminology
+4890	match-patterns
+4891	autocomplete-attributes
+4892	NEW:Persist tab state across refresh|Interaction & states
+4893	error-message-human
+4894	help-mechanism
+4895	NEW:Tooltips on icon-only buttons|Components
+4896	touch-target-44
+4897	NEW:Match chart type to data question|Components
+4898	-
+4899	progressive-disclosure
+4900	-
+4901	-
+4902	-
+4903	-
+4904	-
+4905	-
+4906	-
+4907	-
+4908	-
+4909	-
+4910	-
+4911	NEW:Real screenshots not div mockups|Content & process
+4912	NEW:No uniform three-column icon grids|Space & layout
+4913	concise-subtext
+4914	-
+4915	NEW:Real screenshots not div mockups|Content & process
+4916	-
+4917	border-hairline,shadow-neutral-alpha
+4918	NEW:Bento cards with dominant size|Space & layout
+4919	weight-scale-limited
+4920	accent
+4921	no-pure-black,tinted-neutrals
+4922	NEW:Never transition all properties|Motion
+4923	no-emoji-icons
+4924	gradient
+4925	NEW:No star ratings in testimonials|Content & process
+4926	no-glassmorphism-default
+4927	gradient,remove-clutter
+4928	no-pure-black
+4929	-
+4930	weight-scale-limited
+4931	weight-scale-limited
+4932	shadow
+4933	-
+4934	card-only-when-grouping
+4935	NEW:Crop element at viewport edge to signal more|Components
+4936	design-tokens
+4937	spacing-tokens
+4938	gap-over-margin
+4939	primary
+4940	NEW:Three-tier visual hierarchy|Space & layout
+4941	NEW:Three-tier visual hierarchy|Space & layout
+4942	type
+4943	-
+4944	NEW:Put critical item first or last in lists|Space & layout
+4945	-
+4946	-
+4947	split
+4948	-
+4949	NEW:Bias modals slightly above center|Components
+4950	left-edge-alignment
+4951	NEW:Align mixed text sizes on shared baseline|Type
+4952	-
+4953	-
+4954	card-only-when-grouping,group-proximity
+4955	card-only-when-grouping,no-card-in-card
+4956	NEW:No big-metric template pattern|Components
+4957	radius-scale
+4958	shadow-scale
+4959	shadow-layered
+4960	NEW:Border tints replace shadows in dark mode|Surface
+4961	optical-alignment
+4962	radius-nested-concentric
+4963	radius-nested-concentric
+4964	optical-alignment
+4965	-
+4966	-
+4967	-
+4968	-
+4969	-
+4970	-
+4971	-
+4972	-
+4973	-
+4974	-
+4975	-
+4976	-
+4977	-
+4978	-
+4979	-
+4980	-
+4981	-
+4982	-
+4983	-
+4984	-
+4985	-
+4986	-
+4987	-
+4988	-
+4989	-
+4990	NEW:Test social share previews on deployed link|Content & process
+4991	-
+4992	-
+4993	-
+4994	-
+4995	no-fake-stats
+4996	-
+4997	NEW:View Transitions for navigation-level changes|Motion
+4998	NEW:View Transitions for navigation-level changes|Motion
+4999	-
+5000	-
+5001	-
+5002	NEW:View Transitions for navigation-level changes|Motion
+5003	NEW:View Transitions for navigation-level changes|Motion
+5004	NEW:View Transitions for navigation-level changes|Motion
+5005	-
+5006	NEW:Use scroll timelines not JS for scroll-linked motion|Performance
+5007	NEW:Use scroll timelines not JS for scroll-linked motion|Performance
+5008	NEW:Use scroll timelines not JS for scroll-linked motion|Performance
+5009	pause-motion
+5010	container-queries
+5011	-
+5012	NEW:Expand hit area with pseudo-element|Interaction & states
+5013	-
+5014	NEW:Pseudo-elements for decoration|Content & process
+5015	NEW:Stable scrollbar gutter|Space & layout
+5016	NEW:Use mask-image for scroll fades|Surface
+5017	NEW:Use mask-image for scroll fades|Surface
+5018	NEW:Use mask-image for scroll fades|Surface
+5019	NEW:Fade trailing edge only|Surface
+5020	NEW:Ease gradient stops in wide fades|Surface
+5021	NEW:Use mask-image for scroll fades|Surface
+5022	popover-anchor-positioning
+5023	popover-anchor-positioning
+5024	popover-anchor-positioning
+5025	popover-anchor-positioning
+5026	popover-anchor-positioning
+5027	native-popover-api
+5028	native-dialog
+5029	native-dialog
+5030	native-popover-api
+5031	popover-anchor-positioning
+5032	NEW:Animate to intrinsic sizes with interpolate-size|Motion
+5033	NEW:Animate to intrinsic sizes with interpolate-size|Motion
+5034	NEW:Animate to intrinsic sizes with interpolate-size|Motion
+5035	NEW:Animate to intrinsic sizes with interpolate-size|Motion
+5036	oklch-color-space
+5037	container-queries
+5038	container-queries
+5039	container-queries
+5040	NEW:Every animation must communicate|Motion
+5041	micro-interaction-100-200
+5042	delight-moments
+5043	micro-interaction-100-200
+5044	reduce
+5045	transform-only
+5046	duration-tokens
+5047	micro-interaction-100-200
+5048	duration-tokens
+5049	duration-tokens,motion-duration
+5050	duration-tokens
+5051	duration-tokens
+5052	-
+5053	ease-out-entrances
+5054	no-linear-ui-motion
+5055	NEW:Hover moves transform, color, shadow together|Motion
+5056	NEW:No layout metric changes on interaction|Interaction & states
+5057	NEW:Never block input during stagger|Motion
+5058	stagger-limited
+5059	NEW:Shared element layout animations|Motion
+5060	NEW:Stable keys for dynamic lists|Content & process
+5061	NEW:Avoid sequential wait modes for enter and exit|Motion
+5062	initial-false-first-render,no-entrance-every-render
+5063	focal-motion,stagger-limited
+5064	no-entrance-every-render,micro-interaction-100-200
+5065	-
+5066	-
+5067	-
+5068	NEW:No bounce in functional UI|Motion
+5069	NEW:Icon swap grows from small scale|Motion
+5070	-
+5071	reduce
+5072	NEW:Keep loading indicators animating under reduced motion|Motion
+5073	-
+5074	reduce
+5075	transform-only
+5076	transform-only
+5077	-
+5078	transform-only
+5079	-
+5080	transform-only
+5081	NEW:Use scroll timelines not JS for scroll-linked motion|Performance
+5082	NEW:Use scroll timelines not JS for scroll-linked motion|Performance
+5083	NEW:Cancel requestAnimationFrame loops on unmount|Performance
+5084	NEW:will-change only during animation|Performance
+5085	NEW:Avoid many promoted layers|Performance
+5086	NEW:Limit animated blur radius|Performance
+5087	NEW:Limit animated blur radius|Performance
+5088	backdrop-blur-restraint
+5089	NEW:Never animate inherited CSS variables|Performance
+5090	duration-tokens
+5091	NEW:No scroll-jacking|Interaction & states
+5092	NEW:Cap hover scale at 1.02-1.05|Motion
+5093	transform-only
+5094	micro-interaction-100-200
+5095	-
+5096	-
+5097	primary
+5098	NEW:Minimal signup fields|Interaction & states
+5099	NEW:Mobile-friendly auth options|Interaction & states
+5100	abbr-expansion,unusual-words
+5101	autocomplete-attributes
+5102	NEW:Tooltips on icon-only buttons|Components
+5103	escape-closes,no-keyboard-trap
+5104	undo-over-confirm
+5105	NEW:Make keyboard shortcuts discoverable|Interaction & states
+5106	lazy-load-images,modern-image-formats
+5107	-
+5108	focus-visible-only
+5109	button-name,visually-hidden-utility
+5110	error-identified,aria-valid-attrs
+5111	color-not-only
+5112	aria-live-toasts
+5113	input-type-correct,autocomplete-attributes
+5114	body-16
+5115	no-hover-only
+5116	-
+5117	-
+5118	-
+5119	-
+5120	color-roles,accent
+5121	no-hover-only
+5122	states-designed
+5123	compact
+5124	NEW:Keep current view, filter, scope visible|Interaction & states
+5125	NEW:Show result count on data tables|Components
+5126	NEW:Drill-down path from aggregated metrics|Components
+5127	NEW:Blank canvas default over templates|Interaction & states
+5128	NEW:Onboarding doesn't gate empty state|Interaction & states
+5129	-
+5130	NEW:Onboarding animation doesn't repeat|Motion
+5131	undo-over-confirm
+5132	NEW:Show attribution|Content & process
+5133	NEW:Number-first hierarchy in metrics|Type
+5134	NEW:Provide data export|Components
+5135	NEW:Always show high-contrast status badges|Components
+5136	NEW:Always show high-contrast status badges|Components
+5137	-
+5138	-
+5139	NEW:Presets resolve to editable state|Interaction & states
+5140	NEW:Presets resolve to editable state|Interaction & states
+5141	-
+5142	NEW:Undo stack records change annotations|Interaction & states
+5143	-
+5144	-
+5145	-
+5146	-
+5147	NEW:Period-over-period change on primary metrics|Components
+5148	NEW:Drill-down path from aggregated metrics|Components
+5149	NEW:Surface outliers automatically|Components
+5150	NEW:Show active collaborators|Components
+5151	NEW:Handle concurrent edit conflicts|Interaction & states
+5152	-
+5153	NEW:Undo not blocked by others' edits|Interaction & states
+5154	NEW:Streaming caret indicator|Interaction & states
+5155	NEW:Citations as first-class content|Components
+5156	NEW:Show tool calls by default|Components
+5157	NEW:Stop and regenerate controls while streaming|Interaction & states
+5158	NEW:Citations as first-class content|Components
+5159	NEW:Thumb up/down feedback with undo|Components
+5160	NEW:Thumb up/down feedback with undo|Components
+5161	-
+5162	NEW:Minimal signup fields|Interaction & states
+5163	NEW:Friction proportional to commitment|Interaction & states
+5164	NEW:Minimal signup fields|Interaction & states
+5165	NEW:Validate inline not only on submit|Interaction & states
+5166	NEW:Progress indicator in multi-step forms|Components
+5167	NEW:No dark-pattern default opt-ins|Content & process
+5168	NEW:Prefill likely answers|Interaction & states
+5169	NEW:No dark-pattern default opt-ins|Content & process
+5170	primary
+5171	-
+5172	-
+5173	-
+5174	-
+5175	-
+5176	-
+5177	-
+5178	-
+5179	NEW:Auth panel tinted neutral, not brand flood|Surface
+5180	NEW:Password show/hide toggle|Components
+5181	error-identified,invalid
+5182	NEW:Minimal signup fields|Interaction & states
+5183	accent
+5184	NEW:Narrow form column with labels above|Space & layout
+5185	-
+5186	-
+5187	-
+5188	NEW:Charts only as sparklines in queue dashboards|Components
+5189	NEW:No spinner for fast chart updates|Interaction & states
+5190	NEW:Topbar 56px with hairline|Components
+5191	spacing,grid-12-column
+5192	NEW:Three content types above fold|Space & layout
+5193	-
+5194	NEW:Headless table matching token system|Components
+5195	-
+5196	-
+5197	states-designed
+5198	NEW:Narrow subtle sidebar|Components
+5199	-
+5200	-
+5201	-
+5202	-
+5203	-
+5204	-
+5205	-
+5206	-
+5207	-
+5208	NEW:Constrain hero to few elements|Space & layout
+5209	type
+5210	NEW:Hero headline starts 18-30% down fold|Space & layout
+5211	section-padding-generous
+5212	no-fake-stats,specific-headlines
+5213	NEW:No uniform three-column icon grids|Space & layout
+5214	-
+5215	NEW:Limit consecutive image-text zigzags|Space & layout
+5216	-
+5217	NEW:Ration eyebrow labels|Type
+5218	NEW:Marketing pages need real imagery|Content & process
+5219	NEW:Real screenshots not div mockups|Content & process
+5220	NEW:Real SVG logos not text wordmarks|Content & process
+5221	remove-clutter
+5222	specific-headlines,no-ai-cliche-copy
+5223	gradient,no-purple-blue-gradient
+5224	no-fake-stats
+5225	section-padding-generous
+5226	-
+5227	reduce,motion-duration
+5228	responsive-breakpoints
+5229	fluid-spacing-clamp
+5230	-
+5231	-
+5232	container-queries
+5233	swipe-alternative
+5234	hamburger-menu-a11y
+5235	max-content-width
+5236	dvh-units
+5237	safe-area-insets
+5238	NEW:Print stylesheet with page numbers and headers|Content & process
+5239	NEW:Feature parity on mobile|Space & layout
+5240	NEW:Design pointer-agnostic|Interaction & states
+5241	orientation-support
+5242	no-horizontal-scroll
+5243	-
+5244	-
+5245	-
+5246	-
+5247	-
+5248	-
+5249	-
+5250	reuse-components
+5251	-
+5252	-
+5253	-
+5254	-
+5255	-
+5256	-
+5257	-
+5258	-
+5259	ease-out-entrances
+5260	motion-duration
+5261	link-vs-button
+5262	loading-state-button
+5263	paste-not-blocked,error-identified
+5264	NEW:min-w-0 on flex children for truncation|Space & layout
+5265	NEW:Neutral image outline never tinted|Surface
+5266	transform-only
+5267	NEW:Limit animated blur radius|Performance
+5268	-
+5269	nonbreaking-spaces
+5270	primary
+5271	type,quiet
+5272	hover-state
+5273	states-designed
+5274	hover-state,active-pressed-state
+5275	primary
+5276	color-not-only,feedback
+5277	NEW:Vary primary metric card treatment|Components
+5278	hover-state,hover-transition-short
+5279	hover-state,hover-transition-short
+5280	-
+5281	NEW:Every audio cue has a visual equivalent|Access
+5282	NEW:Sound toggle in settings|Interaction & states
+5283	NEW:Sound toggle in settings|Interaction & states
+5284	NEW:No sound on high-frequency interactions|Interaction & states
+5285	NEW:Sound informs, never punishes|Interaction & states
+5286	NEW:Reuse a single AudioContext|Performance
+5287	NEW:Reuse a single AudioContext|Performance
+5288	NEW:Exponential decay for sound envelopes|Motion
+5289	NEW:Exponential decay for sound envelopes|Motion
+5290	NEW:Sound weight matches action importance|Interaction & states
+5291	NEW:Sound duration matches action duration|Interaction & states
+5292	-
+5293	-
+5294	-
+5295	-
+5296	-
+5297	-
+5298	-
+5299	animate-presence-exit
+5300	-
+5301	-
+5302	-
+5303	transform-only
+5304	NEW:Cap hover scale at 1.02-1.05|Motion
+5305	gsap-bundle-size
+5306	NEW:Stable keys for dynamic lists|Content & process
+5307	-
+5308	-
+5309	motion-duration
+5310	NEW:Use scroll timelines not JS for scroll-linked motion|Performance
+5311	NEW:will-change only during animation|Performance
+5312	-
+5313	NEW:Split text only on headlines|Performance
+5314	-
+5315	-
+5316	NEW:Smooth scrub value in scroll animation|Motion
+5317	-
+5318	-
+5319	reduce
+5320	NEW:Reuse tweens in frequent handlers|Performance
+5321	NEW:Reuse tweens in frequent handlers|Performance
+5322	NEW:No bounce in functional UI|Motion
+5323	micro-interaction-100-200
+5324	reduce
+5325	gsap-bundle-size
+5326	NEW:Cancel requestAnimationFrame loops on unmount|Performance
+5327	-
+5328	pause-motion
+5329	-
+5330	NEW:No scroll-jacking|Interaction & states
+5331	NEW:Smooth scrub value in scroll animation|Motion
+5332	NEW:Split text only on headlines|Performance
+5333	NEW:Prefer 2D over 3D data viz|Components
+5334	NEW:Cap 3D canvas performance|Performance
+5335	NEW:Cap 3D canvas performance|Performance
+5336	NEW:Cap 3D canvas performance|Performance
+5337	-
+5338	-
+5339	NEW:Cap 3D canvas performance|Performance
+5340	NEW:Cap 3D canvas performance|Performance
+5341	NEW:Cap 3D canvas performance|Performance
+5342	NEW:Cap 3D canvas performance|Performance
+5343	NEW:No OrbitControls on marketing pages|Interaction & states
+5344	NEW:Cap 3D canvas performance|Performance
+5345	NEW:One animation library per property|Motion
+5346	transform-only
+5347	NEW:will-change only during animation|Performance
+5348	NEW:No scroll-jacking|Interaction & states
+5349	-
+5350	states-designed
+5351	states-designed,layout-shift-zero
+5352	layout-shift-zero
+5353	states-designed
+5354	NEW:Escalate long loads to progress or timeout|Interaction & states
+5355	states-designed
+5356	loading-state-button
+5357	prevent-double-submit
+5358	states-designed,empty-copy-guides
+5359	error-suggestion,error-message-human
+5360	color-not-only
+5361	NEW:Error summary plus inline errors|Interaction & states
+5362	error-message-human
+5363	error-message-human
+5364	NEW:Preserve valid fields on error|Interaction & states
+5365	-
+5366	NEW:Handle concurrent edit conflicts|Interaction & states
+5367	-
+5368	-
+5369	NEW:Model UI states as discriminated unions|Content & process
+5370	feedback,color-not-only
+5371	NEW:Prefer APCA contrast|Color
+5372	dark-mode-support
+5373	-
+5374	NEW:Rotate palette families|Color
+5375	NEW:Rotate palette families|Color
+5376	NEW:Rotate palette families|Color
+5377	oklch-color-space,neutral-scale
+5378	shadow-layered
+5379	NEW:Semantic z-index layers|Content & process
+5380	-
+5381	semantic-color-tokens,dark-mode-support
+5382	semantic-color-tokens,dark-mode-support
+5383	design-tokens
+5384	design-tokens
+5385	accent-one-hue
+5386	NEW:Reserve box-shadow for colored glows only|Surface
+5387	dark-mode-support
+5388	dark-mode-support
+5389	design-tokens
+5390	preserve-brand
+5391	design-tokens,spacing-scale-4pt
+5392	semantic-color-tokens
+5393	-
+5394	preserve-brand
+5395	NEW:Truncate overflowing text with title tooltip|Type
+5396	font-family-count-max-2
+5397	NEW:Emphasize in headlines with same family|Type
+5398	-
+5399	weight-scale-limited
+5400	NEW:Long-form body text 18px|Type
+5401	type-scale
+5402	NEW:Display step 2.5-4x above body step|Type
+5403	type-scale
+5404	type-scale
+5405	type-scale
+5406	serif
+5407	serif
+5408	-
+5409	font-subset
+5410	NEW:Disable font synthesis|Type
+5411	tracking
+5412	tracking
+5413	tracking
+5414	banned-fonts
+5415	max-line-length-65ch
+5416	body-line-height-1-5
+5417	heading-line-height-tight
+5418	line-height-scale
+5419	tabular
+5420	NEW:min-w-0 on flex children for truncation|Space & layout
+5421	NEW:Trim text box half-leading in pills and buttons|Type
+5422	NEW:Underline offset and thickness from font metrics|Type
+5423	-
+5424	-
+5425	-
+5426	-
+5427	-
+5428	-
+5429	-
+5430	banned-fonts
+5431	ask-first
+5432	-
+5433	-
+5434	-
+5435	-
+5436	preserve-brand
+5437	ask-first
+5438	-
+5439	-
+5440	NEW:Commit to a named design direction|Content & process
+5441	-
+5442	serif
+5443	serif
+5444	banned-fonts
+5445	ask-first
+5446	NEW:No uniform three-column icon grids|Space & layout
+5447	reduce
+5448	radius-scale
+5449	read-design-context
+5450	-
+5451	-
+5452	-
+5453	-
+5454	-
+5455	-
+5456	-
+5457	no-purple-blue-gradient
+5458	gradient
+5459	gradient
+5460	gradient
+5461	NEW:Every animation must communicate|Motion
+5462	NEW:Vary button shapes, pills only occasionally|Surface
+5463	no-neon-glow
+5464	no-neon-glow
+5465	no-neon-glow
+5466	icon-consistency,no-emoji-icons
+5467	no-emoji-in-copy
+5468	no-emoji-icons,no-emoji-in-copy
+5469	-
+5470	banned-fonts
+5471	serif,banned-fonts
+5472	serif
+5473	split
+5474	NEW:Vary section layouts|Space & layout
+5475	stress-test
+5476	spacing-tokens
+5477	align-to-grid
+5478	NEW:Three-tier visual hierarchy|Space & layout
+5479	-
+5480	NEW:Real screenshots not stock illustrations|Content & process
+5481	no-ai-cliche-copy
+5482	-
+5483	-
+5484	-
+5485	-
+5486	NEW:Three-tier visual hierarchy|Space & layout
+5487	-
+5488	-
+5489	NEW:Commit to a named design direction|Content & process
+5490	banned-fonts
+5491	ask-first
+5492	ask-first
+5493	radius-scale
+5494	banned-fonts,serif
+5495	no-ai-cliche-copy
+5496	-
+5497	-
+5498	-
+5499	focus-visible-only,focus-not-obscured
+5500	target-min-24,touch-target-44
+5501	NEW:Inputs 16px minimum on mobile|Type
+5502	zoom-not-disabled
+5503	NEW:Inputs keep focus and value after hydration|Interaction & states
+5504	paste-not-blocked
+5505	loading-state-button
+5506	NEW:Minimum visible time for loading indicators|Interaction & states
+5507	optimistic-update
+5508	undo-over-confirm
+5509	touch-action-manipulation
+5510	tap-highlight
+5511	NEW:Contain overscroll in modals and drawers|Interaction & states
+5512	NEW:No dead zones on controls|Interaction & states
+5513	link-vs-button
+5514	aria-live-toasts
+5515	reduce
+5516	NEW:Prefer CSS animation over JS|Performance
+5517	transform-only
+5518	NEW:Never transition all properties|Motion
+5519	NEW:Cross-browser SVG transform-box|Motion
+5520	NEW:Let CSS size layout not JS|Performance
+5521	microcopy-hints
+5522	layout-shift-zero,states-designed
+5523	typographic-quotes
+5524	text-wrap-pretty
+5525	real-ellipsis-dash
+5526	NEW:scroll-margin-top on anchored headings|Space & layout
+5527	NEW:Detect language from headers not IP|Content & process
+5528	button-name
+5529	nonbreaking-spaces
+5530	NEW:Enter submits forms|Interaction & states
+5531	prevent-double-submit
+5532	validate-late
+5533	NEW:No dead zones on controls|Interaction & states
+5534	autocomplete-attributes
+5535	input-type-correct
+5536	NEW:Example values as placeholders|Interaction & states
+5537	accessible-auth,paste-not-blocked
+5538	autocomplete-off-misuse
+5539	NEW:Trim whitespace from input values|Interaction & states
+5540	NEW:Set select colors explicitly for dark mode|Color
+5541	-
+5542	NEW:Batch layout reads and writes|Performance
+5543	server-response-fast
+5544	NEW:Prefer uncontrolled inputs|Performance
+5545	lazy-load-images,preload-hero
+5546	image-dimensions,layout-shift-zero
+5547	preconnect-origins
+5548	font-preload-critical
+5549	font-subset
+5550	media-controls
+5551	shadow-layered
+5552	radius-nested-concentric
+5553	NEW:Color-blind-friendly chart palettes|Color
+5554	dark-mode-support
+5555	NEW:Animate wrapper not text node|Motion
+5556	concise-subtext
+5557	consistent-terminology
+5558	NEW:Write in second person|Content & process
+5559	NEW:Numerals not spelled numbers, grouped thousands|Content & process
+5560	NEW:Consistent currency decimals|Content & process
+5561	nonbreaking-spaces
+5562	nonbreaking-spaces
+5563	NEW:Positive encouraging language|Content & process
+5564	error-message-human
+5565	error-suggestion,error-message-human
+5566	button-copy-outcome
+5567	button-copy-outcome
+5568	-
+5569	focus-visible-only,focus-not-obscured
+5570	focus-trap-modal,focus-return
+5571	target-min-24,touch-target-44
+5572	NEW:Inputs 16px minimum on mobile|Type
+5573	zoom-not-disabled
+5574	touch-action-manipulation
+5575	tap-highlight
+5576	NEW:Inputs keep focus and value after hydration|Interaction & states
+5577	paste-not-blocked
+5578	loading-state-button
+5579	NEW:Enter submits forms|Interaction & states
+5580	prevent-double-submit
+5581	validate-late
+5582	error-identified
+5583	autocomplete-attributes,input-type-correct
+5584	NEW:Disable spellcheck on emails and codes|Interaction & states
+5585	NEW:Example values as placeholders|Interaction & states
+5586	NEW:Warn on unsaved changes before navigation|Interaction & states
+5587	accessible-auth,paste-not-blocked
+5588	NEW:Trim whitespace from input values|Interaction & states
+5589	NEW:No dead zones on controls|Interaction & states
+5590	NEW:Put search and filter state in the URL|Interaction & states
+5591	NEW:Restore scroll on back and forward|Interaction & states
+5592	link-vs-button
+5593	link-vs-button
+5594	optimistic-update
+5595	undo-over-confirm
+5596	real-ellipsis-dash
+5597	target
+5598	NEW:Delay first tooltip, then instant|Interaction & states
+5599	NEW:Contain overscroll in modals and drawers|Interaction & states
+5600	NEW:Disable selection during drag|Interaction & states
+5601	no-drag-only,swipe-alternative
+5602	NEW:No dead zones on controls|Interaction & states
+5603	NEW:Autofocus primary input on desktop only|Interaction & states
+5604	reduce
+5605	NEW:Prefer CSS animation over JS|Performance
+5606	transform-only
+5607	transform-only
+5608	NEW:Never transition all properties|Motion
+5609	NEW:Every animation must communicate|Motion
+5610	easing-tokens
+5611	NEW:Animations interruptible and input-driven|Motion
+5612	animation-under-5s-or-pause
+5613	NEW:Correct transform-origin|Motion
+5614	NEW:Cross-browser SVG transform-box|Motion
+5615	optical-alignment
+5616	align-to-grid
+5617	icon-consistency,centered-vertical-icon
+5618	real-devices
+5619	safe-area-insets
+5620	no-horizontal-scroll
+5621	NEW:Let CSS size layout not JS|Performance
+5622	microcopy-hints
+5623	layout-shift-zero,states-designed
+5624	page-title
+5625	typographic-quotes,text-wrap-pretty
+5626	tabular
+5627	color-not-only
+5628	button-name
+5629	real-ellipsis-dash
+5630	skip-link,heading-order
+5631	stress-test
+5632	NEW:Locale-aware date formatting|Content & process
+5633	NEW:translate=no on brand names|Content & process
+5634	aria-semantics,alt-decorative-empty
+5635	button-name
+5636	native-over-aria
+5637	video-captions,audio-transcript
+5638	nonbreaking-spaces
+5639	stress-test
+5640	states-designed
+5641	real-devices
+5642	-
+5643	NEW:Minimize re-renders|Performance
+5644	NEW:Profile with CPU and network throttling|Performance
+5645	NEW:Batch layout reads and writes|Performance
+5646	server-response-fast
+5647	NEW:Prefer uncontrolled inputs|Performance
+5648	virtualize-long-lists
+5649	lazy-load-images,preload-hero
+5650	layout-shift-zero,image-dimensions
+5651	preconnect-origins
+5652	font-preload-critical,font-display-swap
+5653	video-instead-of-gif
+5654	video-instead-of-gif,reduce
+5655	dark-mode-support
+5656	meta-theme-color
+5657	NEW:Set select colors explicitly for dark mode|Color
+5658	-
+5659	NEW:Guard date rendering against hydration mismatch|Performance
+5660	shadow-layered
+5661	border-transparent-alpha
+5662	radius-nested-concentric
+5663	tinted-neutrals,shadow
+5664	NEW:Color-blind-friendly chart palettes|Color
+5665	NEW:Increase contrast on hover, active, focus|Color
+5666	meta-theme-color
+5667	NEW:Avoid gradient banding|Color
+5668	native-over-aria
+5669	focus-visible-only
+5670	focus-not-obscured
+5671	input-type-correct
+5672	paste-not-blocked
+5673	autocomplete-off-misuse
+5674	reduce,pause-motion
+5675	wrap,text-wrap-pretty
+5676	states-designed
+5677	NEW:Batch layout reads and writes|Performance
+5678	NEW:Prefer uncontrolled inputs|Performance
+5679	preconnect-origins
+5680	video-instead-of-gif
+5681	link-vs-button
+5682	undo-over-confirm
+5683	NEW:Autofocus primary input on desktop only|Interaction & states
+5684	no-horizontal-scroll
+5685	NEW:Locale-aware date formatting|Content & process
+5686	NEW:Locale-aware number formatting|Content & process
+5687	-
+5688	NEW:Guard date rendering against hydration mismatch|Performance
+5689	NEW:Increase contrast on hover, active, focus|Color
+5690	zoom-not-disabled
+5691	native-over-aria,keyboard-operable
+5692	NEW:Locale-aware date formatting|Content & process
+5693	swipe-alternative
+5694	text-alternative
+5702	audio-transcript,audio-description
+5703	live-captions
+5705	reading-order
+5709	input-purpose
+5710	color-not-only
+5717	no-text-in-images
+5719	non-text-contrast
+5724	keyboard-operable
+5728	no-time-limit
+5740	headings-describe
+5753	NEW:Support all input modalities|Interaction & states
+5761	unusual-words
+5766	no-context-change-on-focus
+5768	error-identified
+5770	error-suggestion
+5772	help-mechanism
+5777	form-label-programmatic
+5778	NEW:Show expected input format|Interaction & states
+5779	aria-semantics
+5780	color-not-only
+5781	color-not-only,error-identified
+5782	focus-appearance
+5783	focus-visible-only
+5784	real-devices
+5785	-
+5786	microcopy-hints
+5787	color-not-only
+5788	invalid,validate-late
+5789	NEW:Fluid type scale across viewports|Type
+5790	NEW:Never use vw alone in font-size|Type
+5791	max-line-length-65ch
+5792	max-line-length-65ch,text-resize-200
+5793	line-height-scale
+5794	-
+5795	NEW:Use woff2 web fonts|Performance
+5796	font-display-swap
+5797	font-display-swap
+5798	font-display-swap
+5799	NEW:Never use vw alone in font-size|Type

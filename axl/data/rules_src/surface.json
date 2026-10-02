@@ -1,0 +1,4133 @@
+{
+ "class": "Surface",
+ "tweaks": {
+  "surface": [
+   {
+    "rule": "ui:card ask \"Does each card use only one container signal (border, shadow or background)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:bdd287",
+       "deslop:b6a6bc"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Does each card exist because elevation communicates hierarchy?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:bdd287"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Is there clear contrast between primary content, supporting content and background surfaces?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:b005ee"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Is the lightest enclosure used that still separates (a faint surface before a hard border before a heavy shadow)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:b6a6bc"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Are cards elevated (paper-2, paper-3) rather than hairline-on-paper?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:827adf"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "badge": [
+   {
+    "rule": "ui:badge ask \"Is each badge or pill needed to show supporting context?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:08ee36",
+       "taste-skill:1e81ed",
+       "taste-skill:de59c1",
+       "taste-skill:79f1df",
+       "taste-skill:f0af2b"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Is the hero free of pill tags, badges, stamp icons, fake stats and tiny logos?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b44156",
+       "taste-skill:7b5516",
+       "taste-skill:f0af2b"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:badge ask \"Is there no badge pill directly above the H1?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:14ddc6"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:badge ask \"Is status shown as a small coloured dot with a text label rather than a badge or pill?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c1a246"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:badge ask \"Are trend percentages plain secondary text rather than coloured pills?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:e38470"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "flat": [
+   {
+    "rule": "ui:card ask \"Are cards absent where spacing and alignment would do?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:7e7d33",
+       "impeccable:92f91a",
+       "taste-skill:1ac88d"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card axl:nested-cards == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:531c5c"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card box-shadow == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "hallmark:9099d7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:border-radius == 0px",
+    "values": [
+     {
+      "value": "0px",
+      "qids": [
+       "hallmark:9099d7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is every border, shadow and background there because it serves hierarchy or function?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:9710e0",
+       "impeccable:34a953"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "aria:listitem border-bottom-width == 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "taste-skill:1ac88d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:listitem border-bottom-color == #EAEAEA",
+    "values": [
+     {
+      "value": "#EAEAEA",
+      "qids": [
+       "taste-skill:1ac88d"
+      ]
+     }
+    ]
+   }
+  ],
+  "border": [
+   {
+    "rule": "page ask \"Are borders that mark structure or state (dividers, layout separators, selected and focus states) kept?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:95be2e",
+       "feel-better:cfe238",
+       "feel-better:3b05cb"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "crisp": [
+   {
+    "rule": "page axl:border-radius <= 12px",
+    "values": [
+     {
+      "value": "12px",
+      "qids": [
+       "taste-skill:e6b6d4"
+      ]
+     },
+     {
+      "value": "0px",
+      "qids": [
+       "taste-skill:e4410a",
+       "hallmark:9099d7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are border radius extremes and custom shapes simplified?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c42aff"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card box-shadow == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "hallmark:9099d7"
+      ]
+     }
+    ]
+   }
+  ],
+  "soft": [
+   {
+    "rule": "ui:card axl:border-radius <= 12px",
+    "values": [
+     {
+      "value": "12px",
+      "qids": [
+       "hallmark:dbae19"
+      ]
+     },
+     {
+      "value": "20px",
+      "qids": [
+       "hallmark:a4449e"
+      ]
+     },
+     {
+      "value": "28px",
+      "qids": [
+       "hallmark:b36ba6"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:badge axl:border-radius == 999px",
+    "values": [
+     {
+      "value": "999px",
+      "qids": [
+       "hallmark:a4449e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox axl:border-radius == 12px",
+    "values": [
+     {
+      "value": "12px",
+      "qids": [
+       "hallmark:a4449e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are there no square corners on cards, pills and buttons?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1678d0",
+       "hallmark:a4449e"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Do cards have soft drop shadows?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:dbae19",
+       "hallmark:9fafe3",
+       "hallmark:d7bb9d"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Is the page background cream paper rather than pure white?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d7bb9d"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Are border radius extremes and custom shapes simplified?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:c42aff"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "shadow": [
+   {
+    "rule": "ui:card ask \"Are shadows tinted to the background hue rather than pure black?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:cb5741",
+       "taste-skill:00c36b",
+       "taste-skill:66c74c",
+       "ui-craft:233a86",
+       "vercel:9c2217"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "ui:card ask \"Are shadows subtle, soft and controlled?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:9f02fe",
+       "hallmark:0343a8",
+       "hallmark:9fafe3",
+       "hallmark:d73930",
+       "deslop:9021ec",
+       "taste-skill:ff4edf"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Are shadows reserved for genuinely floating elements?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:9021ec"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card box-shadow == none @media:dark",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "deslop:ebf053"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:menu ask \"Does an open menu on a low-contrast surface have a hairline stroke and/or shadow pair to separate it from the page?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b6180f"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "remove-clutter": [
+   {
+    "rule": "page ask \"Does every element serve a purpose, with nothing decorative, redundant or rarely needed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:64f301",
+       "anthropic:cc07f5",
+       "claw-design:68637f",
+       "claw-design:e275be",
+       "impeccable:73757d",
+       "impeccable:01dd85",
+       "impeccable:ef01f1",
+       "impeccable:fcc246",
+       "impeccable:96d463",
+       "nngroup:299ce3",
+       "nngroup:9a0739",
+       "nngroup:5098c9",
+       "taste-skill:927876",
+       "taste-skill:bbec1b",
+       "taste-skill:eace9b",
+       "oneredoak:7630d3"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Is the page free of filler labels, pseudo-system text and fake utility labels?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:bc172c",
+       "taste-skill:0bf12c",
+       "taste-skill:d7439f",
+       "taste-skill:0df026",
+       "taste-skill:79f1df"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Is the hero free of pill tags, badges, stamp icons, fake stats and tiny logos?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b44156",
+       "taste-skill:7b5516",
+       "taste-skill:f0af2b",
+       "taste-skill:1e81ed",
+       "taste-skill:de59c1"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card axl:nested-cards == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:eab7c1",
+       "taste-skill:0df026"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Does each card use only one container signal (border, shadow or background)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:3ec53b"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Are cards absent where spacing and alignment would do?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:e018e1",
+       "hallmark:e6344e",
+       "taste-skill:6b015a",
+       "deslop:df3072"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Is the page uncluttered rather than too dense?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ac2886",
+       "taste-skill:54af7f",
+       "taste-skill:00fccf",
+       "taste-skill:89c2a5",
+       "taste-skill:41a308",
+       "taste-skill:3d89ed",
+       "taste-skill:d623f3",
+       "taste-skill:63a7b2",
+       "taste-skill:c6d75a"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Does every animation clarify, guide or confirm something?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:942a74",
+       "hallmark:548637",
+       "hallmark:663ab5",
+       "hallmark:91027b",
+       "impeccable:198b7b",
+       "impeccable:21418b",
+       "impeccable:4ba15d"
+      ]
+     }
+    ],
+    "class": "motion"
+   },
+   {
+    "rule": "ui:icon ask \"Does each icon add information beyond its label?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:551660"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "ui:chart ask \"Is ink spent on data rather than chrome (gridlines, ticks, borders, legend boxes)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:1ca9b0",
+       "claw-design:ed17ba",
+       "claw-design:abc94e",
+       "claw-design:0da73f",
+       "ui-craft:2bf78b"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Are decorative gradients, blobs, patterns and ornamental effects removed unless they carry meaning?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b47d83",
+       "ui-craft:62790c",
+       "impeccable:4d300f",
+       "claw-design:abc94e",
+       "claw-design:0da73f"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:button ask \"Is there one filled button and one ghost button, with other actions as text links or tertiary styles?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:de8e93"
+      ]
+     }
+    ],
+    "class": "interaction"
+   },
+   {
+    "rule": "page ask \"Does each section have one primary job?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:7a1400"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Does the focal point support the task goal rather than decoration?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:52fd9a",
+       "anthropic:64f301"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Are borders and lines thin, low-opacity or removed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:2e3f03"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Does decorative imagery avoid overpowering the offer?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:4eb10d"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "icon-consistency": [
+   {
+    "rule": "ui:icon axl:icon-sets <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "feel-better:2ba963",
+       "hallmark:0b9bd5",
+       "taste-skill:9a5ba2",
+       "ui-craft:0be8cf",
+       "hallmark:2f31d3",
+       "impeccable:9864e3",
+       "impeccable:4ddb7a",
+       "deslop:9b3cf3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon axl:emoji-as-icons == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:2f31d3",
+       "ui-craft:0be8cf",
+       "unslop:b7b28d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon axl:distinct-stroke-widths <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "feel-better:2ba963",
+       "feel-better:f32af7",
+       "hallmark:30c27d",
+       "deslop:7a8ed8",
+       "deslop:3214bb",
+       "deslop:9b3cf3",
+       "taste-skill:00e4ee"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon axl:distinct-icon-grids <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "deslop:bd9fd7",
+       "deslop:0a3f4b",
+       "deslop:3214bb",
+       "deslop:9b3cf3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon ask \"Does the icon corner radius match the overall radius of the token set?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:763866",
+       "deslop:3db8c5",
+       "deslop:9b3cf3",
+       "deslop:6ab8b0"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "ui:icon ask \"Do all icons carry the same optical weight and read as siblings from one family?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:2f1865",
+       "deslop:7aea64",
+       "deslop:080bbd",
+       "deslop:21a07b",
+       "deslop:0a3f4b",
+       "deslop:aaa8b3",
+       "impeccable:20e51b",
+       "vercel:85d8ff"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "ui:icon ask \"Is the unmodified default icon set avoided (customised stroke and radius, or a distinctive set)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:358f64",
+       "deslop:ec26f9",
+       "taste-skill:3c0076",
+       "taste-skill:dfccbd",
+       "taste-skill:6912b4",
+       "taste-skill:a7fe96",
+       "deslop:82d665",
+       "deslop:0bbee2",
+       "deslop:6ab8b0",
+       "deslop:2dd102",
+       "deslop:1fe7c1",
+       "deslop:a4f6a5"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "ui:icon ask \"Are icons from one chosen icon library rather than hand-rolled SVG?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:116931",
+       "taste-skill:e2c80f",
+       "taste-skill:9cba25",
+       "taste-skill:00e4ee",
+       "taste-skill:135a81",
+       "taste-skill:e7afb5",
+       "taste-skill:132b07"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "ui:icon ask \"Are icons monochromatic and outlined?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:f3f36f"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "radius-scale": [
+   {
+    "rule": "page axl:distinct-border-radii between 2 3",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "oneredoak:58e584",
+       "unslop:648806"
+      ]
+     },
+     {
+      "value": "3",
+      "qids": [
+       "ui-craft:8d4853"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card axl:border-radius <= 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "deslop:58c84c"
+      ]
+     },
+     {
+      "value": "12px",
+      "qids": [
+       "hallmark:dbae19",
+       "taste-skill:e6b6d4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:border-radius >= 16px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "claw-design:e478ff"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card axl:border-radius == 8px",
+    "values": [
+     {
+      "value": "8px",
+      "qids": [
+       "ui-craft:8d4853"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox axl:border-radius == 6px",
+    "values": [
+     {
+      "value": "6px",
+      "qids": [
+       "ui-craft:8d4853",
+       "oneredoak:58e584"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:dialog axl:border-radius == 12px",
+    "values": [
+     {
+      "value": "12px",
+      "qids": [
+       "ui-craft:8d4853"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card axl:border-radius !contains 9999px",
+    "values": [
+     {
+      "value": "9999px",
+      "qids": [
+       "ui-craft:c0b87f",
+       "unslop:e26f8b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Are full-pill radii reserved for tags and buttons, not cards?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:58c84c"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "radius-nested-concentric": [
+   {
+    "rule": "page axl:concentric-radius-error == 0px",
+    "values": [
+     {
+      "value": "0px",
+      "qids": [
+       "feel-better:23d85b",
+       "feel-better:730883",
+       "feel-better:473253",
+       "ui-craft:4a404c"
+      ]
+     },
+     {
+      "value": "24px",
+      "qids": [
+       "feel-better:a743bc",
+       "ui-craft:f2ecae"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:nested-radius-larger-than-parent == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "vercel:4a5874",
+       "vercel:f12e92"
+      ]
+     }
+    ]
+   }
+  ],
+  "radius-consistent": [
+   {
+    "rule": "aria:button axl:border-radius == 6px",
+    "values": [
+     {
+      "value": "6px",
+      "qids": [
+       "hallmark:f234cd",
+       "taste-skill:87d653"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox axl:border-radius == 6px",
+    "values": [
+     {
+      "value": "6px",
+      "qids": [
+       "hallmark:f234cd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:code axl:border-radius == 10px",
+    "values": [
+     {
+      "value": "10px",
+      "qids": [
+       "hallmark:f234cd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card axl:border-radius between 12px 16px",
+    "values": [
+     {
+      "value": "12px",
+      "qids": [
+       "impeccable:f49a8a",
+       "taste-skill:e6d0e0"
+      ]
+     },
+     {
+      "value": "16px",
+      "qids": [
+       "impeccable:f49a8a",
+       "taste-skill:e6d0e0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is elevation declared once, by border or shadow, not both?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:f49a8a"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card box-shadow == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "taste-skill:87d653"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are pill radii reserved for small controls, not large containers, cards or primary buttons?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:262c3e",
+       "deslop:58c84c",
+       "impeccable:f49a8a"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page axl:distinct-border-radii >= 2",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "deslop:cea261"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is any mix of radii backed by a documented rule that is followed everywhere?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:c038e3",
+       "taste-skill:597bb8"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Do corner radii follow the system-specified corner rounds?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:ac165b"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:icon ask \"Does the icon corner radius match the overall radius of the token set?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:763866",
+       "deslop:3db8c5",
+       "deslop:6ab8b0"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:region axl:border-radius == 2.5rem",
+    "values": [
+     {
+      "value": "2.5rem",
+      "qids": [
+       "taste-skill:54ad7b"
+      ]
+     }
+    ]
+   }
+  ],
+  "shadow-scale": [
+   {
+    "rule": "page axl:distinct-shadow-levels >= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "ui-craft:d8f501"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "deslop:f4967a"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are shadows transparent dark rather than opaque gray?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:f4967a"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Does elevation reinforce hierarchy rather than decorate?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:576994"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Is one shadow style used consistently?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:324e20"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "shadow-layered": [
+   {
+    "rule": "ui:card axl:box-shadow-layers between 2 3",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "ui-craft:7b8925",
+       "ui-craft:3a1aa5",
+       "ui-craft:4e440f",
+       "vercel:3b9bef",
+       "vercel:6e2027",
+       "feel-better:968ddb"
+      ]
+     },
+     {
+      "value": "3",
+      "qids": [
+       "ui-craft:7b8925"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:box-shadow-layers <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "hallmark:391316"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Is the border kept only for structure or state, not to fake elevation?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:968ddb",
+       "feel-better:e2a377"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Is there no coloured glow on a light background?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:391316"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "ui:card ask \"Is the shadow very light and wide-spreading (a diffusion shadow)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:54ad7b"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "shadow-neutral-alpha": [
+   {
+    "rule": "ui:card ask \"Do buttons, cards and containers use a subtle box-shadow instead of a border for depth?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:080696",
+       "feel-better:df8fa2"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Are shadows transparent dark rather than opaque gray?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:f4967a"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "ui:card border-width == 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "ui-craft:89bcee"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-heavy-drop-shadow": [
+   {
+    "rule": "page axl:identical-shadow-count <= 3",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "claw-design:44577e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card box-shadow == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "hallmark:0d7455",
+       "taste-skill:87d653"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:hard-offset-shadows == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:4e9858"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is depth used only where it clarifies state or hierarchy?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:ce3fdb"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page axl:box-shadow-layers <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "impeccable:607856"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:shadow-max-alpha <= 0.05",
+    "values": [
+     {
+      "value": "0.05",
+      "qids": [
+       "taste-skill:3044da"
+      ]
+     },
+     {
+      "value": "0.3",
+      "qids": [
+       "taste-skill:a7c7f3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are generic 1px solid gray borders avoided?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:a7c7f3"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Is shadow depth hairline or ambient-only?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:d92e48"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "border-hairline": [
+   {
+    "rule": "ui:card border-width == 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "taste-skill:59f453",
+       "taste-skill:40e31d",
+       "ui-craft:71a34c",
+       "taste-skill:13a34b",
+       "ui-craft:89bcee",
+       "taste-skill:5dbd51"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card border-color == #EAEAEA",
+    "values": [
+     {
+      "value": "#EAEAEA",
+      "qids": [
+       "taste-skill:59f453",
+       "taste-skill:40e31d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page border-width between 0.5px 1px",
+    "values": [
+     {
+      "value": "0.5px",
+      "qids": [
+       "hallmark:86e985"
+      ]
+     },
+     {
+      "value": "1px",
+      "qids": [
+       "hallmark:86e985"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table ask \"Does the table use light row separators rather than heavy borders?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:4010ad",
+       "deslop:578600"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Is the lightest enclosure used that still separates (a faint surface before a hard border before a heavy shadow)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:b6a6bc"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "aria:menu ask \"Does an open menu on a low-contrast surface have a hairline stroke and/or shadow pair to separate it from the page?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:b6180f"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "aria:navigation ask \"Does a sticky nav have a plane separator (a 1px low-contrast hairline, or backdrop blur over a translucent fill) once content scrolls under it?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:82e360"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card box-shadow == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:71a34c"
+      ]
+     }
+    ]
+   }
+  ],
+  "border-or-shadow-not-both": [
+   {
+    "rule": "ui:card ask \"Is elevation declared once, by border or shadow, not both?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:f49a8a",
+       "ui-craft:71a34c"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Is the border kept only for structure or state, not to fake elevation?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:968ddb",
+       "feel-better:e2a377"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Do buttons, cards and containers use a subtle box-shadow instead of a border for depth?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:080696",
+       "feel-better:968ddb"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card box-shadow == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:71a34c"
+      ]
+     }
+    ]
+   }
+  ],
+  "border-transparent-alpha": [
+   {
+    "rule": "page ask \"Are borders semi-transparent so they adapt to the surface behind them?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:4e3b08",
+       "vercel:4eb1eb"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "no-glassmorphism-default": [
+   {
+    "rule": "page backdrop-filter == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "hallmark:a0e4fd",
+       "ui-craft:f7186b",
+       "claw-design:432e2e",
+       "ui-craft:bdbd8b",
+       "taste-skill:ddd0a0"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is blur limited to subtle navbar blurs?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:881453"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "page ask \"Is there a solid-fill fallback under prefers-reduced-transparency for blurred or translucent surfaces?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b81cf9",
+       "taste-skill:cbb7aa"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "page ask \"Is any Liquid Glass look labelled as a web approximation?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7127f3"
+      ]
+     }
+    ],
+    "class": "process"
+   },
+   {
+    "rule": "page ask \"Is glass avoided on dashboards, public-sector pages and dense forms?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:cd0b98",
+       "ui-craft:e1ca67"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "backdrop-blur-restraint": [
+   {
+    "rule": "page axl:backdrop-blur-containers <= 2",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "claw-design:79cc89"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:backdrop-blur-on-scrolling == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:ce5b13",
+       "taste-skill:dc0d8f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page transition-property !contains backdrop-filter",
+    "values": [
+     {
+      "value": "backdrop-filter",
+      "qids": [
+       "ui-craft:b33636"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Is there a solid-fill fallback under prefers-reduced-transparency for blurred or translucent surfaces?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b81cf9",
+       "taste-skill:167905"
+      ]
+     }
+    ],
+    "class": "access"
+   },
+   {
+    "rule": "aria:navigation ask \"Does a sticky nav have a plane separator (a 1px low-contrast hairline, or backdrop blur over a translucent fill) once content scrolls under it?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:82e360"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "no-card-in-card": [
+   {
+    "rule": "ui:card axl:nested-cards == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:531c5c",
+       "impeccable:e6bd9f",
+       "taste-skill:eab7c1",
+       "taste-skill:aa1fca",
+       "taste-skill:0df026",
+       "ui-craft:1fae3a",
+       "impeccable:632577",
+       "taste-skill:0565ec"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Does each card use only one container signal (border, shadow or background)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:3ec53b"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Does each card hold one idea?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "claw-design:9357c7"
+      ]
+     }
+    ],
+    "class": "content"
+   },
+   {
+    "rule": "page ask \"Are sections open rather than wrapped in boxed containers?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:0565ec",
+       "taste-skill:61f506",
+       "taste-skill:aa1fca",
+       "taste-skill:3cb044",
+       "taste-skill:e358a3",
+       "taste-skill:64af88",
+       "taste-skill:c78c1e"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Is the page structured by real layout rather than same-size icon, heading and text cards?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:632577",
+       "ui-craft:a06dac"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "ui:card ask \"Are cards used only for peer items in a collection?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a06dac",
+       "ui-craft:1fae3a"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "card-only-when-grouping": [
+   {
+    "rule": "ui:card ask \"Does each card exist because elevation communicates hierarchy?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:bdd287",
+       "taste-skill:00c36b",
+       "taste-skill:66c74c",
+       "taste-skill:ea3d67",
+       "ui-craft:1fae3a",
+       "taste-skill:ddfaf0",
+       "ui-craft:1c6247"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Are cards absent where spacing and alignment would do?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:92f91a",
+       "ui-craft:70b995",
+       "taste-skill:bdd287"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card ask \"Are cards replaced by border-top dividers or negative space in dense layouts?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:00c36b",
+       "taste-skill:ba7104",
+       "taste-skill:ea3d67"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "ui:card ask \"Are cards used only for peer items in a collection?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a06dac",
+       "ui-craft:1fae3a",
+       "impeccable:632577"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Are sections open rather than wrapped in boxed containers?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:0565ec",
+       "taste-skill:61f506",
+       "taste-skill:aa1fca",
+       "taste-skill:3cb044",
+       "taste-skill:e358a3",
+       "taste-skill:64af88",
+       "taste-skill:c78c1e"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Are shadows tinted to the background hue rather than pure black?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:00c36b",
+       "taste-skill:66c74c"
+      ]
+     }
+    ],
+    "class": "color"
+   },
+   {
+    "rule": "page ask \"Are articles shown as a stacked list with thumbnail and dek rather than a card grid?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:307844"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "no-side-stripe-border": [
+   {
+    "rule": "ui:card border-left-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "impeccable:e99230",
+       "hallmark:39eb49",
+       "impeccable:ba04f2",
+       "impeccable:ce5503",
+       "ui-craft:f58b4e",
+       "hallmark:2a9450"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card border-right-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "impeccable:e99230",
+       "hallmark:2a9450"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:listitem border-left-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "impeccable:e99230"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:listitem border-right-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "impeccable:e99230"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:alert border-left-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "impeccable:e99230"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:alert border-right-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "impeccable:e99230"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card border-top-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "ui-craft:f58b4e"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-emoji-icons": [
+   {
+    "rule": "ui:icon axl:emoji-as-icons == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "claw-design:4f1bfd",
+       "claw-design:05f742",
+       "hallmark:0560d5",
+       "hallmark:7c1abc",
+       "hallmark:2f31d3",
+       "hallmark:0a360f",
+       "ui-craft:d00c48",
+       "unslop:b7b28d",
+       "unslop:67cbfb",
+       "ui-craft:0be8cf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:* axl:emoji-count == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:4faa6e",
+       "taste-skill:dd8229",
+       "taste-skill:d9e711"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "text:label axl:emoji-count == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:0a360f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon axl:icon-sets <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "ui-craft:0be8cf"
+      ]
+     }
+    ]
+   }
+  ],
+  "1px-low-opacity-outline-on-images": [
+   {
+    "rule": "aria:img outline-width == 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "feel-better:2d254d",
+       "feel-better:532f25",
+       "feel-better:4dd7cf"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img outline-color == oklch(0 0 0 / 0.1)",
+    "values": [
+     {
+      "value": "oklch(0 0 0 / 0.1)",
+      "qids": [
+       "feel-better:607b85",
+       "feel-better:c8d5d7",
+       "feel-better:08acc1",
+       "feel-better:fc0bdd"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img outline-color == oklch(1 0 0 / 0.1) @media:dark",
+    "values": [
+     {
+      "value": "oklch(1 0 0 / 0.1)",
+      "qids": [
+       "feel-better:607b85",
+       "feel-better:c8d5d7"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img outline-offset == -1px",
+    "values": [
+     {
+      "value": "-1px",
+      "qids": [
+       "feel-better:4edfe8"
+      ]
+     }
+    ]
+   }
+  ],
+  "no-fake-browser-or-phone-chrome": [
+   {
+    "rule": "page ask \"Is the page free of hand-drawn fake browser bars, phone frames, code-block windows and IDE chrome?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6a6762",
+       "hallmark:7d1bc6",
+       "hallmark:d6de0d"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:figure border-width <= 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "hallmark:7b350d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img ask \"Are phone mockups real device-frame PNGs or photographs rather than CSS-drawn?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:5e1ea3"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "text:code ask \"Do code blocks use a plain pre with a typographic frame (top rule, label, bottom rule) instead of fake window chrome?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:840809"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "use-negative-space-in-logo-marks": [
+   {
+    "rule": "aria:img ask \"Does the logo mark use negative space, cuts, folds or geometry rather than a plain letter icon?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:edd855",
+       "taste-skill:410db8",
+       "taste-skill:793a77",
+       "taste-skill:15ebcd"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:img ask \"Is the negative space in the logo mark crisp and the fusion subtle and readable?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:efa9a2",
+       "taste-skill:dc4910"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "fade-or-mask-images-behind-text": [
+   {
+    "rule": "aria:img ask \"Is an image behind text faded or masked so the treatment feels elegant and intentional?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:471cc2",
+       "taste-skill:e49ce8",
+       "taste-skill:22ff0b",
+       "taste-skill:ba3482"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:img ask \"Is an image behind text still visually meaningful?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:28e7ae"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "vary-button-shape-not-all-pills": [
+   {
+    "rule": "page axl:all-pill-buttons == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "claw-design:441128",
+       "claw-design:811e4f"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:button axl:border-radius == 6px",
+    "values": [
+     {
+      "value": "6px",
+      "qids": [
+       "hallmark:5e1a6b"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-hero-polish-pattern-at-most": [
+   {
+    "rule": "page ask \"Does the hero carry at most one polish pattern?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:980227",
+       "hallmark:d775c8",
+       "hallmark:64e662",
+       "hallmark:b4bb4c"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Does the hero carry at most one enrichment archetype?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d775c8",
+       "hallmark:b4bb4c"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "one-precision-svg-object": [
+   {
+    "rule": "page ask \"Is there at most one precision SVG or CSS object on the page?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:646761",
+       "hallmark:6c475b",
+       "hallmark:744c9a"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "aria:img width between 240px 480px",
+    "values": [
+     {
+      "value": "240px",
+      "qids": [
+       "hallmark:e59523"
+      ]
+     },
+     {
+      "value": "480px",
+      "qids": [
+       "hallmark:e59523"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img width >= 180px @media:narrow",
+    "values": [
+     {
+      "value": "180px",
+      "qids": [
+       "hallmark:e59523"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-texture-and-imagery-deliberately": [
+   {
+    "rule": "page ask \"Are texture and imagery used deliberately rather than randomly?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:0ea34a",
+       "taste-skill:188861",
+       "taste-skill:0247d3",
+       "taste-skill:ed4679"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-nested-double-bezel-card-shells": [
+   {
+    "rule": "ui:card ask \"Do major cards and containers use a nested outer-shell plus inner-core (double-bezel) structure?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f0039e",
+       "taste-skill:c87150",
+       "taste-skill:4900ab",
+       "taste-skill:e83944"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card axl:border-radius == 2rem",
+    "values": [
+     {
+      "value": "2rem",
+      "qids": [
+       "taste-skill:4900ab"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox axl:border-radius == 2rem",
+    "values": [
+     {
+      "value": "2rem",
+      "qids": [
+       "taste-skill:4900ab"
+      ]
+     }
+    ]
+   }
+  ],
+  "use-mask-image-for-scroll-fades": [
+   {
+    "rule": "page ask \"Are scroll fades, image edges and text truncation built with mask-image rather than a gradient overlay to the background colour?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:59df5a",
+       "ui-craft:56aa53",
+       "ui-craft:76490c",
+       "ui-craft:c3b800"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "icons-use-currentcolor-for-states": [
+   {
+    "rule": "ui:icon axl:icons-not-currentcolor == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "feel-better:780c5c",
+       "feel-better:d619e8",
+       "hallmark:907e57"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon ask \"Are icon states (hover, selected, disabled) driven by CSS colour and opacity on one SVG rather than separate assets?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:780c5c",
+       "feel-better:d619e8"
+      ]
+     }
+    ],
+    "class": "interaction"
+   }
+  ],
+  "constant-field-border-width-across-states": [
+   {
+    "rule": "aria:textbox axl:border-width-state-shift == 0px",
+    "values": [
+     {
+      "value": "0px",
+      "qids": [
+       "hallmark:4a418f",
+       "hallmark:870f04",
+       "hallmark:a9537b"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:textbox border-width == 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "hallmark:a9537b"
+      ]
+     }
+    ]
+   }
+  ],
+  "add-grain-or-texture-for-depth": [
+   {
+    "rule": "page ask \"Do sections have visual depth (subtle background imagery, ambient gradient, pattern or texture) rather than empty flat backgrounds?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:606e23",
+       "taste-skill:4d4fcf",
+       "taste-skill:a73d73"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "keep-texture-from-overwhelming-text": [
+   {
+    "rule": "page ask \"Does texture support the mood without overwhelming the text?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ee10a8",
+       "taste-skill:728650"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Is texture used for a reason rather than noise for its own sake?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7bd5dd"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "add-subtle-background-imagery-or-ambient-depth": [
+   {
+    "rule": "page ask \"Do sections have visual depth (subtle background imagery, ambient gradient, pattern or texture) rather than empty flat backgrounds?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:398871",
+       "taste-skill:f22e53",
+       "taste-skill:dda6d0"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "add-visual-variation-to-grid-cells": [
+   {
+    "rule": "page axl:varied-grid-cells >= 2",
+    "values": [
+     {
+      "value": "2",
+      "qids": [
+       "taste-skill:799410",
+       "taste-skill:f1b2b5"
+      ]
+     },
+     {
+      "value": "3",
+      "qids": [
+       "taste-skill:799410",
+       "taste-skill:f1b2b5"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are grid cells more than white-on-white text cards (real image, gradient, pattern or tinted background)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d7e765",
+       "taste-skill:f1b2b5"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "match-icon-stroke-weight-to-text-weight": [
+   {
+    "rule": "ui:icon ask \"Does an icon next to text carry the same optical weight as the text (stroke width matching text weight)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:fa4f34",
+       "feel-better:9bf2aa"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-icon-set-native-grid-sizes": [
+   {
+    "rule": "ui:icon axl:icon-size-off-grid == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "feel-better:457ed9",
+       "hallmark:6db362"
+      ]
+     }
+    ]
+   }
+  ],
+  "dark-mode-elevation-via-lighter-surfaces": [
+   {
+    "rule": "ui:card box-shadow == none @media:dark",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "hallmark:595c22"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card axl:elevation-lightness-step >= 3% @media:dark",
+    "values": [
+     {
+      "value": "3%",
+      "qids": [
+       "hallmark:ecf4ec"
+      ]
+     },
+     {
+      "value": null,
+      "qids": [
+       "hallmark:595c22"
+      ]
+     }
+    ]
+   }
+  ],
+  "cursor-spotlight-stays-beneath-text": [
+   {
+    "rule": "page ask \"Is the cursor spotlight scoped to a backdrop layer beneath text rather than tracking over content?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:77de60",
+       "hallmark:824a09"
+      ]
+     }
+    ],
+    "class": "motion"
+   }
+  ],
+  "limit-decorative-kit-imagery-per-page": [
+   {
+    "rule": "page ask \"Are fewer than three decorative kit pieces layered on the page (one hero object plus one wash at most)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:f2dd86"
+      ]
+     }
+    ],
+    "class": "imagery"
+   },
+   {
+    "rule": "page ask \"Is each wash used as a single section accent rather than repeated across sections?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:1316a5"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "one-flooded-poster-band-per-page": [
+   {
+    "rule": "page ask \"Is there at most one full-bleed flooded poster band on the page?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:78e957",
+       "hallmark:a95bbb"
+      ]
+     }
+    ],
+    "class": "layout"
+   },
+   {
+    "rule": "page ask \"Is the page free of a full dark ground?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a95bbb"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "construct-graphics-in-css-svg": [
+   {
+    "rule": "page ask \"Are graphics built in pure CSS and SVG rather than img, icon fonts or pasted Figma paths?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a96e5f",
+       "hallmark:5e37f1"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-decorative-stripe-or-grid-background-textures": [
+   {
+    "rule": "page background-image !contains repeating-linear-gradient",
+    "values": [
+     {
+      "value": "repeating-linear-gradient",
+      "qids": [
+       "impeccable:5a26b2"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page ask \"Are decorative grid, crosshair and hairline lines used only where they organize real content or sit over a real canvas, map or blueprint?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "impeccable:5a26b2",
+       "impeccable:152c92"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "decorative-raster-must-be-visible-not-buried-und": [
+   {
+    "rule": "page axl:buried-raster-count == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:4d6181",
+       "impeccable:634642"
+      ]
+     },
+     {
+      "value": "0.9",
+      "qids": [
+       "impeccable:634642"
+      ]
+     }
+    ]
+   }
+  ],
+  "simulate-edge-refraction-on-glass-surfaces": [
+   {
+    "rule": "page ask \"Does each glass surface add a 1px inner border and a subtle inner shadow to simulate edge refraction?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:126272",
+       "taste-skill:05f0fe"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "no-div-built-fake-product-ui": [
+   {
+    "rule": "page ask \"Is the page free of fake product UI built from styled div rectangles (fake screenshot, task list, terminal or dashboard)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:1ea1ba",
+       "taste-skill:d7de13"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "add-one-memorable-signature-detail": [
+   {
+    "rule": "page ask \"Does exactly one element carry a memorable signature detail?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:a77ec9",
+       "ui-craft:9063c5"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "neutral-image-outline-never-tinted": [
+   {
+    "rule": "aria:img outline-color == oklch(0 0 0 / 0.1)",
+    "values": [
+     {
+      "value": "oklch(0 0 0 / 0.1)",
+      "qids": [
+       "ui-craft:b3dc27",
+       "ui-craft:39cd9e"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img outline-color == oklch(1 0 0 / 0.1) @media:dark",
+    "values": [
+     {
+      "value": "oklch(1 0 0 / 0.1)",
+      "qids": [
+       "ui-craft:b3dc27"
+      ]
+     }
+    ]
+   }
+  ],
+  "border-tints-replace-shadows-in-dark-mode": [
+   {
+    "rule": "ui:card box-shadow == none @media:dark",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:c36c7a",
+       "ui-craft:c70abb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card border-width == 1px @media:dark",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "ui-craft:c70abb"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card border-color == rgb(255 255 255 / 0.08) @media:dark",
+    "values": [
+     {
+      "value": "rgb(255 255 255 / 0.08)",
+      "qids": [
+       "ui-craft:c70abb"
+      ]
+     }
+    ]
+   }
+  ],
+  "layered-atmospheric-backgrounds-instead-of-solid": [
+   {
+    "rule": "page ask \"Do sections have visual depth (subtle background imagery, ambient gradient, pattern or texture) rather than empty flat backgrounds?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "anthropic:e9bf4c"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "outline-icons-by-default-fill-for-active": [
+   {
+    "rule": "ui:icon ask \"Are icons outline by default, with fill only for the active state?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:cf318c"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "size-inline-icons-relative-to-text": [
+   {
+    "rule": "ui:icon width between 1em 1.25em",
+    "values": [
+     {
+      "value": "1em",
+      "qids": [
+       "feel-better:22de9f"
+      ]
+     },
+     {
+      "value": "1.25em",
+      "qids": [
+       "feel-better:22de9f"
+      ]
+     }
+    ]
+   }
+  ],
+  "test-icons-at-smallest-size": [
+   {
+    "rule": "ui:icon ask \"Has every icon been tested at the smallest size it renders (often 16px)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:4261cc"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "simplified-glyphs-for-small-icons": [
+   {
+    "rule": "ui:icon ask \"Do small icons use simplified glyphs rather than scaled-down detailed artwork?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "feel-better:4f2e76"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-svg-for-icons-not-raster": [
+   {
+    "rule": "ui:icon axl:raster-icons == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "feel-better:acd6f1"
+      ]
+     }
+    ]
+   }
+  ],
+  "omit-icons-on-feature-lists-when-unneeded": [
+   {
+    "rule": "ui:icon ask \"Do feature lists omit icons unless they are needed and lead with typography?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:733472"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "default-icon-stroke-2px": [
+   {
+    "rule": "ui:icon stroke-width == 2px",
+    "values": [
+     {
+      "value": "2px",
+      "qids": [
+       "hallmark:934725"
+      ]
+     },
+     {
+      "value": "2.5px",
+      "qids": [
+       "hallmark:934725"
+      ]
+     }
+    ]
+   }
+  ],
+  "monochrome-logo-walls": [
+   {
+    "rule": "aria:img ask \"Are logo walls monochrome only (default colour or the official monochrome variant)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:d58c7a"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "height-align-logos": [
+   {
+    "rule": "aria:img ask \"Are logos height-aligned on a common baseline (typically 32-48px) with the width floating?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:9f0390"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "preserve-logo-aspect-ratio": [
+   {
+    "rule": "aria:img lighthouse:image-aspect-ratio pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:66800f"
+      ]
+     }
+    ]
+   }
+  ],
+  "browser-frame-for-web-app-mockups": [
+   {
+    "rule": "aria:figure ask \"Are SaaS and web-app mockups shown in a browser frame?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:2b6fcb"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "limit-device-frames-to-one-hero-mockup": [
+   {
+    "rule": "page ask \"Is there at most one device-frame hero mockup?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:55fd11"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-glossy-device-bezels": [
+   {
+    "rule": "aria:figure ask \"Are device frames minimalist or absent rather than glossy plastic bezels?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:3ca148"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "preserve-mockup-aspect-ratio": [
+   {
+    "rule": "aria:img lighthouse:image-aspect-ratio pass",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a2ecce"
+      ]
+     }
+    ]
+   }
+  ],
+  "one-restrained-post-process-effect-only": [
+   {
+    "rule": "page ask \"Is the hero limited to one post-processing effect, dialled down to barely visible?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:969af2"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-grain-background-everywhere": [
+   {
+    "rule": "page ask \"Is grain used as a treatment rather than applied to every background or doubled on themes that already carry texture?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:0ee74b"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "oversized-decorative-art-feels-intentional": [
+   {
+    "rule": "aria:img ask \"Is decorative art sized larger than expected so it feels intentional?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:4ec28e"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "test-blend-modes-on-the-active-surface": [
+   {
+    "rule": "page ask \"Has each mix-blend-mode been checked on the active surface?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6706ca"
+      ]
+     }
+    ],
+    "class": "process"
+   }
+  ],
+  "no-decorative-elements-without-semantic-purpose": [
+   {
+    "rule": "page ask \"Does every decorative element in the hero have a semantic anchor in the content?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:029663"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-decorative-scanlines-or-detached-cursors": [
+   {
+    "rule": "page ask \"Is the terminal output free of standalone scanlines, detached blinking cursors and random ASCII art?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:0fb0df"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "decorative-glyph-ornaments-as-dividers": [
+   {
+    "rule": "page ask \"Are glyph ornaments (asterisk operator, heavy six-petalled asterisk, black diamond) used as bullets, section dividers and rhythmic spacers?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c0d7a6"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "colour-blocks-bleeding-off-page-edge": [
+   {
+    "rule": "page ask \"Do layered accent colour blocks extend 24px past the page max-width so they read as posters pinned to the wall?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:0dbd4f"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "leave-room-for-hard-offset-shadows-at-page-edge": [
+   {
+    "rule": "ui:card ask \"Does a card with a hard-offset shadow next to the page edge have padding so the shadow is not clipped?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:a93053"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "hard-offset-shadows-only": [
+   {
+    "rule": "ui:card axl:soft-shadows == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "hallmark:1b279d"
+      ]
+     }
+    ]
+   }
+  ],
+  "2px-solid-rules": [
+   {
+    "rule": "aria:separator border-top-width == 2px",
+    "values": [
+     {
+      "value": "2px",
+      "qids": [
+       "hallmark:bc4057"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:separator border-top-style == solid",
+    "values": [
+     {
+      "value": "solid",
+      "qids": [
+       "hallmark:bc4057"
+      ]
+     }
+    ]
+   }
+  ],
+  "period-square-glyph-accent": [
+   {
+    "rule": "aria:heading ask \"Does a solid 0.52em square sit where a full stop would fall?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:691f8e"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "signal-rule-above-heads-at-column-width": [
+   {
+    "rule": "aria:heading ask \"Does a 3px signal rule sit over each head, cut to a column width and never full-bleed?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:bce788"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "registration-mark-folio-device": [
+   {
+    "rule": "page ask \"Is a print registration mark (a 1px ink circle with a crosshair) set in a margin column as a folio device?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:6dc5b7"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "diagonal-rule-accent": [
+   {
+    "rule": "page ask \"Does one 45-degree rule (1px ink or 3px signal) cross a band or cell, snapped corner to corner on the column tracks?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:7a631f"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "keep-grid-rails-visible": [
+   {
+    "rule": "page ask \"Are the grid rails kept visible, including across the plate?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:26f7c5"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "vary-card-physics-per-build": [
+   {
+    "rule": "ui:card ask \"Does the build have its own card physics rather than a uniform radius and one shadow on everything?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:c1c99c"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "procedurally-varied-meter": [
+   {
+    "rule": "aria:meter ask \"Is the meter procedurally varied rather than a flat row of equal ticks?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "hallmark:ac0224"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "inline-svg-icons": [
+   {
+    "rule": "ui:icon axl:non-inline-svg-icons == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "impeccable:4d3975"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon width between 16px 24px",
+    "values": [
+     {
+      "value": "16px",
+      "qids": [
+       "impeccable:4d3975"
+      ]
+     },
+     {
+      "value": "24px",
+      "qids": [
+       "impeccable:4d3975"
+      ]
+     }
+    ]
+   }
+  ],
+  "consistent-hierarchy-across-cards": [
+   {
+    "rule": "ui:card ask \"Do cards share a consistent visual hierarchy?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "openai:eaab93"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "icons-use-currentcolor": [
+   {
+    "rule": "ui:icon axl:icons-not-currentcolor == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "deslop:25cc04"
+      ]
+     }
+    ]
+   }
+  ],
+  "redraw-icons-per-size-band": [
+   {
+    "rule": "ui:icon ask \"Are icons redrawn per size band (small, default, large) rather than scaled from one size?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:f20192"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "draw-only-brand-critical-icons-custom": [
+   {
+    "rule": "ui:icon ask \"Are only the brand-critical icons drawn custom, with a consistent set for the long tail?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:9d2a20"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "keep-photography-consistent-across-shoots": [
+   {
+    "rule": "aria:img ask \"Do photos from different shoots look like the same brand?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:579048"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "regrade-stock-photos-to-brand-palette": [
+   {
+    "rule": "aria:img ask \"Is stock or third-party photography regraded toward the brand palette?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:af60ba"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-background-grid-or-dots-sparingly": [
+   {
+    "rule": "page ask \"Is a background grid or dot field used as one element of a larger system rather than the whole identity?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "deslop:312854"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-hard-offset-shadow-no-blur": [
+   {
+    "rule": "ui:card axl:soft-shadows == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "deslop:016c93"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card box-shadow contains 6px",
+    "values": [
+     {
+      "value": "6px",
+      "qids": [
+       "deslop:016c93"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card border-width == 3px",
+    "values": [
+     {
+      "value": "3px",
+      "qids": [
+       "deslop:016c93"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card border-color == #000000",
+    "values": [
+     {
+      "value": "#000000",
+      "qids": [
+       "deslop:016c93"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "page axl:border-radius == 0px",
+    "values": [
+     {
+      "value": "0px",
+      "qids": [
+       "deslop:016c93"
+      ]
+     }
+    ]
+   }
+  ],
+  "add-detail-that-rewards-close-looking": [
+   {
+    "rule": "page ask \"Does premium detail reward looking closer?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b5ea1f"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "match-imagery-to-palette-and-metaphor": [
+   {
+    "rule": "aria:img ask \"Do images tonally match the palette and metaphor?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:d1d521"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "degrade-imagery-with-halftone-or-dithering": [
+   {
+    "rule": "aria:img ask \"Is imagery used exceedingly sparingly and degraded with heavy post-processing (halftone filters, 1-bit dithering)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:5e6051"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "show-visible-compartmentalization-with-borders": [
+   {
+    "rule": "page ask \"Does the layout show visible compartmentalization with borders rather than conventional padding?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:3d4b73"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "add-crt-scanline-texture": [
+   {
+    "rule": "page background-image contains repeating-linear-gradient",
+    "values": [
+     {
+      "value": "repeating-linear-gradient",
+      "qids": [
+       "taste-skill:e062b1"
+      ]
+     }
+    ]
+   }
+  ],
+  "draw-grid-lines-with-1px-gap-over-contrasting-ba": [
+   {
+    "rule": "aria:grid display == grid",
+    "values": [
+     {
+      "value": "grid",
+      "qids": [
+       "taste-skill:622523"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:grid gap == 1px",
+    "values": [
+     {
+      "value": "1px",
+      "qids": [
+       "taste-skill:622523"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:grid ask \"Do the grid parent and cells have contrasting background colours so the 1px gap reads as a dividing line?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:622523"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "use-few-intentional-cards": [
+   {
+    "rule": "page axl:card-count between 3 5",
+    "values": [
+     {
+      "value": "3",
+      "qids": [
+       "taste-skill:4b0fd3"
+      ]
+     },
+     {
+      "value": "5",
+      "qids": [
+       "taste-skill:4b0fd3"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:card ask \"Are cards filled with a mix of large imagery, dense typography or CSS effects?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:4b0fd3"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "add-ambient-mesh-or-grain-backgrounds": [
+   {
+    "rule": "page ask \"Do sections have visual depth (subtle background imagery, ambient gradient, pattern or texture) rather than empty flat backgrounds?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:614756"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "frame-images-in-controlled-frames": [
+   {
+    "rule": "aria:img ask \"Do images sit inside clear, controlled, implementation-friendly frames?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:64c453"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "avoid-childish-doodles": [
+   {
+    "rule": "aria:img ask \"Are childish doodles avoided unless the brand clearly wants them?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:f1fd00"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-controlled-proportions-for-repeated-images": [
+   {
+    "rule": "aria:img ask \"Do repeated image modules use controlled proportions?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:7d3686"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "use-full-bleed-imagery-backgrounds": [
+   {
+    "rule": "page ask \"Is imagery used as a core design material, including as full-bleed backgrounds, when the brief allows it?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:80cb37"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "vary-background-mode-across-sections": [
+   {
+    "rule": "page ask \"Is the background mode varied across sections (one per section) so the page is never all the same mode?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:4dd1ca"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "prefer-real-visual-variety-over-fake-ui-panels": [
+   {
+    "rule": "page ask \"Does the page use real visual variety rather than overusing fake UI panels?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:ad4662"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "match-image-tone-to-palette": [
+   {
+    "rule": "aria:img ask \"Do images tonally match the palette and metaphor?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:756572"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "include-one-full-bleed-background-section": [
+   {
+    "rule": "page ask \"Does a multi-section site have at least one full-bleed (or duotone or atmospheric) background section and at least one mini minimalist section?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:46887b"
+      ]
+     }
+    ],
+    "class": "layout"
+   }
+  ],
+  "keep-a-single-consistent-light-direction": [
+   {
+    "rule": "page ask \"Do all shadows suggest a single, consistent light source?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:bc7784"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "avoid-cliche-icon-metaphors": [
+   {
+    "rule": "ui:icon ask \"Are cliche icon metaphors (rocketship for launch, shield for security) replaced with less obvious icons?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:3f0d5e"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "fade-background-image-into-background-color": [
+   {
+    "rule": "page ask \"Does a high-quality, relevant background image fade into the background colour (darkening or lightening with the colour mode)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:0690d6"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "avoid-hand-rolled-decorative-svgs": [
+   {
+    "rule": "aria:img ask \"Are hand-rolled decorative SVGs (custom illustrations, logos, marks) avoided unless clearly justified?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:bb9c7d"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-decorative-crosshair-or-hairline-grid-lines": [
+   {
+    "rule": "page ask \"Are decorative grid, crosshair and hairline lines used only where they organize real content or sit over a real canvas, map or blueprint?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:b27f97"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "no-pills-or-tags-overlaid-on-images": [
+   {
+    "rule": "aria:img ask \"Are images free of overlaid pills, labels and tags (with a caption directly below instead)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:64d8fd"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "avoid-decorative-info-strips": [
+   {
+    "rule": "page ask \"Do info strips carry real navigable links or real status info rather than decoration?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "taste-skill:cd4891"
+      ]
+     }
+    ],
+    "class": "content"
+   }
+  ],
+  "avoid-borders-on-both-sides-of-every-list-row": [
+   {
+    "rule": "aria:list axl:rows-with-top-and-bottom-borders == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:68b6b4"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:table axl:rows-with-top-and-bottom-borders == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "taste-skill:68b6b4"
+      ]
+     }
+    ]
+   }
+  ],
+  "elevation-only-for-floating-ui": [
+   {
+    "rule": "page ask \"Is elevation used only for floating UI (menus, toasts, modals)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:ff748d"
+      ]
+     }
+    ],
+    "class": "surface"
+   },
+   {
+    "rule": "ui:card box-shadow == none",
+    "values": [
+     {
+      "value": "none",
+      "qids": [
+       "ui-craft:ff748d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:menu axl:box-shadow-layers <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "ui-craft:ff748d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:toast axl:box-shadow-layers <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "ui-craft:ff748d"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:dialog axl:box-shadow-layers <= 1",
+    "values": [
+     {
+      "value": "1",
+      "qids": [
+       "ui-craft:ff748d"
+      ]
+     }
+    ]
+   }
+  ],
+  "raised-surfaces-as-white-at-stepped-opacity": [
+   {
+    "rule": "ui:card ask \"Are raised surfaces defined as white at stepped opacities (for example 6%, 8%, 12% over the base) rather than hand-picked lighter grays?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:f93f0b"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "inset-outline-on-images-instead-of-border": [
+   {
+    "rule": "aria:img outline-offset == -1px",
+    "values": [
+     {
+      "value": "-1px",
+      "qids": [
+       "ui-craft:27f010"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "aria:img border-width == 0px",
+    "values": [
+     {
+      "value": "0px",
+      "qids": [
+       "ui-craft:27f010"
+      ]
+     }
+    ]
+   }
+  ],
+  "subtle-domain-svg-motif-on-panels": [
+   {
+    "rule": "ui:card ask \"Is the panel motif a simple domain-tied SVG on the tinted panel only?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:1cdd4f"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "match-icon-stroke-to-text-weight": [
+   {
+    "rule": "ui:icon stroke-width between 1.5px 2px",
+    "values": [
+     {
+      "value": "1.5px",
+      "qids": [
+       "ui-craft:c8e051"
+      ]
+     },
+     {
+      "value": "2px",
+      "qids": [
+       "ui-craft:c8e051"
+      ]
+     }
+    ]
+   },
+   {
+    "rule": "ui:icon ask \"Does an icon next to text carry the same optical weight as the text (stroke width matching text weight)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:c8e051"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "icon-containers-use-squircles": [
+   {
+    "rule": "ui:icon ask \"Are icon containers squircles where the design language calls for it (circle and rounded square not interchangeable)?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:39ace8"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "inputs-on-solid-surfaces": [
+   {
+    "rule": "aria:textbox axl:translucent-fills == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "ui-craft:8b3f8d"
+      ]
+     }
+    ]
+   }
+  ],
+  "fade-trailing-edge-only": [
+   {
+    "rule": "page ask \"Is only the trailing edge of a scroll area faded, never the leading edge?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:7b2bef"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "ease-gradient-stops-in-wide-fades": [
+   {
+    "rule": "page ask \"Do fades wider than about 200px use intermediate gradient stops so the ramp reads smooth?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:cae7bf"
+      ]
+     }
+    ],
+    "class": "imagery"
+   }
+  ],
+  "auth-panel-tinted-neutral-not-brand-flood": [
+   {
+    "rule": "page ask \"Is the auth panel a tinted neutral surface rather than a full-saturation brand flood?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:5bea76"
+      ]
+     }
+    ],
+    "class": "color"
+   }
+  ],
+  "reserve-box-shadow-for-colored-glows-only": [
+   {
+    "rule": "page ask \"Is box-shadow reserved for coloured glows only?\"",
+    "values": [
+     {
+      "value": null,
+      "qids": [
+       "ui-craft:648bbd"
+      ]
+     }
+    ],
+    "class": "surface"
+   }
+  ],
+  "vary-button-shapes-pills-only-occasionally": [
+   {
+    "rule": "page axl:all-pill-buttons == 0",
+    "values": [
+     {
+      "value": "0",
+      "qids": [
+       "unslop:aff008"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "new_measures": {
+  "axl:border-radius": "Computed border-radius of the element in px (the largest of its four corner radii); 9999px-style pills are read as their computed value.",
+  "axl:nested-cards": "Count of ui:card elements that have another ui:card as an ancestor, across the page.",
+  "axl:distinct-border-radii": "Number of distinct computed border-radius values (px) across all elements with a non-zero radius on the page.",
+  "axl:distinct-icon-grids": "Number of distinct viewBox sizes across ui:icon SVG elements on the page.",
+  "axl:distinct-stroke-widths": "Number of distinct computed stroke-width values (px) across ui:icon elements on the page.",
+  "axl:concentric-radius-error": "For every rounded element nested in a rounded parent, the absolute difference in px between the parent radius and (child radius + padding between them), ignoring pairs whose padding is over 24px; the maximum over the page.",
+  "axl:nested-radius-larger-than-parent": "Count of rounded elements whose border-radius is larger than their rounded parent's border-radius.",
+  "axl:distinct-shadow-levels": "Number of distinct computed box-shadow values (other than none) used for elevation across the page.",
+  "axl:box-shadow-layers": "Largest number of comma-separated layers in the computed box-shadow of any matching element.",
+  "axl:identical-shadow-count": "Largest number of elements on the page sharing the same computed box-shadow or drop-shadow value.",
+  "axl:hard-offset-shadows": "Count of elements with a box-shadow layer that has a non-zero offset and zero blur.",
+  "axl:shadow-max-alpha": "Largest alpha (0-1) of any colour in any computed box-shadow layer on the page.",
+  "axl:backdrop-blur-containers": "Count of elements with a blurring backdrop-filter and a translucent background.",
+  "axl:backdrop-blur-on-scrolling": "Count of elements with a backdrop-filter that are neither position:fixed nor position:sticky.",
+  "axl:emoji-count": "Number of emoji characters in the rendered text, markup and alt text of the matching elements.",
+  "axl:all-pill-buttons": "1 if every button on the page has a computed border-radius of at least 999px or 50%, otherwise 0.",
+  "axl:icons-not-currentcolor": "Count of ui:icon elements whose computed fill and stroke are not currentColor (a single primary-CTA icon excepted).",
+  "axl:border-width-state-shift": "Largest difference in px between a field's default border-width and its border-width in hover, focus, error and disabled states.",
+  "axl:varied-grid-cells": "For every multi-cell grid or bento on the page, the number of cells whose background is an image, gradient, pattern or tint rather than plain surface colour; the minimum over all such grids.",
+  "axl:icon-size-off-grid": "Count of ui:icon elements whose rendered size in px is not one of 16, 20, 24 or 32.",
+  "axl:elevation-lightness-step": "In dark mode, the smallest difference in lightness (percentage points) between a surface and the surface one elevation level below it.",
+  "axl:buried-raster-count": "Count of raster background images sitting under a gradient wash of alpha above 0.9, or on an element with near-zero opacity.",
+  "axl:raster-icons": "Count of ui:icon elements that are raster images (png, jpg, webp, gif) rather than SVG.",
+  "axl:non-inline-svg-icons": "Count of ui:icon elements that are not inline <svg> (img src references, icon fonts, package components).",
+  "axl:soft-shadows": "Count of box-shadow layers with a non-zero blur radius on the matching elements.",
+  "axl:card-count": "Number of ui:card elements on the page.",
+  "axl:rows-with-top-and-bottom-borders": "Count of list items or table rows whose computed border-top-width and border-bottom-width are both above 0.",
+  "axl:translucent-fills": "Count of matching elements whose computed background-color has alpha below 1."
+ },
+ "new_elements": {
+  "aria:listitem": "List items",
+  "aria:region": "Regions",
+  "aria:separator": "Separators and rules",
+  "aria:meter": "Meters",
+  "aria:grid": "Grids"
+ }
+}

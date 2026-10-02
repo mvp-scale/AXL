@@ -1,0 +1,1120 @@
+{
+ "source": "Lighthouse",
+ "publisher": "Google Chrome",
+ "kind": "tool",
+ "version": "13.5.0",
+ "items": [
+  {
+   "id": "lh:accesskeys",
+   "text": "`[accesskey]` values are unique",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:accesskeys",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-allowed-attr",
+   "text": "`[aria-*]` attributes match their roles",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-allowed-attr",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-allowed-role",
+   "text": "Uses ARIA roles only on compatible elements",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-allowed-role",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-command-name",
+   "text": "`button`, `link`, and `menuitem` elements have accessible names",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-command-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-conditional-attr",
+   "text": "ARIA attributes are used as specified for the element's role",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-conditional-attr",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-deprecated-role",
+   "text": "Deprecated ARIA roles were not used",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-deprecated-role",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-dialog-name",
+   "text": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-dialog-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-hidden-body",
+   "text": "`[aria-hidden=\"true\"]` is not present on the document `<body>`",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-hidden-body",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-hidden-focus",
+   "text": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-hidden-focus",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-input-field-name",
+   "text": "ARIA input fields have accessible names",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-input-field-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-meter-name",
+   "text": "ARIA `meter` elements have accessible names",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-meter-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-progressbar-name",
+   "text": "ARIA `progressbar` elements have accessible names",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-progressbar-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-prohibited-attr",
+   "text": "Elements use only permitted ARIA attributes",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-prohibited-attr",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-required-attr",
+   "text": "`[role]`s have all required `[aria-*]` attributes",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-required-attr",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-required-children",
+   "text": "Elements with an ARIA `[role]` that require children to contain a specific ",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-required-children",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-required-parent",
+   "text": "`[role]`s are contained by their required parent element",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-required-parent",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-roles",
+   "text": "`[role]` values are valid",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-roles",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-text",
+   "text": "Elements with the `role=text` attribute do not have focusable descendents.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-text",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-toggle-field-name",
+   "text": "ARIA toggle fields have accessible names",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-toggle-field-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-tooltip-name",
+   "text": "ARIA `tooltip` elements have accessible names",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-tooltip-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-treeitem-name",
+   "text": "ARIA `treeitem` elements have accessible names",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-treeitem-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-valid-attr-value",
+   "text": "`[aria-*]` attributes have valid values",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-valid-attr-value",
+   "measurable": true
+  },
+  {
+   "id": "lh:aria-valid-attr",
+   "text": "`[aria-*]` attributes are valid and not misspelled",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:aria-valid-attr",
+   "measurable": true
+  },
+  {
+   "id": "lh:autocomplete-valid",
+   "text": "`autocomplete` attributes are used correctly",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:autocomplete-valid",
+   "measurable": true
+  },
+  {
+   "id": "lh:button-name",
+   "text": "Buttons have an accessible name",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:button-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:bypass",
+   "text": "The page contains a heading, skip link, or landmark region",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:bypass",
+   "measurable": true
+  },
+  {
+   "id": "lh:color-contrast",
+   "text": "Background and foreground colors have a sufficient contrast ratio",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:color-contrast",
+   "measurable": true
+  },
+  {
+   "id": "lh:definition-list",
+   "text": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, ",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:definition-list",
+   "measurable": true
+  },
+  {
+   "id": "lh:dlitem",
+   "text": "Definition list items are wrapped in `<dl>` elements",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:dlitem",
+   "measurable": true
+  },
+  {
+   "id": "lh:document-title",
+   "text": "Document has a `<title>` element",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:document-title",
+   "measurable": true
+  },
+  {
+   "id": "lh:duplicate-id-aria",
+   "text": "ARIA IDs are unique",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:duplicate-id-aria",
+   "measurable": true
+  },
+  {
+   "id": "lh:empty-heading",
+   "text": "All heading elements contain content.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:empty-heading",
+   "measurable": true
+  },
+  {
+   "id": "lh:form-field-multiple-labels",
+   "text": "No form fields have multiple labels",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:form-field-multiple-labels",
+   "measurable": true
+  },
+  {
+   "id": "lh:frame-title",
+   "text": "`<frame>` or `<iframe>` elements have a title",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:frame-title",
+   "measurable": true
+  },
+  {
+   "id": "lh:heading-order",
+   "text": "Heading elements appear in a sequentially-descending order",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:heading-order",
+   "measurable": true
+  },
+  {
+   "id": "lh:html-has-lang",
+   "text": "`<html>` element has a `[lang]` attribute",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:html-has-lang",
+   "measurable": true
+  },
+  {
+   "id": "lh:html-lang-valid",
+   "text": "`<html>` element has a valid value for its `[lang]` attribute",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:html-lang-valid",
+   "measurable": true
+  },
+  {
+   "id": "lh:html-xml-lang-mismatch",
+   "text": "`<html>` element has an `[xml:lang]` attribute with the same base language as the ",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:html-xml-lang-mismatch",
+   "measurable": true
+  },
+  {
+   "id": "lh:identical-links-same-purpose",
+   "text": "Identical links have the same purpose.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:identical-links-same-purpose",
+   "measurable": true
+  },
+  {
+   "id": "lh:image-alt",
+   "text": "Image elements have `[alt]` attributes",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:image-alt",
+   "measurable": true
+  },
+  {
+   "id": "lh:image-redundant-alt",
+   "text": "Image elements do not have `[alt]` attributes that are redundant text.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:image-redundant-alt",
+   "measurable": true
+  },
+  {
+   "id": "lh:input-button-name",
+   "text": "Input buttons have discernible text.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:input-button-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:input-image-alt",
+   "text": "`<input type=\"image\">` elements have `[alt]` text",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:input-image-alt",
+   "measurable": true
+  },
+  {
+   "id": "lh:label-content-name-mismatch",
+   "text": "Elements with visible text labels have matching accessible names.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:label-content-name-mismatch",
+   "measurable": true
+  },
+  {
+   "id": "lh:label",
+   "text": "Form elements have associated labels",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:label",
+   "measurable": true
+  },
+  {
+   "id": "lh:landmark-one-main",
+   "text": "Document has a main landmark.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:landmark-one-main",
+   "measurable": true
+  },
+  {
+   "id": "lh:link-in-text-block",
+   "text": "Links are distinguishable without relying on color.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:link-in-text-block",
+   "measurable": true
+  },
+  {
+   "id": "lh:link-name",
+   "text": "Links have a discernible name",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:link-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:list",
+   "text": "Lists contain only `<li>` elements and script supporting elements ",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:list",
+   "measurable": true
+  },
+  {
+   "id": "lh:listitem",
+   "text": "List items (`<li>`) are contained within `<ul>`, `<ol>` or `<menu>` parent elements",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:listitem",
+   "measurable": true
+  },
+  {
+   "id": "lh:custom-controls-labels",
+   "text": "Custom controls have associated labels",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:custom-controls-labels",
+   "measurable": true
+  },
+  {
+   "id": "lh:custom-controls-roles",
+   "text": "Custom controls have ARIA roles",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:custom-controls-roles",
+   "measurable": true
+  },
+  {
+   "id": "lh:focus-traps",
+   "text": "User focus is not accidentally trapped in a region",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:focus-traps",
+   "measurable": true
+  },
+  {
+   "id": "lh:focusable-controls",
+   "text": "Interactive controls are keyboard focusable",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:focusable-controls",
+   "measurable": true
+  },
+  {
+   "id": "lh:interactive-element-affordance",
+   "text": "Interactive elements indicate their purpose and state",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:interactive-element-affordance",
+   "measurable": true
+  },
+  {
+   "id": "lh:logical-tab-order",
+   "text": "The page has a logical tab order",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:logical-tab-order",
+   "measurable": true
+  },
+  {
+   "id": "lh:managed-focus",
+   "text": "The user's focus is directed to new content added to the page",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:managed-focus",
+   "measurable": true
+  },
+  {
+   "id": "lh:offscreen-content-hidden",
+   "text": "Offscreen content is hidden from assistive technology",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:offscreen-content-hidden",
+   "measurable": true
+  },
+  {
+   "id": "lh:use-landmarks",
+   "text": "HTML5 landmark elements are used to improve navigation",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:use-landmarks",
+   "measurable": true
+  },
+  {
+   "id": "lh:visual-order-follows-dom",
+   "text": "Visual order on the page follows DOM order",
+   "group": "accessibility/manual",
+   "category": "Access",
+   "check": "lighthouse:visual-order-follows-dom",
+   "measurable": true
+  },
+  {
+   "id": "lh:meta-refresh",
+   "text": "The document does not use `<meta http-equiv=\"refresh\">`",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:meta-refresh",
+   "measurable": true
+  },
+  {
+   "id": "lh:meta-viewport",
+   "text": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` ",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:meta-viewport",
+   "measurable": true
+  },
+  {
+   "id": "lh:object-alt",
+   "text": "`<object>` elements have alternate text",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:object-alt",
+   "measurable": true
+  },
+  {
+   "id": "lh:presentation-role-conflict",
+   "text": "Elements with `role=\"none\"` or `role=\"presentation\"` do not have conflicts",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:presentation-role-conflict",
+   "measurable": true
+  },
+  {
+   "id": "lh:select-name",
+   "text": "Select elements have associated label elements.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:select-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:skip-link",
+   "text": "Skip links are focusable.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:skip-link",
+   "measurable": true
+  },
+  {
+   "id": "lh:svg-img-alt",
+   "text": "SVG elements with an `img` role have an accessible text alternative",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:svg-img-alt",
+   "measurable": true
+  },
+  {
+   "id": "lh:tabindex",
+   "text": "No element has a `[tabindex]` value greater than 0",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:tabindex",
+   "measurable": true
+  },
+  {
+   "id": "lh:table-duplicate-name",
+   "text": "Tables have different content in the summary attribute and `<caption>`.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:table-duplicate-name",
+   "measurable": true
+  },
+  {
+   "id": "lh:table-fake-caption",
+   "text": "Tables use `<caption>` instead of cells with the `[colspan]` attribute to indicate a ",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:table-fake-caption",
+   "measurable": true
+  },
+  {
+   "id": "lh:target-size",
+   "text": "Touch targets have sufficient size and spacing.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:target-size",
+   "measurable": true
+  },
+  {
+   "id": "lh:td-has-header",
+   "text": "`<td>` elements in a large `<table>` have one or more table headers.",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:td-has-header",
+   "measurable": true
+  },
+  {
+   "id": "lh:td-headers-attr",
+   "text": "Cells in a `<table>` element that use the `[headers]` attribute refer ",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:td-headers-attr",
+   "measurable": true
+  },
+  {
+   "id": "lh:th-has-data-cells",
+   "text": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have ",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:th-has-data-cells",
+   "measurable": true
+  },
+  {
+   "id": "lh:valid-lang",
+   "text": "`[lang]` attributes have a valid value",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:valid-lang",
+   "measurable": true
+  },
+  {
+   "id": "lh:video-caption",
+   "text": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+   "group": "accessibility",
+   "category": "Access",
+   "check": "lighthouse:video-caption",
+   "measurable": true
+  },
+  {
+   "id": "lh:agent-accessibility-tree",
+   "text": "Accessibility tree is well-formed",
+   "group": "agentic",
+   "category": "Agent workflow",
+   "check": "lighthouse:agent-accessibility-tree",
+   "measurable": true
+  },
+  {
+   "id": "lh:ard-schema",
+   "text": "`ai-catalog.json` schema is valid",
+   "group": "agentic",
+   "category": "Agent workflow",
+   "check": "lighthouse:ard-schema",
+   "measurable": true
+  },
+  {
+   "id": "lh:llms-txt",
+   "text": "llms.txt follows recommendations",
+   "group": "agentic",
+   "category": "Agent workflow",
+   "check": "lighthouse:llms-txt",
+   "measurable": true
+  },
+  {
+   "id": "lh:autocomplete",
+   "text": "`<input>` elements correctly use `autocomplete`",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:autocomplete",
+   "measurable": true
+  },
+  {
+   "id": "lh:baseline",
+   "text": "Baseline Features",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:baseline",
+   "measurable": true
+  },
+  {
+   "id": "lh:bootup-time",
+   "text": "JavaScript execution time",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:bootup-time",
+   "measurable": true
+  },
+  {
+   "id": "lh:total-byte-weight",
+   "text": "Avoids enormous network payloads",
+   "group": "byte-efficiency",
+   "category": "Performance",
+   "check": "lighthouse:total-byte-weight",
+   "measurable": true
+  },
+  {
+   "id": "lh:unminified-css",
+   "text": "Minify CSS",
+   "group": "byte-efficiency",
+   "category": "Performance",
+   "check": "lighthouse:unminified-css",
+   "measurable": true
+  },
+  {
+   "id": "lh:unminified-javascript",
+   "text": "Minify JavaScript",
+   "group": "byte-efficiency",
+   "category": "Performance",
+   "check": "lighthouse:unminified-javascript",
+   "measurable": true
+  },
+  {
+   "id": "lh:unused-css-rules",
+   "text": "Reduce unused CSS",
+   "group": "byte-efficiency",
+   "category": "Performance",
+   "check": "lighthouse:unused-css-rules",
+   "measurable": true
+  },
+  {
+   "id": "lh:unused-javascript",
+   "text": "Reduce unused JavaScript",
+   "group": "byte-efficiency",
+   "category": "Performance",
+   "check": "lighthouse:unused-javascript",
+   "measurable": true
+  },
+  {
+   "id": "lh:clickjacking-mitigation",
+   "text": "Mitigate clickjacking with XFO or CSP",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:clickjacking-mitigation",
+   "measurable": true
+  },
+  {
+   "id": "lh:csp-xss",
+   "text": "Ensure CSP is effective against XSS attacks",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:csp-xss",
+   "measurable": true
+  },
+  {
+   "id": "lh:deprecations",
+   "text": "Avoids deprecated APIs",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:deprecations",
+   "measurable": true
+  },
+  {
+   "id": "lh:diagnostics",
+   "text": "Diagnostics",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:diagnostics",
+   "measurable": true
+  },
+  {
+   "id": "lh:charset",
+   "text": "Properly defines charset",
+   "group": "dobetterweb",
+   "category": "Performance",
+   "check": "lighthouse:charset",
+   "measurable": true
+  },
+  {
+   "id": "lh:doctype",
+   "text": "Page has the HTML doctype",
+   "group": "dobetterweb",
+   "category": "Performance",
+   "check": "lighthouse:doctype",
+   "measurable": true
+  },
+  {
+   "id": "lh:geolocation-on-start",
+   "text": "Avoids requesting the geolocation permission on page load",
+   "group": "dobetterweb",
+   "category": "Performance",
+   "check": "lighthouse:geolocation-on-start",
+   "measurable": true
+  },
+  {
+   "id": "lh:inspector-issues",
+   "text": "No issues in the `Issues` panel in Chrome Devtools",
+   "group": "dobetterweb",
+   "category": "Performance",
+   "check": "lighthouse:inspector-issues",
+   "measurable": true
+  },
+  {
+   "id": "lh:js-libraries",
+   "text": "Detected JavaScript libraries",
+   "group": "dobetterweb",
+   "category": "Performance",
+   "check": "lighthouse:js-libraries",
+   "measurable": true
+  },
+  {
+   "id": "lh:notification-on-start",
+   "text": "Avoids requesting the notification permission on page load",
+   "group": "dobetterweb",
+   "category": "Performance",
+   "check": "lighthouse:notification-on-start",
+   "measurable": true
+  },
+  {
+   "id": "lh:paste-preventing-inputs",
+   "text": "Allows users to paste into input fields",
+   "group": "dobetterweb",
+   "category": "Performance",
+   "check": "lighthouse:paste-preventing-inputs",
+   "measurable": true
+  },
+  {
+   "id": "lh:errors-in-console",
+   "text": "No browser errors logged to the console",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:errors-in-console",
+   "measurable": true
+  },
+  {
+   "id": "lh:final-screenshot",
+   "text": "Final Screenshot",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:final-screenshot",
+   "measurable": true
+  },
+  {
+   "id": "lh:has-hsts",
+   "text": "Use a strong HSTS policy",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:has-hsts",
+   "measurable": true
+  },
+  {
+   "id": "lh:image-aspect-ratio",
+   "text": "Displays images with correct aspect ratio",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:image-aspect-ratio",
+   "measurable": true
+  },
+  {
+   "id": "lh:image-size-responsive",
+   "text": "Serves images with appropriate resolution",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:image-size-responsive",
+   "measurable": true
+  },
+  {
+   "id": "lh:is-on-https",
+   "text": "Uses HTTPS",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:is-on-https",
+   "measurable": true
+  },
+  {
+   "id": "lh:layout-shifts",
+   "text": "Avoid large layout shifts",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:layout-shifts",
+   "measurable": true
+  },
+  {
+   "id": "lh:long-tasks",
+   "text": "Avoid long main-thread tasks",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:long-tasks",
+   "measurable": true
+  },
+  {
+   "id": "lh:main-thread-tasks",
+   "text": "Tasks",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:main-thread-tasks",
+   "measurable": true
+  },
+  {
+   "id": "lh:mainthread-work-breakdown",
+   "text": "Minimizes main-thread work",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:mainthread-work-breakdown",
+   "measurable": true
+  },
+  {
+   "id": "lh:metrics",
+   "text": "Metrics",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:metrics",
+   "measurable": true
+  },
+  {
+   "id": "lh:network-requests",
+   "text": "Network Requests",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:network-requests",
+   "measurable": true
+  },
+  {
+   "id": "lh:network-rtt",
+   "text": "Network Round Trip Times",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:network-rtt",
+   "measurable": true
+  },
+  {
+   "id": "lh:network-server-latency",
+   "text": "Server Backend Latencies",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:network-server-latency",
+   "measurable": true
+  },
+  {
+   "id": "lh:non-composited-animations",
+   "text": "Avoid non-composited animations",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:non-composited-animations",
+   "measurable": true
+  },
+  {
+   "id": "lh:oopif-iframe-test-audit",
+   "text": "IFrame Elements",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:oopif-iframe-test-audit",
+   "measurable": true
+  },
+  {
+   "id": "lh:origin-isolation",
+   "text": "Ensure proper origin isolation with COOP",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:origin-isolation",
+   "measurable": true
+  },
+  {
+   "id": "lh:predictive-perf",
+   "text": "Predicted Performance (beta)",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:predictive-perf",
+   "measurable": true
+  },
+  {
+   "id": "lh:redirects-http",
+   "text": "Redirects HTTP traffic to HTTPS",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:redirects-http",
+   "measurable": true
+  },
+  {
+   "id": "lh:redirects",
+   "text": "Avoid multiple page redirects",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:redirects",
+   "measurable": true
+  },
+  {
+   "id": "lh:resource-summary",
+   "text": "Resources Summary",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:resource-summary",
+   "measurable": true
+  },
+  {
+   "id": "lh:screenshot-thumbnails",
+   "text": "Screenshot Thumbnails",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:screenshot-thumbnails",
+   "measurable": true
+  },
+  {
+   "id": "lh:script-treemap-data",
+   "text": "Script Treemap Data",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:script-treemap-data",
+   "measurable": true
+  },
+  {
+   "id": "lh:canonical",
+   "text": "Document has a valid `rel=canonical`",
+   "group": "seo",
+   "category": "Content & process",
+   "check": "lighthouse:canonical",
+   "measurable": true
+  },
+  {
+   "id": "lh:crawlable-anchors",
+   "text": "Links are crawlable",
+   "group": "seo",
+   "category": "Content & process",
+   "check": "lighthouse:crawlable-anchors",
+   "measurable": true
+  },
+  {
+   "id": "lh:hreflang",
+   "text": "Document has a valid `hreflang`",
+   "group": "seo",
+   "category": "Content & process",
+   "check": "lighthouse:hreflang",
+   "measurable": true
+  },
+  {
+   "id": "lh:http-status-code",
+   "text": "Page has successful HTTP status code",
+   "group": "seo",
+   "category": "Content & process",
+   "check": "lighthouse:http-status-code",
+   "measurable": true
+  },
+  {
+   "id": "lh:is-crawlable",
+   "text": "Page isn\u2019t blocked from indexing",
+   "group": "seo",
+   "category": "Content & process",
+   "check": "lighthouse:is-crawlable",
+   "measurable": true
+  },
+  {
+   "id": "lh:link-text",
+   "text": "Links have descriptive text",
+   "group": "seo",
+   "category": "Content & process",
+   "check": "lighthouse:link-text",
+   "measurable": true
+  },
+  {
+   "id": "lh:structured-data",
+   "text": "Structured data is valid",
+   "group": "seo/manual",
+   "category": "Content & process",
+   "check": "lighthouse:structured-data",
+   "measurable": true
+  },
+  {
+   "id": "lh:meta-description",
+   "text": "Document has a meta description",
+   "group": "seo",
+   "category": "Content & process",
+   "check": "lighthouse:meta-description",
+   "measurable": true
+  },
+  {
+   "id": "lh:robots-txt",
+   "text": "robots.txt is valid",
+   "group": "seo",
+   "category": "Content & process",
+   "check": "lighthouse:robots-txt",
+   "measurable": true
+  },
+  {
+   "id": "lh:server-response-time",
+   "text": "Initial server response time was short",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:server-response-time",
+   "measurable": true
+  },
+  {
+   "id": "lh:third-party-cookies",
+   "text": "Avoids third-party cookies",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:third-party-cookies",
+   "measurable": true
+  },
+  {
+   "id": "lh:trusted-types-xss",
+   "text": "Mitigate DOM-based XSS with Trusted Types",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:trusted-types-xss",
+   "measurable": true
+  },
+  {
+   "id": "lh:unsized-images",
+   "text": "Image elements have explicit `width` and `height`",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:unsized-images",
+   "measurable": true
+  },
+  {
+   "id": "lh:user-timings",
+   "text": "User Timing marks and measures",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:user-timings",
+   "measurable": true
+  },
+  {
+   "id": "lh:valid-source-maps",
+   "text": "Page has valid source maps",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:valid-source-maps",
+   "measurable": true
+  },
+  {
+   "id": "lh:webmcp-form-coverage",
+   "text": "WebMCP form coverage",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:webmcp-form-coverage",
+   "measurable": true
+  },
+  {
+   "id": "lh:webmcp-registered-tools",
+   "text": "WebMCP tools registered",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:webmcp-registered-tools",
+   "measurable": true
+  },
+  {
+   "id": "lh:webmcp-schema-validity",
+   "text": "WebMCP schemas are valid",
+   "group": "general",
+   "category": "Performance",
+   "check": "lighthouse:webmcp-schema-validity",
+   "measurable": true
+  }
+ ]
+}

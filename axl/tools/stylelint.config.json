@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "declaration-property-value-disallowed-list": {
+      "outline": ["none", "0"],
+      "/^background(-image)?$/": ["/gradient/"],
+      "font-family": ["/^(Inter|Roboto|Arial|Open Sans|Lato)\\b/i"]
+    }
+  }
+}

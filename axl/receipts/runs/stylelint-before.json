@@ -1,0 +1,25 @@
+{
+ "id": "stylelint-before",
+ "tool": "stylelint",
+ "version": "stylelint 17.15.0",
+ "command": "node axl/tools/runners/stylelint.js axl/demo/css/before.css",
+ "input_hash": "699956e7a288b1cede304eaaec478fdf3c671d98d7c9a287a4ddd393e1a3e4c0",
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"stylelint\",\"findings\":[{\"rule_id\":\"declaration-property-value-disallowed-list\",\"result\":\"fail\",\"evidence\":\"Disallowed value \\\"none\\\" for property \\\"outline\\\" (declaration-property-value-disallowed-list)\",\"location\":\"line 7\"},{\"rule_id\":\"declaration-property-value-disallowed-list\",\"result\":\"fail\",\"evidence\":\"Disallowed value \\\"linear-gradient(120deg,#f4f5f8,#f0f2f7)\\\" for property \\\"background\\\" (declaration-property-value-disallowed-list)\",\"location\":\"line 22\"}]}",
+ "findings": [
+  {
+   "rule_id": "declaration-property-value-disallowed-list",
+   "result": "fail",
+   "evidence": "Disallowed value \"none\" for property \"outline\" (declaration-property-value-disallowed-list)",
+   "location": "line 7"
+  },
+  {
+   "rule_id": "declaration-property-value-disallowed-list",
+   "result": "fail",
+   "evidence": "Disallowed value \"linear-gradient(120deg,#f4f5f8,#f0f2f7)\" for property \"background\" (declaration-property-value-disallowed-list)",
+   "location": "line 22"
+  }
+ ],
+ "role": "before",
+ "ran_at": "2026-09-30T01:36:09+00:00"
+}

@@ -1,0 +1,12 @@
+{
+ "id": "stylelint-after",
+ "tool": "stylelint",
+ "version": "stylelint 17.15.0",
+ "command": "node axl/tools/runners/stylelint.js axl/demo/css/after.css",
+ "input_hash": "1d19e43a19dc346c0cd4643776ff0505697e823b092fab41ac041e29a64bf648",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\":\"stylelint\",\"findings\":[]}",
+ "findings": [],
+ "role": "after",
+ "ran_at": "2026-09-30T01:36:23+00:00"
+}

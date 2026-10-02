@@ -1,0 +1,12 @@
+{
+ "id": "reducedmotion-guarded",
+ "tool": "playwright emulateMedia",
+ "version": "playwright 1.63.0",
+ "command": "node axl/tools/runners/reducedmotion.js axl/demo/fixture-motion-guarded.html",
+ "input_hash": "c39d500e4faea8dd8bda530ab90ae28380967711f0b72f1c707aa4ca69a20a73",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\":\"playwright emulateMedia(reducedMotion)\",\"findings\":[]}",
+ "findings": [],
+ "role": "after",
+ "ran_at": "2026-09-30T01:36:25+00:00"
+}

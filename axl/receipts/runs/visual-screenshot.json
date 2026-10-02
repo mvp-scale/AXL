@@ -1,0 +1,25 @@
+{
+ "id": "visual-screenshot",
+ "tool": "playwright toHaveScreenshot",
+ "version": "@playwright/test 1.63.0",
+ "command": "node axl/tools/runners/visual.js",
+ "input_hash": "ed634de88d5e0f90846298a899b590e1bed428a47376ab1af98efe8568ed5c49",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\":\"playwright toHaveScreenshot\",\"findings\":[{\"rule_id\":\"before matches its own baseline\",\"result\":\"pass\",\"evidence\":\"ok\",\"location\":\"demo\"},{\"rule_id\":\"after differs from the before baseline\",\"result\":\"pass\",\"evidence\":\"ok\",\"location\":\"demo\"}]}",
+ "findings": [
+  {
+   "rule_id": "before matches its own baseline",
+   "result": "pass",
+   "evidence": "ok",
+   "location": "demo"
+  },
+  {
+   "rule_id": "after differs from the before baseline",
+   "result": "pass",
+   "evidence": "ok",
+   "location": "demo"
+  }
+ ],
+ "role": "pair",
+ "ran_at": "2026-09-30T01:36:27+00:00"
+}

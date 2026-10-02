@@ -1,0 +1,69 @@
+{
+ "id": "craft-reflow-320-polished",
+ "tool": "axl craft checks",
+ "version": "axl craft.js on playwright 1.63.0",
+ "command": "node axl/tools/runners/craft.js axl/demo/polished.html 320 reflow-320",
+ "input_hash": "b1d02597785e8251ae17d212088456593bbf7d73a449c9a3ee65aa03ca1a370e",
+ "exit_code": 1,
+ "stdout_excerpt": "{\"tool\":\"axl craft checks (Playwright computed style)\",\"width\":320,\"findings\":[{\"rule_id\":\"reflow-320\",\"result\":\"fail\",\"evidence\":\"element extends to 348px in a 320px viewport\",\"location\":\"#overview-rows\",\"property\":\"width\",\"value\":\"348px\"},{\"rule_id\":\"reflow-320\",\"result\":\"fail\",\"evidence\":\"element extends to 341px in a 320px viewport\",\"location\":\"button.row-action\",\"property\":\"width\",\"value\":\"341px\"},{\"rule_id\":\"reflow-320\",\"result\":\"fail\",\"evidence\":\"element extends to 348px in a 320px viewport\",\"location\":\"table.data-table\",\"property\":\"width\",\"value\":\"348px\"},{\"rule_id\":\"reflow-320\",\"resul",
+ "findings": [
+  {
+   "rule_id": "reflow-320",
+   "result": "fail",
+   "evidence": "element extends to 348px in a 320px viewport",
+   "location": "#overview-rows",
+   "property": "width",
+   "value": "348px"
+  },
+  {
+   "rule_id": "reflow-320",
+   "result": "fail",
+   "evidence": "element extends to 341px in a 320px viewport",
+   "location": "button.row-action",
+   "property": "width",
+   "value": "341px"
+  },
+  {
+   "rule_id": "reflow-320",
+   "result": "fail",
+   "evidence": "element extends to 348px in a 320px viewport",
+   "location": "table.data-table",
+   "property": "width",
+   "value": "348px"
+  },
+  {
+   "rule_id": "reflow-320",
+   "result": "fail",
+   "evidence": "element extends to 348px in a 320px viewport",
+   "location": "td",
+   "property": "width",
+   "value": "348px"
+  },
+  {
+   "rule_id": "reflow-320",
+   "result": "fail",
+   "evidence": "element extends to 348px in a 320px viewport",
+   "location": "thead",
+   "property": "width",
+   "value": "348px"
+  },
+  {
+   "rule_id": "reflow-320",
+   "result": "fail",
+   "evidence": "element extends to 348px in a 320px viewport",
+   "location": "th",
+   "property": "width",
+   "value": "348px"
+  },
+  {
+   "rule_id": "reflow-320",
+   "result": "fail",
+   "evidence": "element extends to 348px in a 320px viewport",
+   "location": "tr",
+   "property": "width",
+   "value": "348px"
+  }
+ ],
+ "role": "finding",
+ "ran_at": "2026-09-30T01:36:31+00:00"
+}

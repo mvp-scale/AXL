@@ -1,0 +1,3424 @@
+{
+ "tweaks": [
+  {
+   "id": "type",
+   "name": "Strengthen heading contrast",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "leading",
+   "name": "Improve reading measure",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "spacing",
+   "name": "Create spacing rhythm",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "gradient",
+   "name": "Remove decorative gradient",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "surface",
+   "name": "Simplify card surfaces",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "accent",
+   "name": "Concentrate accent color",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "focus",
+   "name": "Show keyboard focus",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "feedback",
+   "name": "Reserve feedback space",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "motion",
+   "name": "Respond to pointer actions",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "badge",
+   "name": "Remove decorative badge",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "flat",
+   "name": "Remove card containers",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "serif",
+   "name": "Pair display and body faces",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "tint",
+   "name": "Tint the background",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "align",
+   "name": "Align to the left",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "labels",
+   "name": "Strengthen field labels",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "target",
+   "name": "Enlarge action targets",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "reduce",
+   "name": "Honor reduced motion",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "border",
+   "name": "Clarify field boundaries",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "compact",
+   "name": "Compact content density",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "airy",
+   "name": "Open content density",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "crisp",
+   "name": "Sharpen geometry",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "soft",
+   "name": "Soften geometry",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "weighty",
+   "name": "Use weighty timing",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "bouncy",
+   "name": "Use bouncy timing",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "tabular",
+   "name": "Use tabular numerals",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "tracking",
+   "name": "Tune display tracking",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "wrap",
+   "name": "Balance heading wrapping",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "paragraph",
+   "name": "Separate paragraphs",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "quiet",
+   "name": "Quiet secondary text",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "shadow",
+   "name": "Tint elevation shadows",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "primary",
+   "name": "Emphasize the primary action",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "divider",
+   "name": "Use dividers for grouping",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "split",
+   "name": "Create asymmetric columns",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "stack",
+   "name": "Use a linear reading flow",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "dark",
+   "name": "Inspect a dark surface",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "nav",
+   "name": "Clarify navigation boundaries",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "placeholder",
+   "name": "Clarify placeholder contrast",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "invalid",
+   "name": "Show invalid input",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "underline",
+   "name": "Clarify text links",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "width",
+   "name": "Constrain content measure",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "headergap",
+   "name": "Separate heading and body",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "buttonweight",
+   "name": "Strengthen action typography",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "contrast-text",
+   "name": "Raise text contrast to 4.5:1",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "body-16",
+   "name": "Set body text to 16px",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "reflow",
+   "name": "Reflow layout at 320px",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "motion-duration",
+   "name": "Keep transitions under 500ms",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "banned-fonts",
+   "name": "Replace generic default fonts",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "states-designed",
+   "name": "Design empty, error, loading states",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "copy-specific",
+   "name": "Write specific, plain copy",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "localize",
+   "name": "Allow for text expansion",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "alt-text",
+   "name": "Write meaningful alt text",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "aria-semantics",
+   "name": "Add semantic roles and labels",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "design-tokens",
+   "name": "Replace hard-coded values with tokens",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "reuse-components",
+   "name": "Extract repeated components",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "type-scale",
+   "name": "Use one fixed type scale",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "remove-clutter",
+   "name": "Remove redundant elements",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "progressive-disclosure",
+   "name": "Hide secondary detail until needed",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "mute-color",
+   "name": "Mute saturated colors",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "color-roles",
+   "name": "Assign colors to fixed roles",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "real-devices",
+   "name": "Test on real devices",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "stress-test",
+   "name": "Test long, empty, RTL content",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "perf",
+   "name": "Cut load and runtime cost",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "ask-first",
+   "name": "Ask about audience and goal first",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "delight-moments",
+   "name": "Add delight at key moments",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "audit-first",
+   "name": "Audit before editing",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "preserve-brand",
+   "name": "Preserve existing brand and theme",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "icon-consistency",
+   "name": "Use one icon style",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "transform-only",
+   "name": "Animate transform and opacity only",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "pause-motion",
+   "name": "Pause looping and offscreen motion",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "focal-motion",
+   "name": "Use one choreographed sequence",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "match-patterns",
+   "name": "Match familiar patterns and terms",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "color-not-only",
+   "name": "Color is never the only signal",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "text-resize-200",
+   "name": "Text resizes to 200% intact",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "semantic-structure",
+   "name": "Structure is in the markup",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "contrast-7",
+   "name": "Text contrast 7:1 (AAA)",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "reading-order",
+   "name": "Reading order matches meaning",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "field-labels",
+   "name": "Every field has a label",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "error-identified",
+   "name": "Errors named in text",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "error-suggestion",
+   "name": "Errors suggest a fix",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "headings-describe",
+   "name": "Headings describe their section",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "link-purpose",
+   "name": "Link text says where it goes",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "text-alternative",
+   "name": "Images have text alternatives",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "focus-not-obscured",
+   "name": "Focus never hidden by overlays",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "text-spacing",
+   "name": "Survives user text spacing",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-drag-only",
+   "name": "Dragging has a click alternative",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "accessible-auth",
+   "name": "Login without memory puzzles",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "redundant-entry",
+   "name": "Don't ask twice for the same data",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "non-text-contrast",
+   "name": "UI parts contrast 3:1",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-auto-play-motion",
+   "name": "Moving content can be paused",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "clear-error-on-fix",
+   "name": "Clear errors once fixed",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "validate-late",
+   "name": "Validate on submit, not keystroke",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "line-height-scale",
+   "name": "Line height by text size",
+   "category": "Type",
+   "also_known_as": [
+    "leading scale"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "body-line-height-1-5",
+   "name": "Body line height 1.5",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.4.12"
+   ]
+  },
+  {
+   "id": "heading-line-height-tight",
+   "name": "Tight heading line height",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "max-line-length-65ch",
+   "name": "Cap lines at 65 characters",
+   "category": "Type",
+   "also_known_as": [
+    "line length",
+    "measure"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "font-weight-min-400",
+   "name": "Avoid light font weights",
+   "category": "Type",
+   "also_known_as": [
+    "no thin text"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "weight-scale-limited",
+   "name": "Limit to few font weights",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "font-family-count-max-2",
+   "name": "Use at most two typefaces",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "font-fallback-metrics",
+   "name": "Match fallback font metrics",
+   "category": "Type",
+   "also_known_as": [
+    "size-adjust"
+   ],
+   "standard_refs": [
+    "lh:font-display"
+   ]
+  },
+  {
+   "id": "font-display-swap",
+   "name": "Set font-display swap",
+   "category": "Type",
+   "also_known_as": [
+    "swap fonts"
+   ],
+   "standard_refs": [
+    "lh:font-display"
+   ]
+  },
+  {
+   "id": "font-preload-critical",
+   "name": "Preload critical fonts",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:uses-rel-preload"
+   ]
+  },
+  {
+   "id": "font-subset",
+   "name": "Subset web fonts",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "variable-font",
+   "name": "Use one variable font file",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "font-smoothing",
+   "name": "Enable antialiased text rendering",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "text-wrap-pretty",
+   "name": "Prevent orphans in paragraphs",
+   "category": "Type",
+   "also_known_as": [
+    "text-wrap pretty"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "typographic-quotes",
+   "name": "Use real typographic quotes",
+   "category": "Type",
+   "also_known_as": [
+    "curly quotes"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "real-ellipsis-dash",
+   "name": "Use true ellipsis and dashes",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "nonbreaking-spaces",
+   "name": "Keep units with non-breaking space",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "hyphenation",
+   "name": "Enable hyphenation for narrow columns",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "dynamic-type",
+   "name": "Support user font size setting",
+   "category": "Type",
+   "also_known_as": [
+    "dynamic type"
+   ],
+   "standard_refs": [
+    "wcag:1.4.4"
+   ]
+  },
+  {
+   "id": "no-text-in-images",
+   "name": "Use live text, not images",
+   "category": "Type",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.4.5"
+   ]
+  },
+  {
+   "id": "lang-attribute",
+   "name": "Set page language",
+   "category": "Type",
+   "also_known_as": [
+    "lang"
+   ],
+   "standard_refs": [
+    "axe:html-has-lang",
+    "axe:html-lang-valid",
+    "axe:valid-lang",
+    "wcag:3.1.1",
+    "wcag:3.1.2"
+   ]
+  },
+  {
+   "id": "palette-limit",
+   "name": "Limit palette to few hues",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "neutral-scale",
+   "name": "Build a neutral ramp",
+   "category": "Color",
+   "also_known_as": [
+    "gray scale"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "tinted-neutrals",
+   "name": "Tint neutrals toward brand hue",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-pure-black",
+   "name": "No pure black on white",
+   "category": "Color",
+   "also_known_as": [
+    "off-black"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "semantic-color-tokens",
+   "name": "Name colors by role",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "status-color-set",
+   "name": "Consistent success, warning, error colors",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "accent-one-hue",
+   "name": "One accent hue",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-purple-blue-gradient",
+   "name": "No default purple-blue gradient",
+   "category": "Color",
+   "also_known_as": [
+    "ai gradient"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "no-neon-glow",
+   "name": "No neon glow accents",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-rainbow-decoration",
+   "name": "No rainbow decorative colors",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "oklch-color-space",
+   "name": "Define colors in OKLCH",
+   "category": "Color",
+   "also_known_as": [
+    "perceptual color"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "dark-mode-support",
+   "name": "Provide dark mode",
+   "category": "Color",
+   "also_known_as": [
+    "prefers-color-scheme"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "contrast-large-text-3",
+   "name": "Large text contrast 3:1",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.4.3",
+    "axe:color-contrast"
+   ]
+  },
+  {
+   "id": "contrast-focus-indicator",
+   "name": "Focus indicator contrast 3:1",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.4.13"
+   ]
+  },
+  {
+   "id": "link-color-distinct",
+   "name": "Links distinct from body text",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:link-in-text-block"
+   ]
+  },
+  {
+   "id": "meta-theme-color",
+   "name": "Set browser theme color",
+   "category": "Color",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:themed-omnibox"
+   ]
+  },
+  {
+   "id": "spacing-scale-4pt",
+   "name": "Spacing from a 4/8 scale",
+   "category": "Space & layout",
+   "also_known_as": [
+    "8pt grid"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "spacing-tokens",
+   "name": "Spacing from tokens only",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "section-padding-generous",
+   "name": "Generous section padding",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "group-proximity",
+   "name": "Group related items closer",
+   "category": "Space & layout",
+   "also_known_as": [
+    "proximity"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "gap-over-margin",
+   "name": "Use gap for sibling spacing",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "consistent-page-margins",
+   "name": "Consistent page gutters",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "safe-area-insets",
+   "name": "Respect safe areas",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "max-content-width",
+   "name": "Constrain page max width",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "grid-12-column",
+   "name": "Use a column grid",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "align-to-grid",
+   "name": "Align elements to a grid",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "left-edge-alignment",
+   "name": "Share a common left edge",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "optical-alignment",
+   "name": "Optically align icons and text",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "centered-vertical-icon",
+   "name": "Center icons with text",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "responsive-breakpoints",
+   "name": "Define responsive breakpoints",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "mobile-first",
+   "name": "Design mobile first",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "viewport-meta",
+   "name": "Set viewport meta",
+   "category": "Space & layout",
+   "also_known_as": [
+    "viewport"
+   ],
+   "standard_refs": [
+    "axe:meta-viewport",
+    "axe:meta-viewport-large",
+    "lh:viewport",
+    "wcag:1.4.4"
+   ]
+  },
+  {
+   "id": "no-horizontal-scroll",
+   "name": "No horizontal page scroll",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "orientation-support",
+   "name": "Support both orientations",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.3.4",
+    "axe:css-orientation-lock"
+   ]
+  },
+  {
+   "id": "container-queries",
+   "name": "Use container queries",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "fluid-spacing-clamp",
+   "name": "Fluid spacing with clamp",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "dvh-units",
+   "name": "Use dynamic viewport units",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "min-height-not-height",
+   "name": "Use min-height for content",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "aspect-ratio-reserve",
+   "name": "Reserve media aspect ratio",
+   "category": "Space & layout",
+   "also_known_as": [
+    "aspect-ratio"
+   ],
+   "standard_refs": [
+    "lh:unsized-images"
+   ]
+  },
+  {
+   "id": "touch-target-spacing",
+   "name": "Space touch targets apart",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.5.8",
+    "axe:target-size"
+   ]
+  },
+  {
+   "id": "zoom-400-reflow",
+   "name": "No two-axis scroll at 400% zoom",
+   "category": "Space & layout",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.4.10"
+   ]
+  },
+  {
+   "id": "radius-scale",
+   "name": "Radius scale from one token",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "radius-nested-concentric",
+   "name": "Nested radii are concentric",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "radius-consistent",
+   "name": "Consistent corner radius",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "shadow-scale",
+   "name": "Shadow scale of few levels",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "shadow-layered",
+   "name": "Layered soft shadows",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "shadow-neutral-alpha",
+   "name": "Transparent shadows adapt to background",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-heavy-drop-shadow",
+   "name": "No heavy drop shadows",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "border-hairline",
+   "name": "Hairline borders",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "border-or-shadow-not-both",
+   "name": "Border or shadow, not both",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "border-transparent-alpha",
+   "name": "Alpha borders adapt to surface",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-glassmorphism-default",
+   "name": "No default glassmorphism",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "backdrop-blur-restraint",
+   "name": "Restrained backdrop blur",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-card-in-card",
+   "name": "No nested cards",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "card-only-when-grouping",
+   "name": "Cards only to group",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-side-stripe-border",
+   "name": "No colored side-stripe cards",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-emoji-icons",
+   "name": "No emoji as icons",
+   "category": "Surface",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "duration-tokens",
+   "name": "Duration from a scale",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "easing-tokens",
+   "name": "Easing from a set",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "ease-out-entrances",
+   "name": "Ease-out for entrances",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-linear-ui-motion",
+   "name": "No linear easing for UI",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "exit-faster-than-enter",
+   "name": "Exits shorter than entrances",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "micro-interaction-100-200",
+   "name": "Micro-interactions 100-200ms",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "press-scale-feedback",
+   "name": "Scale down on press",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "hover-transition-short",
+   "name": "Short hover transitions",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "stagger-limited",
+   "name": "Limit stagger delays",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-entrance-every-render",
+   "name": "No entrance animation on every render",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "initial-false-first-render",
+   "name": "Skip enter animation on first paint",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "animate-presence-exit",
+   "name": "Animate exits",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-flashing-3hz",
+   "name": "No flashing over 3Hz",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.3.1"
+   ]
+  },
+  {
+   "id": "animation-under-5s-or-pause",
+   "name": "Auto motion over 5s is pausable",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.2.2",
+    "axe:blink",
+    "axe:marquee"
+   ]
+  },
+  {
+   "id": "no-motion-triggered-only",
+   "name": "Motion not sole way to operate",
+   "category": "Motion",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.3.3"
+   ]
+  },
+  {
+   "id": "hover-state",
+   "name": "Visible hover state",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "active-pressed-state",
+   "name": "Visible pressed state",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "disabled-state-explained",
+   "name": "Explain disabled controls",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "focus-visible-only",
+   "name": "Use focus-visible",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "focus-ring-offset",
+   "name": "Offset focus ring",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-outline-none",
+   "name": "Never remove outline without replacement",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "focus-order-logical",
+   "name": "Logical focus order",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.4.3",
+    "axe:tabindex"
+   ]
+  },
+  {
+   "id": "focus-trap-modal",
+   "name": "Trap focus in modal",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "focus-return",
+   "name": "Return focus on close",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "focus-move-on-route",
+   "name": "Move focus on route change",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "skip-link",
+   "name": "Add skip link",
+   "category": "Interaction & states",
+   "also_known_as": [
+    "skip to content"
+   ],
+   "standard_refs": [
+    "axe:bypass",
+    "axe:skip-link",
+    "wcag:2.4.1"
+   ]
+  },
+  {
+   "id": "keyboard-operable",
+   "name": "Everything works by keyboard",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.1.1",
+    "axe:scrollable-region-focusable"
+   ]
+  },
+  {
+   "id": "no-keyboard-trap",
+   "name": "No keyboard traps",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.1.2"
+   ]
+  },
+  {
+   "id": "escape-closes",
+   "name": "Escape closes overlays",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "shortcut-single-key-remap",
+   "name": "Single-key shortcuts remappable",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.1.4"
+   ]
+  },
+  {
+   "id": "hover-content-dismissible",
+   "name": "Hover content dismissible and persistent",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.4.13"
+   ]
+  },
+  {
+   "id": "tooltip-on-focus",
+   "name": "Tooltips on focus too",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "touch-target-44",
+   "name": "Touch targets 44px",
+   "category": "Interaction & states",
+   "also_known_as": [
+    "44pt"
+   ],
+   "standard_refs": [
+    "wcag:2.5.5",
+    "axe:target-size"
+   ]
+  },
+  {
+   "id": "target-min-24",
+   "name": "Targets at least 24px",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.5.8"
+   ]
+  },
+  {
+   "id": "pointer-cancel",
+   "name": "Pointer actions cancellable on release",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.5.2"
+   ]
+  },
+  {
+   "id": "no-hover-only",
+   "name": "Nothing hover-only",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "tap-highlight",
+   "name": "Style tap highlight",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "touch-action-manipulation",
+   "name": "Disable double-tap zoom delay",
+   "category": "Interaction & states",
+   "also_known_as": [
+    "touch-action"
+   ],
+   "standard_refs": []
+  },
+  {
+   "id": "cursor-pointer",
+   "name": "Pointer cursor on clickable",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "link-vs-button",
+   "name": "Links navigate, buttons act",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "loading-state-button",
+   "name": "Loading state on submit button",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "prevent-double-submit",
+   "name": "Prevent double submit",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "optimistic-update",
+   "name": "Optimistic UI updates",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "undo-over-confirm",
+   "name": "Offer undo instead of confirm",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "toast-time-and-persist",
+   "name": "Toasts long enough to read",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.2.1"
+   ]
+  },
+  {
+   "id": "status-messages-live",
+   "name": "Announce status messages",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:4.1.3"
+   ]
+  },
+  {
+   "id": "input-type-correct",
+   "name": "Correct input types",
+   "category": "Interaction & states",
+   "also_known_as": [
+    "inputmode"
+   ],
+   "standard_refs": [
+    "axe:autocomplete-valid"
+   ]
+  },
+  {
+   "id": "autocomplete-attributes",
+   "name": "Autocomplete on fields",
+   "category": "Interaction & states",
+   "also_known_as": [
+    "autocomplete"
+   ],
+   "standard_refs": [
+    "wcag:1.3.5",
+    "axe:autocomplete-valid"
+   ]
+  },
+  {
+   "id": "consistent-navigation",
+   "name": "Consistent navigation order",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.2.3"
+   ]
+  },
+  {
+   "id": "consistent-identification",
+   "name": "Consistent component naming",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.2.4"
+   ]
+  },
+  {
+   "id": "no-context-change-on-focus",
+   "name": "No surprise on focus or input",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.2.1",
+    "wcag:3.2.2"
+   ]
+  },
+  {
+   "id": "consistent-help",
+   "name": "Help in same place",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.2.6"
+   ]
+  },
+  {
+   "id": "timeout-warning",
+   "name": "Warn before session timeout",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.2.6"
+   ]
+  },
+  {
+   "id": "no-time-limit",
+   "name": "Adjustable time limits",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.2.1",
+    "axe:meta-refresh"
+   ]
+  },
+  {
+   "id": "multiple-ways-to-find",
+   "name": "Multiple ways to find pages",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.4.5"
+   ]
+  },
+  {
+   "id": "swipe-alternative",
+   "name": "Gesture has button alternative",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.5.1"
+   ]
+  },
+  {
+   "id": "motion-actuation-alternative",
+   "name": "Shake/tilt has alternative",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.5.4"
+   ]
+  },
+  {
+   "id": "label-in-name",
+   "name": "Visible label in accessible name",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.5.3",
+    "axe:label-content-name-mismatch"
+   ]
+  },
+  {
+   "id": "offline-state",
+   "name": "Offline state message",
+   "category": "Interaction & states",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:offline-start-url"
+   ]
+  },
+  {
+   "id": "alt-decorative-empty",
+   "name": "Empty alt on decorative images",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:image-alt",
+    "axe:image-redundant-alt",
+    "axe:role-img-alt",
+    "lh:image-alt"
+   ]
+  },
+  {
+   "id": "alt-input-image",
+   "name": "Alt on image buttons",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:input-image-alt",
+    "axe:area-alt",
+    "lh:input-image-alt"
+   ]
+  },
+  {
+   "id": "svg-accessible-name",
+   "name": "Name informative SVGs",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:svg-img-alt",
+    "axe:object-alt"
+   ]
+  },
+  {
+   "id": "button-name",
+   "name": "Buttons have names",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:button-name",
+    "lh:button-name"
+   ]
+  },
+  {
+   "id": "link-name",
+   "name": "Links have names",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:link-name",
+    "lh:link-name",
+    "wcag:2.4.4"
+   ]
+  },
+  {
+   "id": "form-label-programmatic",
+   "name": "Labels tied to inputs",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:label",
+    "axe:select-name",
+    "lh:label",
+    "wcag:3.3.2",
+    "wcag:1.3.1"
+   ]
+  },
+  {
+   "id": "aria-valid-attrs",
+   "name": "Valid ARIA attributes",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-valid-attr",
+    "axe:aria-valid-attr-value",
+    "axe:aria-allowed-attr",
+    "lh:aria-valid-attr"
+   ]
+  },
+  {
+   "id": "aria-valid-roles",
+   "name": "Valid ARIA roles",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-roles",
+    "axe:aria-allowed-role",
+    "axe:aria-deprecated-role",
+    "lh:aria-allowed-role"
+   ]
+  },
+  {
+   "id": "aria-required-parts",
+   "name": "Required ARIA children and parents",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-required-attr",
+    "axe:aria-required-children",
+    "axe:aria-required-parent"
+   ]
+  },
+  {
+   "id": "aria-widget-names",
+   "name": "Name ARIA widgets",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-command-name",
+    "axe:aria-input-field-name",
+    "axe:aria-toggle-field-name",
+    "axe:aria-tooltip-name",
+    "axe:aria-dialog-name",
+    "axe:aria-meter-name",
+    "axe:aria-progressbar-name",
+    "axe:aria-tab-name",
+    "axe:aria-treeitem-name"
+   ]
+  },
+  {
+   "id": "aria-hidden-not-focusable",
+   "name": "No focusable content in aria-hidden",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-hidden-focus",
+    "axe:aria-hidden-body",
+    "lh:aria-hidden-focus"
+   ]
+  },
+  {
+   "id": "native-over-aria",
+   "name": "Native elements over ARIA",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "landmarks",
+   "name": "Use landmark regions",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:region",
+    "axe:landmark-one-main",
+    "axe:landmark-unique",
+    "axe:landmark-no-duplicate-banner",
+    "axe:landmark-banner-is-top-level",
+    "axe:landmark-complementary-is-top-level",
+    "axe:landmark-contentinfo-is-top-level",
+    "axe:landmark-main-is-top-level",
+    "axe:landmark-no-duplicate-contentinfo",
+    "axe:landmark-no-duplicate-main"
+   ]
+  },
+  {
+   "id": "heading-order",
+   "name": "Headings in order",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:heading-order",
+    "axe:page-has-heading-one",
+    "axe:empty-heading",
+    "lh:heading-order",
+    "wcag:1.3.1"
+   ]
+  },
+  {
+   "id": "list-markup",
+   "name": "Real lists for lists",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:list",
+    "axe:listitem",
+    "axe:definition-list",
+    "axe:dlitem",
+    "lh:list",
+    "lh:listitem"
+   ]
+  },
+  {
+   "id": "table-headers",
+   "name": "Table header cells",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:th-has-data-cells",
+    "axe:td-headers-attr",
+    "axe:scope-attr-valid",
+    "axe:td-has-header",
+    "lh:td-headers-attr",
+    "lh:th-has-data-cells"
+   ]
+  },
+  {
+   "id": "table-caption",
+   "name": "Table caption",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:table-duplicate-name",
+    "axe:table-fake-caption"
+   ]
+  },
+  {
+   "id": "page-title",
+   "name": "Descriptive page title",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:document-title",
+    "lh:document-title",
+    "wcag:2.4.2"
+   ]
+  },
+  {
+   "id": "duplicate-ids",
+   "name": "Unique IDs",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:duplicate-id",
+    "axe:duplicate-id-aria",
+    "axe:duplicate-id-active",
+    "lh:duplicate-id-aria"
+   ]
+  },
+  {
+   "id": "iframe-title",
+   "name": "Title iframes",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:frame-title",
+    "axe:frame-title-unique",
+    "axe:frame-focusable-content",
+    "lh:frame-title"
+   ]
+  },
+  {
+   "id": "video-captions",
+   "name": "Captions for video",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:video-caption",
+    "lh:video-caption",
+    "wcag:1.2.2",
+    "wcag:1.2.4"
+   ]
+  },
+  {
+   "id": "audio-transcript",
+   "name": "Transcripts for audio",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:audio-caption",
+    "wcag:1.2.1"
+   ]
+  },
+  {
+   "id": "audio-description",
+   "name": "Audio description for video",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.2.3",
+    "wcag:1.2.5"
+   ]
+  },
+  {
+   "id": "no-autoplay-audio",
+   "name": "No autoplay audio",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.4.2"
+   ]
+  },
+  {
+   "id": "media-controls",
+   "name": "Provide media controls",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:no-autoplay-audio"
+   ]
+  },
+  {
+   "id": "table-not-layout",
+   "name": "No tables for layout",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:presentation-role-conflict"
+   ]
+  },
+  {
+   "id": "select-name",
+   "name": "Names on select elements",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:select-name",
+    "lh:select-name"
+   ]
+  },
+  {
+   "id": "meta-refresh-none",
+   "name": "No timed meta refresh",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:meta-refresh",
+    "axe:meta-refresh-no-exceptions",
+    "lh:meta-refresh"
+   ]
+  },
+  {
+   "id": "tabindex-no-positive",
+   "name": "No positive tabindex",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:tabindex",
+    "lh:tabindex"
+   ]
+  },
+  {
+   "id": "accesskey-unique",
+   "name": "Unique accesskeys",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:accesskeys",
+    "lh:accesskeys"
+   ]
+  },
+  {
+   "id": "scrollable-focusable",
+   "name": "Scroll regions keyboard reachable",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:scrollable-region-focusable",
+    "lh:scrollable-region-focusable"
+   ]
+  },
+  {
+   "id": "nested-interactive",
+   "name": "No nested interactive controls",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:nested-interactive",
+    "lh:nested-interactive"
+   ]
+  },
+  {
+   "id": "identical-links-purpose",
+   "name": "Same-name links go same place",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:identical-links-same-purpose",
+    "wcag:2.4.9"
+   ]
+  },
+  {
+   "id": "link-in-text-distinct",
+   "name": "Underline links in text",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:link-in-text-block",
+    "lh:link-in-text-block"
+   ]
+  },
+  {
+   "id": "dialog-role",
+   "name": "Dialogs use dialog role",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-dialog-name"
+   ]
+  },
+  {
+   "id": "live-region-usage",
+   "name": "Use live regions correctly",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-live"
+   ]
+  },
+  {
+   "id": "abbr-expansion",
+   "name": "Expand abbreviations",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.1.4"
+   ]
+  },
+  {
+   "id": "reading-level",
+   "name": "Plain reading level",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.1.5"
+   ]
+  },
+  {
+   "id": "unusual-words",
+   "name": "Define unusual words",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.1.3"
+   ]
+  },
+  {
+   "id": "sensory-instructions",
+   "name": "No shape or position-only instructions",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.3.3"
+   ]
+  },
+  {
+   "id": "orientation-not-locked",
+   "name": "Don't lock orientation",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.3.4"
+   ]
+  },
+  {
+   "id": "input-purpose",
+   "name": "Identify input purpose",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.3.5"
+   ]
+  },
+  {
+   "id": "focus-appearance",
+   "name": "Strong focus appearance",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.4.11",
+    "wcag:2.4.12",
+    "wcag:2.4.13"
+   ]
+  },
+  {
+   "id": "section-headings",
+   "name": "Section headings",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.4.10"
+   ]
+  },
+  {
+   "id": "location-in-site",
+   "name": "Show location in site",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.4.8"
+   ]
+  },
+  {
+   "id": "link-context",
+   "name": "Link purpose from context",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.4.4",
+    "wcag:2.4.9"
+   ]
+  },
+  {
+   "id": "pointer-gestures-simple",
+   "name": "Single-pointer alternatives",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.5.1",
+    "wcag:2.5.7"
+   ]
+  },
+  {
+   "id": "dragging-alternative",
+   "name": "Dragging alternative",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.5.7"
+   ]
+  },
+  {
+   "id": "error-prevention-legal",
+   "name": "Review before legal or financial submit",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.3.4",
+    "wcag:3.3.6"
+   ]
+  },
+  {
+   "id": "help-mechanism",
+   "name": "Provide help mechanism",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.2.6"
+   ]
+  },
+  {
+   "id": "parsing-valid-html",
+   "name": "Valid HTML markup",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:4.1.1"
+   ]
+  },
+  {
+   "id": "name-role-value",
+   "name": "Custom controls expose name, role, value",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:4.1.2"
+   ]
+  },
+  {
+   "id": "status-message-role",
+   "name": "Status messages via role",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:4.1.3"
+   ]
+  },
+  {
+   "id": "sign-language",
+   "name": "Sign language for prerecorded audio",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.2.6"
+   ]
+  },
+  {
+   "id": "extended-audio-description",
+   "name": "Extended audio description",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.2.7"
+   ]
+  },
+  {
+   "id": "live-captions",
+   "name": "Captions for live audio",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.2.4"
+   ]
+  },
+  {
+   "id": "no-background-audio",
+   "name": "Low background audio",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.4.7"
+   ]
+  },
+  {
+   "id": "visual-presentation",
+   "name": "Adjustable visual presentation",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.4.8"
+   ]
+  },
+  {
+   "id": "content-on-hover",
+   "name": "Hover content stays visible",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:1.4.13"
+   ]
+  },
+  {
+   "id": "interruptions-minimal",
+   "name": "Allow postponing interruptions",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.2.4"
+   ]
+  },
+  {
+   "id": "re-authenticate-preserve",
+   "name": "Preserve data on re-auth",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.2.5"
+   ]
+  },
+  {
+   "id": "three-flashes-below",
+   "name": "Below three flashes threshold",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.3.2"
+   ]
+  },
+  {
+   "id": "no-cognitive-test-login",
+   "name": "No cognitive test to log in",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.3.8",
+    "wcag:3.3.9"
+   ]
+  },
+  {
+   "id": "redundant-entry-none",
+   "name": "Autofill repeated data",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.3.7"
+   ]
+  },
+  {
+   "id": "screen-reader-tested",
+   "name": "Test with a screen reader",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "keyboard-tested",
+   "name": "Test keyboard-only",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "focus-visible-wcag",
+   "name": "Focus visible",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:2.4.7",
+    "axe:focus-order-semantics"
+   ]
+  },
+  {
+   "id": "aria-live-toasts",
+   "name": "Toasts announced",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "visually-hidden-utility",
+   "name": "Screen-reader-only text",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "autocomplete-off-misuse",
+   "name": "No wrong autocomplete values",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:autocomplete-valid"
+   ]
+  },
+  {
+   "id": "lang-of-parts",
+   "name": "Mark language changes",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "wcag:3.1.2"
+   ]
+  },
+  {
+   "id": "zoom-not-disabled",
+   "name": "Allow pinch zoom",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:meta-viewport"
+   ]
+  },
+  {
+   "id": "css-content-text",
+   "name": "Don't put content in CSS",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "caption-track-language",
+   "name": "Caption track language",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:video-description",
+    "axe:audio-caption"
+   ]
+  },
+  {
+   "id": "blink-marquee",
+   "name": "No blink or marquee",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:blink",
+    "axe:marquee"
+   ]
+  },
+  {
+   "id": "object-embed-alt",
+   "name": "Alternatives for embedded objects",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:object-alt",
+    "axe:server-side-image-map"
+   ]
+  },
+  {
+   "id": "image-map-alt",
+   "name": "Alt for image map areas",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:area-alt"
+   ]
+  },
+  {
+   "id": "summary-name",
+   "name": "Name summary elements",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:summary-name"
+   ]
+  },
+  {
+   "id": "empty-table-header",
+   "name": "Empty table headers named",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:empty-table-header"
+   ]
+  },
+  {
+   "id": "p-as-heading",
+   "name": "Real headings, not bold paragraphs",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:p-as-heading"
+   ]
+  },
+  {
+   "id": "html-xml-lang-mismatch",
+   "name": "Match lang and xml:lang",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:html-xml-lang-mismatch"
+   ]
+  },
+  {
+   "id": "form-field-multiple-labels",
+   "name": "One clear label per field",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:form-field-multiple-labels",
+    "lh:form-field-multiple-labels"
+   ]
+  },
+  {
+   "id": "label-title-only",
+   "name": "Don't rely on title for labels",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:label-title-only"
+   ]
+  },
+  {
+   "id": "input-button-name",
+   "name": "Input buttons have values",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:input-button-name",
+    "lh:input-button-name"
+   ]
+  },
+  {
+   "id": "aria-braille",
+   "name": "Braille attributes have equivalents",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-braille-equivalent"
+   ]
+  },
+  {
+   "id": "aria-roledescription-use",
+   "name": "Use aria-roledescription properly",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-roledescription"
+   ]
+  },
+  {
+   "id": "aria-text-role",
+   "name": "Careful with role text",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-text"
+   ]
+  },
+  {
+   "id": "aria-conditional",
+   "name": "Conditional ARIA attributes",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:aria-conditional-attr",
+    "axe:aria-prohibited-attr"
+   ]
+  },
+  {
+   "id": "contrast-enhanced-links",
+   "name": "Enhanced link contrast",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:color-contrast-enhanced"
+   ]
+  },
+  {
+   "id": "avoid-fixed-orientation",
+   "name": "No orientation lock",
+   "category": "Access",
+   "also_known_as": [],
+   "standard_refs": [
+    "axe:css-orientation-lock"
+   ]
+  },
+  {
+   "id": "lazy-load-images",
+   "name": "Lazy-load offscreen images",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:offscreen-images"
+   ]
+  },
+  {
+   "id": "priority-hint-lcp",
+   "name": "Prioritise LCP image",
+   "category": "Performance",
+   "also_known_as": [
+    "fetchpriority"
+   ],
+   "standard_refs": [
+    "lh:prioritize-lcp-image",
+    "lh:lcp-lazy-loaded"
+   ]
+  },
+  {
+   "id": "responsive-images",
+   "name": "Serve responsive images",
+   "category": "Performance",
+   "also_known_as": [
+    "srcset"
+   ],
+   "standard_refs": [
+    "lh:uses-responsive-images"
+   ]
+  },
+  {
+   "id": "modern-image-formats",
+   "name": "Use WebP or AVIF",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:modern-image-formats"
+   ]
+  },
+  {
+   "id": "image-compression",
+   "name": "Compress images",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:uses-optimized-images"
+   ]
+  },
+  {
+   "id": "image-dimensions",
+   "name": "Set image width and height",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:unsized-images"
+   ]
+  },
+  {
+   "id": "video-instead-of-gif",
+   "name": "Video instead of animated GIF",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:efficient-animated-content"
+   ]
+  },
+  {
+   "id": "minify-css-js",
+   "name": "Minify CSS and JS",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:unminified-css",
+    "lh:unminified-javascript"
+   ]
+  },
+  {
+   "id": "remove-unused-css",
+   "name": "Remove unused CSS",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:unused-css-rules"
+   ]
+  },
+  {
+   "id": "remove-unused-js",
+   "name": "Remove unused JavaScript",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:unused-javascript"
+   ]
+  },
+  {
+   "id": "code-splitting",
+   "name": "Split code by route",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "defer-render-blocking",
+   "name": "Defer render-blocking resources",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:render-blocking-resources"
+   ]
+  },
+  {
+   "id": "preconnect-origins",
+   "name": "Preconnect key origins",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:uses-rel-preconnect"
+   ]
+  },
+  {
+   "id": "text-compression",
+   "name": "Compress text responses",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:uses-text-compression"
+   ]
+  },
+  {
+   "id": "http-cache-static",
+   "name": "Cache static assets",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:uses-long-cache-ttl"
+   ]
+  },
+  {
+   "id": "avoid-large-payload",
+   "name": "Keep total payload small",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:total-byte-weight"
+   ]
+  },
+  {
+   "id": "dom-size-small",
+   "name": "Keep DOM small",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:dom-size"
+   ]
+  },
+  {
+   "id": "layout-shift-zero",
+   "name": "No layout shift",
+   "category": "Performance",
+   "also_known_as": [
+    "CLS"
+   ],
+   "standard_refs": [
+    "lh:cumulative-layout-shift",
+    "lh:non-composited-animations"
+   ]
+  },
+  {
+   "id": "reserve-space-embeds",
+   "name": "Reserve space for embeds and ads",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "lcp-under-2-5s",
+   "name": "Largest paint under 2.5s",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:largest-contentful-paint"
+   ]
+  },
+  {
+   "id": "inp-responsive",
+   "name": "Responsive interactions under 200ms",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:interaction-to-next-paint"
+   ]
+  },
+  {
+   "id": "long-tasks-split",
+   "name": "Split long tasks",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:long-tasks",
+    "lh:mainthread-work-breakdown",
+    "lh:bootup-time"
+   ]
+  },
+  {
+   "id": "third-party-defer",
+   "name": "Defer third-party scripts",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:third-party-summary"
+   ]
+  },
+  {
+   "id": "avoid-legacy-js",
+   "name": "Avoid legacy JavaScript",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:legacy-javascript"
+   ]
+  },
+  {
+   "id": "font-loading-no-block",
+   "name": "Fonts don't block text",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:font-display"
+   ]
+  },
+  {
+   "id": "no-redirect-chain",
+   "name": "Avoid redirect chains",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:redirects"
+   ]
+  },
+  {
+   "id": "server-response-fast",
+   "name": "Fast server response",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:server-response-time"
+   ]
+  },
+  {
+   "id": "passive-listeners",
+   "name": "Passive scroll listeners",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:uses-passive-event-listeners"
+   ]
+  },
+  {
+   "id": "http2",
+   "name": "Serve over HTTP/2+",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:uses-http2"
+   ]
+  },
+  {
+   "id": "https-only",
+   "name": "Serve over HTTPS",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:is-on-https"
+   ]
+  },
+  {
+   "id": "bfcache",
+   "name": "Keep pages bfcache eligible",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:bf-cache"
+   ]
+  },
+  {
+   "id": "css-containment",
+   "name": "Use content-visibility",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "virtualize-long-lists",
+   "name": "Virtualize long lists",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "debounce-input",
+   "name": "Debounce heavy handlers",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "gsap-bundle-size",
+   "name": "Import only needed animation plugins",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "service-worker",
+   "name": "Add service worker",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:service-worker"
+   ]
+  },
+  {
+   "id": "preload-hero",
+   "name": "Preload hero assets",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:uses-rel-preload"
+   ]
+  },
+  {
+   "id": "no-document-write",
+   "name": "No document.write",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:no-document-write"
+   ]
+  },
+  {
+   "id": "error-free-console",
+   "name": "No console errors",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:errors-in-console"
+   ]
+  },
+  {
+   "id": "no-deprecated-apis",
+   "name": "Avoid deprecated APIs",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:deprecations"
+   ]
+  },
+  {
+   "id": "image-aspect-ratio",
+   "name": "Correct image aspect ratio",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:image-aspect-ratio"
+   ]
+  },
+  {
+   "id": "correct-doctype",
+   "name": "Declare doctype",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:doctype"
+   ]
+  },
+  {
+   "id": "charset-declared",
+   "name": "Declare charset",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:charset"
+   ]
+  },
+  {
+   "id": "meta-description",
+   "name": "Meta description",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:meta-description"
+   ]
+  },
+  {
+   "id": "crawlable-links",
+   "name": "Crawlable links",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:crawlable-anchors",
+    "lh:link-text"
+   ]
+  },
+  {
+   "id": "robots-valid",
+   "name": "Valid robots and canonical",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:robots-txt",
+    "lh:canonical",
+    "lh:is-crawlable",
+    "lh:hreflang"
+   ]
+  },
+  {
+   "id": "tap-targets-seo",
+   "name": "Sized tap targets",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:tap-targets"
+   ]
+  },
+  {
+   "id": "legible-font-sizes",
+   "name": "Legible font sizes",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:font-size"
+   ]
+  },
+  {
+   "id": "no-vulnerable-libs",
+   "name": "No vulnerable libraries",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:no-vulnerable-libraries"
+   ]
+  },
+  {
+   "id": "csp-headers",
+   "name": "Security headers",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:csp-xss"
+   ]
+  },
+  {
+   "id": "external-link-noopener",
+   "name": "noopener on external links",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:external-anchors-use-rel-noopener"
+   ]
+  },
+  {
+   "id": "geolocation-on-gesture",
+   "name": "Ask permissions on user gesture",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:geolocation-on-start",
+    "lh:notification-on-start"
+   ]
+  },
+  {
+   "id": "paste-not-blocked",
+   "name": "Don't block paste",
+   "category": "Performance",
+   "also_known_as": [],
+   "standard_refs": [
+    "lh:password-inputs-can-be-pasted-into"
+   ]
+  },
+  {
+   "id": "voice-tone-consistent",
+   "name": "Consistent voice and tone",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-ai-cliche-copy",
+   "name": "No clich\u00e9 AI copy",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-lorem-ipsum",
+   "name": "No placeholder text",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-fake-stats",
+   "name": "No invented stats or logos",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "specific-headlines",
+   "name": "Specific headlines",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "plain-language",
+   "name": "Plain language",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "error-message-human",
+   "name": "Human error messages",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "empty-copy-guides",
+   "name": "Guiding empty-state copy",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "button-copy-outcome",
+   "name": "Buttons name the outcome",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "microcopy-hints",
+   "name": "Concise microcopy hints",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "consistent-terminology",
+   "name": "One term per concept",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-jargon",
+   "name": "No internal jargon",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-exclamation-overuse",
+   "name": "Sparing exclamation marks",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "no-emoji-in-copy",
+   "name": "No emoji in headings",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "concise-subtext",
+   "name": "Concise supporting text",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "scannable-content",
+   "name": "Scannable content chunks",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "inverted-pyramid",
+   "name": "Lead with the conclusion",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "lists-over-paragraphs",
+   "name": "Bullets for parallel items",
+   "category": "Content & process",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "table-sort-filter",
+   "name": "Sortable, filterable tables",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "table-empty-row",
+   "name": "Table empty state",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "table-density-toggle",
+   "name": "Density toggle for tables",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "table-row-actions",
+   "name": "Row actions on hover and focus",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "table-bulk-actions",
+   "name": "Bulk selection actions",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "table-responsive",
+   "name": "Tables adapt on mobile",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "table-tabular-numerals",
+   "name": "Tabular numerals in tables",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "modal-close-affordance",
+   "name": "Clear modal close control",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "modal-scroll-lock",
+   "name": "Lock background scroll in modal",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "drawer-side-panel",
+   "name": "Side panel for detail",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "popover-anchor-positioning",
+   "name": "Anchor-positioned popovers",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "native-dialog",
+   "name": "Use native dialog",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "native-popover-api",
+   "name": "Use native popover",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "details-summary-native",
+   "name": "Use details for disclosure",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "accordion-single-open",
+   "name": "Accordion behaviour consistent",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "tabs-pattern",
+   "name": "Accessible tabs",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "tab-active-indicator",
+   "name": "Clear active tab",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "nav-active-state",
+   "name": "Active nav state",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "hamburger-menu-a11y",
+   "name": "Accessible mobile menu",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "dropdown-keyboard",
+   "name": "Keyboard menu navigation",
+   "category": "Components",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "scan-before-edit",
+   "name": "Scan the UI before edits",
+   "category": "Agent workflow",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "read-design-context",
+   "name": "Read existing design context",
+   "category": "Agent workflow",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "measure-with-tools",
+   "name": "Verify with computed styles",
+   "category": "Agent workflow",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "screenshot-verify",
+   "name": "Verify with screenshots",
+   "category": "Agent workflow",
+   "also_known_as": [],
+   "standard_refs": []
+  },
+  {
+   "id": "one-change-at-a-time",
+   "name": "Apply one tweak at a time",
+   "category": "Agent workflow",
+   "also_known_as": [],
+   "standard_refs": []
+  }
+ ]
+}

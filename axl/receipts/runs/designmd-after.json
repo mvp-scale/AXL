@@ -1,0 +1,12 @@
+{
+ "id": "designmd-after",
+ "tool": "design.md lint",
+ "version": "@google/design.md 0.4.0",
+ "command": "node axl/tools/runners/designmd.js axl/demo/DESIGN.after.md",
+ "input_hash": "33738d2fbe58670239d4cfdfb6de424468df9f9ce2e3a92af707f83aa024b8c5",
+ "exit_code": 0,
+ "stdout_excerpt": "{\"tool\":\"design.md lint\",\"findings\":[]}",
+ "findings": [],
+ "role": "after",
+ "ran_at": "2026-09-30T01:36:23+00:00"
+}

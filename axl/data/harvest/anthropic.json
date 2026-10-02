@@ -1,0 +1,660 @@
+{
+ "source": "Anthropic frontend-design",
+ "publisher": "Anthropic",
+ "kind": "skill",
+ "urls": [
+  "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md",
+  "https://platform.claude.com/cookbook/coding-prompting-for-frontend-aesthetics"
+ ],
+ "retrieved_at": "2026-09-30T06:32:08Z",
+ "items": [
+  {
+   "text": "description: Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+   "file": "h_anthropic__1.txt",
+   "section": null,
+   "category": "Type",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Approach this as the design lead at a design studio known for giving every client a distinct visual identity that is not mistaken for anyone else's.",
+   "file": "h_anthropic__1.txt",
+   "section": "Frontend Design",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "This client has already rejected proposals that felt cliché or templated, and is paying for a distinctive point of view: make deliberate, opinionated choices about palette, typography, and layout that are specific to this brief, and take aesthetic risk if justified.",
+   "file": "h_anthropic__1.txt",
+   "section": "Frontend Design",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "If the brief does not identify what the product or subject matter is, identify it yourself before designing, and confirm with the client.",
+   "file": "h_anthropic__1.txt",
+   "section": "Ground your designs in the subject matter",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "You can come up with one concrete subject, the design's audience, and the design's primary job, as a proposal.",
+   "file": "h_anthropic__1.txt",
+   "section": "Ground your designs in the subject matter",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "If there's any information in your memory about the client's preferences or context about what they're building, use that as a hint.",
+   "file": "h_anthropic__1.txt",
+   "section": "Ground your designs in the subject matter",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "The subject's industry, subject matter, materials, and vernacular are where distinctive visual choices come from — a design for a toy for girls aged 8–11 will be very aesthetically different from a dashboard for financial analysts.",
+   "file": "h_anthropic__1.txt",
+   "section": "Ground your designs in the subject matter",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": true
+  },
+  {
+   "text": "Be deliberate with your choice: a big number with a small label, supporting stats, and a gradient accent is the default treatment, so only use it if that's truly the best option.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Access",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Typography carries the personality of the page. You don't need a different typeface for display or headline text and body content: use one family or two, and if two, make them clearly distinct.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Type",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Choose your typefaces deliberately, not the default families you would reach for on any other project, and set a clear type scale following the default guidance of The Elements of Typographic Style with intentional weights, widths, and spacing.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Type",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "When type is used as a headline or visual element, use the type treatment itself as an active part of the design, not a neutral delivery vehicle for the content.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Color",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Default to line lengths of less than 80 characters. Serif typefaces can have slightly longer line lengths; give serif body text slightly more line-height than a sans-serif.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Type",
+   "command": "frontend-design",
+   "measurable": true
+  },
+  {
+   "text": "Avoid these default typographic treatments; they are the commonest tells of a generated page:",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Type",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Using all caps for labels.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Access",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Many generic designs use numbered markers (01 / 02 / 03), but that's only appropriate if the content actually is a sequence — like a stepped process or a timeline.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": true
+  },
+  {
+   "text": "Before adding numbered markers, check the content really is a sequence.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Use non-user-triggered motion sparingly and deliberately, only to draw attention.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Motion",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "A single orchestrated moment — one page-load sequence or one reveal — lands better than scattered effects; fade-and-slide-up entrances on each section and hover transitions on every card are the generic default and read as AI-generated.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Motion",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Consider written content carefully.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Often a design brief may not contain real content, and it's up to you to come up with copy and placeholder content.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Copy can make a design feel as templated as the design itself.",
+   "file": "h_anthropic__1.txt",
+   "section": "Design principles",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "For calibration, AI-generated design right now clusters around some traits:",
+   "file": "h_anthropic__1.txt",
+   "section": "Process: plan, review against the brief, build, critique",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "the SaaS-card kit: content chopped into identical rounded cards, one border-radius on everything regardless of hierarchy, the same soft grey shadow (rgba(0,0,0,.1)) under each, and gradient washes as decoration;",
+   "file": "h_anthropic__1.txt",
+   "section": "Process: plan, review against the brief, build, critique",
+   "category": "Color",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Where the brief pins down a visual direction, follow it exactly — the brief's own words always win, including when it asks for one of these looks.",
+   "file": "h_anthropic__1.txt",
+   "section": "Process: plan, review against the brief, build, critique",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Where it leaves an axis free, don't spend that freedom on one of these defaults.",
+   "file": "h_anthropic__1.txt",
+   "section": "Process: plan, review against the brief, build, critique",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "As with a hired human designer, there's often a careful balance between doing what you're good at and taking each project as a chance to experiment and learn.",
+   "file": "h_anthropic__1.txt",
+   "section": "Process: plan, review against the brief, build, critique",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Work in two passes. First, brainstorm a short design plan based on the client's design brief: create a compact token system with color, type, layout, and principles.",
+   "file": "h_anthropic__1.txt",
+   "section": "Process: plan, review against the brief, build, critique",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Layout: a layout concept, using one-sentence prose descriptions and ASCII wireframes to ideate and compare. Include alignment guidance; should the content be left aligned, center aligned, justified?",
+   "file": "h_anthropic__1.txt",
+   "section": "Process: plan, review against the brief, build, critique",
+   "category": "Space & layout",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Only after you've confirmed the relative uniqueness of your design plan should you start to write the code, following the revised plan.",
+   "file": "h_anthropic__1.txt",
+   "section": "Process: plan, review against the brief, build, critique",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "When writing the code, be careful of structuring your CSS selector specificities. It's easy to generate CSS classes that cancel each other out (especially with a type-based selector like .section and an element-based selector like .cta). This can happen often with padding/margin between sections.",
+   "file": "h_anthropic__1.txt",
+   "section": "Process: plan, review against the brief, build, critique",
+   "category": "Space & layout",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Let one element be the memorable thing, keep everything around it quiet and disciplined, and cut any decoration that does not serve the brief.",
+   "file": "h_anthropic__1.txt",
+   "section": "Restraint and self-critique",
+   "category": "Agent workflow",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Critique your own work as you build, taking screenshots to review if your environment supports it — a picture is worth 1000 tokens.",
+   "file": "h_anthropic__1.txt",
+   "section": "Restraint and self-critique",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": true
+  },
+  {
+   "text": "Consider Chanel's advice: before leaving the house, take a look in the mirror and remove one accessory.",
+   "file": "h_anthropic__1.txt",
+   "section": "Restraint and self-critique",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Human creatives have memory and always try to do something new, so if you have a space to quickly jot down notes about what you've tried, it can help you in future passes.",
+   "file": "h_anthropic__1.txt",
+   "section": "Restraint and self-critique",
+   "category": "Space & layout",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Words appear in a design for one reason: to make it easier to understand and use.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "They are design content, not decoration.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Before writing anything, ask what the design needs to say, and how it can best be said to help the person navigate the experience.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Interaction & states",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Write from the end user's perspective.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Name things by what users will understand in simple language, not by how the system is built.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "A user manages notifications, not webhook config.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Being specific and legible to new users is always better than being clever.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Use active voice as default.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Treat failure and emptiness as moments for direction, not mood.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Content & process",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Errors don't apologize, and they are never vague about what happened.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Interaction & states",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Keep the tone conversational: plain verbs, sentence case, no filler, with tone matched to the brand and the audience. Let each written element do exactly one job.",
+   "file": "h_anthropic__1.txt",
+   "section": "More on writing in design",
+   "category": "Surface",
+   "command": "frontend-design",
+   "measurable": false
+  },
+  {
+   "text": "Published on October 21, 2025",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Claude can generate high-quality frontends, but without guidance it tends toward generic, conservative designs. This guide shows you how to prompt Claude to produce more distinctive, polished output.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Claude has strong knowledge of design principles, typography, and color theory, but defaults to safe choices unless explicitly encouraged otherwise. Through experimentation, we've found three strategies that consistently produce better results:",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Guide specific design dimensions - Direct Claude's attention to typography, color, motion, and backgrounds individually",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Motion",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Reference design inspirations - Suggest sources like IDE themes or cultural aesthetics without being overly prescriptive",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Call out common defaults - Explicitly tell Claude to avoid its tendency toward generic choices",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The prompt below applies these strategies across four key design areas.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "You tend to converge toward generic, \"on distribution\" outputs. In frontend design, this creates what users call the \"AI slop\" aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight. Focus on:",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Typography: Choose fonts that are beautiful, unique, and interesting. Avoid generic fonts like Arial and Inter; opt instead for distinctive choices that elevate the frontend's aesthetics.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Color & Theme: Commit to a cohesive aesthetic. Use CSS variables for consistency. Dominant colors with sharp accents outperform timid, evenly-distributed palettes. Draw from IDE themes and cultural aesthetics for inspiration.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Motion: Use animations for effects and micro-interactions. Prioritize CSS-only solutions for HTML. Use Motion library for React when available. Focus on high-impact moments: one well-orchestrated page load with staggered reveals (animation-delay) creates more delight than scattered micro-interactions.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Backgrounds: Create atmosphere and depth rather than defaulting to solid colors. Layer CSS gradients, use geometric patterns, or add contextual effects that match the overall aesthetic.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid generic AI-generated aesthetics:",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Cookie-cutter design that lacks context-specific character",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Interpret creatively and make unexpected choices that feel genuinely designed for the context.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Vary between light and dark themes, different fonts, different aesthetics.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Avoid this: it is critical that you think outside the box!",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "First, set up the helper functions:",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "print(\"❌ Error: Could not extract HTML from response.\")",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Generate with the aesthetics prompt:",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Use vanilla HTML, CSS, & Javascript. Use Tailwind CSS for your CSS variables.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Generate complete, self-contained HTML code for the requested frontend application. Include all CSS and JavaScript inline.",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "CRITICAL: You must wrap your HTML code in triple backticks with html language identifier like this:",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Content & process",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Our parser depends on this format - do not deviate from it!",
+   "file": "h_anthropic__2.txt",
+   "section": null,
+   "category": "Interaction & states",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "✅ Complete in 98.2s",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with distilled aesthetics prompt",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "The full aesthetics prompt works well for general use, but sometimes you want targeted control. You can isolate specific dimensions (typography, color, motion) or lock in a particular theme. This gives you faster generation times and more predictable outputs.",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with distilled aesthetics prompt",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Example 1: Typography Only",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with distilled aesthetics prompt",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Isolate a single design dimension when you want to improve one aspect without changing others:",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with distilled aesthetics prompt",
+   "category": "Agent workflow",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Typography instantly signals quality. Avoid using boring, generic fonts.",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with distilled aesthetics prompt",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Never use:** Inter, Roboto, Open Sans, Lato, default system fonts",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with distilled aesthetics prompt",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "**Use extremes:** 100/200 weight vs 800/900, not 400 vs 600. Size jumps of 3x+, not 1.5x.",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with distilled aesthetics prompt",
+   "category": "Type",
+   "command": null,
+   "measurable": true
+  },
+  {
+   "text": "Pick one distinctive font, use it decisively. Load from Google Fonts. State your choice before coding.",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with distilled aesthetics prompt",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Always design with Solarpunk aesthetic:",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with typography-only guidance",
+   "category": "Type",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "Claude has strong design capabilities but defaults to safe, generic choices.",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with theme constraint",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "The techniques in this guide - targeting specific design dimensions, referencing concrete inspirations, and explicitly avoiding common defaults - reliably produce more distinctive output.",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with theme constraint",
+   "category": "Color",
+   "command": null,
+   "measurable": false
+  },
+  {
+   "text": "For more control, use isolated prompts to focus on individual aspects or lock in specific themes across multiple generations.",
+   "file": "h_anthropic__2.txt",
+   "section": "Generate with theme constraint",
+   "category": "Access",
+   "command": null,
+   "measurable": false
+  }
+ ]
+}

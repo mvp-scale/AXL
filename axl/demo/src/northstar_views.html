@@ -1,0 +1,242 @@
+<!--
+Extra Northstar views (AXL's own demo content, not taken from any source). build_demo.py splices the four parts below
+into the read-only legacy template. The page ships with typical, deliberate first-draft flaws so a tweak has something to change.
+-->
+<!--CSS-->
+<style id="ns-extra">
+html{overflow:hidden auto}[hidden]{display:none!important}
+.nav-group{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#98a3b3;padding:14px 10px 2px}
+body[data-view=site] .hero,body[data-view=docs] .hero,body[data-view=signin] .hero,body[data-view=site] .topbar,body[data-view=signin] .topbar{display:none}
+body[data-view=site] .workspace,body[data-view=signin] .workspace{padding:0}
+body[data-view=site] footer,body[data-view=signin] footer,body[data-view=docs] footer{display:none}
+.icon-btn{width:30px;height:30px;padding:0;display:inline-grid;place-items:center;font-size:14px;line-height:1;border-radius:50%}
+a{color:#4d6c8f;text-decoration:none}
+/* ---------- public home page ---------- */
+.promo{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px;align-items:center;background:linear-gradient(90deg,#7c3aed,#db2777);color:#fff;font-size:11px;padding:6px 10px}
+.promo a{color:#fff;font-weight:700}.promo a+a{opacity:.8}.promo button{background:transparent;border:0;color:#fff;padding:0 4px;font-size:13px}
+.site-nav{display:flex;align-items:center;gap:18px;padding:14px 28px;background:#fff;border-bottom:1px solid #eef0f4;position:sticky;top:0;z-index:5}
+.site-nav .logo{font-weight:800;font-size:17px;color:#1e1b4b;margin-right:auto;letter-spacing:-.5px}
+.site-nav a{font-size:13px;color:#6b7280}.site-nav .search{width:120px;border:1px solid #e5e7eb;border-radius:6px;padding:5px 8px;font-size:12px;color:#9ca3af;background:#f9fafb}
+.site-nav .cta{background:linear-gradient(135deg,#6366f1,#a855f7);color:#fff;border:0;border-radius:999px;padding:8px 16px;font-size:13px;box-shadow:0 0 22px #a855f788}
+.site-hero{text-align:center;padding:56px 40px 44px;background:radial-gradient(circle at 50% 0,#ede9fe,#fff 70%)}
+.kicker{display:block;font-size:10px;letter-spacing:.3em;color:#a78bfa;text-transform:uppercase;font-weight:600}
+.site-hero h2{font-size:46px;line-height:1.05;font-weight:800;letter-spacing:-1.5px;margin:12px auto 14px;max-width:none;text-transform:none;background:linear-gradient(90deg,#4f46e5,#db2777);-webkit-background-clip:text;background-clip:text;color:transparent}
+.site-hero p{font-size:15px;font-weight:300;color:#9ca3af;max-width:none;margin:0 auto 22px}
+.hero-ctas{display:flex;gap:10px;justify-content:center}.hero-ctas button{border-radius:999px;padding:10px 20px;font-size:14px}
+.hero-ctas .go{background:linear-gradient(135deg,#6366f1,#a855f7);color:#fff;border:0;box-shadow:0 10px 30px #7c3aed55}
+.hero-shot{margin:34px auto 0;max-width:620px;height:150px;border-radius:24px;background:linear-gradient(135deg,#c7d2fe,#fbcfe8);box-shadow:0 30px 60px #6d28d933;display:grid;place-items:center;color:#6d28d9;font-size:12px}
+.hero-shot img{width:92%;height:120px;object-fit:cover;border-radius:14px;display:block}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;padding:18px;color:#c4c9d4;font-weight:800;font-size:15px;letter-spacing:.06em;filter:grayscale(1)}
+.site-sec{padding:34px 40px;text-align:center}
+.site-sec h3{font-size:24px;font-weight:800;margin:6px 0 20px;letter-spacing:-.6px;color:#111827;text-transform:uppercase}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}
+.feature{padding:22px;border-radius:24px;background:rgba(255,255,255,.55);backdrop-filter:blur(12px);border:1px solid #ede9fe;box-shadow:0 8px 30px #7c3aed1a}
+.feature .emoji{font-size:26px}.feature b{display:block;margin:8px 0 6px;font-size:14px}.feature p{font-size:12px;color:#9ca3af;margin:0;text-align:justify}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.quote{padding:18px;border-radius:16px;background:#fff;border:1px solid #f1f1f4;box-shadow:0 8px 24px #1111110d;text-align:left;font-size:13px;color:#6b7280;font-style:italic}
+.quote cite{display:flex;gap:8px;align-items:center;margin-top:10px;font-style:normal;font-size:11px;color:#9ca3af}.quote .avatar{width:24px;height:24px;font-size:10px}
+.stars{color:#fbbf24;letter-spacing:2px;font-style:normal}
+.billing{display:inline-flex;border:1px solid #e5e7eb;border-radius:999px;padding:3px;margin-bottom:16px}.billing button{border:0;border-radius:999px;padding:5px 14px;font-size:12px;background:transparent}.billing button[aria-pressed=true]{background:#111827;color:#fff}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:left}
+.plan{padding:20px;border-radius:20px;border:1px solid #ececf2;background:#fff}.plan.pop{border:2px solid #a855f7;transform:scale(1.03);box-shadow:0 20px 50px #a855f733}
+.plan .tag{display:inline-block;font-size:10px;background:#f3e8ff;color:#a855f7;padding:2px 8px;border-radius:999px;font-weight:700;text-transform:uppercase}
+.price{font-size:30px;font-weight:800;margin:6px 0;color:#111827}.price small{font-size:12px;color:#9ca3af;font-weight:400}
+.plan ul{padding:0;margin:10px 0 14px;list-style:none;font-size:12px;color:#6b7280}.plan li{padding:3px 0}.plan li::before{content:'✨ '}
+.plan button{width:100%;border-radius:999px}
+.faq{max-width:none;margin:0 auto;text-align:left}.faq details{border-bottom:1px solid #eee;padding:12px 0;font-size:14px}.faq summary{cursor:pointer;font-weight:600;list-style:none}.faq details p{font-size:13px;color:#9ca3af;margin:8px 0 0}
+.newsletter{display:flex;gap:8px;justify-content:center}.newsletter input{border:1px solid #e5e7eb;border-radius:999px;padding:9px 14px;width:240px}.newsletter button{border-radius:999px;background:#111827;color:#fff}
+.site-foot{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;padding:28px 40px;background:#0b0b12;color:#6b7280;font-size:11px;text-align:left}
+.site-foot b{color:#e5e7eb;display:block;margin-bottom:6px}.site-foot a{display:block;color:#6b7280;padding:2px 0}
+.cookie{position:sticky;bottom:0;display:flex;gap:10px;align-items:center;justify-content:space-between;background:#111827;color:#d1d5db;font-size:11px;padding:10px 16px}.cookie button{font-size:11px;padding:5px 10px}
+/* ---------- docs article ---------- */
+.doc{display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px}
+.toc{font-size:12px;border-right:1px solid #e3e8ef;padding-right:12px;align-self:start;position:sticky;top:10px}.toc b{display:block;font-size:11px;color:#8a97a8;margin-bottom:6px}.toc a{display:block;padding:4px 0;color:#6b7a8e}.toc a.on{color:#25384e;font-weight:600}
+.crumbs{font-size:11px;color:#8a97a8;margin-bottom:8px}.crumbs a{color:#8a97a8}
+.article{font-size:14px;line-height:1.3;color:#3c4a5d}
+.article h2{text-transform:uppercase;font-size:14px;letter-spacing:.08em;margin:22px 0 6px}
+.article p{text-align:justify;margin:0 0 6px}
+.article q{quotes:'"' '"'}
+.byline{display:flex;gap:8px;align-items:center;font-size:11px;color:#98a3b3;margin-bottom:14px}
+.callout{background:#fff8db;border:1px solid #f5e3a3;padding:10px 12px;font-size:12px;margin:12px 0;border-radius:6px}
+.article blockquote{margin:12px 0;padding:0 0 0 12px;border-left:3px solid #dce1e8;font-style:italic;color:#7c899a}
+.article figure{margin:14px 0}.article figure img{width:100%;height:130px;object-fit:cover;display:block;border-radius:6px}.article figcaption{font-size:10px;color:#a2adbb;margin-top:4px}
+.article pre{background:#1e293b;color:#e2e8f0;padding:10px;border-radius:6px;font-size:12px;white-space:pre;overflow-x:auto;max-width:100%}
+.article code{font-size:12px;background:#eef1f5;padding:1px 4px;border-radius:3px}.article pre code{background:none;padding:0}
+.article kbd{font:11px monospace;border:1px solid #cbd2db;border-radius:3px;padding:0 4px}
+.article table{border-collapse:collapse;font-size:12px;margin:10px 0}.article td,.article th{border:1px solid #e3e8ef;padding:4px 8px;text-align:left}
+.article ol,.article ul{padding-left:18px;margin:6px 0}.article li{margin:2px 0}
+.article .long{font-weight:600;overflow-wrap:anywhere}
+.fn{font-size:9px;color:#a2adbb;border-top:1px solid #eef1f5;margin-top:14px;padding-top:6px}
+.pager{display:flex;justify-content:space-between;margin-top:16px;font-size:12px}
+.doc-feedback{display:flex;gap:8px;align-items:center;font-size:12px;color:#8a97a8;margin-top:14px}
+/* ---------- assistant ---------- */
+.chat{display:grid;grid-template-rows:minmax(0,1fr) auto;height:470px;background:#fff;border:1px solid #dce1e8;border-radius:8px;overflow:hidden}
+.thread{overflow:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
+.msg{max-width:78%;font-size:13px;line-height:1.4;padding:10px 12px;border-radius:14px}
+.msg.user{align-self:flex-end;background:#46597a;color:#fff;border-bottom-right-radius:3px}
+.msg.bot{align-self:flex-start;background:#f1f4f8;color:#334155;border-bottom-left-radius:3px}
+.msg time{display:block;font-size:9px;color:#b4bfcc;margin-top:4px}
+.tool{font-size:11px;color:#8a97a8;background:#fafbfc;border:1px dashed #dce1e8;border-radius:6px;padding:6px 8px;margin:6px 0}.tool summary{cursor:pointer}
+.cite{font-size:9px;vertical-align:super;color:#8a97a8}
+.sources{display:flex;gap:6px;margin-top:6px}.sources a{font-size:10px;border:1px solid #dce1e8;border-radius:99px;padding:1px 7px;color:#6b7a8e;background:#fff}
+.caret{display:inline-block;width:7px;height:14px;background:#334155;vertical-align:-2px;animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.msg-tools{display:flex;gap:4px;margin-top:6px}.msg-tools button{border:0;background:transparent;padding:2px 4px;font-size:12px;color:#8a97a8}
+.msg-tools button[aria-pressed=true]{color:#46597a}
+.composer{display:flex;gap:8px;align-items:flex-end;border-top:1px solid #e3e8ef;padding:10px}
+.composer textarea{flex:1;resize:none;height:38px;border:1px solid #dce1e8;border-radius:8px;padding:8px;font-size:13px}
+.composer .send{width:34px;height:34px;padding:0;border-radius:50%;background:#46597a;color:#fff;border:0}
+.gen-tools{display:flex;gap:6px;justify-content:center;padding:6px}.gen-tools button{font-size:11px;padding:4px 10px}
+.disclaimer{font-size:9px;color:#b4bfcc;text-align:center;padding:0 0 6px}
+.thinking{display:flex;gap:4px;padding:10px 12px}.thinking span{width:6px;height:6px;border-radius:50%;background:#94a3b8;animation:bounce 1s infinite alternate}@keyframes bounce{to{transform:translateY(-6px)}}
+/* ---------- sign in / onboarding ---------- */
+.auth{display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+.auth-art{background:linear-gradient(160deg,#312e81,#7c3aed 60%,#db2777);color:#fff;padding:40px;display:flex;flex-direction:column;justify-content:flex-end}
+.auth-art h2{font-size:28px;color:#fff;line-height:1.1;font-weight:800}.auth-art p{font-size:12px;opacity:.7}
+.auth-form{padding:48px 40px;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.auth-form h2{font-size:22px;margin:0}.auth-form .sub{font-size:12px;color:#98a3b3;margin:0 0 8px}
+.auth-form input{border:0;border-bottom:1px solid #dce1e8;padding:10px 2px;font-size:13px;border-radius:0}
+.pw{position:relative}.pw input{width:100%}.pw button{position:absolute;right:0;top:4px;border:0;background:none;font-size:11px;color:#8a97a8}
+.auth-form .row{display:flex;justify-content:space-between;font-size:11px;color:#98a3b3}
+.auth-form .err{color:#ef4444;font-size:11px;min-height:0}
+.auth-form .go{background:#46597a;color:#fff;border:0;padding:11px}
+.social{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}.social button{font-size:11px;padding:8px 4px}
+.or{font-size:10px;color:#b4bfcc;text-align:center}
+.onboard{border:1px solid #e3e8ef;border-radius:8px;padding:14px;font-size:12px}.steps{display:flex;gap:6px;margin:8px 0}.steps span{flex:1;height:4px;border-radius:2px;background:#e3e8ef}.steps span.on{background:#46597a}
+.onboard ol{margin:6px 0;padding-left:18px;color:#6b7a8e}.onboard .acts{display:flex;justify-content:space-between}
+/* ---------- reports ---------- */
+.rep-tools{display:flex;gap:8px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid #cbd2db;border-radius:5px;overflow:hidden}.seg button{border:0;border-radius:0;font-size:12px;padding:6px 10px}.seg button[aria-pressed=true]{background:#46597a;color:#fff}
+.menu-wrap{position:relative}.menu{position:absolute;top:calc(100% + 4px);left:0;background:#fff;border:1px solid #dce1e8;border-radius:6px;box-shadow:0 10px 30px #1b344522;padding:4px;z-index:8;min-width:150px}.menu button{display:block;width:100%;border:0;text-align:left;font-size:12px}
+.chips{display:flex;gap:6px}.chip{font-size:11px;border-radius:99px;background:#eef1f5;padding:3px 9px;color:#556477}
+.rep-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:12px}
+.bars{display:flex;align-items:flex-end;gap:10px;height:140px;padding:0 4px;border-bottom:1px solid #dce1e8;background:repeating-linear-gradient(0deg,#eef1f5 0 1px,transparent 1px 35px),repeating-linear-gradient(90deg,#eef1f5 0 1px,transparent 1px 45px)}
+.bars i{flex:1;background:linear-gradient(#8b5cf6,#ec4899);border-radius:3px 3px 0 0}
+.bar-labels{display:flex;gap:10px;font-size:9px;color:#a2adbb;padding:4px}.bar-labels span{flex:1;text-align:center}
+.pie{width:120px;height:120px;border-radius:50%;background:conic-gradient(#6366f1 0 22%,#8b5cf6 0 38%,#a855f7 0 51%,#d946ef 0 62%,#ec4899 0 74%,#f43f5e 0 86%,#f97316 0 94%,#eab308 0);margin:4px auto}
+.pie-legend{display:grid;grid-template-columns:1fr 1fr;gap:2px 8px;font-size:9px;color:#8a97a8}.pie-legend i{display:inline-block;width:7px;height:7px;border-radius:2px;margin-right:4px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+.kpi{background:#fff;border:1px solid #dce1e8;border-radius:8px;padding:10px}.kpi small{font-size:10px;color:#8a97a8;display:block}.kpi b{font-size:18px}.kpi .delta{font-size:10px;color:#22c55e}.kpi .delta.down{color:#ef4444}
+.spark{width:100%;height:22px;display:block}.spark path{fill:none;stroke:#8b5cf6;stroke-width:1.5}
+.people{display:flex}.people .avatar{margin-left:-6px;border:2px solid #fff}.people .avatar:first-child{margin-left:0}
+.bell{position:relative}.bell sup{position:absolute;top:-4px;right:-4px;background:#ef4444;color:#fff;font-size:8px;border-radius:99px;padding:1px 4px}
+.upload{border:1px dashed #cbd2db;border-radius:8px;padding:12px;font-size:12px;color:#8a97a8;text-align:center}
+.radios{display:flex;gap:10px;font-size:12px}.range{width:100%}
+.pages{display:flex;gap:4px;justify-content:flex-end;margin-top:8px}.pages button{font-size:11px;padding:3px 8px}.pages button[aria-current=page]{background:#46597a;color:#fff}
+.stepper{display:flex;gap:6px;font-size:10px;color:#a2adbb;margin:6px 0}.stepper b{color:#25384e}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:260px;background:#fff;border-left:1px solid #dce1e8;box-shadow:-10px 0 30px #1b344522;padding:16px;z-index:20;font-size:12px}
+.drawer[hidden]{display:none}
+@media(max-width:900px){.site-nav a{display:none}.site-nav{gap:10px;padding:12px 16px}}
+@media(max-width:900px){.auth{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}.auth-art{padding:28px}.auth-form{padding:40px 28px}}
+@media(max-width:500px){.features,.quotes,.plans,.site-foot,.auth,.doc,.rep-grid,.kpis{grid-template-columns:minmax(0,1fr)}.toc,.auth-art{display:none}.site-hero h2{font-size:30px}.site-nav a{display:none}.site-sec,.site-hero{padding:24px 16px}}
+</style>
+<!--NAV-->
+<button class="nav-item" data-view="reports">Reports</button><button class="nav-item" data-view="assistant">Assistant</button><div class="nav-group">Public site</div><button class="nav-item" data-view="site">Home page</button><button class="nav-item" data-view="docs">Help article</button><button class="nav-item" data-view="signin">Sign in</button>
+<!--PANELS-->
+<div class="panel" id="reports" hidden>
+ <div class="rep-tools"><div class="seg" role="group" aria-label="Date range"><button data-range="7d">7 days</button><button data-range="30d">30 days</button><button data-range="90d">90 days</button></div><div class="menu-wrap"><button id="export-btn" aria-haspopup="true">Export ▾</button><div class="menu" id="export-menu" hidden><button>Download CSV</button><button>Download PDF</button><button>Schedule email</button></div></div><div class="chips"><span class="chip">Team: All</span><span class="chip">Status: Active ✕</span></div><span style="margin-left:auto" class="people"><span class="avatar">JL</span><span class="avatar">MC</span><span class="avatar">OR</span></span><button class="icon-btn bell" aria-label="Notifications">🔔<sup>3</sup></button><button class="icon-btn" id="filters-btn" aria-label="Filters">⚙</button></div>
+ <div class="kpis"><div class="kpi"><small>Throughput</small><b>184</b> <span class="delta">▲ 12%</span><svg class="spark" viewBox="0 0 100 22"><path d="M0 18 L15 14 L30 16 L45 9 L60 11 L75 5 L100 3"/></svg></div><div class="kpi"><small>Cycle time</small><b>4.3d</b> <span class="delta down">▼ 8%</span><svg class="spark" viewBox="0 0 100 22"><path d="M0 6 L20 8 L40 7 L60 12 L80 14 L100 16"/></svg></div><div class="kpi"><small>Blocked</small><b>3</b> <span class="delta down">▲ 1</span><svg class="spark" viewBox="0 0 100 22"><path d="M0 16 L25 16 L50 12 L75 14 L100 10"/></svg></div><div class="kpi"><small>Budget used</small><b>$1,204,300.5</b> <span class="delta">61%</span><svg class="spark" viewBox="0 0 100 22"><path d="M0 20 L25 16 L50 12 L75 8 L100 5"/></svg></div></div>
+ <div class="rep-grid"><div class="card"><div class="section-head"><h2>Milestones by week</h2><span>Hover a bar for detail</span></div><div class="bars" role="img" aria-label="Milestones per week, rising from 6 to 21"><i style="height:30%" title="W1: 6"></i><i style="height:45%" title="W2: 9"></i><i style="height:40%" title="W3: 8"></i><i style="height:70%" title="W4: 14"></i><i style="height:62%" title="W5: 12"></i><i style="height:100%" title="W6: 21"></i></div><div class="bar-labels"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span></div><div class="stepper"><b>Planned</b> → Building → Review → Shipped</div></div>
+ <div class="card"><div class="section-head"><h2>Time by project</h2></div><div class="pie" role="img" aria-label="Share of time by project, eight segments"></div><div class="pie-legend"><span><i style="background:#6366f1"></i>Portal 22%</span><span><i style="background:#8b5cf6"></i>Platform 16%</span><span><i style="background:#a855f7"></i>Migration 13%</span><span><i style="background:#d946ef"></i>Brand 11%</span><span><i style="background:#ec4899"></i>Analytics 12%</span><span><i style="background:#f43f5e"></i>Support 12%</span><span><i style="background:#f97316"></i>Hiring 8%</span><span><i style="background:#eab308"></i>Other 6%</span></div></div></div>
+ <section class="card"><div class="section-head"><h2>Report settings</h2></div><div class="form-grid"><div class="field"><label>Include</label><div class="radios"><label><input type="radio" name="inc" checked> All</label><label><input type="radio" name="inc"> Active</label><label><input type="radio" name="inc"> At risk</label></div></div><div class="field"><label for="conf">Confidence threshold</label><input id="conf" class="range" type="range" value="60"></div><div class="field wide"><div class="upload">Drop a CSV here or <label style="text-decoration:underline">browse<input type="file" hidden></label></div></div></div><div class="pages"><button>‹</button><button aria-current="page">1</button><button>2</button><button>3</button><button>›</button></div></section>
+ <aside class="drawer" id="filters-drawer" hidden><div class="modal-head"><h2>Filters</h2><button id="drawer-close" aria-label="Close filters">×</button></div><p>Owner, status and date filters apply to every chart.</p><div class="field"><label for="f-owner">Owner</label><select id="f-owner"><option>Anyone</option><option>James Lee</option></select></div></aside>
+</div>
+<div class="panel" id="assistant" hidden>
+ <div class="chat"><div class="thread" id="thread" aria-live="polite">
+  <div class="msg user">Which projects are at risk this month?<time>09:41</time></div>
+  <div class="msg bot"><details class="tool"><summary>Used tool · search_projects</summary>status = risk, due before 31 Oct → 1 result</details>One project is at risk: <b>Website migration</b> is 41% complete and due 9 Oct<span class="cite">[1]</span>. The delivery lead hasn't confirmed the migration window yet<span class="cite">[2]</span>.<div class="sources"><a href="#">1 · Project tracker</a><a href="#">2 · Weekly update</a></div><div class="msg-tools"><button aria-label="Copy">⧉</button><button aria-label="Good answer" data-thumb="up" aria-pressed="false">👍</button><button aria-label="Bad answer" data-thumb="down" aria-pressed="false">👎</button><button aria-label="Regenerate">↻</button></div><time>09:41</time></div>
+  <div class="msg user">Draft a note to Maya asking for the window.<time>09:42</time></div>
+  <div class="msg bot" id="streaming">Hi Maya — could you confirm the migration window for Website migration by Thursday? That's the one thing blocking<span class="caret"></span></div>
+ </div>
+ <div><div class="gen-tools"><button id="stop-gen">■ Stop</button><button id="regen">↻ Regenerate</button></div><form class="composer" id="composer"><textarea id="prompt" aria-label="Message" placeholder="Ask anything..."></textarea><button class="send" aria-label="Send">➤</button></form><div class="disclaimer">AI can make mistakes. Check important info.</div></div></div>
+</div>
+<div class="panel" id="docs" hidden>
+ <div class="doc"><nav class="toc" aria-label="On this page"><b>ON THIS PAGE</b><a class="on" href="#">Overview</a><a href="#">Set a target date</a><a href="#">Invite your team</a><a href="#">Keyboard shortcuts</a><a href="#">Limits</a></nav>
+ <article class="article"><div class="crumbs"><a href="#">Help</a> / <a href="#">Projects</a> / Kickoff</div><h1 style="margin-top:0">How to kick off a project</h1><div class="byline"><span class="avatar">MC</span>Maya Chen · Updated 2 days ago · 4 min read</div>
+ <p>Every project in Northstar starts with a name, an owner and a target date. Teams that agree on these three things in the first week ship <q>noticeably faster</q> than teams that don't -- and they spend less time in status meetings... The kickoff checklist below walks you through each step, including the permissions your collaborators will need and the notifications they'll receive when work is assigned, reviewed or blocked by an unresolved dependency on another team.</p>
+ <div class="callout">⚠️ Note: target dates can be changed later, but every change is recorded in the activity log.</div>
+ <h2>Set a target date</h2><p>Pick a date your team can defend. A project with a 10 km scope and a 3 week timeline needs a different plan than one with a 12 month runway. Use the <code>target_date</code> field, or press <kbd>T</kbd> anywhere in the editor.</p>
+ <figure><img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 130'%3E%3Crect width='600' height='130' fill='%23dfe6ef'/%3E%3Crect x='30' y='30' width='160' height='70' rx='6' fill='%23fff'/%3E%3Crect x='220' y='30' width='160' height='70' rx='6' fill='%23fff'/%3E%3Crect x='410' y='30' width='160' height='70' rx='6' fill='%2346597a'/%3E%3C/svg%3E"><figcaption>The project timeline view</figcaption></figure>
+ <blockquote>"A clear owner is worth more than a perfect plan." — Delivery handbook</blockquote>
+ <h2>Invite your team</h2><ol><li>Open <b>Settings → Plan &amp; access</b>.</li><li>Choose <b>Invite teammate</b> and enter their email.</li><li>Pick a role: Viewer, Editor or Owner.</li></ol>
+ <table><thead><tr><th>Plan</th><th>Seats</th><th>Storage</th></tr></thead><tbody><tr><td>Team</td><td>12</td><td>100 GB</td></tr><tr><td>Business</td><td>150</td><td>1,000 GB</td></tr></tbody></table>
+ <h2>Keyboard shortcuts</h2><pre><code>T  set target date      N  new project      /  search      ⌘K  command palette      ⇧⌘E  export the current report as CSV</code></pre>
+ <p class="long">Supercalifragilisticexpialidociousprojectidentifiers are truncated in the sidebar.</p>
+ <details><summary>What happens when a date slips?</summary><p>The owner is notified and the project moves to <i>At risk</i> until a new date is agreed.</p></details>
+ <div class="doc-feedback">Was this helpful? <button class="icon-btn" aria-label="Yes">👍</button><button class="icon-btn" aria-label="No">👎</button></div>
+ <div class="fn">1. Target dates use your workspace time zone. Limits apply per workspace.</div>
+ <div class="pager"><a href="#">← Creating a workspace</a><a href="#">Running reviews →</a></div></article></div>
+</div>
+<div class="panel" id="site" hidden>
+ <div class="promo" id="promo"><span>🎉 Northstar 3.0 is here</span><a href="#">Read the launch post</a><a href="#">See pricing</a><button id="promo-x" aria-label="Dismiss announcement">✕</button></div>
+ <div class="site-nav"><span class="logo">northstar</span><a href="#">Product</a><a href="#">Solutions</a><a href="#">Customers</a><a href="#">Pricing</a><a href="#">Docs</a><a href="#">Company</a><span class="search">Search ⌘K</span><a href="#">Log in</a><button class="cta">Get Started →</button></div>
+ <div class="site-hero"><span class="kicker">01 — The Future of Work</span><h2>Supercharge Your Team's Workflow With AI-Powered Project Magic</h2><p>Northstar is the all-in-one, next-generation platform that seamlessly empowers modern teams to unlock their full potential and achieve more, faster.</p><div class="hero-ctas"><button class="go">Get Started Free</button><button>Watch Demo ▶</button></div><div class="hero-shot"><img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 120'%3E%3Crect width='560' height='120' fill='%23fff'/%3E%3Crect x='10' y='10' width='90' height='100' fill='%23eef2f7'/%3E%3Crect x='115' y='14' width='200' height='14' fill='%23c7d2fe'/%3E%3Crect x='115' y='40' width='130' height='60' rx='4' fill='%23ede9fe'/%3E%3Crect x='255' y='40' width='130' height='60' rx='4' fill='%23fce7f3'/%3E%3Crect x='395' y='40' width='150' height='60' rx='4' fill='%23e0e7ff'/%3E%3C/svg%3E"></div></div>
+ <div class="logos"><span>ACME</span><span>GLOBEX</span><span>INITECH</span><span>UMBRELLA</span><span>HOOLI</span></div>
+ <div class="site-sec"><span class="kicker">02 — Features</span><h3>Everything You Need</h3><div class="features"><div class="feature"><div class="emoji">🚀</div><b>Lightning Fast</b><p>Blazing-fast performance that scales effortlessly with your growing team and evolving needs.</p></div><div class="feature"><div class="emoji">🔒</div><b>Enterprise Security</b><p>Bank-grade security keeps your data safe, secure and protected around the clock, always.</p></div><div class="feature"><div class="emoji">🤖</div><b>AI Powered</b><p>Cutting-edge AI seamlessly automates your workflows so you can focus on what matters most.</p></div></div></div>
+ <div class="site-sec"><span class="kicker">03 — Testimonials</span><h3>Loved By Teams</h3><div class="quotes"><div class="quote"><span class="stars">★★★★★</span><br>"Northstar completely transformed how our team works. Game changer!"<cite><span class="avatar">SJ</span>Sarah J., CEO</cite></div><div class="quote"><span class="stars">★★★★★</span><br>"We can't imagine working without it. Absolutely amazing product!"<cite><span class="avatar">MK</span>Mike K., CTO</cite></div><div class="quote"><span class="stars">★★★★★</span><br>"The best tool we've ever used. Highly recommend to everyone!"<cite><span class="avatar">LP</span>Lisa P., VP</cite></div></div></div>
+ <div class="site-sec" id="pricing"><span class="kicker">04 — Pricing</span><h3>Simple, Transparent Pricing</h3><div class="billing" role="group" aria-label="Billing period"><button data-billing="monthly" aria-pressed="true">Monthly</button><button data-billing="yearly" aria-pressed="false">Yearly · save 20%</button></div><div class="plans"><div class="plan"><b>Starter</b><div class="price" data-m="$0" data-y="$0">$0<small>/mo</small></div><ul><li>3 projects</li><li>Basic reports</li><li>Email support</li></ul><button>Get Started</button></div><div class="plan pop"><span class="tag">Most popular</span><br><b>Team</b><div class="price" data-m="$12" data-y="$9.60">$12<small>/mo</small></div><ul><li>Unlimited projects</li><li>Advanced reports</li><li>Priority support</li></ul><button class="primary">Get Started</button></div><div class="plan"><b>Business</b><div class="price" data-m="$29" data-y="$23.20">$29<small>/mo</small></div><ul><li>SSO &amp; audit log</li><li>Custom roles</li><li>Dedicated manager</li></ul><button>Contact Sales</button></div></div></div>
+ <div class="site-sec"><h3>FAQ</h3><div class="faq"><details><summary>Can I change plans later?</summary><p>Yes. Upgrades apply immediately; downgrades apply at the end of the billing period.</p></details><details><summary>Is there a free trial?</summary><p>The Team plan is free for 14 days. No card required.</p></details><details><summary>Where is my data stored?</summary><p>In the EU or US, chosen when you create the workspace.</p></details></div></div>
+ <div class="site-sec"><h3>Stay In The Loop</h3><form class="newsletter" id="newsletter"><input type="email" aria-label="Email address" placeholder="Enter your email..."><button>Subscribe</button></form><div class="feedback" id="news-feedback" role="status"></div></div>
+ <div class="site-foot"><div><b>northstar</b>© 2026 Northstar Inc.</div><div><b>Product</b><a href="#">Features</a><a href="#">Pricing</a><a href="#">Changelog</a><a href="#">Roadmap</a><a href="#">Integrations</a></div><div><b>Company</b><a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a><a href="#">Press</a></div><div><b>Resources</b><a href="#">Docs</a><a href="#">Guides</a><a href="#">API</a><a href="#">Status</a></div><div><b>Legal</b><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div></div>
+ <div class="cookie" id="cookie"><span>We use cookies to improve your experience. By continuing you agree to our cookie policy.</span><span><button id="cookie-ok">Accept all</button></span></div>
+</div>
+<div class="panel" id="signin" hidden>
+ <div class="auth"><div class="auth-art"><h2>Welcome back to the future of work ✨</h2><p>Join 10,000+ teams already shipping faster.</p></div>
+ <form class="auth-form" id="signin-form" novalidate><h2>Sign in</h2><p class="sub">Enter your details below</p><div class="social"><button type="button">Google</button><button type="button">GitHub</button><button type="button">Apple</button></div><div class="or">OR</div><input id="si-email" type="text" aria-label="Email" placeholder="Email"><div class="pw"><input id="si-pw" type="password" aria-label="Password" placeholder="Password"><button type="button" id="pw-toggle">Show</button></div><div class="err" id="si-err" role="alert"></div><div class="row"><label><input type="checkbox"> Remember me</label><a href="#">Forgot password?</a></div><button class="go" id="si-go">Sign in</button><div class="row"><span>No account? <a href="#">Sign up</a></span></div>
+ <div class="onboard" id="onboard"><b>Get set up</b> · step <span id="ob-n">1</span> of 3<div class="steps"><span class="on"></span><span></span><span></span></div><ol><li>Name your workspace</li><li>Invite two teammates</li><li>Create your first project</li></ol><div class="acts"><button type="button" id="ob-skip" class="secondary">Skip for now</button><button type="button" id="ob-next" class="primary">Continue</button></div></div></form></div>
+</div>
+<!--JS-->
+<script>
+(function(){
+const EX={reports:['Reports','Delivery trends across every project.','Reports'],assistant:['Assistant','Ask about projects, owners and deadlines.','Assistant'],site:['Northstar','','Home page'],docs:['Help center','Guides for running projects in Northstar.','Help article'],signin:['Sign in','','Sign in']};
+Object.assign(st,{range:'30d',menu:false,drawer:false,billing:'monthly',promo:true,cookie:true,thumb:'',streaming:true,chat:[],obStep:1,siErr:'',pwShow:false,news:''},{...st});
+// content/attribute patches (a tweak that changes words or markup): applied after every draw, fully undone before the next
+let PATCH=[],undo=[];
+const unpatch=()=>{undo.reverse().forEach(f=>f());undo=[]};
+function repatch(){document.querySelectorAll('body *').forEach((e,i)=>e.dataset.k=i);
+ PATCH.forEach(op=>document.querySelectorAll(op.sel).forEach(el=>{
+  if(op.text!=null){const h=el.innerHTML;el.textContent=op.text;el.setAttribute('data-axl-p','');undo.push(()=>{el.innerHTML=h;el.removeAttribute('data-axl-p')})}
+  if(op.attr)Object.entries(op.attr).forEach(([k,v])=>{const had=el.hasAttribute(k),o=el.getAttribute(k);v==null?el.removeAttribute(k):el.setAttribute(k,v);el.setAttribute('data-axl-p','');undo.push(()=>{had?el.setAttribute(k,o):el.removeAttribute(k);el.removeAttribute('data-axl-p')})});
+  ['before','after','prepend','append'].forEach(w=>{if(op[w]==null)return;const t=document.createElement('template');t.innerHTML=op[w];const ns=[...t.content.childNodes];ns.forEach(n=>n.nodeType===1&&n.setAttribute('data-axl-ins',''));el[w](...ns);undo.push(()=>ns.forEach(n=>n.remove()))});
+ }))}
+window.axlPatch=ops=>{PATCH=ops||[];draw()};
+addEventListener('message',e=>{if(e.source===parent&&e.data&&e.data.type==='lab-recipe'&&'patch' in e.data)window.axlPatch(e.data.patch)});
+const base=draw;
+draw=function(){
+ unpatch();
+ const v=st.view; if(EX[v]){const keep=st.view;st.view='overview';base();st.view=keep;$('#page-title').textContent=EX[v][0];$('#page-copy').textContent=EX[v][1];$('#breadcrumb').textContent=EX[v][2];document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==v);document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-current',b.dataset.view===v?'page':'false'))}else base();
+ document.body.dataset.view=v;
+ document.querySelectorAll('[data-range]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.range===st.range));
+ $('#export-menu').hidden=!st.menu;$('#export-btn').setAttribute('aria-expanded',st.menu);$('#filters-drawer').hidden=!st.drawer;
+ document.querySelectorAll('[data-billing]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.billing===st.billing));
+ document.querySelectorAll('.price').forEach(p=>p.firstChild.textContent=st.billing==='yearly'?p.dataset.y:p.dataset.m);
+ $('#promo').hidden=!st.promo;$('#cookie').hidden=!st.cookie;
+ document.querySelectorAll('[data-thumb]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.thumb===st.thumb));
+ const s=$('#streaming');s.querySelector('.caret')&&!st.streaming&&s.querySelector('.caret').remove();if(st.streaming&&!s.querySelector('.caret'))s.insertAdjacentHTML('beforeend','<span class="caret"></span>');
+ $('#stop-gen').hidden=!st.streaming;
+ const th=$('#thread');th.querySelectorAll('.added').forEach(n=>n.remove());st.chat.forEach(m=>th.insertAdjacentHTML('beforeend','<div class="msg '+m.who+' added">'+(m.who==='bot'&&m.text==='…'?'<div class="thinking"><span></span><span></span><span></span></div>':esc(m.text))+'</div>'));
+ $('#si-err').textContent=st.siErr;$('#si-pw').type=st.pwShow?'text':'password';$('#pw-toggle').textContent=st.pwShow?'Hide':'Show';
+ $('#ob-n').textContent=st.obStep;document.querySelectorAll('.steps span').forEach((x,i)=>x.classList.toggle('on',i<st.obStep));$('#onboard').hidden=st.obStep>3;
+ $('#news-feedback').textContent=st.news;
+ repatch();
+ if(st.focusSel){const el=document.querySelector(st.focusSel);st.focusSel=null;if(el)setTimeout(()=>el.focus({focusVisible:true}),0)}
+ reportSize();
+};
+const redraw=()=>{draw();emit()};
+document.addEventListener('click',e=>{const b=e.target.closest('button,a');if(!b)return;
+ if(b.tagName==='A'&&b.getAttribute('href')==='#'){e.preventDefault();return}
+ if(b.dataset.range)st.range=b.dataset.range;
+ if(b.id==='export-btn')st.menu=!st.menu;else if(b.closest('#export-menu')){st.menu=false;st.toast='Export started. We will email you the file.'}
+ if(b.id==='filters-btn')st.drawer=true;if(b.id==='drawer-close')st.drawer=false;
+ if(b.dataset.billing)st.billing=b.dataset.billing;if(b.id==='promo-x')st.promo=false;if(b.id==='cookie-ok')st.cookie=false;
+ if(b.dataset.thumb)st.thumb=st.thumb===b.dataset.thumb?'':b.dataset.thumb;
+ if(b.id==='stop-gen')st.streaming=false;if(b.id==='regen'){st.streaming=true}
+ if(b.id==='pw-toggle')st.pwShow=!st.pwShow;
+ if(b.id==='ob-next')st.obStep=Math.min(4,st.obStep+1);if(b.id==='ob-skip')st.obStep=4;
+ redraw()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&(st.menu||st.drawer)){st.menu=false;st.drawer=false;redraw()}});
+$('#composer').onsubmit=e=>{e.preventDefault();const t=$('#prompt').value.trim();if(!t)return;$('#prompt').value='';st.chat=[...st.chat,{who:'user',text:t},{who:'bot',text:'…'}];redraw();setTimeout(()=>{st.chat=st.chat.slice(0,-1).concat({who:'bot',text:'Here is what I found: 12 active projects, one at risk (Website migration).'});redraw()},900)};
+$('#signin-form').onsubmit=e=>{e.preventDefault();const m=$('#si-email').value,p=$('#si-pw').value;st.siErr=!m||!p?'Error: invalid input':!m.includes('@')?'Error: invalid input':'';if(!st.siErr)st.toast='Signed in as '+m;redraw()};
+$('#newsletter').onsubmit=e=>{e.preventDefault();st.news='Thanks! You are subscribed.';redraw()};
+draw();
+})();
+</script>
