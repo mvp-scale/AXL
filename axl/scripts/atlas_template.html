@@ -65,22 +65,22 @@ kbd{font:600 .75rem var(--mono);border:1px solid var(--line);border-bottom-width
 #pv0{pointer-events:none}
 #pv{transition:opacity .38s ease}
 .frame.peeking #pv{opacity:0}.frame.peeking{--cur:var(--ink)}
-.state{position:absolute;left:12px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;font:700 .9rem var(--sans);padding:8px 14px 8px 11px;border-radius:99px;background:#131316;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);pointer-events:none;max-width:60%}
+.state{position:absolute;left:12px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;font:700 .88rem var(--sans);min-height:44px;padding:0 16px 0 14px;border-radius:99px;background:#131316;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);pointer-events:none;max-width:60%}
 .state::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--cur,#fff);flex:none}
 .state span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.state em{font-style:normal;font-weight:500;opacity:.7;white-space:nowrap;flex:none}.state em::before{content:"· "}.state em[hidden]{display:none}
 .frame.peeking .state{background:#fff;color:#131316;box-shadow:0 0 0 2px #131316}.frame.peeking .state::before{background:#131316}
 .nothing{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;max-width:min(440px,80%);background:#131316;color:#fff;border-radius:16px;padding:14px 18px;text-align:center;font-size:.95rem;box-shadow:0 20px 50px rgba(0,0,0,.35)}
 .nothing b{display:block;font-size:1.15rem;margin-bottom:4px}
 .nothing{pointer-events:auto}
 .tools{position:absolute;right:12px;top:12px;z-index:3;display:inline-flex;align-items:center;gap:4px;padding:4px;border-radius:99px;background:#131316;box-shadow:0 6px 18px rgba(0,0,0,.28)}
-.devs{display:inline-flex;gap:2px}.devs button,.marks{min-height:32px;padding:0 12px;border-radius:99px;color:#fff;font:600 .78rem var(--sans);display:inline-flex;align-items:center;gap:6px}
+.devs{display:inline-flex;gap:2px}.devs button,.marks{min-height:36px;padding:0 12px;border-radius:99px;color:#fff;font:600 .78rem var(--sans);display:inline-flex;align-items:center;gap:6px}
 .devs button:hover,.marks:hover{background:rgba(255,255,255,.12)}.devs button[aria-pressed="true"]{background:#fff;color:#131316}
 .marks{border-left:1px solid rgba(255,255,255,.2);border-radius:0 99px 99px 0;margin-left:4px;padding-left:12px}
 .marks i{width:12px;height:12px;border-radius:3px;border:2px solid var(--cur,#fff);opacity:.5}.marks[aria-pressed="true"] i{opacity:1;background:var(--cur,#fff)}
 .marks #marks{font:500 .72rem var(--mono);opacity:.75}
-.pin{display:inline-flex;align-items:center;gap:2px;margin-right:2px;padding:0 4px 0 12px;min-height:32px;border-radius:99px;background:rgba(255,255,255,.14);color:#fff;font:600 .78rem var(--sans);white-space:nowrap}.pin[hidden]{display:none}
+.pin{display:inline-flex;align-items:center;gap:2px;margin-right:2px;padding:0 6px 0 12px;min-height:36px;border-radius:99px;background:rgba(255,255,255,.14);color:#fff;font:600 .78rem var(--sans);white-space:nowrap}.pin[hidden]{display:none}
 .pin button{width:24px;height:24px;border-radius:50%;color:#fff;font-size:1rem;line-height:1}.pin button:hover{background:rgba(255,255,255,.2)}
-.nothing.soft{top:auto;bottom:16px;transform:translateX(-50%);font-size:.88rem;padding:10px 16px}.nothing.soft b{font-size:1rem}
 .marks[aria-pressed="false"]{color:rgba(255,255,255,.65)}
 .frame.peeking .tools{visibility:hidden}
 .hold{position:absolute;right:12px;bottom:14px;z-index:3;min-height:44px;padding:0 16px;border-radius:99px;background:rgba(19,19,22,.86);color:#fff;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);touch-action:none}
@@ -246,7 +246,7 @@ pre{margin:0 0 10px;background:var(--soft);border-radius:10px;padding:12px;overf
     <div class="frame" id="frame">
       <iframe id="pv0" title="Demo page, original" tabindex="-1" aria-hidden="true"></iframe>
       <iframe id="pv" title="Demo page with the current selection applied" tabindex="-1"></iframe>
-      <span class="state" id="state"><span id="stateTxt"></span></span>
+      <span class="state" id="state"><span id="stateTxt"></span><em id="stateNote" hidden>nothing changes on this page</em></span>
       <div class="nothing" id="nothing" hidden></div>
       <div class="tools" role="toolbar" aria-label="Preview">
         <span class="pin" id="pin" hidden title="Play and picks stay on this page and viewport"><span><span class="pinW">Staying on </span><b id="pinName"></b></span><button type="button" id="unpin" aria-label="Stop staying on this page">×</button></span>
@@ -458,7 +458,7 @@ const D = /*DATA*/null;
     const w = pv.contentWindow; w.addEventListener('scroll', () => { try { pv0.contentWindow.scrollTo(0, w.scrollY); } catch (e) {} });
     w.addEventListener('keydown', e => { if (e.key === 'Shift' && !e.target.closest('input,textarea,select')) { stopWalk(); renderPicks(); peek(true); } });
     w.addEventListener('keyup', e => { if (e.key === 'Shift') peek(false); }); }); pv0.addEventListener('load', fit);
-  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (!on) { lastSel = current().tweaks.join(',') + '|' + (st.focus || ''); paint(current()); } };   // letting go of Shift never moves the demo
+  const peek = on => { if (st.peek === on) return; st.peek = on; frame.classList.toggle('peeking', on); $('#stateTxt').textContent = on ? 'Original' : current().label; if (on) $('#stateNote').hidden = true; if (!on) { lastSel = current().tweaks.join(',') + '|' + (st.focus || ''); paint(current()); } };   // letting go of Shift never moves the demo
   addEventListener('keydown', e => {
     if (e.target.closest && e.target.closest('input')) return;
     if (e.key === 'Shift') { stopWalk(); renderPicks(); peek(true); }
@@ -569,15 +569,13 @@ const D = /*DATA*/null;
   function render(flash) {
     const cur = current(); frame.style.setProperty('--cur', cur.color); document.documentElement.style.setProperty('--cur', cur.color);
     if (!st.peek && !st.blink) { paint(cur); }
-    if (!st.peek) $('#stateTxt').textContent = cur.label;
     const vis = cur.tweaks.filter(i => shows(T[i])).length, inv = cur.tweaks.length - vis, nb = $('#nothing');
     const here = pinned && !st.focus ? cur.tweaks.filter(i => shows(T[i]) && T[i].view === pinned).length : null;
-    nb.hidden = st.peek || st.mineView || (vis > 0 && here !== 0); nb.classList.toggle('soft', vis > 0 && here === 0);
+    if (!st.peek) { $('#stateTxt').textContent = cur.label; $('#stateNote').hidden = !(vis > 0 && here === 0); }
+    nb.hidden = st.peek || st.mineView || vis > 0;
     const srcOnly = st.sel.s.size === 1 || st.walk === 's' ? (st.walk === 's' ? walkItems('s')[st.idx % Math.max(1, walkItems('s').length)] : [...st.sel.s][0]) : null;
     if (!nb.hidden && !cur.entries.length && srcOnly) { const ws = [...new Set(D.entries.filter(e => e.src === srcOnly).map(e => e.word))];
       nb.innerHTML = `<b>${esc(srcOnly)} doesn't use ${st.sel.w.size === 1 ? `“${esc([...st.sel.w][0])}”` : 'these commands'}</b>It uses: ${ws.map(esc).join(', ')}.<br><button class="btn small" id="useIts" type="button" style="margin-top:10px;background:#fff;color:#131316">Show ${esc(srcOnly)}'s commands</button>`; }
-    else if (!nb.hidden && vis > 0 && here === 0) { const by = {}; cur.tweaks.forEach(i => { if (shows(T[i])) by[T[i].view] = (by[T[i].view] || 0) + 1; });
-      nb.innerHTML = `<b>${esc(cur.label.replace(/[“”]/g, ''))} changes nothing on the ${esc(VIEWN[pinned] || 'page')}</b>Its changes are on: ${Object.entries(by).sort((a, b) => b[1] - a[1]).map(([v, c]) => `${esc(VIEWN[v] || v)} (${c})`).join(', ')}.`; }
     else if (!nb.hidden && cur.tweaks.length === 1 && T[cur.tweaks[0]].why) { const t = T[cur.tweaks[0]]; nb.innerHTML = `<b>Not something a page can show</b>${esc(t.kind ? t.kind[0].toUpperCase() + t.kind.slice(1) : '')}: ${esc(t.why)}`; }
     else if (!nb.hidden) nb.innerHTML = cur.tweaks.length ? `<b>Nothing to see</b>This definition asks for ${inv} change${inv > 1 ? 's' : ''} a page can't show: ${cur.tweaks.map(i => esc(T[i].name.toLowerCase())).join(', ')}.` : `<b>Nothing to see</b>This definition names no concrete change at all.`;
     renderPicks();
